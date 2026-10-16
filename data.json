@@ -682,6 +682,106 @@
    ],
    "noot": "Clubkaart verplicht, 1 kaart per kaart. Kidsclub: 2 kaarten per lid.",
    "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
+  },
+  {
+   "club": "nec",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-18T20:00",
+   "fases": [],
+   "noot": "Nu in de verkoop (inloggen nodig); startmoment onbekend.",
+   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---Fortuna-Sittard-VriendenLoterij-Eredivisie-2026---2027",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "FC Groningen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-25T14:30",
+   "fases": [],
+   "noot": "Nu in de verkoop (inloggen nodig); startmoment onbekend.",
+   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Groningen-VriendenLoterij-Eredivisie-2026---2027",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "PSV",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-21T16:30",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-02T12:00",
+     "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "noot": "Bron: Verkoop (S)CC 02-11, 12.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T20:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-09T12:00",
+     "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "noot": "Bron: Verkoop (S)CC 09-11, 12.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "ADO Den Haag",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-20T12:15",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-30T12:00",
+     "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "noot": "Bron: Verkoop (S)CC 30-11, 12.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-10T12:15",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-12-21T12:00",
+     "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "noot": "Bron: Verkoop (S)CC 21-12, 12.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "nec",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-24T14:30",
+   "fases": [
+    [
+     "clubkaart",
+     "2027-01-04T12:00",
+     "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "noot": "Bron: Verkoop (S)CC 04-01-2027, 12.00 uur",
+   "bron": "",
+   "auto": true
   }
  ],
  "KANS": {
