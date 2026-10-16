@@ -1,7 +1,10 @@
 """Verzamelaar voor N.E.C.
 
-De ticketshop (tickets.nec-nijmegen.nl) haalt zijn wedstrijden op via een JSON-adres.
-Dit programma leest datzelfde adres één keer per dag en zet het om naar ons formaat.
+De ticketshop (tickets.nec-nijmegen.nl) haalt zijn wedstrijden op via een JSON-adres,
+maar dat adres geeft zonder sessie een 401-foutmelding. Daarom openen we de shop met een
+onzichtbare browser (Playwright), net zoals een bezoeker, en onderscheppen we het antwoord
+op dat verzoek. De shop regelt zijn eigen toegang; wij lezen alleen het resultaat.
+Dit draait één keer per dag.
 
 Wat de JSON ons vertelt (gecontroleerd op de voorbeeldgegevens van 16 oktober 2026):
 - Alle tijden staan in UTC en worden hier omgezet naar Nederlandse tijd.
@@ -18,7 +21,9 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 CLUB = "nec"
-BRON_URL = os.environ.get("NEC_BRON_URL", "https://nec.api.tymes4-infra.com/v2/Event")
+PAGINA = "https://tickets.nec-nijmegen.nl/dashboard"
+# Alleen voor tests: een lokaal bestand (file:///...) in plaats van de echte site.
+BRON_URL = os.environ.get("NEC_BRON_URL", "")
 NL = ZoneInfo("Europe/Amsterdam")
 
 COMPETITIES = [("eredivisie", "Eredivisie"), ("europa league", "Europa League"),
@@ -37,6 +42,24 @@ def haal_json(url):
     })
     with urllib.request.urlopen(req, timeout=30) as antwoord:
         return json.load(antwoord)
+
+
+def haal_json_via_browser(pagina):
+    """Open de shop in een onzichtbare browser en lees het antwoord van het Event-verzoek."""
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="nl-NL")
+            with page.expect_response(
+                lambda r: "/v2/Event" in r.url and r.request.method == "GET" and r.status == 200,
+                timeout=60000,
+            ) as info:
+                page.goto(pagina, wait_until="domcontentloaded")
+            return info.value.json()
+        finally:
+            browser.close()
 
 
 def naar_nl(tekst):
@@ -101,4 +124,6 @@ def parse(ruw):
 
 
 def haal_op():
-    return parse(haal_json(BRON_URL))
+    if BRON_URL.startswith("file:"):
+        return parse(haal_json(BRON_URL))
+    return parse(haal_json_via_browser(PAGINA))
