@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaartverkoop-overzicht</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<style>
+:root{--bg:#f3f1ec;--card:#fffdf8;--ink:#14213d;--mute:#5b6378;--line:#d9d5c8;--accent:#e8a500;--open:#1b7f4b;--soon:#c2410c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1526;--card:#18203a;--ink:#eef0f7;--mute:#9aa3bd;--line:#2b3556;--accent:#f2b705;--open:#4cc38a;--soon:#ff9b5e}}
+:root[data-theme="dark"]{--bg:#0f1526;--card:#18203a;--ink:#eef0f7;--mute:#9aa3bd;--line:#2b3556;--accent:#f2b705;--open:#4cc38a;--soon:#ff9b5e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
+main{max-width:780px;margin:0 auto;padding:28px 16px 56px}
+h1{font-size:clamp(1.9rem,6vw,2.8rem);font-weight:800;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 18px;max-width:58ch}
+.notice{background:var(--card);border-left:4px solid var(--accent);padding:10px 14px;margin:0 0 18px;font-size:.92rem;border-radius:4px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+select,input[type=date],label.chk,summary{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+label.chk{display:flex;gap:8px;align-items:center;cursor:pointer}
+summary{cursor:pointer;font-weight:600}
+details{margin-bottom:22px}
+.access{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;padding:12px 0}
+.access label{display:flex;flex-direction:column;gap:3px;font-size:.88rem;color:var(--mute)}
+select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ticket{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:14px;overflow:hidden}
+.head{padding:14px 16px 10px}
+.match{font-weight:800;font-size:1.15rem}
+.meta{color:var(--mute);font-size:.9rem;margin-top:2px}
+.phases{border-top:2px dashed var(--line);padding:6px 16px 12px}
+.ph{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.ph:last-child{border-bottom:0}
+.ph .g{font-weight:600}
+.ph .t{text-align:right;font-weight:800}
+.ph .cd{grid-column:2;text-align:right;font-size:.82rem;font-weight:600}
+.cd.soon{color:var(--soon)}.cd.open{color:var(--open)}.cd.past{color:var(--mute);font-weight:400}
+.ph.no{opacity:.5}
+.ph .badge{font-size:.78rem;font-weight:600;color:var(--open);margin-left:6px}
+.band{display:inline-block;margin-top:6px;font-size:.82rem;font-weight:600;border:1px solid var(--line);border-radius:99px;padding:2px 10px}
+.band::before{content:"●";margin-right:6px}
+.band.very-limited::before{color:var(--soon)}.band.limited::before{color:var(--accent)}.band.variable::before{color:var(--mute)}.band.often-available::before{color:var(--open)}
+.cal{font-size:.8rem;font-weight:600;color:var(--ink);margin-left:8px}
+.rules{margin-top:44px;border-top:2px dashed var(--line);padding-top:8px}
+.rules h2{font-size:1.5rem;font-weight:800;margin:14px 0 4px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+.rule .rn{font-weight:800;font-size:1.05rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.rule .rr{display:grid;grid-template-columns:130px 1fr;gap:2px 10px;font-size:.92rem;margin-top:6px}
+.rule .rr span:nth-child(odd){color:var(--mute)}
+@media (max-width:480px){.rule .rr{grid-template-columns:1fr}}
+.note{font-size:.86rem;color:var(--mute);padding:0 16px 12px}
+.foot{display:flex;gap:14px;flex-wrap:wrap;padding:0 16px 14px;font-size:.84rem;color:var(--mute)}
+.foot a{color:var(--ink);font-weight:600}
+.empty,.todo{color:var(--mute);font-size:.92rem;margin-top:18px}
+@media (max-width:480px){.ph{grid-template-columns:1fr}.ph .t,.ph .cd{text-align:left;grid-column:1}}
+</style>
+</head>
+<body>
+<main>
+<h1>Wanneer gaan de tickets in de verkoop?</h1>
+<p class="sub">Per wedstrijd zie je onder elkaar wanneer de verkoop start voor elke doelgroep. Stel hieronder in waar je lid van bent, dan laat de pagina alleen zien wat voor jou geldt.</p>
+<div class="notice"><strong>Gecontroleerd op 7 oktober 2026</strong> voor Ajax, N.E.C. en Borussia Dortmund. <strong>Eredivisie-momenten van 9 oktober</strong> komen uit eigen onderzoek op de clubsites; bij een datum zonder tijd is het uur nog niet bekend.</div>
+<details id="acc"><summary>Mijn toegang per club</summary><div class="access" id="access"></div></details>
+<div class="filters">
+<select id="fComp" aria-label="Competitie"><option value="">Alle competities</option></select>
+<select id="fClub" aria-label="Club"><option value="">Alle clubs</option></select>
+<label class="chk"><input type="checkbox" id="fPast"> Toon al gestarte verkoop</label>
+<label class="chk"><input type="checkbox" id="fAll"> Toon ook wedstrijden waar ik niet kan kopen</label>
+<label class="chk">Wedstrijd tussen <input type="date" id="fVan" aria-label="Vanaf datum"> en <input type="date" id="fTot" aria-label="Tot en met datum"></label>
+</div>
+<div id="list"></div>
+<p class="todo" id="upd"></p>
+<p class="todo" id="todo"></p>
+<section class="rules" id="regels">
+<h2>Globale verkoopregels per competitie</h2>
+<p class="sub">Dit zijn <strong>richtlijnen, geen exacte momenten</strong>. Er is nog geen wedstrijdschema gekoppeld, dus je ziet hier geen aftelling. Gebruik het om te bepalen bij welke clubs een lidmaatschap of vroeg opletten zin heeft. Deze gegevens komen uit eigen tabellen en zijn niet per wedstrijd gecontroleerd.</p>
+<div class="filters"><select id="rComp" aria-label="Competitie voor richtlijnen"><option value="">Alle competities</option></select><label class="chk"><input type="checkbox" id="rMid"> Alleen clubs met minstens "Middel" kans op vrije verkoop</label></div>
+<div id="rlist"></div>
+</section>
+</main>
+<script>fetch("data.json").then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(e=>{
+  document.getElementById("list").innerHTML='<p class="empty">De gegevens (data.json) konden niet worden geladen. Open de pagina via je GitHub Pages-adres en niet als los bestand.</p>';
+});
+function start(D){
+const {GROEPEN,TOEGANG,BANDEN,CLUBS,WEDSTRIJDEN,KANS,LINKS,REGELS,bijgewerkt}=D;
+
+const $ = id => document.getElementById(id);
+const nu = new Date();
+const pd = x => x.length>10 ? new Date(x) : new Date(x+"T00:00");
+const dag = d => d.toLocaleDateString("nl-NL",{weekday:"short",day:"numeric",month:"short"});
+const tijd = d => d.toLocaleTimeString("nl-NL",{hour:"2-digit",minute:"2-digit"});
+const dagTijd = d => dag(d)+" "+tijd(d);
+let mijn = {}; Object.entries(CLUBS).forEach(([k,c])=>mijn[k]=c.mijn);
+try{ Object.assign(mijn, JSON.parse(localStorage.getItem("mijnToegang")||"{}")); }catch(e){}
+
+Object.entries(CLUBS).forEach(([k,c])=>{
+  $("fClub").add(new Option(c.naam,k));
+  const opts = Object.entries(TOEGANG).map(([v,t])=>`<option value="${v}"${mijn[k]===v?" selected":""}>${t}</option>`).join("");
+  $("access").insertAdjacentHTML("beforeend",`<label>${c.naam}<select data-club="${k}">${opts}</select></label>`);
+});
+[...new Set(WEDSTRIJDEN.map(w=>w.comp))].forEach(c=>$("fComp").add(new Option(c,c)));
+$("access").addEventListener("change",e=>{
+  mijn[e.target.dataset.club]=e.target.value;
+  try{ localStorage.setItem("mijnToegang",JSON.stringify(mijn)); }catch(err){}
+  toon();
+});
+const p2=n=>String(n).padStart(2,"0");
+const gc=d=>`${d.getFullYear()}${p2(d.getMonth()+1)}${p2(d.getDate())}T${p2(d.getHours())}${p2(d.getMinutes())}00`;
+function agenda(c,w,f,af){
+  let dt;
+  if(f.dagAlleen){ const d2=new Date(f.start); d2.setDate(d2.getDate()+1); const g=d=>gc(d).slice(0,8); dt=g(f.start)+"/"+g(d2); }
+  else dt=gc(f.start)+"/"+gc(new Date(f.start.getTime()+15*60000));
+  const wt=w.aftrap.length>10?dagTijd(af):dag(af);
+  return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(`Kaartverkoop ${c.naam} – ${w.tegen} (${f.naam})`)+"&dates="+dt+"&ctz=Europe%2FAmsterdam&details="+encodeURIComponent(`Wedstrijd: ${wt}. Ticketpagina: ${c.url}`);
+}
+function countdown(s){
+  const ms=s-nu;
+  if(ms<=0) return {t:"Gestart",c:"past"};
+  const d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);
+  return d>0?{t:`Over ${d} d ${h} u`,c:d<4?"soon":""}:{t:`Over ${h} uur`,c:"soon"};
+}
+function toon(){
+  const comp=$("fComp").value, club=$("fClub").value, van=$("fVan").value, tot=$("fTot").value, ook=$("fPast").checked, alles=$("fAll").checked;
+  let verborgen=0;
+  const rijen = WEDSTRIJDEN.filter(w=>(!comp||w.comp===comp)&&(!club||w.club===club)&&(!van||w.aftrap.slice(0,10)>=van)&&(!tot||w.aftrap.slice(0,10)<=tot)).map(w=>{
+    const niveau=GROEPEN[mijn[w.club]].n;
+    const fases=w.fases.map(f=>({g:f[0],start:pd(f[1]),dagAlleen:f[1].length<=10,naam:f[2]||GROEPEN[f[0]].l,ok:GROEPEN[f[0]].n>=niveau&&GROEPEN[f[0]].n<9})).sort((a,b)=>a.start-b.start);
+    const mijnFases=fases.filter(f=>f.ok), volgende=mijnFases.find(f=>f.start>=nu);
+    return {w,fases,mijnFases,volgende,sleutel:volgende?volgende.start:new Date(8.64e15)};
+  }).filter(r=>{
+    if(!alles&&!r.mijnFases.length){verborgen++;return false;}
+    if(!ook&&!alles&&!r.volgende&&!(van||tot)) return false;
+    return true;
+  }).sort((a,b)=>a.sleutel-b.sleutel||new Date(a.w.aftrap)-new Date(b.w.aftrap));
+  let html="";
+  rijen.forEach(r=>{
+    const c=CLUBS[r.w.club], af=pd(r.w.aftrap), afTijd=r.w.aftrap.length>10;
+    html+=`<div class="ticket"><div class="head"><div class="match">${c.naam} – ${r.w.tegen}</div><div class="meta">${r.w.comp} · ${dag(af)} ${af.getFullYear()}${afTijd?", "+tijd(af):" (aftrap nog niet bekend)"}</div>${c.band?`<span class="band ${c.band}" title="Moeilijkheid om kaarten te krijgen, bron: Soccertrippers">Kaarten krijgen: ${BANDEN[c.band]}</span>`:""}</div><div class="phases">`;
+    r.fases.forEach(f=>{
+      const cd=countdown(f.start), eerste=r.volgende===f;
+      html+=`<div class="ph${f.ok?"":" no"}"><div class="g">${f.naam}${eerste?'<span class="badge">jouw eerstvolgende moment</span>':""}</div><div class="t">${f.dagAlleen?dag(f.start)+" (tijd onbekend)":dagTijd(f.start)}</div><div class="cd ${cd.c}">${cd.t}${f.ok&&f.start>=nu?`<a class="cal" href="${agenda(c,r.w,f,af)}" target="_blank" rel="noopener">Zet in agenda</a>`:""}</div></div>`;
+    });
+    html+=`</div>`+(r.w.noot?`<div class="note">${r.w.noot}</div>`:"")+`<div class="foot">${r.w.bron?`<a href="${r.w.bron}" target="_blank" rel="noopener">Bron (clubsite)</a>`:"<span>Bron: eigen onderzoek op de clubsite (9 okt)</span>"}<a href="${c.url}" target="_blank" rel="noopener">Ticketpagina ${c.naam}</a></div></div>`;
+  });
+  if(!html) html='<p class="empty">Geen verkoopmomenten voor deze selectie. Zet "Toon al gestarte verkoop" of "Toon ook wedstrijden waar ik niet kan kopen" aan, of kies een andere club.</p>';
+  if(verborgen&&!alles) html+=`<p class="empty">${verborgen} wedstrijd(en) verborgen omdat je er met je huidige toegang niet kunt kopen.</p>`;
+  $("list").innerHTML=html;
+}
+function toonRegels(){
+  const mid=$("rMid").checked, comp=$("rComp").value;
+  const kls=r=>r<0?"variable":r<=1?"very-limited":r<=3?"limited":r<=5?"variable":"often-available";
+  const alle=[];
+  Object.entries(REGELS).forEach(([c,lijst])=>{ if(!comp||comp===c) lijst.forEach(r=>alle.push({c,n:r[0],m:r[1],v:r[2],k:r[3],r:KANS[r[3]]??-1})); });
+  $("rlist").innerHTML=alle.filter(x=>!mid||x.r>=4).sort((a,b)=>b.r-a.r||a.n.localeCompare(b.n))
+    .map(x=>`<div class="rule"><div class="rn"><span>${x.n} <small style="color:var(--mute);font-weight:400">${x.c}</small></span><span class="band ${kls(x.r)}">Vrije verkoop: ${x.k||"onbekend"}</span></div><div class="rr"><span>Membership</span><span>${x.m}</span><span>Verkoopmoment</span><span>${x.v}</span></div>${LINKS[x.n]?`<div class="foot" style="padding:8px 0 0"><a href="${LINKS[x.n]}" target="_blank" rel="noopener">Naar de ticketshop</a></div>`:""}</div>`).join("");
+}
+Object.keys(REGELS).forEach(c=>$("rComp").add(new Option(c,c)));
+$("rComp").addEventListener("change",toonRegels);
+$("rMid").addEventListener("change",toonRegels);
+toonRegels();
+const gevuld=new Set(WEDSTRIJDEN.map(w=>w.club));
+$("todo").textContent="Nog in te vullen: "+Object.entries(CLUBS).filter(([k])=>!gevuld.has(k)).map(([,c])=>c.naam).join(", ")+".";
+["fComp","fClub","fPast","fAll","fVan","fTot"].forEach(i=>$(i).addEventListener("change",toon));
+toon();
+
+document.getElementById("upd").textContent="Gegevens bijgewerkt op "+new Date(bijgewerkt).toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"})+".";
+}
+</script>
+</body>
+</html>

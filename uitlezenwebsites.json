@@ -1,0 +1,1204 @@
+{
+ "GROEPEN": {
+  "seizoen": {
+   "n": 1,
+   "l": "Seizoenkaarthouders"
+  },
+  "lid": {
+   "n": 2,
+   "l": "Leden"
+  },
+  "clubkaart": {
+   "n": 3,
+   "l": "Clubkaarthouders"
+  },
+  "vrij": {
+   "n": 4,
+   "l": "Vrije verkoop"
+  },
+  "kids": {
+   "n": 9,
+   "l": "Kidsclubleden"
+  }
+ },
+ "TOEGANG": {
+  "seizoen": "Seizoenkaarthouder",
+  "lid": "Lid",
+  "clubkaart": "Clubkaarthouder",
+  "vrij": "Alleen vrije verkoop"
+ },
+ "BANDEN": {
+  "very-limited": "Zeer moeilijk",
+  "limited": "Beperkt",
+  "variable": "Wisselt per wedstrijd",
+  "often-available": "Vaak vrije verkoop"
+ },
+ "CLUBS": {
+  "ajax": {
+   "naam": "Ajax",
+   "land": "NL",
+   "band": "limited",
+   "mijn": "lid",
+   "url": "https://www.ajax.nl/fans/kaartverkoop"
+  },
+  "nec": {
+   "naam": "N.E.C.",
+   "land": "NL",
+   "mijn": "clubkaart",
+   "url": "https://tickets.nec-nijmegen.nl/dashboard"
+  },
+  "willem2": {
+   "naam": "Willem II",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://ticketshop.willem-ii.nl/dashboard"
+  },
+  "sparta": {
+   "naam": "Sparta Rotterdam",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://ticketshop.sparta-rotterdam.nl/dashboard"
+  },
+  "gae": {
+   "naam": "Go Ahead Eagles",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://gaeagles.tmtickets.nl/Events"
+  },
+  "heerenveen": {
+   "naam": "SC Heerenveen",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://tickets.sc-heerenveen.nl/dashboard"
+  },
+  "cambuur": {
+   "naam": "SC Cambuur",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://tickets.cambuur.nl/dashboard"
+  },
+  "groningen": {
+   "naam": "FC Groningen",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://www.fcgroningen.nl/kaartverkoopinformatie/"
+  },
+  "twente": {
+   "naam": "FC Twente",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://kaartverkoop.fctwente.nl/dashboard"
+  },
+  "psv": {
+   "naam": "PSV",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://ticketshop.psv.nl/nl-NL/categories/PSV-1"
+  },
+  "feyenoord": {
+   "naam": "Feyenoord",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://tickets.feyenoord.com/dashboard"
+  },
+  "bvb": {
+   "naam": "Borussia Dortmund",
+   "land": "DE",
+   "band": "very-limited",
+   "mijn": "vrij",
+   "url": "https://www.bvb.de"
+  },
+  "gladbach": {
+   "naam": "Borussia Mönchengladbach",
+   "land": "DE",
+   "band": "variable",
+   "mijn": "vrij",
+   "url": "https://www.borussia.de"
+  },
+  "schalke": {
+   "naam": "Schalke 04",
+   "land": "DE",
+   "band": "limited",
+   "mijn": "vrij",
+   "url": "https://schalke04.de"
+  },
+  "leverkusen": {
+   "naam": "Bayer Leverkusen",
+   "land": "DE",
+   "band": "limited",
+   "mijn": "vrij",
+   "url": "https://www.bayer04.de"
+  },
+  "frankfurt": {
+   "naam": "Eintracht Frankfurt",
+   "land": "DE",
+   "band": "variable",
+   "mijn": "vrij",
+   "url": "https://www.eintracht.de"
+  },
+  "koeln": {
+   "naam": "1. FC Köln",
+   "land": "DE",
+   "band": "variable",
+   "mijn": "vrij",
+   "url": "https://fc.de"
+  }
+ },
+ "WEDSTRIJDEN": [
+  {
+   "club": "ajax",
+   "tegen": "AZ",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-31T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-22T10:00"
+    ],
+    [
+     "lid",
+     "2026-09-23T10:00",
+     "Leden Supportersvereniging Ajax"
+    ],
+    [
+     "clubkaart",
+     "2026-09-24T10:00"
+    ],
+    [
+     "vrij",
+     "2026-09-25T10:00",
+     "Vrije verkoop (geverifieerd account)"
+    ]
+   ],
+   "noot": "Seizoenkaart: 1 kaart per kaart, max. 2 per account. Leden: 2 kaarten.",
+   "bron": "https://www.ajax.nl/artikelen/kaartverkoop-laatste-vier-eredivisie-thuiswedstrijden-van-2026"
+  },
+  {
+   "club": "ajax",
+   "tegen": "ADO Den Haag",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22T14:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-22T10:00"
+    ],
+    [
+     "lid",
+     "2026-09-23T10:00",
+     "Leden Supportersvereniging Ajax"
+    ],
+    [
+     "clubkaart",
+     "2026-09-24T10:00"
+    ]
+   ],
+   "noot": "Club Card verplicht (geen aparte vrije verkoop).",
+   "bron": "https://www.ajax.nl/artikelen/kaartverkoop-laatste-vier-eredivisie-thuiswedstrijden-van-2026"
+  },
+  {
+   "club": "ajax",
+   "tegen": "FC Utrecht",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-06T14:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-22T10:00"
+    ],
+    [
+     "lid",
+     "2026-09-23T10:00",
+     "Leden Supportersvereniging Ajax"
+    ],
+    [
+     "clubkaart",
+     "2026-09-24T10:00"
+    ]
+   ],
+   "noot": "Club Card verplicht (geen aparte vrije verkoop).",
+   "bron": "https://www.ajax.nl/artikelen/kaartverkoop-laatste-vier-eredivisie-thuiswedstrijden-van-2026"
+  },
+  {
+   "club": "ajax",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-13T20:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-22T10:00"
+    ],
+    [
+     "lid",
+     "2026-09-23T10:00",
+     "Leden Supportersvereniging Ajax"
+    ],
+    [
+     "clubkaart",
+     "2026-09-24T10:00"
+    ],
+    [
+     "vrij",
+     "2026-09-25T10:00",
+     "Vrije verkoop (geverifieerd account)"
+    ]
+   ],
+   "noot": "Seizoenkaart: 1 kaart per kaart, max. 2 per account. Leden: 2 kaarten.",
+   "bron": "https://www.ajax.nl/artikelen/kaartverkoop-laatste-vier-eredivisie-thuiswedstrijden-van-2026"
+  },
+  {
+   "club": "groningen",
+   "tegen": "FC Utrecht",
+   "comp": "Eredivisie",
+   "aftrap": "2026-08-09T14:30",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-07-15T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-07-22T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2026-08-28T20:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-07-29T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-08-05T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-09-06T12:15",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-08-05T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "clubkaart",
+     "2026-08-12T10:00",
+     "(Seizoen)clubkaarthouders, 4 per houder"
+    ]
+   ],
+   "noot": "Geen vrije verkoop genoemd: ook de reguliere verkoop is voor (seizoen)clubkaarthouders.",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2026-09-18T20:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-08-19T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-08-26T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-18T16:45",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-09-16T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ]
+   ],
+   "noot": "Voorverkoop via toewijzingsregeling; geen reguliere verkoop genoemd.",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "Sparta Rotterdam",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-01T16:45",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-09-30T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-10-07T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-27",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-10-28T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-11-04T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "Go Ahead Eagles",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-10T16:45",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-12-09T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-12-16T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "groningen",
+   "tegen": "N.E.C.",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-31",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-12-30T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2027-01-06T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-20",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-01",
+     "Start verkoop (tussen 1 en 5 okt)"
+    ]
+   ],
+   "noot": "Feyenoord verkoopt in blokken van meerdere wedstrijden tegelijk.",
+   "bron": ""
+  },
+  {
+   "club": "psv",
+   "tegen": "Go Ahead Eagles",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-28",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-05",
+     "Start verkoop (tussen 5 en 7 okt)"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "heerenveen",
+   "tegen": "Feyenoord",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-16",
+     "Start verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "cambuur",
+   "tegen": "PSV",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-31",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-13",
+     "Start verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "gae",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-06",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-13",
+     "Start verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "gae",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22",
+   "fases": [
+    [
+     "vrij",
+     "2026-09-15",
+     "Start verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "twente",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-06",
+     "Start verkoop"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "sparta",
+   "tegen": "N.E.C.",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-05",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-28",
+     "Start verkoop (28 of 29 okt)"
+    ]
+   ],
+   "noot": "",
+   "bron": ""
+  },
+  {
+   "club": "bvb",
+   "tegen": "Werder Bremen",
+   "comp": "DFB-Pokal",
+   "aftrap": "2026-10-27T20:45",
+   "fases": [
+    [
+     "lid",
+     "2026-09-25T12:00",
+     "Leden (BVB-Mitglieder)"
+    ],
+    [
+     "vrij",
+     "2026-09-28T12:00"
+    ]
+   ],
+   "noot": "Max. 6 kaarten per lid of fan, zolang er kaarten zijn.",
+   "bron": "https://www.bvb.de/de/de/tickets/ticket-informationen/vorverkaufstermine.html"
+  },
+  {
+   "club": "bvb",
+   "tegen": "SV Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-07T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-08T12:00",
+     "Leden (BVB-Mitglieder)"
+    ],
+    [
+     "vrij",
+     "2026-10-09T12:00"
+    ]
+   ],
+   "noot": "Max. 6 kaarten per lid of fan, zolang er kaarten zijn.",
+   "bron": "https://www.bvb.de/de/de/tickets/ticket-informationen/vorverkaufstermine.html"
+  },
+  {
+   "club": "bvb",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-29T19:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-12T12:00",
+     "Leden (BVB-Mitglieder)"
+    ],
+    [
+     "vrij",
+     "2026-10-13T12:00"
+    ]
+   ],
+   "noot": "Max. 6 kaarten per lid of fan, zolang er kaarten zijn.",
+   "bron": "https://www.bvb.de/de/de/tickets/ticket-informationen/vorverkaufstermine.html"
+  },
+  {
+   "club": "nec",
+   "tegen": "Levski Sofia",
+   "comp": "Europa League",
+   "aftrap": "2026-10-15T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-28T12:00"
+    ],
+    [
+     "clubkaart",
+     "2026-10-02T12:00"
+    ]
+   ],
+   "noot": "Clubkaart verplicht, 1 kaart per kaart.",
+   "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
+  },
+  {
+   "club": "nec",
+   "tegen": "Omonia Nicosia",
+   "comp": "Europa League",
+   "aftrap": "2026-11-05T18:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-19T12:00"
+    ],
+    [
+     "clubkaart",
+     "2026-10-21T12:00"
+    ],
+    [
+     "kids",
+     "2026-10-21T12:00"
+    ]
+   ],
+   "noot": "Clubkaart verplicht, 1 kaart per kaart. Kidsclub: 2 kaarten per lid.",
+   "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
+  },
+  {
+   "club": "nec",
+   "tegen": "Stade Rennes",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-26T12:00"
+    ],
+    [
+     "clubkaart",
+     "2026-10-28T12:00"
+    ],
+    [
+     "kids",
+     "2026-10-28T12:00"
+    ]
+   ],
+   "noot": "Clubkaart verplicht, 1 kaart per kaart. Kidsclub: 2 kaarten per lid.",
+   "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
+  },
+  {
+   "club": "nec",
+   "tegen": "SL Benfica",
+   "comp": "Europa League",
+   "aftrap": "2027-01-21T18:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-12-07T12:00"
+    ],
+    [
+     "clubkaart",
+     "2026-12-09T12:00"
+    ],
+    [
+     "kids",
+     "2026-12-09T12:00"
+    ]
+   ],
+   "noot": "Clubkaart verplicht, 1 kaart per kaart. Kidsclub: 2 kaarten per lid.",
+   "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
+  }
+ ],
+ "KANS": {
+  "Praktisch nul": 0,
+  "Zeer laag": 1,
+  "Laag": 2,
+  "Laag tot middel": 3,
+  "Middel": 4,
+  "Redelijk": 5,
+  "Goed": 6,
+  "Hoog": 7,
+  "Zeer hoog": 8
+ },
+ "LINKS": {
+  "Real Madrid": "https://www.realmadrid.com/en-US/tickets",
+  "FC Barcelona": "https://www.fcbarcelona.com/en/tickets/football",
+  "Sevilla FC": "https://entradas.sevillafc.es/",
+  "Real Betis": "https://en.realbetisbalompie.es/tickets/",
+  "Valencia CF": "https://www.valenciacf.com/tickets",
+  "Real Sociedad": "https://tickets.realsociedad.eus/real_sociedad/events/57857?hl=en-US",
+  "Villarreal": "https://villarrealcf.es/es/venta-de-entradas/",
+  "Athletic Club": "https://www.athletic-club.eus/en/tickets/",
+  "FC Utrecht": "https://ticketing.fcutrecht.nl/dashboard",
+  "AZ": "https://www.az.nl/wedstrijden/tickets",
+  "Sparta Rotterdam": "https://ticketshop.sparta-rotterdam.nl/dashboard",
+  "Go Ahead Eagles": "https://gaeagles.tmtickets.nl/Events",
+  "Feyenoord": "https://tickets.feyenoord.com/dashboard",
+  "PSV": "https://ticketshop.psv.nl/nl-NL/categories/PSV-1",
+  "NEC": "https://tickets.nec-nijmegen.nl/dashboard",
+  "FC Groningen": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
+  "SC Heerenveen": "https://tickets.sc-heerenveen.nl/dashboard",
+  "PEC Zwolle": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+  "Fortuna Sittard": "https://ticketshop.fortunasittard.nl/dashboard",
+  "Excelsior": "https://tickets.excelsiorrotterdam.nl/dashboard",
+  "Willem II": "https://ticketshop.willem-ii.nl/dashboard",
+  "SC Cambuur": "https://tickets.cambuur.nl/dashboard",
+  "ADO Den Haag": "https://adodenhaag.nl/nl/tickets/kaartverkoop",
+  "FC Twente": "https://kaartverkoop.fctwente.nl/dashboard",
+  "Ajax": "https://www.ajax.nl/fans/kaartverkoop"
+ },
+ "REGELS": {
+  "Premier League": [
+   [
+    "Arsenal",
+    "Vrijwel altijd",
+    "Silver ± 2 maanden vooraf, Red ± 1 maand vooraf",
+    "Zeer laag"
+   ],
+   [
+    "Aston Villa",
+    "Vaak",
+    "± 4 weken vooraf",
+    "Laag tot middel"
+   ],
+   [
+    "Bournemouth",
+    "Loyalty points",
+    "± 5 weken vooraf",
+    "Zeer laag"
+   ],
+   [
+    "Brentford",
+    "Ja",
+    "4-5 weken vooraf",
+    "Zeer laag"
+   ],
+   [
+    "Brighton",
+    "Aanbevolen",
+    "4-6 weken vooraf",
+    "Laag"
+   ],
+   [
+    "Burnley",
+    "Niet altijd",
+    "3-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Chelsea",
+    "Ja",
+    "42 dagen vooraf",
+    "Zeer laag"
+   ],
+   [
+    "Crystal Palace",
+    "Handig maar niet altijd nodig",
+    "3-5 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Everton",
+    "Vaak",
+    "4-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Fulham",
+    "Vaak niet noodzakelijk",
+    "3-5 weken vooraf",
+    "Redelijk"
+   ],
+   [
+    "Leeds United",
+    "Ja voor populaire wedstrijden",
+    "4-6 weken vooraf",
+    "Laag"
+   ],
+   [
+    "Liverpool",
+    "Ja",
+    "1-2 grote members ballots per seizoenshelft",
+    "Praktisch nul"
+   ],
+   [
+    "Manchester City",
+    "Ja",
+    "Meerdere wedstrijden tegelijk gedurende seizoen",
+    "Middel"
+   ],
+   [
+    "Manchester United",
+    "Ja",
+    "Meestal 6-8 weken vooraf via ballot",
+    "Praktisch nul"
+   ],
+   [
+    "Newcastle United",
+    "Ja",
+    "4-8 weken vooraf",
+    "Praktisch nul"
+   ],
+   [
+    "Nottingham Forest",
+    "Handig",
+    "4-6 weken vooraf",
+    "Laag tot middel"
+   ],
+   [
+    "Sunderland",
+    "Vaak niet nodig",
+    "3-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Tottenham Hotspur",
+    "Ja",
+    "Verkoopvensters enkele maanden vooraf",
+    "Zeer laag"
+   ],
+   [
+    "West Ham United",
+    "Niet altijd",
+    "3-6 weken vooraf",
+    "Redelijk"
+   ],
+   [
+    "Wolverhampton Wanderers",
+    "Niet altijd",
+    "3-5 weken vooraf",
+    "Redelijk"
+   ]
+  ],
+  "Eredivisie": [
+   [
+    "Ajax",
+    "Vaak wel",
+    "In blokken van 4 thuiswedstrijden tegelijk; ± 5 tot 12 weken vooraf",
+    "Laag"
+   ],
+   [
+    "Feyenoord",
+    "Vaak wel",
+    "In blokken van meerdere wedstrijden; o.a. wedstrijd 20 dec vanaf 1-5 okt (± 11 weken vooraf)",
+    "Zeer laag"
+   ],
+   [
+    "PSV",
+    "Regelmatig",
+    "± 8 weken vooraf (PSV - Go Ahead Eagles 28 nov: start 5-7 okt)",
+    "Laag"
+   ],
+   [
+    "FC Twente",
+    "Soms",
+    "± 6-7 weken vooraf (Twente - Willem II 22 nov: start 6 okt)",
+    "Middel"
+   ],
+   [
+    "FC Utrecht",
+    "Vaak wel",
+    "± 4 weken vooraf (o.a. Utrecht - N.E.C.)",
+    "Middel"
+   ],
+   [
+    "AZ",
+    "Meestal niet",
+    "± 4 weken of meer vooraf (Groningen thuis 8 nov was op 9 okt al in verkoop)",
+    "Goed"
+   ],
+   [
+    "Go Ahead Eagles",
+    "Soms",
+    "± 8-10 weken vooraf (Twente 6 dec: start 13 okt; Fortuna 22 nov: start 15 sep)",
+    "Middel"
+   ],
+   [
+    "NEC",
+    "Vaak wel",
+    "Steeds ± 3 weken vooraf",
+    "Goed"
+   ],
+   [
+    "SC Heerenveen",
+    "Meestal niet",
+    "± 3 weken vooraf (Feyenoord 8 nov: start 16 okt)",
+    "Goed"
+   ],
+   [
+    "FC Groningen",
+    "Soms",
+    "(Seizoen)clubkaarthouders ± 4,5 weken vooraf, vrije verkoop ± 2,5-3,5 weken vooraf (steeds om 10:00); Heerenveen (21 nov) en Feyenoord (13 dec) nog niet bekend",
+    "Goed"
+   ],
+   [
+    "Heracles Almelo",
+    "Meestal niet",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "PEC Zwolle",
+    "Meestal niet",
+    "± 3-4 weken vooraf (ADO 1 nov: verkoop al gestart)",
+    "Hoog"
+   ],
+   [
+    "Sparta Rotterdam",
+    "Meestal niet",
+    "± 5 weken vooraf (N.E.C. 5 dec: start 28/29 okt)",
+    "Hoog"
+   ],
+   [
+    "Fortuna Sittard",
+    "Meestal niet",
+    "Hele eerste seizoenshelft al in de zomer in verkoop",
+    "Zeer hoog"
+   ],
+   [
+    "Excelsior",
+    "Meestal niet",
+    "± 3-4 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Willem II",
+    "Meestal niet",
+    "± 3-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "SC Cambuur",
+    "Onbekend",
+    "± 2,5 weken vooraf (PSV 31 okt: start 13 okt)",
+    null
+   ],
+   [
+    "ADO Den Haag",
+    "Onbekend",
+    "± 4-6 weken vooraf (op 7 okt gestart voor wedstrijden in november)",
+    null
+   ]
+  ],
+  "La Liga": [
+   [
+    "Real Madrid",
+    "Nee, maar voordeel",
+    "Maar enkele weken vooraf: op 9 okt stonden alleen de eerstvolgende 3 wedstrijden online (Sevilla 18 okt: leden al open, vrije verkoop 'binnenkort'); bron clubsite",
+    "Middel"
+   ],
+   [
+    "FC Barcelona",
+    "Nee, maar voordeel",
+    "La Liga ± 10-14 weken vooraf (op 9 okt: 19/20 dec te koop, 16/17 jan nog niet); Champions League veel eerder (27 jan al te koop). Of het ledenverkoop of vrije verkoop is, is niet te zien",
+    "Middel"
+   ],
+   [
+    "Atlético Madrid",
+    "Niet noodzakelijk",
+    "Wisselt: 2 weken tot ± 4 maanden vooraf; in blokken (6 thuiswedstrijden sep-dec tegelijk: leden 24 aug, vrije verkoop 26 aug; bron fanblog, niet clubsite)",
+    "Hoog"
+   ],
+   [
+    "Athletic Club",
+    "Soms",
+    "± 3+ weken vooraf, eerst ledenvoorverkoop: op 9 okt was de voorverkoop actief voor Real Sociedad (1 nov, 23 dagen vooraf); Espanyol (22 nov) nog 'see options'",
+    "Middel"
+   ],
+   [
+    "Real Sociedad",
+    "Niet noodzakelijk",
+    "2-5 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Real Betis",
+    "Niet noodzakelijk",
+    "Minder dan ± 3 weken vooraf: op 9 okt waren wedstrijden t/m 21 okt te koop, Málaga (31 okt) nog niet; bron clubsite",
+    "Hoog"
+   ],
+   [
+    "Sevilla FC",
+    "Niet noodzakelijk",
+    "Hele seizoen al in verkoop (sinds de zomer); wedstrijden van mei 2027 hebben al prijzen",
+    "Hoog"
+   ],
+   [
+    "Valencia CF",
+    "Niet noodzakelijk",
+    "Ver vooraf, ook als datum/tijd nog niet vaststaat: op 9 okt hadden Real Madrid, Osasuna, Espanyol en Málaga (datum nog te bepalen) al ticketknoppen; bron clubsite",
+    "Hoog"
+   ],
+   [
+    "Villarreal",
+    "Niet noodzakelijk",
+    "Zeer laat voor La Liga: Elche (17 okt) stond op 9 okt nog op 'próximamente'; Champions League-wedstrijd van 13 okt wel al te koop; Real Madrid-uit uitverkocht",
+    "Zeer hoog"
+   ],
+   [
+    "Celta Vigo",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Getafe",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Osasuna",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Rayo Vallecano",
+    "Soms",
+    "1-4 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Mallorca",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Girona",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Alavés",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Levante",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Elche",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Oviedo",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Espanyol",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ]
+  ],
+  "Serie A": [
+   [
+    "Juventus",
+    "Nee, wel voordeel",
+    "2-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Inter",
+    "Nee, wel voordeel",
+    "2-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "AC Milan",
+    "Nee, wel voordeel",
+    "2-6 weken vooraf",
+    "Middel"
+   ],
+   [
+    "Napoli",
+    "Niet noodzakelijk",
+    "2-5 weken vooraf",
+    "Goed"
+   ],
+   [
+    "Roma",
+    "Niet noodzakelijk",
+    "2-5 weken vooraf",
+    "Goed"
+   ],
+   [
+    "Lazio",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Atalanta",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Fiorentina",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Bologna",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Torino",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Genoa",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Sampdoria",
+    "Niet noodzakelijk",
+    "1-4 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Udinese",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Cagliari",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Lecce",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Parma",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Sassuolo",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Zeer hoog"
+   ],
+   [
+    "Como",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Pisa",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Hoog"
+   ],
+   [
+    "Cremonese",
+    "Niet noodzakelijk",
+    "1-3 weken vooraf",
+    "Hoog"
+   ]
+  ]
+ },
+ "bijgewerkt": "2026-10-16"
+}
