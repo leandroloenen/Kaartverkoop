@@ -685,16 +685,6 @@
   },
   {
    "club": "nec",
-   "tegen": "Fortuna Sittard",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-18T20:00",
-   "fases": [],
-   "noot": "Nu in de verkoop (inloggen nodig); startmoment onbekend.",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---Fortuna-Sittard-VriendenLoterij-Eredivisie-2026---2027",
-   "auto": true
-  },
-  {
-   "club": "nec",
    "tegen": "FC Groningen",
    "comp": "Eredivisie",
    "aftrap": "2026-10-25T14:30",
@@ -1300,5 +1290,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-17"
+ "bijgewerkt": "2026-10-19"
 }
