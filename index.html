@@ -127,16 +127,16 @@ function toon(){
     const niveau=GROEPEN[mijn[w.club]].n;
     const fases=w.fases.map(f=>({g:f[0],start:pd(f[1]),dagAlleen:f[1].length<=10,naam:f[2]||GROEPEN[f[0]].l,ok:GROEPEN[f[0]].n>=niveau&&GROEPEN[f[0]].n<9})).sort((a,b)=>a.start-b.start);
     const mijnFases=fases.filter(f=>f.ok), volgende=mijnFases.find(f=>f.start>=nu);
-    return {w,fases,mijnFases,volgende,sleutel:volgende?volgende.start:new Date(8.64e15)};
+    return {w,fases,mijnFases,volgende,nu:!!w.nu&&(mijnFases.length>0||!fases.length),sleutel:volgende?volgende.start:new Date(8.64e15)};
   }).filter(r=>{
-    if(!alles&&!r.mijnFases.length){verborgen++;return false;}
-    if(!ook&&!alles&&!r.volgende&&!(van||tot)) return false;
+    if(!alles&&!r.mijnFases.length&&!r.nu){verborgen++;return false;}
+    if(!ook&&!alles&&!r.volgende&&!r.nu&&!(van||tot)) return false;
     return true;
   }).sort((a,b)=>a.sleutel-b.sleutel||new Date(a.w.aftrap)-new Date(b.w.aftrap));
   let html="";
   rijen.forEach(r=>{
     const c=CLUBS[r.w.club], af=pd(r.w.aftrap), afTijd=r.w.aftrap.length>10;
-    html+=`<div class="ticket"><div class="head"><div class="match">${c.naam} – ${r.w.tegen}</div><div class="meta">${r.w.comp} · ${dag(af)} ${af.getFullYear()}${afTijd?", "+tijd(af):" (aftrap nog niet bekend)"}</div>${c.band?`<span class="band ${c.band}" title="Moeilijkheid om kaarten te krijgen, bron: Soccertrippers">Kaarten krijgen: ${BANDEN[c.band]}</span>`:""}</div><div class="phases">`;
+    html+=`<div class="ticket"><div class="head"><div class="match">${c.naam} – ${r.w.tegen}</div><div class="meta">${r.w.comp} · ${dag(af)} ${af.getFullYear()}${afTijd?", "+tijd(af):" (aftrap nog niet bekend)"}</div>${c.band?`<span class="band ${c.band}" title="Moeilijkheid om kaarten te krijgen, bron: Soccertrippers">Kaarten krijgen: ${BANDEN[c.band]}</span>`:""}${r.nu?'<span class="band often-available" style="margin-left:6px">Nu te koop</span>':""}</div><div class="phases">`;
     r.fases.forEach(f=>{
       const cd=countdown(f.start), eerste=r.volgende===f;
       html+=`<div class="ph${f.ok?"":" no"}"><div class="g">${f.naam}${eerste?'<span class="badge">jouw eerstvolgende moment</span>':""}</div><div class="t">${f.dagAlleen?dag(f.start)+" (tijd onbekend)":dagTijd(f.start)}</div><div class="cd ${cd.c}">${cd.t}${f.ok&&f.start>=nu?`<a class="cal" href="${agenda(c,r.w,f,af)}" target="_blank" rel="noopener">Zet in agenda</a>`:""}</div></div>`;
