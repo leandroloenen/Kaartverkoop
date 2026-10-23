@@ -73,15 +73,33 @@ def competitie(naam):
     return naam or "Onbekend"
 
 
+def groep_uit_knoptekst(tekst):
+    """Gok de doelgroep uit de knoptekst. Geeft (groep, label); bij onzekerheid 'vrij' met de ruwe tekst als label."""
+    laag = tekst.lower()
+    if "(s)cc" in laag:
+        return "clubkaart", LABELS_KNOP["clubkaart"]
+    if "scc" in laag:
+        return "seizoen", LABELS_KNOP["seizoen"]
+    if any(w in laag for w in ("clubkaart", "club card", "clubcard")):
+        return "clubkaart", LABELS_KNOP["clubkaart"]
+    if "seizoen" in laag:
+        return "seizoen", LABELS_KNOP["seizoen"]
+    if any(w in laag for w in ("leden", "lid ", "member")):
+        return "lid", "Leden"
+    print(f"    let op: verkoopmoment met onbekende doelgroep, laat het even controleren: \"{tekst}\"")
+    return "vrij", tekst
+
+
 def fases_uit_knop(item):
     knop = item.get("ButtonData") or {}
     tekst = (knop.get("TranslationCode") or "").strip()
     fases = []
+    laag = tekst.lower()
     if (knop.get("ActionType") == "Disabled" and knop.get("ActiveTill")
-            and tekst.lower().startswith("verkoop") and "info volgt" not in tekst.lower()):
-        laag = tekst.lower()
-        g = "clubkaart" if "(s)cc" in laag else "seizoen" if "scc" in laag else "clubkaart"
-        fases.append([g, utc_naar_nl(knop["ActiveTill"]).strftime("%Y-%m-%dT%H:%M"), LABELS_KNOP[g]])
+            and any(c.isdigit() for c in tekst) and "info volgt" not in laag
+            and knop["ActiveTill"] < item["EventStartDateTime"]):
+        g, label = groep_uit_knoptekst(tekst)
+        fases.append([g, utc_naar_nl(knop["ActiveTill"]).strftime("%Y-%m-%dT%H:%M"), label])
     if item.get("HasGeneralSale") and item.get("OnGeneralSaleFrom"):
         fases.append(["vrij", utc_naar_nl(item["OnGeneralSaleFrom"]).strftime("%Y-%m-%dT%H:%M"), LABELS_KNOP["vrij"]])
     return fases, tekst
@@ -164,6 +182,14 @@ def fases_uit_tekst(item, aftrap):
 
 def parse(ruw, club, thuis_naam=None):
     uit = []
+    if not thuis_naam:  # herken de hoofdploeg: de naam die het vaakst als thuisteam voorkomt
+        tellers = {}
+        for tab in ruw.get("TabItems", []):
+            if tab.get("TranslationCode") == "SALE-CATEGORY.MATCHHOME":
+                for item in tab.get("Items", []):
+                    n = item.get("NameHomeTeam")
+                    tellers[n] = tellers.get(n, 0) + 1
+        thuis_naam = max(tellers, key=tellers.get) if tellers else None
     for tab in ruw.get("TabItems", []):
         if tab.get("TranslationCode") != "SALE-CATEGORY.MATCHHOME":
             continue  # alleen thuiswedstrijden
@@ -175,12 +201,13 @@ def parse(ruw, club, thuis_naam=None):
             fases += fases_uit_tekst(item, aftrap)
             code = (item.get("ButtonData") or {}).get("TranslationCode")
             nu = bool(item.get("HasTicketsAvailable")) and code in ("BTN.SALE.BUYNOW", "BTN.SALE.LOGINTOBUY")
+            info = (not fases) and (not nu) and ("volgt" in (knoptekst or "").lower())
             noot = ""
             if not fases and nu:
                 noot = "Nu in de verkoop; startmoment onbekend."
-            elif not fases and (knoptekst or "").lower().startswith("info volgt"):
+            elif info:
                 noot = "Verkoopmomenten nog niet bekendgemaakt."
-            elif knoptekst.lower().startswith("verkoop"):
+            elif fases and knoptekst and any(c.isdigit() for c in knoptekst):
                 noot = "Bron: " + knoptekst
             uit.append({
                 "club": club,
@@ -189,6 +216,7 @@ def parse(ruw, club, thuis_naam=None):
                 "aftrap": aftrap.strftime("%Y-%m-%dT%H:%M"),
                 "fases": sorted(fases, key=lambda f: f[1]),
                 "nu": nu,
+                "info": info,
                 "noot": noot,
                 "bron": item.get("DeepLinkRoute") or "",
             })
