@@ -54,6 +54,11 @@ def main():
             print(f"[{club}] WAARSCHUWING: geen wedstrijden gevonden; oude gegevens blijven staan")
             continue
 
+        if club not in data["CLUBS"]:  # nieuwe club: ook in de clublijst van de pagina zetten
+            data["CLUBS"][club] = {"naam": getattr(module, "NAAM", club), "land": "NL", "mijn": "vrij",
+                                   "url": getattr(module, "PAGINA", "")}
+            print(f"[{club}] nieuwe club toegevoegd aan de clublijst")
+
         toe = []
         for w in nieuw:
             w["auto"] = True
