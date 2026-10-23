@@ -77,6 +77,11 @@ def main():
             print(f"[{club}] WAARSCHUWING: ineens veel minder wedstrijden ({len(toe)} i.p.v. {len(oud_auto)}); oude gegevens blijven staan")
             continue
 
+        for k, w in list(handm.items()):  # handmatige invoer zonder tijd die de club niet meer noemt
+            if len(w["aftrap"]) == 10 and k not in {sleutel(x) for x in toe}:
+                print(f"[{club}] VERWIJDERT verouderde handmatige invoer zonder tijd: {k[1]} op {k[2]}")
+                rest = [x for x in rest if x is not w]
+
         oud_k = {sleutel(w): w for w in oud_auto}
         nieuw_k = {sleutel(w): w for w in toe}
         for k in nieuw_k.keys() & oud_k.keys():
