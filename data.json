@@ -456,36 +456,6 @@
    "bron": ""
   },
   {
-   "club": "heerenveen",
-   "tegen": "Feyenoord",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-16",
-     "Start verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
-   "club": "cambuur",
-   "tegen": "PSV",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-31",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-13",
-     "Start verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
    "club": "gae",
    "tegen": "FC Twente",
    "comp": "Eredivisie",
@@ -960,43 +930,31 @@
   },
   {
    "club": "utrecht",
-   "tegen": "ADO Den Haag Vrouwen",
+   "tegen": "PEC Zwolle",
    "comp": "Eredivisie",
-   "aftrap": "2026-10-25T16:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "utrecht",
-   "tegen": "De Graafschap Vrouwen",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-01T16:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "utrecht",
-   "tegen": "AZ Vrouwen",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-22T16:45",
+   "aftrap": "2026-10-24T16:30",
    "fases": [],
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---PEC-Zwolle-VriendenLoterij-Eredivisie-2026-2027",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "N.E.C.",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---N.E.C.-VriendenLoterij-Eredivisie-2026-2027",
    "auto": true
   },
   {
    "club": "sparta",
-   "tegen": "AFC Ajax",
+   "tegen": "Ajax",
    "comp": "Eredivisie",
    "aftrap": "2026-10-25T16:45",
    "fases": [],
@@ -1040,6 +998,11 @@
      "vrij",
      "2026-10-28T11:00",
      "Verkoop start 28/10, 11:00 uur"
+    ],
+    [
+     "vrij",
+     "2026-10-28T11:00",
+     "Start verkoop (doelgroep onbekend): Verkoop start 28/10, 11:00 uur"
     ]
    ],
    "nu": false,
@@ -1058,6 +1021,11 @@
      "vrij",
      "2026-11-25T11:00",
      "Verkoop start 25/11, 11:00 uur"
+    ],
+    [
+     "vrij",
+     "2026-11-25T11:00",
+     "Start verkoop (doelgroep onbekend): Verkoop start 25/11, 11:00 uur"
     ]
    ],
    "nu": false,
@@ -1068,7 +1036,7 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "N.E.C. Nijmegen",
+   "tegen": "N.E.C.",
    "comp": "Eredivisie",
    "aftrap": "2026-10-31T18:45",
    "fases": [],
@@ -1080,19 +1048,7 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "Feyenoord (Oost/Zuid/Westtribune)",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T12:15",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "heerenveen",
-   "tegen": "Feyenoord (Noordtribune)",
+   "tegen": "Feyenoord",
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T12:15",
    "fases": [],
@@ -1112,6 +1068,11 @@
      "vrij",
      "2026-11-13T13:00",
      "Vanaf 13 november 13:00 uur."
+    ],
+    [
+     "vrij",
+     "2026-11-13T13:00",
+     "Start verkoop (doelgroep onbekend): Vanaf 13 november 13:00 uur."
     ]
    ],
    "nu": false,
@@ -1358,6 +1319,11 @@
      "vrij",
      "2026-12-01T08:59",
      "01-12-2026 | 9.00 uur"
+    ],
+    [
+     "vrij",
+     "2026-12-01T08:59",
+     "Start verkoop (doelgroep onbekend): 01-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
@@ -1368,14 +1334,14 @@
   },
   {
    "club": "twente",
-   "tegen": "sc Heerenveen",
+   "tegen": "SC Heerenveen",
    "comp": "Eredivisie",
    "aftrap": "2027-01-23T20:00",
    "fases": [
     [
      "vrij",
      "2026-12-15T08:59",
-     "15-12-2026 | 9.00 uur"
+     "Start verkoop (doelgroep onbekend): 15-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
@@ -1394,6 +1360,11 @@
      "vrij",
      "2026-12-22T08:59",
      "22-12-2026 | 9.00 uur"
+    ],
+    [
+     "vrij",
+     "2026-12-22T08:59",
+     "Start verkoop (doelgroep onbekend): 22-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
