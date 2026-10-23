@@ -142,6 +142,24 @@
    "band": "variable",
    "mijn": "vrij",
    "url": "https://fc.de"
+  },
+  "utrecht": {
+   "naam": "FC Utrecht",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://ticketing.fcutrecht.nl/dashboard"
+  },
+  "fortuna": {
+   "naam": "Fortuna Sittard",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://ticketshop.fortunasittard.nl/dashboard"
+  },
+  "excelsior": {
+   "naam": "Excelsior",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://tickets.excelsiorrotterdam.nl/dashboard"
   }
  },
  "WEDSTRIJDEN": [
@@ -498,36 +516,6 @@
    "bron": ""
   },
   {
-   "club": "twente",
-   "tegen": "Willem II",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-22",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-06",
-     "Start verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
-   "club": "sparta",
-   "tegen": "N.E.C.",
-   "comp": "Eredivisie",
-   "aftrap": "2026-12-05",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-28",
-     "Start verkoop (28 of 29 okt)"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
    "club": "bvb",
    "tegen": "Werder Bremen",
    "comp": "DFB-Pokal",
@@ -675,6 +663,7 @@
    "aftrap": "2026-10-25T14:30",
    "fases": [],
    "nu": true,
+   "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
    "auto": true
@@ -692,6 +681,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "Bron: Verkoop (S)CC 02-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -709,6 +699,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "Bron: Verkoop (S)CC 09-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -726,6 +717,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "Bron: Verkoop (S)CC 30-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -743,6 +735,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "Bron: Verkoop (S)CC 21-12, 12.00 uur",
    "bron": "",
    "auto": true
@@ -760,6 +753,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "Bron: Verkoop (S)CC 04-01-2027, 12.00 uur",
    "bron": "",
    "auto": true
@@ -797,6 +791,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Fortuna-Sittard-VriendenLoterij-Eredivisie",
    "auto": true
@@ -808,6 +803,7 @@
    "aftrap": "2026-11-03T21:00",
    "fases": [],
    "nu": false,
+   "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
    "auto": true
@@ -845,6 +841,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Excelsior-VriendenLoterij-Eredivisie",
    "auto": true
@@ -856,6 +853,7 @@
    "aftrap": "2026-11-24T21:00",
    "fases": [],
    "nu": false,
+   "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
    "auto": true
@@ -867,6 +865,7 @@
    "aftrap": "2026-11-29T14:30",
    "fases": [],
    "nu": false,
+   "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
    "auto": true
@@ -904,6 +903,7 @@
     ]
    ],
    "nu": false,
+   "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
    "auto": true
@@ -915,6 +915,7 @@
    "aftrap": "2027-01-10T14:30",
    "fases": [],
    "nu": false,
+   "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
    "auto": true
@@ -952,8 +953,453 @@
     ]
    ],
    "nu": true,
+   "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-PEC-Zwolle-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "ADO Den Haag Vrouwen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-25T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "De Graafschap Vrouwen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-01T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "AZ Vrouwen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22T16:45",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sparta",
+   "tegen": "AFC Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-25T16:45",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---AFC-Ajax-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "sparta",
+   "tegen": "Fortuna Sittard",
+   "comp": "KNVB Beker",
+   "aftrap": "2026-10-28T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---Fortuna-Sittard-Eurojackpot-KNVB-Beker",
+   "auto": true
+  },
+  {
+   "club": "sparta",
+   "tegen": "AZ",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22T14:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---AZ-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "sparta",
+   "tegen": "N.E.C.",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-05T18:45",
+   "fases": [
+    [
+     "vrij",
+     "2026-10-28T11:00",
+     "Verkoop start 28/10, 11:00 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Verkoop start 28/10, 11:00 uur",
+   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---N.E.C.-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "sparta",
+   "tegen": "Excelsior",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-09T16:30",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-25T11:00",
+     "Verkoop start 25/11, 11:00 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Verkoop start 25/11, 11:00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "heerenveen",
+   "tegen": "N.E.C. Nijmegen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-31T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "heerenveen",
+   "tegen": "Feyenoord (Oost/Zuid/Westtribune)",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T12:15",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "heerenveen",
+   "tegen": "Feyenoord (Noordtribune)",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T12:15",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "heerenveen",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-06T12:15",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-13T13:00",
+     "Vanaf 13 november 13:00 uur."
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Vanaf 13 november 13:00 uur.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "cambuur",
+   "tegen": "Go Ahead Eagles",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-31T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---Go-Ahead-Eagles-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "cambuur",
+   "tegen": "PSV",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "fortuna",
+   "tegen": "Excelsior",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-25T12:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---Excelsior-Eredivisie-Thuis",
+   "auto": true
+  },
+  {
+   "club": "fortuna",
+   "tegen": "Telstar",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-07T16:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---Telstar-Eredivisie-Thuis",
+   "auto": true
+  },
+  {
+   "club": "fortuna",
+   "tegen": "SC Heerenveen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T14:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---SC-Heerenveen-Eredivisie-Thuis",
+   "auto": true
+  },
+  {
+   "club": "fortuna",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-05T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---PEC-Zwolle-Eredivisie-Thuis",
+   "auto": true
+  },
+  {
+   "club": "fortuna",
+   "tegen": "Sparta Rotterdam",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-19T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---Sparta-Rotterdam-Eredivisie-Thuis",
+   "auto": true
+  },
+  {
+   "club": "excelsior",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-01T14:30",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "excelsior",
+   "tegen": "Go Ahead Eagles",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-07T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "excelsior",
+   "tegen": "Telstar",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-28T16:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "willem2",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-24T18:45",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---SC-Cambuur-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "willem2",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-06T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "willem2",
+   "tegen": "Feyenoord",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-05T16:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "willem2",
+   "tegen": "ADO Den Haag",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-13T14:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "willem2",
+   "tegen": "Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-09T20:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "Pafos FC",
+   "comp": "Conference League",
+   "aftrap": "2026-11-05T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---League-Phase-2-UEFA-Conference-League",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T14:30",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-22T12:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Willem-II-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "Kairat Almaty",
+   "comp": "Conference League",
+   "aftrap": "2026-12-17T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---League-Phase-3-UEFA-Conference-League",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-08T20:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-12-01T08:59",
+     "01-12-2026 | 9.00 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: 01-12-2026 | 9.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "sc Heerenveen",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-23T20:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-12-15T08:59",
+     "15-12-2026 | 9.00 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: 15-12-2026 | 9.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "twente",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-31T14:30",
+   "fases": [
+    [
+     "vrij",
+     "2026-12-22T08:59",
+     "22-12-2026 | 9.00 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: 22-12-2026 | 9.00 uur",
+   "bron": "",
    "auto": true
   }
  ],
