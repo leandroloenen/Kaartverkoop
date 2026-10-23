@@ -423,21 +423,6 @@
    "bron": ""
   },
   {
-   "club": "feyenoord",
-   "tegen": "FC Twente",
-   "comp": "Eredivisie",
-   "aftrap": "2026-12-20",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-01",
-     "Start verkoop (tussen 1 en 5 okt)"
-    ]
-   ],
-   "noot": "Feyenoord verkoopt in blokken van meerdere wedstrijden tegelijk.",
-   "bron": ""
-  },
-  {
    "club": "psv",
    "tegen": "Go Ahead Eagles",
    "comp": "Eredivisie",
@@ -689,7 +674,8 @@
    "comp": "Eredivisie",
    "aftrap": "2026-10-25T14:30",
    "fases": [],
-   "noot": "Nu in de verkoop (inloggen nodig); startmoment onbekend.",
+   "nu": true,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
    "auto": true
   },
@@ -705,6 +691,7 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
+   "nu": false,
    "noot": "Bron: Verkoop (S)CC 02-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -721,6 +708,7 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
+   "nu": false,
    "noot": "Bron: Verkoop (S)CC 09-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -737,6 +725,7 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
+   "nu": false,
    "noot": "Bron: Verkoop (S)CC 30-11, 12.00 uur",
    "bron": "",
    "auto": true
@@ -753,6 +742,7 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
+   "nu": false,
    "noot": "Bron: Verkoop (S)CC 21-12, 12.00 uur",
    "bron": "",
    "auto": true
@@ -769,8 +759,201 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
+   "nu": false,
    "noot": "Bron: Verkoop (S)CC 04-01-2027, 12.00 uur",
    "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2026-10-31T16:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-08-19T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-08-20T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-08-20T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-08-20T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-08-24T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Fortuna-Sittard-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "Inter",
+   "comp": "Champions League",
+   "aftrap": "2026-11-03T21:00",
+   "fases": [],
+   "nu": false,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "Excelsior",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-21T18:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-01T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-10-02T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-10-02T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-10-02T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-10-05T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Excelsior-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "FC Porto",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": false,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T14:30",
+   "fases": [],
+   "nu": false,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-20T14:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-01T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-10-02T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-10-02T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-10-02T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-10-05T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "PSV",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-10T14:30",
+   "fases": [],
+   "nu": false,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-23T18:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-01T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-10-02T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-10-02T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-10-02T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-10-05T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": true,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-PEC-Zwolle-VriendenLoterij-Eredivisie",
    "auto": true
   }
  ],
@@ -1290,5 +1473,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-22"
+ "bijgewerkt": "2026-10-23"
 }
