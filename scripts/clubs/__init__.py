@@ -2,7 +2,7 @@
 
 Clubs met een eigen bestand (nec.py, feyenoord.py) staan bovenaan. Clubs met dezelfde
 (Tymes4-)ticketshop hoeven geen eigen bestand: zet ze gewoon in de lijst TYMES4_CLUBS.
-Formaat: "sleutel": ("Naam van de club", "adres van de ticketshop")
+Formaat: "sleutel": ("Naam van de club", "adres van de ticketshop", "naam van het thuisteam in de shop (mag weg)")
 """
 import os
 import time
@@ -11,7 +11,7 @@ from types import SimpleNamespace
 from . import feyenoord, nec, tymes4
 
 TYMES4_CLUBS = {
-    "utrecht": ("FC Utrecht", "https://ticketing.fcutrecht.nl/dashboard"),
+    "utrecht": ("FC Utrecht", "https://ticketing.fcutrecht.nl/dashboard", "FC Utrecht"),
     "sparta": ("Sparta Rotterdam", "https://ticketshop.sparta-rotterdam.nl/dashboard"),
     "heerenveen": ("SC Heerenveen", "https://tickets.sc-heerenveen.nl/dashboard"),
     "cambuur": ("SC Cambuur", "https://tickets.cambuur.nl/dashboard"),
@@ -22,15 +22,15 @@ TYMES4_CLUBS = {
 }
 
 
-def _maak(sleutel, naam, pagina):
+def _maak(sleutel, naam, pagina, thuis=None):
     bron = os.environ.get(sleutel.upper() + "_BRON_URL", "")  # alleen voor tests
 
     def haal_op():
         if not bron:
             time.sleep(3)  # even wachten tussen twee clubs
-        return tymes4.haal_op(sleutel, pagina, bron, None)
+        return tymes4.haal_op(sleutel, pagina, bron, thuis)
 
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, haal_op=haal_op)
 
 
-ALLE = [nec, feyenoord] + [_maak(k, n, p) for k, (n, p) in TYMES4_CLUBS.items()]
+ALLE = [nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.items()]
