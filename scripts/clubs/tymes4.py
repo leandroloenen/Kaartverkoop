@@ -36,6 +36,16 @@ AANTAL_RE = re.compile(r"(?:maximaal|max\.?)\s+(één|een|\d+|twee|drie|vier|vij
 EEN_RE = re.compile(r"\b(één|1)\s+ticket", re.I)
 
 
+NAAM_ALIAS = {"n.e.c. nijmegen": "N.E.C.", "afc ajax": "Ajax", "sc heerenveen": "SC Heerenveen"}
+NIET_HOOFDPLOEG = re.compile(r"\b(vrouwen|women|jong|onder\s?\d+|o\d{2}|u\d{2}|academy|talenten|jeugd)\b", re.I)
+
+
+def schoon(naam):
+    """Haal tekst tussen haakjes weg (zoals '(Noordtribune)') en gebruik overal dezelfde schrijfwijze."""
+    naam = re.sub(r"\s*\(.*?\)", "", naam or "").strip()
+    return NAAM_ALIAS.get(naam.lower(), naam)
+
+
 def haal_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "kaartverkoop-hobbyproject (persoonlijk gebruik, 1x per dag)"})
     with urllib.request.urlopen(req, timeout=30) as antwoord:
@@ -87,7 +97,7 @@ def groep_uit_knoptekst(tekst):
     if any(w in laag for w in ("leden", "lid ", "member")):
         return "lid", "Leden"
     print(f"    let op: verkoopmoment met onbekende doelgroep, laat het even controleren: \"{tekst}\"")
-    return "vrij", tekst
+    return "vrij", "Start verkoop (doelgroep onbekend): " + tekst
 
 
 def fases_uit_knop(item):
@@ -182,14 +192,15 @@ def fases_uit_tekst(item, aftrap):
 
 def parse(ruw, club, thuis_naam=None):
     uit = []
-    if not thuis_naam:  # herken de hoofdploeg: de naam die het vaakst als thuisteam voorkomt
-        tellers = {}
-        for tab in ruw.get("TabItems", []):
-            if tab.get("TranslationCode") == "SALE-CATEGORY.MATCHHOME":
-                for item in tab.get("Items", []):
-                    n = item.get("NameHomeTeam")
-                    tellers[n] = tellers.get(n, 0) + 1
-        thuis_naam = max(tellers, key=tellers.get) if tellers else None
+    tellers = {}
+    for tab in ruw.get("TabItems", []):
+        if tab.get("TranslationCode") == "SALE-CATEGORY.MATCHHOME":
+            for item in tab.get("Items", []):
+                n = item.get("NameHomeTeam")
+                tellers[n] = tellers.get(n, 0) + 1
+    if thuis_naam not in tellers:  # naam onbekend of niet gevonden: herken de hoofdploeg zelf
+        kandidaten = {n: c for n, c in tellers.items() if n and not NIET_HOOFDPLOEG.search(n)} or tellers
+        thuis_naam = max(kandidaten, key=kandidaten.get) if kandidaten else None
     for tab in ruw.get("TabItems", []):
         if tab.get("TranslationCode") != "SALE-CATEGORY.MATCHHOME":
             continue  # alleen thuiswedstrijden
@@ -211,7 +222,7 @@ def parse(ruw, club, thuis_naam=None):
                 noot = "Bron: " + knoptekst
             uit.append({
                 "club": club,
-                "tegen": item["NameAwayTeam"],
+                "tegen": schoon(item["NameAwayTeam"]),
                 "comp": competitie(item.get("EventTypeName")),
                 "aftrap": aftrap.strftime("%Y-%m-%dT%H:%M"),
                 "fases": sorted(fases, key=lambda f: f[1]),
@@ -220,7 +231,20 @@ def parse(ruw, club, thuis_naam=None):
                 "noot": noot,
                 "bron": item.get("DeepLinkRoute") or "",
             })
-    return uit
+    samen = {}
+    for w in uit:
+        k = (w["tegen"], w["aftrap"][:10])
+        if k not in samen:
+            samen[k] = w
+            continue
+        m = samen[k]
+        bekend = {(f[0], f[1], f[2]) for f in m["fases"]}
+        m["fases"] = sorted(m["fases"] + [f for f in w["fases"] if (f[0], f[1], f[2]) not in bekend], key=lambda f: f[1])
+        m["nu"] = m["nu"] or w["nu"]
+        m["info"] = m["info"] and w["info"]
+        if not m["noot"]:
+            m["noot"] = w["noot"]
+    return list(samen.values())
 
 
 def haal_op(club, pagina, bron_url="", thuis_naam=None):
