@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Dagelijkse update van data.json.
 
 Elke club heeft een eigen 'verzamelaar' in scripts/clubs/. Deze draait ze allemaal,
@@ -44,7 +43,7 @@ def main():
         club = module.CLUB
         oud_auto = [w for w in wedstrijden if w.get("auto") and w["club"] == club]
         rest = [w for w in wedstrijden if not (w.get("auto") and w["club"] == club)]
-        handmatig = {sleutel(w) for w in rest if w["club"] == club}
+        handm = {sleutel(w): w for w in rest if w["club"] == club}
 
         try:
             nieuw = module.haal_op()
@@ -58,9 +57,15 @@ def main():
         toe = []
         for w in nieuw:
             w["auto"] = True
-            if sleutel(w) in handmatig:
-                print(f"[{club}] dubbel met handmatige invoer, overgeslagen: {w['tegen']} {w['aftrap'][:10]}")
-                continue
+            k = sleutel(w)
+            if k in handm:
+                if len(handm[k]["aftrap"]) == 10:  # handmatige invoer zonder tijd is minder nauwkeurig
+                    print(f"[{club}] VERVANGT handmatige invoer zonder tijd: {w['tegen']} {k[2]}")
+                    rest = [x for x in rest if x is not handm[k]]
+                    del handm[k]
+                else:
+                    print(f"[{club}] dubbel met handmatige invoer, overgeslagen: {w['tegen']} {k[2]}")
+                    continue
             toe.append(w)
 
         if len(oud_auto) >= 4 and len(toe) < len(oud_auto) / 2:
