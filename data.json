@@ -635,7 +635,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Groningen-VriendenLoterij-Eredivisie-2026---2027",
    "auto": true
   },
   {
@@ -1222,7 +1222,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---PEC-Zwolle-VriendenLoterij-Eredivisie",
    "auto": true
   },
   {
@@ -1282,7 +1282,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true
   },
   {
@@ -1890,5 +1890,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-23"
+ "bijgewerkt": "2026-10-24"
 }
