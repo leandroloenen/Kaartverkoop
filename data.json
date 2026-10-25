@@ -930,18 +930,6 @@
   },
   {
    "club": "utrecht",
-   "tegen": "PEC Zwolle",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-24T16:30",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---PEC-Zwolle-VriendenLoterij-Eredivisie-2026-2027",
-   "auto": true
-  },
-  {
-   "club": "utrecht",
    "tegen": "N.E.C.",
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T20:00",
@@ -1199,18 +1187,6 @@
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
-  },
-  {
-   "club": "willem2",
-   "tegen": "SC Cambuur",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-24T18:45",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---SC-Cambuur-VriendenLoterij-Eredivisie",
    "auto": true
   },
   {
@@ -1890,5 +1866,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-24"
+ "bijgewerkt": "2026-10-25"
 }
