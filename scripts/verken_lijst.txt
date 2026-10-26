@@ -16,5 +16,63 @@ Valencia | https://www.valenciacf.com/tickets
 Real Sociedad | https://tickets.realsociedad.eus/real_sociedad/events/57857?hl=en-US
 Villarreal | https://villarrealcf.es/es/venta-de-entradas/
 Athletic Club | https://www.athletic-club.eus/en/tickets/
+Deportivo Alavés | https://entradas.deportivoalaves.com/b2c/ticketSale/matches?competition=LALIGA
+Celta de Vigo | https://rccelta.es/en/rccelta-tickets/
+Levante | https://ticketing.levanteud.com/es/liga-ea-sports
+Elche | https://entradas.elchecf.es/
+Malaga | https://entradas.malagacf.com/?idioma=EN&act=1
+Osasuna | https://entradas.osasuna.es/
+RCD Espanyol | https://www.rcdespanyol.com/en/nextmatches
+Deportivo A Coruna | https://ticketing.rcdeportivo.es/
 Schalke 04 | https://tickets.schalke04.de/p/heimspiele
 Borussia Dortmund | https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html
+Bayern München | https://tickets.fcbayern.com/internetverkauf/EventList.aspx
+Bayer Leverkusen | https://www.bayer04.de/en-us/shop/tickets/home-matches
+Borussia Mönchengladbach | https://www.ticket-onlineshop.com/ols/borussia-tickets/de/heim/channel/shop/index
+RB Leipzig | https://rbleipzig.com/en/matches-tickets
+FC Köln | https://www.ticket-onlineshop.com/ols/fckoeln/de/maenner/channel/shop/index
+Eintracht Frankfurt | https://stores.eintracht.de/tickets/profis/?utm_source=google_organic
+TSG Hoffenheim | https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46
+SC Freiburg | https://www.scfreiburg.com/heimtickets/
+FC Union Berlin | https://www.tickets.union-zeughaus.de/shop?wes=empty_session_1&language=1&shopid=1&nextstate=2&lpShortcutId=13
+FSV Mainz | https://www.mainz05.de/tickets/heimspiele
+Werder Bremen | https://www.werder.de/tickets/maenner/heimspiele
+FC Augsburg | https://tickets.fcaugsburg.de/fcaugsburg/SynwayWarengruppen/data/shop/0697942f-1bd2-44b9-8ea7-c4cb24075d33
+VFB Stuttgart | https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5
+Manchester City | https://www.mancity.com/tickets/mens
+Arsenal | https://www.arsenal.com/tickets/men
+Brighton & Hove Albion | https://tickets.brightonandhovealbion.com/en-gb/categories/home
+Liverpool | https://www.liverpoolfc.com/tickets
+Chelsea | https://www.chelseafc.com/en/tickets/mens-tickets
+Brentford | https://www.brentfordfc.com/en/ticket-information
+Leeds United | https://tickets.leedsunited.com/en-gb/categories/home-games
+Newcastle United | https://book.newcastleunited.com/en-GB/categories/Home%20Tickets
+Aston Villa | https://tickets.avfc.co.uk/en-GB/categories/home-tickets
+Hull City | https://www.wearehullcity.co.uk/tickets/
+Everton | https://www.eticketing.co.uk/evertonfc/
+Ipswich Town | https://tickets.itfc.co.uk/en-GB/categories/home
+Bournemouth | https://tickets.afcb.co.uk/en-GB/categories/mens-home-tickets
+Tottenham Hotspur | https://www.tottenhamhotspur.com/tickets/mens-home-tickets
+Fulham | https://www.eticketing.co.uk/fulhamfc/Events?preFilter=2&preFilterName=%20%20%20Home%20Match%20Tickets?utm_source=fulham&utm_medium=ticketsandhosp&utm_campaign=tickets
+Manchester United | https://tickets.manutd.com/en-GB/categories/home-tickets?dd_referrer=https%3A%2F%2Fwww.google.com%2F
+Nottingham Forrest | https://www.eticketing.co.uk/nottinghamforest/?utm_source=forest_web_banner&utm_medium=internal&utm_campaign=mainnavticketing&utm_content=navbar
+Coventry City | https://www.eticketing.co.uk/ccfc
+Sunderland | https://tickets.safc.com/en-GB/categories/mens-home-tickets
+Internazionale | https://www.inter.it/en/tickets
+Juventus | https://www.juventus.com/en/tickets/#mensfirstteam
+AC Milan | https://booking.acmilan.com/en/
+Napoli | https://sscnapoli.ticketone.it/catalog
+AS Roma | https://www.asroma.com/en/tickets/men?_gl=1*1rh2o1j*_up*MQ..*_ga*NjQ0MTM4ODkzLjE3OTMwNDM4OTY.*_ga_ML4VH113QE*czE3OTMwNDM4OTUkbzEkZzAkdDE3OTMwNDM4OTUkajYwJGwwJGgxOTA0OTc2NzQw*_ga_PE68Q1GB3Q*czE3OTMwNDM4OTUkbzEkZzAkdDE3OTMwNDM4OTUkajYwJGwwJGgw
+SS Lazio | https://www.sslazio.it/it/biglietteria/matches
+Como | https://tickets.comofootball.com/?_gl=1*17u7nvm*_up*MQ..*_ga*MzM2NzQzOTYuMTc5MzA0Mzk0Nw..*_ga_51DWY9YY54*czE3OTMwNDM5NDYkbzEkZzAkdDE3OTMwNDM5NDYkajYwJGwwJGgw*_ga_8DDZDVHN2J*czE3OTMwNDM5NDYkbzEkZzAkdDE3OTMwNDM5NDYkajYwJGwwJGgxNzY5NTMxMjg4
+Frosinone | https://www.vivaticket.com/it/artist/frosinone-calcio/70228
+Torino | https://www.torinofc.it/en/biglietteria
+Cagliari | https://cagliaricalcio.com/en/tickets/
+Atalanta Bergamo | https://en.atalanta.it/ticket 
+Sassuolo | https://www.sassuolocalcio.it/en/ticketing/news-info/
+Monza | https://www.acmonza.com/en/ticketing/
+Genoa | https://genoacfc.it/biglietteria/
+Udinese | https://www.udinese.it/eng/news/biglietti
+Fiorentina | https://www.acffiorentina.com/en/ticketing/men?_gl=1*1sd151a*_up*MQ..*_ga*MTQ4Mzg4MzYxMy4xNzkzMDQ0MTg5*_ga_EKC655Q48G*czE3OTMwNDQxODgkbzEkZzAkdDE3OTMwNDQxODgkajYwJGwwJGgxODY5MTQ5NzYy
+Parma | https://www.parmacalcio1913.com/en/tickets/
+Venezia | https://en.veneziafc.it/tickets/biglietteria
