@@ -1,0 +1,28 @@
+name: Verkenning ticketpagina's
+
+on:
+  workflow_dispatch:   # alleen handmatig starten
+
+permissions:
+  contents: write
+
+jobs:
+  verken:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Browser installeren
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Pagina's verkennen
+        run: python scripts/verken.py
+      - name: Resultaat opslaan
+        run: |
+          git config user.name "update-bot"
+          git config user.email "update-bot@users.noreply.github.com"
+          git add verkenning.json
+          git diff --staged --quiet || (git commit -m "Verkenning ticketpagina's" && git push)
