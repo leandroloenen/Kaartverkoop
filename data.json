@@ -628,18 +628,6 @@
   },
   {
    "club": "nec",
-   "tegen": "FC Groningen",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-25T14:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Groningen-VriendenLoterij-Eredivisie-2026---2027",
-   "auto": true
-  },
-  {
-   "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T16:30",
@@ -942,18 +930,6 @@
   },
   {
    "club": "sparta",
-   "tegen": "Ajax",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-25T16:45",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---AFC-Ajax-VriendenLoterij-Eredivisie",
-   "auto": true
-  },
-  {
-   "club": "sparta",
    "tegen": "Fortuna Sittard",
    "comp": "KNVB Beker",
    "aftrap": "2026-10-28T18:45",
@@ -1091,18 +1067,6 @@
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
-  },
-  {
-   "club": "fortuna",
-   "tegen": "Excelsior",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-25T12:15",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---Excelsior-Eredivisie-Thuis",
    "auto": true
   },
   {
@@ -1258,7 +1222,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
    "auto": true
   },
   {
@@ -1866,5 +1830,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-25"
+ "bijgewerkt": "2026-10-26"
 }
