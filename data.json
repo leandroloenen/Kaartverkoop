@@ -860,7 +860,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
@@ -926,6 +926,18 @@
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---N.E.C.-VriendenLoterij-Eredivisie-2026-2027",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "SC Cambuur",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-21T18:45",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
    "auto": true
   },
   {
@@ -1830,5 +1842,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-26"
+ "bijgewerkt": "2026-10-27"
 }
