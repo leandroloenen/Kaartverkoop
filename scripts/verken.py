@@ -25,6 +25,28 @@ PLATFORMEN = ("tymes4", "onebox", "vivenu", "eventim", "ticketmaster", "tmticket
               "seetickets", "ticketone", "secutix", "oneboxtds", "stadiumportal", "ticketco", "fanatics", "accesso")
 
 
+GEVOELIG = re.compile(r"secret|password|wachtwoord|token|apikey|api_key|authorization|credential|signature|key", re.I)
+LANGE_WAARDE = re.compile(r"\S{24,}")
+
+
+def maskeer(obj):
+    """Haal alles weg wat op een toegangscode lijkt: gevoelige veldnamen en lange waarden zonder spaties."""
+    if isinstance(obj, dict):
+        return {k: ("[weggelaten]" if GEVOELIG.search(str(k)) else maskeer(v)) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [maskeer(v) for v in obj[:20]]
+    if isinstance(obj, str):
+        return "[lange waarde weggelaten]" if len(obj) >= 24 and " " not in obj else obj
+    return obj
+
+
+def veilig_voorbeeld(tekst):
+    try:
+        return json.dumps(maskeer(json.loads(tekst)), ensure_ascii=False)[:500]
+    except Exception:  # noqa: BLE001
+        return LANGE_WAARDE.sub("[lange waarde weggelaten]", tekst)[:500]
+
+
 def schoon_url(url):
     """Houd host en pad over; van de parameters alleen de namen (waarden kunnen sleutels bevatten)."""
     d = urlsplit(url)
@@ -55,7 +77,7 @@ def verken(browser, naam, adres):
             verzoeken.append({"methode": r.request.method, "status": r.status, "url": schoon_url(r.url),
                               "soort": soort.split(";")[0], "lengte": r.headers.get("content-length", "")})
             if "json" in soort and r.status == 200 and len(voorbeelden) < 6:
-                voorbeelden.append({"url": schoon_url(r.url), "begin": r.text()[:500]})
+                voorbeelden.append({"url": schoon_url(r.url), "begin": veilig_voorbeeld(r.text())})
         except Exception:  # noqa: BLE001
             pass
 
@@ -72,7 +94,7 @@ def verken(browser, naam, adres):
         page.wait_for_timeout(3000)
         gegevens["eind_adres"] = schoon_url(page.url)
         gegevens["titel"] = page.title()
-        gegevens["scherm_tekst"] = re.sub(r"\n{3,}", "\n\n", page.inner_text("body"))[:2500]
+        gegevens["scherm_tekst"] = LANGE_WAARDE.sub("[lange waarde weggelaten]", re.sub(r"\n{3,}", "\n\n", page.inner_text("body")))[:2500]
     except Exception as fout:  # noqa: BLE001
         gegevens["fout"] = str(fout).splitlines()[0][:200]
     finally:
