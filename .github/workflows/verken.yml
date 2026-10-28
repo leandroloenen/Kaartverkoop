@@ -4,7 +4,7 @@ on:
   workflow_dispatch:   # alleen handmatig starten
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   verken:
@@ -20,9 +20,9 @@ jobs:
           playwright install --with-deps chromium
       - name: Pagina's verkennen
         run: python scripts/verken.py
-      - name: Resultaat opslaan
-        run: |
-          git config user.name "update-bot"
-          git config user.email "update-bot@users.noreply.github.com"
-          git add verkenning.json
-          git diff --staged --quiet || (git commit -m "Verkenning ticketpagina's" && git push)
+      - name: Resultaat bewaren (niet in de map, maar als download)
+        uses: actions/upload-artifact@v4
+        with:
+          name: verkenning
+          path: verkenning.json
+          retention-days: 3
