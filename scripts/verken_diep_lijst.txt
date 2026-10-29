@@ -1,0 +1,38 @@
+# Verdieping: naam (zoals in verken_lijst.txt) | adres-patronen waarvan het complete antwoord bewaard wordt | 'tekst' = ook de volledige schermtekst
+# Clubs met een JSON-bron (volledig antwoord + tekst):
+Sevilla | /api/events | tekst
+Elche | /api/events | tekst
+Osasuna | /api/events | tekst
+Deportivo A Coruna | /api/events | tekst
+Chelsea | /api/fixtures/tickets | tekst
+Juventus | /api/v1/match/ | tekst
+RB Leipzig | matchPlans | tekst
+SC Freiburg | /api/appointment/api/search | tekst
+Eintracht Frankfurt | page-data/tickets/profis | tekst
+Villarreal | /api/tickets/ | tekst
+Celta de Vigo | admin-ajax.php | tekst
+# Clubs met alleen leesbare tekst:
+Ajax | | tekst
+AZ | | tekst
+PEC Zwolle | | tekst
+ADO Den Haag | | tekst
+FC Groningen | | tekst
+Borussia Dortmund | | tekst
+TSG Hoffenheim | | tekst
+VFB Stuttgart | | tekst
+FC Union Berlin | | tekst
+FSV Mainz | | tekst
+FC Augsburg | | tekst
+Bayer Leverkusen | | tekst
+Schalke 04 | | tekst
+Real Madrid | | tekst
+FC Barcelona | | tekst
+Real Betis | | tekst
+Valencia | | tekst
+RCD Espanyol | | tekst
+Malaga | | tekst
+Levante | | tekst
+Brentford | | tekst
+Liverpool | | tekst
+Manchester City | | tekst
+Tottenham Hotspur | | tekst
