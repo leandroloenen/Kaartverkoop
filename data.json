@@ -748,7 +748,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Fortuna-Sittard-VriendenLoterij-Eredivisie",
@@ -934,22 +934,10 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T18:45",
    "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "sparta",
-   "tegen": "Fortuna Sittard",
-   "comp": "KNVB Beker",
-   "aftrap": "2026-10-28T18:45",
-   "fases": [],
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---Fortuna-Sittard-Eurojackpot-KNVB-Beker",
+   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---SC-Cambuur-VriendenLoterij-Eredivisie-2026-2027",
    "auto": true
   },
   {
@@ -981,9 +969,9 @@
      "Start verkoop (doelgroep onbekend): Verkoop start 28/10, 11:00 uur"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Bron: Verkoop start 28/10, 11:00 uur",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---N.E.C.-VriendenLoterij-Eredivisie",
    "auto": true
   },
@@ -1078,6 +1066,42 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "cambuur",
+   "tegen": "Sparta Rotterdam",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-28T21:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-10T12:59",
+     "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 10-11-26 om 13:00"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Verkoop start dinsdag 10-11-26 om 13:00",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "cambuur",
+   "tegen": "FC Groningen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-20T14:30",
+   "fases": [
+    [
+     "vrij",
+     "2026-12-01T12:59",
+     "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 01-12-26 om 13:00"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Verkoop start dinsdag 01-12-26 om 13:00",
    "bron": "",
    "auto": true
   },
@@ -1842,5 +1866,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-28"
+ "bijgewerkt": "2026-10-29"
 }
