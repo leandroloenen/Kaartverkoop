@@ -1,7 +1,11 @@
 name: Verkenning ticketpagina's
 
 on:
-  workflow_dispatch:   # alleen handmatig starten
+  workflow_dispatch:
+    inputs:
+      lijst:
+        description: "Welke lijst? scripts/verken_lijst.txt (breed) of scripts/verken_diep_lijst.txt (verdieping)"
+        default: "scripts/verken_lijst.txt"
 
 permissions:
   contents: read
@@ -19,10 +23,12 @@ jobs:
           pip install playwright
           playwright install --with-deps chromium
       - name: Pagina's verkennen
-        run: python scripts/verken.py
+        env:
+          LIJST: ${{ github.event.inputs.lijst }}
+        run: python scripts/verken.py "$LIJST"
       - name: Resultaat bewaren (niet in de map, maar als download)
         uses: actions/upload-artifact@v4
         with:
           name: verkenning
-          path: verkenning.json
+          path: verkenning*.json
           retention-days: 3
