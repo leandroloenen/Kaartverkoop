@@ -760,9 +760,9 @@
    "comp": "Champions League",
    "aftrap": "2026-11-03T21:00",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
    "auto": true
   },
@@ -1866,5 +1866,5 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-29"
+ "bijgewerkt": "2026-10-30"
 }
