@@ -40,6 +40,21 @@ def voeg_fases_samen(oud, nieuw):
     return sorted(per_fase.values(), key=lambda f: f[1])
 
 
+def bereken_schatting(wedstrijden):
+    """Hoeveel dagen voor de wedstrijd ging de verkoop open (volgens onze eigen waarnemingen)? Per club."""
+    per_club = {}
+    for w in wedstrijden:
+        if w.get("auto") and w.get("eerst_nu"):
+            dagen = (datetime.date.fromisoformat(w["aftrap"][:10]) - datetime.date.fromisoformat(w["eerst_nu"])).days
+            if dagen >= 0:
+                per_club.setdefault(w["club"], []).append(dagen)
+    uit = {}
+    for club, lijst in per_club.items():
+        lijst.sort()
+        uit[club] = {"n": len(lijst), "mediaan": lijst[len(lijst) // 2], "min": lijst[0], "max": lijst[-1]}
+    return uit
+
+
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     origineel = json.dumps(data, sort_keys=True)
@@ -91,6 +106,13 @@ def main():
 
         oud_k = {sleutel(w): w for w in oud_auto}
         nieuw_k = {sleutel(w): w for w in toe}
+        vandaag = datetime.date.today().isoformat()
+        for k, w in nieuw_k.items():  # wanneer zagen we een wedstrijd voor het eerst te koop? (niet bij de allereerste run)
+            oud = oud_k.get(k)
+            if oud and oud.get("eerst_nu"):
+                w["eerst_nu"] = oud["eerst_nu"]
+            elif w.get("nu") and oud_auto and (oud is None or not oud.get("nu")):
+                w["eerst_nu"] = vandaag
         for k in nieuw_k.keys() & oud_k.keys():
             nieuw_k[k]["fases"] = voeg_fases_samen(oud_k[k], nieuw_k[k])
         for k in nieuw_k.keys() - oud_k.keys():
@@ -103,6 +125,7 @@ def main():
         wedstrijden = rest + toe
 
     data["WEDSTRIJDEN"] = wedstrijden
+    data["SCHATTING"] = bereken_schatting(wedstrijden)
     if json.dumps(data, sort_keys=True) != origineel:
         data["bijgewerkt"] = datetime.date.today().isoformat()
         DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
