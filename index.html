@@ -120,6 +120,13 @@ function countdown(s){
   const d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);
   return d>0?{t:`Over ${d} d ${h} u`,c:d<4?"soon":""}:{t:`Over ${h} uur`,c:"soon"};
 }
+const SCHATTING = (typeof D!=="undefined"&&D.SCHATTING)||{};
+function schatting(r){
+  const sc=SCHATTING[r.w.club];
+  if(!r.info||!sc||sc.n<2) return "";
+  const d=new Date(pd(r.w.aftrap)); d.setDate(d.getDate()-sc.mediaan);
+  return `<div class="note">Schatting: deze club opent de verkoop meestal ± ${sc.mediaan} dagen voor de wedstrijd (${sc.n} waarnemingen, tussen ${sc.min} en ${sc.max} dagen), dus rond ${dag(d)}${d<nu?" — dat moment is al voorbij, kijk dus even op de clubsite":""}.</div>`;
+}
 function toon(){
   const comp=$("fComp").value, club=$("fClub").value, van=$("fVan").value, tot=$("fTot").value, ook=$("fPast").checked, alles=$("fAll").checked;
   let verborgen=0;
@@ -141,7 +148,7 @@ function toon(){
       const cd=countdown(f.start), eerste=r.volgende===f;
       html+=`<div class="ph${f.ok?"":" no"}"><div class="g">${f.naam}${eerste?'<span class="badge">jouw eerstvolgende moment</span>':""}</div><div class="t">${f.dagAlleen?dag(f.start)+" (tijd onbekend)":dagTijd(f.start)}</div><div class="cd ${cd.c}">${cd.t}${f.ok&&f.start>=nu?`<a class="cal" href="${agenda(c,r.w,f,af)}" target="_blank" rel="noopener">Zet in agenda</a>`:""}</div></div>`;
     });
-    html+=`</div>`+(r.w.noot?`<div class="note">${r.w.noot}</div>`:"")+`<div class="foot">${r.w.bron?`<a href="${r.w.bron}" target="_blank" rel="noopener">Bron (clubsite)</a>`:"<span>Bron: eigen onderzoek op de clubsite (9 okt)</span>"}<a href="${c.url}" target="_blank" rel="noopener">Ticketpagina ${c.naam}</a></div></div>`;
+    html+=`</div>`+(r.w.noot?`<div class="note">${r.w.noot}</div>`:"")+schatting(r)+`<div class="foot">${r.w.bron?`<a href="${r.w.bron}" target="_blank" rel="noopener">Bron (clubsite)</a>`:"<span>Bron: eigen onderzoek op de clubsite (9 okt)</span>"}<a href="${c.url}" target="_blank" rel="noopener">Ticketpagina ${c.naam}</a></div></div>`;
   });
   if(!html) html='<p class="empty">Geen verkoopmomenten voor deze selectie. Zet "Toon al gestarte verkoop" of "Toon ook wedstrijden waar ik niet kan kopen" aan, of kies een andere club.</p>';
   if(verborgen&&!alles) html+=`<p class="empty">${verborgen} wedstrijd(en) verborgen omdat je er met je huidige toegang niet kunt kopen.</p>`;
