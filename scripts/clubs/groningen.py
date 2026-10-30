@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 
 from . import tekst as t
+from .tymes4 import schoon
 
 CLUB = "groningen"
 NAAM = "FC Groningen"
@@ -41,7 +42,7 @@ def parse(tekst):
         if not binnen or len(kol) < 7 or not MOMENT.search(kol[0]):
             continue
         aftrap, heeft_tijd = moment(kol[0])
-        tegen = re.sub(r"\s*\(.*?\)", "", kol[1]).strip()
+        tegen = schoon(kol[1])
         tegen = {"NEC": "N.E.C."}.get(tegen, tegen)
         noot = "Toewijzingsregeling." if "toewijzing" in kol[1].lower() else ""
         fases = []
