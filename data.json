@@ -160,6 +160,36 @@
    "land": "NL",
    "mijn": "vrij",
    "url": "https://tickets.excelsiorrotterdam.nl/dashboard"
+  },
+  "brentford": {
+   "naam": "Brentford",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.brentfordfc.com/en/ticket-information"
+  },
+  "sevilla": {
+   "naam": "Sevilla FC",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://entradas.sevillafc.es/"
+  },
+  "elche": {
+   "naam": "Elche CF",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://entradas.elchecf.es/"
+  },
+  "osasuna": {
+   "naam": "CA Osasuna",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://entradas.osasuna.es/"
+  },
+  "deportivo": {
+   "naam": "RC Deportivo",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://ticketing.rcdeportivo.es/"
   }
  },
  "WEDSTRIJDEN": [
@@ -382,26 +412,6 @@
   },
   {
    "club": "groningen",
-   "tegen": "Willem II",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-27",
-   "fases": [
-    [
-     "clubkaart",
-     "2026-10-28T10:00",
-     "(Seizoen)clubkaarthouders, 2 per houder"
-    ],
-    [
-     "vrij",
-     "2026-11-04T10:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
-   "club": "groningen",
    "tegen": "Go Ahead Eagles",
    "comp": "Eredivisie",
    "aftrap": "2027-01-10T16:45",
@@ -414,26 +424,6 @@
     [
      "vrij",
      "2026-12-16T10:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
-   "club": "groningen",
-   "tegen": "N.E.C.",
-   "comp": "Eredivisie",
-   "aftrap": "2027-01-31",
-   "fases": [
-    [
-     "clubkaart",
-     "2026-12-30T10:00",
-     "(Seizoen)clubkaarthouders, 2 per houder"
-    ],
-    [
-     "vrij",
-     "2027-01-06T10:00",
      "Vrije verkoop"
     ]
    ],
@@ -1255,9 +1245,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T14:30",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
    "auto": true
   },
@@ -1346,6 +1336,641 @@
    "nu": false,
    "info": false,
    "noot": "Bron: 22-12-2026 | 9.00 uur",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "Eintracht Frankfurt",
+   "comp": "Bundesliga",
+   "aftrap": "2026-10-24T18:30",
+   "fases": [
+    [
+     "lid",
+     "2026-09-29T12:00",
+     "Leden (BVB-Mitglieder) (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "Real Betis",
+   "comp": "Champions League",
+   "aftrap": "2026-11-04T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-09-18T12:00",
+     "Leden (BVB-Mitglieder) (max. 10 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-09-21T12:00",
+     "Vrije voorverkoop (BVB-Fan) (max. 10 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "Inter Mailand",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-30T12:00",
+     "Leden (BVB-Mitglieder) (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "groningen",
+   "tegen": "sc Heerenveen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-21T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt (NTB).",
+   "bron": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
+   "auto": true
+  },
+  {
+   "club": "groningen",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-27",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-10-28T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2026-11-04T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
+   "auto": true
+  },
+  {
+   "club": "groningen",
+   "tegen": "Feyenoord",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-13T14:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt (NTB).",
+   "bron": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
+   "auto": true
+  },
+  {
+   "club": "groningen",
+   "tegen": "N.E.C.",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-31",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-12-30T10:00",
+     "(Seizoen)clubkaarthouders, 2 per houder"
+    ],
+    [
+     "vrij",
+     "2027-01-06T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2026-10-31T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "Olympique Marseille",
+   "comp": "Europees",
+   "aftrap": "2026-11-05T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "SC Paderborn 07",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-21T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "Borussia M'gladbach",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-05T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "Eintracht Frankfurt",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-19T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-16T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "SV 07 Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-23T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-06T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "1. FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-20T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "TSG 1899 Hoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-03T19:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "Borussia Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-03T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "SV Werder Bremen",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-17T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "Hamburger SV",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-08T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-15T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "brentford",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-10-31T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-09-25T15:00",
+     "All my bees members"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.brentfordfc.com/en/ticket-information",
+   "auto": true
+  },
+  {
+   "club": "brentford",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2026-11-23T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-08T15:00",
+     "All my bees members (+1 extra ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-11-20T15:00",
+     "Season ticket holders (+1 extra ticket)"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.brentfordfc.com/en/ticket-information",
+   "auto": true
+  },
+  {
+   "club": "brentford",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-10-29T15:00",
+     "All my bees members with 300+ taps"
+    ],
+    [
+     "lid",
+     "2026-11-02T15:00",
+     "All my bees members with 100+ taps"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.brentfordfc.com/en/ticket-information",
+   "auto": true
+  },
+  {
+   "club": "brentford",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-04T15:00",
+     "All my bees members with 300+ taps"
+    ],
+    [
+     "lid",
+     "2026-11-05T15:00",
+     "All my bees members with 30+ taps"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.brentfordfc.com/en/ticket-information",
+   "auto": true
+  },
+  {
+   "club": "brentford",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T13:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T15:00",
+     "All members with 300+ taps"
+    ],
+    [
+     "lid",
+     "2026-11-19T15:00",
+     "All members with 30+ taps"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.brentfordfc.com/en/ticket-information",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Deportivo Alavés",
+   "comp": "La Liga",
+   "aftrap": "2026-11-06T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Real Betis Balompié",
+   "comp": "La Liga",
+   "aftrap": "2026-11-21T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Málaga CF",
+   "comp": "La Liga",
+   "aftrap": "2026-12-06",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Real Racing Club",
+   "comp": "La Liga",
+   "aftrap": "2026-12-20",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "RC Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2027-01-10",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "RCD Espanyol",
+   "comp": "La Liga",
+   "aftrap": "2027-02-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Real Madrid CF",
+   "comp": "La Liga",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Real Sociedad",
+   "comp": "La Liga",
+   "aftrap": "2027-03-07",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Elche CF",
+   "comp": "La Liga",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Real Club Deportivo de A Coruña",
+   "comp": "La Liga",
+   "aftrap": "2027-04-11",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Levante UD",
+   "comp": "La Liga",
+   "aftrap": "2027-04-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Villarreal CF",
+   "comp": "La Liga",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "sevilla",
+   "tegen": "Getafe CF",
+   "comp": "La Liga",
+   "aftrap": "2027-05-23",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "elche",
+   "tegen": "Valencia CF",
+   "comp": "La Liga",
+   "aftrap": "2026-11-01T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "elche",
+   "tegen": "Real Betis Balompié",
+   "comp": "La Liga",
+   "aftrap": "2026-11-08T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "osasuna",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2026-11-07T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "deportivo",
+   "tegen": "CA Osasuna",
+   "comp": "La Liga",
+   "aftrap": "2026-11-02T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "deportivo",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2026-12-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Staat in de shop, maar de verkoop is nog niet open. Datum en tijd zijn nog niet definitief.",
    "bron": "",
    "auto": true
   }
