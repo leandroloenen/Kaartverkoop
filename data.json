@@ -750,9 +750,9 @@
    "comp": "Champions League",
    "aftrap": "2026-11-03T21:00",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1036,6 +1036,24 @@
    "auto": true
   },
   {
+   "club": "heerenveen",
+   "tegen": "Go Ahead Eagles",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-12T18:45",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-20T09:00",
+     "Start verkoop (doelgroep onbekend): Vanaf 20 november 9:00 uur."
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Vanaf 20 november 9:00 uur.",
+   "bron": "",
+   "auto": true
+  },
+  {
    "club": "cambuur",
    "tegen": "Go Ahead Eagles",
    "comp": "Eredivisie",
@@ -1056,7 +1074,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---PSV-Eredivisie",
    "auto": true
   },
   {
@@ -1149,11 +1167,12 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-01T14:30",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-10-31"
   },
   {
    "club": "excelsior",
@@ -1197,11 +1216,12 @@
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T16:30",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-10-31"
   },
   {
    "club": "willem2",
@@ -1209,11 +1229,12 @@
    "comp": "Eredivisie",
    "aftrap": "2026-12-13T14:30",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-10-31"
   },
   {
    "club": "willem2",
@@ -1245,10 +1266,10 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T14:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "noot": "",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
    "auto": true
   },
   {
@@ -1400,7 +1421,7 @@
   },
   {
    "club": "groningen",
-   "tegen": "sc Heerenveen",
+   "tegen": "SC Heerenveen",
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T21:00",
    "fases": [],
@@ -2491,5 +2512,19 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-30"
+ "bijgewerkt": "2026-10-31",
+ "SCHATTING": {
+  "excelsior": {
+   "n": 1,
+   "mediaan": 1,
+   "min": 1,
+   "max": 1
+  },
+  "willem2": {
+   "n": 2,
+   "mediaan": 43,
+   "min": 35,
+   "max": 43
+  }
+ }
 }
