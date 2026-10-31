@@ -22,9 +22,12 @@ jobs:
           playwright install --with-deps chromium
       - name: Gegevens ophalen
         run: python scripts/update.py
+      - name: Pagina's voor zoekmachines bouwen
+        continue-on-error: true   # lukt dit niet, dan wordt de update zelf toch opgeslagen
+        run: python scripts/bouw_site.py
       - name: Opslaan als er iets veranderd is
         run: |
           git config user.name "update-bot"
           git config user.email "update-bot@users.noreply.github.com"
-          git add data.json
+          git add -A
           git diff --staged --quiet || (git commit -m "Dagelijkse update" && git push)
