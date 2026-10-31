@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leandroloenen.github.io/Kaartverkoop/sitemap.xml

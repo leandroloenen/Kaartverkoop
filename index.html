@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kaartverkoop-overzicht</title>
+<title>Kaartverkoop-overzicht</title><!--SEO--><meta name="description" content="Wanneer gaan voetbaltickets in de verkoop? Overzicht van de kaartverkoop van clubs uit de Eredivisie, Bundesliga, La Liga en meer, per doelgroep en dagelijks bijgewerkt."><link rel="canonical" href="https://leandroloenen.github.io/Kaartverkoop/"><!--/SEO-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
 <style>
 :root{--bg:#f3f1ec;--card:#fffdf8;--ink:#14213d;--mute:#5b6378;--line:#d9d5c8;--accent:#e8a500;--open:#1b7f4b;--soon:#c2410c;
@@ -78,7 +78,7 @@ select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 <div class="filters"><select id="rComp" aria-label="Competitie voor richtlijnen"><option value="">Alle competities</option></select><label class="chk"><input type="checkbox" id="rMid"> Alleen clubs met minstens "Middel" kans op vrije verkoop</label></div>
 <div id="rlist"></div>
 </section>
-</main>
+<!--CLUBS--><section class="rules"><h2>Alle clubs</h2><nav class="clubs"><p><strong>Nederland</strong><br><a href="club/ajax/">Ajax tickets</a><a href="club/excelsior/">Excelsior tickets</a><a href="club/fc-groningen/">FC Groningen tickets</a><a href="club/fc-twente/">FC Twente tickets</a><a href="club/fc-utrecht/">FC Utrecht tickets</a><a href="club/feyenoord/">Feyenoord tickets</a><a href="club/fortuna-sittard/">Fortuna Sittard tickets</a><a href="club/go-ahead-eagles/">Go Ahead Eagles tickets</a><a href="club/nec/">N.E.C. tickets</a><a href="club/psv/">PSV tickets</a><a href="club/sc-cambuur/">SC Cambuur tickets</a><a href="club/sc-heerenveen/">SC Heerenveen tickets</a><a href="club/sparta-rotterdam/">Sparta Rotterdam tickets</a><a href="club/willem-ii/">Willem II tickets</a></p><p><strong>Duitsland</strong><br><a href="club/bayer-leverkusen/">Bayer Leverkusen tickets</a><a href="club/borussia-dortmund/">Borussia Dortmund tickets</a></p><p><strong>Engeland</strong><br><a href="club/brentford/">Brentford tickets</a></p><p><strong>Spanje</strong><br><a href="club/ca-osasuna/">CA Osasuna tickets</a><a href="club/elche-cf/">Elche CF tickets</a><a href="club/rc-deportivo/">RC Deportivo tickets</a><a href="club/sevilla-fc/">Sevilla FC tickets</a></p></nav></section><!--/CLUBS--></main>
 <script>fetch("data.json").then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(e=>{
   document.getElementById("list").innerHTML='<p class="empty">De gegevens (data.json) konden niet worden geladen. Open de pagina via je GitHub Pages-adres en niet als los bestand.</p>';
 });
