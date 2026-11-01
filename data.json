@@ -708,44 +708,6 @@
   },
   {
    "club": "feyenoord",
-   "tegen": "Fortuna Sittard",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-31T16:30",
-   "fases": [
-    [
-     "seizoen",
-     "2026-08-19T10:00",
-     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
-    ],
-    [
-     "lid",
-     "2026-08-20T10:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
-    ],
-    [
-     "seizoen",
-     "2026-08-20T13:00",
-     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
-    ],
-    [
-     "lid",
-     "2026-08-20T13:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-08-24T13:00",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Fortuna-Sittard-VriendenLoterij-Eredivisie",
-   "auto": true
-  },
-  {
-   "club": "feyenoord",
    "tegen": "Inter",
    "comp": "Champions League",
    "aftrap": "2026-11-03T21:00",
@@ -753,7 +715,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-UCL-10-UEFA-Champions-League-2026-2027",
    "auto": true
   },
   {
@@ -990,18 +952,6 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "N.E.C.",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-31T18:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "heerenveen",
    "tegen": "Feyenoord",
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T12:15",
@@ -1051,18 +1001,6 @@
    "info": false,
    "noot": "Bron: Vanaf 20 november 9:00 uur.",
    "bron": "",
-   "auto": true
-  },
-  {
-   "club": "cambuur",
-   "tegen": "Go Ahead Eagles",
-   "comp": "Eredivisie",
-   "aftrap": "2026-10-31T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---Go-Ahead-Eagles-Eredivisie",
    "auto": true
   },
   {
@@ -1167,9 +1105,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-01T14:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "",
    "auto": true,
    "eerst_nu": "2026-10-31"
@@ -1269,7 +1207,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true
   },
   {
@@ -1487,18 +1425,6 @@
    "info": false,
    "noot": "",
    "bron": "https://www.fcgroningen.nl/kaartverkoopinformatie/",
-   "auto": true
-  },
-  {
-   "club": "leverkusen",
-   "tegen": "VfB Stuttgart",
-   "comp": "Bundesliga",
-   "aftrap": "2026-10-31T15:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
-   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
   {
@@ -2512,7 +2438,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-10-31",
+ "bijgewerkt": "2026-11-01",
  "SCHATTING": {
   "excelsior": {
    "n": 1,
