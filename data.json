@@ -630,7 +630,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop (S)CC 02-11, 12.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -773,10 +773,26 @@
    "tegen": "Ajax",
    "comp": "Eredivisie",
    "aftrap": "2026-11-29T14:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-11-06T12:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-11-09T12:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "vrij",
+     "2026-11-28T23:59",
+     "Start verkoop (doelgroep onbekend): Verkoop start 5-10"
+    ]
+   ],
    "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "info": false,
+   "noot": "Bron: Verkoop start 5-10",
    "bron": "",
    "auto": true
   },
@@ -1191,9 +1207,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T14:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-02"
@@ -1421,9 +1437,9 @@
    "comp": "Europees",
    "aftrap": "2026-11-05T21:00",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -1573,24 +1589,6 @@
   },
   {
    "club": "brentford",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2026-10-31T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-09-25T15:00",
-     "All my bees members"
-    ]
-   ],
-   "nu": true,
-   "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.brentfordfc.com/en/ticket-information",
-   "auto": true
-  },
-  {
-   "club": "brentford",
    "tegen": "Everton",
    "comp": "Premier League",
    "aftrap": "2026-11-23T21:00",
@@ -1629,11 +1627,12 @@
      "All my bees members with 100+ taps"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
    "bron": "https://www.brentfordfc.com/en/ticket-information",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-02"
   },
   {
    "club": "brentford",
@@ -2427,6 +2426,12 @@
    "mediaan": 6,
    "min": 6,
    "max": 6
+  },
+  "brentford": {
+   "n": 1,
+   "mediaan": 30,
+   "min": 30,
+   "max": 30
   }
  }
 }
