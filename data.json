@@ -1874,18 +1874,6 @@
   },
   {
    "club": "deportivo",
-   "tegen": "CA Osasuna",
-   "comp": "La Liga",
-   "aftrap": "2026-11-02T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "deportivo",
    "tegen": "Athletic Club",
    "comp": "La Liga",
    "aftrap": "2026-12-13",
@@ -2413,7 +2401,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-02",
+ "bijgewerkt": "2026-11-03",
  "SCHATTING": {
   "willem2": {
    "n": 2,
