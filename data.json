@@ -715,7 +715,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-UCL-10-UEFA-Champions-League-2026-2027",
+   "bron": "",
    "auto": true
   },
   {
@@ -788,11 +788,16 @@
      "vrij",
      "2026-11-28T23:59",
      "Start verkoop (doelgroep onbekend): Verkoop start 5-10"
+    ],
+    [
+     "vrij",
+     "2026-11-28T23:59",
+     "Start verkoop (doelgroep onbekend): Verkoop start 5-11"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop start 5-10",
+   "noot": "Bron: Verkoop start 5-11",
    "bron": "",
    "auto": true
   },
@@ -828,7 +833,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
@@ -890,9 +895,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T20:00",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---N.E.C.-VriendenLoterij-Eredivisie-2026-2027",
    "auto": true
   },
@@ -1028,7 +1033,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---PSV-Eredivisie",
+   "bron": "",
    "auto": true
   },
   {
@@ -1210,7 +1215,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-02"
   },
