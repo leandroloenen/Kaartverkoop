@@ -52,7 +52,7 @@ def mini_markdown(tekst):
         if not regels:
             continue
         if regels[0].startswith("## "):
-            uit.append(f"<h2>{e(regels[0][3:].strip())}</h2>")
+            uit.append(f"<h3>{e(regels[0][3:].strip())}</h3>")
             regels = regels[1:]
         if not regels:
             continue
@@ -136,6 +136,8 @@ def main():
     # ---------- clubpagina's
     for k, club in clubs.items():
         meta, verhaal = lees_verhaal(ROOT / "clubs_info" / f"{k}.md")
+        if not verhaal:  # nog geen bestand onder de sleutel: probeer de naam van de club (bijvoorbeeld arsenal.md)
+            meta, verhaal = lees_verhaal(ROOT / "clubs_info" / f"{slug(club['naam'])}.md")
         wedstrijden = sorted(toekomst[k], key=lambda w: w["aftrap"])[:12]
         naam = club["naam"]
         volgende = None
