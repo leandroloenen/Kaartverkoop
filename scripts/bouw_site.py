@@ -288,6 +288,8 @@ def main():
                f'<link rel="canonical" href="{e(basis)}/"><!--/SEO-->')
         s = re.sub(r"<!--SEO-->.*?<!--/SEO-->", lambda m: seo, s, flags=re.S) if "<!--SEO-->" in s else s.replace("</title>", "</title>" + seo, 1)
         blok = f'<!--CLUBS--><section class="rules">{nav_html("")}<footer class="mute" style="margin-top:2em">{voet("")}</footer></section><!--/CLUBS-->'
+        titel_hoofd = f"{sitenaam}: wanneer gaan voetbaltickets in de verkoop?"
+        s = re.sub(r"<title>.*?</title>", lambda m: f"<title>{e(titel_hoofd)}</title>", s, count=1, flags=re.S)
         tag = f"<!--GA-->{analytics_tag('')}<!--/GA-->"
         s = re.sub(r"<!--GA-->.*?<!--/GA-->", lambda m: tag, s, flags=re.S) if "<!--GA-->" in s else s.replace("</head>", tag + "</head>", 1)
         s = re.sub(r"<!--CLUBS-->.*?<!--/CLUBS-->", lambda m: blok, s, flags=re.S) if "<!--CLUBS-->" in s else s.replace("</main>", blok + "</main>", 1)
