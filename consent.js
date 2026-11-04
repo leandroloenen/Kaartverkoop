@@ -60,6 +60,12 @@
 
   window.cookieInstellingen = toonBanner;
   function start() {
+    // Eigen bezoek uitsluiten: open eenmalig ?geen_meting=1 op je eigen apparaat (en ?geen_meting=0 om het te herstellen).
+    var m = /[?&]geen_meting=(\d)/.exec(location.search);
+    try {
+      if (m) { if (m[1] === "1") localStorage.setItem("geen_meting", "1"); else localStorage.removeItem("geen_meting"); }
+      if (localStorage.getItem("geen_meting") === "1") return;
+    } catch (e) {}
     var k = lees();
     if (k === "ja") laad(); else if (k === null) toonBanner();
   }
