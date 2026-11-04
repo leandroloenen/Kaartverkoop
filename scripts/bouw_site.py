@@ -18,6 +18,7 @@ DAGEN = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "
 MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
 LANDEN = {"NL": "Nederland", "DE": "Duitsland", "ES": "Spanje", "EN": "Engeland", "IT": "Italië"}
 e = html.escape
+CFG = {}
 
 CSS = """:root{--bg:#f3f1ec;--card:#fffdf8;--ink:#14213d;--mute:#5b6378;--line:#d9d5c8;--accent:#e8a500;--open:#1b7f4b}
 @media (prefers-color-scheme:dark){:root{--bg:#0f1526;--card:#18203a;--ink:#eef0f7;--mute:#9aa3bd;--line:#2b3556;--accent:#f2b705;--open:#4cc38a}}
@@ -94,23 +95,84 @@ def kaartje(w, club_naam, club_url, vandaag):
     return (f'<div class="kaart"><b>{e(club_naam)} – {e(w["tegen"])}</b>{labels}<div class="mute">{e(w["comp"])} · {e(aftrap)}</div>{fases}{noot}</div>')
 
 
+def voet(prefix):
+    return (f'<p class="mute"><a href="{prefix}over/">Over deze site</a> · <a href="{prefix}privacy/">Privacyverklaring</a>'
+            ' · <a href="#" onclick="window.cookieInstellingen&&cookieInstellingen();return false">Cookie-instellingen</a></p>')
+
+
+def analytics_tag(prefix):
+    if not CFG.get("ga"):
+        return ""
+    return f'<script defer src="{prefix}consent.js" data-ga="{e(CFG["ga"])}" data-privacy="{prefix}privacy/"></script>'
+
+
 def pagina(titel, beschrijving, canonical, prefix, inhoud, jsonld="", nav=""):
     return f"""<!DOCTYPE html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titel)}</title><meta name="description" content="{e(beschrijving)}"><link rel="canonical" href="{e(canonical)}">
 <meta property="og:title" content="{e(titel)}"><meta property="og:description" content="{e(beschrijving)}"><meta property="og:type" content="website"><meta property="og:url" content="{e(canonical)}">
-<style>{CSS}</style>{jsonld}</head><body><main>
+<style>{CSS}</style>{jsonld}{analytics_tag(prefix)}</head><body><main>
 <a class="terug" href="{prefix}">← Naar het volledige overzicht met filters</a>
 {inhoud}
 {nav}
-<footer class="mute">Dit overzicht is niet gelieerd aan de genoemde clubs. Controleer verkoopmomenten altijd op de officiële ticketsite van de club.</footer>
+<footer class="mute">{voet(prefix)}Dit overzicht is niet gelieerd aan de genoemde clubs. Controleer verkoopmomenten altijd op de officiële ticketsite van de club.</footer>
 </main></body></html>"""
+
+
+def contact_html():
+    if CFG.get("email"):
+        return f'<a href="mailto:{e(CFG["email"])}">{e(CFG["email"])}</a>'
+    return "het contactadres op deze site"
+
+
+def tekstpagina_over(aantal_clubs, aantal_wedstrijden, bijgewerkt):
+    return f"""<h1>Over {e(CFG["sitenaam"])}</h1>
+<p>{e(CFG["sitenaam"])} laat zien wanneer de kaartverkoop voor voetbalwedstrijden begint, en voor wie: seizoenkaarthouders, leden of vrije verkoop. Zo hoef je niet langs tientallen clubwebsites om te weten wanneer je moet opletten.</p>
+<h2>Hoe werkt het?</h2>
+<ul><li>Elke dag lezen wij de officiële ticketpagina's van de clubs uit en werken wij de verkoopmomenten bij. Van een deel van de clubs beheren wij de gegevens handmatig, op basis van de informatie op de clubsite.</li>
+<li>Op dit moment staan er {aantal_clubs} clubs en {aantal_wedstrijden} komende thuiswedstrijden in het overzicht. Laatst bijgewerkt op {e(datum_nl(bijgewerkt, False))}.</li>
+<li>Waar een club geen startmoment toont, laten wij alleen zien of de verkoop al open is of nog moet beginnen. Soms maken wij een schatting op basis van eerdere wedstrijden. Dat staat er dan bij.</li></ul>
+<h2>Let op</h2>
+<ul><li>Verkoopmomenten kunnen veranderen. Controleer ze altijd op de officiële ticketsite van de club voordat je erop rekent.</li>
+<li>Wij verkopen zelf geen tickets en zijn niet gelieerd aan de genoemde clubs of competities. Namen van clubs gebruiken wij uitsluitend om te vertellen over de kaartverkoop.</li>
+<li>De verhalen over clubs, steden en stadions zijn een algemene introductie. Capaciteiten, stadionnamen en kaartregels veranderen regelmatig.</li></ul>
+<h2>Een fout gevonden of een club gemist?</h2>
+<p>Laat het ons weten via {contact_html()}. Wij kijken er graag naar.</p>
+<p><a href="../privacy/">Lees onze privacyverklaring</a>.</p>"""
+
+
+def tekstpagina_privacy(bijgewerkt):
+    wie = e(CFG.get("beheerder") or "de beheerder van deze site")
+    return f"""<h1>Privacyverklaring</h1>
+<p class="mute">Laatst bijgewerkt op {e(datum_nl(bijgewerkt, False))}</p>
+<h2>Wie zijn wij?</h2>
+<p>{e(CFG["sitenaam"])} wordt beheerd door {wie}. Voor vragen over privacy kun je contact opnemen via {contact_html()}.</p>
+<h2>Welke gegevens verwerken wij?</h2>
+<p>Op deze site kun je geen account aanmaken en geen formulieren invullen. Wij vragen je dus niet om persoonsgegevens.</p>
+<ul>
+<li><strong>Instellingen op je eigen apparaat.</strong> Als je bij "Mijn toegang per club" aangeeft bij welke clubs je lid bent, bewaart je browser dat op je eigen apparaat. Dat wordt niet naar ons gestuurd. Ook je keuze over cookies bewaart je browser op je eigen apparaat.</li>
+<li><strong>Bezoekersstatistieken (alleen met toestemming).</strong> Als je op "Accepteren" klikt, gebruiken wij Google Analytics om te zien welke pagina's worden bezocht. Google plaatst daarvoor cookies (<code>_ga</code> en <code>_ga_…</code>) en verwerkt gegevens zoals je IP-adres, apparaat- en browsergegevens, een globale locatie en de pagina's die je bekijkt. In onze rapporten zien wij alleen samengevatte cijfers en geen IP-adressen. Klik je op "Weigeren", dan wordt Google Analytics niet geladen en meten wij niets.</li>
+<li><strong>Hosting.</strong> Deze site wordt aangeboden via GitHub Pages. Om de site te kunnen tonen verwerkt GitHub technische gegevens, zoals je IP-adres, in zijn serverlogboeken. Ons domein wordt beheerd bij Cloudflare.</li>
+</ul>
+<h2>Waarvoor en op welke grondslag?</h2>
+<ul><li>Bezoekersstatistiek: om te begrijpen hoe de site wordt gebruikt en haar te verbeteren. Grondslag: jouw toestemming.</li>
+<li>Het tonen van de site (hosting): grondslag is ons gerechtvaardigd belang om de site te kunnen aanbieden.</li></ul>
+<h2>Hoe lang bewaren wij gegevens?</h2>
+<p>Gegevens uit Google Analytics bewaren wij maximaal {e(CFG.get("bewaartermijn") or "2 maanden")}. Daarna worden ze automatisch verwijderd.</p>
+<h2>Delen en doorgifte</h2>
+<p>Google en GitHub zijn gevestigd in de Verenigde Staten. Gegevens kunnen daardoor buiten de Europese Economische Ruimte worden verwerkt. Dat gebeurt op basis van waarborgen die de Europese Commissie erkent, zoals het EU-VS Data Privacy Framework of standaardcontractbepalingen. Wij verkopen geen gegevens en delen ze niet met anderen dan hier genoemd.</p>
+<h2>Jouw rechten</h2>
+<p>Je mag vragen om inzage, correctie of verwijdering van gegevens die wij van je hebben, en bezwaar maken tegen verwerking. Omdat wij zelf geen persoonsgegevens bijhouden, bepaalt Google bij Analytics de uitvoering. Je kunt je toestemming op elk moment intrekken via <a href="#" onclick="window.cookieInstellingen&&cookieInstellingen();return false">Cookie-instellingen</a>. Heb je een klacht? Neem dan contact met ons op, of dien een klacht in bij de Autoriteit Persoonsgegevens.</p>
+<h2>Links naar andere sites</h2>
+<p>Wij verwijzen naar de ticketsites van clubs. Voor die sites geldt het privacybeleid van de betreffende club.</p>"""
 
 
 def main():
     data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     site = json.loads((ROOT / "site.json").read_text(encoding="utf-8"))
     basis, sitenaam = site["basis_url"].rstrip("/"), site["sitenaam"]
+    CFG.update({"ga": site.get("ga_id", "").strip(), "email": site.get("contact_email", "").strip(), "beheerder": site.get("beheerder", "").strip(),
+                "sitenaam": sitenaam, "bewaartermijn": site.get("bewaartermijn", "2 maanden")})
     vandaag = datetime.datetime.now(NL)
     bijgewerkt = data.get("bijgewerkt", vandaag.date().isoformat())
     schatting = data.get("SCHATTING", {})
@@ -205,6 +267,19 @@ def main():
         (uit / "index.html").write_text(pagina(titel, beschr, url, "../../", inhoud, "", nav_html("../../")), encoding="utf-8")
         pagina_urls.append(url)
 
+    # ---------- Over en Privacy
+    aantal_w = sum(len(v) for v in toekomst.values())
+    if CFG["email"]:
+        for naam, inhoud, titel in (("over", tekstpagina_over(len(clubs), aantal_w, bijgewerkt), f"Over {sitenaam}"),
+                                    ("privacy", tekstpagina_privacy(bijgewerkt), f"Privacyverklaring | {sitenaam}")):
+            uit = ROOT / naam
+            uit.mkdir(parents=True, exist_ok=True)
+            url = f"{basis}/{naam}/"
+            (uit / "index.html").write_text(pagina(titel, f"{titel}: wie wij zijn en hoe wij met gegevens omgaan.", url, "../", inhoud, "", ""), encoding="utf-8")
+            pagina_urls.append(url)
+    else:
+        print("LET OP: vul 'contact_email' in site.json in; zonder dat worden de pagina's Over en Privacy niet gemaakt")
+
     # ---------- hoofdpagina: zoekmachine-gegevens en links naar de subpagina's
     idx = ROOT / "index.html"
     if idx.exists():
@@ -212,7 +287,9 @@ def main():
         seo = (f'<!--SEO--><meta name="description" content="Wanneer gaan voetbaltickets in de verkoop? Overzicht van de kaartverkoop van clubs uit de Eredivisie, Bundesliga, La Liga en meer, per doelgroep en dagelijks bijgewerkt.">'
                f'<link rel="canonical" href="{e(basis)}/"><!--/SEO-->')
         s = re.sub(r"<!--SEO-->.*?<!--/SEO-->", lambda m: seo, s, flags=re.S) if "<!--SEO-->" in s else s.replace("</title>", "</title>" + seo, 1)
-        blok = f'<!--CLUBS--><section class="rules">{nav_html("")}</section><!--/CLUBS-->'
+        blok = f'<!--CLUBS--><section class="rules">{nav_html("")}<footer class="mute" style="margin-top:2em">{voet("")}</footer></section><!--/CLUBS-->'
+        tag = f"<!--GA-->{analytics_tag('')}<!--/GA-->"
+        s = re.sub(r"<!--GA-->.*?<!--/GA-->", lambda m: tag, s, flags=re.S) if "<!--GA-->" in s else s.replace("</head>", tag + "</head>", 1)
         s = re.sub(r"<!--CLUBS-->.*?<!--/CLUBS-->", lambda m: blok, s, flags=re.S) if "<!--CLUBS-->" in s else s.replace("</main>", blok + "</main>", 1)
         idx.write_text(s, encoding="utf-8")
 
@@ -221,7 +298,7 @@ def main():
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{e(u)}</loc><lastmod>{lms}</lastmod></url>\n" for u in pagina_urls) + "</urlset>\n", encoding="utf-8")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {basis}/sitemap.xml\n", encoding="utf-8")
-    print(f"{len(pagina_urls)} pagina's gebouwd ({len(clubs)} clubs, {len(pagina_urls) - 1 - len(clubs)} competities)")
+    print(f"{len(pagina_urls)} pagina's gebouwd ({len(clubs)} clubpagina's, {len(per_comp)} competities waarvan een deel genoeg wedstrijden heeft)")
 
 
 if __name__ == "__main__":
