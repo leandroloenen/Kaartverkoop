@@ -708,18 +708,6 @@
   },
   {
    "club": "feyenoord",
-   "tegen": "Inter",
-   "comp": "Champions League",
-   "aftrap": "2026-11-03T21:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "feyenoord",
    "tegen": "Excelsior",
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T18:45",
@@ -1215,7 +1203,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-02"
   },
@@ -2406,7 +2394,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-03",
+ "bijgewerkt": "2026-11-04",
  "SCHATTING": {
   "willem2": {
    "n": 2,
