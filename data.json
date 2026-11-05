@@ -738,11 +738,12 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Excelsior-VriendenLoterij-Eredivisie",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-05"
   },
   {
    "club": "feyenoord",
@@ -973,24 +974,19 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "SC Cambuur",
+   "tegen": "sc Cambuur",
    "comp": "Eredivisie",
    "aftrap": "2026-12-06T12:15",
    "fases": [
     [
      "vrij",
      "2026-11-13T13:00",
-     "Vanaf 13 november 13:00 uur."
-    ],
-    [
-     "vrij",
-     "2026-11-13T13:00",
-     "Start verkoop (doelgroep onbekend): Vanaf 13 november 13:00 uur."
+     "Start verkoop (doelgroep onbekend): Verkoop start 13-11 om 13:00 uur"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Vanaf 13 november 13:00 uur.",
+   "noot": "Bron: Verkoop start 13-11 om 13:00 uur",
    "bron": "",
    "auto": true
   },
@@ -1021,7 +1017,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---PSV-Eredivisie",
    "auto": true
   },
   {
@@ -2394,8 +2390,14 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-04",
+ "bijgewerkt": "2026-11-05",
  "SCHATTING": {
+  "feyenoord": {
+   "n": 1,
+   "mediaan": 16,
+   "min": 16,
+   "max": 16
+  },
   "willem2": {
    "n": 2,
    "mediaan": 43,
