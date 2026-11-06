@@ -1,0 +1,17 @@
+# Detailverkenning: naam | startadres | modus | aantal
+# modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
+Juventus | https://www.juventus.com/it/biglietti/standard/prima-squadra-maschile | link:/biglietti/standard/prima-squadra-maschile/ | 4
+Real Betis | https://en.realbetisbalompie.es/tickets/ | link:/entradas/partido/ | 3
+FC Barcelona | https://www.fcbarcelona.com/en/tickets/football | klik:see tickets|buy | 3
+Valencia | https://www.valenciacf.com/tickets | klik:match tickets|tickets | 2
+Celta de Vigo | https://rccelta.es/en/rccelta-tickets/ | klik:comprar entradas|buy | 2
+Villarreal | https://villarrealcf.es/es/venta-de-entradas/ | klik:a la venta|comprar | 2
+RB Leipzig | https://rbleipzig.com/en/matches-tickets | klik:buy|tickets | 2
+Eintracht Frankfurt | https://stores.eintracht.de/tickets/profis/ | klik:tickets sichern | 2
+Chelsea (overzicht) | https://www.chelseafc.com/en/tickets/mens-tickets | klik:view tickets | 3
+Chelsea (nieuwsbericht) | https://www.chelseafc.com/en/news/article/premier-league-ticket-news-leeds-at-home-2026-27 | geen | 1
+Manchester City (alle wedstrijden) | https://www.mancity.com/tickets/mens/202627-all-matches-on-sale | geen | 1
+Manchester City (nieuwsbericht) | https://www.mancity.com/news/mens/premier-league-tickets-2026-27-on-sale-soon-63919545 | geen | 1
+Liverpool (verkoopoverzicht) | https://www.liverpoolfc.com/info/all-red-ticket-sale | geen | 1
+Liverpool (wedstrijdpagina) | https://www.liverpoolfc.com/tickets/tickets-availability/liverpool-fc-v-nottingham-forest-29-aug-2026-0300pm-570 | geen | 1
+Tottenham (nieuwsbericht) | https://www.tottenhamhotspur.com/news/1076534/ticket-information-on-sale-dates-for-our-202627-premier-league-home-fixtures | geen | 1
