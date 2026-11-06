@@ -784,11 +784,12 @@
      "Start verkoop (doelgroep onbekend): Verkoop start 5-11"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Bron: Verkoop start 5-11",
+   "noot": "",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "feyenoord",
@@ -1142,6 +1143,18 @@
   },
   {
    "club": "willem2",
+   "tegen": "Excelsior",
+   "comp": "KNVB Beker",
+   "aftrap": "2026-12-01T20:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "willem2",
    "tegen": "Feyenoord",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T16:30",
@@ -1176,18 +1189,6 @@
    "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
-   "auto": true
-  },
-  {
-   "club": "twente",
-   "tegen": "Pafos FC",
-   "comp": "Conference League",
-   "aftrap": "2026-11-05T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---League-Phase-2-UEFA-Conference-League",
    "auto": true
   },
   {
@@ -1293,47 +1294,6 @@
   },
   {
    "club": "bvb",
-   "tegen": "Eintracht Frankfurt",
-   "comp": "Bundesliga",
-   "aftrap": "2026-10-24T18:30",
-   "fases": [
-    [
-     "lid",
-     "2026-09-29T12:00",
-     "Leden (BVB-Mitglieder) (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
-   "auto": true
-  },
-  {
-   "club": "bvb",
-   "tegen": "Real Betis",
-   "comp": "Champions League",
-   "aftrap": "2026-11-04T21:00",
-   "fases": [
-    [
-     "lid",
-     "2026-09-18T12:00",
-     "Leden (BVB-Mitglieder) (max. 10 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-09-21T12:00",
-     "Vrije voorverkoop (BVB-Fan) (max. 10 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
-   "auto": true
-  },
-  {
-   "club": "bvb",
    "tegen": "Inter Mailand",
    "comp": "Champions League",
    "aftrap": "2026-12-09T21:00",
@@ -1342,6 +1302,60 @@
      "lid",
      "2026-10-30T12:00",
      "Leden (BVB-Mitglieder) (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-12T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09T12:00",
+     "Leden (BVB-Mitglieder) (max. 6 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-08T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-11T12:00",
+     "Leden (BVB-Mitglieder) (max. 6 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html",
+   "auto": true
+  },
+  {
+   "club": "bvb",
+   "tegen": "SC Freiburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-16T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-12T12:00",
+     "Leden (BVB-Mitglieder) (max. 6 tickets)"
     ]
    ],
    "nu": false,
@@ -1422,18 +1436,6 @@
   },
   {
    "club": "leverkusen",
-   "tegen": "Olympique Marseille",
-   "comp": "Europees",
-   "aftrap": "2026-11-05T21:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
-   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
-   "auto": true
-  },
-  {
-   "club": "leverkusen",
    "tegen": "SC Paderborn 07",
    "comp": "Bundesliga",
    "aftrap": "2026-11-21T15:30",
@@ -1451,7 +1453,7 @@
    "aftrap": "2026-12-05T15:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -1463,7 +1465,7 @@
    "aftrap": "2026-12-19T15:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -1472,7 +1474,7 @@
    "club": "leverkusen",
    "tegen": "FC Schalke 04",
    "comp": "Bundesliga",
-   "aftrap": "2027-01-16T15:30",
+   "aftrap": "2027-01-17T17:30",
    "fases": [],
    "nu": false,
    "info": true,
@@ -1484,7 +1486,7 @@
    "club": "leverkusen",
    "tegen": "SV 07 Elversberg",
    "comp": "Bundesliga",
-   "aftrap": "2027-01-23T15:30",
+   "aftrap": "2027-01-24T17:30",
    "fases": [],
    "nu": false,
    "info": true,
@@ -1640,11 +1642,12 @@
      "All my bees members with 30+ taps"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
    "bron": "https://www.brentfordfc.com/en/ticket-information",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "brentford",
@@ -2390,13 +2393,13 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-05",
+ "bijgewerkt": "2026-11-06",
  "SCHATTING": {
   "feyenoord": {
-   "n": 1,
-   "mediaan": 16,
+   "n": 2,
+   "mediaan": 23,
    "min": 16,
-   "max": 16
+   "max": 23
   },
   "willem2": {
    "n": 2,
@@ -2411,9 +2414,9 @@
    "max": 6
   },
   "brentford": {
-   "n": 1,
+   "n": 2,
    "mediaan": 30,
-   "min": 30,
+   "min": 29,
    "max": 30
   }
  }
