@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 NL = ZoneInfo("Europe/Amsterdam")
 DAGEN = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]
 MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
+LIGAS = ["Eredivisie", "Premier League", "Bundesliga", "La Liga", "Serie A", "Eerste Divisie", "Championship", "2. Bundesliga", "La Liga 2", "Ligue 1"]
 LANDEN = {"NL": "Nederland", "DE": "Duitsland", "ES": "Spanje", "EN": "Engeland", "IT": "Italië"}
 e = html.escape
 CFG = {}
@@ -37,7 +38,13 @@ MENU_CSS = """.topmenu{position:relative;display:flex;align-items:center;justify
 .topmenu .mpanel{display:none;position:absolute;right:16px;top:calc(100% + 6px);min-width:190px;flex-direction:column;gap:2px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18);z-index:50}
 .topmenu .mpanel.open{display:flex}
 .topmenu a.item{color:var(--ink);text-decoration:none;font-weight:600;padding:10px 14px;border-radius:8px}
-.topmenu a.item:hover{background:var(--bg)}.topmenu a.item.actief{background:var(--accent);color:#14213d}"""
+.topmenu a.item:hover{background:var(--bg)}.topmenu a.item.actief{background:var(--accent);color:#14213d}
+.compvak{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0}
+.compvak h3{margin:0 0 10px;font-size:1.1rem}.compvak h3 a{color:inherit;text-decoration:none;border-bottom:2px solid var(--accent)}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.chip{display:flex;flex-direction:column;gap:2px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);text-decoration:none}
+.chip:hover{border-color:var(--accent)}.chip b{font-size:.95rem}.chip span{font-size:.8rem;color:var(--mute)}
+@media (max-width:480px){.chips{grid-template-columns:1fr 1fr}}"""
 
 MENU_JS = ("<script>(function(){var b=document.querySelector('.topmenu .mbtn'),p=document.getElementById('mpanel');if(!b||!p)return;"
            "function z(o){p.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}"
@@ -225,15 +232,36 @@ def main():
     clubs = {k: v for k, v in data["CLUBS"].items() if k in toekomst}
     slugs = {k: slug(v["naam"]) for k, v in clubs.items()}
 
+    def hoofdcompetitie(k):
+        """De competitie van een club: de landelijke competitie als die er is, anders de competitie met de meeste wedstrijden."""
+        tel = {}
+        for w in toekomst[k]:
+            tel[w["comp"]] = tel.get(w["comp"], 0) + 1
+        liga = [c for c in tel if c in LIGAS]
+        kies = liga or list(tel)
+        return max(kies, key=lambda c: (tel[c], c)) if kies else "Overig"
+
     def nav_html(prefix):
-        per_land = {}
-        for k, v in sorted(clubs.items(), key=lambda kv: kv[1]["naam"]):
-            per_land.setdefault(v.get("land", "NL"), []).append((k, v))
-        uit = '<h2>Alle clubs</h2><nav class="clubs">'
-        for land, lijst in per_land.items():
-            uit += f"<p><strong>{e(LANDEN.get(land, land))}</strong><br>" + "".join(
-                f'<a href="{prefix}club/{slugs[k]}/">{e(v["naam"])} tickets</a>' for k, v in lijst) + "</p>"
-        return uit + "</nav>"
+        """Per competitie een vak met de clubs eronder."""
+        per_comp_clubs = {}
+        for k in clubs:
+            per_comp_clubs.setdefault(hoofdcompetitie(k), []).append(k)
+        tellers = {}
+        for lijst in toekomst.values():
+            for w in lijst:
+                tellers[w["comp"]] = tellers.get(w["comp"], 0) + 1
+        volgorde = sorted(per_comp_clubs, key=lambda c: (LIGAS.index(c) if c in LIGAS else 99, c))
+        uit = '<h2>Alle clubs</h2>'
+        for comp in volgorde:
+            kop = e(comp)
+            if tellers.get(comp, 0) >= 3:
+                kop = f'<a href="{prefix}competitie/{slug(comp)}/">{kop}</a>'
+            chips = "".join(
+                f'<a class="chip" href="{prefix}club/{slugs[k]}/"><b>{e(clubs[k]["naam"])}</b>'
+                f'<span>{len(toekomst[k])} wedstrijd{"en" if len(toekomst[k]) != 1 else ""}</span></a>'
+                for k in sorted(per_comp_clubs[comp], key=lambda x: clubs[x]["naam"]))
+            uit += (f'<section class="compvak"><h3>{kop}</h3><div class="chips">{chips}</div></section>')
+        return uit
 
     pagina_urls = [basis + "/"]
     # ---------- clubpagina's
