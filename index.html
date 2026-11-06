@@ -71,15 +71,9 @@ select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 <div id="list"></div>
 <p class="todo" id="upd"></p>
 <p class="todo" id="todo"></p>
-<section class="rules" id="regels">
-<h2>Globale verkoopregels per competitie</h2>
-<p class="sub">Dit zijn <strong>richtlijnen, geen exacte momenten</strong>. Er is nog geen wedstrijdschema gekoppeld, dus je ziet hier geen aftelling. Gebruik het om te bepalen bij welke clubs een lidmaatschap of vroeg opletten zin heeft. Deze gegevens komen uit eigen tabellen en zijn niet per wedstrijd gecontroleerd.</p>
-<div class="filters"><select id="rComp" aria-label="Competitie voor richtlijnen"><option value="">Alle competities</option></select><label class="chk"><input type="checkbox" id="rMid"> Alleen clubs met minstens "Middel" kans op vrije verkoop</label></div>
-<div id="rlist"></div>
-</section>
 </main>
 <script>fetch("data.json").then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(e=>{
-  document.getElementById("list").innerHTML='<p class="empty">De gegevens (data.json) konden niet worden geladen. Open de pagina via je GitHub Pages-adres en niet als los bestand.</p>';
+  document.getElementById("list").innerHTML='';
 });
 function start(D){
 const {GROEPEN,TOEGANG,BANDEN,CLUBS,WEDSTRIJDEN,KANS,LINKS,REGELS,bijgewerkt}=D;
@@ -161,10 +155,6 @@ function toonRegels(){
   $("rlist").innerHTML=alle.filter(x=>!mid||x.r>=4).sort((a,b)=>b.r-a.r||a.n.localeCompare(b.n))
     .map(x=>`<div class="rule"><div class="rn"><span>${x.n} <small style="color:var(--mute);font-weight:400">${x.c}</small></span><span class="band ${kls(x.r)}">Vrije verkoop: ${x.k||"onbekend"}</span></div><div class="rr"><span>Membership</span><span>${x.m}</span><span>Verkoopmoment</span><span>${x.v}</span></div>${LINKS[x.n]?`<div class="foot" style="padding:8px 0 0"><a href="${LINKS[x.n]}" target="_blank" rel="noopener">Naar de ticketshop</a></div>`:""}</div>`).join("");
 }
-Object.keys(REGELS).forEach(c=>$("rComp").add(new Option(c,c)));
-$("rComp").addEventListener("change",toonRegels);
-$("rMid").addEventListener("change",toonRegels);
-toonRegels();
 const gevuld=new Set(WEDSTRIJDEN.map(w=>w.club));
 $("todo").textContent="Nog in te vullen: "+Object.entries(CLUBS).filter(([k])=>!gevuld.has(k)).map(([,c])=>c.naam).join(", ")+".";
 ["fComp","fClub","fPast","fAll","fVan","fTot"].forEach(i=>$(i).addEventListener("change",toon));
