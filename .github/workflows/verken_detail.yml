@@ -1,0 +1,28 @@
+name: Detailverkenning ticketpagina's
+
+on:
+  workflow_dispatch:   # alleen handmatig starten
+
+permissions:
+  contents: read
+
+jobs:
+  verken:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Browser installeren
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Pagina's verkennen
+        run: python scripts/verken_detail.py
+      - name: Resultaat bewaren als download
+        uses: actions/upload-artifact@v4
+        with:
+          name: verkenning-detail
+          path: verkenning_detail.json
+          retention-days: 3
