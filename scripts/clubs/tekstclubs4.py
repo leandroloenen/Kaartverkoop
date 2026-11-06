@@ -64,6 +64,75 @@ def parse_juventus(tekst, club="juventus", bron=""):
     return uit
 
 
+# Elke wedstrijd heeft bij Juventus een eigen pagina met het blok TIMING: per groep de dag en het uur waarop de verkoop begint.
+JUVE_KOP = re.compile(r"^\w+,\s+(\d{1,2})\s+([A-Z]{3})\s+(\d{4})\b")
+JUVE_FASE = re.compile(r"^(MEMBER[^:]*|JUVENTUS CARD|EXTRA TICKET HOLDERS|SEASON TICKET HOLDERS|GENERAL SALE)\s*:\s*(.*)$")
+JUVE_TIJD_A = re.compile(r"(\d{1,2}):(\d{2})\s*([AP]M)\s+on\s+\w+,?\s+([A-Za-z]+)\s+(\d{1,2})", re.I)
+JUVE_TIJD_B = re.compile(r"\w+,\s+([A-Za-z]+)\s+(\d{1,2})\s+at\s+(\d{1,2}):(\d{2})\s*([AP]M)", re.I)
+JUVE_GROEPEN = (("MEMBER", "lid", "Member (J1897 / Black&White)"), ("JUVENTUS CARD", "clubkaart", "Juventus Card"),
+                ("EXTRA TICKET HOLDERS", "seizoen", "Seizoenkaarthouders (extra kaarten)"), ("SEASON TICKET HOLDERS", "seizoen", "Seizoenkaarthouders"),
+                ("GENERAL SALE", "vrij", "Vrije verkoop"))
+
+
+def parse_juventus_pagina(tekst):
+    """Geef (datum 'JJJJ-MM-DD', fases) van een wedstrijdpagina, of None."""
+    regels = [r.strip() for r in tekst.splitlines() if r.strip()]
+    kop = next((JUVE_KOP.match(r) for r in regels[:20] if JUVE_KOP.match(r)), None)
+    if not kop or "TIMING" not in regels:
+        return None
+    maand = t.MAANDEN_EN.get(kop.group(2).lower())
+    if not maand:
+        return None
+    datum = f"{int(kop.group(3)):04d}-{maand:02d}-{int(kop.group(1)):02d}"
+    fases, gezien = [], set()
+    for r in regels[regels.index("TIMING") + 1:]:
+        if r.startswith(("BUY NOW", "PRICES")):
+            break
+        m = JUVE_FASE.match(r)
+        if not m:
+            continue
+        groep = next(((g, l) for sleutel, g, l in JUVE_GROEPEN if m.group(1).upper().startswith(sleutel)), None)
+        if not groep or groep[0] in gezien:
+            continue
+        rest = m.group(2)
+        a, b = JUVE_TIJD_A.search(rest), JUVE_TIJD_B.search(rest)
+        if a:
+            uur, minuut, ap, mnd, dag = int(a.group(1)), int(a.group(2)), a.group(3), a.group(4), int(a.group(5))
+        elif b:
+            mnd, dag, uur, minuut, ap = b.group(1), int(b.group(2)), int(b.group(3)), int(b.group(4)), b.group(5)
+        else:
+            continue
+        mnd_nr = t.MAANDEN_EN.get(mnd[:3].lower())
+        if not mnd_nr:
+            continue
+        d = t.jaar_voor_dag(dag, mnd_nr, uur % 12 + (12 if ap.upper() == "PM" else 0), minuut, t.NL, terug=250)
+        if d:
+            gezien.add(groep[0])
+            fases.append([groep[0], t.tekst_fmt(d), groep[1]])
+    fases.sort(key=lambda f: f[1])
+    return datum, fases
+
+
+def haal_juventus(pagina, test, sleutel="juventus"):
+    testmap = os.environ.get("JUVENTUS_DETAIL_MAP", "")
+    uit = parse_juventus(t.haal_tekst(pagina, test), sleutel, pagina)
+    try:
+        paginas = t.haal_paginas(pagina, r"/tickets/standard/first-team-men/juventus-", 20, testmap)
+    except Exception:  # noqa: BLE001
+        paginas = []
+    for _, tekst in paginas:
+        res = parse_juventus_pagina(tekst)
+        if not res or not res[1]:
+            continue
+        datum, fases = res
+        for w in uit:
+            if str(w["aftrap"])[:10] == datum:
+                w["fases"] = fases
+                w["info"] = False
+                w["noot"] = "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd)."
+    return uit
+
+
 # ---------------------------------------------------------------- RB Leipzig
 LEIPZIG_REGEL = re.compile(r"^HOME MATCH VS\.\s+(.+)$", re.I)
 LEIPZIG_DATUM = re.compile(r"^\w{3},\s+([A-Za-z]{3})\s+(\d{1,2})\s+·\s+(?:(\d{1,2}):(\d{2})|TBA)$")
@@ -92,6 +161,57 @@ def parse_leipzig(tekst, club="leipzig", bron=""):
                              noot="In de voorverkoop (startmoment en doelgroep niet getoond)." + (f" Status: {beschikbaar}." if "ticket" in beschikbaar.lower() or "availab" in beschikbaar.lower() else ""),
                              bron=bron))
     return uit
+
+
+def parse_leipzig_json(antwoorden, club="leipzig", bron=""):
+    """De site van Leipzig stuurt de hele seizoenskalender mee, met per wedstrijd 'preSaleDate' (alleen een datum) en 'ticketInfo'."""
+    import json as _json
+
+    wedstrijden, gezien = [], set()
+    nu_ = datetime.now(t.NL)
+    for tekst in antwoorden:
+        try:
+            matches = _json.loads(tekst)["data"]["matchPlans"]["matches"]
+        except Exception:  # noqa: BLE001
+            continue
+        for m in matches:
+            try:
+                if m.get("matchState") == "Played" or (m.get("homeTeam") or {}).get("name") != "RB Leipzig":
+                    continue
+                sleutel = (m["date"], m.get("description"))
+                if sleutel in gezien:
+                    continue
+                gezien.add(sleutel)
+                tegen = (m.get("awayTeam") or {}).get("name") or ""
+                if m.get("time"):
+                    aftrap = m["date"] + "T" + m["time"][:5]
+                else:
+                    aftrap = m["date"]
+                fases, nu, info, noot = [], False, False, ""
+                info_ticket = m.get("ticketInfo") or {}
+                pre = m.get("preSaleDate")
+                if pre and datetime.fromisoformat(pre).date() > nu_.date():
+                    fases = [["lid", pre, "Voorverkoop (doelgroep niet vermeld)"]]
+                    noot = "De club vermeldt alleen de dag waarop de voorverkoop begint."
+                elif info_ticket:
+                    nu = True
+                    niveau = {"GOOD": "goed", "LIMITED": "beperkt", "SOLDOUT": "uitverkocht"}.get(str(info_ticket.get("availabilityLevel", "")).upper(), "")
+                    noot = "Verkoop is open (startmoment niet getoond)." + (f" Beschikbaarheid: {niveau}." if niveau else "")
+                else:
+                    info, noot = True, "Nog niet in de verkoop."
+                wedstrijden.append(wedstrijd(club, tegen, comp(m.get("competitionName", "")), aftrap, fases=fases, nu=nu, info=info, noot=noot, bron=bron))
+            except Exception:  # noqa: BLE001
+                continue
+    return wedstrijden
+
+
+def haal_leipzig(pagina, test, sleutel="leipzig"):
+    testbestand = os.environ.get("LEIPZIG_JSON_BESTAND", "")
+    try:
+        uit = parse_leipzig_json(t.haal_json(pagina, "matchPlans", testbestand), sleutel, pagina)
+    except Exception:  # noqa: BLE001
+        uit = []
+    return uit or parse_leipzig(t.haal_tekst(pagina, test), sleutel, pagina)
 
 
 # ---------------------------------------------------------------- Villarreal
@@ -149,7 +269,7 @@ def chelsea_slugs(tegen):
     """Mogelijke adresdelen voor een tegenstander: volledige naam, zonder 'United/City/...' en alleen het eerste woord."""
     woorden = re.sub(r"[^a-z0-9 ]", "", tegen.lower().replace("&", "and")).split()
     kort = [w for w in woorden if w not in CHELSEA_SUFFIX] or woorden
-    kandidaten = ["-".join(woorden), "-".join(kort), woorden[0] if woorden else ""]
+    kandidaten = ["-".join(woorden), "-".join(kort), woorden[0] if woorden else "", woorden[-1] if woorden else ""]
     return [k for i, k in enumerate(kandidaten) if k and k not in kandidaten[:i]]
 
 
@@ -315,6 +435,8 @@ def _maak(sleutel, naam, land, lijstnaam, standaard, parser):
     pagina = t.adres_uit_lijst(lijstnaam, standaard)
 
     def haal_op():
+        if sleutel in EIGEN_HALER:
+            return EIGEN_HALER[sleutel](pagina, test, sleutel)
         uit = parser(t.haal_tekst(pagina, test), sleutel, pagina)
         if sleutel == "chelsea" and not test:
             verrijk_chelsea(uit)
@@ -323,4 +445,5 @@ def _maak(sleutel, naam, land, lijstnaam, standaard, parser):
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, haal_op=haal_op)
 
 
+EIGEN_HALER = {"juventus": haal_juventus, "leipzig": haal_leipzig}
 ALLE = [_maak(*c) for c in CLUBS]
