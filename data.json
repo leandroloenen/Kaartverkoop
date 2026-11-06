@@ -304,6 +304,36 @@
    "land": "DE",
    "mijn": "vrij",
    "url": "https://www.scfreiburg.com/heimtickets/"
+  },
+  "everton": {
+   "naam": "Everton",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.evertonfc.com/tickets/on-sale-dates"
+  },
+  "forest": {
+   "naam": "Nottingham Forest",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.nottinghamforest.co.uk/tickets/"
+  },
+  "bournemouth": {
+   "naam": "AFC Bournemouth",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.afcb.co.uk/tickets"
+  },
+  "coventry": {
+   "naam": "Coventry City",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.ccfc.co.uk/tickets"
+  },
+  "leeds": {
+   "naam": "Leeds United",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.leedsunited.com/en/news/category/ticketing"
   }
  },
  "WEDSTRIJDEN": [
@@ -1538,7 +1568,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-02"
   },
@@ -2475,7 +2505,7 @@
    "club": "barcelona",
    "tegen": "Atlético Madrid",
    "comp": "La Liga",
-   "aftrap": "2026-12-01",
+   "aftrap": "2026-12-01T21:30",
    "fases": [],
    "nu": true,
    "info": false,
@@ -2643,7 +2673,7 @@
    "club": "betis",
    "tegen": "Rayo Vallecano",
    "comp": "La Liga",
-   "aftrap": "2026-11-29",
+   "aftrap": "2026-11-28T14:00",
    "fases": [],
    "nu": false,
    "info": true,
@@ -4015,6 +4045,18 @@
   },
   {
    "club": "celta",
+   "tegen": "Villarreal",
+   "comp": "La Liga",
+   "aftrap": "2026-11-29T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://rccelta.es/en/rccelta-tickets/",
+   "auto": true
+  },
+  {
+   "club": "celta",
    "tegen": "Lillestrom SK",
    "comp": "Europa League",
    "aftrap": "2027-01-28T21:00",
@@ -4318,6 +4360,733 @@
    "info": false,
    "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
    "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2026-11-07",
+   "fases": [
+    [
+     "lid",
+     "2026-10-12",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-10-16",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2026-11-28",
+   "fases": [
+    [
+     "lid",
+     "2026-11-02",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-11-06",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-11-13",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26",
+   "fases": [
+    [
+     "lid",
+     "2026-11-30",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-12-04",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30",
+   "fases": [
+    [
+     "lid",
+     "2026-12-07",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-12-11",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2027-01-06",
+   "fases": [
+    [
+     "lid",
+     "2026-12-14",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2026-12-18",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-01-23",
+   "fases": [
+    [
+     "lid",
+     "2027-01-04",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-01-08",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2027-02-06",
+   "fases": [
+    [
+     "lid",
+     "2027-01-11",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-01-15",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2027-02-10",
+   "fases": [
+    [
+     "lid",
+     "2027-01-18",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-01-22",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-02-27",
+   "fases": [
+    [
+     "lid",
+     "2027-02-01",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-02-05",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20",
+   "fases": [
+    [
+     "lid",
+     "2027-02-22",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-02-26",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "A.F.C. Bournemouth",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17",
+   "fases": [
+    [
+     "lid",
+     "2027-03-22",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-03-26",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2027-04-24",
+   "fases": [
+    [
+     "lid",
+     "2027-03-29",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-04-02",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08",
+   "fases": [
+    [
+     "lid",
+     "2027-04-12",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-04-16",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "everton",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23",
+   "fases": [
+    [
+     "lid",
+     "2027-04-26",
+     "Forever Blue+ leden: loting"
+    ],
+    [
+     "lid",
+     "2027-04-30",
+     "Forever Blue leden: verkoopvenster"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
+   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "forest",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05T18:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-02T11:00",
+     "MyForest Pro-leden"
+    ],
+    [
+     "lid",
+     "2026-11-03T11:00",
+     "MyForest Plus-leden"
+    ],
+    [
+     "lid",
+     "2026-11-04T11:00",
+     "MyForest Core-leden, Junior Reds, International Reds"
+    ],
+    [
+     "lid",
+     "2026-11-04T15:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-05T17:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-11-06T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen.",
+   "bron": "https://www.nottinghamforest.co.uk/news/2026/november/03/ticket-update---brighton---hove-albion--h-/",
+   "auto": true
+  },
+  {
+   "club": "forest",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2026-11-27T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-19T11:00",
+     "MyForest Pro-leden"
+    ],
+    [
+     "lid",
+     "2026-10-20T11:00",
+     "MyForest Plus-leden"
+    ],
+    [
+     "lid",
+     "2026-10-21T11:00",
+     "MyForest Core-leden, Junior Reds, International Reds"
+    ],
+    [
+     "lid",
+     "2026-10-21T15:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-10-22T17:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-10-23T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen.",
+   "bron": "https://www.nottinghamforest.co.uk/news/2026/october/20/ticket-update---chelsea--h-/",
+   "auto": true
+  },
+  {
+   "club": "forest",
+   "tegen": "Leicester City",
+   "comp": "Premier League",
+   "aftrap": "2026-11-15T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.nottinghamforest.co.uk/news/2026/october/15/ticket-details---leicester-city--h-/",
+   "auto": true
+  },
+  {
+   "club": "forest",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2026-11-07T18:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-05T11:00",
+     "MyForest Pro-leden"
+    ],
+    [
+     "lid",
+     "2026-10-06T11:00",
+     "MyForest Plus-leden"
+    ],
+    [
+     "lid",
+     "2026-10-07T11:00",
+     "MyForest Core-leden, Junior Reds, International Reds"
+    ],
+    [
+     "lid",
+     "2026-10-07T15:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-10-08T17:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-10-09T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen.",
+   "bron": "https://www.nottinghamforest.co.uk/news/2026/october/07/ticket-update---manchester-city--h-/",
+   "auto": true
+  },
+  {
+   "club": "bournemouth",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-03T11:00",
+     "Leden met 27+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-11-05T11:00",
+     "Leden met 21+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-11-08T11:00",
+     "Leden met 15+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-11-10T11:00",
+     "Leden met Cherry Tuesday (1+ thuispunten)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
+   "bron": "https://www.afcb.co.uk/news/2026/november/02/ticket---points-drop-information--coventry-city--h-/",
+   "auto": true
+  },
+  {
+   "club": "bournemouth",
+   "tegen": "Brighton",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-13T11:00",
+     "Leden met 25+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-15T11:00",
+     "Leden met 19+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-18T11:00",
+     "Leden met 13+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-20T11:00",
+     "Leden met Cherry Tuesday (1+ thuispunten)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
+   "bron": "https://www.afcb.co.uk/news/2026/october/12/information---points-drop--brighton-h/",
+   "auto": true
+  },
+  {
+   "club": "bournemouth",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-09-29T11:00",
+     "Leden met 24+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-01T11:00",
+     "Leden met 18+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-04T11:00",
+     "Leden met 12+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-06T11:00",
+     "Leden met Cherry Tuesday (1+ thuispunten)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
+   "bron": "https://www.afcb.co.uk/news/2026/september/28/information---points-drop--nottingham-forest--h-/",
+   "auto": true
+  },
+  {
+   "club": "bournemouth",
+   "tegen": "Sturm Graz",
+   "comp": "Europa League",
+   "aftrap": "2027-10-15T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
+   "bron": "https://www.afcb.co.uk/news/2026/september/21/information---points-drop--sturmgraz--h-/",
+   "auto": true
+  },
+  {
+   "club": "coventry",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-04T11:00",
+     "Sky Blues Members"
+    ],
+    [
+     "lid",
+     "2026-11-06T11:00",
+     "Leden met eerdere aankoopgeschiedenis"
+    ],
+    [
+     "lid",
+     "2026-11-10T11:00",
+     "Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden.",
+   "bron": "https://www.ccfc.co.uk/news/2026/november/03/ticket-news--crystal-palace--ipswich-town-h-fixtures-ticket-details-revealed/",
+   "auto": true
+  },
+  {
+   "club": "coventry",
+   "tegen": "Ipswich Town",
+   "comp": "Premier League",
+   "aftrap": "2026-12-01T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-04T11:00",
+     "Sky Blues Members"
+    ],
+    [
+     "lid",
+     "2026-11-06T11:00",
+     "Leden met eerdere aankoopgeschiedenis"
+    ],
+    [
+     "lid",
+     "2026-11-10T11:00",
+     "Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden.",
+   "bron": "https://www.ccfc.co.uk/news/2026/november/03/ticket-news--crystal-palace--ipswich-town-h-fixtures-ticket-details-revealed/",
+   "auto": true
+  },
+  {
+   "club": "leeds",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2026-11-28T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-11-10T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-11-12T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-coventry-clash",
+   "auto": true
+  },
+  {
+   "club": "leeds",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-11-07T13:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-19T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-10-20T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-10-22T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-spurs-clash",
+   "auto": true
+  },
+  {
+   "club": "leeds",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2027-09-20T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-09-07T11:30",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-crystal-palace-h-26-27",
    "auto": true
   }
  ],
