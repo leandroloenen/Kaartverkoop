@@ -246,7 +246,7 @@ def parse_freiburg(tekst, club="freiburg", bron=""):
 CLUBS = [
     ("juventus", "Juventus", "IT", "Juventus", "https://www.juventus.com/en/tickets/", parse_juventus),
     ("leipzig", "RB Leipzig", "DE", "RB Leipzig", "https://rbleipzig.com/en/matches-tickets", parse_leipzig),
-    ("villarreal", "Villarreal", "ES", "Villarreal", "https://villarrealcf.es/es/venta-de-entradas/", parse_villarreal),
+    ("villarreal", "Villarreal CF", "ES", "Villarreal", "https://villarrealcf.es/es/venta-de-entradas/", parse_villarreal),
     ("chelsea", "Chelsea", "EN", "Chelsea", "https://www.chelseafc.com/en/tickets/mens-tickets", parse_chelsea),
     ("celta", "Celta de Vigo", "ES", "Celta de Vigo", "https://rccelta.es/en/rccelta-tickets/", parse_celta),
     ("frankfurt", "Eintracht Frankfurt", "DE", "Eintracht Frankfurt", "https://stores.eintracht.de/tickets/profis/", parse_frankfurt),
