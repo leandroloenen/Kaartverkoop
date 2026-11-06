@@ -72,9 +72,13 @@ def parse_tottenham(tekst, club="tottenham", bron=""):
             if d and maand_f:
                 dagtekst = _dag_voor(int(d.group(1)), maand_f, aftrap)
                 if dagtekst:
+                    if groep == "lid":
+                        # De club meldt in haar nieuwsbericht over de verkoopdata dat de ledenverkoop om 10.00 uur (UK) begint = 11.00 uur NL.
+                        dagtekst += "T11:00"
+                        label += " - 10.00 uur UK-tijd"
                     fases.append([groep, dagtekst, label])
         uit.append(wedstrijd(club, tegen, comp_en(compnaam), aftrap, fases=fases, nu=nu, info=not fases and not nu,
-                             noot="Starttijd van de verkoop wordt door de club niet getoond." if fases else "", bron=bron))
+                             noot="Starttijd voor leden volgens de club: 10.00 uur UK-tijd." if fases else "", bron=bron))
     return uit
 
 
