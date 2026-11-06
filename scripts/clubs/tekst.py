@@ -109,3 +109,77 @@ def jaar_voor_dag(dag, maand, uur=0, minuut=0, zone=NL, terug=45):
         if (nu - d).days <= terug:
             return d.astimezone(NL)
     return None
+
+
+def haal_paginas(startpagina, link_patroon, maximum=20, testmap=""):
+    """Lees een overzichtspagina en daarna de pagina's waar die naar linkt (adres met 'link_patroon').
+
+    Geeft een lijst (adres, tekst). Met testmap lezen we alle *.txt-bestanden uit die map in plaats van de site."""
+    if testmap:
+        import glob
+        return [(b, open(b, encoding="utf-8").read()) for b in sorted(glob.glob(os.path.join(testmap, "*.txt")))]
+    import re as _re
+    from playwright.sync_api import sync_playwright
+
+    uit = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="en-GB")
+            page.goto(startpagina, wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:  # noqa: BLE001
+                pass
+            for _ in range(3):
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(1200)
+            hrefs = page.evaluate("() => Array.from(document.querySelectorAll('a[href]')).map(a => a.href)")
+            doelen = list(dict.fromkeys(h.split("#")[0] for h in hrefs if _re.search(link_patroon, h)))[:maximum]
+            for doel in doelen:
+                try:
+                    page.goto(doel, wait_until="domcontentloaded", timeout=45000)
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=10000)
+                    except Exception:  # noqa: BLE001
+                        pass
+                    page.wait_for_timeout(1500)
+                    uit.append((doel, page.inner_text("body")))
+                except Exception:  # noqa: BLE001
+                    continue
+        finally:
+            browser.close()
+    return uit
+
+
+def haal_json(pagina, woord, testbestand=""):
+    """Open de pagina en geef alle JSON-antwoorden (als tekst) die 'woord' bevatten. Met testbestand lezen we dat bestand."""
+    if testbestand:
+        return [open(testbestand, encoding="utf-8").read()]
+    from playwright.sync_api import sync_playwright
+
+    gevonden = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="en-GB")
+
+            def bij_antwoord(r):
+                try:
+                    if r.request.resource_type in ("xhr", "fetch") and r.status == 200 and "json" in r.headers.get("content-type", ""):
+                        tekst = r.text()
+                        if woord in tekst:
+                            gevonden.append(tekst)
+                except Exception:  # noqa: BLE001
+                    pass
+
+            page.on("response", bij_antwoord)
+            page.goto(pagina, wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:  # noqa: BLE001
+                pass
+            page.wait_for_timeout(4000)
+        finally:
+            browser.close()
+    return gevonden
