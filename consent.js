@@ -3,6 +3,16 @@
   var GA = script && script.getAttribute("data-ga");
   var PRIVACY = (script && script.getAttribute("data-privacy")) || "privacy/";
   if (!GA) return;
+  var EN = (script && script.getAttribute("data-lang")) === "en";
+  var T = EN ? {
+    label: "Cookie settings",
+    tekst: "May we keep anonymous visitor statistics with Google Analytics? Google places cookies for this. Without your consent we do not measure anything. Read more in the ",
+    link: "privacy policy", ja: "Accept", nee: "Decline"
+  } : {
+    label: "Cookie-instellingen",
+    tekst: "Mogen wij anonieme bezoekersstatistieken bijhouden met Google Analytics? Daarvoor plaatst Google cookies. Zonder toestemming meten wij niets. Lees meer in de ",
+    link: "privacyverklaring", ja: "Accepteren", nee: "Weigeren"
+  };
   var SLEUTEL = "cookie_toestemming";
 
   function lees() { try { return localStorage.getItem(SLEUTEL); } catch (e) { return null; } }
@@ -48,10 +58,9 @@
     var b = document.createElement("div");
     b.id = "cookiebanner";
     b.setAttribute("role", "dialog");
-    b.setAttribute("aria-label", "Cookie-instellingen");
-    b.innerHTML = '<div class="in"><p>Mogen wij anonieme bezoekersstatistieken bijhouden met Google Analytics? Daarvoor plaatst Google cookies. ' +
-      'Zonder toestemming meten wij niets. Lees meer in de <a href="' + PRIVACY + '">privacyverklaring</a>.</p>' +
-      '<button type="button" id="cb-ja">Accepteren</button><button type="button" id="cb-nee">Weigeren</button></div>';
+    b.setAttribute("aria-label", T.label);
+    b.innerHTML = '<div class="in"><p>' + T.tekst + '<a href="' + PRIVACY + '">' + T.link + '</a>.</p>' +
+      '<button type="button" id="cb-ja">' + T.ja + '</button><button type="button" id="cb-nee">' + T.nee + '</button></div>';
     document.head.appendChild(stijl);
     document.body.appendChild(b);
     document.getElementById("cb-ja").onclick = function () { bewaar("ja"); b.remove(); laad(); };
