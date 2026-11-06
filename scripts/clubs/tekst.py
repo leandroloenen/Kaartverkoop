@@ -75,3 +75,37 @@ def klok(tekst):
     if ap == "pm" and uur != 12:
         uur += 12
     return uur, minuut
+
+
+MAANDEN_NL = {"jan": 1, "feb": 2, "mrt": 3, "maa": 3, "apr": 4, "mei": 5, "jun": 6, "jul": 7, "aug": 8, "sep": 9, "okt": 10, "nov": 11, "dec": 12}
+MAANDEN_DE = {"jan": 1, "feb": 2, "mär": 3, "mar": 3, "apr": 4, "mai": 5, "jun": 6, "jul": 7, "aug": 8, "sep": 9, "okt": 10, "nov": 11, "dez": 12}
+MAANDEN_DE_LANG = {"januar": 1, "februar": 2, "märz": 3, "april": 4, "mai": 5, "juni": 6, "juli": 7, "august": 8, "september": 9,
+                   "oktober": 10, "november": 11, "dezember": 12}
+MAANDEN_NL_LANG = {"januari": 1, "februari": 2, "maart": 3, "april": 4, "mei": 5, "juni": 6, "juli": 7, "augustus": 8, "september": 9,
+                   "oktober": 10, "november": 11, "december": 12}
+
+
+def adres_uit_lijst(naam, standaard):
+    """Het adres van een club staat in scripts/verken_lijst.txt; dat is het exacte adres dat jij hebt ingevuld."""
+    from pathlib import Path
+
+    pad = Path(__file__).resolve().parent.parent / "verken_lijst.txt"
+    if pad.exists():
+        for regel in pad.read_text(encoding="utf-8").splitlines():
+            n, _, a = regel.partition("|")
+            if n.strip().lower() == naam.lower() and a.strip():
+                return a.strip()
+    return standaard
+
+
+def jaar_voor_dag(dag, maand, uur=0, minuut=0, zone=NL, terug=45):
+    """Datums op clubsites hebben geen jaar: kies het jaar waarbij de datum niet langer dan 'terug' dagen geleden is."""
+    nu = datetime.now(zone)
+    for jaar in (nu.year, nu.year + 1):
+        try:
+            d = datetime(jaar, maand, dag, uur, minuut, tzinfo=zone)
+        except ValueError:
+            continue
+        if (nu - d).days <= terug:
+            return d.astimezone(NL)
+    return None
