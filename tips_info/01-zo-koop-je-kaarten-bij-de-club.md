@@ -1,6 +1,6 @@
 ---
 titel: Zo koop je voetbalkaarten rechtstreeks bij de club
-beschrijving: Het stappenplan dat bij vrijwel elke club terugkomt: van account aanmaken tot kaartje in je telefoon.
+beschrijving: Het stappenplan dat bij vrijwel elke club terugkomt - van account aanmaken tot kaartje in je telefoon.
 volgorde: 1
 ---
 Het kopen van een voetbalkaartje bij de club zelf is bij bijna elke club in grote lijnen hetzelfde, ook al verschilt de uitwerking. Met deze stappen kom je meestal een heel eind.
