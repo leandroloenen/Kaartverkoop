@@ -1,6 +1,6 @@
 ---
 titel: Voetbalkaarten kopen voor een wedstrijd in het buitenland
-beschrijving: Tips voor wie naar een wedstrijd in een ander land wil: account, taal, betaling, vervoer en timing.
+beschrijving: Tips voor wie naar een wedstrijd in een ander land wil - account, taal, betaling, vervoer en timing.
 volgorde: 4
 ---
 Een wedstrijd in het buitenland bezoeken is een mooie ervaring, maar het kopen van de kaarten vraagt iets meer voorbereiding. Dit zijn de dingen waar je op kunt letten.
