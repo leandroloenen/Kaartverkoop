@@ -2,11 +2,12 @@
 
 Gebruik:  python scripts/verken_detail.py
 Leest scripts/verken_detail_lijst.txt, regels van de vorm
-    naam | startadres | modus | aantal
+    naam | startadres | modus | aantal | json=WOORD
 met als modus:
     geen            alleen de startpagina zelf lezen
     link:PATROON    alle links op de pagina waarvan het adres PATROON bevat openen (tot 'aantal')
     klik:PATROON    knoppen of links waarvan de tekst PATROON bevat aanklikken (tot 'aantal')
+Met json=WOORD (optioneel, laatste kolom) bewaren we het complete JSON-antwoord dat dat woord bevat.
 Uitvoer: verkenning_detail.json. Gevoelig ogende waarden worden weggelaten; datums en tijden blijven staan.
 """
 import json
@@ -39,8 +40,8 @@ def pagina_lezen(page, wacht=3000, scroll=2):
             "tekst": LANGE_WAARDE.sub("[lange waarde weggelaten]", tekst)[:TEKSTLENGTE]}
 
 
-def verken_club(browser, naam, adres, modus, aantal):
-    uit = {"naam": naam, "startadres": schoon_url(adres), "modus": modus, "paginas": [], "links": [], "fout": None}
+def verken_club(browser, naam, adres, modus, aantal, json_woord=""):
+    uit = {"naam": naam, "startadres": schoon_url(adres), "modus": modus, "paginas": [], "links": [], "json_volledig": [], "fout": None}
     context = browser.new_context(locale="en-GB")
     page = context.new_page()
     json_antwoorden = []
@@ -48,9 +49,11 @@ def verken_club(browser, naam, adres, modus, aantal):
     def bij_antwoord(r):
         try:
             if r.request.resource_type in ("xhr", "fetch") and r.status == 200 and not any(x in r.url for x in RUIS) \
-                    and "json" in r.headers.get("content-type", "") and len(json_antwoorden) < 6:
+                    and "json" in r.headers.get("content-type", "") and (len(json_antwoorden) < 6 or json_woord):
                 tekst = r.text()
-                if SLEUTELWOORDEN.search(tekst):
+                if json_woord and json_woord in tekst and len(uit["json_volledig"]) < 2:
+                    uit["json_volledig"].append({"url": schoon_url(r.url), "inhoud": veilig_voorbeeld(tekst, 90000)})
+                if SLEUTELWOORDEN.search(tekst) and len(json_antwoorden) < 6:
                     json_antwoorden.append({"url": schoon_url(r.url), "begin": veilig_voorbeeld(tekst, 6000)})
         except Exception:  # noqa: BLE001
             pass
@@ -111,13 +114,14 @@ def main():
     taken = []
     for r in lees_regels(LIJST):
         if len(r) >= 2:
-            taken.append((r[0], r[1], r[2] if len(r) > 2 and r[2] else "geen", int(r[3]) if len(r) > 3 and r[3].isdigit() else 3))
+            woord = next((x[5:] for x in r[4:] if x.startswith("json=")), "")
+            taken.append((r[0], r[1], r[2] if len(r) > 2 and r[2] else "geen", int(r[3]) if len(r) > 3 and r[3].isdigit() else 3, woord))
     resultaat = []
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        for i, (naam, adres, modus, aantal) in enumerate(taken, 1):
+        for i, (naam, adres, modus, aantal, woord) in enumerate(taken, 1):
             print(f"[{i}/{len(taken)}] {naam}", flush=True)
-            resultaat.append(verken_club(browser, naam, adres, modus, aantal))
+            resultaat.append(verken_club(browser, naam, adres, modus, aantal, woord))
         browser.close()
     UIT.write_text(json.dumps(resultaat, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(resultaat)} clubs verkend; resultaat in {UIT.name}")
