@@ -3444,10 +3444,21 @@
    "tegen": "Venezia",
    "comp": "Serie A",
    "aftrap": "2026-11-22T11:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-06T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true
   },
@@ -3456,10 +3467,26 @@
    "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-09-16T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "clubkaart",
+     "2026-09-23T15:00",
+     "Juventus Card"
+    ],
+    [
+     "vrij",
+     "2026-09-23T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3469,10 +3496,31 @@
    "tegen": "Sassuolo",
    "comp": "Coppa Italia",
    "aftrap": "2026-12-03T20:00",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "seizoen",
+     "2026-10-06T15:00",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "clubkaart",
+     "2026-10-06T15:00",
+     "Juventus Card"
+    ],
+    [
+     "vrij",
+     "2026-10-06T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true
   },
@@ -3481,10 +3529,21 @@
    "tegen": "Udinese",
    "comp": "Serie A",
    "aftrap": "2026-12-06T17:00",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-08T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true
   },
@@ -3493,10 +3552,21 @@
    "tegen": "Monza",
    "comp": "Serie A",
    "aftrap": "2026-12-14T19:45",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-08T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true
   },
@@ -3541,10 +3611,21 @@
    "tegen": "Real Sociedad",
    "comp": "Europa League",
    "aftrap": "2027-01-28T20:00",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-09-28T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-01T15:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
    "auto": true
   },
@@ -3646,73 +3727,192 @@
   },
   {
    "club": "leipzig",
-   "tegen": "Augsburg",
+   "tegen": "FC Augsburg",
    "comp": "Bundesliga",
    "aftrap": "2026-11-07T15:30",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "leipzig",
-   "tegen": "Lens",
+   "tegen": "Racing Club de Lens",
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "leipzig",
-   "tegen": "Mainz 05",
+   "tegen": "1. FSV Mainz 05",
    "comp": "Bundesliga",
    "aftrap": "2026-12-05T15:30",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true,
+   "eerst_nu": "2026-11-06"
+  },
+  {
+   "club": "leipzig",
+   "tegen": "BV Borussia 09 Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-19T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
   },
   {
    "club": "leipzig",
-   "tegen": "Stuttgart",
+   "tegen": "VfB Stuttgart 1893",
    "comp": "Bundesliga",
    "aftrap": "2027-01-12T18:30",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "leipzig",
-   "tegen": "Shakhtar",
+   "tegen": "FC Shakhtar Donetsk",
    "comp": "Champions League",
    "aftrap": "2027-01-20T21:00",
-   "fases": [],
-   "nu": true,
+   "fases": [
+    [
+     "lid",
+     "2026-11-09",
+     "Voorverkoop (doelgroep niet vermeld)"
+    ]
+   ],
+   "nu": false,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "noot": "De club vermeldt alleen de dag waarop de voorverkoop begint.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
   },
   {
    "club": "leipzig",
-   "tegen": "Bremen",
+   "tegen": "SV Werder Bremen",
    "comp": "Bundesliga",
    "aftrap": "2027-01-30",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Only a few tickets left.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true,
+   "eerst_nu": "2026-11-06"
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Bayer 04 Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-27",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "SC Freiburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "1. FC Köln",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "SC Paderborn 07",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-08",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "TSG 1899 Hoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-22T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
   },
@@ -4679,6 +4879,12 @@
    "mediaan": 20,
    "min": 20,
    "max": 20
+  },
+  "leipzig": {
+   "n": 5,
+   "mediaan": 29,
+   "min": 1,
+   "max": 85
   }
  }
 }
