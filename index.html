@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Football Ticket Scout: wanneer gaan voetbaltickets in de verkoop?</title><!--SEO--><meta name="description" content="Wanneer gaan voetbaltickets in de verkoop? Overzicht van de kaartverkoop van clubs uit de Eredivisie, Bundesliga, La Liga en meer, per doelgroep en dagelijks bijgewerkt."><link rel="canonical" href="https://footballticketscout.com/"><!--/SEO-->
+<title>Kaartverkoop-overzicht</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
 <style>
 :root{--bg:#f3f1ec;--card:#fffdf8;--ink:#14213d;--mute:#5b6378;--line:#d9d5c8;--accent:#e8a500;--open:#1b7f4b;--soon:#c2410c;
@@ -53,27 +53,22 @@ select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 .foot{display:flex;gap:14px;flex-wrap:wrap;padding:0 16px 14px;font-size:.84rem;color:var(--mute)}
 .foot a{color:var(--ink);font-weight:600}
 .empty,.todo{color:var(--mute);font-size:.92rem;margin-top:18px}
-@media (max-width:480px){.ph{grid-template-columns:1fr}.ph .t,.ph .cd{text-align:left;grid-column:1}}
+@media (max-width:480px){.filters .chk{flex-wrap:wrap}.filters input[type=date]{max-width:100%}.ph{grid-template-columns:1fr}.ph .t,.ph .cd{text-align:left;grid-column:1}}
 </style>
-<!--GA--><script defer src="consent.js" data-ga="G-YN9RFZ322G" data-privacy="privacy/"></script><!--/GA--></head>
-<body><!--MENU--><style>.topmenu{display:flex;gap:6px;flex-wrap:wrap;align-items:center;max-width:820px;margin:0 auto;padding:12px 16px 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-.topmenu .merk{font-weight:700;margin-right:auto;color:var(--ink);text-decoration:none}
-.topmenu a.item{color:var(--ink);text-decoration:none;font-weight:600;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card)}
-.topmenu a.item:hover{border-color:var(--accent)}.topmenu a.item.actief{background:var(--accent);border-color:var(--accent);color:#14213d}</style><nav class="topmenu" aria-label="Hoofdmenu"><a class="merk" href="./">Football Ticket Scout</a><a class="item actief" aria-current="page" href="./">Home</a><a class="item" href="tips/">Tips</a><a class="item" href="over/">Over</a></nav><!--/MENU-->
+</head>
+<body>
 <main>
 <h1>Wanneer gaan de tickets in de verkoop?</h1>
-<p class="sub">Per wedstrijd zie je onder elkaar wanneer de verkoop start voor elke doelgroep. Stel hieronder in waar je lid van bent, dan laat de pagina alleen zien wat voor jou geldt.</p>
-<details id="acc"><summary>Mijn toegang per club</summary><div class="access" id="access"></div></details>
+<p class="sub">Per wedstrijd zie je onder elkaar wanneer de verkoop start voor elke doelgroep. Filter hieronder op competitie, club of datum.</p>
 <div class="filters">
 <select id="fComp" aria-label="Competitie"><option value="">Alle competities</option></select>
 <select id="fClub" aria-label="Club"><option value="">Alle clubs</option></select>
 <label class="chk"><input type="checkbox" id="fPast"> Toon al gestarte verkoop</label>
-<label class="chk"><input type="checkbox" id="fAll"> Toon ook wedstrijden waar ik niet kan kopen</label>
 <label class="chk">Wedstrijd tussen <input type="date" id="fVan" aria-label="Vanaf datum"> en <input type="date" id="fTot" aria-label="Tot en met datum"></label>
 </div>
 <div id="list"></div>
 <p class="todo" id="upd"></p>
-<!--CLUBS--><section class="rules"><h2>Alle clubs</h2><nav class="clubs"><p><strong>Duitsland</strong><br><a href="club/1-fc-union-berlin/">1. FC Union Berlin tickets</a><a href="club/1-fsv-mainz-05/">1. FSV Mainz 05 tickets</a><a href="club/bayer-leverkusen/">Bayer Leverkusen tickets</a><a href="club/borussia-dortmund/">Borussia Dortmund tickets</a><a href="club/eintracht-frankfurt/">Eintracht Frankfurt tickets</a><a href="club/rb-leipzig/">RB Leipzig tickets</a><a href="club/sc-freiburg/">SC Freiburg tickets</a><a href="club/tsg-hoffenheim/">TSG Hoffenheim tickets</a><a href="club/vfb-stuttgart/">VfB Stuttgart tickets</a></p><p><strong>Nederland</strong><br><a href="club/ado-den-haag/">ADO Den Haag tickets</a><a href="club/az/">AZ tickets</a><a href="club/ajax/">Ajax tickets</a><a href="club/excelsior/">Excelsior tickets</a><a href="club/fc-groningen/">FC Groningen tickets</a><a href="club/fc-twente/">FC Twente tickets</a><a href="club/fc-utrecht/">FC Utrecht tickets</a><a href="club/feyenoord/">Feyenoord tickets</a><a href="club/fortuna-sittard/">Fortuna Sittard tickets</a><a href="club/go-ahead-eagles/">Go Ahead Eagles tickets</a><a href="club/nec/">N.E.C. tickets</a><a href="club/pec-zwolle/">PEC Zwolle tickets</a><a href="club/psv/">PSV tickets</a><a href="club/sc-cambuur/">SC Cambuur tickets</a><a href="club/sc-heerenveen/">SC Heerenveen tickets</a><a href="club/sparta-rotterdam/">Sparta Rotterdam tickets</a><a href="club/willem-ii/">Willem II tickets</a></p><p><strong>Engeland</strong><br><a href="club/brentford/">Brentford tickets</a><a href="club/chelsea/">Chelsea tickets</a><a href="club/liverpool/">Liverpool tickets</a><a href="club/manchester-city/">Manchester City tickets</a><a href="club/tottenham-hotspur/">Tottenham Hotspur tickets</a></p><p><strong>Spanje</strong><br><a href="club/ca-osasuna/">CA Osasuna tickets</a><a href="club/celta-de-vigo/">Celta de Vigo tickets</a><a href="club/elche-cf/">Elche CF tickets</a><a href="club/fc-barcelona/">FC Barcelona tickets</a><a href="club/rc-deportivo/">RC Deportivo tickets</a><a href="club/real-betis/">Real Betis tickets</a><a href="club/sevilla-fc/">Sevilla FC tickets</a><a href="club/valencia-cf/">Valencia CF tickets</a><a href="club/villarreal-cf/">Villarreal CF tickets</a></p><p><strong>Italië</strong><br><a href="club/juventus/">Juventus tickets</a></p></nav><footer class="mute" style="margin-top:2em"><p class="mute"><a href="tips/">Tips voor het kopen van kaarten</a> · <a href="over/">Over deze site</a> · <a href="privacy/">Privacyverklaring</a> · <a href="#" onclick="window.cookieInstellingen&&cookieInstellingen();return false">Cookie-instellingen</a></p></footer></section><!--/CLUBS--></main>
+</main>
 <script>fetch("data.json").then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(e=>{
   document.getElementById("list").innerHTML='';
 });
@@ -86,20 +81,11 @@ const pd = x => x.length>10 ? new Date(x) : new Date(x+"T00:00");
 const dag = d => d.toLocaleDateString("nl-NL",{weekday:"short",day:"numeric",month:"short"});
 const tijd = d => d.toLocaleTimeString("nl-NL",{hour:"2-digit",minute:"2-digit"});
 const dagTijd = d => dag(d)+" "+tijd(d);
-let mijn = {}; Object.entries(CLUBS).forEach(([k,c])=>mijn[k]=c.mijn);
-try{ Object.assign(mijn, JSON.parse(localStorage.getItem("mijnToegang")||"{}")); }catch(e){}
 
 Object.entries(CLUBS).forEach(([k,c])=>{
   $("fClub").add(new Option(c.naam,k));
-  const opts = Object.entries(TOEGANG).map(([v,t])=>`<option value="${v}"${mijn[k]===v?" selected":""}>${t}</option>`).join("");
-  $("access").insertAdjacentHTML("beforeend",`<label>${c.naam}<select data-club="${k}">${opts}</select></label>`);
 });
 [...new Set(WEDSTRIJDEN.map(w=>w.comp))].forEach(c=>$("fComp").add(new Option(c,c)));
-$("access").addEventListener("change",e=>{
-  mijn[e.target.dataset.club]=e.target.value;
-  try{ localStorage.setItem("mijnToegang",JSON.stringify(mijn)); }catch(err){}
-  toon();
-});
 const p2=n=>String(n).padStart(2,"0");
 const gc=d=>`${d.getFullYear()}${p2(d.getMonth()+1)}${p2(d.getDate())}T${p2(d.getHours())}${p2(d.getMinutes())}00`;
 function agenda(c,w,f,af){
@@ -123,10 +109,10 @@ function schatting(r){
   return `<div class="note">Schatting: deze club opent de verkoop meestal ± ${sc.mediaan} dagen voor de wedstrijd (${sc.n} waarnemingen, tussen ${sc.min} en ${sc.max} dagen), dus rond ${dag(d)}${d<nu?" — dat moment is al voorbij, kijk dus even op de clubsite":""}.</div>`;
 }
 function toon(){
-  const comp=$("fComp").value, club=$("fClub").value, van=$("fVan").value, tot=$("fTot").value, ook=$("fPast").checked, alles=$("fAll").checked;
+  const comp=$("fComp").value, club=$("fClub").value, van=$("fVan").value, tot=$("fTot").value, ook=$("fPast").checked, alles=false;
   let verborgen=0;
   const rijen = WEDSTRIJDEN.filter(w=>CLUBS[w.club]&&(!comp||w.comp===comp)&&(!club||w.club===club)&&(!van||w.aftrap.slice(0,10)>=van)&&(!tot||w.aftrap.slice(0,10)<=tot)).map(w=>{
-    const niveau=GROEPEN[mijn[w.club]].n;
+    const niveau=1;
     const fases=w.fases.map(f=>({g:f[0],start:pd(f[1]),dagAlleen:f[1].length<=10,naam:f[2]||GROEPEN[f[0]].l,ok:GROEPEN[f[0]].n>=niveau&&GROEPEN[f[0]].n<9})).sort((a,b)=>a.start-b.start);
     const mijnFases=fases.filter(f=>f.ok), volgende=mijnFases.find(f=>f.start>=nu);
     return {w,fases,mijnFases,volgende,nu:!!w.nu&&(mijnFases.length>0||!fases.length),info:!!w.info&&!fases.length,sleutel:volgende?volgende.start:new Date(8.64e15)};
@@ -141,12 +127,11 @@ function toon(){
     html+=`<div class="ticket"><div class="head"><div class="match">${c.naam} – ${r.w.tegen}</div><div class="meta">${r.w.comp} · ${dag(af)} ${af.getFullYear()}${afTijd?", "+tijd(af):" (aftrap nog niet bekend)"}</div>${c.band?`<span class="band ${c.band}" title="Moeilijkheid om kaarten te krijgen, bron: Soccertrippers">Kaarten krijgen: ${BANDEN[c.band]}</span>`:""}${r.nu?'<span class="band often-available" style="margin-left:6px">Nu te koop</span>':""}${r.info?'<span class="band variable" style="margin-left:6px">Verkoopinfo volgt</span>':""}</div><div class="phases">`;
     r.fases.forEach(f=>{
       const cd=countdown(f.start), eerste=r.volgende===f;
-      html+=`<div class="ph${f.ok?"":" no"}"><div class="g">${f.naam}${eerste?'<span class="badge">jouw eerstvolgende moment</span>':""}</div><div class="t">${f.dagAlleen?dag(f.start)+" (tijd onbekend)":dagTijd(f.start)}</div><div class="cd ${cd.c}">${cd.t}${f.ok&&f.start>=nu?`<a class="cal" href="${agenda(c,r.w,f,af)}" target="_blank" rel="noopener">Zet in agenda</a>`:""}</div></div>`;
+      html+=`<div class="ph${f.ok?"":" no"}"><div class="g">${f.naam}${eerste?'<span class="badge">eerstvolgende moment</span>':""}</div><div class="t">${f.dagAlleen?dag(f.start)+" (tijd onbekend)":dagTijd(f.start)}</div><div class="cd ${cd.c}">${cd.t}${f.ok&&f.start>=nu?`<a class="cal" href="${agenda(c,r.w,f,af)}" target="_blank" rel="noopener">Zet in agenda</a>`:""}</div></div>`;
     });
     html+=`</div>`+(r.w.noot?`<div class="note">${r.w.noot}</div>`:"")+schatting(r)+`<div class="foot">${r.w.bron?`<a href="${r.w.bron}" target="_blank" rel="noopener">Bron (clubsite)</a>`:"<span>Bron: eigen onderzoek op de clubsite (9 okt)</span>"}<a href="${c.url}" target="_blank" rel="noopener">Ticketpagina ${c.naam}</a></div></div>`;
   });
-  if(!html) html='<p class="empty">Geen verkoopmomenten voor deze selectie. Zet "Toon al gestarte verkoop" of "Toon ook wedstrijden waar ik niet kan kopen" aan, of kies een andere club.</p>';
-  if(verborgen&&!alles) html+=`<p class="empty">${verborgen} wedstrijd(en) verborgen omdat je er met je huidige toegang niet kunt kopen.</p>`;
+  if(!html) html='<p class="empty">Geen verkoopmomenten voor deze selectie. Zet "Toon al gestarte verkoop" aan of kies een andere club.</p>';
   $("list").innerHTML=html;
 }
 function toonRegels(){
@@ -157,7 +142,7 @@ function toonRegels(){
   $("rlist").innerHTML=alle.filter(x=>!mid||x.r>=4).sort((a,b)=>b.r-a.r||a.n.localeCompare(b.n))
     .map(x=>`<div class="rule"><div class="rn"><span>${x.n} <small style="color:var(--mute);font-weight:400">${x.c}</small></span><span class="band ${kls(x.r)}">Vrije verkoop: ${x.k||"onbekend"}</span></div><div class="rr"><span>Membership</span><span>${x.m}</span><span>Verkoopmoment</span><span>${x.v}</span></div>${LINKS[x.n]?`<div class="foot" style="padding:8px 0 0"><a href="${LINKS[x.n]}" target="_blank" rel="noopener">Naar de ticketshop</a></div>`:""}</div>`).join("");
 }
-["fComp","fClub","fPast","fAll","fVan","fTot"].forEach(i=>$(i).addEventListener("change",toon));
+["fComp","fClub","fPast","fVan","fTot"].forEach(i=>$(i).addEventListener("change",toon));
 toon();
 
 document.getElementById("upd").textContent="Gegevens bijgewerkt op "+new Date(bijgewerkt).toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"})+".";
