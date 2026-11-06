@@ -70,7 +70,6 @@ select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 </div>
 <div id="list"></div>
 <p class="todo" id="upd"></p>
-<p class="todo" id="todo"></p>
 </main>
 <script>fetch("data.json").then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(start).catch(e=>{
   document.getElementById("list").innerHTML='';
@@ -155,8 +154,6 @@ function toonRegels(){
   $("rlist").innerHTML=alle.filter(x=>!mid||x.r>=4).sort((a,b)=>b.r-a.r||a.n.localeCompare(b.n))
     .map(x=>`<div class="rule"><div class="rn"><span>${x.n} <small style="color:var(--mute);font-weight:400">${x.c}</small></span><span class="band ${kls(x.r)}">Vrije verkoop: ${x.k||"onbekend"}</span></div><div class="rr"><span>Membership</span><span>${x.m}</span><span>Verkoopmoment</span><span>${x.v}</span></div>${LINKS[x.n]?`<div class="foot" style="padding:8px 0 0"><a href="${LINKS[x.n]}" target="_blank" rel="noopener">Naar de ticketshop</a></div>`:""}</div>`).join("");
 }
-const gevuld=new Set(WEDSTRIJDEN.map(w=>w.club));
-$("todo").textContent="Nog in te vullen: "+Object.entries(CLUBS).filter(([k])=>!gevuld.has(k)).map(([,c])=>c.naam).join(", ")+".";
 ["fComp","fClub","fPast","fAll","fVan","fTot"].forEach(i=>$(i).addEventListener("change",toon));
 toon();
 
