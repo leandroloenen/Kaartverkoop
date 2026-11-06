@@ -8,7 +8,7 @@ import os
 import time
 from types import SimpleNamespace
 
-from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, ticketing_es, tymes4
+from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, tekstclubs, ticketing_es, tymes4
 
 TYMES4_CLUBS = {
     "utrecht": ("FC Utrecht", "https://ticketing.fcutrecht.nl/dashboard", "FC Utrecht"),
@@ -34,4 +34,4 @@ def _maak(sleutel, naam, pagina, thuis=None):
 
 
 ALLE = ([nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.items()]
-        + [dortmund, groningen, leverkusen, brentford] + ticketing_es.ALLE)
+        + [dortmund, groningen, leverkusen, brentford] + ticketing_es.ALLE + tekstclubs.ALLE)
