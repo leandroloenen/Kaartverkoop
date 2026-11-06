@@ -1,35 +1,11 @@
-# Per regel: naam | adres van de ticketpagina. Regels met # worden overgeslagen.
-# Voeg hieronder gerust clubs toe (zet er alleen het adres van de pagina met de wedstrijdenlijst bij).
-# (klaar) N.E.C. (controle, bekend systeem) | https://tickets.nec-nijmegen.nl/dashboard
-Ajax | https://www.ajax.nl/fans/kaartverkoop
-PSV | https://ticketshop.psv.nl/nl-NL/categories/PSV-1
-Go Ahead Eagles | https://gaeagles.tmtickets.nl/Events
-# (klaar) AZ | https://www.az.nl/wedstrijden/tickets
-# (klaar) PEC Zwolle | https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets
-# (klaar) ADO Den Haag | https://adodenhaag.nl/nl/tickets/kaartverkoop
-# (klaar) FC Groningen | https://www.fcgroningen.nl/kaartverkoopinformatie/
-# (klaar) Real Madrid | https://www.realmadrid.com/en-US/tickets
-# (klaar) FC Barcelona | https://www.fcbarcelona.com/en/tickets/football
-# (klaar) Sevilla | https://entradas.sevillafc.es/
-# (klaar) Real Betis | https://en.realbetisbalompie.es/tickets/
-# (klaar) Valencia | https://www.valenciacf.com/tickets
-Real Sociedad | https://tickets.realsociedad.eus/real_sociedad/events/57857?hl=en-US
-# (klaar) Villarreal | https://villarrealcf.es/es/venta-de-entradas/
-Athletic Club | https://www.athletic-club.eus/en/tickets/
-Schalke 04 | https://tickets.schalke04.de/p/heimspiele
-# (klaar) Borussia Dortmund | https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html
-
-# Engelse clubs (ronde 1: startpagina met kaartverkoop)
-Aston Villa | https://www.avfc.co.uk/tickets
-Newcastle United | https://www.newcastleunited.com/en/tickets
-Manchester United | https://www.manutd.com/en/tickets-and-hospitality
-Everton | https://www.evertonfc.com/tickets
-Leeds United | https://www.leedsunited.com/en/news/category/ticketing
-Nottingham Forest | https://www.nottinghamforest.co.uk/tickets/
-Brighton | https://www.brightonandhovealbion.com/tickets
-Fulham | https://www.fulhamfc.com/tickets
-AFC Bournemouth | https://www.afcb.co.uk/tickets
-Coventry City | https://www.ccfc.co.uk/tickets
-Hull City | https://www.hullcity.com/tickets
-Ipswich Town | https://www.itfc.co.uk/tickets
-Sunderland | https://www.safc.com/tickets
+# Detailverkenning (ronde 5): naam | startadres | modus | aantal | json=WOORD (optioneel)
+# modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
+Nottingham Forest (ticketartikelen thuis) | https://www.nottinghamforest.co.uk/tickets/ | link:/news/2026/[a-z]+/[0-9]+/ticket-[a-z0-9-]+-h-/ | 4
+AFC Bournemouth (ticketartikelen thuis) | https://www.afcb.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/[a-z0-9-]+-h-?/$ | 4
+Coventry City (ticketnieuws) | https://www.ccfc.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/ticket-news | 3
+Leeds United (ticketartikelen) | https://www.leedsunited.com/en/news/category/ticketing | link:/en/news/ticket-information- | 5
+Brighton (ticketnieuws) | https://www.brightonandhovealbion.com/all-latest-news | link:/media-article/[a-z0-9-]*ticket | 4
+Everton (verkoopdata) | https://www.evertonfc.com/tickets/on-sale-dates | geen | 1
+Everton (ticketnieuws) | https://www.evertonfc.com/tickets/latest-news | geen | 1
+Newcastle (ticketinformatie) | https://www.newcastleunited.com/en/tickets/ticket-information | geen | 1
+Schalke (wedstrijdpagina's) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke-04- | 3
