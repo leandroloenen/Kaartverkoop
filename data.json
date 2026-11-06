@@ -190,6 +190,48 @@
    "land": "ES",
    "mijn": "vrij",
    "url": "https://ticketing.rcdeportivo.es/"
+  },
+  "az": {
+   "naam": "AZ",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://www.az.nl/wedstrijden/tickets"
+  },
+  "pec": {
+   "naam": "PEC Zwolle",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets"
+  },
+  "ado": {
+   "naam": "ADO Den Haag",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://adodenhaag.nl/nl/tickets/kaartverkoop"
+  },
+  "stuttgart": {
+   "naam": "VfB Stuttgart",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5"
+  },
+  "hoffenheim": {
+   "naam": "TSG Hoffenheim",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46"
+  },
+  "union": {
+   "naam": "1. FC Union Berlin",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.tickets.union-zeughaus.de/shop?wes=empty_session_1&language=1&shopid=1&nextstate=2&lpShortcutId=13"
+  },
+  "mainz": {
+   "naam": "1. FSV Mainz 05",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.mainz05.de/tickets/heimspiele"
   }
  },
  "WEDSTRIJDEN": [
@@ -738,7 +780,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Excelsior-VriendenLoterij-Eredivisie",
@@ -1448,6 +1490,18 @@
   },
   {
    "club": "leverkusen",
+   "tegen": "RB Leipzig",
+   "comp": "DFB-Pokal",
+   "aftrap": "2026-12-02T18:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
    "tegen": "Borussia M'gladbach",
    "comp": "Bundesliga",
    "aftrap": "2026-12-05T15:30",
@@ -1874,6 +1928,411 @@
    "info": true,
    "noot": "Staat in de shop, maar de verkoop is nog niet open. Datum en tijd zijn nog niet definitief.",
    "bron": "",
+   "auto": true
+  },
+  {
+   "club": "az",
+   "tegen": "FC Groningen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-08T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.az.nl/wedstrijden/tickets",
+   "auto": true
+  },
+  {
+   "club": "az",
+   "tegen": "Juventus",
+   "comp": "Europa League",
+   "aftrap": "2026-11-05T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Uitverkocht.",
+   "bron": "https://www.az.nl/wedstrijden/tickets",
+   "auto": true
+  },
+  {
+   "club": "az",
+   "tegen": "PSV Eindhoven",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-05T20:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://www.az.nl/wedstrijden/tickets",
+   "auto": true
+  },
+  {
+   "club": "pec",
+   "tegen": "AZ",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+   "auto": true
+  },
+  {
+   "club": "pec",
+   "tegen": "Excelsior",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-12T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+   "auto": true
+  },
+  {
+   "club": "pec",
+   "tegen": "FC Utrecht",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-09T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+   "auto": true
+  },
+  {
+   "club": "pec",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-30T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+   "auto": true
+  },
+  {
+   "club": "pec",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2027-05-23T14:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets",
+   "auto": true
+  },
+  {
+   "club": "ado",
+   "tegen": "FC Utrecht",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T12:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://adodenhaag.nl/nl/tickets/kaartverkoop",
+   "auto": true
+  },
+  {
+   "club": "ado",
+   "tegen": "Excelsior",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-06T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://adodenhaag.nl/nl/tickets/kaartverkoop",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "SV Werder Bremen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-07T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "Eintracht Frankfurt",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-28T18:30",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Mitgliederverkauf (ledenverkoop) loopt nu. Uitverkocht of bijna uitverkocht.",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "LOSC Lille",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Mitgliederverkauf (ledenverkoop) loopt nu.",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-12T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-12T09:00",
+     "Leden (Mitglieder) (max. 2 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-09T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-19T09:00",
+     "Leden (Mitglieder) (max. 2 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "1. FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-15T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-23T09:00",
+     "Leden (Mitglieder) (max. 2 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "Club Brugge KV",
+   "comp": "Champions League",
+   "aftrap": "2027-01-19T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "stuttgart",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-23T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
+   "auto": true
+  },
+  {
+   "club": "hoffenheim",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-08T19:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
+   "auto": true
+  },
+  {
+   "club": "hoffenheim",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-29T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
+   "auto": true
+  },
+  {
+   "club": "hoffenheim",
+   "tegen": "SV Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-09T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
+   "auto": true
+  },
+  {
+   "club": "hoffenheim",
+   "tegen": "SK Sturm Graz",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
+   "auto": true
+  },
+  {
+   "club": "hoffenheim",
+   "tegen": "Ferencvarosi Tc",
+   "comp": "Europa League",
+   "aftrap": "2027-01-28T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
+   "auto": true
+  },
+  {
+   "club": "union",
+   "tegen": "TSG Hoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-08T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=empty_session_1&language=1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true
+  },
+  {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=empty_session_1&language=1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true
+  },
+  {
+   "club": "mainz",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-07T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-01T10:00",
+     "Mitglieder en Dauerkarteninhaber"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.mainz05.de/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "mainz",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-28T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-15T10:00",
+     "Mitglieder en Dauerkarteninhaber"
+    ],
+    [
+     "vrij",
+     "2026-10-26T10:00",
+     "Freier Verkauf (max. 10 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.mainz05.de/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "mainz",
+   "tegen": "SC Freiburg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-13T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-29T10:00",
+     "Mitglieder en Dauerkarteninhaber"
+    ],
+    [
+     "vrij",
+     "2026-11-09T10:00",
+     "Freier Verkauf (max. 10 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.mainz05.de/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "mainz",
+   "tegen": "Spiel der Herzen\n1. FC Köln",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-19T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-12T10:00",
+     "Mitglieder en Dauerkarteninhaber"
+    ],
+    [
+     "clubkaart",
+     "2026-11-23T10:00",
+     "Bestandskunden / 11er-Karteninhaber"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.mainz05.de/tickets/heimspiele",
    "auto": true
   }
  ],
