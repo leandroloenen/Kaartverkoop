@@ -1,3 +1,7 @@
-# Detailverkenning (ronde 2): naam | startadres | modus | aantal | json=WOORD (optioneel)
+# Detailverkenning (ronde 3): naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-Eintracht Frankfurt (thuiswedstrijden) | https://stores.eintracht.de/tickets/profis/ | link:/tickets/profis/[a-z-]+/heimspiel-gegen- | 14
+Arsenal (ticketinformatie Man City) | https://www.arsenal.com/ticket-information/ticket-information-arsenal-v-manchester-city-aDBEK1H9I3J9 | geen | 1
+Arsenal (hoe kopen, links naar wedstrijden) | https://www.arsenal.com/how-buy-tickets-overview | link:/ticket-information/ticket-information-arsenal-v- | 8
+Milan (nieuws, kaartverkoop-artikelen) | https://www.acmilan.com/it/news | link:/it/news/articles/ticketing/2026- | 8
+Milan (seizoenpagina) | https://www.acmilan.com/it/stagione | link:/it/news/articles/ticketing/2026- | 8
+Bayern (ticketnieuws) | https://fcbayern.com/de/news/ticketing | link:/de/news/ticketing/2026/ | 10
