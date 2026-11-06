@@ -58,7 +58,9 @@ def mini_markdown(tekst):
         if not regels:
             continue
         def inline(x):
-            return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", e(x))
+            x = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", e(x))
+            # [tekst](adres): alleen https-adressen en adressen binnen de site
+            return re.sub(r"\[(.+?)\]\(((?:https://|/)[^)\s]+)\)", r'<a href="\2" rel="noopener">\1</a>', x)
         if all(r.lstrip().startswith("- ") for r in regels):
             uit.append("<ul>" + "".join(f"<li>{inline(r.lstrip()[2:])}</li>" for r in regels) + "</ul>")
         else:
@@ -96,7 +98,8 @@ def kaartje(w, club_naam, club_url, vandaag):
 
 
 def voet(prefix):
-    return (f'<p class="mute"><a href="{prefix}over/">Over deze site</a> · <a href="{prefix}privacy/">Privacyverklaring</a>'
+    tips = f'<a href="{prefix}tips/">Tips voor het kopen van kaarten</a> · ' if CFG.get("tips") else ""
+    return (f'<p class="mute">{tips}<a href="{prefix}over/">Over deze site</a> · <a href="{prefix}privacy/">Privacyverklaring</a>'
             ' · <a href="#" onclick="window.cookieInstellingen&&cookieInstellingen();return false">Cookie-instellingen</a></p>')
 
 
@@ -126,8 +129,12 @@ def contact_html():
 
 
 def tekstpagina_over(aantal_clubs, aantal_wedstrijden, bijgewerkt):
+    _, verhaal = lees_verhaal(ROOT / "pagina_info" / "over.md")
+    waarom = ("<h2>Waarom deze site?</h2>" + mini_markdown(verhaal)) if verhaal.strip() else ""
+    tips = '<p>Hulp nodig bij het kopen van kaarten? Lees onze <a href="../tips/">tips voor het kopen van wedstrijdkaarten</a>.</p>' if CFG.get("tips") else ""
     return f"""<h1>Over {e(CFG["sitenaam"])}</h1>
 <p>{e(CFG["sitenaam"])} laat zien wanneer de kaartverkoop voor voetbalwedstrijden begint, en voor wie: seizoenkaarthouders, leden of vrije verkoop. Zo hoef je niet langs tientallen clubwebsites om te weten wanneer je moet opletten.</p>
+{waarom}{tips}
 <h2>Hoe werkt het?</h2>
 <ul><li>Elke dag lezen wij de officiële ticketpagina's van de clubs uit en werken wij de verkoopmomenten bij. Van een deel van de clubs beheren wij de gegevens handmatig, op basis van de informatie op de clubsite.</li>
 <li>Op dit moment staan er {aantal_clubs} clubs en {aantal_wedstrijden} komende thuiswedstrijden in het overzicht. Laatst bijgewerkt op {e(datum_nl(bijgewerkt, False))}.</li>
@@ -173,6 +180,7 @@ def main():
     basis, sitenaam = site["basis_url"].rstrip("/"), site["sitenaam"]
     CFG.update({"ga": site.get("ga_id", "").strip(), "email": site.get("contact_email", "").strip(), "beheerder": site.get("beheerder", "").strip(),
                 "sitenaam": sitenaam, "bewaartermijn": site.get("bewaartermijn", "2 maanden")})
+    CFG["tips"] = any(not x.stem.startswith("_") for x in (ROOT / "tips_info").glob("*.md")) if (ROOT / "tips_info").exists() else False
     vandaag = datetime.datetime.now(NL)
     bijgewerkt = data.get("bijgewerkt", vandaag.date().isoformat())
     schatting = data.get("SCHATTING", {})
@@ -266,6 +274,42 @@ def main():
         uit.mkdir(parents=True, exist_ok=True)
         (uit / "index.html").write_text(pagina(titel, beschr, url, "../../", inhoud, "", nav_html("../../")), encoding="utf-8")
         pagina_urls.append(url)
+
+    # ---------- tips voor het kopen van kaarten (tips_info/*.md -> tips/<naam>/)
+    tipsmap = ROOT / "tips_info"
+    tipsbestanden = sorted(tipsmap.glob("*.md")) if tipsmap.exists() else []
+    tipsbestanden = [p for p in tipsbestanden if not p.stem.startswith("_")]
+    lijst_tips = []
+    for pad in tipsbestanden:
+        meta, tekst = lees_verhaal(pad)
+        if not tekst.strip():
+            continue
+        try:
+            volgorde = int(meta.get("volgorde", "99"))
+        except ValueError:
+            volgorde = 99
+        lijst_tips.append({"slug": slug(re.sub(r"^\d+-", "", pad.stem)), "titel": meta.get("titel") or pad.stem, "beschrijving": meta.get("beschrijving", ""), "volgorde": volgorde, "tekst": tekst})
+    lijst_tips.sort(key=lambda x: (x["volgorde"], x["titel"]))
+    CFG["tips"] = bool(lijst_tips)
+    if lijst_tips:
+        def tips_nav(prefix, huidig=""):
+            return ('<h2>Meer tips</h2><ul>' + "".join(f'<li><a href="{prefix}tips/{x["slug"]}/">{e(x["titel"])}</a></li>' for x in lijst_tips if x["slug"] != huidig) + "</ul>")
+        intro = ("<h1>Tips voor het kopen van wedstrijdkaarten</h1><p>Elke club regelt de kaartverkoop net even anders. Op deze pagina's lees je "
+                 "wat je doorgaans moet doen en waar je op moet letten, zodat je rechtstreeks bij de club kaarten kunt kopen.</p>"
+                 + "".join(f'<div class="kaart"><b><a href="{x["slug"]}/">{e(x["titel"])}</a></b><div class="mute">{e(x["beschrijving"])}</div></div>' for x in lijst_tips))
+        uit = ROOT / "tips"
+        uit.mkdir(parents=True, exist_ok=True)
+        url = f"{basis}/tips/"
+        (uit / "index.html").write_text(pagina(f"Tips voor het kopen van wedstrijdkaarten | {sitenaam}",
+            "Praktische tips voor het kopen van voetbaltickets: stappen, verkoopfases, waar je op moet letten en wat je doet als een wedstrijd is uitverkocht.", url, "../", intro, "", ""), encoding="utf-8")
+        pagina_urls.append(url)
+        for x in lijst_tips:
+            uit = ROOT / "tips" / x["slug"]
+            uit.mkdir(parents=True, exist_ok=True)
+            url = f"{basis}/tips/{x['slug']}/"
+            inhoud = f"<h1>{e(x['titel'])}</h1>" + mini_markdown(x["tekst"])
+            (uit / "index.html").write_text(pagina(f"{x['titel']} | {sitenaam}", x["beschrijving"], url, "../../", inhoud, "", tips_nav("../../", x["slug"])), encoding="utf-8")
+            pagina_urls.append(url)
 
     # ---------- Over en Privacy
     aantal_w = sum(len(v) for v in toekomst.values())
