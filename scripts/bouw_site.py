@@ -30,6 +30,26 @@ h2{margin-top:1.8em}.mute{color:var(--mute)}.kaart{background:var(--card);border
 .nu{color:var(--open)}nav.clubs a{display:inline-block;margin:2px 10px 2px 0}.terug{font-weight:600}footer{margin-top:3em;font-size:.85rem}"""
 
 
+MENU_CSS = """.topmenu{display:flex;gap:6px;flex-wrap:wrap;align-items:center;max-width:820px;margin:0 auto;padding:12px 16px 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.topmenu .merk{font-weight:700;margin-right:auto;color:var(--ink);text-decoration:none}
+.topmenu a.item{color:var(--ink);text-decoration:none;font-weight:600;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card)}
+.topmenu a.item:hover{border-color:var(--accent)}.topmenu a.item.actief{background:var(--accent);border-color:var(--accent);color:#14213d}"""
+
+
+def menu(prefix, actief=""):
+    """Menu bovenaan elke pagina: Home, Tips (als er tips zijn) en Over (als die pagina bestaat)."""
+    items = [("home", "Home", prefix or "./")]
+    if CFG.get("tips"):
+        items.append(("tips", "Tips", f"{prefix}tips/"))
+    if CFG.get("email"):
+        items.append(("over", "Over", f"{prefix}over/"))
+    links = ""
+    for k, t, h in items:
+        extra = ' actief" aria-current="page' if k == actief else ""
+        links += f'<a class="item{extra}" href="{h}">{t}</a>'
+    return f'<nav class="topmenu" aria-label="Hoofdmenu"><a class="merk" href="{prefix or "./"}">{e(CFG.get("sitenaam", ""))}</a>{links}</nav>'
+
+
 def slug(tekst):
     t = unicodedata.normalize("NFKD", tekst).encode("ascii", "ignore").decode().lower().replace(".", "")
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
@@ -109,12 +129,12 @@ def analytics_tag(prefix):
     return f'<script defer src="{prefix}consent.js" data-ga="{e(CFG["ga"])}" data-privacy="{prefix}privacy/"></script>'
 
 
-def pagina(titel, beschrijving, canonical, prefix, inhoud, jsonld="", nav=""):
+def pagina(titel, beschrijving, canonical, prefix, inhoud, jsonld="", nav="", actief=""):
     return f"""<!DOCTYPE html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titel)}</title><meta name="description" content="{e(beschrijving)}"><link rel="canonical" href="{e(canonical)}">
 <meta property="og:title" content="{e(titel)}"><meta property="og:description" content="{e(beschrijving)}"><meta property="og:type" content="website"><meta property="og:url" content="{e(canonical)}">
-<style>{CSS}</style>{jsonld}{analytics_tag(prefix)}</head><body><main>
+<style>{CSS}\n{MENU_CSS}</style>{jsonld}{analytics_tag(prefix)}</head><body>{menu(prefix, actief)}<main>
 <a class="terug" href="{prefix}">← Naar het volledige overzicht met filters</a>
 {inhoud}
 {nav}
@@ -301,14 +321,14 @@ def main():
         uit.mkdir(parents=True, exist_ok=True)
         url = f"{basis}/tips/"
         (uit / "index.html").write_text(pagina(f"Tips voor het kopen van wedstrijdkaarten | {sitenaam}",
-            "Praktische tips voor het kopen van voetbaltickets: stappen, verkoopfases, waar je op moet letten en wat je doet als een wedstrijd is uitverkocht.", url, "../", intro, "", ""), encoding="utf-8")
+            "Praktische tips voor het kopen van voetbaltickets: stappen, verkoopfases, waar je op moet letten en wat je doet als een wedstrijd is uitverkocht.", url, "../", intro, "", "", "tips"), encoding="utf-8")
         pagina_urls.append(url)
         for x in lijst_tips:
             uit = ROOT / "tips" / x["slug"]
             uit.mkdir(parents=True, exist_ok=True)
             url = f"{basis}/tips/{x['slug']}/"
             inhoud = f"<h1>{e(x['titel'])}</h1>" + mini_markdown(x["tekst"])
-            (uit / "index.html").write_text(pagina(f"{x['titel']} | {sitenaam}", x["beschrijving"], url, "../../", inhoud, "", tips_nav("../../", x["slug"])), encoding="utf-8")
+            (uit / "index.html").write_text(pagina(f"{x['titel']} | {sitenaam}", x["beschrijving"], url, "../../", inhoud, "", tips_nav("../../", x["slug"]), "tips"), encoding="utf-8")
             pagina_urls.append(url)
 
     # ---------- Over en Privacy
@@ -319,7 +339,7 @@ def main():
             uit = ROOT / naam
             uit.mkdir(parents=True, exist_ok=True)
             url = f"{basis}/{naam}/"
-            (uit / "index.html").write_text(pagina(titel, f"{titel}: wie wij zijn en hoe wij met gegevens omgaan.", url, "../", inhoud, "", ""), encoding="utf-8")
+            (uit / "index.html").write_text(pagina(titel, f"{titel}: wie wij zijn en hoe wij met gegevens omgaan.", url, "../", inhoud, "", "", "over" if naam == "over" else ""), encoding="utf-8")
             pagina_urls.append(url)
     else:
         print("LET OP: vul 'contact_email' in site.json in; zonder dat worden de pagina's Over en Privacy niet gemaakt")
@@ -334,6 +354,8 @@ def main():
         blok = f'<!--CLUBS--><section class="rules">{nav_html("")}<footer class="mute" style="margin-top:2em">{voet("")}</footer></section><!--/CLUBS-->'
         titel_hoofd = f"{sitenaam}: wanneer gaan voetbaltickets in de verkoop?"
         s = re.sub(r"<title>.*?</title>", lambda m: f"<title>{e(titel_hoofd)}</title>", s, count=1, flags=re.S)
+        mblok = f"<!--MENU--><style>{MENU_CSS}</style>{menu('', 'home')}<!--/MENU-->"
+        s = re.sub(r"<!--MENU-->.*?<!--/MENU-->", lambda m: mblok, s, flags=re.S) if "<!--MENU-->" in s else s.replace("<body>", "<body>" + mblok, 1)
         tag = f"<!--GA-->{analytics_tag('')}<!--/GA-->"
         s = re.sub(r"<!--GA-->.*?<!--/GA-->", lambda m: tag, s, flags=re.S) if "<!--GA-->" in s else s.replace("</head>", tag + "</head>", 1)
         s = re.sub(r"<!--CLUBS-->.*?<!--/CLUBS-->", lambda m: blok, s, flags=re.S) if "<!--CLUBS-->" in s else s.replace("</main>", blok + "</main>", 1)
