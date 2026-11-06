@@ -232,6 +232,78 @@
    "land": "DE",
    "mijn": "vrij",
    "url": "https://www.mainz05.de/tickets/heimspiele"
+  },
+  "barcelona": {
+   "naam": "FC Barcelona",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://www.fcbarcelona.com/en/tickets/football"
+  },
+  "betis": {
+   "naam": "Real Betis",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://en.realbetisbalompie.es/tickets/"
+  },
+  "valencia": {
+   "naam": "Valencia CF",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://www.valenciacf.com/tickets"
+  },
+  "tottenham": {
+   "naam": "Tottenham Hotspur",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets"
+  },
+  "mancity": {
+   "naam": "Manchester City",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.mancity.com/tickets/mens"
+  },
+  "liverpool": {
+   "naam": "Liverpool",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.liverpoolfc.com/tickets"
+  },
+  "juventus": {
+   "naam": "Juventus",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.juventus.com/en/tickets/#mensfirstteam"
+  },
+  "leipzig": {
+   "naam": "RB Leipzig",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://rbleipzig.com/en/matches-tickets"
+  },
+  "villarreal": {
+   "naam": "Villarreal CF",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://villarrealcf.es/es/venta-de-entradas/"
+  },
+  "chelsea": {
+   "naam": "Chelsea",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.chelseafc.com/en/tickets/mens-tickets"
+  },
+  "celta": {
+   "naam": "Celta de Vigo",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://rccelta.es/en/rccelta-tickets/"
+  },
+  "freiburg": {
+   "naam": "SC Freiburg",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.scfreiburg.com/heimtickets/"
   }
  },
  "WEDSTRIJDEN": [
@@ -1944,18 +2016,6 @@
   },
   {
    "club": "az",
-   "tegen": "Juventus",
-   "comp": "Europa League",
-   "aftrap": "2026-11-05T21:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "Uitverkocht.",
-   "bron": "https://www.az.nl/wedstrijden/tickets",
-   "auto": true
-  },
-  {
-   "club": "az",
    "tegen": "PSV Eindhoven",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T20:00",
@@ -1965,6 +2025,19 @@
    "noot": "Nog niet in de verkoop.",
    "bron": "https://www.az.nl/wedstrijden/tickets",
    "auto": true
+  },
+  {
+   "club": "az",
+   "tegen": "Sturm Graz",
+   "comp": "Europa League",
+   "aftrap": "2026-12-10T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.az.nl/wedstrijden/tickets",
+   "auto": true,
+   "eerst_nu": "2026-11-06"
   },
   {
    "club": "pec",
@@ -2333,6 +2406,1564 @@
    "info": false,
    "noot": "",
    "bron": "https://www.mainz05.de/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Villarreal",
+   "comp": "La Liga",
+   "aftrap": "2026-11-22T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Atlético Madrid",
+   "comp": "La Liga",
+   "aftrap": "2026-12-01",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2026-12-05",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Manchester City",
+   "comp": "Champions League",
+   "aftrap": "2026-12-08T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Real Sociedad",
+   "comp": "La Liga",
+   "aftrap": "2026-12-19",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Elche",
+   "comp": "La Liga",
+   "aftrap": "2027-01-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Como 1907",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Valencia CF",
+   "comp": "La Liga",
+   "aftrap": "2027-01-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Levante",
+   "comp": "La Liga",
+   "aftrap": "2027-02-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Real Betis",
+   "comp": "La Liga",
+   "aftrap": "2027-03-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Deportivo de La Coruña",
+   "comp": "La Liga",
+   "aftrap": "2027-03-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Sevilla",
+   "comp": "La Liga",
+   "aftrap": "2027-04-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Espanyol",
+   "comp": "La Liga",
+   "aftrap": "2027-04-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Osasuna",
+   "comp": "La Liga",
+   "aftrap": "2027-05-01",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "barcelona",
+   "tegen": "Málaga",
+   "comp": "La Liga",
+   "aftrap": "2027-05-22",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.fcbarcelona.com/en/tickets/football",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Rayo Vallecano",
+   "comp": "La Liga",
+   "aftrap": "2026-11-29",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Como",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T18:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Racing Santander",
+   "comp": "La Liga",
+   "aftrap": "2026-12-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Deportivo Alavés",
+   "comp": "La Liga",
+   "aftrap": "2027-01-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Deportivo La Coruña",
+   "comp": "La Liga",
+   "aftrap": "2027-01-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Arsenal",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Elche",
+   "comp": "La Liga",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Sevilla",
+   "comp": "La Liga",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Villarreal",
+   "comp": "La Liga",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Levante",
+   "comp": "La Liga",
+   "aftrap": "2027-03-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Valencia",
+   "comp": "La Liga",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Espanyol",
+   "comp": "La Liga",
+   "aftrap": "2027-05-09",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Atlético Madrid",
+   "comp": "La Liga",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "valencia",
+   "tegen": "Real Madrid CF",
+   "comp": "La Liga",
+   "aftrap": "2026-11-07T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.valenciacf.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Ipswich Town",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-12-03T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-12-06T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Bournemouth",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Brighton and Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-29T20:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2027-01-16T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2026-11-17",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2027-01-30T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2026-11-17",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2027-02-10T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2026-11-17",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-02-27T16:00",
+   "fases": [
+    [
+     "lid",
+     "2027-01-18",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-01-19",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-03-13T16:00",
+   "fases": [
+    [
+     "lid",
+     "2027-01-18",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-01-19",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-04-10T15:00",
+   "fases": [
+    [
+     "lid",
+     "2027-01-18",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-01-19",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-04-24T15:00",
+   "fases": [
+    [
+     "lid",
+     "2027-03-08",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-03-09",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T15:00",
+   "fases": [
+    [
+     "lid",
+     "2027-03-08",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-03-09",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "tottenham",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T15:00",
+   "fases": [
+    [
+     "lid",
+     "2027-03-08",
+     "One Hotspur+ (leden)"
+    ],
+    [
+     "lid",
+     "2027-03-09",
+     "One Hotspur (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Starttijd van de verkoop wordt door de club niet getoond.",
+   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Napoli",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T20:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2026-12-12T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Bradford City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-15T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-01-03T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-01-16T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Sporting CP",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2027-01-30T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2027-02-20T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2027-03-03T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2026-11-22T17:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T20:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "FC Porto",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-12T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2026-11-22T11:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Omonia Nicosia",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Sassuolo",
+   "comp": "Coppa Italia",
+   "aftrap": "2026-12-03T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Udinese",
+   "comp": "Serie A",
+   "aftrap": "2026-12-06T17:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Monza",
+   "comp": "Serie A",
+   "aftrap": "2026-12-14T19:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Torino",
+   "comp": "Serie A",
+   "aftrap": "2027-01-06T11:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-01-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Cagliari",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Real Sociedad",
+   "comp": "Europa League",
+   "aftrap": "2027-01-28T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Sassuolo",
+   "comp": "Serie A",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Bologna",
+   "comp": "Serie A",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2027-03-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Como",
+   "comp": "Serie A",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-04-11",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2027-04-25",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Inter",
+   "comp": "Serie A",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/#mensfirstteam",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-07T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Lens",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-05T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-12T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Good availability.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Shakhtar",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond).",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
+   "tegen": "Bremen",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "In de voorverkoop (startmoment en doelgroep niet getoond). Status: Only a few tickets left.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Getafe",
+   "comp": "La Liga",
+   "aftrap": "2026-11-08T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true
+  },
+  {
+   "club": "chelsea",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
+   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
+   "auto": true
+  },
+  {
+   "club": "chelsea",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T20:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
+   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
+   "auto": true
+  },
+  {
+   "club": "chelsea",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05T13:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
+   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
+   "auto": true
+  },
+  {
+   "club": "chelsea",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2026-12-21T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
+   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
+   "auto": true
+  },
+  {
+   "club": "celta",
+   "tegen": "Levante",
+   "comp": "La Liga",
+   "aftrap": "2026-11-08T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://rccelta.es/en/rccelta-tickets/",
+   "auto": true
+  },
+  {
+   "club": "celta",
+   "tegen": "AFC Bournemouth",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T18:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://rccelta.es/en/rccelta-tickets/",
+   "auto": true
+  },
+  {
+   "club": "celta",
+   "tegen": "Lillestrom SK",
+   "comp": "Europa League",
+   "aftrap": "2027-01-28T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://rccelta.es/en/rccelta-tickets/",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "TSG Hoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-21T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "Borussia Dortmund",
+   "comp": "Ticketinfos folgen.",
+   "aftrap": "2026-12-02T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "SV Werder Bremen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-15T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-09T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-16T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-24T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "1. FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-05",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "Leipzig",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-19",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "Borussia Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "SC Paderborn 07",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-12",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "Borussia Mönchengladbach",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "Bayer 04 Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-23",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "frankfurt",
+   "tegen": "SV Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://stores.eintracht.de/tickets/profis/?utm_source=google_organic",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-08T16:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Vrije voorverkoop is gestart.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "FC Twente",
+   "comp": "Conference League",
+   "aftrap": "2026-11-26T20:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-08T09:30",
+     "Mitglieder-Vorverkauf: Joker-Phase (90 Min.)"
+    ],
+    [
+     "lid",
+     "2026-10-08T12:00",
+     "Mitglieder-Vorverkauf (regulär)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "RB Leipzig",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-29T14:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-08T09:30",
+     "Mitglieder-Vorverkauf: Joker-Phase (90 Min.)"
+    ],
+    [
+     "lid",
+     "2026-10-08T12:00",
+     "Mitglieder-Vorverkauf (regulär)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "TSG Hoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-05T14:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-06T09:30",
+     "Mitglieder-Vorverkauf: Joker-Phase (90 Min.)"
+    ],
+    [
+     "lid",
+     "2026-11-06T12:00",
+     "Mitglieder-Vorverkauf (regulär)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "Panathinaikos",
+   "comp": "Conference League",
+   "aftrap": "2026-12-10T17:45",
+   "fases": [
+    [
+     "lid",
+     "2026-11-06T09:30",
+     "Mitglieder-Vorverkauf: Joker-Phase (90 Min.)"
+    ],
+    [
+     "lid",
+     "2026-11-06T12:00",
+     "Mitglieder-Vorverkauf (regulär)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
+   "auto": true
+  },
+  {
+   "club": "freiburg",
+   "tegen": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-20T14:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-06T09:30",
+     "Mitglieder-Vorverkauf: Joker-Phase (90 Min.)"
+    ],
+    [
+     "lid",
+     "2026-11-06T12:00",
+     "Mitglieder-Vorverkauf (regulär)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Daarna volgt vrije verkoop zolang er kaarten zijn.",
+   "bron": "https://www.scfreiburg.com/heimtickets/",
    "auto": true
   }
  ],
@@ -2877,6 +4508,12 @@
    "mediaan": 30,
    "min": 29,
    "max": 30
+  },
+  "az": {
+   "n": 1,
+   "mediaan": 34,
+   "min": 34,
+   "max": 34
   }
  }
 }
