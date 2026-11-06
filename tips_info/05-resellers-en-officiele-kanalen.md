@@ -1,5 +1,5 @@
 ---
-titel: Resellers en tussenpartijen: wat moet je weten?
+titel: Wat moet je weten over resellers en tussenpartijen?
 beschrijving: Waarom doorverkoopsites vaak duur zijn, welke risico's er zijn en welke officiële alternatieven je hebt.
 volgorde: 5
 ---
