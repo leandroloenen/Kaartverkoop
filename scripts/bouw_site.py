@@ -155,10 +155,9 @@ def tekstpagina_over(aantal_clubs, aantal_wedstrijden, bijgewerkt):
     return f"""<h1>Over {e(CFG["sitenaam"])}</h1>
 <p>{e(CFG["sitenaam"])} laat zien wanneer de kaartverkoop voor voetbalwedstrijden begint, en voor wie: seizoenkaarthouders, leden of vrije verkoop. Zo hoef je niet langs tientallen clubwebsites om te weten wanneer je moet opletten.</p>
 {waarom}{tips}
-<h2>Hoe werkt het?</h2>
-<ul><li>Elke dag lezen wij de officiële ticketpagina's van de clubs uit en werken wij de verkoopmomenten bij. Van een deel van de clubs beheren wij de gegevens handmatig, op basis van de informatie op de clubsite.</li>
-<li>Op dit moment staan er {aantal_clubs} clubs en {aantal_wedstrijden} komende thuiswedstrijden in het overzicht. Laatst bijgewerkt op {e(datum_nl(bijgewerkt, False))}.</li>
-<li>Waar een club geen startmoment toont, laten wij alleen zien of de verkoop al open is of nog moet beginnen. Soms maken wij een schatting op basis van eerdere wedstrijden. Dat staat er dan bij.</li></ul>
+<h2>Wat vind je hier?</h2>
+<ul><li>Op dit moment staan er {aantal_clubs} clubs en {aantal_wedstrijden} komende thuiswedstrijden in het overzicht. Het overzicht wordt dagelijks bijgewerkt; laatst bijgewerkt op {e(datum_nl(bijgewerkt, False))}.</li>
+<li>Waar een club geen startmoment bekendmaakt, laten wij zien of de verkoop al open is of nog moet beginnen. Soms staat er een schatting bij; dat staat er dan duidelijk bij.</li></ul>
 <h2>Let op</h2>
 <ul><li>Verkoopmomenten kunnen veranderen. Controleer ze altijd op de officiële ticketsite van de club voordat je erop rekent.</li>
 <li>Wij verkopen zelf geen tickets en zijn niet gelieerd aan de genoemde clubs of competities. Namen van clubs gebruiken wij uitsluitend om te vertellen over de kaartverkoop.</li>
