@@ -1,7 +1,3 @@
 # Detailverkenning (ronde 2): naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-Juventus (wedstrijdpagina Napoli) | https://www.juventus.com/it/biglietti/standard/prima-squadra-maschile/juventus-napoli-serie-a-2026-2027 | geen | 1
-Juventus (overzicht) | https://www.juventus.com/en/tickets/ | link:juventus-[a-z0-9-]+-20[0-9][0-9]-20[0-9][0-9] | 5
-Eintracht Frankfurt (alle thuiswedstrijden) | https://stores.eintracht.de/tickets/profis/ | link:/tickets/profis/(bundesliga|dfb-pokal|uefa[a-z-]*)/heimspiel-gegen- | 14
-RB Leipzig (kalender met verkoopdata) | https://rbleipzig.com/en/matches-tickets | geen | 1 | json=matchPlans
-Chelsea (nieuwsbericht Crystal Palace) | https://www.chelseafc.com/en/news/article/premier-league-ticket-news-crystal-palace-at-home-2026-27 | geen | 1
+Eintracht Frankfurt (thuiswedstrijden) | https://stores.eintracht.de/tickets/profis/ | link:/tickets/profis/[a-z-]+/heimspiel-gegen- | 14
