@@ -139,6 +139,62 @@ def parse_chelsea(tekst, club="chelsea", bron=""):
     return uit
 
 
+# Per thuiswedstrijd publiceert Chelsea een nieuwsbericht met het aanvraagvenster voor leden, ongeveer een maand van tevoren.
+CHELSEA_ARTIKEL = "https://www.chelseafc.com/en/news/article/premier-league-ticket-news-{slug}-at-home-2026-27"
+CHELSEA_VENSTER = re.compile(r"Ticket application window (opens|closes)\s*[\u2013\u2014-]\s*\w+\s+(\d{1,2})\s+([A-Za-z]+)\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)", re.I)
+CHELSEA_SUFFIX = ("united", "city", "town", "fc", "albion", "hotspur", "wanderers", "rovers", "county")
+
+
+def chelsea_slugs(tegen):
+    """Mogelijke adresdelen voor een tegenstander: volledige naam, zonder 'United/City/...' en alleen het eerste woord."""
+    woorden = re.sub(r"[^a-z0-9 ]", "", tegen.lower().replace("&", "and")).split()
+    kort = [w for w in woorden if w not in CHELSEA_SUFFIX] or woorden
+    kandidaten = ["-".join(woorden), "-".join(kort), woorden[0] if woorden else ""]
+    return [k for i, k in enumerate(kandidaten) if k and k not in kandidaten[:i]]
+
+
+def parse_chelsea_artikel(tekst, tegen):
+    """Geef (opent, sluit) als 'JJJJ-MM-DDTUU:MM' in Nederlandse tijd, of None als het bericht niet over deze wedstrijd gaat."""
+    if tegen.split()[0].lower() not in tekst.lower():
+        return None
+    gevonden = {}
+    for m in CHELSEA_VENSTER.finditer(tekst):
+        soort = m.group(1).lower()
+        maand = t.MAANDEN_EN.get(m.group(3)[:3].lower())
+        if soort in gevonden or not maand:
+            continue  # alleen het eerste venster (leden); het venster voor toegankelijkheid komt daarna
+        uur = int(m.group(4)) % 12 + (12 if m.group(6).lower() == "pm" else 0)
+        d = t.jaar_voor_dag(int(m.group(2)), maand, uur, int(m.group(5) or 0), t.LONDEN, terug=120)
+        if d:
+            gevonden[soort] = t.tekst_fmt(d)
+    return (gevonden["opens"], gevonden.get("closes")) if "opens" in gevonden else None
+
+
+def verrijk_chelsea(wedstrijden, haal=None, dagen_vooruit=50):
+    """Zoek bij wedstrijden in de komende weken het nieuwsbericht met het aanvraagvenster voor leden."""
+    haal = haal or (lambda adres: t.haal_tekst(adres))
+    nu = datetime.now(t.NL)
+    for w in wedstrijden:
+        try:
+            aftrap = w["aftrap"] if isinstance(w["aftrap"], datetime) else datetime.fromisoformat(w["aftrap"]).replace(tzinfo=t.NL)
+        except (TypeError, ValueError):
+            continue
+        if not (0 <= (aftrap - nu).days <= dagen_vooruit):
+            continue
+        for slug in chelsea_slugs(w["tegen"]):
+            try:
+                tekst = haal(CHELSEA_ARTIKEL.format(slug=slug))
+            except Exception:  # noqa: BLE001
+                continue
+            venster = parse_chelsea_artikel(tekst, w["tegen"])
+            if venster:
+                opent, sluit = venster
+                w["fases"] = [["lid", opent, "Aanvraagvenster voor leden (True Blue+, True Blue, CFC Blue, Junior Blue)"]]
+                w["info"] = False
+                w["noot"] = "Leden vragen kaarten aan in een venster" + (f" dat sluit op {datetime.fromisoformat(sluit).strftime('%d-%m')} om {sluit[11:]} uur (NL-tijd)" if sluit else "") + "; je krijgt achteraf bericht of je kaarten hebt."
+                break
+
+
 # ---------------------------------------------------------------- Celta de Vigo
 CELTA = re.compile(r"^\w{3}\.\s+(\d{1,2})\s+de\s+([A-Za-z]+)\s*\|\s*(\d{1,2}):(\d{2})h$")
 
@@ -259,7 +315,10 @@ def _maak(sleutel, naam, land, lijstnaam, standaard, parser):
     pagina = t.adres_uit_lijst(lijstnaam, standaard)
 
     def haal_op():
-        return parser(t.haal_tekst(pagina, test), sleutel, pagina)
+        uit = parser(t.haal_tekst(pagina, test), sleutel, pagina)
+        if sleutel == "chelsea" and not test:
+            verrijk_chelsea(uit)
+        return uit
 
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, haal_op=haal_op)
 
