@@ -30,15 +30,27 @@ h2{margin-top:1.8em}.mute{color:var(--mute)}.kaart{background:var(--card);border
 .nu{color:var(--open)}nav.clubs a{display:inline-block;margin:2px 10px 2px 0}.terug{font-weight:600}footer{margin-top:3em;font-size:.85rem}"""
 
 
-MENU_CSS = """.topmenu{display:flex;gap:6px;flex-wrap:wrap;align-items:center;max-width:820px;margin:0 auto;padding:12px 16px 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-.topmenu .merk{font-weight:700;margin-right:auto;color:var(--ink);text-decoration:none}
-.topmenu a.item{color:var(--ink);text-decoration:none;font-weight:600;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card)}
-.topmenu a.item:hover{border-color:var(--accent)}.topmenu a.item.actief{background:var(--accent);border-color:var(--accent);color:#14213d}"""
+MENU_CSS = """.topmenu{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;max-width:820px;margin:0 auto;padding:12px 16px 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.topmenu .merk{font-weight:700;color:var(--ink);text-decoration:none;min-width:0}
+.topmenu .mbtn{flex:none;display:flex;align-items:center;justify-content:center;width:42px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.topmenu .mbtn:hover{border-color:var(--accent)}
+.topmenu .mpanel{display:none;position:absolute;right:16px;top:calc(100% + 6px);min-width:190px;flex-direction:column;gap:2px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18);z-index:50}
+.topmenu .mpanel.open{display:flex}
+.topmenu a.item{color:var(--ink);text-decoration:none;font-weight:600;padding:10px 14px;border-radius:8px}
+.topmenu a.item:hover{background:var(--bg)}.topmenu a.item.actief{background:var(--accent);color:#14213d}"""
+
+MENU_JS = ("<script>(function(){var b=document.querySelector('.topmenu .mbtn'),p=document.getElementById('mpanel');if(!b||!p)return;"
+           "function z(o){p.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false')}"
+           "b.addEventListener('click',function(){z(!p.classList.contains('open'))});"
+           "document.addEventListener('click',function(e){if(!e.target.closest('.topmenu'))z(false)});"
+           "document.addEventListener('keydown',function(e){if(e.key==='Escape')z(false)})})();</script>")
+MENU_ICOON = ('<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" '
+              'stroke-width="2" stroke-linecap="round" fill="none"/></svg>')
 
 
 def menu(prefix, actief=""):
-    """Menu bovenaan elke pagina: Home, Tips (als er tips zijn) en Over (als die pagina bestaat)."""
-    items = [("home", "Home", prefix or "./")]
+    """Menu rechtsboven (knop met drie streepjes): Home, Clubs, Tips (als er tips zijn) en Over (als die pagina bestaat)."""
+    items = [("home", "Home", prefix or "./"), ("clubs", "Clubs", f"{prefix}club/")]
     if CFG.get("tips"):
         items.append(("tips", "Tips", f"{prefix}tips/"))
     if CFG.get("email"):
@@ -47,7 +59,9 @@ def menu(prefix, actief=""):
     for k, t, h in items:
         extra = ' actief" aria-current="page' if k == actief else ""
         links += f'<a class="item{extra}" href="{h}">{t}</a>'
-    return f'<nav class="topmenu" aria-label="Hoofdmenu"><a class="merk" href="{prefix or "./"}">{e(CFG.get("sitenaam", ""))}</a>{links}</nav>'
+    return (f'<nav class="topmenu" aria-label="Hoofdmenu"><a class="merk" href="{prefix or "./"}">{e(CFG.get("sitenaam", ""))}</a>'
+            f'<button class="mbtn" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="mpanel">{MENU_ICOON}</button>'
+            f'<div class="mpanel" id="mpanel">{links}</div></nav>{MENU_JS}')
 
 
 def slug(tekst):
@@ -269,7 +283,7 @@ def main():
         beschr = f"Wanneer gaan de {naam}-tickets in de verkoop? Per thuiswedstrijd de verkoopmomenten voor leden, seizoenkaarthouders en vrije verkoop. Dagelijks bijgewerkt."
         uit = ROOT / "club" / slugs[k]
         uit.mkdir(parents=True, exist_ok=True)
-        (uit / "index.html").write_text(pagina(titel, beschr, url, "../../", inhoud, jsonld, nav_html("../../")), encoding="utf-8")
+        (uit / "index.html").write_text(pagina(titel, beschr, url, "../../", inhoud, jsonld, nav_html("../../"), "clubs"), encoding="utf-8")
         pagina_urls.append(url)
 
     # ---------- competitiepagina's
@@ -342,6 +356,17 @@ def main():
             pagina_urls.append(url)
     else:
         print("LET OP: vul 'contact_email' in site.json in; zonder dat worden de pagina's Over en Privacy niet gemaakt")
+
+    # ---------- overzichtspagina met alle clubs (daar linkt het menu naartoe)
+    if clubs:
+        uit = ROOT / "club"
+        uit.mkdir(parents=True, exist_ok=True)
+        url = f"{basis}/club/"
+        inhoud = ("<h1>Alle clubs</h1><p class=\"mute\">Kies een club om te zien wanneer de kaartverkoop voor de komende thuiswedstrijden begint.</p>"
+                  + nav_html("../").replace("<h2>Alle clubs</h2>", ""))
+        (uit / "index.html").write_text(pagina(f"Alle clubs | {sitenaam}", "Alle clubs op een rij: per club zie je wanneer de kaartverkoop voor de komende thuiswedstrijden begint.",
+                                               url, "../", inhoud, "", "", "clubs"), encoding="utf-8")
+        pagina_urls.append(url)
 
     # ---------- hoofdpagina: zoekmachine-gegevens en links naar de subpagina's
     idx = ROOT / "index.html"
