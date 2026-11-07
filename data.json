@@ -1385,7 +1385,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---PSV-Eredivisie",
    "auto": true
   },
   {
@@ -1502,10 +1502,10 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-06T20:00",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---PEC-Zwolle-VriendenLoterij-Eredivisie",
+   "noot": "",
+   "bron": "",
    "auto": true
   },
   {
@@ -1568,7 +1568,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-02"
   },
@@ -2062,18 +2062,6 @@
    "info": false,
    "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
    "bron": "https://www.brentfordfc.com/en/ticket-information",
-   "auto": true
-  },
-  {
-   "club": "sevilla",
-   "tegen": "Deportivo Alavés",
-   "comp": "La Liga",
-   "aftrap": "2026-11-06T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
-   "bron": "",
    "auto": true
   },
   {
@@ -2860,6 +2848,19 @@
    "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.valenciacf.com/tickets",
    "auto": true
+  },
+  {
+   "club": "valencia",
+   "tegen": "Ca Osasuna",
+   "comp": "La Liga",
+   "aftrap": "2026-11-29T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.valenciacf.com/tickets",
+   "auto": true,
+   "eerst_nu": "2026-11-07"
   },
   {
    "club": "tottenham",
@@ -5606,7 +5607,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-06",
+ "bijgewerkt": "2026-11-07",
  "SCHATTING": {
   "feyenoord": {
    "n": 2,
@@ -5643,6 +5644,12 @@
    "mediaan": 34,
    "min": 29,
    "max": 34
+  },
+  "valencia": {
+   "n": 1,
+   "mediaan": 22,
+   "min": 22,
+   "max": 22
   },
   "juventus": {
    "n": 1,
