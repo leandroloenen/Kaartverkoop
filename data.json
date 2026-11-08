@@ -947,6 +947,18 @@
    "auto": true
   },
   {
+   "club": "osasuna",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2026-11-07T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "bron": "",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -1382,10 +1394,10 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-08T16:45",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---PSV-Eredivisie",
+   "noot": "",
+   "bron": "",
    "auto": true
   },
   {
@@ -1426,18 +1438,6 @@
   },
   {
    "club": "fortuna",
-   "tegen": "Telstar",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-07T16:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.fortunasittard.nl/verkoop/Fortuna-Sittard---Telstar-Eredivisie-Thuis",
-   "auto": true
-  },
-  {
-   "club": "fortuna",
    "tegen": "SC Heerenveen",
    "comp": "Eredivisie",
    "aftrap": "2026-11-29T14:30",
@@ -1474,18 +1474,6 @@
   },
   {
    "club": "excelsior",
-   "tegen": "Go Ahead Eagles",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-07T21:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "excelsior",
    "tegen": "Telstar",
    "comp": "Eredivisie",
    "aftrap": "2026-11-28T16:30",
@@ -1493,18 +1481,6 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "willem2",
-   "tegen": "PEC Zwolle",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-06T20:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1568,7 +1544,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://kaartverkoop.fctwente.nl/verkoop/FC-Twente---Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-02"
   },
@@ -2233,18 +2209,6 @@
    "auto": true
   },
   {
-   "club": "osasuna",
-   "tegen": "Athletic Club",
-   "comp": "La Liga",
-   "aftrap": "2026-11-07T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
-   "bron": "",
-   "auto": true
-  },
-  {
    "club": "deportivo",
    "tegen": "FC Barcelona",
    "comp": "La Liga",
@@ -2493,13 +2457,14 @@
    "club": "barcelona",
    "tegen": "Atlético Madrid",
    "comp": "La Liga",
-   "aftrap": "2026-12-01T21:30",
+   "aftrap": "2026-12-02T21:30",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-08"
   },
   {
    "club": "barcelona",
@@ -2835,18 +2800,6 @@
    "info": true,
    "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
    "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "valencia",
-   "tegen": "Real Madrid CF",
-   "comp": "La Liga",
-   "aftrap": "2026-11-07T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.valenciacf.com/tickets",
    "auto": true
   },
   {
@@ -3759,19 +3712,6 @@
   },
   {
    "club": "leipzig",
-   "tegen": "FC Augsburg",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-07T15:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
-   "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true,
-   "eerst_nu": "2026-11-06"
-  },
-  {
-   "club": "leipzig",
    "tegen": "Racing Club de Lens",
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
@@ -3816,7 +3756,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3847,7 +3787,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3858,11 +3798,12 @@
    "comp": "Bundesliga",
    "aftrap": "2027-02-13",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-08"
   },
   {
    "club": "leipzig",
@@ -4365,29 +4306,6 @@
   },
   {
    "club": "everton",
-   "tegen": "Coventry City",
-   "comp": "Premier League",
-   "aftrap": "2026-11-07",
-   "fases": [
-    [
-     "lid",
-     "2026-10-12",
-     "Forever Blue+ leden: loting"
-    ],
-    [
-     "lid",
-     "2026-10-16",
-     "Forever Blue leden: verkoopvenster"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "De club noemt alleen de dagen, geen uren. Kaarten zijn er alleen voor leden.",
-   "bron": "https://www.evertonfc.com/tickets/on-sale-dates",
-   "auto": true
-  },
-  {
-   "club": "everton",
    "tegen": "Liverpool",
    "comp": "Premier League",
    "aftrap": "2026-11-28",
@@ -4807,49 +4725,6 @@
    "auto": true
   },
   {
-   "club": "forest",
-   "tegen": "Manchester City",
-   "comp": "Premier League",
-   "aftrap": "2026-11-07T18:30",
-   "fases": [
-    [
-     "lid",
-     "2026-10-05T11:00",
-     "MyForest Pro-leden"
-    ],
-    [
-     "lid",
-     "2026-10-06T11:00",
-     "MyForest Plus-leden"
-    ],
-    [
-     "lid",
-     "2026-10-07T11:00",
-     "MyForest Core-leden, Junior Reds, International Reds"
-    ],
-    [
-     "lid",
-     "2026-10-07T15:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-10-08T17:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "lid",
-     "2026-10-09T11:00",
-     "Tweede verkoop (leden)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen.",
-   "bron": "https://www.nottinghamforest.co.uk/news/2026/october/07/ticket-update---manchester-city--h-/",
-   "auto": true
-  },
-  {
    "club": "bournemouth",
    "tegen": "Coventry City",
    "comp": "Premier League",
@@ -5042,34 +4917,6 @@
    "info": false,
    "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
    "bron": "https://www.leedsunited.com/en/news/ticket-information-for-coventry-clash",
-   "auto": true
-  },
-  {
-   "club": "leeds",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2026-11-07T13:30",
-   "fases": [
-    [
-     "lid",
-     "2026-10-19T14:00",
-     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
-    ],
-    [
-     "lid",
-     "2026-10-20T11:00",
-     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
-    ],
-    [
-     "lid",
-     "2026-10-22T11:00",
-     "Fase 3: loting opent voor alle leden"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
-   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-spurs-clash",
    "auto": true
   },
   {
@@ -5607,7 +5454,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-07",
+ "bijgewerkt": "2026-11-08",
  "SCHATTING": {
   "feyenoord": {
    "n": 2,
@@ -5645,6 +5492,12 @@
    "min": 29,
    "max": 34
   },
+  "barcelona": {
+   "n": 1,
+   "mediaan": 24,
+   "min": 24,
+   "max": 24
+  },
   "valencia": {
    "n": 1,
    "mediaan": 22,
@@ -5659,9 +5512,9 @@
   },
   "leipzig": {
    "n": 5,
-   "mediaan": 29,
-   "min": 1,
-   "max": 85
+   "mediaan": 67,
+   "min": 18,
+   "max": 97
   }
  }
 }
