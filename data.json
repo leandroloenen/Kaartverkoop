@@ -947,15 +947,27 @@
    "auto": true
   },
   {
-   "club": "osasuna",
-   "tegen": "Athletic Club",
+   "club": "elche",
+   "tegen": "Real Betis Balompié",
    "comp": "La Liga",
-   "aftrap": "2026-11-07T18:30",
+   "aftrap": "2026-11-08T14:00",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop (de shop toont geen startdatum).",
    "bron": "",
+   "auto": true
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Getafe",
+   "comp": "La Liga",
+   "aftrap": "2026-11-08T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
    "auto": true
   },
   {
@@ -1247,18 +1259,6 @@
   },
   {
    "club": "utrecht",
-   "tegen": "N.E.C.",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T20:00",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---N.E.C.-VriendenLoterij-Eredivisie-2026-2027",
-   "auto": true
-  },
-  {
-   "club": "utrecht",
    "tegen": "SC Cambuur",
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T18:45",
@@ -1329,18 +1329,6 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "Feyenoord",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T12:15",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "heerenveen",
    "tegen": "De Treffers",
    "comp": "KNVB Beker",
    "aftrap": "2026-12-02T18:45",
@@ -1385,18 +1373,6 @@
    "nu": false,
    "info": false,
    "noot": "Bron: Vanaf 20 november 9:00 uur.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "cambuur",
-   "tegen": "PSV",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T16:45",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1534,19 +1510,6 @@
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "",
    "auto": true
-  },
-  {
-   "club": "twente",
-   "tegen": "Ajax",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T14:30",
-   "fases": [],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true,
-   "eerst_nu": "2026-11-02"
   },
   {
    "club": "twente",
@@ -2197,14 +2160,14 @@
    "auto": true
   },
   {
-   "club": "elche",
-   "tegen": "Real Betis Balompié",
+   "club": "osasuna",
+   "tegen": "Málaga CF",
    "comp": "La Liga",
-   "aftrap": "2026-11-08T14:00",
+   "aftrap": "2026-11-22T18:30",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "nu": false,
+   "info": true,
+   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
    "bron": "",
    "auto": true
   },
@@ -2234,18 +2197,6 @@
   },
   {
    "club": "az",
-   "tegen": "FC Groningen",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-08T16:45",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop.",
-   "bron": "https://www.az.nl/wedstrijden/tickets",
-   "auto": true
-  },
-  {
-   "club": "az",
    "tegen": "PSV Eindhoven",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T20:00",
@@ -2269,6 +2220,19 @@
    "bron": "https://www.az.nl/wedstrijden/tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
+  },
+  {
+   "club": "az",
+   "tegen": "N.e.c.",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-13T16:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.az.nl/wedstrijden/tickets",
+   "auto": true,
+   "eerst_nu": "2026-11-09"
   },
   {
    "club": "pec",
@@ -2352,24 +2316,6 @@
    "info": false,
    "noot": "",
    "bron": "https://adodenhaag.nl/nl/tickets/kaartverkoop",
-   "auto": true
-  },
-  {
-   "club": "mainz",
-   "tegen": "FC Bayern München",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-07T15:30",
-   "fases": [
-    [
-     "lid",
-     "2026-10-01T10:00",
-     "Mitglieder en Dauerkarteninhaber"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://www.mainz05.de/tickets/heimspiele",
    "auto": true
   },
   {
@@ -3425,6 +3371,30 @@
    "auto": true
   },
   {
+   "club": "liverpool",
+   "tegen": "Bournemouth",
+   "comp": "League Cup",
+   "aftrap": "2026-12-16T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
    "club": "juventus",
    "tegen": "Venezia",
    "comp": "Serie A",
@@ -3718,7 +3688,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3756,7 +3726,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3773,11 +3743,12 @@
      "Voorverkoop (doelgroep niet vermeld)"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "De club vermeldt alleen de dag waarop de voorverkoop begint.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-09"
   },
   {
    "club": "leipzig",
@@ -3890,18 +3861,6 @@
    "auto": true
   },
   {
-   "club": "villarreal",
-   "tegen": "Getafe",
-   "comp": "La Liga",
-   "aftrap": "2026-11-08T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
-   "auto": true
-  },
-  {
    "club": "chelsea",
    "tegen": "Leeds United",
    "comp": "Premier League",
@@ -3962,15 +3921,15 @@
    "auto": true
   },
   {
-   "club": "celta",
-   "tegen": "Levante",
-   "comp": "La Liga",
-   "aftrap": "2026-11-08T18:30",
+   "club": "chelsea",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2027-01-03T15:00",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://rccelta.es/en/rccelta-tickets/",
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
+   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
    "auto": true
   },
   {
@@ -4175,18 +4134,6 @@
    "info": true,
    "noot": "Nog niet in de verkoop.",
    "bron": "https://stores.eintracht.de/tickets/profis/",
-   "auto": true
-  },
-  {
-   "club": "freiburg",
-   "tegen": "1. FC Union Berlin",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-08T16:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Vrije voorverkoop is gestart.",
-   "bron": "https://www.scfreiburg.com/heimtickets/",
    "auto": true
   },
   {
@@ -4921,6 +4868,34 @@
   },
   {
    "club": "leeds",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-10-18T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-09-28T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-09-29T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-10-01T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-manchester-united-h-sep-21",
+   "auto": true
+  },
+  {
+   "club": "leeds",
    "tegen": "Crystal Palace",
    "comp": "Premier League",
    "aftrap": "2027-09-20T15:00",
@@ -5454,7 +5429,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-08",
+ "bijgewerkt": "2026-11-09",
  "SCHATTING": {
   "feyenoord": {
    "n": 2,
@@ -5474,12 +5449,6 @@
    "min": 25,
    "max": 43
   },
-  "twente": {
-   "n": 1,
-   "mediaan": 6,
-   "min": 6,
-   "max": 6
-  },
   "brentford": {
    "n": 2,
    "mediaan": 30,
@@ -5487,7 +5456,7 @@
    "max": 30
   },
   "az": {
-   "n": 2,
+   "n": 3,
    "mediaan": 34,
    "min": 29,
    "max": 34
@@ -5511,8 +5480,8 @@
    "max": 20
   },
   "leipzig": {
-   "n": 5,
-   "mediaan": 67,
+   "n": 6,
+   "mediaan": 72,
    "min": 18,
    "max": 97
   }
