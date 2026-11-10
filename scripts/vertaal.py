@@ -10,6 +10,9 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Verkoop start binnenkort; datum nog niet bekend.": "Sales start soon; date not known yet.",
+    "Kaartverkoop nog niet gestart.": "Ticket sales have not started yet.",
+    "Verkoopstatus niet getoond op de clubpagina.": "Sale status is not shown on the club's page.",
     "Abonnees Sud en Aquilotti (voorrang)": "Sud and Aquilotti season ticket holders (priority)",
     "Voor Tribuna Tevere is een Fidelity Card (Eagle of Millenovecento) nodig.": "A Fidelity Card (Eagle or Millenovecento) is required for the Tribuna Tevere.",
     "Tussenfase voor abonnees 2025/26 en Fidelity Card-houders: tijden niet getoond. Voor Tribuna Tevere is een Fidelity Card (Eagle of Millenovecento) nodig.": "Intermediate phase for 2025/26 season ticket holders and Fidelity Card holders: times not shown. A Fidelity Card (Eagle or Millenovecento) is required for the Tribuna Tevere.",
