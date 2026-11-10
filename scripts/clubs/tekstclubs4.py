@@ -214,8 +214,42 @@ def haal_leipzig(pagina, test, sleutel="leipzig"):
     return uit or parse_leipzig(t.haal_tekst(pagina, test), sleutel, pagina)
 
 
+# ---------------------------------------------------------------- AC Milan
+MILAN_MAANDEN = {"gen": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "giu": 6, "lug": 7, "ago": 8, "set": 9, "ott": 10, "nov": 11, "dic": 12}
+MILAN_DATUM = re.compile(r"^\w{3}\.\s*(\d{1,2})\s+([a-z]{3})\s*-\s*(\d{1,2}):(\d{2})", re.I)
+
+
+def parse_milan(tekst, club="milan", bron=""):
+    """Kalenderpagina: per thuiswedstrijd staat 'ACQUISTA BIGLIETTI' zodra de kaartverkoop open is."""
+    regels = regels_van(tekst)
+    kop = [i for i, r in enumerate(regels) if MILAN_DATUM.match(r)]
+    uit, gezien = [], set()
+    nu_ = datetime.now(t.NL)
+    for n, i in enumerate(kop):
+        blok = regels[i:(kop[n + 1] if n + 1 < len(kop) else len(regels))]
+        if "HOME" not in blok or "FINITA" in blok:
+            continue
+        m = MILAN_DATUM.match(blok[0])
+        maand = MILAN_MAANDEN.get(m.group(2).lower())
+        if not maand:
+            continue
+        d = t.jaar_voor_dag(int(m.group(1)), maand, int(m.group(3)), int(m.group(4)), terug=0)
+        if not d or d < nu_ or d in gezien:
+            continue
+        try:
+            tegen = blok[blok.index("V") + 1]
+        except (ValueError, IndexError):
+            continue
+        gezien.add(d)
+        competitie = blok[1].split(" - ")[0] if len(blok) > 1 else ""
+        koop = "ACQUISTA BIGLIETTI" in blok
+        uit.append(wedstrijd(club, naam(tegen), comp(competitie.replace("UEFA ", "")), d, nu=koop, info=not koop,
+                             noot="Verkoop is open (startmoment niet getoond)." if koop else "Nog niet in de verkoop.", bron=bron))
+    return uit
+
+
 # ---------------------------------------------------------------- Villarreal
-VIL_DATUM = re.compile(r"^(\d{2})/(\d{2})/(\d{4})\s*-\s*(\d{1,2}):(\d{2})$")
+VIL_DATUM = re.compile(r"^(\d{2})/(\d{2})/(\d{4})\s*-\s*(?:(\d{1,2}):(\d{2})|Por Confirmar)$", re.I)
 
 
 def parse_villarreal(tekst, club="villarreal", bron=""):
@@ -230,7 +264,10 @@ def parse_villarreal(tekst, club="villarreal", bron=""):
         thuis, tegen, status = regels[i + 2], regels[i + 3], regels[i + 4].upper()
         if thuis.upper() != "VILLARREAL":
             continue
-        aftrap = datetime(int(m.group(3)), int(m.group(2)), int(m.group(1)), int(m.group(4)), int(m.group(5)), tzinfo=t.NL)
+        if m.group(4):
+            aftrap = datetime(int(m.group(3)), int(m.group(2)), int(m.group(1)), int(m.group(4)), int(m.group(5)), tzinfo=t.NL)
+        else:
+            aftrap = f"{m.group(3)}-{m.group(2)}-{m.group(1)}"  # tijd nog niet bevestigd
         nu = "VENTA" in status
         uit.append(wedstrijd(club, naam(tegen), "La Liga" if spaans(tegen) else "Champions League", aftrap, nu=nu, info=not nu,
                              noot="Verkoop is open (startmoment niet getoond)." if nu else "Nog niet in de verkoop (\"próximamente\").", bron=bron))
@@ -426,6 +463,7 @@ CLUBS = [
     ("chelsea", "Chelsea", "EN", "Chelsea", "https://www.chelseafc.com/en/tickets/mens-tickets", parse_chelsea),
     ("celta", "Celta de Vigo", "ES", "Celta de Vigo", "https://rccelta.es/en/rccelta-tickets/", parse_celta),
     ("frankfurt", "Eintracht Frankfurt", "DE", "Eintracht Frankfurt", "https://stores.eintracht.de/tickets/profis/", parse_frankfurt),
+    ("milan", "AC Milan", "IT", "AC Milan", "https://www.acmilan.com/it/stagione/active/calendario/completo", parse_milan),
     ("freiburg", "SC Freiburg", "DE", "SC Freiburg", "https://www.scfreiburg.com/heimtickets/", parse_freiburg),
 ]
 
