@@ -98,10 +98,19 @@ const dag = d => d.toLocaleDateString(LOC,{weekday:"short",day:"numeric",month:"
 const tijd = d => d.toLocaleTimeString(LOC,{hour:"2-digit",minute:"2-digit"});
 const dagTijd = d => dag(d)+" "+tijd(d);
 
-Object.entries(CLUBS).forEach(([k,c])=>{
-  $("fClub").add(new Option(c.naam,k));
-});
-[...new Set(WEDSTRIJDEN.map(w=>w.comp))].forEach(c=>$("fComp").add(new Option(c,c)));
+const sorteer=(a,b)=>String(a).localeCompare(String(b),LOC,{sensitivity:"base",numeric:true});
+[...new Set(WEDSTRIJDEN.map(w=>w.comp))].sort(sorteer).forEach(c=>$("fComp").add(new Option(c,c)));
+function vulClubs(){
+  const comp=$("fComp").value, gekozen=$("fClub").value, sel=$("fClub");
+  while(sel.options.length>1) sel.remove(1);
+  Object.entries(CLUBS)
+    .filter(([k])=>!comp||WEDSTRIJDEN.some(w=>w.club===k&&w.comp===comp))
+    .sort((a,b)=>sorteer(a[1].naam,b[1].naam))
+    .forEach(([k,c])=>sel.add(new Option(c.naam,k)));
+  sel.value=[...sel.options].some(o=>o.value===gekozen)?gekozen:"";
+}
+vulClubs();
+$("fComp").addEventListener("change",vulClubs);
 const p2=n=>String(n).padStart(2,"0");
 const gc=d=>`${d.getFullYear()}${p2(d.getMonth()+1)}${p2(d.getDate())}T${p2(d.getHours())}${p2(d.getMinutes())}00`;
 function agenda(c,w,f,af){
