@@ -8,7 +8,7 @@ from types import SimpleNamespace
 
 from . import tekst as t
 from .tekstclubs import wedstrijd
-from .tekstclubs6 import MAANDEN_EN_LANG, toekomst
+from .tekstclubs6 import MAANDEN_EN_LANG, aftrap_dt, toekomst
 
 # ---------------------------------------------------------------- Newcastle
 NC_KOP = re.compile(r"^Newcastle United vs ([^\n]+)\n([^/\n]+?)\s*/\s*[^\n]+\n\n\w+ (\d{1,2}) ([A-Za-z]+),\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*KO\s*\n(.*?)(?=^Newcastle United vs |\nOFFICIAL CLUB PARTNERS|\Z)", re.M | re.S)
@@ -127,6 +127,66 @@ def parse_ajax(tekst, club="ajax", comp="Eredivisie", bron=""):
     return uit
 
 
+# ---- Ajax: verkoopberichten in de nieuwsarchief (lopende tekst, per bericht anders opgebouwd)
+AJ_DAG = re.compile(r"(?:(?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)\s+)?(\d{1,2})\s+(januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)\b", re.I)
+AJ_TIJD = re.compile(r"(\d{1,2}):(\d{2})")
+AJ_GROEPEN = [("seizoenkaarthouders", "seizoen", "Seizoenkaarthouders"), ("supportersvereniging", "lid", "Leden Supportersvereniging"),
+              ("club card", "clubkaart", "Club Card-houders"), ("geverifieerd account", "vrij", "Vrije verkoop (geverifieerd account)")]
+AJ_STOP = re.compile(r"^(F-Side|Mindervalid\w*|Mobile tickets|Kaartverkoop uitwedstrijd|Gerelateerde artikelen)\s*$", re.M)
+AJ_ZIN = re.compile(r"(?<=[.!?])\s+|\n+")
+AJ_KLEIN = {"fc", "sc", "afc", "sv", "vfb", "ac", "as", "us", "ssc", "bk", "fk", "de", "den", "van"}
+
+
+def ajax_fases_uit_artikel(tekst, aftrap_nl):
+    """Geeft (fases, reden). fases is None als het bericht niet betrouwbaar te lezen is."""
+    kop = AJ_STOP.search(tekst)
+    start = tekst.find("Kaarten vanaf")
+    if start < 0:
+        start = tekst.find("Verkoopschema")
+    if start < 0:
+        return None, "geen verkoopschema in tekst"
+    deel = tekst[start:kop.start() if kop and kop.start() > start else len(tekst)]
+    huidige_dag = None
+    fases = []
+    for zin in AJ_ZIN.split(deel):
+        laag = zin.lower()
+        groepen = [g for g in AJ_GROEPEN if g[0] in laag]
+        if "mindervalid" in laag:
+            continue
+        dag = AJ_DAG.search(zin)
+        if dag:
+            mnd = t.MAANDEN_NL_LANG.get(dag.group(2).lower())
+            huidige_dag = (int(dag.group(1)), mnd) if mnd else huidige_dag
+        tijden = AJ_TIJD.findall(zin)
+        if not groepen or not tijden:
+            continue
+        if len(groepen) > 1 or len(tijden) > 1:
+            return None, "meerdere groepen of tijden in een zin"
+        if not huidige_dag:
+            return None, "tijd zonder datum"
+        h, mi = int(tijden[0][0]), int(tijden[0][1])
+        moment = t.jaar_voor(huidige_dag[0], huidige_dag[1], h, mi, aftrap_nl, t.NL)
+        if not moment:
+            return None, "verkoopmoment valt na de aftrap"
+        fases.append([groepen[0][1], t.tekst_fmt(moment), groepen[0][2]])
+    if len(fases) < 2 or not any(f[0] == "vrij" for f in fases):
+        return None, "verkoopschema onvolledig (geen vrije verkoop gevonden)"
+    if [f[1] for f in fases] != sorted(f[1] for f in fases):
+        return None, "volgorde van verkoopmomenten klopt niet"
+    return fases, ""
+
+
+def ajax_wedstrijd_bij(tekst, wedstrijden):
+    """De enige toekomstige thuiswedstrijd waarvan de tegenstander in de aanhef van het bericht staat."""
+    aanhef = tekst[:900].lower()
+    gevonden = []
+    for w in wedstrijden:
+        woorden = [x for x in re.split(r"[^\w]+", w["tegen"].lower()) if x and x not in AJ_KLEIN]
+        if woorden and all(x in aanhef for x in woorden):
+            gevonden.append(w)
+    return gevonden[0] if len(gevonden) == 1 else None
+
+
 def haal_ajax(pagina, test, sleutel="ajax"):
     uit = parse_ajax(t.haal_tekst(pagina, test), sleutel, "Eredivisie", pagina)
     eur = t.adres_uit_lijst("Ajax (Conference League)", "https://www.ajax.nl/fans/conference-league/")
@@ -135,6 +195,24 @@ def haal_ajax(pagina, test, sleutel="ajax"):
         uit += parse_ajax(tekst, sleutel, "Conference League", eur)
     except Exception:  # noqa: BLE001
         pass
+    # verkoopberichten: de archiefpagina toont de nieuwste berichten; eerdere fases blijven door update.py bewaard
+    testmap = os.environ.get("AJAX_ARTIKEL_MAP", "")
+    try:
+        artikelen = t.haal_paginas("https://www.ajax.nl/artikelen", r"/artikelen/informatie-(over-)?(losse-)?kaartverkoop", 6, testmap)
+    except Exception:  # noqa: BLE001
+        artikelen = []
+    for adres, tekst in artikelen:
+        w = ajax_wedstrijd_bij(tekst, uit)
+        if not w:
+            print(f"    let op (ajax): kaartverkoopbericht niet aan één wedstrijd te koppelen, overgeslagen: {adres}")
+            continue
+        fases, reden = ajax_fases_uit_artikel(tekst, aftrap_dt(w["aftrap"]))
+        if not fases:
+            print(f"    let op (ajax): kaartverkoopbericht niet betrouwbaar gelezen ({reden}): {adres}")
+            continue
+        w["fases"] = fases
+        w["info"] = False
+        w["bron"] = adres
     return uit
 
 
