@@ -10,6 +10,16 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Mags Member-loting (inschrijving opent)": "Mags Member ballot (entry opens)",
+    "Mags Member-verkoop": "Mags Member sale",
+    "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.": "Mags Members only; season ticket holders can forward or resell tickets.",
+    "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.": "Sale dates are published in a news item per match and are not shown here (yet).",
+    "Losse kaarten zijn uitverkocht; via Resale komen soms kaarten vrij.": "Single tickets are sold out; tickets sometimes become available via Resale.",
+    "Losse kaarten zijn uitverkocht; via Resale komen soms kaarten vrij. Voor deze wedstrijd is een Club Card verplicht.": "Single tickets are sold out; tickets sometimes become available via Resale. A Club Card is required for this match.",
+    "Losse kaarten zijn nu te koop.": "Single tickets are on sale now.",
+    "Losse kaarten zijn nu te koop. Voor deze wedstrijd is een Club Card verplicht.": "Single tickets are on sale now. A Club Card is required for this match.",
+    "Verkoopmomenten niet getoond.": "Sale dates not shown.",
+    "Verkoopmomenten niet getoond. Voor deze wedstrijd is een Club Card verplicht.": "Sale dates not shown. A Club Card is required for this match.",
     "Verkoop start binnenkort; datum nog niet bekend.": "Sales start soon; date not known yet.",
     "Kaartverkoop nog niet gestart.": "Ticket sales have not started yet.",
     "Verkoopstatus niet getoond op de clubpagina.": "Sale status is not shown on the club's page.",
