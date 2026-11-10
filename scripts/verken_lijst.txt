@@ -35,19 +35,19 @@
 # (later) Sunderland | https://www.safc.com/tickets
 
 # Italiaanse clubs (ronde 6: startpagina met kaartverkoop)
-Inter | https://www.inter.it/en/tickets
-AS Roma | https://www.asroma.com/en/tickets
-SS Lazio | https://www.sslazio.it/en/tickets
-SSC Napoli | https://www.sscnapoli.it/en/tickets
-Atalanta | https://www.atalanta.it/en/tickets
-Fiorentina | https://www.acffiorentina.com/en/tickets
-Torino | https://www.torinofc.it/en/tickets
-Genoa | https://www.genoacfc.it/en/tickets
-Cagliari | https://www.cagliaricalcio.com/en/tickets
-Como | https://www.comofootball.com/en/tickets
-AC Monza | https://www.acmonza.com/en/tickets
-Parma | https://www.parmacalcio1913.com/en/tickets
-Sassuolo | https://www.sassuolocalcio.it/en/tickets
-Udinese | https://www.udinese.it/en/tickets
-Venezia | https://www.veneziafc.it/en/tickets
-Frosinone | https://www.frosinonecalcio.com/biglietti
+# (klaar) Inter | https://www.inter.it/en/tickets
+# (klaar) AS Roma | https://www.asroma.com/en/tickets
+# (klaar) SS Lazio | https://www.sslazio.it/en/tickets
+# (klaar) SSC Napoli | https://www.sscnapoli.it/en/tickets
+# (klaar) Atalanta | https://www.atalanta.it/en/tickets
+# (klaar) Fiorentina | https://www.acffiorentina.com/en/tickets
+# (klaar) Torino | https://www.torinofc.it/en/tickets
+# (klaar) Genoa | https://www.genoacfc.it/en/tickets
+# (klaar) Cagliari | https://www.cagliaricalcio.com/en/tickets
+# (klaar) Como | https://www.comofootball.com/en/tickets
+# (klaar) AC Monza | https://www.acmonza.com/en/tickets
+# (klaar) Parma | https://www.parmacalcio1913.com/en/tickets
+# (klaar) Sassuolo | https://www.sassuolocalcio.it/en/tickets
+# (klaar) Udinese | https://www.udinese.it/en/tickets
+# (klaar) Venezia | https://www.veneziafc.it/en/tickets
+# (klaar) Frosinone | https://www.frosinonecalcio.com/biglietti
