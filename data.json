@@ -370,6 +370,36 @@
    "land": "IT",
    "mijn": "vrij",
    "url": "https://tickets.comofootball.com/"
+  },
+  "lazio": {
+   "naam": "SS Lazio",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.sslazio.it/it/biglietteria/matches"
+  },
+  "inter": {
+   "naam": "Inter",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.inter.it/en/tickets"
+  },
+  "cagliari": {
+   "naam": "Cagliari Calcio",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://cagliaricalcio.com/en/tickets/"
+  },
+  "monza": {
+   "naam": "AC Monza",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.acmonza.com/it/ticketing/"
+  },
+  "newcastle": {
+   "naam": "Newcastle United",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates"
   }
  },
  "WEDSTRIJDEN": [
@@ -1610,13 +1640,18 @@
    "fases": [
     [
      "vrij",
+     "2026-12-08T08:59",
+     "Start verkoop (doelgroep onbekend): 08-12-2026 | 9.00 uur"
+    ],
+    [
+     "vrij",
      "2026-12-15T08:59",
      "Start verkoop (doelgroep onbekend): 15-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: 15-12-2026 | 9.00 uur",
+   "noot": "Bron: 08-12-2026 | 9.00 uur",
    "bron": "",
    "auto": true
   },
@@ -1626,6 +1661,11 @@
    "comp": "Eredivisie",
    "aftrap": "2027-01-31T14:30",
    "fases": [
+    [
+     "vrij",
+     "2026-12-15T08:59",
+     "Start verkoop (doelgroep onbekend): 15-12-2026 | 9.00 uur"
+    ],
     [
      "vrij",
      "2026-12-22T08:59",
@@ -1639,7 +1679,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: 22-12-2026 | 9.00 uur",
+   "noot": "Bron: 15-12-2026 | 9.00 uur",
    "bron": "",
    "auto": true
   },
@@ -3484,7 +3524,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omónia Nicosia",
+   "tegen": "Omonia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -3753,7 +3793,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -5847,6 +5887,600 @@
    "info": false,
    "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "lazio",
+   "tegen": "Lecce",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T14:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-09T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.sslazio.it/news/biglietteria/serie-a-enilive-or-lazio-lecce-la-vendita-dei-tagliandi-da-lunedi-9-novembre",
+   "auto": true
+  },
+  {
+   "club": "lazio",
+   "tegen": "Atalanta",
+   "comp": "Serie A",
+   "aftrap": "2026-12-06T14:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-24T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.sslazio.it/news/biglietteria/serie-a-enilive-or-lazio-atalanta-la-vendita-dei-tagliandi-da-martedi-24-novembre",
+   "auto": true
+  },
+  {
+   "club": "lazio",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2026-12-13T11:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-27T12:00",
+     "Abonnees Sud en Aquilotti (voorrang)"
+    ],
+    [
+     "vrij",
+     "2026-11-24T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tussenfase voor abonnees 2025/26 en Fidelity Card-houders: tijden niet getoond. Voor Tribuna Tevere is een Fidelity Card (Eagle of Millenovecento) nodig.",
+   "bron": "https://www.sslazio.it/news/biglietteria/serie-a-enilive-or-lazio-roma-vendita-dei-biglietti-per-abbonati-settore-sud-e-aquilotti",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "VfB Stuttgart",
+   "comp": "Champions League",
+   "aftrap": "2026-11-25T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2026-11-28T19:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Genoa",
+   "comp": "Coppa Italia",
+   "aftrap": "2026-12-01T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Torino",
+   "comp": "Serie A",
+   "aftrap": "2026-12-13T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Sassuolo",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T11:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Juventus",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T19:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Liverpool FC",
+   "comp": "Champions League",
+   "aftrap": "2027-01-19T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Cagliari",
+   "comp": "Serie A",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "AC Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-02-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Atalanta",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2027-04-11",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Bologna",
+   "comp": "Serie A",
+   "aftrap": "2027-04-25",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-05-09",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Lazio",
+   "comp": "Serie A",
+   "aftrap": "2027-05-23",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Milan",
+   "comp": "Serie A",
+   "aftrap": "2026-11-30T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2026-12-12T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T12:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "ACF Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2026-11-23T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Como 1907",
+   "comp": "Serie A",
+   "aftrap": "2026-12-05T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "AC Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Frosinone Calcio",
+   "comp": "Serie A",
+   "aftrap": "2027-01-09T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "S.S. Lazio",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "AS Roma",
+   "comp": "Serie A",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "U.S. Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-02-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Juventus FC",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Genoa CFC",
+   "comp": "Serie A",
+   "aftrap": "2027-03-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Bologna FC 1909",
+   "comp": "Serie A",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "FC Inter",
+   "comp": "Serie A",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Venezia FC",
+   "comp": "Serie A",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Parma Calcio",
+   "comp": "Serie A",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "monza",
+   "tegen": "Torino FC 1906",
+   "comp": "Serie A",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond op de clubpagina.",
+   "bron": "https://www.acmonza.com/it/ticketing/",
+   "auto": true
+  },
+  {
+   "club": "newcastle",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T18:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-19T13:00",
+     "Mags Member-loting (inschrijving opent)"
+    ],
+    [
+     "lid",
+     "2026-10-26T11:00",
+     "Mags Member-verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
+   "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "newcastle",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-02T13:00",
+     "Mags Member-loting (inschrijving opent)"
+    ],
+    [
+     "lid",
+     "2026-11-09T11:00",
+     "Mags Member-verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
+   "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "newcastle",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2026-12-06T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09T13:00",
+     "Mags Member-loting (inschrijving opent)"
+    ],
+    [
+     "lid",
+     "2026-11-16T11:00",
+     "Mags Member-verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
+   "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "newcastle",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-23T13:00",
+     "Mags Member-loting (inschrijving opent)"
+    ],
+    [
+     "lid",
+     "2026-11-30T11:00",
+     "Mags Member-verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
+   "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "newcastle",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-30T13:00",
+     "Mags Member-loting (inschrijving opent)"
+    ],
+    [
+     "lid",
+     "2026-12-07T11:00",
+     "Mags Member-verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
+   "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "ajax",
+   "tegen": "FC Thun",
+   "comp": "Conference League",
+   "aftrap": "2026-11-26T18:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Losse kaarten zijn uitverkocht; via Resale komen soms kaarten vrij.",
+   "bron": "https://www.ajax.nl/fans/conference-league/",
+   "auto": true
+  },
+  {
+   "club": "ajax",
+   "tegen": "Getafe",
+   "comp": "Conference League",
+   "aftrap": "2026-12-17T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Losse kaarten zijn uitverkocht; via Resale komen soms kaarten vrij.",
+   "bron": "https://www.ajax.nl/fans/conference-league/",
    "auto": true
   }
  ],
