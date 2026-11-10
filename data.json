@@ -947,18 +947,6 @@
    "auto": true
   },
   {
-   "club": "elche",
-   "tegen": "Real Betis Balompié",
-   "comp": "La Liga",
-   "aftrap": "2026-11-08T14:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
-   "bron": "",
-   "auto": true
-  },
-  {
    "club": "villarreal",
    "tegen": "Getafe",
    "comp": "La Liga",
@@ -1000,11 +988,12 @@
      "(Seizoen)clubkaarthouders"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Bron: Verkoop (S)CC 09-11, 12.00 uur",
-   "bron": "",
-   "auto": true
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Twente-VriendenLoterij-Eredivisie-2026---2027",
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "nec",
@@ -1267,6 +1256,24 @@
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---SC-Cambuur-VriendenLoterij-Eredivisie-2026-2027",
+   "auto": true
+  },
+  {
+   "club": "utrecht",
+   "tegen": "Fortuna Sittard",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-12T16:30",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-11T09:30",
+     "Start verkoop (doelgroep onbekend): Verkoop start woensdag 09.30 uur"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Bron: Verkoop start woensdag 09.30 uur",
+   "bron": "",
    "auto": true
   },
   {
@@ -2160,6 +2167,18 @@
    "auto": true
   },
   {
+   "club": "elche",
+   "tegen": "CA Madrid",
+   "comp": "La Liga",
+   "aftrap": "2026-11-28T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
+   "bron": "",
+   "auto": true
+  },
+  {
    "club": "osasuna",
    "tegen": "Málaga CF",
    "comp": "La Liga",
@@ -2175,11 +2194,11 @@
    "club": "deportivo",
    "tegen": "FC Barcelona",
    "comp": "La Liga",
-   "aftrap": "2026-11-29",
+   "aftrap": "2026-11-29T16:15",
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Staat in de shop, maar de verkoop is nog niet open. Datum en tijd zijn nog niet definitief.",
+   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
    "bron": "",
    "auto": true
   },
@@ -2454,11 +2473,12 @@
    "comp": "La Liga",
    "aftrap": "2027-01-16",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2478,11 +2498,12 @@
    "comp": "La Liga",
    "aftrap": "2027-01-30",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2490,11 +2511,12 @@
    "comp": "La Liga",
    "aftrap": "2027-02-20",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2502,11 +2524,12 @@
    "comp": "La Liga",
    "aftrap": "2027-03-06",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2514,11 +2537,12 @@
    "comp": "La Liga",
    "aftrap": "2027-03-13",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2526,11 +2550,12 @@
    "comp": "La Liga",
    "aftrap": "2027-04-03",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2538,11 +2563,12 @@
    "comp": "La Liga",
    "aftrap": "2027-04-17",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2550,11 +2576,12 @@
    "comp": "La Liga",
    "aftrap": "2027-05-01",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.fcbarcelona.com/en/tickets/football",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "barcelona",
@@ -2574,11 +2601,12 @@
    "comp": "La Liga",
    "aftrap": "2026-11-28T14:00",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "betis",
@@ -3711,10 +3739,16 @@
    "tegen": "BV Borussia 09 Dortmund",
    "comp": "Bundesliga",
    "aftrap": "2026-12-19T18:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-11-30",
+     "Voorverkoop (doelgroep niet vermeld)"
+    ]
+   ],
    "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop.",
+   "info": false,
+   "noot": "De club vermeldt alleen de dag waarop de voorverkoop begint.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
   },
@@ -3726,7 +3760,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -3996,13 +4030,14 @@
    "club": "frankfurt",
    "tegen": "SV Werder Bremen",
    "comp": "Bundesliga",
-   "aftrap": "2026-12-15T18:30",
+   "aftrap": "2026-12-05T18:30",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://stores.eintracht.de/tickets/profis/",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "frankfurt",
@@ -4771,18 +4806,6 @@
    "auto": true
   },
   {
-   "club": "bournemouth",
-   "tegen": "Sturm Graz",
-   "comp": "Europa League",
-   "aftrap": "2027-10-15T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
-   "bron": "https://www.afcb.co.uk/news/2026/september/21/information---points-drop--sturmgraz--h-/",
-   "auto": true
-  },
-  {
    "club": "coventry",
    "tegen": "Crystal Palace",
    "comp": "Premier League",
@@ -4836,6 +4859,34 @@
    "info": false,
    "noot": "Kaarten zijn er eerst alleen voor leden.",
    "bron": "https://www.ccfc.co.uk/news/2026/november/03/ticket-news--crystal-palace--ipswich-town-h-fixtures-ticket-details-revealed/",
+   "auto": true
+  },
+  {
+   "club": "leeds",
+   "tegen": "Ipswich Town",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-11-17T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-11-19T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-ipswich-fixture",
    "auto": true
   },
   {
@@ -5429,8 +5480,14 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-09",
+ "bijgewerkt": "2026-11-10",
  "SCHATTING": {
+  "nec": {
+   "n": 1,
+   "mediaan": 19,
+   "min": 19,
+   "max": 19
+  },
   "feyenoord": {
    "n": 2,
    "mediaan": 23,
@@ -5462,10 +5519,16 @@
    "max": 34
   },
   "barcelona": {
-   "n": 1,
-   "mediaan": 24,
+   "n": 9,
+   "mediaan": 116,
    "min": 24,
-   "max": 24
+   "max": 172
+  },
+  "betis": {
+   "n": 1,
+   "mediaan": 18,
+   "min": 18,
+   "max": 18
   },
   "valencia": {
    "n": 1,
@@ -5484,6 +5547,12 @@
    "mediaan": 72,
    "min": 18,
    "max": 97
+  },
+  "frankfurt": {
+   "n": 1,
+   "mediaan": 25,
+   "min": 25,
+   "max": 25
   }
  }
 }
