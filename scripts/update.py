@@ -16,6 +16,7 @@ Regels:
 import datetime
 import json
 import sys
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -24,8 +25,12 @@ import clubs  # noqa: E402
 DATA = Path(__file__).resolve().parent.parent / "data.json"
 
 
+def zonder_accenten(tekst):
+    return "".join(c for c in unicodedata.normalize("NFD", tekst) if unicodedata.category(c) != "Mn").lower()
+
+
 def sleutel(w):
-    return (w["club"], w["tegen"], w["aftrap"][:10])
+    return (w["club"], zonder_accenten(w["tegen"]), w["aftrap"][:10])
 
 
 def dag(w):
