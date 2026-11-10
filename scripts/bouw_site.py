@@ -8,6 +8,7 @@ tips_info en pagina_info. Een Engelse pagina zonder vertaalde tekst laat die tek
 import datetime
 import html
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -35,6 +36,32 @@ TXT = {
     "nl": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "Over", "hoofdmenu": "Hoofdmenu", "menu_open": "Menu openen", "taal_kies": "Taal kiezen",
         "terug": "← Naar het volledige overzicht met filters",
+        "nieuws": "Deze week", "nieuws_pad": "nieuws", "pad_verkoop": "deze-week-in-de-verkoop", "pad_gespeeld": "deze-week-gespeeld",
+        "nw_titel": "Deze week | {site}", "nw_beschr": "Welke voetbalwedstrijden gaan deze week in de kaartverkoop en welke worden er gespeeld? Elke dag bijgewerkt.",
+        "nw_h1": "Deze week: kaartverkoop en wedstrijden",
+        "nw_intro": "Elke dag automatisch bijgewerkt: welke kaartverkoop start er de komende dagen, en welke wedstrijden worden er gespeeld?",
+        "nw_archief": "Eerdere weken", "nw_geen_archief": "Het archief vult zich vanzelf: na afloop van elke week komt die week hier te staan.",
+        "vk_h1": "Deze week in de verkoop: {van} t/m {tot}", "vk_titel": "Kaartverkoop deze week: wedstrijden die in de verkoop gaan | {site}",
+        "vk_beschr": "Alle voetbalwedstrijden waarvan de kaartverkoop de komende 7 dagen start, per dag en per doelgroep. Elke dag bijgewerkt.",
+        "vk_intro": "De komende zeven dagen start de kaartverkoop voor {n} {mom} bij {m} {cl}. Hieronder staat per dag wat er in de verkoop gaat en voor wie.",
+        "vk_intro_geen": "De komende zeven dagen is er geen verkoopstart bekend. Hieronder zie je de eerstvolgende verkoopmomenten.",
+        "vk_geen_kop": "Eerstvolgende verkoopmomenten",
+        "vk_week_h1": "In de verkoop in week {week} van {jaar}", "vk_week_titel": "Kaartverkoop week {week} {jaar}: wat ging er in de verkoop? | {site}",
+        "vk_week_beschr": "Overzicht van de voetbalkaartverkoop die startte in week {week} van {jaar} ({van} t/m {tot}).",
+        "gp_h1": "Deze week gespeeld: {van} t/m {tot}", "gp_titel": "Voetbal deze week: wedstrijden en kaartverkoop | {site}",
+        "gp_beschr": "Alle voetbalwedstrijden van de komende 7 dagen met de status van de kaartverkoop en waarom de wedstrijd de moeite waard is. Elke dag bijgewerkt.",
+        "gp_intro": "De komende zeven dagen worden {n} {wed} gespeeld bij {m} {cl}. Per wedstrijd zie je de stand van de kaartverkoop.",
+        "gp_intro_geen": "De komende zeven dagen is er geen wedstrijd in ons overzicht. Kijk voor alle wedstrijden op het volledige overzicht.",
+        "gp_week_h1": "Gespeeld in week {week} van {jaar}", "gp_week_titel": "Voetbal week {week} {jaar}: gespeelde wedstrijden | {site}",
+        "gp_week_beschr": "De voetbalwedstrijden uit ons overzicht in week {week} van {jaar} ({van} t/m {tot}).",
+        "mom_1": "verkoopmoment", "mom_n": "verkoopmomenten", "cl_1": "club", "cl_n": "clubs",
+        "st_open": "Kaartverkoop is open", "st_start": "Verkoop start {datum}", "st_gestart": "Verkoop is gestart", "st_info": "Verkoopinfo volgt",
+        "waarom": "Waarom de moeite waard", "arch_terug": "← Naar de actuele pagina",
+        "w_derby": "Stadsderby: beide clubs komen uit {stad}.", "w_europa": "Europese avond in {stadion}.", "w_beker": "Bekerwedstrijd: de winnaar gaat door, dus het is alles of niets.",
+        "w_stadion": "Gespeeld in {stadion} ({stad}).", "w_vrij": "Ook zonder lidmaatschap te koop (vrije verkoop).",
+        "w_moeilijk": "Kaarten zijn bij deze club doorgaans moeilijk te krijgen: wees er vroeg bij.",
+        "w_combi": "Te combineren met {tegen} - {thuis} in {stad} op {dag}.",
+        "w_tip": "Meer ideeën: ", "w_tip_link": "meerdere wedstrijden in één trip combineren",
         "disclaimer": "Dit overzicht is niet gelieerd aan de genoemde clubs. Controleer verkoopmomenten altijd op de officiële ticketsite van de club.",
         "tijdnoot": "",
         "voet_tips": "Tips voor het kopen van kaarten", "voet_over": "Over deze site", "voet_privacy": "Privacyverklaring", "voet_cookie": "Cookie-instellingen",
@@ -75,6 +102,32 @@ TXT = {
     "en": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "About", "hoofdmenu": "Main menu", "menu_open": "Open menu", "taal_kies": "Choose language",
         "terug": "← Back to the full overview with filters",
+        "nieuws": "This week", "nieuws_pad": "news", "pad_verkoop": "on-sale-this-week", "pad_gespeeld": "matches-this-week",
+        "nw_titel": "This week | {site}", "nw_beschr": "Which football matches go on sale this week and which are being played? Updated every day.",
+        "nw_h1": "This week: ticket sales and matches",
+        "nw_intro": "Updated automatically every day: which ticket sales start in the coming days, and which matches are being played?",
+        "nw_archief": "Previous weeks", "nw_geen_archief": "The archive fills itself: after each week ends, that week will appear here.",
+        "vk_h1": "On sale this week: {van} to {tot}", "vk_titel": "Ticket sales this week: matches going on sale | {site}",
+        "vk_beschr": "All football matches whose ticket sales start in the next 7 days, by day and by audience. Updated every day.",
+        "vk_intro": "In the next seven days, ticket sales start for {n} {mom} at {m} {cl}. Below you can see per day what goes on sale and for whom.",
+        "vk_intro_geen": "No sale start is known for the next seven days. Below you can see the next upcoming sale moments.",
+        "vk_geen_kop": "Next sale moments",
+        "vk_week_h1": "On sale in week {week} of {jaar}", "vk_week_titel": "Ticket sales week {week} {jaar}: what went on sale? | {site}",
+        "vk_week_beschr": "Overview of the football ticket sales that started in week {week} of {jaar} ({van} to {tot}).",
+        "gp_h1": "Matches this week: {van} to {tot}", "gp_titel": "Football this week: matches and ticket sales | {site}",
+        "gp_beschr": "All football matches in the next 7 days with the ticket sale status and why the match is worth going to. Updated every day.",
+        "gp_intro": "In the next seven days, {n} {wed} are being played at {m} {cl}. For each match you can see the state of ticket sales.",
+        "gp_intro_geen": "No matches in our overview in the next seven days. See the full overview for all matches.",
+        "gp_week_h1": "Played in week {week} of {jaar}", "gp_week_titel": "Football week {week} {jaar}: matches played | {site}",
+        "gp_week_beschr": "The football matches in our overview in week {week} of {jaar} ({van} to {tot}).",
+        "mom_1": "sale moment", "mom_n": "sale moments", "cl_1": "club", "cl_n": "clubs",
+        "st_open": "Tickets on sale", "st_start": "Sale starts {datum}", "st_gestart": "Sale has started", "st_info": "Sale info to follow",
+        "waarom": "Why it is worth it", "arch_terug": "← To the current page",
+        "w_derby": "City derby: both clubs are from {stad}.", "w_europa": "European night at {stadion}.", "w_beker": "Cup tie: the winner goes through, so it is all or nothing.",
+        "w_stadion": "Played at {stadion} ({stad}).", "w_vrij": "Available without a membership (general sale).",
+        "w_moeilijk": "Tickets are usually hard to get at this club: be early.",
+        "w_combi": "Can be combined with {tegen} - {thuis} in {stad} on {dag}.",
+        "w_tip": "More ideas: ", "w_tip_link": "combining several matches in one trip",
         "disclaimer": "This overview is not affiliated with the clubs mentioned. Always check sale moments on the club's official ticket site.",
         "tijdnoot": "All times are Central European Time (CET/CEST), the time in the Netherlands.",
         "voet_tips": "Tips for buying tickets", "voet_over": "About this site", "voet_privacy": "Privacy policy", "voet_cookie": "Cookie settings",
@@ -127,7 +180,9 @@ main{max-width:820px;margin:0 auto;padding:22px 16px 56px}a{color:var(--ink)}h1{
 h2{margin-top:1.8em}h3{font-weight:800;font-size:1.15rem;margin:1.4em 0 .3em}.mute{color:var(--mute)}.kaart{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0}
 .kaart b{font-size:1.05rem}.fase{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:4px 0;border-top:1px solid var(--line);font-size:.95rem}
 .voorbij{opacity:.55}.label{display:inline-block;font-size:.8rem;font-weight:600;border:1px solid var(--line);border-radius:99px;padding:1px 9px;margin-left:6px}
-.nu{color:var(--open)}nav.clubs a{display:inline-block;margin:2px 10px 2px 0}.terug{font-weight:600}footer{margin-top:3em;font-size:.85rem}"""
+.nu{color:var(--open)}nav.clubs a{display:inline-block;margin:2px 10px 2px 0}.terug{font-weight:600}footer{margin-top:3em;font-size:.85rem}
+.waarom{margin:.5em 0 0;padding-left:1.1em;font-size:.92rem;color:var(--mute)}.waarom-k{font-size:.8rem;font-weight:700;margin-top:.6em;text-transform:uppercase;letter-spacing:.03em}
+.tijd{font-weight:700}"""
 
 
 MENU_CSS = """.topmenu{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;max-width:820px;margin:0 auto;padding:12px 16px 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -188,6 +243,7 @@ def taal_hrefs(pad, alt_pad, prefix):
 def menu(prefix, actief="", pad="", alt_pad=None):
     """Menu rechtsboven: taalknop (NL/EN) en knop met drie streepjes (Home, Clubs, Tips, Over)."""
     items = [("home", tr("home"), prefix or "./"), ("clubs", tr("clubs"), f"{prefix}club/")]
+    items.append(("nieuws", tr("nieuws"), f"{prefix}{tr('nieuws_pad')}/"))
     if CFG.get("tips"):
         items.append(("tips", tr("tips"), f"{prefix}tips/"))
     if CFG.get("email"):
@@ -455,6 +511,306 @@ INDEX_EN = [
 ]
 
 
+LOS_WOORDEN = {"fc", "afc", "ac", "as", "sc", "ssc", "us", "ss", "cf", "cfc", "rcd", "ud", "ca", "1", "04", "05", "1907", "vfb", "vfl", "sv", "rb", "fsv", "tsg", "calcio", "bayer", "borussia", "real"}
+BEKERS = ("Pokal", "Beker", "FA Cup", "Coppa", "Copa del Rey", "EFL Cup", "League Cup", "Coupe")
+EUROPA = ("Champions League", "Europa League", "Conference League", "UEFA")
+
+
+def norm_club(naam):
+    return "-".join(x for x in slug(naam).split("-") if x not in LOS_WOORDEN)
+
+
+def lees_notities():
+    """nieuws_info/notities.txt: per regel 'club | tegenstander | JJJJ-MM-DD | tekst NL | tekst EN' (regels met # worden genegeerd)."""
+    uit = {}
+    pad = ROOT / "nieuws_info" / "notities.txt"
+    if not pad.exists():
+        return uit
+    for regel in pad.read_text(encoding="utf-8").splitlines():
+        delen = [x.strip() for x in regel.split("|")]
+        if regel.strip().startswith("#") or len(delen) < 4:
+            continue
+        nl = delen[3]
+        en = delen[4] if len(delen) > 4 and delen[4] else ""
+        uit.setdefault((slug(delen[0]), slug(delen[1]), delen[2]), {"nl": nl, "en": en})
+    return uit
+
+
+def week_van(d):
+    jaar, week, _ = d.isocalendar()
+    maandag = d - datetime.timedelta(days=d.weekday())
+    return jaar, week, maandag, maandag + datetime.timedelta(days=6)
+
+
+def ontlink_clubs(html_tekst, geldig, prefix):
+    """Links naar clubpagina's in tips: kies de bestaande pagina (ook bij een iets andere slug) of laat de link vervallen."""
+    norm_map = {}
+    for g in geldig:
+        norm_map.setdefault(norm_club(g), g)
+
+    def vervang(m):
+        wortel, sl, tekst = m.group(1), m.group(2), m.group(3)
+        if sl in geldig:
+            return m.group(0)
+        doel = norm_map.get(norm_club(sl))
+        if doel:
+            return f'<a href="{wortel}{doel}/" rel="noopener">{tekst}</a>'
+        return tekst
+    return re.sub(r'<a href="(' + re.escape(prefix) + r')([a-z0-9-]+)/" rel="noopener">(.*?)</a>', vervang, html_tekst)
+
+
+
+def bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, vandaag, sitenaam):
+    notities = lees_notities()
+    nl_stad = {}
+    for f in (ROOT / "clubs_info").glob("*.md"):
+        if f.stem.startswith("_"):
+            continue
+        m_, _ = lees_verhaal(f)
+        if m_.get("naam") and m_.get("stad"):
+            nl_stad[norm_club(m_["naam"])] = m_["stad"]
+    club_meta = {}
+    for k, c in clubs.items():
+        nl_m = verhaal_voor(k, c["naam"], "nl")[0]
+        t_m = nl_m if taal == "nl" else (verhaal_voor(k, c["naam"], taal)[0] or nl_m)
+        club_meta[k] = {"stad_nl": nl_m.get("stad", ""), "stad": t_m.get("stad") or nl_m.get("stad", ""), "stadion": t_m.get("stadion") or nl_m.get("stadion", "")}
+    groepen = data.get("GROEPEN", {})
+
+    def waarom(k, w):
+        c, m = clubs[k], club_meta[k]
+        r = []
+        nota = notities.get((slugs[k], slug(w["tegen"]), w["aftrap"][:10])) or notities.get((slug(k), slug(w["tegen"]), w["aftrap"][:10]))
+        if nota and (nota.get(taal) or (taal == "nl" and nota.get("nl"))):
+            r.append(nota[taal])
+        if m["stad_nl"] and nl_stad.get(norm_club(w["tegen"])) == m["stad_nl"] and norm_club(w["tegen"]) != norm_club(c["naam"]):
+            r.append(tr("w_derby", stad=m["stad"]))
+        if any(x in w["comp"] for x in EUROPA):
+            if m["stadion"]:
+                r.append(tr("w_europa", stadion=m["stadion"]))
+        elif any(x in w["comp"] for x in BEKERS):
+            r.append(tr("w_beker"))
+        d0 = aware(w["aftrap"]).date()
+        if m["stad_nl"]:
+            for k2, lijst in toekomst.items():
+                if k2 == k or club_meta[k2]["stad_nl"] != m["stad_nl"]:
+                    continue
+                for w2 in lijst:
+                    if abs((aware(w2["aftrap"]).date() - d0).days) == 1:
+                        dag = f"{DAGEN[TAAL][aware(w2['aftrap']).weekday()]} {aware(w2['aftrap']).day} {MAANDEN[TAAL][aware(w2['aftrap']).month - 1]}"
+                        r.append(tr("w_combi", tegen=clubs[k2]["naam"], thuis=w2["tegen"], stad=m["stad"], dag=dag))
+                        break
+                else:
+                    continue
+                break
+        if c.get("band") != "very-limited" and (any(f[0] == "vrij" for f in w.get("fases", [])) or c.get("band") == "often-available"):
+            r.append(tr("w_vrij"))
+        if c.get("band") == "very-limited":
+            r.append(tr("w_moeilijk"))
+        if m["stadion"] and m["stad"]:
+            r.append(tr("w_stadion", stadion=m["stadion"], stad=m["stad"]))
+        return r[:5]
+
+    def status(w):
+        if w.get("nu"):
+            return tr("st_open")
+        fs = sorted(f[1] for f in w.get("fases", []) if aware(f[1]) >= vandaag)
+        if fs:
+            return tr("st_start", datum=datum(fs[0]))
+        if w.get("fases"):
+            return tr("st_gestart")
+        return tr("st_info")
+
+    def maak_items(van, tot):
+        verkoop, wed = [], []
+        for k, lijst in toekomst.items():
+            for w in lijst:
+                basis_it = {"k": k, "naam": clubs[k]["naam"], "tegen": w["tegen"], "comp": w["comp"], "aftrap": w["aftrap"],
+                            "stadion": club_meta[k]["stadion"], "stad": club_meta[k]["stad"]}
+                ad = aware(w["aftrap"]).date()
+                wr = None
+                if van <= ad <= tot:
+                    wr = waarom(k, w)
+                    wed.append({**basis_it, "status": status(w), "waarom": wr})
+                for f in w.get("fases", []):
+                    if van <= aware(f[1]).date() <= tot:
+                        wr = wr if wr is not None else waarom(k, w)
+                        label = f[2] if len(f) > 2 else groepen.get(f[0], {}).get("l", f[0])
+                        verkoop.append({**basis_it, "moment": f[1], "label": label, "waarom": wr})
+        verkoop.sort(key=lambda x: (x["moment"], x["naam"]))
+        wed.sort(key=lambda x: (x["aftrap"], x["naam"]))
+        return verkoop, wed
+
+    def sleutel_it(it, soort):
+        return (it["k"], it["tegen"], it["aftrap"]) + ((it["moment"], it["label"]) if soort == "verkoop" else ())
+
+    arch = ROOT / "nieuws_archief"
+
+    def snapshot(jaar, week, soort, nieuw=None):
+        f = arch / f"{taal}-{jaar}-w{week:02d}-{soort}.json"
+        oud = []
+        if f.exists():
+            try:
+                oud = json.loads(f.read_text(encoding="utf-8"))
+            except ValueError:
+                oud = []
+        if nieuw is None:
+            return oud
+        samen = {sleutel_it(x, soort): x for x in oud}
+        for x in nieuw:
+            samen[sleutel_it(x, soort)] = x
+        uit = sorted(samen.values(), key=lambda x: (x.get("moment", x["aftrap"]), x["naam"]))
+        arch.mkdir(parents=True, exist_ok=True)
+        f.write_text(json.dumps(uit, ensure_ascii=False, indent=1), encoding="utf-8")
+        return uit
+
+    def pad_van(t, soort, jaar=None, week=None):
+        pre = TXT[t]["nieuws_pad"] + "/" + TXT[t]["pad_verkoop" if soort == "verkoop" else "pad_gespeeld"] + "/"
+        return pre + (f"{jaar}-{'week' if t == 'nl' else 'week'}-{week}/" if jaar else "")
+
+    def link_club(it, prefix):
+        if it["k"] in slugs:
+            return f'<a href="{prefix}club/{slugs[it["k"]]}/">{e(it["naam"])}</a>'
+        return e(it["naam"])
+
+    def waarom_html(lijst):
+        if not lijst:
+            return ""
+        return f'<div class="waarom-k mute">{tr("waarom")}</div><ul class="waarom">' + "".join(f"<li>{e(x)}</li>" for x in lijst) + "</ul>"
+
+    def render_verkoop(items, prefix):
+        uit, dag = "", None
+        for it in items:
+            d = it["moment"][:10]
+            if d != dag:
+                dag = d
+                uit += f"<h2>{e(datum(d, False))}</h2>"
+            tijd = f'<span class="tijd">{it["moment"][11:16]}</span> · ' if len(it["moment"]) > 10 else ""
+            uit += (f'<div class="kaart">{tijd}<b>{link_club(it, prefix)} – {e(it["tegen"])}</b>'
+                    f'<div>{e(it["label"])}</div><div class="mute">{e(it["comp"])} · {e(datum(it["aftrap"]))}</div>{waarom_html(it["waarom"])}</div>')
+        return uit
+
+    def render_wed(items, prefix, met_status=True):
+        uit, dag = "", None
+        for it in items:
+            d = it["aftrap"][:10]
+            if d != dag:
+                dag = d
+                uit += f"<h2>{e(datum(d, False))}</h2>"
+            tijd = f'<span class="tijd">{it["aftrap"][11:16]}</span> · ' if len(it["aftrap"]) > 10 else ""
+            st = f'<span class="label">{e(it["status"])}</span>' if met_status and it.get("status") else ""
+            uit += (f'<div class="kaart">{tijd}<b>{link_club(it, prefix)} – {e(it["tegen"])}</b>{st}'
+                    f'<div class="mute">{e(it["comp"])}</div>{waarom_html(it["waarom"])}</div>')
+        return uit
+
+    def events_ld(items):
+        ev = []
+        for it in items[:20]:
+            if it.get("stadion"):
+                ev.append({"@type": "SportsEvent", "name": f"{it['naam']} - {it['tegen']}", "startDate": aware(it["aftrap"]).isoformat(),
+                           "eventStatus": "https://schema.org/EventScheduled",
+                           "location": {"@type": "Place", "name": it["stadion"], "address": {"@type": "PostalAddress", "addressLocality": it["stad"]}}})
+        return '<script type="application/ld+json">' + json.dumps(ev, ensure_ascii=False) + "</script>" if ev else ""
+
+    def meervoud(n, een, meer):
+        return tr(een) if n == 1 else tr(meer)
+
+    vd = vandaag.date()
+    t7 = vd + datetime.timedelta(days=6)
+    jaar, week, maandag, zondag = week_van(vd)
+    verkoop7, wed7 = maak_items(vd, t7)
+    # weekarchief bijwerken: de hele lopende week (met wat er al in het archief stond)
+    v_week, w_week = maak_items(maandag, zondag)
+    snapshot(jaar, week, "verkoop", v_week)
+    snapshot(jaar, week, "gespeeld", w_week)
+
+    van_t, tot_t = datum(vd.isoformat(), False), datum(t7.isoformat(), False)
+    # --- actuele pagina's
+    pad = pad_van(taal, "verkoop")
+    alt = pad_van(ander, "verkoop")
+    pre = prefix_van(pad)
+    if verkoop7:
+        n_cl = len({x["k"] for x in verkoop7})
+        inhoud = f"<h1>{e(tr('vk_h1', van=van_t, tot=tot_t))}</h1><p>{e(tr('vk_intro', n=len(verkoop7), mom=meervoud(len(verkoop7), 'mom_1', 'mom_n'), m=n_cl, cl=meervoud(n_cl, 'cl_1', 'cl_n')))}</p>" + render_verkoop(verkoop7, pre)
+    else:
+        komende = []
+        for k, lijst in toekomst.items():
+            for w in lijst:
+                for f in w.get("fases", []):
+                    if aware(f[1]) >= vandaag:
+                        label = f[2] if len(f) > 2 else groepen.get(f[0], {}).get("l", f[0])
+                        komende.append({"k": k, "naam": clubs[k]["naam"], "tegen": w["tegen"], "comp": w["comp"], "aftrap": w["aftrap"], "moment": f[1], "label": label, "waarom": waarom(k, w)})
+        komende.sort(key=lambda x: (x["moment"], x["naam"]))
+        inhoud = (f"<h1>{e(tr('vk_h1', van=van_t, tot=tot_t))}</h1><p>{e(tr('vk_intro_geen'))}</p><h2>{tr('vk_geen_kop')}</h2>"
+                  + render_verkoop(komende[:8], pre).replace("<h2>", "<h3>").replace("</h2>", "</h3>"))
+    inhoud += f'<p><a href="{pre}{tr("nieuws_pad")}/">{tr("nw_archief")}</a></p>'
+    schrijf(pad, pagina(tr("vk_titel", site=sitenaam), tr("vk_beschr"), pad, inhoud, "", "", "nieuws", alt_pad=alt))
+
+    pad = pad_van(taal, "gespeeld")
+    alt = pad_van(ander, "gespeeld")
+    pre = prefix_van(pad)
+    if wed7:
+        n_cl = len({x["k"] for x in wed7})
+        inhoud = (f"<h1>{e(tr('gp_h1', van=van_t, tot=tot_t))}</h1><p>{e(tr('gp_intro', n=len(wed7), wed=meervoud(len(wed7), 'wedstrijd_1', 'wedstrijd_n'), m=n_cl, cl=meervoud(n_cl, 'cl_1', 'cl_n')))}</p>"
+                  + render_wed(wed7, pre))
+    else:
+        inhoud = f"<h1>{e(tr('gp_h1', van=van_t, tot=tot_t))}</h1><p>{e(tr('gp_intro_geen'))}</p>"
+    trip = next((x for x in mijn_tips if x["stem"].startswith("07-")), None)
+    if trip:
+        inhoud += f'<p>{tr("w_tip")}<a href="{pre}tips/{trip["slug"]}/">{e(trip["titel"])}</a></p>'
+    inhoud += f'<p><a href="{pre}{tr("nieuws_pad")}/">{tr("nw_archief")}</a></p>'
+    schrijf(pad, pagina(tr("gp_titel", site=sitenaam), tr("gp_beschr"), pad, inhoud, events_ld(wed7), "", "nieuws", alt_pad=alt))
+
+    # --- archiefpagina's van afgelopen weken
+    weken = {}
+    if arch.exists():
+        for f in sorted(arch.glob(f"{taal}-*-w*-*.json")):
+            m = re.match(rf"{taal}-(\d{{4}})-w(\d{{2}})-(verkoop|gespeeld)\.json$", f.name)
+            if m:
+                weken.setdefault((int(m.group(1)), int(m.group(2))), set()).add(m.group(3))
+    afgelopen = []
+    for (j, wk) in sorted(weken, reverse=True):
+        mon = datetime.date.fromisocalendar(j, wk, 1)
+        zon = mon + datetime.timedelta(days=6)
+        if zon >= vd:
+            continue
+        afgelopen.append((j, wk, mon, zon))
+        for soort in ("verkoop", "gespeeld"):
+            items = snapshot(j, wk, soort)
+            if not items:
+                continue
+            pad = pad_van(taal, soort, j, wk)
+            alt = pad_van(ander, soort, j, wk)
+            pre = prefix_van(pad)
+            van_s, tot_s = datum(mon.isoformat(), False), datum(zon.isoformat(), False)
+            actueel = pad_van(taal, soort)
+            kop = tr("vk_week_h1" if soort == "verkoop" else "gp_week_h1", week=wk, jaar=j)
+            tit = tr("vk_week_titel" if soort == "verkoop" else "gp_week_titel", week=wk, jaar=j, site=sitenaam)
+            bes = tr("vk_week_beschr" if soort == "verkoop" else "gp_week_beschr", week=wk, jaar=j, van=van_s, tot=tot_s)
+            body = render_verkoop(items, pre) if soort == "verkoop" else render_wed(items, pre, met_status=False)
+            inhoud = f'<h1>{e(kop)}</h1><p class="mute">{e(van_s)} – {e(tot_s)}</p>{body}<p><a href="{pre}{actueel}">{tr("arch_terug")}</a></p>'
+            schrijf(pad, pagina(tit, bes, pad, inhoud, events_ld(items) if soort == "gespeeld" else "", "", "nieuws", alt_pad=alt))
+
+    # --- overzichtspagina van het nieuws
+    pad = tr("nieuws_pad") + "/"
+    alt = TXT[ander]["nieuws_pad"] + "/"
+    pre = prefix_van(pad)
+    kaarten = "".join(f'<div class="kaart"><b><a href="{pre}{pad_van(taal, s_)}">{e(tr(t_).replace(" | {site}", ""))}</a></b><div class="mute">{e(tr(b_))}</div></div>'
+                      for s_, t_, b_ in (("verkoop", "vk_titel", "vk_beschr"), ("gespeeld", "gp_titel", "gp_beschr")))
+    arch_html = f"<h2>{tr('nw_archief')}</h2>"
+    if afgelopen:
+        arch_html += "<ul>"
+        for j, wk, mon, zon in afgelopen[:60]:
+            links = " · ".join(f'<a href="{pre}{pad_van(taal, s_, j, wk)}">{e(tr("pad_" + s_).replace("-", " ").capitalize())}</a>'
+                               for s_ in ("verkoop", "gespeeld") if weken[(j, wk)] and s_ in weken[(j, wk)] and snapshot(j, wk, s_))
+            arch_html += f"<li>{wk} / {j} ({e(datum(mon.isoformat(), False))}): {links}</li>"
+        arch_html += "</ul>"
+    else:
+        arch_html += f'<p class="mute">{tr("nw_geen_archief")}</p>'
+    inhoud = f"<h1>{tr('nw_h1')}</h1><p>{tr('nw_intro')}</p>{kaarten}{arch_html}"
+    schrijf(pad, pagina(tr("nw_titel", site=sitenaam), tr("nw_beschr"), pad, inhoud, "", "", "nieuws", alt_pad=alt))
+
+
+
 def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
     """Bouw alle pagina's van een taal. Nederlands komt in de hoofdmap, Engels in en/."""
     global TAAL
@@ -580,8 +936,11 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
         for x in mijn_tips:
             pad = f"tips/{x['slug']}/"
             alt = f"tips/{stems_ander[x['stem']]}/" if x["stem"] in stems_ander else None
-            inhoud = f"<h1>{e(x['titel'])}</h1>" + mini_markdown(x["tekst"])
+            inhoud = f"<h1>{e(x['titel'])}</h1>" + ontlink_clubs(mini_markdown(x["tekst"]), set(slugs.values()), "/club/" if taal == "nl" else "/en/club/")
             schrijf(pad, pagina(f"{x['titel']} | {sitenaam}", x["beschrijving"], pad, inhoud, "", tips_nav("../../", x["slug"]), "tips", alt_pad=alt))
+
+    # ---------- nieuws: deze week in de verkoop en deze week gespeeld
+    bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, vandaag, sitenaam)
 
     # ---------- Over en Privacy
     aantal_w = sum(len(v) for v in toekomst.values())
@@ -654,6 +1013,8 @@ def main():
                 "beheerder": site.get("beheerder", "").strip(), "sitenaam": site["sitenaam"], "bewaartermijn": bew,
                 "bewaartermijn_en": re.sub(r"\bmaanden\b", "months", re.sub(r"\bmaand\b", "month", re.sub(r"\bjaar\b", "year", bew)))})
     vandaag = datetime.datetime.now(NL)
+    if os.environ.get("BOUW_VANDAAG"):  # alleen om te testen
+        vandaag = datetime.datetime.fromisoformat(os.environ["BOUW_VANDAAG"]).replace(tzinfo=NL)
     bijgewerkt = data.get("bijgewerkt", vandaag.date().isoformat())
     idx = ROOT / "index.html"
     index_bron = idx.read_text(encoding="utf-8") if idx.exists() else ""
