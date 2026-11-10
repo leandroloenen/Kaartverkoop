@@ -1,0 +1,154 @@
+"""Leesprogramma's voor Newcastle United, Brighton & Hove Albion en Ajax.
+- Newcastle: pagina 'on sale dates' met per wedstrijd het loting- en verkoopmoment voor Mags Members (Londense tijd).
+- Brighton: wedstrijdlijst (thuiswedstrijden); de verkoopinformatie staat in nieuwsberichten en is (nog) niet gelezen.
+- Ajax: de Eredivisie- en Conference League-pagina met de status per thuiswedstrijd (meestal uitverkocht)."""
+import os
+import re
+from types import SimpleNamespace
+
+from . import tekst as t
+from .tekstclubs import wedstrijd
+from .tekstclubs6 import MAANDEN_EN_LANG, toekomst
+
+# ---------------------------------------------------------------- Newcastle
+NC_KOP = re.compile(r"^Newcastle United vs ([^\n]+)\n([^/\n]+?)\s*/\s*[^\n]+\n\n\w+ (\d{1,2}) ([A-Za-z]+),\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*KO\s*\n(.*?)(?=^Newcastle United vs |\nOFFICIAL CLUB PARTNERS|\Z)", re.M | re.S)
+NC_MOMENT = re.compile(r"^(Mags Member ballot open|Mags Member Sale open):\s*\w+ (\d{1,2})(?:st|nd|rd|th)? ([A-Za-z]+),\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm|noon)", re.M)
+NC_LABELS = {"mags member ballot open": "Mags Member-loting (inschrijving opent)", "mags member sale open": "Mags Member-verkoop"}
+NOOT_MAGS = "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen."
+
+
+def klok_en(u, m, ap):
+    h = int(u)
+    if ap == "noon":
+        return 12, 0
+    h = h % 12 + (12 if ap == "pm" else 0) if h <= 12 else h
+    return h, int(m or 0)
+
+
+def parse_newcastle(tekst, club="newcastle", bron=""):
+    uit = []
+    for k in NC_KOP.finditer(tekst):
+        mnd = MAANDEN_EN_LANG.get(k.group(4).lower())
+        if not mnd:
+            continue
+        h, mi = klok_en(k.group(5), k.group(6), k.group(7))
+        d = t.jaar_voor_dag(int(k.group(3)), mnd, h, mi, t.LONDEN, terug=20)
+        if not d:
+            continue
+        aftrap = t.tekst_fmt(d)
+        if not toekomst(aftrap):
+            continue
+        fases = []
+        for m in NC_MOMENT.finditer(k.group(8)):
+            mm = MAANDEN_EN_LANG.get(m.group(3).lower())
+            if not mm:
+                continue
+            hh, mi2 = klok_en(m.group(4), m.group(5), m.group(6))
+            v = t.jaar_voor(int(m.group(2)), mm, hh, mi2, d, t.LONDEN)
+            if v:
+                fases.append(["lid", t.tekst_fmt(v), NC_LABELS[m.group(1).lower()]])
+        fases.sort(key=lambda f: f[1])
+        uit.append(wedstrijd(club, k.group(1).strip(), k.group(2).strip(), aftrap, fases=fases, nu=False, info=not fases,
+                             noot=NOOT_MAGS, bron=bron))
+    return uit
+
+
+def haal_newcastle(pagina, test, sleutel="newcastle"):
+    return parse_newcastle(t.haal_tekst(pagina, test), sleutel, pagina)
+
+
+# ---------------------------------------------------------------- Brighton
+BR_MAAND = re.compile(r"^(January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})$", re.M)
+BR_RIJ = re.compile(r"^\w+ (\d{1,2}) ([A-Za-z]{3})\n(\d{1,2}):(\d{2})\n(am|pm)\n(?:GMT|BST)\n[^\n]+\n(?:Watch On\n)?([^\n]+)\n([^\n]+)\nMATCH CENTRE", re.M)
+BR_EUROPA = {"universitatea craiova", "monaco", "panathinaikos"}
+NOOT_BRIGHTON = "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond."
+BR_NAMEN = {"Spurs": "Tottenham Hotspur", "Forest": "Nottingham Forest", "Man Utd": "Manchester United", "Man City": "Manchester City",
+            "Villa": "Aston Villa", "Palace": "Crystal Palace", "Newcastle": "Newcastle United"}
+
+
+def parse_brighton(tekst, club="brighton", bron=""):
+    uit, gezien = [], set()
+    for m in BR_RIJ.finditer(tekst):
+        if m.group(6).strip().lower() != "albion":
+            continue
+        mnd = t.MAANDEN_EN.get(m.group(2).lower())
+        if not mnd:
+            continue
+        h, mi = klok_en(m.group(3), m.group(4), m.group(5))
+        d = t.jaar_voor_dag(int(m.group(1)), mnd, h, mi, t.LONDEN, terug=20)
+        if not d:
+            continue
+        aftrap = t.tekst_fmt(d)
+        tegen = BR_NAMEN.get(m.group(7).strip(), m.group(7).strip())
+        if (tegen, aftrap) in gezien or not toekomst(aftrap):
+            continue
+        gezien.add((tegen, aftrap))
+        comp = "UEFA" if tegen.lower() in BR_EUROPA else "Premier League"
+        uit.append(wedstrijd(club, tegen, comp, aftrap, nu=False, info=True, noot=NOOT_BRIGHTON, bron=bron))
+    return uit
+
+
+def haal_brighton(pagina, test, sleutel="brighton"):
+    return parse_brighton(t.haal_tekst(pagina, test), sleutel, pagina)
+
+
+# ---------------------------------------------------------------- Ajax
+AJ_RIJ = re.compile(r"^Ajax - ([^\n]+)\n\n\w+ (\d{1,2}) ([a-z]+), (\d{1,2}):(\d{2}) uur\n\n(.*?)(?=^Ajax - |^Ticketshop\nMobile|^Nieuw: |^Mobile tickets\n\n|\Z)", re.M | re.S)
+AJ_LOS = re.compile(r"(?:Losse kaartverkoop|Reguliere kaarten)\s*\t?\s*(🔴|🟢|🟠|🟡)?\s*([^\n]+)")
+NOOT_UITVERKOCHT = "Losse kaarten zijn uitverkocht; via Resale komen soms kaarten vrij."
+NOOT_CLUBCARD = " Voor deze wedstrijd is een Club Card verplicht."
+
+
+def parse_ajax(tekst, club="ajax", comp="Eredivisie", bron=""):
+    uit = []
+    for k in AJ_RIJ.finditer(tekst):
+        mnd = t.MAANDEN_NL_LANG.get(k.group(3).lower())
+        if not mnd:
+            continue
+        d = t.jaar_voor_dag(int(k.group(2)), mnd, int(k.group(4)), int(k.group(5)), t.NL, terug=20)
+        if not d:
+            continue
+        aftrap = t.tekst_fmt(d)
+        if not toekomst(aftrap):
+            continue
+        blok = k.group(6)
+        los = AJ_LOS.search(blok)
+        status = los.group(2).strip().lower() if los else ""
+        club_card = "club card-verplichting" in blok.lower()
+        if "uitverkocht" in status:
+            noot, nu, info = NOOT_UITVERKOCHT, False, True
+        elif status.startswith(("open", "beschikbaar")):
+            noot, nu, info = "Losse kaarten zijn nu te koop.", True, False
+        else:
+            noot, nu, info = "Verkoopmomenten niet getoond.", False, True
+        if club_card:
+            noot += NOOT_CLUBCARD
+        uit.append(wedstrijd(club, k.group(1).strip(), comp, aftrap, nu=nu, info=info, noot=noot, bron=bron))
+    return uit
+
+
+def haal_ajax(pagina, test, sleutel="ajax"):
+    uit = parse_ajax(t.haal_tekst(pagina, test), sleutel, "Eredivisie", pagina)
+    eur = t.adres_uit_lijst("Ajax (Conference League)", "https://www.ajax.nl/fans/conference-league/")
+    try:
+        tekst = t.haal_tekst(eur, os.environ.get("AJAX_EUROPA_TEKST_BESTAND", ""))
+        uit += parse_ajax(tekst, sleutel, "Conference League", eur)
+    except Exception:  # noqa: BLE001
+        pass
+    return uit
+
+
+CLUBS = [
+    ("newcastle", "Newcastle United", "EN", "Newcastle (verkoopdata)", "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates", haal_newcastle),
+    ("brighton", "Brighton & Hove Albion", "EN", "Brighton (wedstrijden)", "https://www.brightonandhovealbion.com/fixtures-first-team-men", haal_brighton),
+    ("ajax", "AFC Ajax", "NL", "Ajax (Eredivisie)", "https://www.ajax.nl/fans/kaartverkoop-eredivisie/", haal_ajax),
+]
+
+
+def _maak(sleutel, naam_, land, lijstnaam, standaard, haal):
+    test = os.environ.get(f"{sleutel.upper()}_TEKST_BESTAND", "")
+    pagina = t.adres_uit_lijst(lijstnaam, standaard)
+    return SimpleNamespace(CLUB=sleutel, NAAM=naam_, PAGINA=pagina, LAND=land, haal_op=lambda: haal(pagina, test, sleutel))
+
+
+ALLE = [_maak(*c) for c in CLUBS]
