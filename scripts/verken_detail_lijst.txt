@@ -1,2 +1,3 @@
-Ajax (nieuws) | https://www.ajax.nl/nieuws | link:/artikelen/informatie-kaartverkoop | 6
-Ajax (artikelen) | https://www.ajax.nl/artikelen | link:/artikelen/informatie-kaartverkoop | 6
+Ajax (voorbeeld Conference) | https://www.ajax.nl/artikelen/informatie-kaartverkoop-uefa-conference-league-derde-voorronde | geen | 1
+Ajax (voorbeeld losse verkoop) | https://www.ajax.nl/artikelen/informatie-over-losse-kaartverkoop-eredivisie | geen | 1
+Ajax (voorbeeld Champions League) | https://www.ajax.nl/artikelen/informatie-kaartverkoop-champions-league-en-eredivisie/ | geen | 1
