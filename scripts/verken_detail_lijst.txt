@@ -1,11 +1,11 @@
 # Detailverkenning (ronde 5): naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-Nottingham Forest (ticketartikelen thuis) | https://www.nottinghamforest.co.uk/tickets/ | link:/news/2026/[a-z]+/[0-9]+/ticket-[a-z0-9-]+-h-/ | 4
-AFC Bournemouth (ticketartikelen thuis) | https://www.afcb.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/[a-z0-9-]+-h-?/$ | 4
-Coventry City (ticketnieuws) | https://www.ccfc.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/ticket-news | 3
-Leeds United (ticketartikelen) | https://www.leedsunited.com/en/news/category/ticketing | link:/en/news/ticket-information- | 5
-Brighton (ticketnieuws) | https://www.brightonandhovealbion.com/all-latest-news | link:/media-article/[a-z0-9-]*ticket | 4
-Everton (verkoopdata) | https://www.evertonfc.com/tickets/on-sale-dates | geen | 1
-Everton (ticketnieuws) | https://www.evertonfc.com/tickets/latest-news | geen | 1
-Newcastle (ticketinformatie) | https://www.newcastleunited.com/en/tickets/ticket-information | geen | 1
-Schalke (wedstrijdpagina's) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke-04- | 3
+# (klaar) Nottingham Forest (ticketartikelen thuis) | https://www.nottinghamforest.co.uk/tickets/ | link:/news/2026/[a-z]+/[0-9]+/ticket-[a-z0-9-]+-h-/ | 4
+# (klaar) AFC Bournemouth (ticketartikelen thuis) | https://www.afcb.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/[a-z0-9-]+-h-?/$ | 4
+# (klaar) Coventry City (ticketnieuws) | https://www.ccfc.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/ticket-news | 3
+# (klaar) Leeds United (ticketartikelen) | https://www.leedsunited.com/en/news/category/ticketing | link:/en/news/ticket-information- | 5
+# (klaar) Brighton (ticketnieuws) | https://www.brightonandhovealbion.com/all-latest-news | link:/media-article/[a-z0-9-]*ticket | 4
+# (klaar) Everton (verkoopdata) | https://www.evertonfc.com/tickets/on-sale-dates | geen | 1
+# (klaar) Everton (ticketnieuws) | https://www.evertonfc.com/tickets/latest-news | geen | 1
+# (klaar) Newcastle (ticketinformatie) | https://www.newcastleunited.com/en/tickets/ticket-information | geen | 1
+# (klaar) Schalke (wedstrijdpagina's) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke-04- | 3
