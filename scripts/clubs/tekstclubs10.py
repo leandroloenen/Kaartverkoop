@@ -89,7 +89,7 @@ def parse_brighton(tekst, club="brighton", bron=""):
 
 
 def haal_brighton(pagina, test, sleutel="brighton"):
-    return parse_brighton(t.haal_tekst(pagina, test), sleutel, pagina)
+    return parse_brighton(t.haal_tekst(pagina, test, locale="en-GB"), sleutel, pagina)
 
 
 # ---------------------------------------------------------------- Ajax
