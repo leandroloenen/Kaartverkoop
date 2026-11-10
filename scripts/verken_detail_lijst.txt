@@ -1,9 +1,1 @@
-# Detailverkenning (ronde 8, Italie: artikelen met verkoopfases): naam | startadres | modus | aantal | json=WOORD (optioneel)
-# modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-Torino (ticketnieuws) | https://www.torinofc.it/news/biglietteria | link:info-e-biglietti | 3
-Atalanta (ticketinfo) | https://en.atalanta.it/ticket | link:ticket-info | 3
-AS Roma (match details) | https://www.asroma.com/en/tickets/men | klik:MATCH DETAILS | 2
-Como (wedstrijdpagina) | https://tickets.comofootball.com/ | link:cagliari | 1
-Fiorentina (ticketing) | https://www.acffiorentina.com/it/ | link:/it/ticketing/ | 3
-SS Lazio (via startpagina) | https://www.sslazio.it/en | link:biglietteria | 3
-AC Monza (via startpagina) | https://www.acmonza.com/ | link:ticket | 3
+SS Lazio (nieuws) | https://www.sslazio.it/it/biglietteria/matches | link:/it/news/biglietteria/serie-a-enilive-or-lazio- | 10
