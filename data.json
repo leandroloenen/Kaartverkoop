@@ -334,6 +334,42 @@
    "land": "EN",
    "mijn": "vrij",
    "url": "https://www.leedsunited.com/en/news/category/ticketing"
+  },
+  "venezia": {
+   "naam": "Venezia FC",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://en.veneziafc.it/tickets/biglietteria"
+  },
+  "parma": {
+   "naam": "Parma Calcio 1913",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.parmacalcio1913.com/en/tickets/"
+  },
+  "atalanta": {
+   "naam": "Atalanta",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://en.atalanta.it/ticket"
+  },
+  "torino": {
+   "naam": "Torino FC",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.torinofc.it/biglietteria"
+  },
+  "roma": {
+   "naam": "AS Roma",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.asroma.com/en/tickets/men"
+  },
+  "como": {
+   "naam": "Como 1907",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://tickets.comofootball.com/"
   }
  },
  "WEDSTRIJDEN": [
@@ -991,7 +1027,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Twente-VriendenLoterij-Eredivisie-2026---2027",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-10"
   },
@@ -1395,11 +1431,12 @@
      "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 10-11-26 om 13:00"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Bron: Verkoop start dinsdag 10-11-26 om 13:00",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "cambuur",
@@ -3447,7 +3484,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omonia Nicosia",
+   "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -3472,7 +3509,7 @@
    "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/",
    "auto": true,
-   "eerst_nu": "2026-11-06"
+   "eerst_nu": "2026-11-10"
   },
   {
    "club": "juventus",
@@ -4017,7 +4054,7 @@
   {
    "club": "frankfurt",
    "tegen": "Borussia Dortmund",
-   "comp": "Ticketinfos folgen.",
+   "comp": "Ticketinfos",
    "aftrap": "2026-12-02T20:45",
    "fases": [],
    "nu": false,
@@ -4962,6 +4999,855 @@
    "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
    "bron": "https://www.leedsunited.com/en/news/ticket-information-crystal-palace-h-26-27",
    "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Bologna",
+   "comp": "Serie A",
+   "aftrap": "2026-11-27T20:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-10T10:00",
+     "Seizoenkaarthouders (voorrang)"
+    ],
+    [
+     "clubkaart",
+     "2026-11-13T10:00",
+     "Supporter Card-houders (met korting)"
+    ],
+    [
+     "vrij",
+     "2026-11-16T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten uit de voorverkoop zijn inclusief de waterbus naar Sant'Elena.",
+   "bron": "https://en.veneziafc.it/news/serie-a-enilive-26-27-ticket-sales-for-venezia-bologna",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Sassuolo",
+   "comp": "Serie A",
+   "aftrap": "2026-12-07T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Monza",
+   "comp": "Serie A",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2027-01-05T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-01-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-02-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Cagliari",
+   "comp": "Serie A",
+   "aftrap": "2027-02-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Atalanta",
+   "comp": "Serie A",
+   "aftrap": "2027-03-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Parma",
+   "comp": "Serie A",
+   "aftrap": "2027-04-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Juventus",
+   "comp": "Serie A",
+   "aftrap": "2027-04-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Torino",
+   "comp": "Serie A",
+   "aftrap": "2027-04-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Como",
+   "comp": "Serie A",
+   "aftrap": "2027-05-08",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "venezia",
+   "tegen": "Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-05-22",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T18:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-09T11:00",
+     "Tardini Card-houders (geen seizoenkaart)"
+    ],
+    [
+     "vrij",
+     "2026-11-16T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2026-12-13T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "atalanta",
+   "tegen": "Inter",
+   "comp": "Serie A",
+   "aftrap": "2026-11-22T20:45",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-11T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor de Curva-vakken is een Dea Card (clubkaart) nodig.",
+   "bron": "https://en.atalanta.it/news/atalanta-v-inter-ticket-info-serie-a-enilive-2026-27-md12",
+   "auto": true
+  },
+  {
+   "club": "atalanta",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2026-12-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.atalanta.it/ticket",
+   "auto": true
+  },
+  {
+   "club": "atalanta",
+   "tegen": "Mjällby",
+   "comp": "Conference League",
+   "aftrap": "2026-12-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.atalanta.it/ticket",
+   "auto": true
+  },
+  {
+   "club": "atalanta",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2026-12-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.atalanta.it/ticket",
+   "auto": true
+  },
+  {
+   "club": "atalanta",
+   "tegen": "Como",
+   "comp": "Serie A",
+   "aftrap": "2027-01-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://en.atalanta.it/ticket",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Lazio",
+   "comp": "Serie A",
+   "aftrap": "2026-11-28T18:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Cagliari",
+   "comp": "Serie A",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Atalanta",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T18:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Sassuolo",
+   "comp": "Serie A",
+   "aftrap": "2027-02-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Inter",
+   "comp": "Serie A",
+   "aftrap": "2027-03-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Juventus",
+   "comp": "Serie A",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Parma",
+   "comp": "Serie A",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Bologna",
+   "comp": "Serie A",
+   "aftrap": "2027-05-09",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "torino",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-05-23",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.torinofc.it/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Monza",
+   "comp": "Serie A",
+   "aftrap": "2026-11-29T18:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Sporting Clube De Portugal",
+   "comp": "UEFA",
+   "aftrap": "2026-12-08T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Juventus",
+   "comp": "Serie A",
+   "aftrap": "2026-12-19T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaarten zijn niet vrij beschikbaar (alleen hospitality).",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-01-09T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Udinese",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Losc Lille",
+   "comp": "UEFA",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Torino",
+   "comp": "Serie A",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Parma",
+   "comp": "Serie A",
+   "aftrap": "2027-02-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Bologna",
+   "comp": "Serie A",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Lazio",
+   "comp": "Serie A",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Como",
+   "comp": "Serie A",
+   "aftrap": "2027-05-23",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Cagliari FC",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AEK Athens FC",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Juventus FC",
+   "comp": "Serie A",
+   "aftrap": "2026-11-29T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "US Cremonese",
+   "comp": "Coppa Italia",
+   "aftrap": "2026-12-02T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Bologna FC 1909",
+   "comp": "Serie A",
+   "aftrap": "2026-12-12T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "US Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "SS Lazio",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T12:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Paris Saint-Germain",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "SSC Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AC Monza",
+   "comp": "Serie A",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Torino FC",
+   "comp": "Serie A",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AC Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Udinese",
+   "comp": "Serie A",
+   "aftrap": "2027-03-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "ACF Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Inter",
+   "comp": "Serie A",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Atalanta BC",
+   "comp": "Serie A",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Genoa CFC",
+   "comp": "Serie A",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
   }
  ],
  "KANS": {
@@ -5500,6 +6386,12 @@
    "min": 26,
    "max": 26
   },
+  "cambuur": {
+   "n": 1,
+   "mediaan": 18,
+   "min": 18,
+   "max": 18
+  },
   "willem2": {
    "n": 3,
    "mediaan": 35,
@@ -5538,9 +6430,9 @@
   },
   "juventus": {
    "n": 1,
-   "mediaan": 20,
-   "min": 20,
-   "max": 20
+   "mediaan": 16,
+   "min": 16,
+   "max": 16
   },
   "leipzig": {
    "n": 6,
