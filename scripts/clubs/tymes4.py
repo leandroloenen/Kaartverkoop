@@ -83,6 +83,11 @@ def competitie(naam):
     return naam or "Onbekend"
 
 
+# Clubs die (volgens de club zelf) nooit vrij verkopen: een onbekende doelgroep is daar altijd deze groep.
+STANDAARD_GROEP = {"nec": "clubkaart"}
+_HUIDIG = [None]
+
+
 def groep_uit_knoptekst(tekst):
     """Gok de doelgroep uit de knoptekst. Geeft (groep, label); bij onzekerheid 'vrij' met de ruwe tekst als label."""
     laag = tekst.lower()
@@ -96,7 +101,10 @@ def groep_uit_knoptekst(tekst):
         return "seizoen", LABELS_KNOP["seizoen"]
     if any(w in laag for w in ("leden", "lid ", "member")):
         return "lid", "Leden"
-    print(f"    let op: verkoopmoment met onbekende doelgroep, laat het even controleren: \"{tekst}\"")
+    standaard = STANDAARD_GROEP.get(_HUIDIG[0])
+    if standaard:
+        return standaard, LABELS_KNOP[standaard]
+    print(f"    let op ({_HUIDIG[0]}): verkoopmoment met onbekende doelgroep, laat het even controleren: \"{tekst}\"")
     return "vrij", "Start verkoop (doelgroep onbekend): " + tekst
 
 
@@ -249,5 +257,6 @@ def parse(ruw, club, thuis_naam=None):
 
 def haal_op(club, pagina, bron_url="", thuis_naam=None):
     """bron_url is alleen voor tests (een lokaal bestand); anders gebruiken we de onzichtbare browser."""
+    _HUIDIG[0] = club
     ruw = haal_json(bron_url) if bron_url.startswith("file:") else haal_json_via_browser(pagina)
     return parse(ruw, club, thuis_naam)
