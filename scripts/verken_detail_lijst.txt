@@ -1,3 +1,4 @@
-Ajax (voorbeeld Conference) | https://www.ajax.nl/artikelen/informatie-kaartverkoop-uefa-conference-league-derde-voorronde | geen | 1
-Ajax (voorbeeld losse verkoop) | https://www.ajax.nl/artikelen/informatie-over-losse-kaartverkoop-eredivisie | geen | 1
-Ajax (voorbeeld Champions League) | https://www.ajax.nl/artikelen/informatie-kaartverkoop-champions-league-en-eredivisie/ | geen | 1
+VfB Stuttgart | https://tickets.vfb.de/shop
+TSG Hoffenheim | https://tickets.tsg-hoffenheim.de/shop
+1. FC Union Berlin | https://www.tickets.union-zeughaus.de/shop
+Villarreal | https://villarrealcf.es/es/venta-de-entradas/
