@@ -10,6 +10,11 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Verkoop is open (startmoment niet getoond).": "On sale (start time not shown).",
+    "Nu in de verkoop; startmoment onbekend.": "On sale now; start time unknown.",
+    "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.": "Not on sale yet; you can sign up for a notification.",
+    "Kaarten zijn niet vrij beschikbaar (alleen hospitality).": "Tickets are not generally available (hospitality only).",
+    "Voor de Curva-vakken is een Dea Card (clubkaart) nodig.": "A Dea Card (club card) is required for the Curva sections.",
     "Verkoop is open (startmoment niet getoond).": "Sales are open (the club does not show the start time).",
     "Nu in de verkoop; startmoment onbekend.": "On sale now; start time unknown.",
     "Nu in de verkoop (de shop toont geen startdatum).": "On sale now (the shop does not show a start date).",
