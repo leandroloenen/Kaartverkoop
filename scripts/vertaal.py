@@ -41,6 +41,10 @@ ZINNEN = {
     "Toewijzingsregeling.": "Allocation scheme.",
     "Alleen vrije verkoop": "General sale only",
     "Mitgliederverkauf (ledenverkoop).": "Mitgliederverkauf (members' sale).",
+    "Seizoenkaarthouders (voorrang)": "Season ticket holders (priority)",
+    "Supporter Card-houders (met korting)": "Supporter Card holders (discounted)",
+    "Tardini Card-houders (geen seizoenkaart)": "Tardini Card holders (non-season ticket holders)",
+    "Kaarten uit de voorverkoop zijn inclusief de waterbus naar Sant'Elena.": "Presale tickets include the water bus to Sant'Elena.",
 }
 
 # Losse woorden en delen van zinnen. Volgorde is belangrijk: lange eerst.
