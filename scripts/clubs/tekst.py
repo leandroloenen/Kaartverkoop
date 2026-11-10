@@ -11,7 +11,7 @@ ZELF_HOOFDLETTERS = {"FC", "SC", "SV", "TSG", "FSV", "AS", "AC", "RB", "BSC", "A
 SPECIAAL = {"vfb": "VfB", "vfl": "VfL", "m'gladbach": "M'gladbach"}
 
 
-def haal_tekst(pagina, testbestand=""):
+def haal_tekst(pagina, testbestand="", locale="nl-NL"):
     """Geef de zichtbare tekst van een pagina. Met testbestand lezen we dat in plaats van de site."""
     if testbestand:
         return open(testbestand, encoding="utf-8").read()
@@ -20,7 +20,7 @@ def haal_tekst(pagina, testbestand=""):
     with sync_playwright() as p:
         browser = p.chromium.launch()
         try:
-            page = browser.new_page(locale="nl-NL")
+            page = browser.new_page(locale=locale)
             page.goto(pagina, wait_until="domcontentloaded", timeout=45000)
             try:
                 page.wait_for_load_state("networkidle", timeout=15000)
