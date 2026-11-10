@@ -16,7 +16,7 @@ from .tekstclubs6 import MAANDEN_IT, maand_en, toekomst
 
 HOOFD = {"US", "SSC", "SS", "BC", "CFC", "ACF", "AC", "FC", "AS", "AFC", "PSV", "RB", "SC", "FK", "AEK"}
 SERIE_A = {"Atalanta", "Bologna", "Cagliari", "Como", "Fiorentina", "Frosinone", "Genoa", "Inter", "Juventus", "Lazio", "Lecce",
-           "Milan", "Monza", "Napoli", "Parma", "Sassuolo", "Torino", "Udinese", "Venezia", "Cremonese", "Verona", "Pisa"}
+           "Milan", "Roma", "AS Roma", "Monza", "Napoli", "Parma", "Sassuolo", "Torino", "Udinese", "Venezia", "Cremonese", "Verona", "Pisa"}
 NOOT_OPEN = "Verkoop is open (startmoment niet getoond)."
 NOOT_NU = "Nu in de verkoop; startmoment onbekend."
 NOOT_AANMELDEN = "Nog niet in de verkoop; je kunt je aanmelden voor een bericht."
@@ -26,6 +26,8 @@ def naam(tekst):
     uit = []
     for w in tekst.strip().split():
         if w.upper() in HOOFD:
+            uit.append(w.upper())
+        elif "." in w and len(w) <= 5:
             uit.append(w.upper())
         elif "-" in w:
             uit.append("-".join(t.mooie_naam(x) for x in w.split("-")))
