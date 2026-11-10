@@ -1,6 +1,2 @@
-Newcastle (verkoopdata) | https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates | geen | 1
-Brighton (ticketnieuws) | https://www.brightonandhovealbion.com/all-latest-news | link:ticket-information | 4
-Brighton (wedstrijden) | https://www.brightonandhovealbion.com/fixtures-first-team-men | link:ticket | 3
-Ajax (Eredivisie) | https://www.ajax.nl/fans/kaartverkoop-eredivisie/ | geen | 1
-Ajax (Conference League) | https://www.ajax.nl/fans/conference-league/ | geen | 1
-Ajax (ticketshop) | https://www.ajax.nl/tickets | geen | 1
+Ajax (nieuws) | https://www.ajax.nl/nieuws | link:/artikelen/informatie-kaartverkoop | 6
+Ajax (artikelen) | https://www.ajax.nl/artikelen | link:/artikelen/informatie-kaartverkoop | 6
