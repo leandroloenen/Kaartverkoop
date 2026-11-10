@@ -1,11 +1,17 @@
-# Detailverkenning (ronde 5): naam | startadres | modus | aantal | json=WOORD (optioneel)
+# Detailverkenning (ronde 7, Italie): naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-# (klaar) Nottingham Forest (ticketartikelen thuis) | https://www.nottinghamforest.co.uk/tickets/ | link:/news/2026/[a-z]+/[0-9]+/ticket-[a-z0-9-]+-h-/ | 4
-# (klaar) AFC Bournemouth (ticketartikelen thuis) | https://www.afcb.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/[a-z0-9-]+-h-?/$ | 4
-# (klaar) Coventry City (ticketnieuws) | https://www.ccfc.co.uk/tickets | link:/news/2026/[a-z]+/[0-9]+/ticket-news | 3
-# (klaar) Leeds United (ticketartikelen) | https://www.leedsunited.com/en/news/category/ticketing | link:/en/news/ticket-information- | 5
-# (klaar) Brighton (ticketnieuws) | https://www.brightonandhovealbion.com/all-latest-news | link:/media-article/[a-z0-9-]*ticket | 4
-# (klaar) Everton (verkoopdata) | https://www.evertonfc.com/tickets/on-sale-dates | geen | 1
-# (klaar) Everton (ticketnieuws) | https://www.evertonfc.com/tickets/latest-news | geen | 1
-# (klaar) Newcastle (ticketinformatie) | https://www.newcastleunited.com/en/tickets/ticket-information | geen | 1
-# (klaar) Schalke (wedstrijdpagina's) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke-04- | 3
+Inter (ticketpagina) | https://www.inter.it/en/tickets | geen | 1
+Parma (ticketpagina) | https://www.parmacalcio1913.com/en/tickets | geen | 1
+Cagliari (ticketpagina) | https://cagliaricalcio.com/en/tickets/ | geen | 1
+AS Roma (ticketpaginas) | https://www.asroma.com/en/tickets | link:/en/tickets/ | 3
+SS Lazio (biglietteria) | https://www.sslazio.it/en/biglietteria | geen | 1
+SSC Napoli (via startpagina) | https://www.sscnapoli.it/ | link:bigliett | 3
+Atalanta (via startpagina) | https://en.atalanta.it/ | link:ticket | 3
+Fiorentina (ticketing) | https://www.acffiorentina.com/it/ticketing | geen | 1
+Torino (via startpagina) | https://www.torinofc.it/ | link:bigliett | 3
+Genoa (via startpagina) | https://genoacfc.it/ | link:bigliett | 3
+Como (via startpagina) | https://www.comofootball.com/ | link:ticket | 3
+AC Monza (via startpagina) | https://www.acmonza.com/ | link:bigliett | 3
+Sassuolo (via startpagina) | https://www.sassuolocalcio.it/ | link:ticketing | 3
+Udinese (via startpagina) | https://www.udinese.it/ | link:bigliett | 3
+Venezia (via startpagina) | https://en.veneziafc.it/ | link:ticket | 3
