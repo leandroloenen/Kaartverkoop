@@ -244,9 +244,9 @@ CLUBS = [
     ("az", "AZ", "NL", "AZ", "https://www.az.nl/wedstrijden/tickets", parse_az),
     ("pec", "PEC Zwolle", "NL", "PEC Zwolle", "https://peczwolle.nl/teams/heren/peczwolle-26-27/programma", parse_pec),
     ("ado", "ADO Den Haag", "NL", "ADO Den Haag", "https://adodenhaag.nl/nl/tickets/kaartverkoop", parse_ado),
-    ("stuttgart", "VfB Stuttgart", "DE", "VFB Stuttgart", "https://tickets.vfb.de/shop", parse_stuttgart),
-    ("hoffenheim", "TSG Hoffenheim", "DE", "TSG Hoffenheim", "https://tickets.tsg-hoffenheim.de/shop", parse_hoffenheim),
-    ("union", "1. FC Union Berlin", "DE", "FC Union Berlin", "https://www.tickets.union-zeughaus.de/shop", parse_union),
+    ("stuttgart", "VfB Stuttgart", "DE", "VFB Stuttgart", "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5", parse_stuttgart),
+    ("hoffenheim", "TSG Hoffenheim", "DE", "TSG Hoffenheim", "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46", parse_hoffenheim),
+    ("union", "1. FC Union Berlin", "DE", "FC Union Berlin", "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13", parse_union),
     ("mainz", "1. FSV Mainz 05", "DE", "FSV Mainz", "https://www.mainz05.de/tickets/heimspiele", parse_mainz),
 ]
 
