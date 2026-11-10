@@ -1,17 +1,9 @@
-# Detailverkenning (ronde 7, Italie): naam | startadres | modus | aantal | json=WOORD (optioneel)
+# Detailverkenning (ronde 8, Italie: artikelen met verkoopfases): naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-Inter (ticketpagina) | https://www.inter.it/en/tickets | geen | 1
-Parma (ticketpagina) | https://www.parmacalcio1913.com/en/tickets | geen | 1
-Cagliari (ticketpagina) | https://cagliaricalcio.com/en/tickets/ | geen | 1
-AS Roma (ticketpaginas) | https://www.asroma.com/en/tickets | link:/en/tickets/ | 3
-SS Lazio (biglietteria) | https://www.sslazio.it/en/biglietteria | geen | 1
-SSC Napoli (via startpagina) | https://www.sscnapoli.it/ | link:bigliett | 3
-Atalanta (via startpagina) | https://en.atalanta.it/ | link:ticket | 3
-Fiorentina (ticketing) | https://www.acffiorentina.com/it/ticketing | geen | 1
-Torino (via startpagina) | https://www.torinofc.it/ | link:bigliett | 3
-Genoa (via startpagina) | https://genoacfc.it/ | link:bigliett | 3
-Como (via startpagina) | https://www.comofootball.com/ | link:ticket | 3
-AC Monza (via startpagina) | https://www.acmonza.com/ | link:bigliett | 3
-Sassuolo (via startpagina) | https://www.sassuolocalcio.it/ | link:ticketing | 3
-Udinese (via startpagina) | https://www.udinese.it/ | link:bigliett | 3
-Venezia (via startpagina) | https://en.veneziafc.it/ | link:ticket | 3
+Torino (ticketnieuws) | https://www.torinofc.it/news/biglietteria | link:info-e-biglietti | 3
+Atalanta (ticketinfo) | https://en.atalanta.it/ticket | link:ticket-info | 3
+AS Roma (match details) | https://www.asroma.com/en/tickets/men | klik:MATCH DETAILS | 2
+Como (wedstrijdpagina) | https://tickets.comofootball.com/ | link:cagliari | 1
+Fiorentina (ticketing) | https://www.acffiorentina.com/it/ | link:/it/ticketing/ | 3
+SS Lazio (via startpagina) | https://www.sslazio.it/en | link:biglietteria | 3
+AC Monza (via startpagina) | https://www.acmonza.com/ | link:ticket | 3
