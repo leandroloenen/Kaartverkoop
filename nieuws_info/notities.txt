@@ -1,0 +1,5 @@
+# Eigen "waarom de moeite waard"-regels voor de weekpagina's (optioneel).
+# Per regel: club | tegenstander | datum van de wedstrijd | tekst Nederlands | tekst Engels
+# De club schrijf je zoals in het adres van de clubpagina (bijv. ajax of borussia-dortmund).
+# Regels die met # beginnen worden genegeerd. Voorbeeld (verwijder het # om te gebruiken):
+# ajax | Feyenoord | 2026-12-20 | De Klassieker, de grootste wedstrijd van Nederland. | De Klassieker, the biggest match in the Netherlands.
