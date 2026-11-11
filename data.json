@@ -400,6 +400,18 @@
    "land": "EN",
    "mijn": "vrij",
    "url": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates"
+  },
+  "milan": {
+   "naam": "AC Milan",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.acmilan.com/it/stagione/active/calendario/completo"
+  },
+  "brighton": {
+   "naam": "Brighton & Hove Albion",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.brightonandhovealbion.com/fixtures-first-team-men"
   }
  },
  "WEDSTRIJDEN": [
@@ -1001,27 +1013,39 @@
    "auto": true
   },
   {
-   "club": "union",
-   "tegen": "TSG Hoffenheim",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-08T14:00",
+   "club": "cagliari",
+   "tegen": "Milan",
+   "comp": "Serie A",
+   "aftrap": "2026-11-30T20:45",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
-   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=empty_session_1&language=1&shopid=1&nextstate=2&lpShortcutId=13",
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
    "auto": true
   },
   {
-   "club": "villarreal",
-   "tegen": "Getafe",
-   "comp": "La Liga",
-   "aftrap": "2026-11-08T18:30",
+   "club": "cagliari",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2026-12-12T15:00",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T12:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
    "auto": true
   },
   {
@@ -1464,7 +1488,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.cambuur.nl/verkoop/SC-Cambuur---Sparta-Rotterdam-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-10"
   },
@@ -2269,18 +2293,6 @@
   },
   {
    "club": "deportivo",
-   "tegen": "FC Barcelona",
-   "comp": "La Liga",
-   "aftrap": "2026-11-29T16:15",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "deportivo",
    "tegen": "Athletic Club",
    "comp": "La Liga",
    "aftrap": "2026-12-13",
@@ -2413,6 +2425,19 @@
    "noot": "",
    "bron": "https://adodenhaag.nl/nl/tickets/kaartverkoop",
    "auto": true
+  },
+  {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
   },
   {
    "club": "mainz",
@@ -2691,11 +2716,12 @@
    "comp": "Champions League",
    "aftrap": "2026-12-09T18:45",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-11"
   },
   {
    "club": "betis",
@@ -3524,7 +3550,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omonia Nicosia",
+   "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -3882,7 +3908,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-08"
@@ -3969,6 +3995,18 @@
    "info": true,
    "noot": "Nog niet in de verkoop.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Real Sociedad",
+   "comp": "La Liga",
+   "aftrap": "2026-12-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop (\"próximamente\").",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
    "auto": true
   },
   {
@@ -4246,6 +4284,18 @@
    "info": true,
    "noot": "Nog niet in de verkoop.",
    "bron": "https://stores.eintracht.de/tickets/profis/",
+   "auto": true
+  },
+  {
+   "club": "milan",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2026-11-22T18:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.acmilan.com/it/stagione/active/calendario/completo",
    "auto": true
   },
   {
@@ -6141,42 +6191,6 @@
    "auto": true
   },
   {
-   "club": "cagliari",
-   "tegen": "Milan",
-   "comp": "Serie A",
-   "aftrap": "2026-11-30T20:45",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "cagliari",
-   "tegen": "Venezia",
-   "comp": "Serie A",
-   "aftrap": "2026-12-12T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaartverkoop nog niet gestart.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "cagliari",
-   "tegen": "Genoa",
-   "comp": "Serie A",
-   "aftrap": "2027-01-02T12:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaartverkoop nog niet gestart.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
    "club": "monza",
    "tegen": "ACF Fiorentina",
    "comp": "Serie A",
@@ -6457,6 +6471,198 @@
    "info": false,
    "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
    "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Universitatea Craiova",
+   "comp": "UEFA",
+   "aftrap": "2026-11-26T18:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29T15:05",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Monaco",
+   "comp": "UEFA",
+   "aftrap": "2026-12-10T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2026-12-13T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Ipswich",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T13:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Bournemouth",
+   "comp": "Premier League",
+   "aftrap": "2027-01-05T20:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-02-06T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-02-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2027-03-03T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
    "auto": true
   },
   {
@@ -7000,7 +7206,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-10",
+ "bijgewerkt": "2026-11-11",
  "SCHATTING": {
   "nec": {
    "n": 1,
@@ -7044,6 +7250,12 @@
    "min": 29,
    "max": 34
   },
+  "union": {
+   "n": 1,
+   "mediaan": 9,
+   "min": 9,
+   "max": 9
+  },
   "barcelona": {
    "n": 9,
    "mediaan": 116,
@@ -7051,10 +7263,10 @@
    "max": 172
   },
   "betis": {
-   "n": 1,
-   "mediaan": 18,
+   "n": 2,
+   "mediaan": 28,
    "min": 18,
-   "max": 18
+   "max": 28
   },
   "valencia": {
    "n": 1,

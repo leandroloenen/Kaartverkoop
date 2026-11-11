@@ -1,0 +1,411 @@
+[
+ {
+  "k": "everton",
+  "naam": "Everton",
+  "tegen": "Fulham",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05",
+  "stadion": "Hill Dickinson Stadium",
+  "stad": "Liverpool",
+  "moment": "2026-11-09",
+  "label": "Forever Blue+ leden: loting",
+  "waarom": [
+   "Gespeeld in Hill Dickinson Stadium (Liverpool)."
+  ]
+ },
+ {
+  "k": "leipzig",
+  "naam": "RB Leipzig",
+  "tegen": "FC Shakhtar Donetsk",
+  "comp": "Champions League",
+  "aftrap": "2027-01-20T21:00",
+  "stadion": "Red Bull Arena",
+  "stad": "Leipzig",
+  "moment": "2026-11-09",
+  "label": "Voorverkoop (doelgroep niet vermeld)",
+  "waarom": [
+   "Europese avond in Red Bull Arena.",
+   "Gespeeld in Red Bull Arena (Leipzig)."
+  ]
+ },
+ {
+  "k": "mainz",
+  "naam": "1. FSV Mainz 05",
+  "tegen": "SC Freiburg",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-13T15:30",
+  "stadion": "Mewa Arena",
+  "stad": "Mainz",
+  "moment": "2026-11-09T10:00",
+  "label": "Freier Verkauf (max. 10 tickets)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Mewa Arena (Mainz)."
+  ]
+ },
+ {
+  "k": "newcastle",
+  "naam": "Newcastle United",
+  "tegen": "Manchester United",
+  "comp": "Premier League",
+  "aftrap": "2026-12-02T21:15",
+  "stadion": "St James' Park",
+  "stad": "Newcastle upon Tyne",
+  "moment": "2026-11-09T11:00",
+  "label": "Mags Member-verkoop",
+  "waarom": [
+   "Gespeeld in St James' Park (Newcastle upon Tyne)."
+  ]
+ },
+ {
+  "k": "parma",
+  "naam": "Parma Calcio 1913",
+  "tegen": "Roma",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T18:00",
+  "stadion": "Stadio Ennio Tardini",
+  "stad": "Parma",
+  "moment": "2026-11-09T11:00",
+  "label": "Tardini Card-houders (geen seizoenkaart)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Ennio Tardini (Parma)."
+  ]
+ },
+ {
+  "k": "lazio",
+  "naam": "SS Lazio",
+  "tegen": "Lecce",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T14:00",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "moment": "2026-11-09T11:00",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Olimpico (Rome)."
+  ]
+ },
+ {
+  "k": "bvb",
+  "naam": "Borussia Dortmund",
+  "tegen": "FC Augsburg",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-12T15:30",
+  "stadion": "Signal Iduna Park",
+  "stad": "Dortmund",
+  "moment": "2026-11-09T12:00",
+  "label": "Leden (BVB-Mitglieder) (max. 6 tickets)",
+  "waarom": [
+   "Kaarten zijn bij deze club doorgaans moeilijk te krijgen: wees er vroeg bij.",
+   "Gespeeld in Signal Iduna Park (Dortmund)."
+  ]
+ },
+ {
+  "k": "feyenoord",
+  "naam": "Feyenoord",
+  "tegen": "Ajax",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T14:30",
+  "stadion": "Kuip",
+  "stad": "Rotterdam",
+  "moment": "2026-11-09T12:00",
+  "label": "Seizoenkaart-/aandeelhouders (max. 1 ticket)",
+  "waarom": [
+   "Te combineren met Excelsior - Telstar in Rotterdam op zaterdag 28 november.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Kuip (Rotterdam)."
+  ]
+ },
+ {
+  "k": "nec",
+  "naam": "N.E.C.",
+  "tegen": "FC Twente",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T20:00",
+  "stadion": "Stadion De Goffert",
+  "stad": "Nijmegen",
+  "moment": "2026-11-09T12:00",
+  "label": "(Seizoen)clubkaarthouders",
+  "waarom": [
+   "Gespeeld in Stadion De Goffert (Nijmegen)."
+  ]
+ },
+ {
+  "k": "newcastle",
+  "naam": "Newcastle United",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2026-12-06T15:00",
+  "stadion": "St James' Park",
+  "stad": "Newcastle upon Tyne",
+  "moment": "2026-11-09T13:00",
+  "label": "Mags Member-loting (inschrijving opent)",
+  "waarom": [
+   "Gespeeld in St James' Park (Newcastle upon Tyne)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Coventry City",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-09T14:00",
+  "label": "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)",
+  "waarom": [
+   "Gespeeld in Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Bologna",
+  "comp": "Serie A",
+  "aftrap": "2026-11-27T20:45",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-10T10:00",
+  "label": "Seizoenkaarthouders (voorrang)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Pierluigi Penzo (Venetië)."
+  ]
+ },
+ {
+  "k": "bournemouth",
+  "naam": "AFC Bournemouth",
+  "tegen": "Coventry City",
+  "comp": "Premier League",
+  "aftrap": "2026-12-19T16:00",
+  "stadion": "Vitality Stadium",
+  "stad": "Bournemouth",
+  "moment": "2026-11-10T11:00",
+  "label": "Leden met Cherry Tuesday (1+ thuispunten)",
+  "waarom": [
+   "Gespeeld in Vitality Stadium (Bournemouth)."
+  ]
+ },
+ {
+  "k": "coventry",
+  "naam": "Coventry City",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Coventry Building Society Arena",
+  "stad": "Coventry",
+  "moment": "2026-11-10T11:00",
+  "label": "Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters",
+  "waarom": [
+   "Gespeeld in Coventry Building Society Arena (Coventry)."
+  ]
+ },
+ {
+  "k": "coventry",
+  "naam": "Coventry City",
+  "tegen": "Ipswich Town",
+  "comp": "Premier League",
+  "aftrap": "2026-12-01T21:00",
+  "stadion": "Coventry Building Society Arena",
+  "stad": "Coventry",
+  "moment": "2026-11-10T11:00",
+  "label": "Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters",
+  "waarom": [
+   "Gespeeld in Coventry Building Society Arena (Coventry)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Coventry City",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-10T11:00",
+  "label": "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten",
+  "waarom": [
+   "Gespeeld in Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "cambuur",
+  "naam": "SC Cambuur",
+  "tegen": "Sparta Rotterdam",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Cambuur Stadion",
+  "stad": "Leeuwarden",
+  "moment": "2026-11-10T12:59",
+  "label": "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 10-11-26 om 13:00",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Cambuur Stadion (Leeuwarden)."
+  ]
+ },
+ {
+  "k": "utrecht",
+  "naam": "FC Utrecht",
+  "tegen": "Fortuna Sittard",
+  "comp": "Eredivisie",
+  "aftrap": "2026-12-12T16:30",
+  "stadion": "Stadion Galgenwaard",
+  "stad": "Utrecht",
+  "moment": "2026-11-11T09:30",
+  "label": "Start verkoop (doelgroep onbekend): Verkoop start woensdag 09.30 uur",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadion Galgenwaard (Utrecht)."
+  ]
+ },
+ {
+  "k": "atalanta",
+  "naam": "Atalanta",
+  "tegen": "Inter",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T20:45",
+  "stadion": "Gewiss Stadium",
+  "stad": "Bergamo",
+  "moment": "2026-11-11T10:00",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Gewiss Stadium (Bergamo)."
+  ]
+ },
+ {
+  "k": "bvb",
+  "naam": "Borussia Dortmund",
+  "tegen": "FSV Mainz 05",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-08T20:30",
+  "stadion": "Signal Iduna Park",
+  "stad": "Dortmund",
+  "moment": "2026-11-11T12:00",
+  "label": "Leden (BVB-Mitglieder) (max. 6 tickets)",
+  "waarom": [
+   "Kaarten zijn bij deze club doorgaans moeilijk te krijgen: wees er vroeg bij.",
+   "Gespeeld in Signal Iduna Park (Dortmund)."
+  ]
+ },
+ {
+  "k": "stuttgart",
+  "naam": "VfB Stuttgart",
+  "tegen": "1. FC Union Berlin",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-12T15:30",
+  "stadion": "MHPArena",
+  "stad": "Stuttgart",
+  "moment": "2026-11-12T09:00",
+  "label": "Leden (Mitglieder) (max. 2 tickets)",
+  "waarom": [
+   "Gespeeld in MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "mainz",
+  "naam": "1. FSV Mainz 05",
+  "tegen": "Spiel der Herzen\n1. FC Köln",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-19T15:30",
+  "stadion": "Mewa Arena",
+  "stad": "Mainz",
+  "moment": "2026-11-12T10:00",
+  "label": "Mitglieder en Dauerkarteninhaber",
+  "waarom": [
+   "Gespeeld in Mewa Arena (Mainz)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Coventry City",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-12T11:00",
+  "label": "Fase 3: loting opent voor alle leden",
+  "waarom": [
+   "Gespeeld in Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "bvb",
+  "naam": "Borussia Dortmund",
+  "tegen": "SC Freiburg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-16T15:30",
+  "stadion": "Signal Iduna Park",
+  "stad": "Dortmund",
+  "moment": "2026-11-12T12:00",
+  "label": "Leden (BVB-Mitglieder) (max. 6 tickets)",
+  "waarom": [
+   "Kaarten zijn bij deze club doorgaans moeilijk te krijgen: wees er vroeg bij.",
+   "Gespeeld in Signal Iduna Park (Dortmund)."
+  ]
+ },
+ {
+  "k": "feyenoord",
+  "naam": "Feyenoord",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Kuip",
+  "stad": "Rotterdam",
+  "moment": "2026-11-12T23:59",
+  "label": "Start verkoop (doelgroep onbekend): Verkoop start 19-11",
+  "waarom": [
+   "Europese avond in Kuip.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Kuip (Rotterdam)."
+  ]
+ },
+ {
+  "k": "everton",
+  "naam": "Everton",
+  "tegen": "Fulham",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05",
+  "stadion": "Hill Dickinson Stadium",
+  "stad": "Liverpool",
+  "moment": "2026-11-13",
+  "label": "Forever Blue leden: verkoopvenster",
+  "waarom": [
+   "Gespeeld in Hill Dickinson Stadium (Liverpool)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Bologna",
+  "comp": "Serie A",
+  "aftrap": "2026-11-27T20:45",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-13T10:00",
+  "label": "Supporter Card-houders (met korting)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Pierluigi Penzo (Venetië)."
+  ]
+ },
+ {
+  "k": "heerenveen",
+  "naam": "SC Heerenveen",
+  "tegen": "sc Cambuur",
+  "comp": "Eredivisie",
+  "aftrap": "2026-12-06T12:15",
+  "stadion": "Abe Lenstra Stadion",
+  "stad": "Heerenveen",
+  "moment": "2026-11-13T13:00",
+  "label": "Start verkoop (doelgroep onbekend): Verkoop start 13-11 om 13:00 uur",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Abe Lenstra Stadion (Heerenveen)."
+  ]
+ }
+]
