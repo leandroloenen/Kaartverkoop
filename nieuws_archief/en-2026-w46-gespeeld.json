@@ -1,5 +1,18 @@
 [
  {
+  "k": "leipzig",
+  "naam": "RB Leipzig",
+  "tegen": "FK Mladá Boleslav",
+  "comp": "Freundschaftsspiele",
+  "aftrap": "2026-11-12T11:00",
+  "stadion": "Red Bull Arena",
+  "stad": "Leipzig",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at Red Bull Arena (Leipzig)."
+  ]
+ },
+ {
   "k": "forest",
   "naam": "Nottingham Forest",
   "tegen": "Leicester City",

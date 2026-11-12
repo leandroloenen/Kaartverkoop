@@ -1013,42 +1013,6 @@
    "auto": true
   },
   {
-   "club": "cagliari",
-   "tegen": "Milan",
-   "comp": "Serie A",
-   "aftrap": "2026-11-30T20:45",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "cagliari",
-   "tegen": "Venezia",
-   "comp": "Serie A",
-   "aftrap": "2026-12-12T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaartverkoop nog niet gestart.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "cagliari",
-   "tegen": "Genoa",
-   "comp": "Serie A",
-   "aftrap": "2027-01-02T12:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaartverkoop nog niet gestart.",
-   "bron": "https://cagliaricalcio.com/en/tickets/",
-   "auto": true
-  },
-  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -1360,11 +1324,12 @@
      "Start verkoop (doelgroep onbekend): Verkoop start woensdag 09.30 uur"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Bron: Verkoop start woensdag 09.30 uur",
-   "bron": "",
-   "auto": true
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---Fortuna-Sittard-VriendenLoterij-Eredivisie-2026-2027",
+   "auto": true,
+   "eerst_nu": "2026-11-12"
   },
   {
    "club": "sparta",
@@ -1524,6 +1489,19 @@
   },
   {
    "club": "fortuna",
+   "tegen": "FC Twente",
+   "comp": "KNVB Beker",
+   "aftrap": "2026-12-02T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true,
+   "eerst_nu": "2026-11-12"
+  },
+  {
+   "club": "fortuna",
    "tegen": "PEC Zwolle",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T21:00",
@@ -1564,9 +1542,9 @@
    "comp": "KNVB Beker",
    "aftrap": "2026-12-01T20:00",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -2703,9 +2681,9 @@
    "comp": "La Liga",
    "aftrap": "2026-11-28T14:00",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
    "bron": "https://en.realbetisbalompie.es/tickets/",
    "auto": true,
    "eerst_nu": "2026-11-10"
@@ -2716,9 +2694,9 @@
    "comp": "Champions League",
    "aftrap": "2026-12-09T18:45",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
    "bron": "https://en.realbetisbalompie.es/tickets/",
    "auto": true,
    "eerst_nu": "2026-11-11"
@@ -3303,11 +3281,12 @@
    "comp": "Premier League",
    "aftrap": "2026-12-15T21:00",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-12"
   },
   {
    "club": "mancity",
@@ -3550,7 +3529,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omónia Nicosia",
+   "tegen": "Omonia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -3813,6 +3792,18 @@
   },
   {
    "club": "leipzig",
+   "tegen": "FK Mladá Boleslav",
+   "comp": "Freundschaftsspiele",
+   "aftrap": "2026-11-12T11:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://rbleipzig.com/en/matches-tickets",
+   "auto": true
+  },
+  {
+   "club": "leipzig",
    "tegen": "Racing Club de Lens",
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
@@ -3908,7 +3899,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-08"
@@ -4132,7 +4123,7 @@
   {
    "club": "frankfurt",
    "tegen": "Borussia Dortmund",
-   "comp": "Ticketinfos",
+   "comp": "DFB-Pokal",
    "aftrap": "2026-12-02T20:45",
    "fases": [],
    "nu": false,
@@ -6191,6 +6182,42 @@
    "auto": true
   },
   {
+   "club": "cagliari",
+   "tegen": "Milan",
+   "comp": "Serie A",
+   "aftrap": "2026-11-30T20:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2026-12-12T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "cagliari",
+   "tegen": "Genoa",
+   "comp": "Serie A",
+   "aftrap": "2027-01-02T12:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Kaartverkoop nog niet gestart.",
+   "bron": "https://cagliaricalcio.com/en/tickets/",
+   "auto": true
+  },
+  {
    "club": "monza",
    "tegen": "ACF Fiorentina",
    "comp": "Serie A",
@@ -7206,7 +7233,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-11",
+ "bijgewerkt": "2026-11-12",
  "SCHATTING": {
   "nec": {
    "n": 1,
@@ -7220,6 +7247,12 @@
    "min": 16,
    "max": 23
   },
+  "utrecht": {
+   "n": 1,
+   "mediaan": 30,
+   "min": 30,
+   "max": 30
+  },
   "heerenveen": {
    "n": 1,
    "mediaan": 26,
@@ -7231,6 +7264,12 @@
    "mediaan": 18,
    "min": 18,
    "max": 18
+  },
+  "fortuna": {
+   "n": 1,
+   "mediaan": 20,
+   "min": 20,
+   "max": 20
   },
   "willem2": {
    "n": 3,
@@ -7273,6 +7312,12 @@
    "mediaan": 22,
    "min": 22,
    "max": 22
+  },
+  "mancity": {
+   "n": 1,
+   "mediaan": 33,
+   "min": 33,
+   "max": 33
   },
   "juventus": {
    "n": 1,
