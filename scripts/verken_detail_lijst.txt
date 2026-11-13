@@ -2,13 +2,11 @@
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
 # Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# Ronde 17: Italië afmaken (Sassuolo, Genoa, Udinese, Fiorentina, Napoli, Frosinone): ticketnieuws en wedstrijdpagina's
-Sassuolo (biglietteria nieuws) | https://www.sassuolocalcio.it/biglietteria/news-info/ | geen | 1
-Sassuolo (nieuws met biglietti) | https://www.sassuolocalcio.it/news/ | link:biglietti | 4
-Genoa (partite met biglietti) | https://genoacfc.it/category/partite/ | link:biglietti | 4
-Udinese (nieuws met biglietti) | https://www.udinese.it/news | link:biglietti | 4
-Fiorentina (ticketing) | https://www.acffiorentina.com/ticketing | geen | 1
-Fiorentina (nieuws met biglietti) | https://www.acffiorentina.com/news | link:biglietti | 4
-Napoli (tickets) | https://sscnapoli.it/en/tickets | geen | 1
-Napoli (via tickets) | https://sscnapoli.it/en/tickets | link:ticket | 3
-Frosinone (biglietti) | https://www.frosinonecalcio.com/biglietti | geen | 1
+# Ronde 18: Sassuolo prevendita-artikelen, Genoa nieuws
+Sassuolo (prevendita-artikelen) | https://www.sassuolocalcio.it/biglietteria/news-info/ | link:/biglietteria/sassuolo-[a-z-]*info-prevendita | 3
+Genoa (nieuws prevendita) | https://genoacfc.it/category/news/ | link:prevendita | 3
+Genoa (nieuws biglietti) | https://genoacfc.it/category/news/ | link:biglietti | 3
+
+# Ronde 19: Napoli nieuwsartikelen over de kaartverkoop (voorbeeld Napoli-Roma)
+Napoli (voorbeeldartikel Roma) | https://sscnapoli.it/en/news/napoli-vs-roma-tutte-le-info-per-i-biglietti-della-sfida-al-maradona | geen | 1
+Napoli (nieuwsoverzicht biglietti) | https://sscnapoli.it/en/news | link:biglietti | 4
