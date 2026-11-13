@@ -99,6 +99,7 @@ ZINNEN = {
     "Supporter Card-houders (met korting)": "Supporter Card holders (discounted)",
     "Tardini Card-houders (geen seizoenkaart)": "Tardini Card holders (non-season ticket holders)",
     "Kaarten uit de voorverkoop zijn inclusief de waterbus naar Sant'Elena.": "Presale tickets include the water bus to Sant'Elena.",
+    "Tijden in Nederlandse tijd (omgerekend uit Brits).": "Times are in Dutch time (converted from UK time).",
 }
 
 # Losse woorden en delen van zinnen. Volgorde is belangrijk: lange eerst.
@@ -135,6 +136,7 @@ REGELS = [
     (r"Leden met (\d+\+) thuispunten", r"Members with \1 home points"),
     (r"Leden met (\d+\+) thuispunt", r"Members with \1 home point"),
     (r"Leden met Cherry Tuesday \((\d+\+) thuispunten\)", r"Members: Cherry Tuesday (\1 home points)"),
+    (r"Supporters met boekingsgeschiedenis", "Supporters with booking history"),
     (r"Leden met eerdere aankoopgeschiedenis", "Members with a previous purchase history"),
     (r"Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters", "Previous buyers: assign tickets to new supporters"),
     (r"\bLeden\b", "Members"),
