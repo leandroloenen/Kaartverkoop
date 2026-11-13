@@ -34,7 +34,7 @@ NAAM_GELIJK = {"psv eindhoven": "PSV", "n.e.c.": "N.E.C.", "nec": "N.E.C.", "nec
                "sc cambuur": "SC Cambuur", "cambuur": "SC Cambuur", "leipzig": "RB Leipzig", "rb leipzig": "RB Leipzig",
                "afc ajax": "Ajax", "az alkmaar": "AZ", "sc heerenveen": "SC Heerenveen", "heerenveen": "SC Heerenveen",
                "fc utrecht": "FC Utrecht", "fc twente": "FC Twente", "fc groningen": "FC Groningen",
-               "borussia m'gladbach": "Borussia Mönchengladbach", "sc freiburg": "SC Freiburg"}
+               "borussia m'gladbach": "Borussia Mönchengladbach", "sc freiburg": "SC Freiburg", "sc telstar": "Telstar"}
 
 
 def gelijke_naam(naam):
