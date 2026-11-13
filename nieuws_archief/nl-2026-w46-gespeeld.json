@@ -13,6 +13,17 @@
   ]
  },
  {
+  "k": "hsv",
+  "naam": "Hamburger SV",
+  "tegen": "Hajduk Split",
+  "comp": "Friendly",
+  "aftrap": "2026-11-15T15:00",
+  "stadion": "",
+  "stad": "",
+  "status": "Kaartverkoop is open",
+  "waarom": []
+ },
+ {
   "k": "forest",
   "naam": "Nottingham Forest",
   "tegen": "Leicester City",

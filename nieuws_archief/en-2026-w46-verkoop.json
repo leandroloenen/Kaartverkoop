@@ -130,7 +130,6 @@
   "label": "Seizoenkaart-/aandeelhouders (max. 1 ticket)",
   "waarom": [
    "Can be combined with Excelsior - Telstar in Rotterdam on Saturday 28 November.",
-   "Available without a membership (general sale).",
    "Played at Kuip (Rotterdam)."
   ]
  },
@@ -201,6 +200,18 @@
   "waarom": [
    "Available without a membership (general sale)."
   ]
+ },
+ {
+  "k": "hsv",
+  "naam": "Hamburger SV",
+  "tegen": "FC Schalke 04",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-11",
+  "stadion": "",
+  "stad": "",
+  "moment": "2026-11-10T10:00",
+  "label": "Members' presale",
+  "waarom": []
  },
  {
   "k": "venezia",
@@ -286,6 +297,22 @@
   "waarom": [
    "Available without a membership (general sale).",
    "Played at Cambuur Stadion (Leeuwarden)."
+  ]
+ },
+ {
+  "k": "willem2",
+  "naam": "Willem II",
+  "tegen": "Excelsior",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-01T20:00",
+  "stadion": "Koning Willem II Stadion",
+  "stad": "Tilburg",
+  "moment": "2026-11-11",
+  "label": "Season ticket holders: eigen plaats terugkopen",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Koning Willem II Stadion (Tilburg)."
   ]
  },
  {
@@ -403,6 +430,21 @@
   "waarom": [
    "Tickets are usually hard to get at this club: be early.",
    "Played at Signal Iduna Park (Dortmund)."
+  ]
+ },
+ {
+  "k": "gae",
+  "naam": "Go Ahead Eagles",
+  "tegen": "TOP Oss",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-01T21:00",
+  "stadion": "Adelaarshorst",
+  "stad": "Deventer",
+  "moment": "2026-11-12T15:00",
+  "label": "Season ticket and club card holders (extra tickets)",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Played at Adelaarshorst (Deventer)."
   ]
  },
  {

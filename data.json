@@ -424,6 +424,24 @@
    "land": "IT",
    "mijn": "vrij",
    "url": "https://www.sassuolocalcio.it/biglietteria/news-info/"
+  },
+  "telstar": {
+   "naam": "SC Telstar",
+   "land": "NL",
+   "mijn": "vrij",
+   "url": "https://tickets.sctelstar.nl/dashboard"
+  },
+  "stpauli": {
+   "naam": "FC St. Pauli",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele"
+  },
+  "hsv": {
+   "naam": "Hamburger SV",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.hsv.de/en/tickets/infos"
   }
  },
  "WEDSTRIJDEN": [
@@ -665,36 +683,6 @@
    "bron": ""
   },
   {
-   "club": "gae",
-   "tegen": "FC Twente",
-   "comp": "Eredivisie",
-   "aftrap": "2026-12-06",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-13",
-     "Start verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
-   "club": "gae",
-   "tegen": "Fortuna Sittard",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-22",
-   "fases": [
-    [
-     "vrij",
-     "2026-09-15",
-     "Start verkoop"
-    ]
-   ],
-   "noot": "",
-   "bron": ""
-  },
-  {
    "club": "bvb",
    "tegen": "Werder Bremen",
    "comp": "DFB-Pokal",
@@ -834,19 +822,6 @@
    ],
    "noot": "Clubkaart verplicht, 1 kaart per kaart. Kidsclub: 2 kaarten per lid.",
    "bron": "https://www.nec-nijmegen.nl/nieuws/nieuws/kaartverkoopinformatie-europese-thuiswedstrijden.htm"
-  },
-  {
-   "club": "union",
-   "tegen": "Bayer Leverkusen",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-20T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
-   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
-   "auto": true,
-   "eerst_nu": "2026-11-11"
   },
   {
    "club": "forest",
@@ -1004,7 +979,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---PSV-VriendenLoterij-Eredivisie-2026---2027",
    "auto": true
   },
   {
@@ -1040,7 +1015,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop (S)CC 30-11, 12.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1058,7 +1033,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop (S)CC 21-12, 12.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1076,7 +1051,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop (S)CC 04-01-2027, 12.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1124,13 +1099,7 @@
    "tegen": "FC Porto",
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
-   "fases": [
-    [
-     "vrij",
-     "2026-11-12T23:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start 19-11"
-    ]
-   ],
+   "fases": [],
    "nu": false,
    "info": false,
    "noot": "",
@@ -1152,16 +1121,6 @@
      "seizoen",
      "2026-11-09T12:00",
      "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
-    ],
-    [
-     "vrij",
-     "2026-11-28T23:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start 5-10"
-    ],
-    [
-     "vrij",
-     "2026-11-28T23:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start 5-11"
     ]
    ],
    "nu": false,
@@ -1262,19 +1221,19 @@
   },
   {
    "club": "feyenoord",
-   "tegen": "Leipzig",
+   "tegen": "RB Leipzig",
    "comp": "Champions League",
    "aftrap": "2027-01-27T21:00",
    "fases": [
     [
      "vrij",
-     "2027-01-14T23:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start 21-01"
+     "2027-01-21",
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop start 21-01",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1295,13 +1254,7 @@
    "tegen": "Fortuna Sittard",
    "comp": "Eredivisie",
    "aftrap": "2026-12-12T16:30",
-   "fases": [
-    [
-     "vrij",
-     "2026-11-11T09:30",
-     "Start verkoop (doelgroep onbekend): Verkoop start woensdag 09.30 uur"
-    ]
-   ],
+   "fases": [],
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
@@ -1331,11 +1284,6 @@
      "vrij",
      "2026-10-28T11:00",
      "Verkoop start 28/10, 11:00 uur"
-    ],
-    [
-     "vrij",
-     "2026-10-28T11:00",
-     "Start verkoop (doelgroep onbekend): Verkoop start 28/10, 11:00 uur"
     ]
    ],
    "nu": true,
@@ -1353,12 +1301,12 @@
     [
      "vrij",
      "2026-11-25T11:00",
-     "Start verkoop (doelgroep onbekend): Verkoop start 25/11, 11:00 uur"
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop start 25/11, 11:00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1377,16 +1325,10 @@
   },
   {
    "club": "heerenveen",
-   "tegen": "sc Cambuur",
+   "tegen": "SC Cambuur",
    "comp": "Eredivisie",
    "aftrap": "2026-12-06T12:15",
-   "fases": [
-    [
-     "vrij",
-     "2026-11-13T13:00",
-     "Start verkoop (doelgroep onbekend): Verkoop start 13-11 om 13:00 uur"
-    ]
-   ],
+   "fases": [],
    "nu": false,
    "info": false,
    "noot": "",
@@ -1402,12 +1344,12 @@
     [
      "vrij",
      "2026-11-20T09:00",
-     "Start verkoop (doelgroep onbekend): Vanaf 20 november 9:00 uur."
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Vanaf 20 november 9:00 uur.",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1416,13 +1358,7 @@
    "tegen": "Sparta Rotterdam",
    "comp": "Eredivisie",
    "aftrap": "2026-11-28T21:00",
-   "fases": [
-    [
-     "vrij",
-     "2026-11-10T12:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 10-11-26 om 13:00"
-    ]
-   ],
+   "fases": [],
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
@@ -1438,13 +1374,13 @@
    "fases": [
     [
      "vrij",
-     "2026-12-01T12:59",
-     "Start verkoop (doelgroep onbekend): Verkoop start dinsdag 01-12-26 om 13:00"
+     "2026-12-01T13:00",
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop start dinsdag 01-12-26 om 13:00",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1514,11 +1450,32 @@
    "tegen": "Excelsior",
    "comp": "KNVB Beker",
    "aftrap": "2026-12-01T20:00",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-11",
+     "Seizoenkaarthouders: eigen plaats terugkopen"
+    ],
+    [
+     "seizoen",
+     "2026-11-16T13:00",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "clubkaart",
+     "2026-11-19T13:00",
+     "Clubkaarthouders en WII Kings-leden"
+    ],
+    [
+     "vrij",
+     "2026-11-23T13:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://www.willem-ii.nl/artikel/kaartverkoop-bekerwedstrijd-tegen-excelsior-rotterdam",
    "auto": true,
    "eerst_nu": "2026-11-06"
   },
@@ -1592,13 +1549,13 @@
    "fases": [
     [
      "vrij",
-     "2026-12-01T08:59",
-     "Start verkoop (doelgroep onbekend): 01-12-2026 | 9.00 uur"
+     "2026-12-01T09:00",
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: 01-12-2026 | 9.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1610,18 +1567,13 @@
    "fases": [
     [
      "vrij",
-     "2026-12-08T08:59",
-     "Start verkoop (doelgroep onbekend): 08-12-2026 | 9.00 uur"
-    ],
-    [
-     "vrij",
-     "2026-12-15T08:59",
-     "Start verkoop (doelgroep onbekend): 15-12-2026 | 9.00 uur"
+     "2026-12-08T09:00",
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: 08-12-2026 | 9.00 uur",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1633,23 +1585,66 @@
    "fases": [
     [
      "vrij",
-     "2026-12-15T08:59",
-     "Start verkoop (doelgroep onbekend): 15-12-2026 | 9.00 uur"
+     "2026-12-15T09:00",
+     "Start verkoop (doelgroep niet vermeld)"
     ],
     [
      "vrij",
      "2026-12-22T08:59",
      "22-12-2026 | 9.00 uur"
-    ],
-    [
-     "vrij",
-     "2026-12-22T08:59",
-     "Start verkoop (doelgroep onbekend): 22-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: 15-12-2026 | 9.00 uur",
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "telstar",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-21T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.sctelstar.nl/verkoop/Telstar---PEC-Zwolle-Vriendenloterij-Eredivisie",
+   "auto": true
+  },
+  {
+   "club": "telstar",
+   "tegen": "FC Groningen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-04T20:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-23",
+     "Start verkoop (doelgroep niet vermeld)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "telstar",
+   "tegen": "Willem II",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-18T20:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-12-07",
+     "Start verkoop (doelgroep niet vermeld)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1822,7 +1817,7 @@
   },
   {
    "club": "leverkusen",
-   "tegen": "Borussia M'gladbach",
+   "tegen": "Borussia Mönchengladbach",
    "comp": "Bundesliga",
    "aftrap": "2026-12-05T15:30",
    "fases": [],
@@ -2266,7 +2261,7 @@
   },
   {
    "club": "az",
-   "tegen": "PSV Eindhoven",
+   "tegen": "PSV",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T20:00",
    "fases": [],
@@ -2275,7 +2270,7 @@
    "noot": "",
    "bron": "https://www.az.nl/wedstrijden/tickets",
    "auto": true,
-   "eerst_nu": "2026-11-06"
+   "eerst_nu": "2026-11-13"
   },
   {
    "club": "az",
@@ -2292,7 +2287,7 @@
   },
   {
    "club": "az",
-   "tegen": "N.e.c.",
+   "tegen": "N.E.C.",
    "comp": "Eredivisie",
    "aftrap": "2026-12-13T16:45",
    "fases": [],
@@ -2554,6 +2549,19 @@
    "noot": "",
    "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
    "auto": true
+  },
+  {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
   },
   {
    "club": "mainz",
@@ -3577,7 +3585,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omonia Nicosia",
+   "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -4097,18 +4105,6 @@
    "auto": true
   },
   {
-   "club": "chelsea",
-   "tegen": "Newcastle United",
-   "comp": "Premier League",
-   "aftrap": "2027-01-03T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaarten voor leden; zie de ticketsite van Chelsea voor het verkoopmoment.",
-   "bron": "https://www.chelseafc.com/en/tickets/mens-tickets",
-   "auto": true
-  },
-  {
    "club": "celta",
    "tegen": "AFC Bournemouth",
    "comp": "Europa League",
@@ -4231,7 +4227,7 @@
   },
   {
    "club": "frankfurt",
-   "tegen": "Leipzig",
+   "tegen": "RB Leipzig",
    "comp": "Bundesliga",
    "aftrap": "2027-02-19",
    "fases": [],
@@ -5032,24 +5028,6 @@
    "info": false,
    "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
    "bron": "https://www.leedsunited.com/en/news/ticket-information-manchester-united-h-sep-21",
-   "auto": true
-  },
-  {
-   "club": "leeds",
-   "tegen": "Crystal Palace",
-   "comp": "Premier League",
-   "aftrap": "2027-09-20T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-09-07T11:30",
-     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
-   "bron": "https://www.leedsunited.com/en/news/ticket-information-crystal-palace-h-26-27",
    "auto": true
   },
   {
@@ -6752,6 +6730,208 @@
    "auto": true
   },
   {
+   "club": "stpauli",
+   "tegen": "Bochum",
+   "comp": "2. Bundesliga",
+   "aftrap": "2026-11-21T20:30",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Uitverkocht.",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Heidenheim",
+   "comp": "2. Bundesliga",
+   "aftrap": "2026-12-06T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Hertha BSC",
+   "comp": "2. Bundesliga",
+   "aftrap": "2026-12-19T13:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-19T15:00",
+     "Ledenvoorverkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Holstein Kiel",
+   "comp": "2. Bundesliga",
+   "aftrap": "2027-01-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Arminia Bielefeld",
+   "comp": "2. Bundesliga",
+   "aftrap": "2027-02-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Energie Cottbus",
+   "comp": "2. Bundesliga",
+   "aftrap": "2027-02-27",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Hannover 96",
+   "comp": "2. Bundesliga",
+   "aftrap": "2027-03-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "stpauli",
+   "tegen": "Darmstadt 98",
+   "comp": "2. Bundesliga",
+   "aftrap": "2027-03-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "Hajduk Split",
+   "comp": "Friendly",
+   "aftrap": "2026-11-15T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Vrije verkoop is nu open.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-28T15:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "De ledenvoorverkoop is nu open.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-11",
+   "fases": [
+    [
+     "lid",
+     "2026-11-10T10:00",
+     "Ledenvoorverkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "Bayer 04 Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-08",
+   "fases": [
+    [
+     "lid",
+     "2026-11-24T10:00",
+     "Ledenvoorverkoop"
+    ],
+    [
+     "vrij",
+     "2026-12-10T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-15",
+   "fases": [
+    [
+     "lid",
+     "2026-12-01T10:00",
+     "Ledenvoorverkoop"
+    ],
+    [
+     "vrij",
+     "2026-12-17T10:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
+   "club": "hsv",
+   "tegen": "Borussia Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-22",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.hsv.de/en/tickets/infos",
+   "auto": true
+  },
+  {
    "club": "schalke",
    "tegen": "VfB Stuttgart",
    "comp": "Bundesliga",
@@ -6836,6 +7016,31 @@
   },
   {
    "club": "psv",
+   "tegen": "Atlético Madrid",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Uitverkocht.",
+   "bron": "https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027",
+   "auto": true
+  },
+  {
+   "club": "psv",
+   "tegen": "VfB Stuttgart",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Kaarten zijn nu te koop voor leden en Club Card-houders.",
+   "bron": "https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027",
+   "auto": true,
+   "eerst_nu": "2026-11-13"
+  },
+  {
+   "club": "psv",
    "tegen": "Vitesse",
    "comp": "KNVB Beker",
    "aftrap": "2026-12-16T21:00",
@@ -6865,6 +7070,168 @@
    "info": false,
    "noot": "",
    "bron": "https://www.psv.nl/media/artikel/nieuws-losse-verkoop-bekerduel-komende-maandag-van-start",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "SV 07 Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-28T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "RB Leipzig",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-12T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "SC Freiburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-09T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "Borussia Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-12T20:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "Hamburger SV",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "Eintracht Frankfurt",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-27",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "FC Augsburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-10",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "1. FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend.",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "koeln",
+   "tegen": "SC Paderborn 07",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-22T15:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://fc.de/mannschaften/maenner/spielplan",
+   "auto": true
+  },
+  {
+   "club": "gae",
+   "tegen": "TOP Oss",
+   "comp": "KNVB Beker",
+   "aftrap": "2026-12-01T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-12T15:00",
+     "Seizoenkaart- en clubkaarthouders (extra kaarten)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Seizoenkaarthouders hebben gratis toegang tot hun eigen plaats.",
+   "bron": "https://www.ga-eagles.nl/kaartverkoopinformatie-go-ahead-eagles-top-oss/",
    "auto": true
   },
   {
@@ -7409,12 +7776,6 @@
  },
  "bijgewerkt": "2026-11-13",
  "SCHATTING": {
-  "union": {
-   "n": 1,
-   "mediaan": 9,
-   "min": 9,
-   "max": 9
-  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -7484,8 +7845,14 @@
   "az": {
    "n": 3,
    "mediaan": 34,
-   "min": 29,
+   "min": 22,
    "max": 34
+  },
+  "union": {
+   "n": 1,
+   "mediaan": 9,
+   "min": 9,
+   "max": 9
   },
   "barcelona": {
    "n": 9,
@@ -7528,6 +7895,12 @@
    "mediaan": 25,
    "min": 25,
    "max": 25
+  },
+  "psv": {
+   "n": 1,
+   "mediaan": 75,
+   "min": 75,
+   "max": 75
   }
  }
 }
