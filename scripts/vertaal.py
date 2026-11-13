@@ -100,6 +100,16 @@ ZINNEN = {
     "Tardini Card-houders (geen seizoenkaart)": "Tardini Card holders (non-season ticket holders)",
     "Kaarten uit de voorverkoop zijn inclusief de waterbus naar Sant'Elena.": "Presale tickets include the water bus to Sant'Elena.",
     "Tijden in Nederlandse tijd (omgerekend uit Brits).": "Times are in Dutch time (converted from UK time).",
+    "Leden (volwassenen en junioren)": "Members (adults and juniors)",
+    "Seizoenkaarthouders: plaatsen reserveren": "Season ticket holders: seat reservation",
+    "Gold-leden en Season Ticket+-houders (voorrang)": "Gold Members and Season Ticket+ holders (priority)",
+    "Overige leden en seizoenkaarthouders": "Other members and season ticket holders",
+    "Gasttickets voor leden en seizoenkaarthouders": "Guest tickets for members and season ticket holders",
+    "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.": "Members only at first; the club expects tickets to sell out to members quickly.",
+    "Kaarten zijn er alleen voor leden en voor supporters die dit of vorig seizoen een Hull-kaartje kochten.": "Tickets are only for members and for supporters who bought a Hull ticket this or last season.",
+    "Kaarten zijn er eerst alleen voor leden (loting).": "Tickets are first only for members (ballot).",
+    "Kaarten zijn er alleen voor leden. Eerst is er een loting.": "Tickets are only for members. There is a ballot first.",
+    "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.": "A membership or season ticket is needed for all tickets. The kick-off time is not known yet.",
 }
 
 # Losse woorden en delen van zinnen. Volgorde is belangrijk: lange eerst.
@@ -137,6 +147,7 @@ REGELS = [
     (r"Leden met (\d+\+) thuispunt", r"Members with \1 home point"),
     (r"Leden met Cherry Tuesday \((\d+\+) thuispunten\)", r"Members: Cherry Tuesday (\1 home points)"),
     (r"Supporters met boekingsgeschiedenis", "Supporters with booking history"),
+    (r"Leden en supporters met aankoopgeschiedenis", "Members and supporters with purchase history"),
     (r"Leden met eerdere aankoopgeschiedenis", "Members with a previous purchase history"),
     (r"Kopers van eerdere wedstrijden: tickets doorgeven aan nieuwe supporters", "Previous buyers: assign tickets to new supporters"),
     (r"\bLeden\b", "Members"),
