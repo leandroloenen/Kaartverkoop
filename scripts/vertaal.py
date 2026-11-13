@@ -10,6 +10,13 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Seizoen Club Card-houders": "Season Club Card holders",
+    "Betalende leden": "Paying members",
+    "Club Card-houders en supportersvereniging": "Club Card holders and supporters' association",
+    "Seizoenkaart- en clubkaarthouders (extra kaarten)": "Season ticket and club card holders (extra tickets)",
+    "Seizoenkaarthouders hebben gratis toegang tot hun eigen plaats.": "Season ticket holders get free entry to their own seat.",
+    "Start verkoop": "Sales start",
+    "Kaarten zijn nu te koop voor leden en Club Card-houders.": "Tickets are on sale now for members and Club Card holders.",
     "Leden, seizoenkaarthouders en fanclubs": "Members, season ticket holders and fan clubs",
     "De ledenvoorverkoop is nu open.": "The members' presale is open now.",
     "Vrije verkoop is nu open.": "General sale is open now.",
