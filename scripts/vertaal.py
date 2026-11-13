@@ -10,6 +10,7 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Start verkoop (doelgroep niet vermeld)": "Sales start (audience not stated)",
     "Seizoenkaarthouders (korting op 2 tickets)": "Season ticket holders (2 discounted tickets)",
     "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.": "Tribuna Sud tickets are only for SassuoloCard holders.",
     "Seizoenkaarthouders (fase 1)": "Season ticket holders (phase 1)",
