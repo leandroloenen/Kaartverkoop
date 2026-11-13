@@ -8,7 +8,7 @@ import os
 import time
 from types import SimpleNamespace
 
-from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, tekstclubs, tekstclubs2, tekstclubs3, tekstclubs4, tekstclubs5, tekstclubs6, tekstclubs7, tekstclubs8, tekstclubs9, tekstclubs10, tekstclubs11, tekstclubs12, ticketing_es, tymes4, tekstclubs13, tekstclubs14
+from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, tekstclubs, tekstclubs2, tekstclubs3, tekstclubs4, tekstclubs5, tekstclubs6, tekstclubs7, tekstclubs8, tekstclubs9, tekstclubs10, tekstclubs11, tekstclubs12, ticketing_es, tymes4, tekstclubs13, tekstclubs14, aanvullen, tekstclubs15
 
 TYMES4_CLUBS = {
     "utrecht": ("FC Utrecht", "https://ticketing.fcutrecht.nl/dashboard", "FC Utrecht"),
@@ -19,7 +19,11 @@ TYMES4_CLUBS = {
     "excelsior": ("Excelsior", "https://tickets.excelsiorrotterdam.nl/dashboard"),
     "willem2": ("Willem II", "https://ticketshop.willem-ii.nl/dashboard"),
     "twente": ("FC Twente", "https://kaartverkoop.fctwente.nl/dashboard"),
+    "telstar": ("SC Telstar", "https://tickets.sctelstar.nl/dashboard"),
 }
+
+# Clubs waarvan de clubsite ook artikelen over de kaartverkoop heeft: die vullen de fases aan (zie aanvullen.py).
+EXTRA_FASES = {"willem2": tekstclubs15.haal_willem2_artikelen}
 
 
 def _maak(sleutel, naam, pagina, thuis=None):
@@ -28,7 +32,14 @@ def _maak(sleutel, naam, pagina, thuis=None):
     def haal_op():
         if not bron:
             time.sleep(3)  # even wachten tussen twee clubs
-        return tymes4.haal_op(sleutel, pagina, bron, thuis)
+        uit = tymes4.haal_op(sleutel, pagina, bron, thuis)
+        extra = EXTRA_FASES.get(sleutel)
+        if extra and uit and not bron:
+            try:
+                uit = aanvullen.verrijk(uit, extra())
+            except Exception as fout:  # noqa: BLE001
+                print(f"[{sleutel}] artikelen overgeslagen: {str(fout).splitlines()[0][:150]}")
+        return uit
 
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, haal_op=haal_op)
 
