@@ -2,8 +2,8 @@
 # Voeg hieronder gerust clubs toe (zet er alleen het adres van de pagina met de wedstrijdenlijst bij).
 # (klaar) N.E.C. (controle, bekend systeem) | https://tickets.nec-nijmegen.nl/dashboard
 # (later) Ajax | https://www.ajax.nl/fans/kaartverkoop
-PSV | https://ticketshop.psv.nl/nl-NL/categories/PSV-1
-Go Ahead Eagles | https://gaeagles.tmtickets.nl/Events
+PSV | https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027
+Go Ahead Eagles | https://www.ga-eagles.nl/category/eerste-selectie/
 # (klaar) AZ | https://www.az.nl/wedstrijden/tickets
 # (klaar) PEC Zwolle | https://peczwolle.nl/teams/heren/peczwolle-26-27/programma?redirect=1#tickets
 # (klaar) ADO Den Haag | https://adodenhaag.nl/nl/tickets/kaartverkoop
@@ -53,10 +53,10 @@ Schalke 04 | https://tickets.schalke04.de/p/heimspiele
 # (klaar) Frosinone | https://www.frosinonecalcio.com/biglietti
 
 # Bundesliga-rest (ronde 8: startpagina met kaartverkoop; adressen zijn een eerste gok, de verkenning laat zien welke werken)
-Borussia Mönchengladbach | https://www.borussia.de/de/tickets/
-1. FC Köln | https://www.fc-koeln.de/tickets/
-Werder Bremen | https://www.werder.de/tickets/
-VfL Wolfsburg | https://www.vfl-wolfsburg.de/tickets
-FC St. Pauli | https://www.fcstpauli.com/tickets/
-Hamburger SV | https://www.hsv.de/en/tickets/match-tickets/ticket-information
-1. FC Heidenheim | https://www.fc-heidenheim.de/tickets
+Borussia Mönchengladbach | https://www.borussia.de/news
+1. FC Köln | https://fc.de/mannschaften/maenner/spielplan
+Werder Bremen | https://www.werder.de/tickets/maenner/heimspiele
+VfL Wolfsburg | https://shop.vfl-wolfsburg.de/tickets/maenner/
+FC St. Pauli | https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele
+Hamburger SV | https://www.hsv.de/en/tickets/infos
+# (vervallen) 1. FC Heidenheim | https://www.fc-heidenheim.de/tickets
