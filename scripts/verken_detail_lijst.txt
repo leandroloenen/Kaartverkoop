@@ -9,12 +9,21 @@
 # (klaar) AC Monza (via startpagina) | https://www.acmonza.com/ | link:ticket | 3
 
 # Ronde 9 (Bundesliga-rest en Schalke): startpagina openen en de links met het patroon volgen
-Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/event/ | 2
-Wolfsburg (wedstrijd Magdeburg) | https://shop.vfl-wolfsburg.de/tickets/ | link:magdeburg | 1
-Wolfsburg (wedstrijd Kiel) | https://shop.vfl-wolfsburg.de/tickets/ | link:kiel | 1
-Heidenheim (tickets) | https://www.fc-heidenheim.de/tickets-overview | link:ticket | 4
-Gladbach (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/borussia-tickets/de/heim/channel/shop/index | geen | 1
-HSV (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/hsv-heimspiele/en/heimspiele/channel/shop/index | geen | 1
-St. Pauli (heimspiele) | https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele | geen | 1
-Koeln (voorbeeldartikel) | https://fc.de/aktuelles/news/vvk-start-fuer-das-auswaertsspiel-beim-fc-bayern-muenchen-26-27 | geen | 1
-Koeln (artikelen via nieuwsoverzicht) | https://fc.de/aktuelles/news | link:vvk | 4
+# (klaar) Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/event/ | 2
+# (klaar) Wolfsburg (wedstrijd Magdeburg) | https://shop.vfl-wolfsburg.de/tickets/ | link:magdeburg | 1
+# (klaar) Wolfsburg (wedstrijd Kiel) | https://shop.vfl-wolfsburg.de/tickets/ | link:kiel | 1
+# (klaar) Heidenheim (tickets) | https://www.fc-heidenheim.de/tickets-overview | link:ticket | 4
+# (klaar) Gladbach (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/borussia-tickets/de/heim/channel/shop/index | geen | 1
+# (klaar) HSV (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/hsv-heimspiele/en/heimspiele/channel/shop/index | geen | 1
+# (klaar) St. Pauli (heimspiele) | https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele | geen | 1
+# (klaar) Koeln (voorbeeldartikel) | https://fc.de/aktuelles/news/vvk-start-fuer-das-auswaertsspiel-beim-fc-bayern-muenchen-26-27 | geen | 1
+# (klaar) Koeln (artikelen via nieuwsoverzicht) | https://fc.de/aktuelles/news | link:vvk | 4
+
+# Ronde 10: losse wedstrijd- en artikelpagina's
+Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke | 3
+Heidenheim (tagestickets-artikelen) | https://www.fc-heidenheim.de/tickets-overview | link:tagestickets | 3
+Heidenheim (nieuws Tickets) | https://www.fc-heidenheim.de/news | link:news/detail/ | 6
+Koeln (filter Tickets) | https://fc.de/aktuelles/news | klik:Tickets | 1
+Koeln (ticketshop) | https://fc.de/ | link:ticketshop | 2
+Gladbach (via startpagina) | https://www.borussia.de/ | link:ticket | 4
+HSV (via startpagina) | https://www.hsv.de/en | link:ticket | 4
