@@ -36,7 +36,7 @@ TXT = {
     "nl": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "Over", "hoofdmenu": "Hoofdmenu", "menu_open": "Menu openen", "taal_kies": "Taal kiezen",
         "terug": "← Naar het volledige overzicht met filters",
-        "hn_v": "Deze week in de verkoop", "hn_g": "Deze week gespeeld", "hn_alles": "Alles bekijken →",
+        "hn_v": "Deze week in de verkoop", "hn_g": "Deze week gespeeld", "hn_alles": "Alles bekijken →", "hn_link": "Bekijk deze week →",
         "hn_leeg_v": "Komende 7 dagen geen verkoopstart bekend. Eerstvolgende:", "hn_leeg_g": "De komende 7 dagen staat er geen wedstrijd in ons overzicht.",
         "nieuws": "Deze week", "nieuws_pad": "nieuws", "pad_verkoop": "deze-week-in-de-verkoop", "pad_gespeeld": "deze-week-gespeeld",
         "nw_titel": "Deze week | {site}", "nw_beschr": "Welke voetbalwedstrijden gaan deze week in de kaartverkoop en welke worden er gespeeld? Elke dag bijgewerkt.",
@@ -104,7 +104,7 @@ TXT = {
     "en": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "About", "hoofdmenu": "Main menu", "menu_open": "Open menu", "taal_kies": "Choose language",
         "terug": "← Back to the full overview with filters",
-        "hn_v": "On sale this week", "hn_g": "Matches this week", "hn_alles": "See all →",
+        "hn_v": "On sale this week", "hn_g": "Matches this week", "hn_alles": "See all →", "hn_link": "See this week →",
         "hn_leeg_v": "No sale start known for the next 7 days. Next up:", "hn_leeg_g": "No matches in our overview for the next 7 days.",
         "nieuws": "This week", "nieuws_pad": "news", "pad_verkoop": "on-sale-this-week", "pad_gespeeld": "matches-this-week",
         "nw_titel": "This week | {site}", "nw_beschr": "Which football matches go on sale this week and which are being played? Updated every day.",
@@ -850,11 +850,8 @@ def bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, v
            ".nw-k li{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:.93rem}"
            ".nw-t{min-width:6.5em;font-weight:700;color:var(--soon)}.nw-m{color:var(--mute);font-size:.85rem}"
            ".nw-k p{margin:4px 0}.nw-k .nw-alle{display:inline-block;margin-top:6px;font-weight:600}</style>")
-    blok_h = (f'{css}<section class="nw">'
-              f'<div class="nw-k"><h2>{tr("hn_v")}</h2>{v_kop_extra}<ul>{v_rijen}</ul>'
-              f'<a class="nw-alle" href="{pad_van(taal, "verkoop")}">{tr("hn_alles")}</a></div>'
-              f'<div class="nw-k"><h2>{tr("hn_g")}</h2>{g_kop_extra}<ul>{g_rijen}</ul>'
-              f'<a class="nw-alle" href="{pad_van(taal, "gespeeld")}">{tr("hn_alles")}</a></div></section>')
+    blok_h = (f'<section class="nw-uit" style="margin:0 0 22px"><p class="mute" style="margin:0">{e(tr("nw_intro"))} '
+              f'<a href="{tr("nieuws_pad")}/"><b>{tr("hn_link")}</b></a></p></section>')
     return blok_h
 
 
