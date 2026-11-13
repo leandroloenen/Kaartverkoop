@@ -75,11 +75,11 @@ def parse_wolfsburg(tekst, club="wolfsburg", bron=""):
         else:
             fases.append(["lid", d, "Voorverkoop (beperkt)"])
     noten = []
-    if any(f[2] in ("Seizoenkaarthouders en leden", "Leden") for f in fases):
-        noten.append("Alleen leden die al vóór 1 juli lid waren, mogen kopen.")
     if vrij_onzeker:
         noten.append("Of er vrije verkoop komt, is nog niet bekend.")
-    return wedstrijd(club, _naam(rest), comp, aftrap, fases=fases, nu=False, info=not fases, noot=" ".join(noten), bron=bron)
+    elif any(f[2] in ("Seizoenkaarthouders en leden", "Leden") for f in fases):
+        noten.append("Alleen leden die al vóór 1 juli lid waren, mogen kopen.")
+    return wedstrijd(club, _naam(rest), comp, aftrap, fases=fases, nu=False, info=not fases, noot=noten[0] if noten else "", bron=bron)
 
 
 def haal_wolfsburg(pagina, test, sleutel="wolfsburg"):
