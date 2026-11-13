@@ -2,11 +2,14 @@
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
 # Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# Ronde 18: Sassuolo prevendita-artikelen, Genoa nieuws
-Sassuolo (prevendita-artikelen) | https://www.sassuolocalcio.it/biglietteria/news-info/ | link:/biglietteria/sassuolo-[a-z-]*info-prevendita | 3
-Genoa (nieuws prevendita) | https://genoacfc.it/category/news/ | link:prevendita | 3
-Genoa (nieuws biglietti) | https://genoacfc.it/category/news/ | link:biglietti | 3
-
-# Ronde 19: Napoli nieuwsartikelen over de kaartverkoop (voorbeeld Napoli-Roma)
-Napoli (voorbeeldartikel Roma) | https://sscnapoli.it/en/news/napoli-vs-roma-tutte-le-info-per-i-biglietti-della-sfida-al-maradona | geen | 1
-Napoli (nieuwsoverzicht biglietti) | https://sscnapoli.it/en/news | link:biglietti | 4
+# Ronde 20: Eredivisie. Telstar ontbreekt nog; de clubs met alleen "nu in de verkoop" via hun gewone site (kaartverkoopartikelen)
+Telstar (website) | https://www.sctelstar.nl/ | link:ticket | 3
+Willem II (website) | https://www.willem-ii.nl/ | link:kaartverkoop | 3
+AZ (website) | https://www.az.nl/ | link:kaartverkoop | 3
+PEC Zwolle (website) | https://peczwolle.nl/ | link:kaartverkoop | 3
+ADO Den Haag (website) | https://adodenhaag.nl/ | link:kaartverkoop | 3
+Fortuna Sittard (website) | https://fortunasittard.nl/ | link:kaartverkoop | 3
+Excelsior (website) | https://excelsiorrotterdam.nl/ | link:kaartverkoop | 3
+FC Twente (website) | https://www.fctwente.nl/ | link:kaartverkoop | 3
+FC Utrecht (website) | https://www.fcutrecht.nl/ | link:kaartverkoop | 3
+Sparta Rotterdam (website) | https://www.sparta-rotterdam.nl/ | link:kaartverkoop | 3
