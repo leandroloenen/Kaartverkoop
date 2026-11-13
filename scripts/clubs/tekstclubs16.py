@@ -84,14 +84,14 @@ def haal_fulham(pagina, test, sleutel="fulham"):
 
 
 CLUBS = [
-    ("fulham", "Fulham", "EN", "Fulham", "https://www.fulhamfc.com/news/", haal_fulham),
+    ("fulham", "Fulham", "EN", "Fulham (artikelen)", "https://www.fulhamfc.com/news/", haal_fulham),
 ]
 
 
 def _maak(sleutel, naam, land, lijstnaam, standaard, haal):
     test = os.environ.get(f"{sleutel.upper()}_TEKST_BESTAND", "")
     pagina = t.adres_uit_lijst(lijstnaam, standaard)
-    return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, haal_op=lambda: haal(pagina, test, sleutel))
+    return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, BEHOUD=True, haal_op=lambda: haal(pagina, test, sleutel))
 
 
 ALLE = [_maak(*c) for c in CLUBS]
