@@ -121,6 +121,12 @@ def main():
                     continue
             toe.append(w)
 
+        if getattr(module, "BEHOUD", False):  # clubs met nieuwsberichten: een bericht verdwijnt snel van de overzichtspagina, de wedstrijd blijft
+            nu_k = {sleutel(w) for w in toe}
+            for w in oud_auto:
+                if sleutel(w) not in nu_k and w["aftrap"][:10] >= datetime.date.today().isoformat():
+                    toe.append(w)
+
         if len(oud_auto) >= 4 and len(toe) < len(oud_auto) / 2:
             print(f"[{club}] WAARSCHUWING: ineens veel minder wedstrijden ({len(toe)} i.p.v. {len(oud_auto)}); oude gegevens blijven staan")
             continue
