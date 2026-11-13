@@ -10,6 +10,14 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Seizoenkaarthouders en leden": "Season ticket holders and members",
+    "Vrije verkoop": "General sale",
+    "Leden": "Members",
+    "Voorverkoop (beperkt)": "Limited presale",
+    "Ledenvoorverkoop": "Members' presale",
+    "Verkoop start (volgens de club)": "Sale starts (according to the club)",
+    "Alleen leden die al vóór 1 juli lid waren, mogen kopen.": "Only members who joined before 1 July may buy.",
+    "Of er vrije verkoop komt, is nog niet bekend.": "It is not yet known whether there will be a general sale.",
     "Vrije verkoop (geverifieerd account)": "General sale (verified account)",
     "Club Card-houders": "Club Card holders",
     "Leden Supportersvereniging": "Supporters' Association members",
