@@ -48,5 +48,8 @@
 # (klaar) Koeln (spielplan) | https://fc.de/mannschaften/maenner/spielplan | geen | 1
 
 # Ronde 15: Köln wedstrijdpagina's (Spieltag-pagina's vanuit het speelschema)
-Koeln (spieltag 10 t/m 14) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/1[0-4]-spieltag | 5
-Koeln (achtelfinale) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/achtelfinale | 1
+# (klaar) Koeln (spieltag 10 t/m 14) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/1[0-4]-spieltag | 5
+# (klaar) Koeln (achtelfinale) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/achtelfinale | 1
+
+# Ronde 16: Werder Bremen (tabel met thuiswedstrijden op de clubsite)
+Werder Bremen (heimspiele) | https://www.werder.de/tickets/maenner/heimspiele | geen | 1
