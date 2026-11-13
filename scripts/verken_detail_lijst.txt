@@ -2,14 +2,13 @@
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
 # Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# Ronde 20: Eredivisie. Telstar ontbreekt nog; de clubs met alleen "nu in de verkoop" via hun gewone site (kaartverkoopartikelen)
-Telstar (website) | https://www.sctelstar.nl/ | link:ticket | 3
-Willem II (website) | https://www.willem-ii.nl/ | link:kaartverkoop | 3
-AZ (website) | https://www.az.nl/ | link:kaartverkoop | 3
-PEC Zwolle (website) | https://peczwolle.nl/ | link:kaartverkoop | 3
-ADO Den Haag (website) | https://adodenhaag.nl/ | link:kaartverkoop | 3
-Fortuna Sittard (website) | https://fortunasittard.nl/ | link:kaartverkoop | 3
-Excelsior (website) | https://excelsiorrotterdam.nl/ | link:kaartverkoop | 3
-FC Twente (website) | https://www.fctwente.nl/ | link:kaartverkoop | 3
-FC Utrecht (website) | https://www.fcutrecht.nl/ | link:kaartverkoop | 3
-Sparta Rotterdam (website) | https://www.sparta-rotterdam.nl/ | link:kaartverkoop | 3
+# Premier League-rest (ronde 1 diepte)
+West Ham United | https://www.whufc.com/en/tickets/home-matches | geen | 1
+Aston Villa | https://tickets.avfc.co.uk/ | geen | 1
+Sunderland | https://www.safc.com/tickets | link:mens | 3
+Ipswich Town | https://www.itfc.co.uk/tickets/ | link:home-tickets | 3
+Crystal Palace | https://www.cpfc.co.uk/tickets/ | link:match-tickets | 3
+Hull City | https://www.hullcity.com/tickets | geen | 1
+Manchester United (artikel) | https://www.manutd.com/en/news/tickets-available-for-two-premier-league-games-brentford-coventry-city | geen | 1
+Fulham (artikel) | https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/ | geen | 1
+Fulham (nieuwsoverzicht) | https://www.fulhamfc.com/news | geen | 1
