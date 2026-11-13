@@ -20,12 +20,17 @@
 # (klaar) Koeln (artikelen via nieuwsoverzicht) | https://fc.de/aktuelles/news | link:vvk | 4
 
 # Ronde 10: losse wedstrijd- en artikelpagina's
-Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke | 3
-Heidenheim (tagestickets-artikelen) | https://www.fc-heidenheim.de/tickets-overview | link:tagestickets | 3
-Heidenheim (nieuws Tickets) | https://www.fc-heidenheim.de/news | link:news/detail/ | 6
-Koeln (filter Tickets) | https://fc.de/aktuelles/news | klik:Tickets | 1
-Koeln (ticketshop) | https://fc.de/ | link:ticketshop | 2
-Gladbach (voorbeeldartikel) | https://www.borussia.de/news/ab-freitag-tickets-fuer-bmgsvd-sichern | geen | 1
-Gladbach (artikelen via nieuws) | https://www.borussia.de/news | link:/news/.*ticket | 6
-HSV (ticketinfo en wedstrijden) | https://www.hsv.de/en/tickets/infos | geen | 1
-HSV (via ticketinfo) | https://www.hsv.de/en/tickets/infos | link:/en/tickets/ | 4
+# (klaar) Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke | 3
+# (klaar) Heidenheim (tagestickets-artikelen) | https://www.fc-heidenheim.de/tickets-overview | link:tagestickets | 3
+# (klaar) Heidenheim (nieuws Tickets) | https://www.fc-heidenheim.de/news | link:news/detail/ | 6
+# (klaar) Koeln (filter Tickets) | https://fc.de/aktuelles/news | klik:Tickets | 1
+# (klaar) Koeln (ticketshop) | https://fc.de/ | link:ticketshop | 2
+# (klaar) Gladbach (voorbeeldartikel) | https://www.borussia.de/news/ab-freitag-tickets-fuer-bmgsvd-sichern | geen | 1
+# (klaar) Gladbach (artikelen via nieuws) | https://www.borussia.de/news | link:/news/.*ticket | 6
+# (klaar) HSV (ticketinfo en wedstrijden) | https://www.hsv.de/en/tickets/infos | geen | 1
+# (klaar) HSV (via ticketinfo) | https://www.hsv.de/en/tickets/infos | link:/en/tickets/ | 4
+
+# Ronde 11: Köln en de geblokkeerde clubs via hun gewone website (niet de ticketshop)
+Koeln (early-bird artikel) | https://fc.de/aktuelles/news/early-bird-vorverkauf-exklusiv-fuer-fc-mitglieder | geen | 1
+PSV (Champions League info) | https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027 | geen | 1
+Go Ahead Eagles (kaartverkoop PSV uit) | https://www.ga-eagles.nl/kaartverkoopinformatie-psv-uit/ | geen | 1
