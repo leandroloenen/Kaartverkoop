@@ -105,7 +105,54 @@ def groep_uit_knoptekst(tekst):
     if standaard:
         return standaard, LABELS_KNOP[standaard]
     print(f"    let op ({_HUIDIG[0]}): verkoopmoment met onbekende doelgroep, laat het even controleren: \"{tekst}\"")
-    return "vrij", "Start verkoop (doelgroep onbekend): " + tekst
+    return "vrij", "Start verkoop (doelgroep niet vermeld)"
+
+
+MND_NAMEN = "januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december"
+TXT_DATUM = re.compile(r"(?<![\d:.])(\d{1,2})[-/.](\d{1,2})(?:[-/.](\d{4}|\d{2}))?(?![\d:])")
+TXT_DATUM_NAAM = re.compile(r"(\d{1,2})\s+(" + MND_NAMEN + r")(?:\s+(\d{4}))?", re.I)
+TXT_TIJD = re.compile(r"(?<!\d)(\d{1,2})[:.](\d{2})(?!\d)")
+
+
+def moment_uit_tekst(tekst, aftrap):
+    """Lees de verkoopstart uit de knoptekst ('Verkoop start 19-11', '13-11 om 13:00 uur', 'Vanaf 20 november 9:00 uur').
+
+    Geeft 'JJJJ-MM-DDTUU:MM' (met tijd) of 'JJJJ-MM-DD' (zonder tijd), of None als er geen datum in staat.
+    Het jaar is het laatste jaar waarin de datum niet na de wedstrijd valt."""
+    dag = maand = jaar = None
+    rest = tekst
+    m = TXT_DATUM.search(tekst)
+    if m and 1 <= int(m.group(1)) <= 31 and 1 <= int(m.group(2)) <= 12:
+        dag, maand = int(m.group(1)), int(m.group(2))
+        if m.group(3):
+            jaar = int(m.group(3)) + (2000 if len(m.group(3)) == 2 else 0)
+        rest = tekst[:m.start()] + " " + tekst[m.end():]
+    else:
+        n = TXT_DATUM_NAAM.search(tekst)
+        if n:
+            dag, maand = int(n.group(1)), MAANDEN[n.group(2).lower()]
+            jaar = int(n.group(3)) if n.group(3) else None
+            rest = tekst[:n.start()] + " " + tekst[n.end():]
+    if not dag:
+        return None
+    if jaar is None:
+        for j in (aftrap.year, aftrap.year - 1):
+            try:
+                if datetime(j, maand, dag, tzinfo=NL).date() <= aftrap.date():
+                    jaar = j
+                    break
+            except ValueError:
+                continue
+    if jaar is None:
+        return None
+    try:
+        datetime(jaar, maand, dag)
+    except ValueError:
+        return None
+    t = TXT_TIJD.search(rest)
+    if t and int(t.group(1)) < 24 and int(t.group(2)) < 60:
+        return f"{jaar:04d}-{maand:02d}-{dag:02d}T{int(t.group(1)):02d}:{t.group(2)}"
+    return f"{jaar:04d}-{maand:02d}-{dag:02d}"
 
 
 def fases_uit_knop(item):
@@ -117,7 +164,9 @@ def fases_uit_knop(item):
             and any(c.isdigit() for c in tekst) and "info volgt" not in laag
             and knop["ActiveTill"] < item["EventStartDateTime"]):
         g, label = groep_uit_knoptekst(tekst)
-        fases.append([g, utc_naar_nl(knop["ActiveTill"]).strftime("%Y-%m-%dT%H:%M"), label])
+        aftrap_nl = utc_naar_nl(item["EventStartDateTime"])
+        moment = moment_uit_tekst(tekst, aftrap_nl) or utc_naar_nl(knop["ActiveTill"]).strftime("%Y-%m-%dT%H:%M")
+        fases.append([g, moment, label])
     if item.get("HasGeneralSale") and item.get("OnGeneralSaleFrom"):
         fases.append(["vrij", utc_naar_nl(item["OnGeneralSaleFrom"]).strftime("%Y-%m-%dT%H:%M"), LABELS_KNOP["vrij"]])
     return fases, tekst
@@ -226,8 +275,6 @@ def parse(ruw, club, thuis_naam=None):
                 noot = "Nu in de verkoop; startmoment onbekend."
             elif info:
                 noot = "Verkoopmomenten nog niet bekendgemaakt."
-            elif fases and knoptekst and any(c.isdigit() for c in knoptekst):
-                noot = "Bron: " + knoptekst
             uit.append({
                 "club": club,
                 "tegen": schoon(item["NameAwayTeam"]),
