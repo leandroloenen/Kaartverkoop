@@ -2,13 +2,13 @@
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
 # Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# Premier League-rest (ronde 1 diepte)
-West Ham United | https://www.whufc.com/en/tickets/home-matches | geen | 1
-Aston Villa | https://tickets.avfc.co.uk/ | geen | 1
-Sunderland | https://www.safc.com/tickets | link:mens | 3
-Ipswich Town | https://www.itfc.co.uk/tickets/ | link:home-tickets | 3
-Crystal Palace | https://www.cpfc.co.uk/tickets/ | link:match-tickets | 3
-Hull City | https://www.hullcity.com/tickets | geen | 1
-Manchester United (artikel) | https://www.manutd.com/en/news/tickets-available-for-two-premier-league-games-brentford-coventry-city | geen | 1
-Fulham (artikel) | https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/ | geen | 1
-Fulham (nieuwsoverzicht) | https://www.fulhamfc.com/news | geen | 1
+# Premier League-rest, ronde 2: artikelen en overzichten
+Aston Villa (artikel) | https://www.avfc.co.uk/news/2026/november/06/ticketing-crystal-palace-home-ticket-details-26-27/ | geen | 1
+Aston Villa (nieuws) | https://www.avfc.co.uk/news/ | geen | 1
+Hull City (artikel) | https://www.wearehullcity.co.uk/news/2026/november/02/ticket-details-totthenham-hotspur-h-26-27/ | geen | 1
+Hull City (nieuws) | https://www.wearehullcity.co.uk/news/ | geen | 1
+Sunderland (artikel) | https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/ | geen | 1
+Sunderland (nieuws) | https://www.safc.com/news/ | geen | 1
+Ipswich Town (artikel) | https://www.itfc.co.uk/news/2026/november/11/ipswich-town-v-brentford-ticket-details/ | geen | 1
+Ipswich Town (nieuws) | https://www.itfc.co.uk/news/ | geen | 1
+Crystal Palace (verkoopdata) | https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/ | geen | 1
