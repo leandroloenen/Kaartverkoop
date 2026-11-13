@@ -10,6 +10,12 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Leden, seizoenkaarthouders en fanclubs": "Members, season ticket holders and fan clubs",
+    "De ledenvoorverkoop is nu open.": "The members' presale is open now.",
+    "Vrije verkoop is nu open.": "General sale is open now.",
+    "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.": "Day and time of the match are not yet known; this is the first day of the match weekend.",
+    "Volgens de club start eerst een voorverkoop voor leden; de datum volgt.": "According to the club, a members' presale comes first; the date will follow.",
+    "Tickets beschikbaar in de ticketshop; mogelijk eerst alleen voor leden.": "Tickets are available in the ticket shop; possibly members only at first.",
     "Seizoenkaarthouders en leden": "Season ticket holders and members",
     "Vrije verkoop": "General sale",
     "Leden": "Members",
