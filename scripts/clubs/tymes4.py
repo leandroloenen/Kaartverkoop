@@ -163,7 +163,9 @@ def fases_uit_knop(item):
     if (knop.get("ActionType") == "Disabled" and knop.get("ActiveTill")
             and any(c.isdigit() for c in tekst) and "info volgt" not in laag
             and knop["ActiveTill"] < item["EventStartDateTime"]):
-        g, label = groep_uit_knoptekst(tekst)
+        # Twente e.a. zetten de doelgroep naast de datum ("Voorrang (S)CC-houders"), niet in de knop zelf
+        voorrang = re.search(r"Voorrang[^\"\\]{0,40}", json.dumps(item, ensure_ascii=False))
+        g, label = groep_uit_knoptekst(tekst + (" " + voorrang.group(0) if voorrang else ""))
         aftrap_nl = utc_naar_nl(item["EventStartDateTime"])
         moment = moment_uit_tekst(tekst, aftrap_nl) or utc_naar_nl(knop["ActiveTill"]).strftime("%Y-%m-%dT%H:%M")
         fases.append([g, moment, label])
