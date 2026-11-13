@@ -39,9 +39,17 @@ def dag(w):
 
 def voeg_fases_samen(oud, nieuw):
     """Behoud fases uit eerdere runs; een fase met dezelfde groep en naam wordt vervangen."""
-    per_fase = {(f[0], f[2] if len(f) > 2 else ""): f for f in oud["fases"]}
+    def naam_van(f):
+        return f[2] if len(f) > 2 else ""
+
+    def zelfde_fase(a, b):
+        """Dezelfde fase als de groep en de dag gelijk zijn en de ene naam in de andere zit (de club of ons label is aangepast)."""
+        return a[0] == b[0] and a[1][:10] == b[1][:10] and (naam_van(a) in naam_van(b) or naam_van(b) in naam_van(a))
+
+    behouden = [f for f in oud["fases"] if not any(zelfde_fase(f, n) for n in nieuw["fases"])]
+    per_fase = {(f[0], naam_van(f)): f for f in behouden}
     for f in nieuw["fases"]:
-        per_fase[(f[0], f[2] if len(f) > 2 else "")] = f
+        per_fase[(f[0], naam_van(f))] = f
     return sorted(per_fase.values(), key=lambda f: f[1])
 
 
