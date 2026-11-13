@@ -1,0 +1,111 @@
+# Werder Bremen: plak hier de tabel van https://www.werder.de/tickets/maenner/heimspiele (hij staat achter een beveiliging die automatisch lezen blokkeert).
+# Regels die met # beginnen worden genegeerd. Per wedstrijd: speeldatum, tegenstander, bestelperiode voor leden.
+Spieltermin
+
+Partie
+
+Bestellphase (nur für Mitglieder!)
+
+weitere Informationen
+
+22.11.26, 17:30 Uhr
+
+Hamburger SV
+
+07.-14.09.2026, 10:30 Uhr
+
+-
+
+27.11.26, 20:30 Uhr
+
+Borussia M'gladbach
+
+21.-28.09.2026, 10:30 Uhr
+
+-
+
+13.12.26, 19:30 Uhr
+
+Bayer 04 Leverkusen
+
+19.-26.10.2026, 10:30 Uhr
+
+-
+
+10.01.27, 15:30 Uhr
+
+1. FC Union Berlin
+
+02.-09.11.2026, 10:30 Uhr
+
+-
+
+17.01.27, 15:30 Uhr
+
+SV Elversberg
+
+23.-30.11.2026, 10:30 Uhr
+
+-
+
+22.01.2027, 20:30 Uhr
+
+Sport-Club Freiburg
+
+30.11.-07.12.2026, 10:30 Uhr
+
+-
+
+05.-07.02.2027
+
+FC Köln
+14.-21.12.2026, 10:30 Uhr
+
+-
+
+19.-21.02.2027
+
+Borussia Dortmund
+
+11.-18.01.2027, 10:30 Uhr
+
+-
+
+02.-04.03.2027
+
+FSV Mainz 05
+18.-25.01.2027, 10:30 Uhr
+
+-
+
+12.-14.03.2027
+
+VfB Stuttgart
+
+25.01.-01.02.2027, 10:30 Uhr
+
+-
+
+09.-11.04.2027
+
+Eintracht Frankfurt
+
+08.-15.02.2027, 10:30 Uhr
+
+-
+
+23.-25.04.2027
+
+FC Bayern München
+
+22.02.-01.03.2027, 10:30 Uhr
+
+-
+
+14.-16.05.2027
+
+FC Schalke 04
+
+08.-15.03.2027, 10:30 Uhr
+
+-
