@@ -264,9 +264,56 @@ def haal_koeln(pagina, test, sleutel="koeln"):
     return uit
 
 
+# ---------------------------------------------------------------- Werder Bremen (tabel handmatig geplakt)
+# werder.de blokkeert automatisch lezen. De tabel staat daarom in scripts/handmatig/werder-bremen.txt;
+# plak daar de nieuwe tabel in als er een nieuw seizoen of nieuwe data zijn.
+WB_DATUM = re.compile(r"^(\d{2})\.(\d{2})\.(\d{2}|\d{4}),\s*(\d{1,2}):(\d{2})\s*Uhr$")
+WB_WEEKEND = re.compile(r"^(\d{2})\.-(\d{2})\.(\d{2})\.(\d{4})$")
+WB_BESTEL = re.compile(r"^(\d{1,2})\.(?:(\d{1,2})\.)?\s*-\s*(\d{1,2})\.(\d{1,2})\.(\d{4}),\s*(\d{1,2}):(\d{2})\s*Uhr$")
+WB_NAMEN = {"Borussia M'gladbach": "Borussia Mönchengladbach", "Sport-Club Freiburg": "SC Freiburg", "FSV Mainz 05": "1. FSV Mainz 05"}
+
+
+def parse_werder(tekst, club="werder-bremen", bron=""):
+    regels = [r.strip() for r in tekst.splitlines() if r.strip() and not r.strip().startswith("#")]
+    uit, i = [], 0
+    while i + 2 < len(regels):
+        a, tegen, c = regels[i], regels[i + 1], regels[i + 2]
+        d, w, b = WB_DATUM.match(a), WB_WEEKEND.match(a), WB_BESTEL.match(c)
+        if not ((d or w) and b):
+            i += 1
+            continue
+        if d:
+            jaar = int(d.group(3)) + (2000 if len(d.group(3)) == 2 else 0)
+            aftrap = f"{jaar:04d}-{int(d.group(2)):02d}-{int(d.group(1)):02d}T{int(d.group(4)):02d}:{d.group(5)}"
+            noot = ""
+        else:  # speelweekend: de dag staat nog niet vast, we tonen de eerste dag
+            aftrap = f"{int(w.group(4)):04d}-{int(w.group(3)):02d}-{int(w.group(1)):02d}"
+            noot = "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend."
+        eind_jaar, eind_maand, eind_dag = int(b.group(5)), int(b.group(4)), int(b.group(3))
+        start_maand = int(b.group(2)) if b.group(2) else eind_maand
+        start_jaar = eind_jaar - (1 if start_maand > eind_maand else 0)
+        uur, minuut = int(b.group(6)), b.group(7)
+        start = f"{start_jaar:04d}-{start_maand:02d}-{int(b.group(1)):02d}T{uur:02d}:{minuut}"
+        eind = f"{eind_jaar:04d}-{eind_maand:02d}-{eind_dag:02d}T{uur:02d}:{minuut}"
+        if not noot:
+            noot = "Of er vrije verkoop komt, is nog niet bekend."
+        fases = [["lid", start, "Bestelperiode leden opent"], ["lid", eind, "Bestelperiode leden sluit"]]
+        if _toekomst(aftrap):
+            uit.append(wedstrijd(club, WB_NAMEN.get(tegen, tegen), "Bundesliga", aftrap, fases=fases, noot=noot, bron=bron))
+        i += 3
+    return uit
+
+
+def haal_werder(pagina, test, sleutel="werder-bremen"):
+    from pathlib import Path
+    pad = test or str(Path(__file__).resolve().parent.parent / "handmatig" / "werder-bremen.txt")
+    return parse_werder(open(pad, encoding="utf-8").read(), sleutel, pagina)
+
+
 CLUBS = [
     ("psv", "PSV", "NL", "PSV", "https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027", haal_psv),
     ("koeln", "1. FC Köln", "DE", "1. FC Köln", "https://fc.de/mannschaften/maenner/spielplan", haal_koeln),
+    ("werder-bremen", "Werder Bremen", "DE", "Werder Bremen", "https://www.werder.de/tickets/maenner/heimspiele", haal_werder),
     ("gae", "Go Ahead Eagles", "NL", "Go Ahead Eagles", "https://www.ga-eagles.nl/category/eerste-selectie/", haal_gae),
 ]
 
