@@ -15,6 +15,7 @@ Regels:
 """
 import datetime
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -59,8 +60,12 @@ def voeg_fases_samen(oud, nieuw):
         return a[0] == b[0] and a[1][:10] == b[1][:10] and (naam_van(a) in naam_van(b) or naam_van(b) in naam_van(a))
 
     # Fases met het oude label 'doelgroep onbekend' hadden soms een verkeerde datum: de huidige run vervangt ze.
+    def ruwe_tekst(f):
+        """Oude fases waarvan het label de ruwe knoptekst is ('Verkoop start 28/10, 11:00 uur', '22-12-2026 | 9.00 uur')."""
+        return bool(re.search(r"\d{1,2}[-/.]\d{1,2}[-/.,\s]|^(Verkoop start|Vanaf)", naam_van(f)))
+
     behouden = [f for f in oud["fases"] if not any(zelfde_fase(f, n) for n in nieuw["fases"])
-                and "doelgroep onbekend" not in naam_van(f)]
+                and "doelgroep onbekend" not in naam_van(f) and not ruwe_tekst(f)]
     per_fase = {(f[0], naam_van(f)): f for f in behouden}
     for f in nieuw["fases"]:
         per_fase[(f[0], naam_van(f))] = f
