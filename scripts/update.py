@@ -29,6 +29,18 @@ def zonder_accenten(tekst):
     return "".join(c for c in unicodedata.normalize("NFD", tekst) if unicodedata.category(c) != "Mn").lower()
 
 
+# Eén schrijfwijze per club, ook als clubs elkaar anders noemen ("PSV Eindhoven", "sc Cambuur", "N.e.c.").
+NAAM_GELIJK = {"psv eindhoven": "PSV", "n.e.c.": "N.E.C.", "nec": "N.E.C.", "nec nijmegen": "N.E.C.", "n.e.c. nijmegen": "N.E.C.",
+               "sc cambuur": "SC Cambuur", "cambuur": "SC Cambuur", "leipzig": "RB Leipzig", "rb leipzig": "RB Leipzig",
+               "afc ajax": "Ajax", "az alkmaar": "AZ", "sc heerenveen": "SC Heerenveen", "heerenveen": "SC Heerenveen",
+               "fc utrecht": "FC Utrecht", "fc twente": "FC Twente", "fc groningen": "FC Groningen",
+               "borussia m'gladbach": "Borussia Mönchengladbach", "sc freiburg": "SC Freiburg"}
+
+
+def gelijke_naam(naam):
+    return NAAM_GELIJK.get(zonder_accenten(naam).strip(), naam)
+
+
 def sleutel(w):
     return (w["club"], zonder_accenten(w["tegen"]), w["aftrap"][:10])
 
@@ -46,7 +58,9 @@ def voeg_fases_samen(oud, nieuw):
         """Dezelfde fase als de groep en de dag gelijk zijn en de ene naam in de andere zit (de club of ons label is aangepast)."""
         return a[0] == b[0] and a[1][:10] == b[1][:10] and (naam_van(a) in naam_van(b) or naam_van(b) in naam_van(a))
 
-    behouden = [f for f in oud["fases"] if not any(zelfde_fase(f, n) for n in nieuw["fases"])]
+    # Fases met het oude label 'doelgroep onbekend' hadden soms een verkeerde datum: de huidige run vervangt ze.
+    behouden = [f for f in oud["fases"] if not any(zelfde_fase(f, n) for n in nieuw["fases"])
+                and "doelgroep onbekend" not in naam_van(f)]
     per_fase = {(f[0], naam_van(f)): f for f in behouden}
     for f in nieuw["fases"]:
         per_fase[(f[0], naam_van(f))] = f
@@ -90,6 +104,7 @@ def main():
         handm = {dag(w): w for w in rest if w["club"] == club}
         toe, weg = [], []
         for w in nieuw:
+            w["tegen"] = gelijke_naam(w["tegen"])
             w["auto"] = True
             m = handm.get(dag(w))
             if m is not None:
