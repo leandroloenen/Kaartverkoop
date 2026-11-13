@@ -20,22 +20,22 @@ Schalke 04 | https://tickets.schalke04.de/p/heimspiele
 # (klaar) Borussia Dortmund | https://www.bvb.de/de/en/tickets/ticket-information/presale-schedule.html
 
 # Engelse clubs (ronde 1: startpagina met kaartverkoop)
-Aston Villa | https://www.avfc.co.uk/tickets
+# (klaar) Aston Villa | https://www.avfc.co.uk/tickets
 # (later) Newcastle United | https://www.newcastleunited.com/en/tickets
 Manchester United | https://www.manutd.com/en/tickets-and-hospitality
 # (later) Everton | https://www.evertonfc.com/tickets
 # (later) Leeds United | https://www.leedsunited.com/en/news/category/ticketing
 # (later) Nottingham Forest | https://www.nottinghamforest.co.uk/tickets/
 # (later) Brighton | https://www.brightonandhovealbion.com/tickets
-Fulham | https://www.fulhamfc.com/tickets
+# (klaar) Fulham | https://www.fulhamfc.com/tickets
 # (later) AFC Bournemouth | https://www.afcb.co.uk/tickets
 # (later) Coventry City | https://www.ccfc.co.uk/tickets
-Hull City | https://www.hullcity.com/tickets
-Ipswich Town | https://www.itfc.co.uk/tickets
-Sunderland | https://www.safc.com/tickets
+# (klaar) Hull City | https://www.hullcity.com/tickets
+# (klaar) Ipswich Town | https://www.itfc.co.uk/tickets
+# (klaar) Sunderland | https://www.safc.com/tickets
 
-West Ham United | https://www.whufc.com/tickets
-Crystal Palace | https://www.cpfc.co.uk/tickets
+# (klaar) West Ham United | https://www.whufc.com/tickets
+# (klaar) Crystal Palace | https://www.cpfc.co.uk/tickets
 
 # Italiaanse clubs (ronde 6: startpagina met kaartverkoop)
 # (klaar) Inter | https://www.inter.it/en/tickets
