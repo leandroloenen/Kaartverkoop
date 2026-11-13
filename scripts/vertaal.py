@@ -10,6 +10,10 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Seizoenkaarthouders (korting op 2 tickets)": "Season ticket holders (2 discounted tickets)",
+    "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.": "Tribuna Sud tickets are only for SassuoloCard holders.",
+    "Seizoenkaarthouders (fase 1)": "Season ticket holders (phase 1)",
+    "Daarna volgen fases voor Fidelity Card-houders, Premium Members en de vrije verkoop; de data daarvan staan niet in het bericht.": "Later phases for Fidelity Card holders, Premium Members and general sale follow; their dates are not in the announcement.",
     "Bestelperiode leden opent": "Members' ordering period opens",
     "Bestelperiode leden sluit": "Members' ordering period closes",
     "Dag en tijd van de wedstrijd zijn nog niet bekend.": "Day and time of the match are not yet known.",
