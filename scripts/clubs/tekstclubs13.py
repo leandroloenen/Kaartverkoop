@@ -173,8 +173,100 @@ def haal_gae(pagina, test, sleutel="gae"):
     return uit
 
 
+# ---------------------------------------------------------------- 1. FC Köln
+# fc.de laadt het speelschema uit een eigen gegevensbron (matches-by-date). Die staat niet in de zichtbare tekst,
+# maar wel in wat de pagina zelf ophaalt. Verkoopdata staan er niet in: die komen later uit nieuwsartikelen.
+KOELN_NAAM = "1. FC Köln"
+
+
+def _wandel(knoop, comp=""):
+    """Loop door de gegevens en geef (competitienaam, wedstrijd) terug voor elke wedstrijd."""
+    if isinstance(knoop, list):
+        for x in knoop:
+            yield from _wandel(x, comp)
+    elif isinstance(knoop, dict):
+        if "home" in knoop and "away" in knoop and "match_date" in knoop:
+            yield comp, knoop
+            return
+        if "season" in knoop and isinstance(knoop.get("name"), str):
+            comp = knoop["name"]
+        for v in knoop.values():
+            if isinstance(v, (list, dict)):
+                yield from _wandel(v, comp)
+
+
+def parse_koeln(gegevens, club="koeln", bron=""):
+    uit, gezien = [], set()
+    for comp, w in _wandel(gegevens):
+        thuis, uit_team = w["home"].get("name", ""), w["away"].get("name", "")
+        if thuis != KOELN_NAAM or str(w.get("finished", "")).lower() == "yes":
+            continue
+        try:
+            dag, maand, jaar = (int(x) for x in w["match_date"].split("."))
+        except ValueError:
+            continue
+        tijd = (w.get("match_time") or "").strip()
+        if not _toekomst(f"{jaar:04d}-{maand:02d}-{dag:02d}"):
+            continue
+        if re.fullmatch(r"\d{1,2}:\d{2}", tijd) and tijd not in ("00:00", "0:00"):
+            uur, minuut = (int(x) for x in tijd.split(":"))
+            aftrap = t.tekst_fmt(datetime(jaar, maand, dag, uur, minuut))
+            noot = ""
+        else:
+            aftrap = f"{jaar:04d}-{maand:02d}-{dag:02d}"
+            noot = "Dag en tijd van de wedstrijd zijn nog niet bekend."
+        if (aftrap[:10], uit_team) in gezien:
+            continue
+        gezien.add((aftrap[:10], uit_team))
+        comp_naam = "DFB-Pokal" if "pokal" in comp.lower() else ("Bundesliga" if "bundesliga" in comp.lower() else (comp or "Bundesliga"))
+        uit.append(wedstrijd(club, uit_team, comp_naam, aftrap, info=True, noot=noot, bron=bron))
+    return uit
+
+
+def haal_koeln(pagina, test, sleutel="koeln"):
+    import json
+    if test:
+        return parse_koeln(json.load(open(test, encoding="utf-8")), sleutel, pagina)
+    from playwright.sync_api import sync_playwright
+
+    antwoorden = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="de-DE")
+
+            def op_antwoord(r):
+                if "matches-by-date" in r.url:
+                    try:
+                        antwoorden.append(r.json())
+                    except Exception:  # noqa: BLE001
+                        pass
+
+            page.on("response", op_antwoord)
+            page.goto(pagina, wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:  # noqa: BLE001
+                pass
+            page.wait_for_timeout(2000)
+            try:  # het bekerschema zit onder een eigen tabblad
+                page.get_by_text("DFB-Pokal", exact=True).first.click(timeout=5000)
+                page.wait_for_timeout(3000)
+            except Exception:  # noqa: BLE001
+                pass
+        finally:
+            browser.close()
+    uit = []
+    for a in antwoorden:
+        for w in parse_koeln(a, sleutel, pagina):
+            if not any(x["tegen"] == w["tegen"] and x["aftrap"][:10] == w["aftrap"][:10] for x in uit):
+                uit.append(w)
+    return uit
+
+
 CLUBS = [
     ("psv", "PSV", "NL", "PSV", "https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027", haal_psv),
+    ("koeln", "1. FC Köln", "DE", "1. FC Köln", "https://fc.de/mannschaften/maenner/spielplan", haal_koeln),
     ("gae", "Go Ahead Eagles", "NL", "Go Ahead Eagles", "https://www.ga-eagles.nl/category/eerste-selectie/", haal_gae),
 ]
 
