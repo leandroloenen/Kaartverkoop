@@ -36,6 +36,8 @@ TXT = {
     "nl": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "Over", "hoofdmenu": "Hoofdmenu", "menu_open": "Menu openen", "taal_kies": "Taal kiezen",
         "terug": "← Naar het volledige overzicht met filters",
+        "hn_v": "Deze week in de verkoop", "hn_g": "Deze week gespeeld", "hn_alles": "Alles bekijken →",
+        "hn_leeg_v": "Komende 7 dagen geen verkoopstart bekend. Eerstvolgende:", "hn_leeg_g": "De komende 7 dagen staat er geen wedstrijd in ons overzicht.",
         "nieuws": "Deze week", "nieuws_pad": "nieuws", "pad_verkoop": "deze-week-in-de-verkoop", "pad_gespeeld": "deze-week-gespeeld",
         "nw_titel": "Deze week | {site}", "nw_beschr": "Welke voetbalwedstrijden gaan deze week in de kaartverkoop en welke worden er gespeeld? Elke dag bijgewerkt.",
         "nw_h1": "Deze week: kaartverkoop en wedstrijden",
@@ -102,6 +104,8 @@ TXT = {
     "en": {
         "home": "Home", "clubs": "Clubs", "tips": "Tips", "over": "About", "hoofdmenu": "Main menu", "menu_open": "Open menu", "taal_kies": "Choose language",
         "terug": "← Back to the full overview with filters",
+        "hn_v": "On sale this week", "hn_g": "Matches this week", "hn_alles": "See all →",
+        "hn_leeg_v": "No sale start known for the next 7 days. Next up:", "hn_leeg_g": "No matches in our overview for the next 7 days.",
         "nieuws": "This week", "nieuws_pad": "news", "pad_verkoop": "on-sale-this-week", "pad_gespeeld": "matches-this-week",
         "nw_titel": "This week | {site}", "nw_beschr": "Which football matches go on sale this week and which are being played? Updated every day.",
         "nw_h1": "This week: ticket sales and matches",
@@ -809,6 +813,50 @@ def bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, v
     inhoud = f"<h1>{tr('nw_h1')}</h1><p>{tr('nw_intro')}</p>{kaarten}{arch_html}"
     schrijf(pad, pagina(tr("nw_titel", site=sitenaam), tr("nw_beschr"), pad, inhoud, "", "", "nieuws", alt_pad=alt))
 
+    # --- blokjes voor de hoofdpagina (boven de filters)
+    def kort(d):
+        dt = aware(d)
+        dag = DAGEN[TAAL][dt.weekday()]
+        uit = f"{dag[:2] if TAAL == 'nl' else dag[:3].capitalize()} {dt.day} {MAANDEN[TAAL][dt.month - 1][:3]}"
+        return uit + (f" {dt:%H:%M}" if len(d) > 10 else "")
+
+    def hn_rij(tijd, it, extra):
+        naam_html = f'<a href="club/{slugs[it["k"]]}/">{e(it["naam"])}</a>' if it["k"] in slugs else e(it["naam"])
+        return f'<li><span class="nw-t">{e(tijd)}</span><span><b>{naam_html} – {e(it["tegen"])}</b><br><span class="nw-m">{e(extra)}</span></span></li>'
+
+    komende_h = []
+    for k, lijst in toekomst.items():
+        for w in lijst:
+            for f in w.get("fases", []):
+                if aware(f[1]) >= vandaag:
+                    label = f[2] if len(f) > 2 else groepen.get(f[0], {}).get("l", f[0])
+                    komende_h.append({"k": k, "naam": clubs[k]["naam"], "tegen": w["tegen"], "comp": w["comp"], "moment": f[1], "label": label})
+    komende_h.sort(key=lambda x: (x["moment"], x["naam"]))
+    if verkoop7:
+        v_rijen = "".join(hn_rij(kort(x["moment"]), x, f'{x["label"]} · {x["comp"]}') for x in verkoop7[:5])
+        v_meer = len(verkoop7) > 5
+        v_kop_extra = ""
+    else:
+        v_rijen = "".join(hn_rij(kort(x["moment"]), x, f'{x["label"]} · {x["comp"]}') for x in komende_h[:3])
+        v_meer, v_kop_extra = True, f'<p class="nw-m">{tr("hn_leeg_v")}</p>'
+    if wed7:
+        g_rijen = "".join(hn_rij(kort(x["aftrap"]), x, f'{x["comp"]} · {x["status"]}') for x in wed7[:5])
+        g_kop_extra = ""
+    else:
+        g_rijen, g_kop_extra = "", f'<p class="nw-m">{tr("hn_leeg_g")}</p>'
+    css = ("<style>.nw{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:0 0 22px}"
+           ".nw-k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px}"
+           ".nw-k h2{font-size:1.15rem;margin:0 0 6px}.nw-k ul{list-style:none;margin:0;padding:0}"
+           ".nw-k li{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:.93rem}"
+           ".nw-t{min-width:6.5em;font-weight:700;color:var(--soon)}.nw-m{color:var(--mute);font-size:.85rem}"
+           ".nw-k p{margin:4px 0}.nw-k .nw-alle{display:inline-block;margin-top:6px;font-weight:600}</style>")
+    blok_h = (f'{css}<section class="nw">'
+              f'<div class="nw-k"><h2>{tr("hn_v")}</h2>{v_kop_extra}<ul>{v_rijen}</ul>'
+              f'<a class="nw-alle" href="{pad_van(taal, "verkoop")}">{tr("hn_alles")}</a></div>'
+              f'<div class="nw-k"><h2>{tr("hn_g")}</h2>{g_kop_extra}<ul>{g_rijen}</ul>'
+              f'<a class="nw-alle" href="{pad_van(taal, "gespeeld")}">{tr("hn_alles")}</a></div></section>')
+    return blok_h
+
 
 
 def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
@@ -940,7 +988,7 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
             schrijf(pad, pagina(f"{x['titel']} | {sitenaam}", x["beschrijving"], pad, inhoud, "", tips_nav("../../", x["slug"]), "tips", alt_pad=alt))
 
     # ---------- nieuws: deze week in de verkoop en deze week gespeeld
-    bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, vandaag, sitenaam)
+    nieuws_home = bouw_nieuws(taal, ander, data, toekomst, clubs, slugs, mijn_tips, schrijf, vandaag, sitenaam)
 
     # ---------- Over en Privacy
     aantal_w = sum(len(v) for v in toekomst.values())
@@ -973,6 +1021,11 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
         tag = f"<!--GA-->{analytics_tag('')}<!--/GA-->"
         s = re.sub(r"<!--GA-->.*?<!--/GA-->", lambda m: tag, s, flags=re.S) if "<!--GA-->" in s else s.replace("</head>", tag + "</head>", 1)
         s = re.sub(r"<!--CLUBS-->.*?<!--/CLUBS-->", lambda m: blok, s, flags=re.S) if "<!--CLUBS-->" in s else s.replace("</main>", blok + "</main>", 1)
+        nblok = f"<!--NIEUWS-->{nieuws_home}<!--/NIEUWS-->"
+        if "<!--NIEUWS-->" in s:
+            s = re.sub(r"<!--NIEUWS-->.*?<!--/NIEUWS-->", lambda m: nblok, s, flags=re.S)
+        else:
+            s = s.replace('<div class="filters">', nblok + '<div class="filters">', 1)
         if taal == "en":
             for nl_tekst, en_tekst in INDEX_EN:
                 if nl_tekst not in s:
