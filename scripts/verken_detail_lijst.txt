@@ -25,5 +25,7 @@ Heidenheim (tagestickets-artikelen) | https://www.fc-heidenheim.de/tickets-overv
 Heidenheim (nieuws Tickets) | https://www.fc-heidenheim.de/news | link:news/detail/ | 6
 Koeln (filter Tickets) | https://fc.de/aktuelles/news | klik:Tickets | 1
 Koeln (ticketshop) | https://fc.de/ | link:ticketshop | 2
-Gladbach (via startpagina) | https://www.borussia.de/ | link:ticket | 4
-HSV (via startpagina) | https://www.hsv.de/en | link:ticket | 4
+Gladbach (voorbeeldartikel) | https://www.borussia.de/news/ab-freitag-tickets-fuer-bmgsvd-sichern | geen | 1
+Gladbach (artikelen via nieuws) | https://www.borussia.de/news | link:/news/.*ticket | 6
+HSV (ticketinfo en wedstrijden) | https://www.hsv.de/en/tickets/infos | geen | 1
+HSV (via ticketinfo) | https://www.hsv.de/en/tickets/infos | link:/en/tickets/ | 4
