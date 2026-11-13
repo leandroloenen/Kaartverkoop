@@ -44,5 +44,9 @@
 # (klaar) PSV (artikelen via startpagina) | https://www.psv.nl/ | link:media/artikel/.*(verkoop|kaart|ticket) | 5
 
 # Ronde 14: Köln speelschema en voorverkoopkalender (calovo)
-Koeln (voorverkoopkalender) | https://calovo.de/f/fckoeln/1-fc-koeln-vorverkaufsstarts | geen | 1
-Koeln (spielplan) | https://fc.de/mannschaften/maenner/spielplan | geen | 1
+# (klaar) Koeln (voorverkoopkalender) | https://calovo.de/f/fckoeln/1-fc-koeln-vorverkaufsstarts | geen | 1
+# (klaar) Koeln (spielplan) | https://fc.de/mannschaften/maenner/spielplan | geen | 1
+
+# Ronde 15: Köln wedstrijdpagina's (Spieltag-pagina's vanuit het speelschema)
+Koeln (spieltag 10 t/m 14) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/1[0-4]-spieltag | 5
+Koeln (achtelfinale) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/achtelfinale | 1
