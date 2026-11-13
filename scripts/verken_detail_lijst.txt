@@ -1,55 +1,14 @@
-# Detailverkenning (ronde 8, Italie: artikelen met verkoopfases): naam | startadres | modus | aantal | json=WOORD (optioneel)
+# Detailverkenning: naam | startadres | modus | aantal | json=WOORD (optioneel)
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-# (klaar) Torino (ticketnieuws) | https://www.torinofc.it/news/biglietteria | link:info-e-biglietti | 3
-# (klaar) Atalanta (ticketinfo) | https://en.atalanta.it/ticket | link:ticket-info | 3
-# (klaar) AS Roma (match details) | https://www.asroma.com/en/tickets/men | klik:MATCH DETAILS | 2
-# (klaar) Como (wedstrijdpagina) | https://tickets.comofootball.com/ | link:cagliari | 1
-# (klaar) Fiorentina (ticketing) | https://www.acffiorentina.com/it/ | link:/it/ticketing/ | 3
-# (klaar) SS Lazio (via startpagina) | https://www.sslazio.it/en | link:biglietteria | 3
-# (klaar) AC Monza (via startpagina) | https://www.acmonza.com/ | link:ticket | 3
+# Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# Ronde 9 (Bundesliga-rest en Schalke): startpagina openen en de links met het patroon volgen
-# (klaar) Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/event/ | 2
-# (klaar) Wolfsburg (wedstrijd Magdeburg) | https://shop.vfl-wolfsburg.de/tickets/ | link:magdeburg | 1
-# (klaar) Wolfsburg (wedstrijd Kiel) | https://shop.vfl-wolfsburg.de/tickets/ | link:kiel | 1
-# (klaar) Heidenheim (tickets) | https://www.fc-heidenheim.de/tickets-overview | link:ticket | 4
-# (klaar) Gladbach (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/borussia-tickets/de/heim/channel/shop/index | geen | 1
-# (klaar) HSV (ticketshop thuis) | https://www.ticket-onlineshop.com/ols/hsv-heimspiele/en/heimspiele/channel/shop/index | geen | 1
-# (klaar) St. Pauli (heimspiele) | https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele | geen | 1
-# (klaar) Koeln (voorbeeldartikel) | https://fc.de/aktuelles/news/vvk-start-fuer-das-auswaertsspiel-beim-fc-bayern-muenchen-26-27 | geen | 1
-# (klaar) Koeln (artikelen via nieuwsoverzicht) | https://fc.de/aktuelles/news | link:vvk | 4
-
-# Ronde 10: losse wedstrijd- en artikelpagina's
-# (klaar) Schalke 04 (wedstrijdpagina) | https://tickets.schalke04.de/p/heimspiele | link:/events/fc-schalke | 3
-# (klaar) Heidenheim (tagestickets-artikelen) | https://www.fc-heidenheim.de/tickets-overview | link:tagestickets | 3
-# (klaar) Heidenheim (nieuws Tickets) | https://www.fc-heidenheim.de/news | link:news/detail/ | 6
-# (klaar) Koeln (filter Tickets) | https://fc.de/aktuelles/news | klik:Tickets | 1
-# (klaar) Koeln (ticketshop) | https://fc.de/ | link:ticketshop | 2
-# (klaar) Gladbach (voorbeeldartikel) | https://www.borussia.de/news/ab-freitag-tickets-fuer-bmgsvd-sichern | geen | 1
-# (klaar) Gladbach (artikelen via nieuws) | https://www.borussia.de/news | link:/news/.*ticket | 6
-# (klaar) HSV (ticketinfo en wedstrijden) | https://www.hsv.de/en/tickets/infos | geen | 1
-# (klaar) HSV (via ticketinfo) | https://www.hsv.de/en/tickets/infos | link:/en/tickets/ | 4
-
-# Ronde 11: Köln en de geblokkeerde clubs via hun gewone website (niet de ticketshop)
-# (klaar) Koeln (early-bird artikel) | https://fc.de/aktuelles/news/early-bird-vorverkauf-exklusiv-fuer-fc-mitglieder | geen | 1
-# (klaar) PSV (Champions League info) | https://www.psv.nl/ticketinfo/veelgestelde-vragen/informatie-league-phase-uefa-champions-league-2026-2027 | geen | 1
-# (klaar) Go Ahead Eagles (kaartverkoop PSV uit) | https://www.ga-eagles.nl/kaartverkoopinformatie-psv-uit/ | geen | 1
-
-# Ronde 12: Go Ahead Eagles via het nieuwsoverzicht (thuisartikelen), Köln via recente artikelen
-# (klaar) Go Ahead Eagles (thuis TOP Oss) | https://www.ga-eagles.nl/kaartverkoopinformatie-go-ahead-eagles-top-oss/ | geen | 1
-# (klaar) Go Ahead Eagles (nieuwsoverzicht) | https://www.ga-eagles.nl/category/eerste-selectie/ | link:kaartverkoopinformatie | 4
-
-# Ronde 13: PSV nieuwsartikelen over kaartverkoop (bekerduel Vitesse als voorbeeld)
-# (klaar) PSV (voorbeeldartikel beker) | https://www.psv.nl/media/artikel/nieuws-losse-verkoop-bekerduel-komende-maandag-van-start | geen | 1
-# (klaar) PSV (artikelen via startpagina) | https://www.psv.nl/ | link:media/artikel/.*(verkoop|kaart|ticket) | 5
-
-# Ronde 14: Köln speelschema en voorverkoopkalender (calovo)
-# (klaar) Koeln (voorverkoopkalender) | https://calovo.de/f/fckoeln/1-fc-koeln-vorverkaufsstarts | geen | 1
-# (klaar) Koeln (spielplan) | https://fc.de/mannschaften/maenner/spielplan | geen | 1
-
-# Ronde 15: Köln wedstrijdpagina's (Spieltag-pagina's vanuit het speelschema)
-# (klaar) Koeln (spieltag 10 t/m 14) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/1[0-4]-spieltag | 5
-# (klaar) Koeln (achtelfinale) | https://fc.de/mannschaften/maenner/spielplan | link:saison2627/achtelfinale | 1
-
-# Ronde 16: Werder Bremen (tabel met thuiswedstrijden op de clubsite)
-Werder Bremen (heimspiele) | https://www.werder.de/tickets/maenner/heimspiele | geen | 1
+# Ronde 17: Italië afmaken (Sassuolo, Genoa, Udinese, Fiorentina, Napoli, Frosinone): ticketnieuws en wedstrijdpagina's
+Sassuolo (biglietteria nieuws) | https://www.sassuolocalcio.it/biglietteria/news-info/ | geen | 1
+Sassuolo (nieuws met biglietti) | https://www.sassuolocalcio.it/news/ | link:biglietti | 4
+Genoa (partite met biglietti) | https://genoacfc.it/category/partite/ | link:biglietti | 4
+Udinese (nieuws met biglietti) | https://www.udinese.it/news | link:biglietti | 4
+Fiorentina (ticketing) | https://www.acffiorentina.com/ticketing | geen | 1
+Fiorentina (nieuws met biglietti) | https://www.acffiorentina.com/news | link:biglietti | 4
+Napoli (tickets) | https://sscnapoli.it/en/tickets | geen | 1
+Napoli (via tickets) | https://sscnapoli.it/en/tickets | link:ticket | 3
+Frosinone (biglietti) | https://www.frosinonecalcio.com/biglietti | geen | 1
