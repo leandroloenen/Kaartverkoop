@@ -36,7 +36,7 @@ AANTAL_RE = re.compile(r"(?:maximaal|max\.?)\s+(één|een|\d+|twee|drie|vier|vij
 EEN_RE = re.compile(r"\b(één|1)\s+ticket", re.I)
 
 
-NAAM_ALIAS = {"n.e.c. nijmegen": "N.E.C.", "afc ajax": "Ajax", "sc heerenveen": "SC Heerenveen"}
+NAAM_ALIAS = {"n.e.c. nijmegen": "N.E.C.", "afc ajax": "Ajax", "sc heerenveen": "SC Heerenveen", "sc telstar": "Telstar"}
 NIET_HOOFDPLOEG = re.compile(r"\b(vrouwen|women|jong|onder\s?\d+|o\d{2}|u\d{2}|academy|talenten|jeugd)\b", re.I)
 
 
