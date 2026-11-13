@@ -95,7 +95,10 @@ FO_TIJD = re.compile(r"^(\d{1,2})(?:[.:](\d{2}))?\s*(am|pm)$", re.I)
 def parse_forest_artikel(tekst, club="forest", bron=""):
     regels = regels_van(tekst)
     kop = next((FO_TITEL.match(r) for r in regels[:40] if FO_TITEL.match(r)), None)
-    if not kop or kop.group(2).upper() != "H" or any(w in kop.group(1).upper() for w in ("WOMEN", "B TEAM", "U21", "U18")):
+    if not kop or kop.group(2).upper() != "H" or any(w in kop.group(1).upper() for w in ("WOMEN", "B TEAM", "U21", "U18", "U23", "UNDER", "ACADEMY", "PL2")):
+        return None
+    kop_tekst = " ".join(regels[:40]).upper()
+    if "PREMIER LEAGUE 2" in kop_tekst or "UNDER-21" in kop_tekst or "UNDER 21" in kop_tekst:
         return None
     af = FO_AFTRAP.search(tekst)
     if not af:
@@ -138,7 +141,13 @@ def parse_forest_artikel(tekst, club="forest", bron=""):
             fases.append(["lid", d, label])
     fases.sort(key=lambda f: f[1])
     tegen = mooi(kop.group(1))
-    return wedstrijd(club, tegen, "Premier League", aftrap, fases=fases, nu=False, info=not fases,
+    comp = "Premier League"
+    for sleutel_c, naam_c in (("FA CUP", "FA Cup"), ("CARABAO", "EFL Cup"), ("LEAGUE CUP", "EFL Cup"), ("EUROPA LEAGUE", "Europa League"),
+                              ("CONFERENCE LEAGUE", "Conference League"), ("CHAMPIONS LEAGUE", "Champions League"), ("FRIENDLY", "Vriendschappelijk")):
+        if sleutel_c in kop_tekst or sleutel_c in tekst.upper()[:600]:
+            comp = naam_c
+            break
+    return wedstrijd(club, tegen, comp, aftrap, fases=fases, nu=False, info=not fases,
                      noot="Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen." if fases else "", bron=bron)
 
 
