@@ -10,6 +10,7 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Dag en tijd van de wedstrijd zijn nog niet bekend.": "Day and time of the match are not yet known.",
     "Seizoen Club Card-houders": "Season Club Card holders",
     "Betalende leden": "Paying members",
     "Club Card-houders en supportersvereniging": "Club Card holders and supporters' association",
