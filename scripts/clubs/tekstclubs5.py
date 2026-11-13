@@ -98,7 +98,7 @@ def parse_forest_artikel(tekst, club="forest", bron=""):
     if not kop or kop.group(2).upper() != "H" or any(w in kop.group(1).upper() for w in ("WOMEN", "B TEAM", "U21", "U18", "U23", "UNDER", "ACADEMY", "PL2")):
         return None
     kop_tekst = " ".join(regels[:40]).upper()
-    if "PREMIER LEAGUE 2" in kop_tekst or "UNDER-21" in kop_tekst or "UNDER 21" in kop_tekst:
+    if any(x in kop_tekst for x in ("PREMIER LEAGUE 2", "UNDER-21", "UNDER 21", "WOMEN", "WSL", "FEMALE")):
         return None
     af = FO_AFTRAP.search(tekst)
     if not af:
