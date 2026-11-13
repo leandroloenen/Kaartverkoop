@@ -1013,6 +1013,211 @@
    "auto": true
   },
   {
+   "club": "mancity",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Napoli",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T20:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2026-12-12T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Bradford City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-15T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true,
+   "eerst_nu": "2026-11-12"
+  },
+  {
+   "club": "mancity",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-01-03T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-01-16T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Sporting CP",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2027-01-30T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2027-02-20T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2027-03-03T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -1135,7 +1340,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Excelsior-VriendenLoterij-Eredivisie",
@@ -1156,7 +1361,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Bron: Verkoop start 19-11",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -1226,11 +1431,12 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-13"
   },
   {
    "club": "feyenoord",
@@ -1558,7 +1764,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---Feyenoord-VriendenLoterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-10-31"
   },
@@ -1845,11 +2051,12 @@
    "comp": "DFB-Pokal",
    "aftrap": "2026-12-02T18:00",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-13"
   },
   {
    "club": "leverkusen",
@@ -2681,9 +2888,9 @@
    "comp": "La Liga",
    "aftrap": "2026-11-28T14:00",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://en.realbetisbalompie.es/tickets/",
    "auto": true,
    "eerst_nu": "2026-11-10"
@@ -2694,9 +2901,9 @@
    "comp": "Champions League",
    "aftrap": "2026-12-09T18:45",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://en.realbetisbalompie.es/tickets/",
    "auto": true,
    "eerst_nu": "2026-11-11"
@@ -3228,211 +3435,6 @@
    "auto": true
   },
   {
-   "club": "mancity",
-   "tegen": "Fulham",
-   "comp": "Premier League",
-   "aftrap": "2026-11-21T13:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Napoli",
-   "comp": "Champions League",
-   "aftrap": "2026-11-24T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Leeds United",
-   "comp": "Premier League",
-   "aftrap": "2026-12-02T20:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Chelsea",
-   "comp": "Premier League",
-   "aftrap": "2026-12-12T18:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Bradford City",
-   "comp": "Premier League",
-   "aftrap": "2026-12-15T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true,
-   "eerst_nu": "2026-11-12"
-  },
-  {
-   "club": "mancity",
-   "tegen": "Hull City",
-   "comp": "Premier League",
-   "aftrap": "2026-12-19T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2027-01-03T17:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2027-01-16T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Sporting CP",
-   "comp": "Champions League",
-   "aftrap": "2027-01-27T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Arsenal",
-   "comp": "Premier League",
-   "aftrap": "2027-01-30T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Newcastle United",
-   "comp": "Premier League",
-   "aftrap": "2027-02-20T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Everton",
-   "comp": "Premier League",
-   "aftrap": "2027-03-03T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Manchester United",
-   "comp": "Premier League",
-   "aftrap": "2027-03-20T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Crystal Palace",
-   "comp": "Premier League",
-   "aftrap": "2027-04-17T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Brentford",
-   "comp": "Premier League",
-   "aftrap": "2027-05-01T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Liverpool",
-   "comp": "Premier League",
-   "aftrap": "2027-05-08T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Aston Villa",
-   "comp": "Premier League",
-   "aftrap": "2027-05-23T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
    "club": "liverpool",
    "tegen": "Manchester United",
    "comp": "Premier League",
@@ -3788,18 +3790,6 @@
    "info": true,
    "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
    "bron": "https://www.juventus.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "leipzig",
-   "tegen": "FK Mladá Boleslav",
-   "comp": "Freundschaftsspiele",
-   "aftrap": "2026-11-12T11:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop.",
-   "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
   },
   {
@@ -4728,6 +4718,49 @@
   },
   {
    "club": "forest",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16T11:00",
+     "MyForest Pro-leden"
+    ],
+    [
+     "lid",
+     "2026-11-17T11:00",
+     "MyForest Plus-leden"
+    ],
+    [
+     "lid",
+     "2026-11-18T11:00",
+     "MyForest Core-leden, Junior Reds, International Reds"
+    ],
+    [
+     "lid",
+     "2026-11-18T15:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-19T17:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-11-20T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor MyForest-leden. De hoogste lidmaatschappen kunnen als eerste kopen.",
+   "bron": "https://www.nottinghamforest.co.uk/news/2026/november/12/ticket-details---everton--h-/",
+   "auto": true
+  },
+  {
+   "club": "forest",
    "tegen": "Brighton & Hove Albion",
    "comp": "Premier League",
    "aftrap": "2026-12-05T18:30",
@@ -4921,6 +4954,39 @@
    "info": false,
    "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
    "bron": "https://www.afcb.co.uk/news/2026/september/28/information---points-drop--nottingham-forest--h-/",
+   "auto": true
+  },
+  {
+   "club": "bournemouth",
+   "tegen": "AC Milan",
+   "comp": "Europa League",
+   "aftrap": "2027-10-22T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-09-28",
+     "Seizoenkaarthouders (per wedstrijd)"
+    ],
+    [
+     "lid",
+     "2026-09-30T11:00",
+     "Leden met 25+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-01T11:00",
+     "Leden met 12+ thuispunten"
+    ],
+    [
+     "lid",
+     "2026-10-02T11:00",
+     "Leden met 1+ thuispunt"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
+   "bron": "https://www.afcb.co.uk/news/2026/september/28/information---points-drop--ac-milan--h-/",
    "auto": true
   },
   {
@@ -7233,8 +7299,14 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-12",
+ "bijgewerkt": "2026-11-13",
  "SCHATTING": {
+  "mancity": {
+   "n": 1,
+   "mediaan": 33,
+   "min": 33,
+   "max": 33
+  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -7242,10 +7314,10 @@
    "max": 19
   },
   "feyenoord": {
-   "n": 2,
+   "n": 3,
    "mediaan": 23,
    "min": 16,
-   "max": 23
+   "max": 37
   },
   "utrecht": {
    "n": 1,
@@ -7276,6 +7348,12 @@
    "mediaan": 35,
    "min": 25,
    "max": 43
+  },
+  "leverkusen": {
+   "n": 1,
+   "mediaan": 19,
+   "min": 19,
+   "max": 19
   },
   "brentford": {
    "n": 2,
@@ -7312,12 +7390,6 @@
    "mediaan": 22,
    "min": 22,
    "max": 22
-  },
-  "mancity": {
-   "n": 1,
-   "mediaan": 33,
-   "min": 33,
-   "max": 33
   },
   "juventus": {
    "n": 1,
