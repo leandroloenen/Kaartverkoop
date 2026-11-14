@@ -442,6 +442,48 @@
    "land": "DE",
    "mijn": "vrij",
    "url": "https://www.hsv.de/en/tickets/infos"
+  },
+  "werder-bremen": {
+   "naam": "Werder Bremen",
+   "land": "DE",
+   "mijn": "vrij",
+   "url": "https://www.werder.de/tickets/maenner/heimspiele"
+  },
+  "fulham": {
+   "naam": "Fulham",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.fulhamfc.com/news/"
+  },
+  "aston-villa": {
+   "naam": "Aston Villa",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.avfc.co.uk/news/"
+  },
+  "hull-city": {
+   "naam": "Hull City",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.wearehullcity.co.uk/news/"
+  },
+  "sunderland": {
+   "naam": "Sunderland",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.safc.com/news/"
+  },
+  "ipswich-town": {
+   "naam": "Ipswich Town",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.itfc.co.uk/category/tickets"
+  },
+  "crystal-palace": {
+   "naam": "Crystal Palace",
+   "land": "EN",
+   "mijn": "vrij",
+   "url": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/"
   }
  },
  "WEDSTRIJDEN": [
@@ -965,6 +1007,211 @@
    "auto": true
   },
   {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
+  },
+  {
+   "club": "brighton",
+   "tegen": "Universitatea Craiova",
+   "comp": "UEFA",
+   "aftrap": "2026-11-26T18:45",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29T15:05",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Monaco",
+   "comp": "UEFA",
+   "aftrap": "2026-12-10T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2026-12-13T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Ipswich",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T13:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Bournemouth",
+   "comp": "Premier League",
+   "aftrap": "2027-01-05T20:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Manchester City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-02-06T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-02-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2027-03-03T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
+   "club": "brighton",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
+   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -979,7 +1226,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---PSV-VriendenLoterij-Eredivisie-2026---2027",
+   "bron": "",
    "auto": true
   },
   {
@@ -1279,13 +1526,7 @@
    "tegen": "N.E.C.",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T18:45",
-   "fases": [
-    [
-     "vrij",
-     "2026-10-28T11:00",
-     "Verkoop start 28/10, 11:00 uur"
-    ]
-   ],
+   "fases": [],
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
@@ -1488,7 +1729,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---Feyenoord-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-10-31"
   },
@@ -1501,7 +1742,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://ticketshop.willem-ii.nl/verkoop/Willem-II---ADO-Den-Haag-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-10-31"
   },
@@ -1551,6 +1792,11 @@
      "vrij",
      "2026-12-01T09:00",
      "Start verkoop (doelgroep niet vermeld)"
+    ],
+    [
+     "clubkaart",
+     "2026-12-01T09:00",
+     "(Seizoen)clubkaarthouders"
     ]
    ],
    "nu": false,
@@ -1569,6 +1815,11 @@
      "vrij",
      "2026-12-08T09:00",
      "Start verkoop (doelgroep niet vermeld)"
+    ],
+    [
+     "clubkaart",
+     "2026-12-08T09:00",
+     "(Seizoen)clubkaarthouders"
     ]
    ],
    "nu": false,
@@ -1587,11 +1838,6 @@
      "vrij",
      "2026-12-15T09:00",
      "Start verkoop (doelgroep niet vermeld)"
-    ],
-    [
-     "vrij",
-     "2026-12-22T08:59",
-     "22-12-2026 | 9.00 uur"
     ]
    ],
    "nu": false,
@@ -2549,19 +2795,6 @@
    "noot": "",
    "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
    "auto": true
-  },
-  {
-   "club": "union",
-   "tegen": "Bayer Leverkusen",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-20T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
-   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
-   "auto": true,
-   "eerst_nu": "2026-11-11"
   },
   {
    "club": "mainz",
@@ -5881,6 +6114,18 @@
   },
   {
    "club": "lazio",
+   "tegen": "Mgarr United FC",
+   "comp": "Serie A",
+   "aftrap": "2026-11-14T10:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.sslazio.it/it/biglietteria/matches",
+   "auto": true
+  },
+  {
+   "club": "lazio",
    "tegen": "Lecce",
    "comp": "Serie A",
    "aftrap": "2026-11-21T14:00",
@@ -6447,198 +6692,6 @@
    "info": false,
    "noot": "Alleen voor Mags Members; seizoenkaarthouders kunnen kaarten doorsturen of wederverkopen.",
    "bron": "https://www.newcastleunited.com/en/tickets/ticket-information/on-sale-dates",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Universitatea Craiova",
-   "comp": "UEFA",
-   "aftrap": "2026-11-26T18:45",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Newcastle United",
-   "comp": "Premier League",
-   "aftrap": "2026-11-29T15:05",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Monaco",
-   "comp": "UEFA",
-   "aftrap": "2026-12-10T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Everton",
-   "comp": "Premier League",
-   "aftrap": "2026-12-13T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Ipswich",
-   "comp": "Premier League",
-   "aftrap": "2026-12-20T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Manchester United",
-   "comp": "Premier League",
-   "aftrap": "2027-01-02T13:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Bournemouth",
-   "comp": "Premier League",
-   "aftrap": "2027-01-05T20:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Manchester City",
-   "comp": "Premier League",
-   "aftrap": "2027-01-23T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Hull City",
-   "comp": "Premier League",
-   "aftrap": "2027-02-06T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2027-02-20T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Fulham",
-   "comp": "Premier League",
-   "aftrap": "2027-03-03T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Coventry City",
-   "comp": "Premier League",
-   "aftrap": "2027-03-20T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Chelsea",
-   "comp": "Premier League",
-   "aftrap": "2027-04-17T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2027-05-01T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Sunderland",
-   "comp": "Premier League",
-   "aftrap": "2027-05-08T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
-   "auto": true
-  },
-  {
-   "club": "brighton",
-   "tegen": "Liverpool",
-   "comp": "Premier League",
-   "aftrap": "2027-05-23T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten staan in een nieuwsbericht per wedstrijd en worden hier (nog) niet getoond.",
-   "bron": "https://www.brightonandhovealbion.com/fixtures-first-team-men",
    "auto": true
   },
   {
@@ -7217,6 +7270,305 @@
    "auto": true
   },
   {
+   "club": "werder-bremen",
+   "tegen": "Hamburger SV",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-22T17:30",
+   "fases": [
+    [
+     "lid",
+     "2026-09-07T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-09-14T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "Borussia Mönchengladbach",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-27T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-09-21T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-09-28T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "Bayer 04 Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-12-13T19:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-19T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-10-26T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "1. FC Union Berlin",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-10T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-02T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-11-09T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "SV Elversberg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-17T15:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-23T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-11-30T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "SC Freiburg",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-22T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-30T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-12-07T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Of er vrije verkoop komt, is nog niet bekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "FC Köln",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-05",
+   "fases": [
+    [
+     "lid",
+     "2026-12-14T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2026-12-21T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "Borussia Dortmund",
+   "comp": "Bundesliga",
+   "aftrap": "2027-02-19",
+   "fases": [
+    [
+     "lid",
+     "2027-01-11T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-01-18T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "1. FSV Mainz 05",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-02",
+   "fases": [
+    [
+     "lid",
+     "2027-01-18T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-01-25T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "VfB Stuttgart",
+   "comp": "Bundesliga",
+   "aftrap": "2027-03-12",
+   "fases": [
+    [
+     "lid",
+     "2027-01-25T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-02-01T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "Eintracht Frankfurt",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-09",
+   "fases": [
+    [
+     "lid",
+     "2027-02-08T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-02-15T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "FC Bayern München",
+   "comp": "Bundesliga",
+   "aftrap": "2027-04-23",
+   "fases": [
+    [
+     "lid",
+     "2027-02-22T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-03-01T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "werder-bremen",
+   "tegen": "FC Schalke 04",
+   "comp": "Bundesliga",
+   "aftrap": "2027-05-14",
+   "fases": [
+    [
+     "lid",
+     "2027-03-08T10:30",
+     "Bestelperiode leden opent"
+    ],
+    [
+     "lid",
+     "2027-03-15T10:30",
+     "Bestelperiode leden sluit"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "bron": "https://www.werder.de/tickets/maenner/heimspiele",
+   "auto": true
+  },
+  {
    "club": "gae",
    "tegen": "TOP Oss",
    "comp": "KNVB Beker",
@@ -7255,6 +7607,780 @@
    "info": false,
    "noot": "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.",
    "bron": "https://www.sassuolocalcio.it/biglietteria/sassuolo-genoa-info-prevendita-promozione-dedicata-agli-abbonati/",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T10:30",
+     "Leden (max. 2 tickets)"
+    ],
+    [
+     "seizoen",
+     "2026-11-19T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-11-25T10:30",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
+   "auto": true
+  },
+  {
+   "club": "aston-villa",
+   "tegen": "Paris Saint-Germain",
+   "comp": "Champions League",
+   "aftrap": "2026-12-08T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-16T10:30",
+     "Seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-11-19T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "lid",
+     "2026-11-20T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "lid",
+     "2026-11-20T10:30",
+     "Leden (volwassenen en junioren)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
+   "bron": "https://www.avfc.co.uk/news/2026/november/13/ticketing-psg-ticket-details-2627-ucl/",
+   "auto": true
+  },
+  {
+   "club": "aston-villa",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
+   "bron": "https://www.avfc.co.uk/news/2026/november/05/ticketing-everton-home-ticket-details-26-27/",
+   "auto": true
+  },
+  {
+   "club": "aston-villa",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-26T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "vrij",
+     "2026-11-09T10:30",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
+   "bron": "https://www.avfc.co.uk/news/2026/october/22/ticketing-sunderland-ticket-details/",
+   "auto": true
+  },
+  {
+   "club": "aston-villa",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-12-05T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-09T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
+   "bron": "https://www.avfc.co.uk/news/2026/november/06/ticketing-crystal-palace-home-ticket-details-26-27/",
+   "auto": true
+  },
+  {
+   "club": "hull-city",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-12-14T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-03T10:30",
+     "Leden en supporters met aankoopgeschiedenis (max. 2 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden en voor supporters die dit of vorig seizoen een Hull-kaartje kochten.",
+   "bron": "https://www.wearehullcity.co.uk/news/2026/november/02/ticket-details-totthenham-hotspur-h-26-27/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Jagiellonia Białystok",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "seizoen",
+     "2026-10-29T11:00",
+     "Seizoenkaarthouders: plaatsen reserveren"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29T15:05",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-12-13T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-10T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-13T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-17T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-01-05T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-24T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-27T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-12-01T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "ipswich-town",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T13:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-11-23T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden. Eerst is er een loting.",
+   "bron": "https://www.itfc.co.uk/news/2026/november/11/ipswich-town-v-brentford-ticket-details/",
+   "auto": true
+  },
+  {
+   "club": "ipswich-town",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2026-11-28T18:30",
+   "fases": [
+    [
+     "lid",
+     "2026-10-20T13:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-10-23",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "lid",
+     "2026-10-26T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden. Eerst is er een loting.",
+   "bron": "https://www.itfc.co.uk/news/2026/october/16/ticket-details---aston-villa--h-/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29",
+   "fases": [
+    [
+     "lid",
+     "2026-09-28",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-10-01",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-10-06",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-12",
+   "fases": [
+    [
+     "lid",
+     "2026-11-02",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-11-05",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-11-10",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-12-27",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-11-19",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-11-24",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "AFC Bournemouth",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-11-19",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-11-24",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2027-01-06",
+   "fases": [
+    [
+     "lid",
+     "2026-11-30",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-12-03",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-12-08",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-01-23",
+   "fases": [
+    [
+     "lid",
+     "2026-12-14",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2026-12-17",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2026-12-22",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2027-02-06",
+   "fases": [
+    [
+     "lid",
+     "2027-01-04",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-01-07",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-01-12",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-02-10",
+   "fases": [
+    [
+     "lid",
+     "2027-01-04",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-01-07",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-01-12",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2027-02-27",
+   "fases": [
+    [
+     "lid",
+     "2027-01-04",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-01-07",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-01-12",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2027-03-13",
+   "fases": [
+    [
+     "lid",
+     "2027-02-01",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-02-04",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-02-09",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2027-04-10",
+   "fases": [
+    [
+     "lid",
+     "2027-03-01",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-03-04",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-03-09",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01",
+   "fases": [
+    [
+     "lid",
+     "2027-03-29",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-04-01",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-04-06",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2027-05-15",
+   "fases": [
+    [
+     "lid",
+     "2027-04-12",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-04-15",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-04-20",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
+   "auto": true
+  },
+  {
+   "club": "crystal-palace",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2027-05-30",
+   "fases": [
+    [
+     "lid",
+     "2027-04-12",
+     "Gold-leden en Season Ticket+-houders (voorrang)"
+    ],
+    [
+     "lid",
+     "2027-04-15",
+     "Overige leden en seizoenkaarthouders"
+    ],
+    [
+     "lid",
+     "2027-04-20",
+     "Gasttickets voor leden en seizoenkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
+   "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
    "auto": true
   }
  ],
@@ -7774,8 +8900,14 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-13",
+ "bijgewerkt": "2026-11-14",
  "SCHATTING": {
+  "union": {
+   "n": 1,
+   "mediaan": 9,
+   "min": 9,
+   "max": 9
+  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -7847,12 +8979,6 @@
    "mediaan": 34,
    "min": 22,
    "max": 34
-  },
-  "union": {
-   "n": 1,
-   "mediaan": 9,
-   "min": 9,
-   "max": 9
   },
   "barcelona": {
    "n": 9,

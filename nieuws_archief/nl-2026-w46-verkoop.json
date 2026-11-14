@@ -60,6 +60,65 @@
   ]
  },
  {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-02T21:15",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-09T10:30",
+  "label": "Leden (volwassenen en junioren)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-09T10:30",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05T16:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-09T10:30",
+  "label": "Leden (volwassenen en junioren)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "werder-bremen",
+  "naam": "Werder Bremen",
+  "tegen": "1. FC Union Berlin",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-10T15:30",
+  "stadion": "Weserstadion",
+  "stad": "Bremen",
+  "moment": "2026-11-09T10:30",
+  "label": "Bestelperiode leden sluit",
+  "waarom": [
+   "Gespeeld in Weserstadion (Bremen)."
+  ]
+ },
+ {
   "k": "newcastle",
   "naam": "Newcastle United",
   "tegen": "Manchester United",
@@ -176,16 +235,32 @@
   ]
  },
  {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "Manchester United",
+  "comp": "Premier League",
+  "aftrap": "2026-12-12",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-10",
+  "label": "Gasttickets voor leden en seizoenkaarthouders",
+  "waarom": [
+   "Gespeeld in Selhurst Park (Londen)."
+  ]
+ },
+ {
   "k": "wolfsburg",
   "naam": "VfL Wolfsburg",
   "tegen": "1. FC Magdeburg",
   "comp": "2. Bundesliga",
   "aftrap": "2026-12-06T13:30",
-  "stadion": "",
-  "stad": "",
+  "stadion": "Volkswagen Arena",
+  "stad": "Wolfsburg",
   "moment": "2026-11-10T09:45",
   "label": "Seizoenkaarthouders en leden",
-  "waarom": []
+  "waarom": [
+   "Gespeeld in Volkswagen Arena (Wolfsburg)."
+  ]
  },
  {
   "k": "wolfsburg",
@@ -193,12 +268,13 @@
   "tegen": "Holstein Kiel",
   "comp": "2. Bundesliga",
   "aftrap": "2026-11-21T13:00",
-  "stadion": "",
-  "stad": "",
+  "stadion": "Volkswagen Arena",
+  "stad": "Wolfsburg",
   "moment": "2026-11-10T09:45",
   "label": "Vrije verkoop",
   "waarom": [
-   "Ook zonder lidmaatschap te koop (vrije verkoop)."
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Volkswagen Arena (Wolfsburg)."
   ]
  },
  {
@@ -207,11 +283,13 @@
   "tegen": "FC Schalke 04",
   "comp": "Bundesliga",
   "aftrap": "2026-12-11",
-  "stadion": "",
-  "stad": "",
+  "stadion": "Volksparkstadion",
+  "stad": "Hamburg",
   "moment": "2026-11-10T10:00",
   "label": "Ledenvoorverkoop",
-  "waarom": []
+  "waarom": [
+   "Gespeeld in Volksparkstadion (Hamburg)."
+  ]
  },
  {
   "k": "venezia",
@@ -297,6 +375,21 @@
   "waarom": [
    "Ook zonder lidmaatschap te koop (vrije verkoop).",
    "Gespeeld in Cambuur Stadion (Leeuwarden)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Nottingham Forest",
+  "comp": "Premier League",
+  "aftrap": "2026-12-13T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-10T16:00",
+  "label": "Loting voor leden: aanvragen openen",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadium of Light (Sunderland)."
   ]
  },
  {
@@ -521,6 +614,21 @@
   "waarom": [
    "Ook zonder lidmaatschap te koop (vrije verkoop).",
    "Gespeeld in Abe Lenstra Stadion (Heerenveen)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Nottingham Forest",
+  "comp": "Premier League",
+  "aftrap": "2026-12-13T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-13T13:00",
+  "label": "Loting: uitslag en aankoopvenster opent",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadium of Light (Sunderland)."
   ]
  }
 ]

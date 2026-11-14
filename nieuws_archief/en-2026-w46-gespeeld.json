@@ -13,15 +13,30 @@
   ]
  },
  {
+  "k": "lazio",
+  "naam": "SS Lazio",
+  "tegen": "Mgarr United FC",
+  "comp": "Serie A",
+  "aftrap": "2026-11-14T10:00",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at Stadio Olimpico (Rome)."
+  ]
+ },
+ {
   "k": "hsv",
   "naam": "Hamburger SV",
   "tegen": "Hajduk Split",
   "comp": "Friendly",
   "aftrap": "2026-11-15T15:00",
-  "stadion": "",
-  "stad": "",
+  "stadion": "Volksparkstadion",
+  "stad": "Hamburg",
   "status": "Tickets on sale",
-  "waarom": []
+  "waarom": [
+   "Played at Volksparkstadion (Hamburg)."
+  ]
  },
  {
   "k": "forest",
