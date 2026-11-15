@@ -1007,19 +1007,6 @@
    "auto": true
   },
   {
-   "club": "union",
-   "tegen": "Bayer Leverkusen",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-20T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
-   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
-   "auto": true,
-   "eerst_nu": "2026-11-11"
-  },
-  {
    "club": "brighton",
    "tegen": "Universitatea Craiova",
    "comp": "UEFA",
@@ -1855,7 +1842,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://tickets.sctelstar.nl/verkoop/Telstar---PEC-Zwolle-Vriendenloterij-Eredivisie",
+   "bron": "",
    "auto": true
   },
   {
@@ -2795,6 +2782,19 @@
    "noot": "",
    "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
    "auto": true
+  },
+  {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
   },
   {
    "club": "mainz",
@@ -3818,7 +3818,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omónia Nicosia",
+   "tegen": "Omonia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -6114,18 +6114,6 @@
   },
   {
    "club": "lazio",
-   "tegen": "Mgarr United FC",
-   "comp": "Serie A",
-   "aftrap": "2026-11-14T10:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.sslazio.it/it/biglietteria/matches",
-   "auto": true
-  },
-  {
-   "club": "lazio",
    "tegen": "Lecce",
    "comp": "Serie A",
    "aftrap": "2026-11-21T14:00",
@@ -7122,7 +7110,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://www.psv.nl/media/artikel/nieuws-losse-verkoop-bekerduel-komende-maandag-van-start",
+   "bron": "https://www.psv.nl/media/artikel/nieuws-losse-verkoop-bekerduel-komende-maandag-van-start?bc_rec",
    "auto": true
   },
   {
@@ -7652,16 +7640,6 @@
      "seizoen",
      "2026-11-16T10:30",
      "Seizoenkaarthouders"
-    ],
-    [
-     "lid",
-     "2026-11-19T10:30",
-     "Leden (volwassenen en junioren)"
-    ],
-    [
-     "lid",
-     "2026-11-20T10:30",
-     "Leden (volwassenen en junioren)"
     ],
     [
      "lid",
@@ -8900,14 +8878,8 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-14",
+ "bijgewerkt": "2026-11-15",
  "SCHATTING": {
-  "union": {
-   "n": 1,
-   "mediaan": 9,
-   "min": 9,
-   "max": 9
-  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -8979,6 +8951,12 @@
    "mediaan": 34,
    "min": 22,
    "max": 34
+  },
+  "union": {
+   "n": 1,
+   "mediaan": 9,
+   "min": 9,
+   "max": 9
   },
   "barcelona": {
    "n": 9,
