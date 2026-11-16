@@ -1,0 +1,441 @@
+[
+ {
+  "k": "union",
+  "naam": "1. FC Union Berlin",
+  "tegen": "Bayer Leverkusen",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-20T18:30",
+  "stadion": "Stadion An der Alten Försterei",
+  "stad": "Berlijn",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Stadion An der Alten Försterei (Berlijn)."
+  ]
+ },
+ {
+  "k": "wolfsburg",
+  "naam": "VfL Wolfsburg",
+  "tegen": "Holstein Kiel",
+  "comp": "2. Bundesliga",
+  "aftrap": "2026-11-21T13:00",
+  "stadion": "Volkswagen Arena",
+  "stad": "Wolfsburg",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Volkswagen Arena (Wolfsburg)."
+  ]
+ },
+ {
+  "k": "mancity",
+  "naam": "Manchester City",
+  "tegen": "Fulham",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T13:30",
+  "stadion": "Etihad Stadium",
+  "stad": "Manchester",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Etihad Stadium (Manchester)."
+  ]
+ },
+ {
+  "k": "lazio",
+  "naam": "SS Lazio",
+  "tegen": "Lecce",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T14:00",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Olimpico (Rome)."
+  ]
+ },
+ {
+  "k": "como",
+  "naam": "Como 1907",
+  "tegen": "Cagliari FC",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T15:00",
+  "stadion": "Stadio Giuseppe Sinigaglia",
+  "stad": "Como",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Stadio Giuseppe Sinigaglia (Como)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "SC Paderborn 07",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-21T15:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "frankfurt",
+  "naam": "Eintracht Frankfurt",
+  "tegen": "TSG Hoffenheim",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-21T15:30",
+  "stadion": "Deutsche Bank Park",
+  "stad": "Frankfurt",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Deutsche Bank Park (Frankfurt)."
+  ]
+ },
+ {
+  "k": "bournemouth",
+  "naam": "AFC Bournemouth",
+  "tegen": "Nottingham Forest",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Vitality Stadium",
+  "stad": "Bournemouth",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Vitality Stadium (Bournemouth)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "chelsea",
+  "naam": "Chelsea",
+  "tegen": "Leeds United",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Stamford Bridge",
+  "stad": "Londen",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Stamford Bridge (Londen)."
+  ]
+ },
+ {
+  "k": "coventry",
+  "naam": "Coventry City",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Coventry Building Society Arena",
+  "stad": "Coventry",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Coventry Building Society Arena (Coventry)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Ipswich Town",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "nec",
+  "naam": "N.E.C.",
+  "tegen": "PSV",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-21T16:30",
+  "stadion": "Stadion De Goffert",
+  "stad": "Nijmegen",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Stadion De Goffert (Nijmegen)."
+  ]
+ },
+ {
+  "k": "parma",
+  "naam": "Parma Calcio 1913",
+  "tegen": "Roma",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T18:00",
+  "stadion": "Stadio Ennio Tardini",
+  "stad": "Parma",
+  "status": "Verkoop start maandag 16 november 2026 om 11:00",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Stadio Ennio Tardini (Parma)."
+  ]
+ },
+ {
+  "k": "newcastle",
+  "naam": "Newcastle United",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T18:30",
+  "stadion": "St James' Park",
+  "stad": "Newcastle upon Tyne",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in St James' Park (Newcastle upon Tyne)."
+  ]
+ },
+ {
+  "k": "schalke",
+  "naam": "Schalke 04",
+  "tegen": "VfB Stuttgart",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-21T18:30",
+  "stadion": "Veltins-Arena",
+  "stad": "Gelsenkirchen",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Veltins-Arena (Gelsenkirchen)."
+  ]
+ },
+ {
+  "k": "sevilla",
+  "naam": "Sevilla FC",
+  "tegen": "Real Betis Balompié",
+  "comp": "La Liga",
+  "aftrap": "2026-11-21T18:30",
+  "stadion": "Estadio Ramón Sánchez-Pizjuán",
+  "stad": "Sevilla",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Estadio Ramón Sánchez-Pizjuán (Sevilla)."
+  ]
+ },
+ {
+  "k": "utrecht",
+  "naam": "FC Utrecht",
+  "tegen": "SC Cambuur",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-21T18:45",
+  "stadion": "Stadion Galgenwaard",
+  "stad": "Utrecht",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Stadion Galgenwaard (Utrecht)."
+  ]
+ },
+ {
+  "k": "feyenoord",
+  "naam": "Feyenoord",
+  "tegen": "Excelsior Rotterdam",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-21T18:45",
+  "stadion": "Kuip",
+  "stad": "Rotterdam",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Te combineren met Sparta Rotterdam - AZ in Rotterdam op zondag 22 november.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Kuip (Rotterdam)."
+  ]
+ },
+ {
+  "k": "stpauli",
+  "naam": "FC St. Pauli",
+  "tegen": "Bochum",
+  "comp": "2. Bundesliga",
+  "aftrap": "2026-11-21T20:30",
+  "stadion": "Millerntor-Stadion",
+  "stad": "Hamburg",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Millerntor-Stadion (Hamburg)."
+  ]
+ },
+ {
+  "k": "groningen",
+  "naam": "FC Groningen",
+  "tegen": "SC Heerenveen",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-21T21:00",
+  "stadion": "Euroborg",
+  "stad": "Groningen",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Euroborg (Groningen)."
+  ]
+ },
+ {
+  "k": "telstar",
+  "naam": "SC Telstar",
+  "tegen": "PEC Zwolle",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-21T21:00",
+  "stadion": "BUKO Stadion",
+  "stad": "Velsen-Zuid",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in BUKO Stadion (Velsen-Zuid)."
+  ]
+ },
+ {
+  "k": "juventus",
+  "naam": "Juventus",
+  "tegen": "Venezia",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T11:30",
+  "stadion": "Allianz Stadium",
+  "stad": "Turijn",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Allianz Stadium (Turijn)."
+  ]
+ },
+ {
+  "k": "twente",
+  "naam": "FC Twente",
+  "tegen": "Willem II",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-22T12:15",
+  "stadion": "Grolsch Veste",
+  "stad": "Enschede",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Grolsch Veste (Enschede)."
+  ]
+ },
+ {
+  "k": "barcelona",
+  "naam": "FC Barcelona",
+  "tegen": "Villarreal",
+  "comp": "La Liga",
+  "aftrap": "2026-11-22T14:00",
+  "stadion": "Camp Nou",
+  "stad": "Barcelona",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Camp Nou (Barcelona)."
+  ]
+ },
+ {
+  "k": "ajax",
+  "naam": "Ajax",
+  "tegen": "ADO Den Haag",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-22T14:30",
+  "stadion": "Johan Cruijff ArenA",
+  "stad": "Amsterdam",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Johan Cruijff ArenA (Amsterdam)."
+  ]
+ },
+ {
+  "k": "sparta",
+  "naam": "Sparta Rotterdam",
+  "tegen": "AZ",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-22T14:30",
+  "stadion": "Sparta Stadion Het Kasteel",
+  "stad": "Rotterdam",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Te combineren met Feyenoord - Excelsior Rotterdam in Rotterdam op zaterdag 21 november.",
+   "Gespeeld in Sparta Stadion Het Kasteel (Rotterdam)."
+  ]
+ },
+ {
+  "k": "us-sassuolo",
+  "naam": "US Sassuolo",
+  "tegen": "Genoa",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T15:00",
+  "stadion": "Mapei Stadium",
+  "stad": "Reggio Emilia",
+  "status": "Verkoop start dinsdag 17 november 2026 om 16:00",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Mapei Stadium (Reggio Emilia)."
+  ]
+ },
+ {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "Manchester United",
+  "comp": "Premier League",
+  "aftrap": "2026-11-22T17:30",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Anfield (Liverpool)."
+  ]
+ },
+ {
+  "k": "werder-bremen",
+  "naam": "Werder Bremen",
+  "tegen": "Hamburger SV",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-22T17:30",
+  "stadion": "Weserstadion",
+  "stad": "Bremen",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Gespeeld in Weserstadion (Bremen)."
+  ]
+ },
+ {
+  "k": "milan",
+  "naam": "AC Milan",
+  "tegen": "Frosinone",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T18:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in San Siro (Milaan)."
+  ]
+ },
+ {
+  "k": "osasuna",
+  "naam": "CA Osasuna",
+  "tegen": "Málaga CF",
+  "comp": "La Liga",
+  "aftrap": "2026-11-22T18:30",
+  "stadion": "Estadio El Sadar",
+  "stad": "Pamplona",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Gespeeld in Estadio El Sadar (Pamplona)."
+  ]
+ },
+ {
+  "k": "atalanta",
+  "naam": "Atalanta",
+  "tegen": "Inter",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T20:45",
+  "stadion": "Gewiss Stadium",
+  "stad": "Bergamo",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Gewiss Stadium (Bergamo)."
+  ]
+ }
+]

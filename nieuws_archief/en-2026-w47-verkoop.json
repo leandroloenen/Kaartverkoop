@@ -1,0 +1,709 @@
+[
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-27",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-16",
+  "label": "Gold Members and Season Ticket+ holders (priority)",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Tottenham Hotspur - Bournemouth in Londen on Saturday 26 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "AFC Bournemouth",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-16",
+  "label": "Gold Members and Season Ticket+ holders (priority)",
+  "waarom": [
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "psv",
+  "naam": "PSV",
+  "tegen": "Vitesse",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-16T21:00",
+  "stadion": "Philips Stadion",
+  "stad": "Eindhoven",
+  "moment": "2026-11-16",
+  "label": "Paying members",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Philips Stadion (Eindhoven)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Bologna",
+  "comp": "Serie A",
+  "aftrap": "2026-11-27T20:45",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-16T10:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Pierluigi Penzo (Venetië)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Paris Saint-Germain",
+  "comp": "Champions League",
+  "aftrap": "2026-12-08T21:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-16T10:30",
+  "label": "Season ticket holders",
+  "waarom": [
+   "European night at Villa Park.",
+   "Played at Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "newcastle",
+  "naam": "Newcastle United",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2026-12-06T15:00",
+  "stadion": "St James' Park",
+  "stad": "Newcastle upon Tyne",
+  "moment": "2026-11-16T11:00",
+  "label": "Mags Member sale",
+  "waarom": [
+   "Played at St James' Park (Newcastle upon Tyne)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-16T11:00",
+  "label": "MyForest Pro members",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "parma",
+  "naam": "Parma Calcio 1913",
+  "tegen": "Roma",
+  "comp": "Serie A",
+  "aftrap": "2026-11-21T18:00",
+  "stadion": "Stadio Ennio Tardini",
+  "stad": "Parma",
+  "moment": "2026-11-16T11:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Ennio Tardini (Parma)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Leeds United",
+  "comp": "Premier League",
+  "aftrap": "2027-01-16T16:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-16T11:00",
+  "label": "One Hotspur+ (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2027-01-30T16:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-16T11:00",
+  "label": "One Hotspur+ (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Manchester City",
+  "comp": "Premier League",
+  "aftrap": "2027-02-10T21:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-16T11:00",
+  "label": "One Hotspur+ (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "willem2",
+  "naam": "Willem II",
+  "tegen": "Excelsior",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-01T20:00",
+  "stadion": "Koning Willem II Stadion",
+  "stad": "Tilburg",
+  "moment": "2026-11-16T13:00",
+  "label": "Season ticket holders (extra tickets)",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Koning Willem II Stadion (Tilburg)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Ipswich Town",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-16T14:00",
+  "label": "Phase 1: My Leeds Priority members (first come, first served)",
+  "waarom": [
+   "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "psv",
+  "naam": "PSV",
+  "tegen": "Vitesse",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-16T21:00",
+  "stadion": "Philips Stadion",
+  "stad": "Eindhoven",
+  "moment": "2026-11-17",
+  "label": "Club Card holders and supporters' association",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Philips Stadion (Eindhoven)."
+  ]
+ },
+ {
+  "k": "wolfsburg",
+  "naam": "VfL Wolfsburg",
+  "tegen": "Arminia Bielefeld",
+  "comp": "2. Bundesliga",
+  "aftrap": "2026-12-19T13:00",
+  "stadion": "Volkswagen Arena",
+  "stad": "Wolfsburg",
+  "moment": "2026-11-17T09:45",
+  "label": "Season ticket holders and members",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Volkswagen Arena (Wolfsburg)."
+  ]
+ },
+ {
+  "k": "gladbach",
+  "naam": "Borussia Mönchengladbach",
+  "tegen": "SV Darmstadt 98",
+  "comp": "DFB-Pokal",
+  "aftrap": "2026-12-01T20:45",
+  "stadion": "Borussia-Park",
+  "stad": "Mönchengladbach",
+  "moment": "2026-11-17T10:00",
+  "label": "General sale",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Borussia-Park (Mönchengladbach)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Brighton & Hove Albion",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-17T10:30",
+  "label": "Members (max. 2 tickets)",
+  "waarom": [
+   "Can be combined with Crystal Palace - Arsenal in Londen on Sunday 27 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Ipswich Town",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-17T11:00",
+  "label": "Phase 2: ballot opens for members who bought 11+ home games last season",
+  "waarom": [
+   "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-17T11:00",
+  "label": "MyForest Plus members",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Leeds United",
+  "comp": "Premier League",
+  "aftrap": "2027-01-16T16:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-17T11:00",
+  "label": "One Hotspur (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2027-01-30T16:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-17T11:00",
+  "label": "One Hotspur (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "tottenham",
+  "naam": "Tottenham Hotspur",
+  "tegen": "Manchester City",
+  "comp": "Premier League",
+  "aftrap": "2027-02-10T21:00",
+  "stadion": "Tottenham Hotspur Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-17T11:00",
+  "label": "One Hotspur (members) - 10.00 UK time",
+  "waarom": [
+   "Played at Tottenham Hotspur Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "ipswich-town",
+  "naam": "Ipswich Town",
+  "tegen": "Brentford",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Portman Road",
+  "stad": "Ipswich",
+  "moment": "2026-11-17T13:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Played at Portman Road (Ipswich)."
+  ]
+ },
+ {
+  "k": "brentford",
+  "naam": "Brentford",
+  "tegen": "Newcastle United",
+  "comp": "Premier League",
+  "aftrap": "2026-12-19T13:30",
+  "stadion": "Gtech Community Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-17T15:00",
+  "label": "All members with 300+ taps",
+  "waarom": [
+   "Played at Gtech Community Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Nottingham Forest",
+  "comp": "Premier League",
+  "aftrap": "2026-12-13T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-17T16:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-17T16:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Hull City",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T16:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-17T16:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "us-sassuolo",
+  "naam": "US Sassuolo",
+  "tegen": "Genoa",
+  "comp": "Serie A",
+  "aftrap": "2026-11-22T15:00",
+  "stadion": "Mapei Stadium",
+  "stad": "Reggio Emilia",
+  "moment": "2026-11-17T16:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Mapei Stadium (Reggio Emilia)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-18T11:00",
+  "label": "MyForest Core members, Junior Reds, International Reds",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-18T15:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-27",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-19",
+  "label": "Other members and season ticket holders",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Tottenham Hotspur - Bournemouth in Londen on Saturday 26 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "AFC Bournemouth",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-19",
+  "label": "Other members and season ticket holders",
+  "waarom": [
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "stuttgart",
+  "naam": "VfB Stuttgart",
+  "tegen": "FC Augsburg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-09T15:30",
+  "stadion": "MHPArena",
+  "stad": "Stuttgart",
+  "moment": "2026-11-19T09:00",
+  "label": "Members (Mitglieder) (max. 2 tickets)",
+  "waarom": [
+   "Played at MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Brighton & Hove Albion",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-19T10:30",
+  "label": "Season ticket holders (extra tickets)",
+  "waarom": [
+   "Can be combined with Crystal Palace - Arsenal in Londen on Sunday 27 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Ipswich Town",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-19T11:00",
+  "label": "Phase 3: ballot opens for all members",
+  "waarom": [
+   "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "willem2",
+  "naam": "Willem II",
+  "tegen": "Excelsior",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-01T20:00",
+  "stadion": "Koning Willem II Stadion",
+  "stad": "Tilburg",
+  "moment": "2026-11-19T13:00",
+  "label": "Club card holders en WII Kings members",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Koning Willem II Stadion (Tilburg)."
+  ]
+ },
+ {
+  "k": "brentford",
+  "naam": "Brentford",
+  "tegen": "Newcastle United",
+  "comp": "Premier League",
+  "aftrap": "2026-12-19T13:30",
+  "stadion": "Gtech Community Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-19T15:00",
+  "label": "All members with 30+ taps",
+  "waarom": [
+   "Played at Gtech Community Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "stpauli",
+  "naam": "FC St. Pauli",
+  "tegen": "Hertha BSC",
+  "comp": "2. Bundesliga",
+  "aftrap": "2026-12-19T13:00",
+  "stadion": "Millerntor-Stadion",
+  "stad": "Hamburg",
+  "moment": "2026-11-19T15:00",
+  "label": "Members' presale",
+  "waarom": [
+   "Played at Millerntor-Stadion (Hamburg)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-19T17:00",
+  "label": "Ballot: results and purchase window open",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "ipswich-town",
+  "naam": "Ipswich Town",
+  "tegen": "Brentford",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Portman Road",
+  "stad": "Ipswich",
+  "moment": "2026-11-20",
+  "label": "Ballot: results and purchase window open",
+  "waarom": [
+   "Played at Portman Road (Ipswich)."
+  ]
+ },
+ {
+  "k": "psv",
+  "naam": "PSV",
+  "tegen": "Vitesse",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-16T21:00",
+  "stadion": "Philips Stadion",
+  "stad": "Eindhoven",
+  "moment": "2026-11-20",
+  "label": "General sale",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Philips Stadion (Eindhoven)."
+  ]
+ },
+ {
+  "k": "heerenveen",
+  "naam": "SC Heerenveen",
+  "tegen": "Go Ahead Eagles",
+  "comp": "Eredivisie",
+  "aftrap": "2026-12-12T18:45",
+  "stadion": "Abe Lenstra Stadion",
+  "stad": "Heerenveen",
+  "moment": "2026-11-20T09:00",
+  "label": "Sales start (audience not stated)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Abe Lenstra Stadion (Heerenveen)."
+  ]
+ },
+ {
+  "k": "stuttgart",
+  "naam": "VfB Stuttgart",
+  "tegen": "SG Dynamo Dresden",
+  "comp": "DFB-Pokal",
+  "aftrap": "2026-12-01T18:00",
+  "stadion": "MHPArena",
+  "stad": "Stuttgart",
+  "moment": "2026-11-20T09:00",
+  "label": "Members (Mitglieder) (max. 2 tickets)",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Played at MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Paris Saint-Germain",
+  "comp": "Champions League",
+  "aftrap": "2026-12-08T21:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-20T10:30",
+  "label": "Members (adults and juniors)",
+  "waarom": [
+   "European night at Villa Park.",
+   "Played at Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "moment": "2026-11-20T11:00",
+  "label": "Second sale (members)",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-20T13:00",
+  "label": "Ballot: results and purchase window open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Hull City",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T16:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-20T13:00",
+  "label": "Ballot: results and purchase window open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "brentford",
+  "naam": "Brentford",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-11-23T21:00",
+  "stadion": "Gtech Community Stadium",
+  "stad": "Londen",
+  "moment": "2026-11-20T15:00",
+  "label": "Season ticket holders (+1 extra ticket)",
+  "waarom": [
+   "Played at Gtech Community Stadium (Londen)."
+  ]
+ }
+]
