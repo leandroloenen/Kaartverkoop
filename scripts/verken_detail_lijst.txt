@@ -2,4 +2,12 @@
 # modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
 # Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
 
-# (geen openstaande rondes)
+# Eredivisie: berichten per thuiswedstrijd
+ADO Den Haag (overzicht) | https://adodenhaag.nl/nl/tickets/kaartverkoop | link:ticketinfo | 6
+ADO Den Haag (voorbeeld) | https://adodenhaag.nl/nl/tickets/kaartverkoop/wedstrijden/ticketinfo/1359-ado-den-haag-fc-utrecht-1359 | geen | 1
+Sparta (voorbeeld) | https://www.sparta-rotterdam.nl/ticketinformatie-26-27-sparta-rotterdam-az/ | geen | 1
+Sparta (nieuws) | https://www.sparta-rotterdam.nl/nieuws/ | link:ticketinformatie | 6
+
+# Brighton: bericht per wedstrijd
+Brighton (voorbeeld) | https://www.brightonandhovealbion.com/media-article/tickets-on-sale-for-brentford-and-newcastle-at-the-amex | geen | 1
+Brighton (nieuws) | https://www.brightonandhovealbion.com/news | link:tickets-on-sale | 6
