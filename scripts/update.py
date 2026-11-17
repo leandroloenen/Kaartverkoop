@@ -65,7 +65,8 @@ def voeg_fases_samen(oud, nieuw):
         return bool(re.search(r"\d{1,2}[-/.]\d{1,2}[-/.,\s]|^(Verkoop start|Vanaf)", naam_van(f)))
 
     behouden = [f for f in oud["fases"] if not any(zelfde_fase(f, n) for n in nieuw["fases"])
-                and "doelgroep onbekend" not in naam_van(f) and not ruwe_tekst(f)]
+                and "doelgroep onbekend" not in naam_van(f) and not ruwe_tekst(f)
+                and not ("niet vermeld" in naam_van(f) and any(n[1][:10] == f[1][:10] for n in nieuw["fases"]))]
     per_fase = {(f[0], naam_van(f)): f for f in behouden}
     for f in nieuw["fases"]:
         per_fase[(f[0], naam_van(f))] = f
