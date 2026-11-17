@@ -10,6 +10,9 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "InViola Premium Card-houders": "InViola Premium Card holders",
+    "Wedstrijddag (tarief op de dag zelf)": "Matchday (matchday price)",
+    "Leden (1896 Membership Programme)": "Members (1896 Membership Programme)",
     "ADO Den Haag+ en ADO Den Haag Kids": "ADO Den Haag+ and ADO Den Haag Kids",
     "Reguliere kaartverkoop": "Regular ticket sale",
     "In de eerste week kun je alleen kopen met ADO Den Haag+.": "In the first week you can only buy with ADO Den Haag+.",
