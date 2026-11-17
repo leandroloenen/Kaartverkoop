@@ -28,6 +28,10 @@ def verrijk(basis, extra):
                 w["fases"] = sorted(w["fases"] + nieuw, key=lambda f: f[1])
                 if nieuw and w.get("noot", "").startswith("Nu in de verkoop; startmoment onbekend"):
                     w["noot"] = ""
+                if nieuw and w.get("info"):
+                    w["info"] = False
+                if nieuw and w.get("noot", "").startswith("Verkoopmomenten staan in een nieuwsbericht"):
+                    w["noot"] = ""
                 if e.get("bron") and not w.get("bron"):
                     w["bron"] = e["bron"]
                 break
