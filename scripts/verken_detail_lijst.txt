@@ -1,13 +1,9 @@
-# Detailverkenning: naam | startadres | modus | aantal | json=WOORD (optioneel)
-# modus: geen = alleen deze pagina | link:PATROON = links met PATROON openen | klik:PATROON = knoppen met die tekst aanklikken
-# Regels die klaar zijn mogen hieronder weg; zet een # voor een regel om hem over te slaan.
-
-# Eredivisie: berichten per thuiswedstrijd
-ADO Den Haag (overzicht) | https://adodenhaag.nl/nl/tickets/kaartverkoop | link:ticketinfo | 6
-ADO Den Haag (voorbeeld) | https://adodenhaag.nl/nl/tickets/kaartverkoop/wedstrijden/ticketinfo/1359-ado-den-haag-fc-utrecht-1359 | geen | 1
-Sparta (voorbeeld) | https://www.sparta-rotterdam.nl/ticketinformatie-26-27-sparta-rotterdam-az/ | geen | 1
-Sparta (nieuws) | https://www.sparta-rotterdam.nl/nieuws/ | link:ticketinformatie | 6
-
-# Brighton: bericht per wedstrijd
-Brighton (voorbeeld) | https://www.brightonandhovealbion.com/media-article/tickets-on-sale-for-brentford-and-newcastle-at-the-amex | geen | 1
-Brighton (nieuws) | https://www.brightonandhovealbion.com/news | link:tickets-on-sale | 6
+# Detailverkenning: controle van de echte tekst voor Fiorentina en Udinese (naam | startadres | modus | aantal)
+Fiorentina (nieuws) | https://www.acffiorentina.com/en/news/info-biglietti-fiorentina-vs-cagliari-161126 | geen | 1
+Fiorentina (ticketpagina) | https://www.acffiorentina.com/en/ticketing/c62c6951-aaee-4827-9c86-1a9b3b5960d4 | geen | 1
+Fiorentina (overzicht) | https://www.acffiorentina.com/en/news | link:info-biglietti-fiorentina | 4
+Udinese (bericht) | https://www.udinese.it/Apps/WebObjects/Udinese.woa/wa/viewSection?id=93200&lang=eng | link:viewSection | 6
+Genoa (Fiorentina) | https://genoacfc.it/2026/09/28/prevendita-genoa-fiorentina-tariffe-promozionali-dna-genoa-per-intero-e-u16/ | geen | 1
+Genoa (Venezia en Juventus) | https://genoacfc.it/2026/10/16/prevendita-biglietti-vs-venezia-e-juventus-tariffe-promo-con-dna-genoa/ | geen | 1
+Genoa (Milan) | https://genoacfc.it/2026/10/29/entusiasmo-e-clima-disteso-al-pio-preparazione-in-vista-di-lecce-biglietti-in-vendita-per-il-milan/ | geen | 1
+Genoa (nieuws) | https://genoacfc.it/category/news/ | link:prevendita | 6
