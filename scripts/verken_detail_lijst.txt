@@ -1,10 +1,12 @@
-# Detailverkenning ronde 2 Spanje: zoeken naar de wedstrijdlijst (naam | startadres | modus | aantal)
-Atletico (hub EN) | https://en.atleticodemadrid.com/entradas | link:/entradas/ | 12
-Atletico (primer equipo) | https://www.atleticodemadrid.com/entradas/primer-equipo | link:/entradas/entrada/atletico-de-madrid- | 6
-Espanyol (volgende wedstrijden) | https://www.rcdespanyol.com/en/nextmatches | link:/en/new/ | 8
-Levante (opnieuw) | https://www.levanteud.com/en/news/tickets-or-levante-ud-activates-ticket-sales-for-atletico-de-madrid | geen | 1
-Malaga (opnieuw) | https://www.malagacf.com/en/news/ya-disponibles-online-para-socios-las-entradas-del-malagadepor | geen | 1
-Athletic (Real Madrid) | https://www.athletic-club.eus/en/club-athletic/news/2026/11/12/club-athletic-tickets-for-athletic-club-vs-real-madrid-laliga-md15/ | geen | 1
-Athletic (Espanyol) | https://www.athletic-club.eus/en/club-athletic/news/2026/10/29/club-athletic-tickets-for-athletic-club-vs-rcd-espanyol-laliga-md13/ | geen | 1
-Athletic (Real Sociedad) | https://www.athletic-club.eus/en/news/2026/10/12/tickets-for-athletic-club-vs-real-sociedad-on-general-sale-laliga-md11/ | geen | 1
-Athletic (nieuws) | https://www.athletic-club.eus/en/news/ | link:tickets-for-athletic-club | 8
+# Detailverkenning Engeland: Liverpool, Manchester City, Arsenal (naam | startadres | modus | aantal)
+Liverpool (overzicht) | https://www.liverpoolfc.com/tickets/ticket-info | link:/tickets/ticket-info/2026-27/ | 10
+Liverpool (Porto) | https://www.liverpoolfc.com/tickets/ticket-info/2026-27/ticket-info-european-cup-home/porto-home-cl-2627 | geen | 1
+Liverpool (Bournemouth) | https://www.liverpoolfc.com/tickets/ticket-info/2026-27/league-cup-home/bournemouth-home-carabao-cup-2627 | geen | 1
+Liverpool (Premier League) | https://www.liverpoolfc.com/news/all-red-ticket-sale-details-confirmed-for-remaining-premier-league-home-games | geen | 1
+Man City (overzicht) | https://www.mancity.com/tickets/mens | link:/tickets/ | 8
+Man City (Fulham-bericht) | https://www.mancity.com/news/mens/manchester-city-fulham-premier-league-ticket-news-63929317 | geen | 1
+Man City (alle wedstrijden) | https://www.mancity.com/tickets/mens/202627-all-matches-on-sale | geen | 1
+Arsenal (tickets) | https://www.arsenal.com/tickets | link:ticket | 8
+Arsenal (ticket news) | https://arsenal.com/node/111735 | geen | 1
+Arsenal (Newcastle) | https://www.arsenal.com/ticket-information/ticket-information-arsenal-v-newcastle-united-aCz1s2e8wunL | geen | 1
+Arsenal (overzicht ticketinformatie) | https://www.arsenal.com/ticket-information | link:/ticket-information/ | 8
