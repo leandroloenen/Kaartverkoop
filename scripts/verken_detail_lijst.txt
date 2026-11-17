@@ -1,9 +1,10 @@
-# Detailverkenning: Spanje-rest, voorbeeldberichten (naam | startadres | modus | aantal)
-Atletico (voorbeeld) | https://en.atleticodemadrid.com/entradas/entrada/atletico-de-madrid-betis-22 | geen | 1
-Atletico (nieuws) | https://www.atleticodemadrid.com/noticias | link:entradas | 6
-Espanyol (voorbeeld) | https://www.rcdespanyol.com/en/new/tickets-available-for-game-against-villarreal-cf/20899 | geen | 1
-Espanyol (nieuws) | https://www.rcdespanyol.com/en/news | link:tickets | 6
-Rayo (voorbeeld) | https://www.rayovallecano.es/noticias/informacion-de-las-entradas-para-el-rayo-vallecano-elche-cf-2026 | geen | 1
-Alaves (voorbeeld) | https://deportivoalaves.com/es/noticias/fc-barcelona-rc-celta-y-real-racing-en-preventa-exclusiva-para-abonados | geen | 1
-Levante (voorbeeld) | https://www.levanteud.com/en/news/tickets-or-levante-ud-activates-ticket-sales-for-atletico-de-madrid | geen | 1
-Malaga (voorbeeld) | https://www.malagacf.com/en/news/ya-disponibles-online-para-socios-las-entradas-del-malagadepor | geen | 1
+# Detailverkenning ronde 2 Spanje: zoeken naar de wedstrijdlijst (naam | startadres | modus | aantal)
+Atletico (hub EN) | https://en.atleticodemadrid.com/entradas | link:/entradas/ | 12
+Atletico (primer equipo) | https://www.atleticodemadrid.com/entradas/primer-equipo | link:/entradas/entrada/atletico-de-madrid- | 6
+Espanyol (volgende wedstrijden) | https://www.rcdespanyol.com/en/nextmatches | link:/en/new/ | 8
+Levante (opnieuw) | https://www.levanteud.com/en/news/tickets-or-levante-ud-activates-ticket-sales-for-atletico-de-madrid | geen | 1
+Malaga (opnieuw) | https://www.malagacf.com/en/news/ya-disponibles-online-para-socios-las-entradas-del-malagadepor | geen | 1
+Athletic (Real Madrid) | https://www.athletic-club.eus/en/club-athletic/news/2026/11/12/club-athletic-tickets-for-athletic-club-vs-real-madrid-laliga-md15/ | geen | 1
+Athletic (Espanyol) | https://www.athletic-club.eus/en/club-athletic/news/2026/10/29/club-athletic-tickets-for-athletic-club-vs-rcd-espanyol-laliga-md13/ | geen | 1
+Athletic (Real Sociedad) | https://www.athletic-club.eus/en/news/2026/10/12/tickets-for-athletic-club-vs-real-sociedad-on-general-sale-laliga-md11/ | geen | 1
+Athletic (nieuws) | https://www.athletic-club.eus/en/news/ | link:tickets-for-athletic-club | 8
