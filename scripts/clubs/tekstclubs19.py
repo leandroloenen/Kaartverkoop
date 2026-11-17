@@ -1,4 +1,6 @@
-"""Verkoopfases uit clubberichten voor ACF Fiorentina en Udinese (Engelstalige berichten per thuiswedstrijd).
+"""Clubs uit Italië en Spanje met Engelstalige clubberichten of wedstrijdpagina's: ACF Fiorentina, Udinese en RCD Espanyol.
+
+Fiorentina/Udinese: verkoopfases uit berichten per thuiswedstrijd.
 
 - Fiorentina: 'Info biglietti Fiorentina vs X' en de ticketpagina per wedstrijd met 'Phase 1: InViola Premium Card', 'Phase 2: General sale', 'Phase 3: Matchday'.
 - Udinese: bericht per wedstrijd met 'Phase 1' (leden van het 1896 Membership Programme) en 'Phase 2' (vrije verkoop).
@@ -11,6 +13,7 @@ from types import SimpleNamespace
 from . import tekst as t
 from .tekstclubs import wedstrijd
 from .tekstclubs12 import _jaar_voor_fase
+from .tekstclubs5 import toekomst
 from .tekstclubs14 import EN_MAAND, _toekomst
 
 MND = "|".join(m.capitalize() for m in EN_MAAND)
@@ -167,9 +170,47 @@ def haal_udinese(pagina, test, sleutel="udinese-calcio"):
     return uit
 
 
+# ---------------------------------------------------------------- RCD Espanyol (alle thuiswedstrijden uit 'Next matches'; de knop BUY TICKETS staat bij elke thuiswedstrijd en zegt niets over de verkoopstatus)
+ES_RIJ = re.compile(
+    r"^([A-ZÀ-Ý][A-ZÀ-Ý.' -]+?)\s+VS\s+([A-ZÀ-Ý][A-ZÀ-Ý.' -]+?)\s*\n\s*\nMATCHDAY\s+(\d+)\s+·[^|\n]*\|\s*[A-Z]+,\s*([A-Z]+)\s+(\d{1,2}),\s*(\d{4})"
+    r"(?:\s+(\d{1,2}):(\d{2}))?([^\n]*)\n(\s*\n\s*BUY TICKETS)?", re.M)
+KLEIN = {"fc", "cf", "ud", "ca", "rc", "rcd", "sd", "cd", "ad"}
+ES_NAMEN = {"RC CELTA": "Celta de Vigo", "REAL RACING CLUB": "Real Racing Club", "CA OSASUNA": "Osasuna", "RC DEPORTIVO DE A CORUÑA": "Deportivo de La Coruña"}
+
+
+def _naam(s):
+    s = s.strip()
+    if s in ES_NAMEN:
+        return ES_NAMEN[s]
+    return " ".join(w.lower() if w.lower() in ("de", "la") else w.upper() if w.lower() in KLEIN else w.capitalize() for w in s.split())
+
+
+def parse_espanyol(tekst, club="rcd-espanyol", bron=""):
+    uit = []
+    for m in ES_RIJ.finditer(tekst):
+        if m.group(1).strip() != "RCD ESPANYOL":
+            continue
+        mnd = t.MAANDEN_EN.get(m.group(4).lower()[:3])
+        if not mnd:
+            continue
+        dag = f"{int(m.group(6)):04d}-{mnd:02d}-{int(m.group(5)):02d}"
+        aftrap = dag + (f"T{int(m.group(7)):02d}:{m.group(8)}" if m.group(7) else "")
+        if not toekomst(dag + "T23:59"):
+            continue
+        uit.append(wedstrijd(club, _naam(m.group(2)), "La Liga", aftrap, nu=False, info=True,
+                             noot="Aanvangstijd nog niet bevestigd." if not m.group(7) else "", bron=bron))
+    return uit
+
+
+def haal_espanyol(pagina, test, sleutel="rcd-espanyol"):
+    test = os.environ.get("RCD_ESPANYOL_TEKST_BESTAND", "")
+    return parse_espanyol(t.haal_tekst(pagina, test, locale="en-GB"), sleutel, pagina)
+
+
 CLUBS = [
     ("acf-fiorentina", "ACF Fiorentina", "IT", "Fiorentina (artikelen)", "https://www.acffiorentina.com/en/news", haal_fiorentina),
     ("udinese-calcio", "Udinese Calcio", "IT", "Udinese (artikelen)", "https://www.udinese.it/eng/news", haal_udinese),
+    ("rcd-espanyol", "RCD Espanyol", "ES", "Espanyol (wedstrijden)", "https://www.rcdespanyol.com/en/nextmatches", haal_espanyol),
 ]
 
 
