@@ -8,7 +8,7 @@ import os
 import time
 from types import SimpleNamespace
 
-from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, tekstclubs, tekstclubs2, tekstclubs3, tekstclubs4, tekstclubs5, tekstclubs6, tekstclubs7, tekstclubs8, tekstclubs9, tekstclubs10, tekstclubs11, tekstclubs12, ticketing_es, tymes4, tekstclubs13, tekstclubs14, aanvullen, tekstclubs15, tekstclubs16, tekstclubs17
+from . import brentford, dortmund, feyenoord, groningen, leverkusen, nec, tekstclubs, tekstclubs2, tekstclubs3, tekstclubs4, tekstclubs5, tekstclubs6, tekstclubs7, tekstclubs8, tekstclubs9, tekstclubs10, tekstclubs11, tekstclubs12, ticketing_es, tymes4, tekstclubs13, tekstclubs14, aanvullen, tekstclubs15, tekstclubs16, tekstclubs17, tekstclubs18
 
 TYMES4_CLUBS = {
     "utrecht": ("FC Utrecht", "https://ticketing.fcutrecht.nl/dashboard", "FC Utrecht"),
@@ -23,7 +23,8 @@ TYMES4_CLUBS = {
 }
 
 # Clubs waarvan de clubsite ook artikelen over de kaartverkoop heeft: die vullen de fases aan (zie aanvullen.py).
-EXTRA_FASES = {"willem2": tekstclubs15.haal_willem2_artikelen}
+EXTRA_FASES = {"willem2": tekstclubs15.haal_willem2_artikelen, "sparta": tekstclubs18.haal_sparta_artikelen,
+               "ado": tekstclubs18.haal_ado_artikelen, "brighton": tekstclubs18.haal_brighton_artikelen}
 
 
 def _maak(sleutel, naam, pagina, thuis=None):
@@ -46,3 +47,25 @@ def _maak(sleutel, naam, pagina, thuis=None):
 
 ALLE = ([nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.items()]
         + [dortmund, groningen, leverkusen, brentford] + ticketing_es.ALLE + tekstclubs.ALLE + tekstclubs2.ALLE + tekstclubs3.ALLE + tekstclubs4.ALLE + tekstclubs5.ALLE + tekstclubs6.ALLE + tekstclubs7.ALLE + tekstclubs8.ALLE + tekstclubs9.ALLE + tekstclubs10.ALLE + tekstclubs11.ALLE + tekstclubs12.ALLE + tekstclubs13.ALLE + tekstclubs14.ALLE + tekstclubs16.ALLE + tekstclubs17.ALLE)
+
+
+def _verrijk_niet_tymes4(module):
+    """ADO en Brighton hebben een eigen verzamelaar voor de wedstrijden; die vullen we hier aan met de artikelen."""
+    oud = module.haal_op
+
+    def haal_op():
+        uit = oud()
+        extra = EXTRA_FASES.get(module.CLUB)
+        if uit and extra:
+            try:
+                uit = aanvullen.verrijk(uit, extra())
+            except Exception as fout:  # noqa: BLE001
+                print(f"[{module.CLUB}] artikelen overgeslagen: {str(fout).splitlines()[0][:150]}")
+        return uit
+
+    module.haal_op = haal_op
+
+
+for _m in ALLE:
+    if _m.CLUB in ("ado", "brighton"):
+        _verrijk_niet_tymes4(_m)
