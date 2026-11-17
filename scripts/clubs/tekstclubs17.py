@@ -6,6 +6,7 @@ Alle tijden zijn Engelse tijd; wij rekenen ze om naar Nederlandse tijd.
 """
 import os
 import re
+import unicodedata
 from types import SimpleNamespace
 
 from . import tekst as t
@@ -273,6 +274,121 @@ def _uit_artikelen(sleutel, parser, naam, starts, patroon):
         if w and not any(x["tegen"] == w["tegen"] and x["aftrap"] == w["aftrap"] for x in uit):
             uit.append(w)
     return uit
+
+
+# ---------------------------------------------------------------- Liverpool (fases uit de ticket-info-pagina per Europese/League Cup-thuiswedstrijd)
+LFC_TIJD = re.compile(r"(\d{1,2})(?:[.:](\d{2}))?\s*(am|pm)\s+" + DAGEN + r"\s+" + MD, re.I)
+LFC_INFO = {"guaranteed": "gegarandeerd", "non guaranteed": "niet gegarandeerd", "subject to availability": "afhankelijk van beschikbaarheid"}
+LFC_MAP = {"Champions League": ("ticket-info-european-cup-home", "cl"), "EFL Cup": ("league-cup-home", "carabao-cup")}
+
+
+def _lfc_slug(naam):
+    n = "".join(c for c in unicodedata.normalize("NFD", naam) if unicodedata.category(c) != "Mn").lower()
+    n = re.sub(r"^(fc|afc|ac|as|sc)\s+", "", n)
+    return re.sub(r"[^a-z0-9]+", "-", n).strip("-")
+
+
+def parse_liverpool_info(tekst, basis_aftrap, bron=""):
+    """Fases uit 'Sale Eligibility / Sale Starts / Sale Ends / Information' (eerste tabel; rolstoeltabel slaan we over) + loting voor inwoners."""
+    regels = [r.strip() for r in tekst.splitlines() if r.strip()]
+    uit, i = [], 0
+    try:
+        i = regels.index("Sale Eligibility") + 4
+    except ValueError:
+        return []
+    while i + 3 < len(regels) and not regels[i].lower().startswith(("we advise", "supporters who", "potential")):
+        wie, start, _einde, info = regels[i], regels[i + 1], regels[i + 2], regels[i + 3]
+        i += 4
+        m = LFC_TIJD.search(start)
+        if not m:
+            continue
+        h, mi = uur(m.group(1), m.group(2), m.group(3))
+        f = moment(m.group(4), m.group(5), h, mi, terug=20)
+        if not f:
+            continue
+        zin = LFC_INFO.get(info.lower(), "")
+        extra = f" ({zin})" if zin else ""
+        if wie.lower().startswith("priority"):
+            uit.append(["seizoen", f, "Priority Right Holders" + extra])
+        else:
+            tm = re.search(r"balance of (\d+)", wie, re.I)
+            if tm:
+                uit.append(["lid", f, f"Leden met tegoed {tm.group(1)}" + extra])
+    loting = re.search(r"Registration Opens.*?\n\s*(\d{1,2}(?:[.:]\d{2})?\s*(?:am|pm)\s+" + DAGEN + r"\s+" + MD + ")", "\n".join(regels), re.I | re.S)
+    if loting:
+        m = LFC_TIJD.search(loting.group(1))
+        if m:
+            h, mi = uur(m.group(1), m.group(2), m.group(3))
+            f = moment(m.group(4), m.group(5), h, mi, terug=20)
+            if f:
+                uit.append(["vrij", f, "Loting voor inwoners (L-postcode): aanmelden opent"])
+    return sorted(uit, key=lambda f: f[1])
+
+
+def haal_liverpool_extra():
+    """Zoek de Europese en League Cup-thuiswedstrijden van Liverpool en lees hun ticket-info-pagina."""
+    from .tekstclubs3 import parse_liverpool
+    pagina = t.adres_uit_lijst("Liverpool", "https://www.liverpoolfc.com/tickets")
+    uit = []
+    for w in parse_liverpool(t.haal_tekst(pagina, os.environ.get("LIVERPOOL_TEKST_BESTAND", "")), "liverpool", pagina):
+        if w["comp"] not in LFC_MAP:
+            continue
+        map_, code = LFC_MAP[w["comp"]]
+        url = f"https://www.liverpoolfc.com/tickets/ticket-info/2026-27/{map_}/{_lfc_slug(w['tegen'])}-home-{code}-2627"
+        try:
+            tekst = t.haal_tekst(url, os.environ.get("LIVERPOOL_INFO_TEKST_BESTAND", ""))
+        except Exception:  # noqa: BLE001 - pagina bestaat (nog) niet
+            continue
+        fases = parse_liverpool_info(tekst, w["aftrap"], url)
+        if fases:
+            uit.append(wedstrijd("liverpool", w["tegen"], w["comp"], w["aftrap"], fases=fases, bron=url))
+    return uit
+
+
+# ---------------------------------------------------------------- Manchester City (wie mag welke wedstrijd kopen, uit de pagina 'All matches on sale')
+CITY_ALIAS = {"man utd": "manchester united", "spurs": "tottenham hotspur", "villa": "aston villa", "forest": "nottingham forest"}
+CITY_NOTEN = (
+    (r"3\+", "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid."),
+    (r"season ticket members and official members", "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3)."),
+    (r"official members", "Alle leden (Premium, Matchday, Junior); 1 ticket per lid."),
+)
+
+
+def parse_city_criteria(tekst):
+    """Rijen 'Man Utd, Arsenal<TAB>Official Members who have purchased 3+ ...<TAB>1' -> {tegenstander (klein): notitie}."""
+    uit = {}
+    for regel in tekst.splitlines():
+        delen = [d.strip() for d in regel.split("\t") if d.strip()]
+        if len(delen) < 3 or "," not in delen[0] and len(delen[0].split()) > 3:
+            continue
+        crit = delen[1].lower()
+        noot = next((n for pat, n in CITY_NOTEN if re.search(pat, crit)), None)
+        if not noot:
+            continue
+        for naam in delen[0].split(","):
+            naam = naam.strip().lower()
+            if naam:
+                uit[CITY_ALIAS.get(naam, naam)] = noot
+    return uit
+
+
+def noten_city(basis):
+    """Zet vóór de bestaande notitie van elke Premier League-thuiswedstrijd wie kaarten mag kopen."""
+    from .aanvullen import zelfde_tegenstander
+    adres = "https://www.mancity.com/tickets/mens/202627-all-matches-on-sale"
+    try:
+        crit = parse_city_criteria(t.haal_tekst(adres, os.environ.get("MANCITY_CRITERIA_TEKST_BESTAND", "")))
+    except Exception:  # noqa: BLE001
+        return basis
+    for w in basis:
+        if w["comp"] != "Premier League":
+            continue
+        for naam, noot in crit.items():
+            if zelfde_tegenstander(w["tegen"], naam):
+                if noot not in w.get("noot", ""):
+                    w["noot"] = (noot + " " + w.get("noot", "")).strip()
+                break
+    return basis
 
 
 CLUBS = [
