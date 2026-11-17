@@ -10,6 +10,13 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "ADO Den Haag+ en ADO Den Haag Kids": "ADO Den Haag+ and ADO Den Haag Kids",
+    "Reguliere kaartverkoop": "Regular ticket sale",
+    "In de eerste week kun je alleen kopen met ADO Den Haag+.": "In the first week you can only buy with ADO Den Haag+.",
+    "Seizoenclubkaarthouders (SCC)": "Season club card holders (SCC)",
+    "Max. 4 tickets per persoon.": "Max. 4 tickets per person.",
+    "Seizoenkaarthouders, 1901 Club-leden en gasten van MyAlbion+-leden": "Season ticket holders, 1901 Club members and guests of MyAlbion+ members",
+    "MyAlbion Baller en Little Albion": "MyAlbion Baller and Little Albion",
     "Start verkoop (doelgroep niet vermeld)": "Sales start (audience not stated)",
     "Seizoenkaarthouders (korting op 2 tickets)": "Season ticket holders (2 discounted tickets)",
     "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.": "Tribuna Sud tickets are only for SassuoloCard holders.",
