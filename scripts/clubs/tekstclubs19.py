@@ -47,10 +47,17 @@ def _moment_in(blok, aftrap):
     return f"{j:04d}-{m:02d}-{int(dag):02d}T{h:02d}:{mi}"
 
 
+AF_KICKOFF = re.compile(r"(\d{1,2}):(\d{2})\s*(?:CET\s+)?kick-?off.{0,80}?\bon\s+(?:" + DAG + r",?\s+)?(" + MND + r")\s+(\d{1,2}),?\s+(\d{4})", re.I | re.S)
+
+
 def _aftrap(tekst, tegen_kop):
     """Aftrap uit 'Monday 7 December 2026, 20:45' of 'Monday, December 7, 2026 ... 20:45' vlak bij de kop met de wedstrijd."""
     start = tegen_kop.end()
-    stuk = tekst[start:start + 600]
+    stuk = tekst[start:start + 900]
+    af = AF_KICKOFF.search(stuk)
+    if af:
+        mm = EN_MAAND[af.group(3).lower()]
+        return f"{int(af.group(5)):04d}-{mm:02d}-{int(af.group(4)):02d}T{int(af.group(1)):02d}:{af.group(2)}"
     fase = re.search(r"Phase\s*\d", stuk, re.I)
     if fase:
         stuk = stuk[:fase.start()]
@@ -80,7 +87,7 @@ def _blokken(tekst, kop_regex):
 
 
 # ---------------------------------------------------------------- Fiorentina
-FI_KOP = re.compile(r"Fiorentina\s+(?:vs\.?|v|-)\s+([A-Z][A-Za-z.' ]+?)\s*(?:,|\n|Serie A|\(|Coppa)", re.I)
+FI_KOP = re.compile(r"Fiorentina\s+(?:vs\.?|v|-)\s+([A-Z][A-Za-z.' ]+?)(?:\s+ticket|\s*,|\s*\n|\s*Serie A|\s*\(|\s*Coppa)", re.I)
 FI_FASE = r"Phase\s*(\d)\s*[:\-–]?\s*([^\n]*)"
 
 
@@ -95,7 +102,7 @@ def parse_fiorentina(tekst, club="acf-fiorentina", bron=""):
     fases = []
     for m, blok in _blokken(tekst, FI_FASE):
         titel = m.group(2).lower()
-        blok = blok[:700]
+        blok = m.group(2) + "\n" + blok[:700]
         start = _moment_in(blok, aftrap)
         if not start:
             continue
@@ -114,7 +121,7 @@ def parse_fiorentina(tekst, club="acf-fiorentina", bron=""):
 def haal_fiorentina(pagina, test, sleutel="acf-fiorentina"):
     testmap = os.environ.get("FIORENTINA_DETAIL_MAP", "")
     uit = []
-    for adres, tekst in t.haal_paginas(pagina, r"/en/news/info-biglietti-fiorentina-vs-[a-z0-9-]+$|/en/ticketing/[0-9a-f]{8}-[0-9a-f]{4}-", 10, testmap):
+    for adres, tekst in t.haal_paginas(pagina, r"/en/news/info-biglietti-fiorentina-vs-[a-z0-9-]+$", 10, testmap):
         w = parse_fiorentina(tekst, sleutel, adres)
         if w and not any(x["tegen"] == w["tegen"] and x["aftrap"][:10] == w["aftrap"][:10] for x in uit):
             uit.append(w)
@@ -122,7 +129,7 @@ def haal_fiorentina(pagina, test, sleutel="acf-fiorentina"):
 
 
 # ---------------------------------------------------------------- Udinese
-UD_KOP = re.compile(r"Udinese\s+(?:v|vs\.?|-)\s+([A-Z][A-Za-z.' ]+?)\s+(?:at|,|\n|Bluenergy)", re.I)
+UD_KOP = re.compile(r"Udinese\s+(?:v|vs\.?|-)\s+([A-Z][A-Za-z.' ]+?)(?:\s+ticket|\s+at\b|\s*,|\s*\n|\s+Bluenergy)", re.I)
 UD_FASE = r"Phase\s*(\d)\s*[:\-–]?\s*([^\n]*)"
 
 
@@ -136,11 +143,11 @@ def parse_udinese(tekst, club="udinese-calcio", bron=""):
         return None
     fases = []
     for m, blok in _blokken(tekst, UD_FASE):
-        blok = blok[:600]
+        blok = m.group(2) + "\n" + blok[:600]
         start = _moment_in(blok, aftrap)
         if not start:
             continue
-        laag = (m.group(2) + " " + blok).lower()
+        laag = blok.lower()
         if "member" in laag or "1896" in laag:
             fases.append(["lid", start, "Leden (1896 Membership Programme)"])
         elif "general" in laag or "public" in laag:
@@ -153,7 +160,7 @@ def parse_udinese(tekst, club="udinese-calcio", bron=""):
 def haal_udinese(pagina, test, sleutel="udinese-calcio"):
     testmap = os.environ.get("UDINESE_DETAIL_MAP", "")
     uit = []
-    for adres, tekst in t.haal_paginas(pagina, r"viewSection\?id=\d+", 10, testmap):
+    for adres, tekst in t.haal_paginas(pagina, r"viewSection\?id=\d+", 15, testmap):
         w = parse_udinese(tekst, sleutel, adres)
         if w and not any(x["tegen"] == w["tegen"] and x["aftrap"][:10] == w["aftrap"][:10] for x in uit):
             uit.append(w)
@@ -162,7 +169,7 @@ def haal_udinese(pagina, test, sleutel="udinese-calcio"):
 
 CLUBS = [
     ("acf-fiorentina", "ACF Fiorentina", "IT", "Fiorentina (artikelen)", "https://www.acffiorentina.com/en/news", haal_fiorentina),
-    ("udinese-calcio", "Udinese Calcio", "IT", "Udinese (artikelen)", "https://www.udinese.it/Apps/WebObjects/Udinese.woa/wa/viewSection?id=93200&lang=eng", haal_udinese),
+    ("udinese-calcio", "Udinese Calcio", "IT", "Udinese (artikelen)", "https://www.udinese.it/eng/news", haal_udinese),
 ]
 
 
