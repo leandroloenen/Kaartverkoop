@@ -11,7 +11,7 @@
   "label": "Gold Members and Season Ticket+ holders (priority)",
   "waarom": [
    "City derby: both clubs are from Londen.",
-   "Can be combined with Tottenham Hotspur - Bournemouth in Londen on Saturday 26 December.",
+   "Can be combined with Fulham - Brighton & Hove Albion in Londen on Saturday 26 December.",
    "Played at Selhurst Park (Londen)."
   ]
  },
@@ -223,6 +223,21 @@
   ]
  },
  {
+  "k": "acf-fiorentina",
+  "naam": "ACF Fiorentina",
+  "tegen": "Cagliari",
+  "comp": "Serie A",
+  "aftrap": "2026-12-07T20:45",
+  "stadion": "Stadio Artemio Franchi",
+  "stad": "Florence",
+  "moment": "2026-11-17T10:00",
+  "label": "InViola Premium Card holders",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Artemio Franchi (Florence)."
+  ]
+ },
+ {
   "k": "gladbach",
   "naam": "Borussia Mönchengladbach",
   "tegen": "SV Darmstadt 98",
@@ -236,6 +251,21 @@
    "Cup tie: the winner goes through, so it is all or nothing.",
    "Available without a membership (general sale).",
    "Played at Borussia-Park (Mönchengladbach)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Sassuolo",
+  "comp": "Serie A",
+  "aftrap": "2026-12-07T18:30",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-17T10:00",
+  "label": "Season ticket holders (priority)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Pierluigi Penzo (Venetië)."
   ]
  },
  {
@@ -413,6 +443,21 @@
   ]
  },
  {
+  "k": "utrecht",
+  "naam": "FC Utrecht",
+  "tegen": "SC Heerenveen",
+  "comp": "Eredivisie",
+  "aftrap": "2026-12-19T21:00",
+  "stadion": "Stadion Galgenwaard",
+  "stad": "Utrecht",
+  "moment": "2026-11-18T09:30",
+  "label": "Sales start (audience not stated)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadion Galgenwaard (Utrecht)."
+  ]
+ },
+ {
   "k": "forest",
   "naam": "Nottingham Forest",
   "tegen": "Everton",
@@ -452,7 +497,7 @@
   "label": "Other members and season ticket holders",
   "waarom": [
    "City derby: both clubs are from Londen.",
-   "Can be combined with Tottenham Hotspur - Bournemouth in Londen on Saturday 26 December.",
+   "Can be combined with Fulham - Brighton & Hove Albion in Londen on Saturday 26 December.",
    "Played at Selhurst Park (Londen)."
   ]
  },
@@ -631,6 +676,21 @@
   "waarom": [
    "Cup tie: the winner goes through, so it is all or nothing.",
    "Played at MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Sassuolo",
+  "comp": "Serie A",
+  "aftrap": "2026-12-07T18:30",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-20T10:00",
+  "label": "Supporter Card holders (discounted)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Pierluigi Penzo (Venetië)."
   ]
  },
  {

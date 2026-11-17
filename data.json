@@ -484,6 +484,18 @@
    "land": "EN",
    "mijn": "vrij",
    "url": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/"
+  },
+  "acf-fiorentina": {
+   "naam": "ACF Fiorentina",
+   "land": "IT",
+   "mijn": "vrij",
+   "url": "https://www.acffiorentina.com/en/news"
+  },
+  "rcd-espanyol": {
+   "naam": "RCD Espanyol",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://www.rcdespanyol.com/en/nextmatches"
   }
  },
  "WEDSTRIJDEN": [
@@ -1199,222 +1211,6 @@
    "auto": true
   },
   {
-   "club": "como",
-   "tegen": "Cagliari FC",
-   "comp": "Serie A",
-   "aftrap": "2026-11-21T15:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "AEK Athens FC",
-   "comp": "Champions League",
-   "aftrap": "2026-11-24T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Juventus FC",
-   "comp": "Serie A",
-   "aftrap": "2026-11-29T20:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "US Cremonese",
-   "comp": "Coppa Italia",
-   "aftrap": "2026-12-02T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Bologna FC 1909",
-   "comp": "Serie A",
-   "aftrap": "2026-12-12T20:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "US Lecce",
-   "comp": "Serie A",
-   "aftrap": "2027-01-03T15:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "SS Lazio",
-   "comp": "Serie A",
-   "aftrap": "2027-01-10T12:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Paris Saint-Germain",
-   "comp": "Champions League",
-   "aftrap": "2027-01-20T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "SSC Napoli",
-   "comp": "Serie A",
-   "aftrap": "2027-01-24",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "AC Monza",
-   "comp": "Serie A",
-   "aftrap": "2027-02-07",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Torino FC",
-   "comp": "Serie A",
-   "aftrap": "2027-02-21",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "AC Milan",
-   "comp": "Serie A",
-   "aftrap": "2027-02-28",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Udinese",
-   "comp": "Serie A",
-   "aftrap": "2027-03-14",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "ACF Fiorentina",
-   "comp": "Serie A",
-   "aftrap": "2027-04-04",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Frosinone",
-   "comp": "Serie A",
-   "aftrap": "2027-04-18",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Inter",
-   "comp": "Serie A",
-   "aftrap": "2027-05-02",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Atalanta BC",
-   "comp": "Serie A",
-   "aftrap": "2027-05-16",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
-   "club": "como",
-   "tegen": "Genoa CFC",
-   "comp": "Serie A",
-   "aftrap": "2027-05-30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://tickets.comofootball.com/",
-   "auto": true
-  },
-  {
    "club": "gladbach",
    "tegen": "SV Darmstadt 98",
    "comp": "DFB-Pokal",
@@ -1435,6 +1231,39 @@
    "info": false,
    "noot": "",
    "bron": "https://www.borussia.de/news/ab-freitag-tickets-fuer-bmgsvd-sichern",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T10:30",
+     "Leden (max. 2 tickets)"
+    ],
+    [
+     "seizoen",
+     "2026-11-19T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-11-25T10:30",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
    "auto": true
   },
   {
@@ -1634,7 +1463,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
@@ -1735,14 +1564,43 @@
    "eerst_nu": "2026-11-12"
   },
   {
+   "club": "utrecht",
+   "tegen": "SC Heerenveen",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-19T21:00",
+   "fases": [
+    [
+     "vrij",
+     "2026-11-18T09:30",
+     "Start verkoop (doelgroep niet vermeld)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
    "club": "sparta",
    "tegen": "AZ",
    "comp": "Eredivisie",
    "aftrap": "2026-11-22T14:30",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-21T11:00",
+     "Seizoenclubkaarthouders (SCC)"
+    ],
+    [
+     "clubkaart",
+     "2026-10-22T11:00",
+     "Clubkaarthouders (CC)"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---AZ-VriendenLoterij-Eredivisie",
    "auto": true
   },
@@ -1751,10 +1609,21 @@
    "tegen": "N.E.C.",
    "comp": "Eredivisie",
    "aftrap": "2026-12-05T18:45",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-28T11:00",
+     "Seizoenclubkaarthouders (SCC)"
+    ],
+    [
+     "clubkaart",
+     "2026-10-29T11:00",
+     "Clubkaarthouders (CC)"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "https://ticketshop.sparta-rotterdam.nl/verkoop/Sparta-Rotterdam---N.E.C.-VriendenLoterij-Eredivisie",
    "auto": true
   },
@@ -1768,12 +1637,22 @@
      "vrij",
      "2026-11-25T11:00",
      "Start verkoop (doelgroep niet vermeld)"
+    ],
+    [
+     "seizoen",
+     "2026-11-25T11:00",
+     "Seizoenclubkaarthouders (SCC)"
+    ],
+    [
+     "clubkaart",
+     "2026-11-26T11:00",
+     "Clubkaarthouders (CC)"
     ]
    ],
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://www.sparta-rotterdam.nl/ticketinformatie-26-27-sparta-rotterdam-excelsior/",
    "auto": true
   },
   {
@@ -1938,7 +1817,7 @@
      "Vrije verkoop"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://www.willem-ii.nl/artikel/kaartverkoop-bekerwedstrijd-tegen-excelsior-rotterdam",
@@ -2014,11 +1893,6 @@
    "aftrap": "2027-01-08T20:00",
    "fases": [
     [
-     "vrij",
-     "2026-12-01T09:00",
-     "Start verkoop (doelgroep niet vermeld)"
-    ],
-    [
      "clubkaart",
      "2026-12-01T09:00",
      "(Seizoen)clubkaarthouders"
@@ -2036,11 +1910,6 @@
    "comp": "Eredivisie",
    "aftrap": "2027-01-23T20:00",
    "fases": [
-    [
-     "vrij",
-     "2026-12-08T09:00",
-     "Start verkoop (doelgroep niet vermeld)"
-    ],
     [
      "clubkaart",
      "2026-12-08T09:00",
@@ -2080,7 +1949,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://tickets.sctelstar.nl/verkoop/Telstar---PEC-Zwolle-Vriendenloterij-Eredivisie",
    "auto": true
   },
   {
@@ -2540,13 +2409,14 @@
    "club": "sevilla",
    "tegen": "Málaga CF",
    "comp": "La Liga",
-   "aftrap": "2026-12-06",
+   "aftrap": "2026-12-07T21:00",
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "sevilla",
@@ -2694,6 +2564,19 @@
    "eerst_nu": "2026-11-13"
   },
   {
+   "club": "elche",
+   "tegen": "Sevilla FC",
+   "comp": "La Liga",
+   "aftrap": "2026-12-13",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "bron": "",
+   "auto": true,
+   "eerst_nu": "2026-11-17"
+  },
+  {
    "club": "osasuna",
    "tegen": "Málaga CF",
    "comp": "La Liga",
@@ -2705,6 +2588,18 @@
    "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-13"
+  },
+  {
+   "club": "deportivo",
+   "tegen": "FC Barcelona",
+   "comp": "La Liga",
+   "aftrap": "2026-11-29T16:15",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
+   "bron": "",
+   "auto": true
   },
   {
    "club": "deportivo",
@@ -2834,7 +2729,18 @@
    "tegen": "FC Utrecht",
    "comp": "Eredivisie",
    "aftrap": "2026-11-29T12:15",
-   "fases": [],
+   "fases": [
+    [
+     "clubkaart",
+     "2026-10-07T10:00",
+     "ADO Den Haag+ en ADO Den Haag Kids"
+    ],
+    [
+     "vrij",
+     "2026-10-14T10:00",
+     "Reguliere kaartverkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
    "noot": "",
@@ -2846,7 +2752,18 @@
    "tegen": "Excelsior",
    "comp": "Eredivisie",
    "aftrap": "2026-12-06T16:45",
-   "fases": [],
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-04T10:00",
+     "ADO Den Haag+ en ADO Den Haag Kids"
+    ],
+    [
+     "vrij",
+     "2026-11-11T10:00",
+     "Reguliere kaartverkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
    "noot": "",
@@ -3552,69 +3469,39 @@
    "tegen": "Leeds United",
    "comp": "Premier League",
    "aftrap": "2027-01-16T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-16T11:00",
-     "One Hotspur+ (leden) - 10.00 uur UK-tijd"
-    ],
-    [
-     "lid",
-     "2026-11-17T11:00",
-     "One Hotspur (leden) - 10.00 uur UK-tijd"
-    ]
-   ],
-   "nu": false,
+   "fases": [],
+   "nu": true,
    "info": false,
-   "noot": "Starttijd voor leden volgens de club: 10.00 uur UK-tijd.",
+   "noot": "",
    "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "tottenham",
    "tegen": "Sunderland",
    "comp": "Premier League",
    "aftrap": "2027-01-30T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-16T11:00",
-     "One Hotspur+ (leden) - 10.00 uur UK-tijd"
-    ],
-    [
-     "lid",
-     "2026-11-17T11:00",
-     "One Hotspur (leden) - 10.00 uur UK-tijd"
-    ]
-   ],
-   "nu": false,
+   "fases": [],
+   "nu": true,
    "info": false,
-   "noot": "Starttijd voor leden volgens de club: 10.00 uur UK-tijd.",
+   "noot": "",
    "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "tottenham",
    "tegen": "Manchester City",
    "comp": "Premier League",
    "aftrap": "2027-02-10T21:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-16T11:00",
-     "One Hotspur+ (leden) - 10.00 uur UK-tijd"
-    ],
-    [
-     "lid",
-     "2026-11-17T11:00",
-     "One Hotspur (leden) - 10.00 uur UK-tijd"
-    ]
-   ],
-   "nu": false,
+   "fases": [],
+   "nu": true,
    "info": false,
-   "noot": "Starttijd voor leden volgens de club: 10.00 uur UK-tijd.",
+   "noot": "",
    "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "tottenham",
@@ -4366,10 +4253,16 @@
    "tegen": "VfB Stuttgart 1893",
    "comp": "Bundesliga",
    "aftrap": "2027-01-12T18:30",
-   "fases": [],
-   "nu": true,
+   "fases": [
+    [
+     "lid",
+     "2026-12-07",
+     "Voorverkoop (doelgroep niet vermeld)"
+    ]
+   ],
+   "nu": false,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "noot": "De club vermeldt alleen de dag waarop de voorverkoop begint.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -4382,13 +4275,13 @@
    "fases": [
     [
      "lid",
-     "2026-11-09",
+     "2026-12-07",
      "Voorverkoop (doelgroep niet vermeld)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
+   "noot": "De club vermeldt alleen de dag waarop de voorverkoop begint.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-09"
@@ -4509,11 +4402,38 @@
    "comp": "La Liga",
    "aftrap": "2026-12-05T18:30",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop (\"próximamente\").",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://villarrealcf.es/es/venta-de-entradas/",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Sabah",
+   "comp": "Champions League",
+   "aftrap": "2026-12-08T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true,
+   "eerst_nu": "2026-11-17"
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Rayo Vallecano",
+   "comp": "La Liga",
+   "aftrap": "2026-12-13",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "chelsea",
@@ -5329,39 +5249,6 @@
    "auto": true
   },
   {
-   "club": "bournemouth",
-   "tegen": "AC Milan",
-   "comp": "Europa League",
-   "aftrap": "2027-10-22T21:00",
-   "fases": [
-    [
-     "seizoen",
-     "2026-09-28",
-     "Seizoenkaarthouders (per wedstrijd)"
-    ],
-    [
-     "lid",
-     "2026-09-30T11:00",
-     "Leden met 25+ thuispunten"
-    ],
-    [
-     "lid",
-     "2026-10-01T11:00",
-     "Leden met 12+ thuispunten"
-    ],
-    [
-     "lid",
-     "2026-10-02T11:00",
-     "Leden met 1+ thuispunt"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "De verkoop gaat per niveau van thuispunten (loyaliteitspunten).",
-   "bron": "https://www.afcb.co.uk/news/2026/september/28/information---points-drop--ac-milan--h-/",
-   "auto": true
-  },
-  {
    "club": "coventry",
    "tegen": "Crystal Palace",
    "comp": "Premier League",
@@ -5534,11 +5421,27 @@
    "tegen": "Sassuolo",
    "comp": "Serie A",
    "aftrap": "2026-12-07T18:30",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-17T10:00",
+     "Seizoenkaarthouders (voorrang)"
+    ],
+    [
+     "clubkaart",
+     "2026-11-20T10:00",
+     "Supporter Card-houders (met korting)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "info": false,
+   "noot": "Kaarten uit de voorverkoop zijn inclusief de waterbus naar Sant'Elena.",
+   "bron": "https://en.veneziafc.it/news/serie-a-enilive-26-27-ticket-sales-for-venezia-sassuolo",
    "auto": true
   },
   {
@@ -5984,11 +5887,12 @@
    "comp": "Serie A",
    "aftrap": "2026-12-19T20:45",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Kaarten zijn niet vrij beschikbaar (alleen hospitality).",
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "https://www.asroma.com/en/tickets/men",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "roma",
@@ -6132,6 +6036,222 @@
    "info": true,
    "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
    "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Cagliari FC",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AEK Athens FC",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Juventus FC",
+   "comp": "Serie A",
+   "aftrap": "2026-11-29T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "US Cremonese",
+   "comp": "Coppa Italia",
+   "aftrap": "2026-12-02T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Bologna FC 1909",
+   "comp": "Serie A",
+   "aftrap": "2026-12-12T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "US Lecce",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T15:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "SS Lazio",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T12:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Paris Saint-Germain",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "SSC Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AC Monza",
+   "comp": "Serie A",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Torino FC",
+   "comp": "Serie A",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "AC Milan",
+   "comp": "Serie A",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Udinese",
+   "comp": "Serie A",
+   "aftrap": "2027-03-14",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "ACF Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Inter",
+   "comp": "Serie A",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Atalanta BC",
+   "comp": "Serie A",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
+   "auto": true
+  },
+  {
+   "club": "como",
+   "tegen": "Genoa CFC",
+   "comp": "Serie A",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.comofootball.com/",
    "auto": true
   },
   {
@@ -6910,7 +7030,7 @@
    "club": "hsv",
    "tegen": "FC Schalke 04",
    "comp": "Bundesliga",
-   "aftrap": "2026-12-11",
+   "aftrap": "2026-12-11T20:30",
    "fases": [
     [
      "lid",
@@ -6918,17 +7038,18 @@
      "Ledenvoorverkoop"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "noot": "De ledenvoorverkoop is nu open.",
    "bron": "https://www.hsv.de/en/tickets/infos",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-17"
   },
   {
    "club": "hsv",
    "tegen": "Bayer 04 Leverkusen",
    "comp": "Bundesliga",
-   "aftrap": "2027-01-08",
+   "aftrap": "2027-01-10T17:30",
    "fases": [
     [
      "lid",
@@ -6943,7 +7064,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "noot": "",
    "bron": "https://www.hsv.de/en/tickets/infos",
    "auto": true
   },
@@ -6951,7 +7072,7 @@
    "club": "hsv",
    "tegen": "FC Augsburg",
    "comp": "Bundesliga",
-   "aftrap": "2027-01-15",
+   "aftrap": "2027-01-16T15:30",
    "fases": [
     [
      "lid",
@@ -6966,7 +7087,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "noot": "",
    "bron": "https://www.hsv.de/en/tickets/infos",
    "auto": true
   },
@@ -6974,11 +7095,11 @@
    "club": "hsv",
    "tegen": "Borussia Dortmund",
    "comp": "Bundesliga",
-   "aftrap": "2027-01-22",
+   "aftrap": "2027-01-23T18:30",
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Dag en tijd van de wedstrijd zijn nog niet bekend; dit is de eerste dag van het speelweekend.",
+   "noot": "",
    "bron": "https://www.hsv.de/en/tickets/infos",
    "auto": true
   },
@@ -7582,39 +7703,6 @@
    "info": false,
    "noot": "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.",
    "bron": "https://www.sassuolocalcio.it/biglietteria/sassuolo-genoa-info-prevendita-promozione-dedicata-agli-abbonati/",
-   "auto": true
-  },
-  {
-   "club": "fulham",
-   "tegen": "Brighton & Hove Albion",
-   "comp": "Premier League",
-   "aftrap": "2026-12-26T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T10:30",
-     "Leden (max. 2 tickets)"
-    ],
-    [
-     "seizoen",
-     "2026-11-19T10:30",
-     "Seizoenkaarthouders (extra kaarten)"
-    ],
-    [
-     "vrij",
-     "2026-11-23T10:30",
-     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-11-25T10:30",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
    "auto": true
   },
   {
@@ -8347,6 +8435,190 @@
    "noot": "Voor alle kaarten is een lidmaatschap of seizoenkaart nodig. De aftraptijd is nog niet bekend.",
    "bron": "https://www.cpfc.co.uk/tickets/tickets-on-sale-dates/",
    "auto": true
+  },
+  {
+   "club": "acf-fiorentina",
+   "tegen": "Cagliari",
+   "comp": "Serie A",
+   "aftrap": "2026-12-07T20:45",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-17T10:00",
+     "InViola Premium Card-houders"
+    ],
+    [
+     "vrij",
+     "2026-11-25T10:00",
+     "Vrije verkoop"
+    ],
+    [
+     "vrij",
+     "2026-12-07T09:00",
+     "Wedstrijddag (tarief op de dag zelf)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.acffiorentina.com/en/news/info-biglietti-fiorentina-vs-cagliari-161126",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Getafe CF",
+   "comp": "La Liga",
+   "aftrap": "2026-11-30T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2026-12-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "FC Barcelona",
+   "comp": "La Liga",
+   "aftrap": "2027-01-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Real Betis",
+   "comp": "La Liga",
+   "aftrap": "2027-01-10",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Villarreal CF",
+   "comp": "La Liga",
+   "aftrap": "2027-01-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Rayo Vallecano",
+   "comp": "La Liga",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Osasuna",
+   "comp": "La Liga",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Real Racing Club",
+   "comp": "La Liga",
+   "aftrap": "2027-03-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Málaga CF",
+   "comp": "La Liga",
+   "aftrap": "2027-04-11",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Real Sociedad",
+   "comp": "La Liga",
+   "aftrap": "2027-04-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Valencia CF",
+   "comp": "La Liga",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "rcd-espanyol",
+   "tegen": "Deportivo Alavés",
+   "comp": "La Liga",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
   }
  ],
  "KANS": {
@@ -8865,7 +9137,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-16",
+ "bijgewerkt": "2026-11-17",
  "SCHATTING": {
   "nec": {
    "n": 1,
@@ -8921,11 +9193,17 @@
    "min": 29,
    "max": 30
   },
-  "elche": {
+  "sevilla": {
    "n": 1,
-   "mediaan": 15,
+   "mediaan": 20,
+   "min": 20,
+   "max": 20
+  },
+  "elche": {
+   "n": 2,
+   "mediaan": 26,
    "min": 15,
-   "max": 15
+   "max": 26
   },
   "osasuna": {
    "n": 1,
@@ -8963,6 +9241,12 @@
    "min": 22,
    "max": 22
   },
+  "tottenham": {
+   "n": 3,
+   "mediaan": 74,
+   "min": 60,
+   "max": 85
+  },
   "mancity": {
    "n": 1,
    "mediaan": 33,
@@ -8981,11 +9265,29 @@
    "min": 18,
    "max": 97
   },
+  "villarreal": {
+   "n": 3,
+   "mediaan": 21,
+   "min": 18,
+   "max": 26
+  },
   "frankfurt": {
    "n": 1,
    "mediaan": 25,
    "min": 25,
    "max": 25
+  },
+  "roma": {
+   "n": 1,
+   "mediaan": 32,
+   "min": 32,
+   "max": 32
+  },
+  "hsv": {
+   "n": 1,
+   "mediaan": 24,
+   "min": 24,
+   "max": 24
   },
   "psv": {
    "n": 1,
