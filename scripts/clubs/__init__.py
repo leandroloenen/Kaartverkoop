@@ -24,7 +24,8 @@ TYMES4_CLUBS = {
 
 # Clubs waarvan de clubsite ook artikelen over de kaartverkoop heeft: die vullen de fases aan (zie aanvullen.py).
 EXTRA_FASES = {"willem2": tekstclubs15.haal_willem2_artikelen, "sparta": tekstclubs18.haal_sparta_artikelen,
-               "ado": tekstclubs18.haal_ado_artikelen, "brighton": tekstclubs18.haal_brighton_artikelen}
+               "ado": tekstclubs18.haal_ado_artikelen, "brighton": tekstclubs18.haal_brighton_artikelen,
+               "liverpool": tekstclubs17.haal_liverpool_extra}
 
 
 def _maak(sleutel, naam, pagina, thuis=None):
@@ -49,12 +50,21 @@ ALLE = ([nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.
         + [dortmund, groningen, leverkusen, brentford] + ticketing_es.ALLE + tekstclubs.ALLE + tekstclubs2.ALLE + tekstclubs3.ALLE + tekstclubs4.ALLE + tekstclubs5.ALLE + tekstclubs6.ALLE + tekstclubs7.ALLE + tekstclubs8.ALLE + tekstclubs9.ALLE + tekstclubs10.ALLE + tekstclubs11.ALLE + tekstclubs12.ALLE + tekstclubs13.ALLE + tekstclubs14.ALLE + tekstclubs16.ALLE + tekstclubs17.ALLE + tekstclubs19.ALLE)
 
 
+NA_AFLOOP = {"mancity": tekstclubs17.noten_city}
+
+
 def _verrijk_niet_tymes4(module):
     """ADO en Brighton hebben een eigen verzamelaar voor de wedstrijden; die vullen we hier aan met de artikelen."""
     oud = module.haal_op
 
     def haal_op():
         uit = oud()
+        na = NA_AFLOOP.get(module.CLUB)
+        if uit and na:
+            try:
+                uit = na(uit)
+            except Exception as fout:  # noqa: BLE001
+                print(f"[{module.CLUB}] aanvulling overgeslagen: {str(fout).splitlines()[0][:150]}")
         extra = EXTRA_FASES.get(module.CLUB)
         if uit and extra:
             try:
@@ -67,5 +77,5 @@ def _verrijk_niet_tymes4(module):
 
 
 for _m in ALLE:
-    if _m.CLUB in ("ado", "brighton"):
+    if _m.CLUB in ("ado", "brighton", "liverpool", "mancity"):
         _verrijk_niet_tymes4(_m)
