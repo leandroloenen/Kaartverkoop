@@ -1267,6 +1267,65 @@
    "auto": true
   },
   {
+   "club": "parma",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T18:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-09T11:00",
+     "Tardini Card-houders (geen seizoenkaart)"
+    ],
+    [
+     "vrij",
+     "2026-11-16T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2026-12-13T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -1427,7 +1486,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Ajax-VriendenLoterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-06"
   },
@@ -1514,7 +1573,7 @@
      "Vrije verkoop (max. 4 tickets)"
     ]
    ],
-   "nu": true,
+   "nu": false,
    "info": false,
    "noot": "",
    "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-PEC-Zwolle-VriendenLoterij-Eredivisie",
@@ -1575,11 +1634,12 @@
      "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---sc-Heerenveen-VriendenLoterij-Eredivisie-2026-2027",
+   "auto": true,
+   "eerst_nu": "2026-11-18"
   },
   {
    "club": "sparta",
@@ -1789,6 +1849,19 @@
    "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
    "auto": true
+  },
+  {
+   "club": "excelsior",
+   "tegen": "AZ",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-19T16:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "bron": "",
+   "auto": true,
+   "eerst_nu": "2026-11-18"
   },
   {
    "club": "willem2",
@@ -2387,11 +2460,12 @@
      "All members with 30+ taps"
     ]
    ],
-   "nu": false,
+   "nu": true,
    "info": false,
    "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
    "bron": "https://www.brentfordfc.com/en/ticket-information",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-18"
   },
   {
    "club": "sevilla",
@@ -2595,11 +2669,12 @@
    "comp": "La Liga",
    "aftrap": "2026-11-29T16:15",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Staat in de shop, maar de verkoop is nog niet open.",
+   "nu": true,
+   "info": false,
+   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-18"
   },
   {
    "club": "deportivo",
@@ -3649,7 +3724,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3673,7 +3748,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3685,7 +3760,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3710,7 +3785,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3722,7 +3797,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3734,7 +3809,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3758,7 +3833,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3770,7 +3845,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3782,7 +3857,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3794,7 +3869,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3806,7 +3881,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3818,7 +3893,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3830,7 +3905,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3842,7 +3917,7 @@
    "fases": [],
    "nu": false,
    "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -3875,9 +3950,40 @@
    "tegen": "FC Porto",
    "comp": "Champions League",
    "aftrap": "2026-12-09T21:00",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-18T12:00",
+     "Priority Right Holders (gegarandeerd)"
+    ],
+    [
+     "lid",
+     "2026-11-18T15:00",
+     "Leden met tegoed 6 (niet gegarandeerd)"
+    ],
+    [
+     "lid",
+     "2026-11-19T09:15",
+     "Leden met tegoed 5 (afhankelijk van beschikbaarheid)"
+    ],
+    [
+     "vrij",
+     "2026-11-19T11:00",
+     "Loting voor inwoners (L-postcode): aanmelden opent"
+    ],
+    [
+     "lid",
+     "2026-11-20T09:15",
+     "Leden met tegoed 4 (afhankelijk van beschikbaarheid)"
+    ],
+    [
+     "lid",
+     "2026-11-20T16:00",
+     "Leden met tegoed 3 (afhankelijk van beschikbaarheid)"
+    ]
+   ],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
    "bron": "https://www.liverpoolfc.com/tickets",
    "auto": true
@@ -3943,7 +4049,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omonia Nicosia",
+   "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -4022,7 +4128,7 @@
    ],
    "nu": true,
    "info": false,
-   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.juventus.com/en/tickets/",
    "auto": true
   },
@@ -4212,7 +4318,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: goed.",
+   "noot": "Verkoop is open (startmoment niet getoond). Beschikbaarheid: beperkt.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true,
    "eerst_nu": "2026-11-06"
@@ -4549,11 +4655,12 @@
    "comp": "DFB-Pokal",
    "aftrap": "2026-12-02T20:45",
    "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop.",
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
    "bron": "https://stores.eintracht.de/tickets/profis/",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-18"
   },
   {
    "club": "frankfurt",
@@ -5577,65 +5684,6 @@
    "auto": true
   },
   {
-   "club": "parma",
-   "tegen": "Roma",
-   "comp": "Serie A",
-   "aftrap": "2026-11-21T18:00",
-   "fases": [
-    [
-     "clubkaart",
-     "2026-11-09T11:00",
-     "Tardini Card-houders (geen seizoenkaart)"
-    ],
-    [
-     "vrij",
-     "2026-11-16T11:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Fiorentina",
-   "comp": "Serie A",
-   "aftrap": "2026-12-13T18:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Napoli",
-   "comp": "Serie A",
-   "aftrap": "2027-01-03T18:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Venezia",
-   "comp": "Serie A",
-   "aftrap": "2027-01-10T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
    "club": "atalanta",
    "tegen": "Inter",
    "comp": "Serie A",
@@ -6315,6 +6363,18 @@
   },
   {
    "club": "inter",
+   "tegen": "Liverpool FC",
+   "comp": "Champions League",
+   "aftrap": "2027-01-19T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
    "tegen": "VfB Stuttgart",
    "comp": "Champions League",
    "aftrap": "2026-11-25T20:00",
@@ -6378,18 +6438,6 @@
    "tegen": "Juventus",
    "comp": "Serie A",
    "aftrap": "2027-01-10T19:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.inter.it/en/tickets",
-   "auto": true
-  },
-  {
-   "club": "inter",
-   "tegen": "Liverpool FC",
-   "comp": "Champions League",
-   "aftrap": "2027-01-19T20:00",
    "fases": [],
    "nu": true,
    "info": false,
@@ -7990,6 +8038,29 @@
   },
   {
    "club": "ipswich-town",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-24T13:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-30T11:00",
+     "Tweede verkoop (leden)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden. Eerst is er een loting.",
+   "bron": "https://www.itfc.co.uk/news/2026/november/18/ticket-details---chelsea--h-/",
+   "auto": true
+  },
+  {
+   "club": "ipswich-town",
    "tegen": "Brentford",
    "comp": "Premier League",
    "aftrap": "2026-12-26T16:00",
@@ -9137,7 +9208,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-17",
+ "bijgewerkt": "2026-11-18",
  "SCHATTING": {
   "nec": {
    "n": 1,
@@ -9152,10 +9223,10 @@
    "max": 37
   },
   "utrecht": {
-   "n": 1,
-   "mediaan": 30,
+   "n": 2,
+   "mediaan": 31,
    "min": 30,
-   "max": 30
+   "max": 31
   },
   "heerenveen": {
    "n": 1,
@@ -9175,6 +9246,12 @@
    "min": 20,
    "max": 20
   },
+  "excelsior": {
+   "n": 1,
+   "mediaan": 31,
+   "min": 31,
+   "max": 31
+  },
   "willem2": {
    "n": 3,
    "mediaan": 35,
@@ -9188,10 +9265,10 @@
    "max": 19
   },
   "brentford": {
-   "n": 2,
+   "n": 3,
    "mediaan": 30,
    "min": 29,
-   "max": 30
+   "max": 31
   },
   "sevilla": {
    "n": 1,
@@ -9210,6 +9287,12 @@
    "mediaan": 9,
    "min": 9,
    "max": 9
+  },
+  "deportivo": {
+   "n": 1,
+   "mediaan": 11,
+   "min": 11,
+   "max": 11
   },
   "az": {
    "n": 3,
@@ -9272,9 +9355,9 @@
    "max": 26
   },
   "frankfurt": {
-   "n": 1,
+   "n": 2,
    "mediaan": 25,
-   "min": 25,
+   "min": 14,
    "max": 25
   },
   "roma": {

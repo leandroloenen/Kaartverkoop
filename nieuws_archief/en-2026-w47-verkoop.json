@@ -472,6 +472,38 @@
   ]
  },
  {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-18T12:00",
+  "label": "Priority Right Holders (guaranteed)",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
+  ]
+ },
+ {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-18T15:00",
+  "label": "Members with credit balance 6 (not guaranteed)",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
+  ]
+ },
+ {
   "k": "forest",
   "naam": "Nottingham Forest",
   "tegen": "Everton",
@@ -531,6 +563,22 @@
   ]
  },
  {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-19T09:15",
+  "label": "Members with credit balance 5 (subject to availability)",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
+  ]
+ },
+ {
   "k": "fulham",
   "naam": "Fulham",
   "tegen": "Brighton & Hove Albion",
@@ -558,6 +606,22 @@
   "label": "Phase 3: ballot opens for all members",
   "waarom": [
    "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-19T11:00",
+  "label": "Local ballot (L postcodes): registration opens",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
   ]
  },
  {
@@ -679,6 +743,22 @@
   ]
  },
  {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-20T09:15",
+  "label": "Members with credit balance 4 (subject to availability)",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
+  ]
+ },
+ {
   "k": "venezia",
   "naam": "Venezia FC",
   "tegen": "Sassuolo",
@@ -764,6 +844,22 @@
   "label": "Season ticket holders (+1 extra ticket)",
   "waarom": [
    "Played at Gtech Community Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "liverpool",
+  "naam": "Liverpool",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-12-09T21:00",
+  "stadion": "Anfield",
+  "stad": "Liverpool",
+  "moment": "2026-11-20T16:00",
+  "label": "Members with credit balance 3 (subject to availability)",
+  "waarom": [
+   "European night at Anfield.",
+   "Available without a membership (general sale).",
+   "Played at Anfield (Liverpool)."
   ]
  }
 ]
