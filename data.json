@@ -1234,95 +1234,15 @@
    "auto": true
   },
   {
-   "club": "fulham",
-   "tegen": "Brighton & Hove Albion",
-   "comp": "Premier League",
-   "aftrap": "2026-12-26T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T10:30",
-     "Leden (max. 2 tickets)"
-    ],
-    [
-     "seizoen",
-     "2026-11-19T10:30",
-     "Seizoenkaarthouders (extra kaarten)"
-    ],
-    [
-     "vrij",
-     "2026-11-23T10:30",
-     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-11-25T10:30",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
+   "club": "milan",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2026-11-22T18:00",
+   "fases": [],
+   "nu": true,
    "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Roma",
-   "comp": "Serie A",
-   "aftrap": "2026-11-21T18:00",
-   "fases": [
-    [
-     "clubkaart",
-     "2026-11-09T11:00",
-     "Tardini Card-houders (geen seizoenkaart)"
-    ],
-    [
-     "vrij",
-     "2026-11-16T11:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Fiorentina",
-   "comp": "Serie A",
-   "aftrap": "2026-12-13T18:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Napoli",
-   "comp": "Serie A",
-   "aftrap": "2027-01-03T18:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
-   "auto": true
-  },
-  {
-   "club": "parma",
-   "tegen": "Venezia",
-   "comp": "Serie A",
-   "aftrap": "2027-01-10T15:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.acmilan.com/it/stagione/active/calendario/completo",
    "auto": true
   },
   {
@@ -1460,11 +1380,12 @@
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-19"
   },
   {
    "club": "feyenoord",
@@ -1486,7 +1407,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Ajax-VriendenLoterij-Eredivisie",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-06"
   },
@@ -2019,11 +1940,12 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T21:00",
    "fases": [],
-   "nu": false,
+   "nu": true,
    "info": false,
-   "noot": "",
+   "noot": "Nu in de verkoop; startmoment onbekend.",
    "bron": "https://tickets.sctelstar.nl/verkoop/Telstar---PEC-Zwolle-Vriendenloterij-Eredivisie",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-19"
   },
   {
    "club": "telstar",
@@ -2209,9 +2131,9 @@
    "comp": "Bundesliga",
    "aftrap": "2026-11-21T15:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Algemene verkoop is gestart (startmoment niet getoond).",
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -2278,12 +2200,24 @@
   },
   {
    "club": "leverkusen",
+   "tegen": "FC Salzburg",
+   "comp": "Europees",
+   "aftrap": "2027-01-21T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
+   "auto": true
+  },
+  {
+   "club": "leverkusen",
    "tegen": "SV 07 Elversberg",
    "comp": "Bundesliga",
    "aftrap": "2027-01-24T17:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -2295,7 +2229,7 @@
    "aftrap": "2027-02-06T15:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -2307,7 +2241,7 @@
    "aftrap": "2027-02-20T15:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -2319,7 +2253,7 @@
    "aftrap": "2027-03-03T19:30",
    "fases": [],
    "nu": false,
-   "info": true,
+   "info": false,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
@@ -2919,7 +2853,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "",
+   "noot": "Mitgliederverkauf (ledenverkoop) loopt nu.",
    "bron": "https://tickets.vfb.de/shop?wes=empty_session_103&language=1&shopid=103&nextstate=2&lpShortcutId=5",
    "auto": true
   },
@@ -3087,6 +3021,29 @@
      "clubkaart",
      "2026-11-23T10:00",
      "Bestandskunden / 11er-Karteninhaber"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.mainz05.de/tickets/heimspiele",
+   "auto": true
+  },
+  {
+   "club": "mainz",
+   "tegen": "TSG 1899 \nHoffenheim",
+   "comp": "Bundesliga",
+   "aftrap": "2027-01-12T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-12-03T10:00",
+     "Mitglieder en Dauerkarteninhaber"
+    ],
+    [
+     "vrij",
+     "2026-12-14T10:00",
+     "Freier Verkauf (max. 10 tickets)"
     ]
    ],
    "nu": false,
@@ -3543,27 +3500,27 @@
    "club": "tottenham",
    "tegen": "Leeds United",
    "comp": "Premier League",
-   "aftrap": "2027-01-16T16:00",
+   "aftrap": "2027-01-17T17:30",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
    "auto": true,
-   "eerst_nu": "2026-11-17"
+   "eerst_nu": "2026-11-19"
   },
   {
    "club": "tottenham",
    "tegen": "Sunderland",
    "comp": "Premier League",
-   "aftrap": "2027-01-30T16:00",
+   "aftrap": "2027-01-31T15:00",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "",
    "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
    "auto": true,
-   "eerst_nu": "2026-11-17"
+   "eerst_nu": "2026-11-19"
   },
   {
    "club": "tottenham",
@@ -3829,13 +3786,14 @@
    "club": "mancity",
    "tegen": "Arsenal",
    "comp": "Premier League",
-   "aftrap": "2027-01-30T16:00",
+   "aftrap": "2027-01-31T17:30",
    "fases": [],
    "nu": true,
    "info": false,
    "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
    "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
+   "auto": true,
+   "eerst_nu": "2026-11-19"
   },
   {
    "club": "mancity",
@@ -4128,7 +4086,7 @@
    ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/",
    "auto": true
   },
@@ -4160,10 +4118,16 @@
    "tegen": "Torino",
    "comp": "Serie A",
    "aftrap": "2027-01-06T11:30",
-   "fases": [],
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-24T16:00",
+     "Juventus Card"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/",
    "auto": true
   },
@@ -4808,18 +4772,6 @@
    "auto": true
   },
   {
-   "club": "milan",
-   "tegen": "Frosinone",
-   "comp": "Serie A",
-   "aftrap": "2026-11-22T18:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.acmilan.com/it/stagione/active/calendario/completo",
-   "auto": true
-  },
-  {
    "club": "freiburg",
    "tegen": "FC Twente",
    "comp": "Conference League",
@@ -5413,6 +5365,34 @@
   },
   {
    "club": "leeds",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-27T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-11-30T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-12-02T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-fulham-home-fixture",
+   "auto": true
+  },
+  {
+   "club": "leeds",
    "tegen": "Ipswich Town",
    "comp": "Premier League",
    "aftrap": "2026-12-05T16:00",
@@ -5681,6 +5661,65 @@
    "info": true,
    "noot": "Verkoopmomenten nog niet bekendgemaakt.",
    "bron": "https://en.veneziafc.it/tickets/biglietteria",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Roma",
+   "comp": "Serie A",
+   "aftrap": "2026-11-21T18:00",
+   "fases": [
+    [
+     "clubkaart",
+     "2026-11-09T11:00",
+     "Tardini Card-houders (geen seizoenkaart)"
+    ],
+    [
+     "vrij",
+     "2026-11-16T11:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Fiorentina",
+   "comp": "Serie A",
+   "aftrap": "2026-12-13T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Napoli",
+   "comp": "Serie A",
+   "aftrap": "2027-01-03T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "parma",
+   "tegen": "Venezia",
+   "comp": "Serie A",
+   "aftrap": "2027-01-10T15:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "https://www.parmacalcio1913.com/en/tickets/",
    "auto": true
   },
   {
@@ -5959,6 +5998,18 @@
    "tegen": "Milan",
    "comp": "Serie A",
    "aftrap": "2027-01-09T18:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.asroma.com/en/tickets/men",
+   "auto": true
+  },
+  {
+   "club": "roma",
+   "tegen": "Hellas Verona",
+   "comp": "UEFA",
+   "aftrap": "2027-01-12T21:00",
    "fases": [],
    "nu": false,
    "info": true,
@@ -6978,9 +7029,9 @@
    "comp": "2. Bundesliga",
    "aftrap": "2026-12-06T13:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "",
+   "noot": "Uitverkocht.",
    "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
    "auto": true
   },
@@ -6998,7 +7049,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "",
+   "noot": "Uitverkocht.",
    "bron": "https://www.fcstpauli.com/fu%C3%9Fball/tickets/heimspiele",
    "auto": true
   },
@@ -7751,6 +7802,67 @@
    "info": false,
    "noot": "Tickets voor Tribuna Sud zijn alleen voor houders van de SassuoloCard.",
    "bron": "https://www.sassuolocalcio.it/biglietteria/sassuolo-genoa-info-prevendita-promozione-dedicata-agli-abbonati/",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-23T10:30",
+     "Leden"
+    ],
+    [
+     "seizoen",
+     "2026-11-25T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-27T10:30",
+     "Supporters met boekingsgeschiedenis"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/18/arsenal-h-tickets/",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T10:30",
+     "Leden (max. 2 tickets)"
+    ],
+    [
+     "seizoen",
+     "2026-11-19T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-11-25T10:30",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
    "auto": true
   },
   {
@@ -9208,7 +9320,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-18",
+ "bijgewerkt": "2026-11-19",
  "SCHATTING": {
   "nec": {
    "n": 1,
@@ -9217,9 +9329,9 @@
    "max": 19
   },
   "feyenoord": {
-   "n": 2,
-   "mediaan": 37,
-   "min": 23,
+   "n": 3,
+   "mediaan": 23,
+   "min": 5,
    "max": 37
   },
   "utrecht": {
@@ -9257,6 +9369,12 @@
    "mediaan": 35,
    "min": 25,
    "max": 43
+  },
+  "telstar": {
+   "n": 1,
+   "mediaan": 2,
+   "min": 2,
+   "max": 2
   },
   "leverkusen": {
    "n": 1,
@@ -9326,15 +9444,15 @@
   },
   "tottenham": {
    "n": 3,
-   "mediaan": 74,
-   "min": 60,
+   "mediaan": 73,
+   "min": 59,
    "max": 85
   },
   "mancity": {
-   "n": 1,
-   "mediaan": 33,
+   "n": 2,
+   "mediaan": 73,
    "min": 33,
-   "max": 33
+   "max": 73
   },
   "juventus": {
    "n": 1,
