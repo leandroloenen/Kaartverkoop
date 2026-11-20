@@ -1,5 +1,6 @@
-# Detailverkenning Spanje: Real Madrid (klik op More information), Racing en Alavés (naam | startadres | modus | aantal)
-Real Madrid (more information) | https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino | klik:more info | 8
-Real Madrid (tickets, tekst) | https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino | geen | 1
-Racing (taquilla) | https://taquilla.realracingclub.es/ | geen | 1
-Alaves (entradas) | https://www.alaves.com/entradas | geen | 1
+# Detailverkenning: Real Madrid (opnieuw klikken, nu met cookiebanner weg) en officiële bronnen Arsenal/Bayern (naam | startadres | modus | aantal)
+Real Madrid (more information) | https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino | klik:more information | 6
+Arsenal (help) | https://help.arsenal.com/support/solutions/articles/101000578825-home-tickets | geen | 1
+Arsenal (ticketinformatie Newcastle) | https://www.arsenal.com/ticket-information/ticket-information-arsenal-v-newcastle-united-aCz1s2e8wunL | geen | 1
+Bayern (status ticketing) | https://fcbayern.com/de/tickets/status-ticketing | geen | 1
+Bayern (tickets) | https://fcbayern.com/de/tickets | link:/de/tickets/ | 6
