@@ -1,7 +1,5 @@
-# Detailverkenning: Milan, Inter, Leverkusen (voorbeeldberichten + overzichtspagina's) (naam | startadres | modus | aantal)
-Milan (bericht) | https://www.acmilan.com/en/news/articles/ticketing/2026-11-19/ac-milan-vs-fiorentina-first-home-game-of-2027 | geen | 1
-Milan (overzicht) | https://www.acmilan.com/en/news/articles/ticketing | link:/ticketing/2026 | 6
-Inter (bericht) | https://www.inter.it/en/news/tickets-supercoppa-inter-lazio-san-siro-2026-27 | geen | 1
-Inter (overzicht) | https://www.inter.it/en/news | link:tickets | 8
-Leverkusen (bericht) | https://www.bayer04.de/en-us/news/bundesliga/tickets-for-the-home-match-against-sv-07-elversberg | geen | 1
-Leverkusen (overzicht) | https://www.bayer04.de/en-us/news/bundesliga | link:tickets-for-the-home-match | 8
+# Detailverkenning: Leverkusen (nieuwscentrum + wedstrijdberichten) (naam | startadres | modus | aantal)
+Leverkusen (nieuwscentrum) | https://www.bayer04.de/en-us/page/news-centre | link:tickets-for-the-home-match | 8
+Leverkusen (bericht Augsburg) | https://www.bayer04.de/en-us/news/bundesliga/tickets-for-the-home-match-against-sv-07-elversberg | link:tickets-for-the-home-match | 6
+Leverkusen (Duits bericht) | https://www.bayer04.de/de-de/news/bundesliga/tickets-fuer-das-heimduell-gegen-die-sv-07-elversberg | link:tickets-fuer-das-heimduell | 6
+Leverkusen (Duits nieuwscentrum) | https://www.bayer04.de/de-de/page/news-centre | link:tickets-fuer-das-heimduell | 8
