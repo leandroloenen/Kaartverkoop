@@ -1,2 +1,3 @@
-# Detailverkenning: Leverkusen Europa League (naam | startadres | modus | aantal)
-Leverkusen (Europa League) | https://www.bayer04.de/en-us/news/europa-league/tickets-for-the-europa-league-home-match-against-fc-salzburg | geen | 1
+# Detailverkenning: Barcelona (naam | startadres | modus | aantal)
+Barcelona (overzicht) | https://www.fcbarcelona.com/en/tickets/football | geen | 1
+Barcelona (Villarreal) | https://www.fcbarcelona.com/en/tickets/football | klik:Tickets | 2
