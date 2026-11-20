@@ -22,7 +22,7 @@ def verrijk(basis, extra):
     """Voeg fases uit 'extra' toe aan de wedstrijd in 'basis' met dezelfde tegenstander en dag. Onbekende wedstrijden slaan we over."""
     for e in extra:
         for w in basis:
-            if w["aftrap"][:10] == e["aftrap"][:10] and zelfde_tegenstander(w["tegen"], e["tegen"]):
+            if (w["aftrap"][:10] == e["aftrap"][:10] or (e.get("_tot") and e["aftrap"][:10] <= w["aftrap"][:10] <= e["_tot"])) and zelfde_tegenstander(w["tegen"], e["tegen"]):
                 bekend = {(f[0], f[1][:10]) for f in w["fases"]}
                 nieuw = [f for f in e["fases"] if (f[0], f[1][:10]) not in bekend]
                 w["fases"] = sorted(w["fases"] + nieuw, key=lambda f: f[1])
