@@ -1,5 +1,2 @@
-# Detailverkenning: Leverkusen (nieuwscentrum + wedstrijdberichten) (naam | startadres | modus | aantal)
-Leverkusen (nieuwscentrum) | https://www.bayer04.de/en-us/page/news-centre | link:tickets-for-the-home-match | 8
-Leverkusen (bericht Augsburg) | https://www.bayer04.de/en-us/news/bundesliga/tickets-for-the-home-match-against-sv-07-elversberg | link:tickets-for-the-home-match | 6
-Leverkusen (Duits bericht) | https://www.bayer04.de/de-de/news/bundesliga/tickets-fuer-das-heimduell-gegen-die-sv-07-elversberg | link:tickets-fuer-das-heimduell | 6
-Leverkusen (Duits nieuwscentrum) | https://www.bayer04.de/de-de/page/news-centre | link:tickets-fuer-das-heimduell | 8
+# Detailverkenning: Leverkusen Europa League (naam | startadres | modus | aantal)
+Leverkusen (Europa League) | https://www.bayer04.de/en-us/news/europa-league/tickets-for-the-europa-league-home-match-against-fc-salzburg | geen | 1
