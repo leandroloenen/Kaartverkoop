@@ -52,14 +52,14 @@ ALLE = ([nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.
 
 
 def noot_hele_seizoen(uit):
-    """Barcelona en Sevilla zetten het hele seizoen in de zomer in één keer in de verkoop."""
+    """Sevilla zet volgens de gebruiker het hele seizoen in de zomer in één keer in de verkoop (Barcelona niet: daar start de verkoop per periode)."""
     for w in uit:
         if w.get("nu") and not w.get("fases"):
             w["noot"] = "Het seizoen wordt in de zomer in één keer in de verkoop gebracht."
     return uit
 
 
-NA_AFLOOP = {"mancity": tekstclubs17.noten_city, "barcelona": noot_hele_seizoen, "sevilla": noot_hele_seizoen}
+NA_AFLOOP = {"mancity": tekstclubs17.noten_city, "sevilla": noot_hele_seizoen}
 
 
 def _verrijk_niet_tymes4(module):
@@ -86,5 +86,5 @@ def _verrijk_niet_tymes4(module):
 
 
 for _m in ALLE:
-    if _m.CLUB in ("ado", "brighton", "liverpool", "mancity", "milan", "inter", "leverkusen", "barcelona", "sevilla"):
+    if _m.CLUB in ("ado", "brighton", "liverpool", "mancity", "milan", "inter", "leverkusen", "sevilla"):
         _verrijk_niet_tymes4(_m)
