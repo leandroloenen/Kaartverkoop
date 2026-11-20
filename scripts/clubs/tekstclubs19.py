@@ -511,6 +511,7 @@ def haal_inter_artikelen():
 # --- Bayer Leverkusen: 'Tickets go on exclusive sale to season ticket holders and Club members on ... at 08:00 CET. ... to non-members on ...'
 LV_TEGEN = re.compile(r"Bayer 04 host\s+(.+?)\s+at the BayArena", re.I)
 LV_AF = re.compile(r"kicks off at\s+(\d{1,2}):(\d{2})\s*CET on\s+(?:" + DAG + r",?\s+)?(\d{1,2})\s+(" + MND + r")\s+(\d{4})", re.I)
+LV_AF2 = re.compile(r"played on\s+(?:" + DAG + r",?\s+)?(\d{1,2})\s+(" + MND + r")\s+(\d{4})\s+at\s+(\d{1,2}):(\d{2})\s*CET", re.I)
 LV_MOMENT = re.compile(r"(?:" + DAG + r",?\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+(" + MND + r")\s+at\s+(\d{1,2}):(\d{2})\s*CET", re.I)
 LV_NAMEN = {"SV 07 Elversberg": "SV Elversberg", "FC Augsburg": "FC Augsburg", "Mainz 05": "1. FSV Mainz 05"}
 
@@ -528,10 +529,15 @@ def parse_leverkusen_artikel(tekst, club="leverkusen", bron=""):
     if not tegen:
         return None
     a = LV_AF.search(tekst)
+    b = LV_AF2.search(tekst)
     tot = None
-    if a:
-        aftrap = f"{int(a.group(5)):04d}-{EN_MAAND[a.group(4).lower()]:02d}-{int(a.group(3)):02d}T{int(a.group(1)):02d}:{a.group(2)}"
-        na = a.end()
+    if a or b:
+        if a:
+            uur, mi, d, mnd, jr = a.group(1), a.group(2), a.group(3), a.group(4), a.group(5)
+        else:
+            d, mnd, jr, uur, mi = b.group(1), b.group(2), b.group(3), b.group(4), b.group(5)
+        aftrap = f"{int(jr):04d}-{EN_MAAND[mnd.lower()]:02d}-{int(d):02d}T{int(uur):02d}:{mi}"
+        na = (a or b).end()
     else:
         w = LV_WEEKEND.search(tekst)   # alleen een weekend of week bekend: de wedstrijd zelf staat in de lijst, wij leveren de fases
         if not w:
