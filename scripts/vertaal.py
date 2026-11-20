@@ -10,6 +10,10 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Getroffen UEFA-leden": "Affected UEFA members",
+    "Leden zonder seizoenkaart": "Members without a season ticket",
+    "Madridistas Platinum/Premium": "Madridistas Platinum/Premium",
+    "Verkoopmomenten per groep volgen.": "Sale times per group will follow.",
     "Priority Right Holders (gegarandeerd)": "Priority Right Holders (guaranteed)",
     "Loting voor inwoners (L-postcode): aanmelden opent": "Local ballot (L postcodes): registration opens",
     "Kaarten zijn alleen voor leden (All Red).": "Tickets are for members only (All Red).",
@@ -128,6 +132,9 @@ ZINNEN = {
 
 # Losse woorden en delen van zinnen. Volgorde is belangrijk: lange eerst.
 REGELS = [
+    (r"^Getroffen UEFA-leden", "Affected UEFA members"),
+    (r"^Leden zonder seizoenkaart", "Members without a season ticket"),
+    (r"\((\d+)% korting\)", r"(\1% discount)"),
     (r"Alleen hospitality in de verkoop; gewone kaarten nog niet\.", "Only hospitality is on sale; regular tickets are not yet."),
     (r"Verkoop is open \(startmoment niet getoond\)\.", "Sales are open (the club does not show the start time)."),
     (r"Alleen voor leden die de afgelopen 2 seizoenen 3\+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid\.", "Only for members who bought 3+ Premier League matches at the Etihad over the past 2 seasons; 1 ticket per member."),
