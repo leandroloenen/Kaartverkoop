@@ -207,17 +207,128 @@ def haal_espanyol(pagina, test, sleutel="rcd-espanyol"):
     return parse_espanyol(t.haal_tekst(pagina, test, locale="en-GB"), sleutel, pagina)
 
 
+# ---------------------------------------------------------------- Real Madrid (lijstpagina + pop-up 'More information' per wedstrijd)
+RM_KOP = re.compile(r"\nReal Madrid\n\n(.+?)\n\nFútbol · Primer Equipo\n\n(.+?)\n\n[^\n]*\n\n[A-Za-z]+, ([A-Za-z]{3}) (\d{1,2}), (\d{1,2}):(\d{2}) (AM|PM) h")
+RM_DATUM = re.compile(r"^[A-Za-z]{3}, ([A-Za-z]{3}) (\d{1,2}) - (\d{1,2})h$")
+RM_GROEP = {
+    "season ticket holders": ("seizoen", "Seizoenkaarthouders"),
+    "affected uefa members": ("lid", "Getroffen UEFA-leden"),
+    "non-season ticket holder members": ("lid", "Leden zonder seizoenkaart"),
+    "madridistas platinum/premium": ("lid", "Madridistas Platinum/Premium"),
+    "general public": ("vrij", "Vrije verkoop"),
+}
+RM_COMP = {"la liga": "La Liga", "champions league": "Champions League", "copa del rey": "Copa del Rey"}
+
+
+def parse_rm_lijst(tekst, club="real-madrid", bron=""):
+    uit = []
+    for m in RM_KOP.finditer("\n" + tekst):
+        mnd = t.MAANDEN_EN.get(m.group(3).lower()[:3])
+        if not mnd:
+            continue
+        h = int(m.group(5)) % 12 + (12 if m.group(7) == "PM" else 0)
+        dt = t.jaar_voor_dag(int(m.group(4)), mnd, h, int(m.group(6)), t.NL, terug=20)
+        if not dt:
+            continue
+        aftrap = t.tekst_fmt(dt)
+        if toekomst(aftrap):
+            uit.append(wedstrijd(club, m.group(1).strip(), RM_COMP.get(m.group(2).strip().lower(), m.group(2).strip()), aftrap, info=True,
+                                 noot="Verkoopmomenten per groep volgen.", bron=bron))
+    return uit
+
+
+def parse_rm_popup(tekst, aftrap):
+    """Fases uit de pop-up 'Prices and on-sale dates' (tijden zijn Spaanse tijd = Nederlandse tijd)."""
+    regels = [r.strip() for r in tekst.splitlines() if r.strip()]
+    if "Prices and on-sale dates" not in regels:
+        return []
+    uit, label, korting = [], None, ""
+    for r in regels[regels.index("Prices and on-sale dates") + 1:]:
+        if r == "Real Madrid":  # menu onder de pop-up
+            break
+        d = RM_DATUM.match(r)
+        if d and label:
+            mnd = t.MAANDEN_EN.get(d.group(1).lower()[:3])
+            if mnd:
+                j = _jaar_voor_fase(int(d.group(2)), mnd, aftrap)
+                uit.append([label[0], f"{j:04d}-{mnd:02d}-{int(d.group(2)):02d}T{int(d.group(3)):02d}:00", label[1] + korting])
+            label, korting = None, ""
+        elif re.match(r"^\d+% discount$", r):
+            korting = f" ({r.split('%')[0]}% korting)"
+        elif r.lower() in RM_GROEP:
+            label, korting = RM_GROEP[r.lower()], ""
+    return sorted(uit, key=lambda f: f[1])
+
+
+def haal_realmadrid(pagina, test, sleutel="real-madrid"):
+    """Lees de lijst, klik per wedstrijd op 'More information' en lees de pop-up."""
+    if test:
+        return parse_rm_lijst(open(test, encoding="utf-8").read(), sleutel, pagina)
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="en-GB")
+
+            def open_lijst():
+                page.goto(pagina, wait_until="domcontentloaded", timeout=45000)
+                try:
+                    page.wait_for_load_state("networkidle", timeout=12000)
+                except Exception:  # noqa: BLE001
+                    pass
+                page.wait_for_timeout(2500)
+                try:
+                    knop = page.get_by_role("button", name=re.compile(r"reject all", re.I)).first
+                    if knop.count():
+                        knop.click(timeout=3000)
+                        page.wait_for_timeout(800)
+                except Exception:  # noqa: BLE001
+                    pass
+
+            open_lijst()
+            for _ in range(3):
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(900)
+            wedstrijden = parse_rm_lijst(page.inner_text("body"), sleutel, pagina)
+            knoppen = page.get_by_role("link", name=re.compile(r"more information", re.I)).or_(page.get_by_role("button", name=re.compile(r"more information", re.I)))
+            aantal = min(knoppen.count(), 12)
+            for n in range(aantal):
+                try:
+                    if n:
+                        open_lijst()
+                        knoppen = page.get_by_role("link", name=re.compile(r"more information", re.I)).or_(page.get_by_role("button", name=re.compile(r"more information", re.I)))
+                    knoppen.nth(n).click(timeout=10000, force=True)
+                    page.wait_for_timeout(2500)
+                    tekst = page.inner_text("body")
+                except Exception:  # noqa: BLE001
+                    continue
+                kop = re.search(r"^Real Madrid - (.+)$", tekst, re.M)
+                if not kop:
+                    continue
+                for w in wedstrijden:
+                    if w["tegen"].strip().lower() == kop.group(1).strip().lower():
+                        fases = parse_rm_popup(tekst, w["aftrap"])
+                        if fases:
+                            w["fases"], w["info"], w["noot"] = fases, False, ""
+                        break
+            return wedstrijden
+        finally:
+            browser.close()
+
+
 CLUBS = [
     ("acf-fiorentina", "ACF Fiorentina", "IT", "Fiorentina (artikelen)", "https://www.acffiorentina.com/en/news", haal_fiorentina),
     ("udinese-calcio", "Udinese Calcio", "IT", "Udinese (artikelen)", "https://www.udinese.it/eng/news", haal_udinese),
     ("rcd-espanyol", "RCD Espanyol", "ES", "Espanyol (wedstrijden)", "https://www.rcdespanyol.com/en/nextmatches", haal_espanyol),
+    ("real-madrid", "Real Madrid", "ES", "Real Madrid (wedstrijden)", "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino", haal_realmadrid),
 ]
 
 
 def _maak(sleutel, naam, land, lijstnaam, standaard, haal):
     test = os.environ.get(f"{sleutel.upper().replace('-', '_')}_TEKST_BESTAND", "")
     pagina = t.adres_uit_lijst(lijstnaam, standaard)
-    return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, haal_op=lambda: haal(pagina, test, sleutel))
+    return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=pagina, LAND=land, BEHOUD=(sleutel == "real-madrid"), haal_op=lambda: haal(pagina, test, sleutel))
 
 
 ALLE = [_maak(*c) for c in CLUBS]
