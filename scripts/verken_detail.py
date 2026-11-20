@@ -40,6 +40,20 @@ def pagina_lezen(page, wacht=3000, scroll=2):
             "tekst": LANGE_WAARDE.sub("[lange waarde weggelaten]", tekst)[:TEKSTLENGTE]}
 
 
+COOKIE_NEE = re.compile(r"reject all|rechazar|alles weigeren|weiger|only necessary|necessary cookies only|decline all|ablehnen|use necessary cookies only", re.I)
+
+
+def cookies_weg(page):
+    """Sluit een cookiebanner (weigeren), zodat die klikken op de pagina niet blokkeert."""
+    try:
+        knop = page.get_by_role("button", name=COOKIE_NEE).first
+        if knop.count():
+            knop.click(timeout=3000)
+            page.wait_for_timeout(1000)
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def verken_club(browser, naam, adres, modus, aantal, json_woord=""):
     uit = {"naam": naam, "startadres": schoon_url(adres), "modus": modus, "paginas": [], "links": [], "json_volledig": [], "fout": None}
     context = browser.new_context(locale="en-GB")
@@ -90,11 +104,12 @@ def verken_club(browser, naam, adres, modus, aantal, json_woord=""):
                 except Exception:  # noqa: BLE001
                     pass
                 page.wait_for_timeout(2500)
+                cookies_weg(page)
                 knoppen = page.get_by_role("link", name=regex).or_(page.get_by_role("button", name=regex))
                 if knoppen.count() <= n:
                     break
                 aantal_paginas = len(context.pages)
-                knoppen.nth(n).click(timeout=10000)
+                knoppen.nth(n).click(timeout=10000, force=True)
                 page.wait_for_timeout(2500)
                 doel = context.pages[-1] if len(context.pages) > aantal_paginas else page
                 uit["paginas"].append(pagina_lezen(doel))
