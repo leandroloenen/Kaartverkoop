@@ -25,7 +25,8 @@ TYMES4_CLUBS = {
 # Clubs waarvan de clubsite ook artikelen over de kaartverkoop heeft: die vullen de fases aan (zie aanvullen.py).
 EXTRA_FASES = {"willem2": tekstclubs15.haal_willem2_artikelen, "sparta": tekstclubs18.haal_sparta_artikelen,
                "ado": tekstclubs18.haal_ado_artikelen, "brighton": tekstclubs18.haal_brighton_artikelen,
-               "liverpool": tekstclubs17.haal_liverpool_extra}
+               "liverpool": tekstclubs17.haal_liverpool_extra, "milan": tekstclubs19.haal_milan_artikelen,
+               "inter": tekstclubs19.haal_inter_artikelen, "leverkusen": tekstclubs19.haal_leverkusen_artikelen}
 
 
 def _maak(sleutel, naam, pagina, thuis=None):
@@ -50,7 +51,15 @@ ALLE = ([nec, feyenoord] + [_maak(k, *gegevens) for k, gegevens in TYMES4_CLUBS.
         + [dortmund, groningen, leverkusen, brentford] + ticketing_es.ALLE + tekstclubs.ALLE + tekstclubs2.ALLE + tekstclubs3.ALLE + tekstclubs4.ALLE + tekstclubs5.ALLE + tekstclubs6.ALLE + tekstclubs7.ALLE + tekstclubs8.ALLE + tekstclubs9.ALLE + tekstclubs10.ALLE + tekstclubs11.ALLE + tekstclubs12.ALLE + tekstclubs13.ALLE + tekstclubs14.ALLE + tekstclubs16.ALLE + tekstclubs17.ALLE + tekstclubs19.ALLE)
 
 
-NA_AFLOOP = {"mancity": tekstclubs17.noten_city}
+def noot_hele_seizoen(uit):
+    """Barcelona en Sevilla zetten het hele seizoen in de zomer in één keer in de verkoop."""
+    for w in uit:
+        if w.get("nu") and not w.get("fases"):
+            w["noot"] = "Het seizoen wordt in de zomer in één keer in de verkoop gebracht."
+    return uit
+
+
+NA_AFLOOP = {"mancity": tekstclubs17.noten_city, "barcelona": noot_hele_seizoen, "sevilla": noot_hele_seizoen}
 
 
 def _verrijk_niet_tymes4(module):
@@ -77,5 +86,5 @@ def _verrijk_niet_tymes4(module):
 
 
 for _m in ALLE:
-    if _m.CLUB in ("ado", "brighton", "liverpool", "mancity"):
+    if _m.CLUB in ("ado", "brighton", "liverpool", "mancity", "milan", "inter", "leverkusen", "barcelona", "sevilla"):
         _verrijk_niet_tymes4(_m)
