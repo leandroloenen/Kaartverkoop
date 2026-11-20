@@ -10,6 +10,7 @@ Italiaanse tijden zijn gelijk aan Nederlandse tijden.
 """
 import os
 import re
+from datetime import datetime
 from types import SimpleNamespace
 
 from . import tekst as t
@@ -514,17 +515,41 @@ LV_MOMENT = re.compile(r"(?:" + DAG + r",?\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+(" + 
 LV_NAMEN = {"SV 07 Elversberg": "SV Elversberg", "FC Augsburg": "FC Augsburg", "Mainz 05": "1. FSV Mainz 05"}
 
 
+LV_TITEL = re.compile(r"HOME MATCH AGAINST\s+([^\n]+)", re.I)
+LV_WEEKEND = re.compile(r"(?:weekend of|week between)\s+(\d{1,2})(?:\s+(" + MND + r"))?\s*(?:[–-]|and)\s*(\d{1,2})\s+(" + MND + r")(?:\s+(\d{4}))?", re.I)
+
+
 def parse_leverkusen_artikel(tekst, club="leverkusen", bron=""):
-    tekst = re.sub(r"[ \t\xa0]+", " ", tekst)
+    tekst = re.sub(r"[ \t\xa0]+", " ", tekst).split("RELATED NEWS")[0]   # daaronder staan andere wedstrijden
     k = LV_TEGEN.search(tekst)
+    tit = LV_TITEL.search(tekst)
+    tegen = tit.group(1) if tit else (k.group(1) if k else "")   # de titel is betrouwbaarder dan de lopende tekst
+    tegen = re.sub(r"\s+on members.{0,3}\s+matchday.*$", "", tegen, flags=re.I).strip()
+    if not tegen:
+        return None
     a = LV_AF.search(tekst)
-    if not k or not a:
-        return None   # zonder vaste aftrap (alleen een weekend) laten we de wedstrijd aan de lijst over
-    aftrap = f"{int(a.group(5)):04d}-{EN_MAAND[a.group(4).lower()]:02d}-{int(a.group(3)):02d}T{int(a.group(1)):02d}:{a.group(2)}"
+    tot = None
+    if a:
+        aftrap = f"{int(a.group(5)):04d}-{EN_MAAND[a.group(4).lower()]:02d}-{int(a.group(3)):02d}T{int(a.group(1)):02d}:{a.group(2)}"
+        na = a.end()
+    else:
+        w = LV_WEEKEND.search(tekst)   # alleen een weekend of week bekend: de wedstrijd zelf staat in de lijst, wij leveren de fases
+        if not w:
+            return None
+        mnd2 = EN_MAAND[w.group(4).lower()]
+        mnd1 = EN_MAAND[(w.group(2) or w.group(4)).lower()]
+        if w.group(5):
+            jr = int(w.group(5))
+        else:
+            dt = t.jaar_voor_dag(int(w.group(3)), mnd2, 0, 0)
+            jr = dt.year if dt else datetime.now().year
+        aftrap = f"{jr:04d}-{mnd1:02d}-{int(w.group(1)):02d}"
+        tot = f"{jr:04d}-{mnd2:02d}-{int(w.group(3)):02d}"
+        na = w.end()
     if not _toekomst(aftrap):
         return None
     fases = []
-    for zin in re.split(r"(?<=[.!])\s+", tekst[a.end():a.end() + 1500]):
+    for zin in re.split(r"(?<=[.!])\s+", tekst[na:na + 1500]):
         s = zin.lower()
         if "on sale" not in s and "on exclusive sale" not in s:
             continue
@@ -540,8 +565,12 @@ def parse_leverkusen_artikel(tekst, club="leverkusen", bron=""):
             fases.append(["lid", start, "Seizoenkaarthouders en clubleden"])
     if not fases:
         return None
+    comp = "Europa League" if re.search(r"europa league", tekst[:700], re.I) else ("DFB-Pokal" if re.search(r"dfb.pokal", tekst[:700], re.I) else "Bundesliga")
     noot = MAX4 if re.search(r"ticket limit:\s*4", tekst, re.I) else ""
-    return wedstrijd(club, t.mooie_naam(LV_NAMEN.get(k.group(1).strip(), k.group(1).strip())), "Bundesliga", aftrap, fases=sorted(fases, key=lambda f: f[1]), noot=noot, bron=bron)
+    w = wedstrijd(club, t.mooie_naam(LV_NAMEN.get(tegen, tegen)), comp, aftrap, fases=sorted(fases, key=lambda f: f[1]), noot=noot, bron=bron)
+    if tot:
+        w["_tot"] = tot   # datumbereik: aanvullen.verrijk zoekt de wedstrijd met deze tegenstander binnen dit bereik
+    return w
 
 
 def haal_leverkusen_artikelen():
@@ -549,13 +578,13 @@ def haal_leverkusen_artikelen():
     uit = []
     for start in ("https://www.bayer04.de/en-us/page/news-centre", "https://www.bayer04.de/en-us/news/bundesliga/tickets-for-the-home-match-against-sv-07-elversberg"):
         try:
-            paginas = t.haal_paginas(start, r"/news/bundesliga/tickets-for-the-home-match-against-[a-z0-9-]+$", 10, testmap)
+            paginas = t.haal_paginas(start, r"/news/(?:bundesliga|europa-league)/tickets-for-the-(?:europa-league-)?home-match-against-[a-z0-9-]+$", 10, testmap)
         except Exception as fout:  # noqa: BLE001
             print(f"[leverkusen] {start}: {str(fout).splitlines()[0][:120]}")
             continue
         for adres, tekst in paginas:
             w = parse_leverkusen_artikel(tekst, "leverkusen", adres)
-            if w and not any(x["aftrap"][:10] == w["aftrap"][:10] for x in uit):
+            if w and not any(x["tegen"] == w["tegen"] and x["aftrap"][:10] == w["aftrap"][:10] for x in uit):
                 uit.append(w)
     return uit
 
