@@ -26,8 +26,13 @@ def verrijk(basis, extra):
                 bekend = {(f[0], f[1][:10]) for f in w["fases"]}
                 nieuw = [f for f in e["fases"] if (f[0], f[1][:10]) not in bekend]
                 w["fases"] = sorted(w["fases"] + nieuw, key=lambda f: f[1])
+                if nieuw and w.get("noot", "") in ("Nog niet in de verkoop.", "Verkoop start binnenkort; datum nog niet bekend.", "Verkoop is open (startmoment niet getoond).", "Algemene verkoop is gestart (startmoment niet getoond)."):
+                    w["noot"] = ""
                 if nieuw and w.get("noot", "").startswith("Nu in de verkoop; startmoment onbekend"):
                     w["noot"] = ""
+                if nieuw and w.get("noot", "").startswith("Verkoopstatus niet getoond; "):
+                    rest = w["noot"][len("Verkoopstatus niet getoond; "):]
+                    w["noot"] = rest[:1].upper() + rest[1:]
                 if nieuw and w.get("info"):
                     w["info"] = False
                 if nieuw and w.get("noot", "").startswith("Verkoopmomenten staan in een nieuwsbericht"):
