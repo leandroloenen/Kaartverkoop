@@ -1,6 +1,7 @@
-# Detailverkenning: Real Madrid (opnieuw klikken, nu met cookiebanner weg) en officiële bronnen Arsenal/Bayern (naam | startadres | modus | aantal)
-Real Madrid (more information) | https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino | klik:more information | 6
-Arsenal (help) | https://help.arsenal.com/support/solutions/articles/101000578825-home-tickets | geen | 1
-Arsenal (ticketinformatie Newcastle) | https://www.arsenal.com/ticket-information/ticket-information-arsenal-v-newcastle-united-aCz1s2e8wunL | geen | 1
-Bayern (status ticketing) | https://fcbayern.com/de/tickets/status-ticketing | geen | 1
-Bayern (tickets) | https://fcbayern.com/de/tickets | link:/de/tickets/ | 6
+# Detailverkenning: Milan, Inter, Leverkusen (voorbeeldberichten + overzichtspagina's) (naam | startadres | modus | aantal)
+Milan (bericht) | https://www.acmilan.com/en/news/articles/ticketing/2026-11-19/ac-milan-vs-fiorentina-first-home-game-of-2027 | geen | 1
+Milan (overzicht) | https://www.acmilan.com/en/news/articles/ticketing | link:/ticketing/2026 | 6
+Inter (bericht) | https://www.inter.it/en/news/tickets-supercoppa-inter-lazio-san-siro-2026-27 | geen | 1
+Inter (overzicht) | https://www.inter.it/en/news | link:tickets | 8
+Leverkusen (bericht) | https://www.bayer04.de/en-us/news/bundesliga/tickets-for-the-home-match-against-sv-07-elversberg | geen | 1
+Leverkusen (overzicht) | https://www.bayer04.de/en-us/news/bundesliga | link:tickets-for-the-home-match | 8
