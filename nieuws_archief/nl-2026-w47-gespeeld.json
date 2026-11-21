@@ -120,6 +120,20 @@
   ]
  },
  {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "More Info Sunderland",
+  "comp": "Premier League",
+  "aftrap": "2026-11-21T16:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
   "k": "chelsea",
   "naam": "Chelsea",
   "tegen": "Leeds United",
@@ -232,7 +246,7 @@
   "aftrap": "2026-11-21T18:45",
   "stadion": "Stadion Galgenwaard",
   "stad": "Utrecht",
-  "status": "Kaartverkoop is open",
+  "status": "Verkoopinfo volgt",
   "waarom": [
    "Gespeeld in Stadion Galgenwaard (Utrecht)."
   ]
@@ -276,6 +290,20 @@
   "status": "Verkoopinfo volgt",
   "waarom": [
    "Gespeeld in Euroborg (Groningen)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Celta de Vigo",
+  "comp": "La Liga",
+  "aftrap": "2026-11-21T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "status": "Verkoop is gestart",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Santiago Bernabéu (Madrid)."
   ]
  },
  {

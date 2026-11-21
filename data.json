@@ -496,6 +496,12 @@
    "land": "ES",
    "mijn": "vrij",
    "url": "https://www.rcdespanyol.com/en/nextmatches"
+  },
+  "real-madrid": {
+   "naam": "Real Madrid",
+   "land": "ES",
+   "mijn": "vrij",
+   "url": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino"
   }
  },
  "WEDSTRIJDEN": [
@@ -1234,179 +1240,6 @@
    "auto": true
   },
   {
-   "club": "sunderland",
-   "tegen": "Jagiellonia Białystok",
-   "comp": "Europa League",
-   "aftrap": "2026-11-26T21:00",
-   "fases": [
-    [
-     "lid",
-     "2026-10-27T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "seizoen",
-     "2026-10-29T11:00",
-     "Seizoenkaarthouders: plaatsen reserveren"
-    ],
-    [
-     "lid",
-     "2026-11-03T16:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-06T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2026-11-29T15:05",
-   "fases": [
-    [
-     "lid",
-     "2026-10-27T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-03T16:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-06T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2026-12-13T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-10T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-13T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-17T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Crystal Palace",
-   "comp": "Premier League",
-   "aftrap": "2026-12-20T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-20T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-24T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Hull City",
-   "comp": "Premier League",
-   "aftrap": "2027-01-02T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-20T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-24T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Liverpool",
-   "comp": "Premier League",
-   "aftrap": "2027-01-05T21:15",
-   "fases": [
-    [
-     "lid",
-     "2026-11-24T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-27T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-12-01T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
    "club": "acf-fiorentina",
    "tegen": "Cagliari",
    "comp": "Serie A",
@@ -1435,6 +1268,286 @@
    "auto": true
   },
   {
+   "club": "union",
+   "tegen": "Bayer Leverkusen",
+   "comp": "Bundesliga",
+   "aftrap": "2026-11-20T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
+   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
+  },
+  {
+   "club": "mancity",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Napoli",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-02T20:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Chelsea",
+   "comp": "Premier League",
+   "aftrap": "2026-12-12T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Bradford City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-15T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true,
+   "eerst_nu": "2026-11-12"
+  },
+  {
+   "club": "mancity",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2027-01-03T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2027-01-16T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Sporting CP",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2027-01-31T17:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true,
+   "eerst_nu": "2026-11-19"
+  },
+  {
+   "club": "mancity",
+   "tegen": "Newcastle United",
+   "comp": "Premier League",
+   "aftrap": "2027-02-20T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Everton",
+   "comp": "Premier League",
+   "aftrap": "2027-03-03T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Manchester United",
+   "comp": "Premier League",
+   "aftrap": "2027-03-20T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2027-04-17T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Brentford",
+   "comp": "Premier League",
+   "aftrap": "2027-05-01T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-05-08T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "mancity",
+   "tegen": "Aston Villa",
+   "comp": "Premier League",
+   "aftrap": "2027-05-23T16:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
+   "bron": "https://www.mancity.com/tickets/mens",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Arsenal",
+   "comp": "Premier League",
+   "aftrap": "2026-12-30T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-23T10:30",
+     "Leden"
+    ],
+    [
+     "seizoen",
+     "2026-11-25T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-27T10:30",
+     "Supporters met boekingsgeschiedenis"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/18/arsenal-h-tickets/",
+   "auto": true
+  },
+  {
+   "club": "fulham",
+   "tegen": "Brighton & Hove Albion",
+   "comp": "Premier League",
+   "aftrap": "2026-12-26T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T10:30",
+     "Leden (max. 2 tickets)"
+    ],
+    [
+     "seizoen",
+     "2026-11-19T10:30",
+     "Seizoenkaarthouders (extra kaarten)"
+    ],
+    [
+     "vrij",
+     "2026-11-23T10:30",
+     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-11-25T10:30",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
+   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "PSV",
    "comp": "Eredivisie",
@@ -1449,7 +1562,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---PSV-VriendenLoterij-Eredivisie-2026---2027",
+   "bron": "",
    "auto": true
   },
   {
@@ -1467,7 +1580,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "https://tickets.nec-nijmegen.nl/verkoop/N.E.C.---FC-Twente-VriendenLoterij-Eredivisie-2026---2027",
+   "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-10"
   },
@@ -1713,9 +1826,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-21T18:45",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "https://ticketing.fcutrecht.nl/verkoop/FC-Utrecht---SC-Cambuur-VriendenLoterij-Eredivisie-2026-2027",
    "auto": true
   },
@@ -2406,10 +2519,21 @@
    "tegen": "SV 07 Elversberg",
    "comp": "Bundesliga",
    "aftrap": "2027-01-24T17:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-11-19T08:00",
+     "Seizoenkaarthouders en clubleden"
+    ],
+    [
+     "vrij",
+     "2026-11-27T08:00",
+     "Vrije verkoop (niet-leden)"
+    ]
+   ],
    "nu": false,
    "info": false,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "noot": "",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -2418,10 +2542,21 @@
    "tegen": "FC Augsburg",
    "comp": "Bundesliga",
    "aftrap": "2027-02-06T15:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-11-19T08:00",
+     "Seizoenkaarthouders en clubleden"
+    ],
+    [
+     "vrij",
+     "2026-11-27T08:00",
+     "Vrije verkoop (niet-leden)"
+    ]
+   ],
    "nu": false,
    "info": false,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "noot": "",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -2430,10 +2565,21 @@
    "tegen": "1. FSV Mainz 05",
    "comp": "Bundesliga",
    "aftrap": "2027-02-20T15:30",
-   "fases": [],
+   "fases": [
+    [
+     "lid",
+     "2026-11-19T08:00",
+     "Seizoenkaarthouders en clubleden"
+    ],
+    [
+     "vrij",
+     "2026-11-27T08:00",
+     "Vrije verkoop (niet-leden)"
+    ]
+   ],
    "nu": false,
    "info": false,
-   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
+   "noot": "",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -2600,7 +2746,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2612,7 +2758,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum).",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true,
    "eerst_nu": "2026-11-17"
@@ -2625,7 +2771,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2637,7 +2783,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2649,7 +2795,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2661,7 +2807,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2673,7 +2819,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2685,7 +2831,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2697,7 +2843,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2709,7 +2855,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2721,7 +2867,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2733,7 +2879,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -2745,7 +2891,7 @@
    "fases": [],
    "nu": true,
    "info": false,
-   "noot": "Nu in de verkoop (de shop toont geen startdatum). Datum en tijd zijn nog niet definitief.",
+   "noot": "Het seizoen wordt in de zomer in één keer in de verkoop gebracht.",
    "bron": "",
    "auto": true
   },
@@ -3114,19 +3260,6 @@
    "noot": "",
    "bron": "https://tickets.tsg-hoffenheim.de/shop?wes=empty_session_104&language=1&shopid=104&nextstate=2&lpShortcutId=46",
    "auto": true
-  },
-  {
-   "club": "union",
-   "tegen": "Bayer Leverkusen",
-   "comp": "Bundesliga",
-   "aftrap": "2026-11-20T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Staat uitgelicht op de ticketpagina; de club toont niet alle wedstrijden.",
-   "bron": "https://www.tickets.union-zeughaus.de/shop?wes=58b1aa2a1&shopid=1&nextstate=2&lpShortcutId=13",
-   "auto": true,
-   "eerst_nu": "2026-11-11"
   },
   {
    "club": "mainz",
@@ -3606,18 +3739,6 @@
   },
   {
    "club": "tottenham",
-   "tegen": "Ipswich Town",
-   "comp": "Premier League",
-   "aftrap": "2026-11-21T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "",
-   "bron": "https://www.tottenhamhotspur.com/tickets/mens-home-tickets",
-   "auto": true
-  },
-  {
-   "club": "tottenham",
    "tegen": "Fulham",
    "comp": "Premier League",
    "aftrap": "2026-12-03T21:00",
@@ -3842,212 +3963,6 @@
    "auto": true
   },
   {
-   "club": "mancity",
-   "tegen": "Fulham",
-   "comp": "Premier League",
-   "aftrap": "2026-11-21T13:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Napoli",
-   "comp": "Champions League",
-   "aftrap": "2026-11-24T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Leeds United",
-   "comp": "Premier League",
-   "aftrap": "2026-12-02T20:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Chelsea",
-   "comp": "Premier League",
-   "aftrap": "2026-12-12T18:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Bradford City",
-   "comp": "Premier League",
-   "aftrap": "2026-12-15T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true,
-   "eerst_nu": "2026-11-12"
-  },
-  {
-   "club": "mancity",
-   "tegen": "Hull City",
-   "comp": "Premier League",
-   "aftrap": "2026-12-19T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2027-01-03T17:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2027-01-16T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Sporting CP",
-   "comp": "Champions League",
-   "aftrap": "2027-01-27T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Arsenal",
-   "comp": "Premier League",
-   "aftrap": "2027-01-31T17:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true,
-   "eerst_nu": "2026-11-19"
-  },
-  {
-   "club": "mancity",
-   "tegen": "Newcastle United",
-   "comp": "Premier League",
-   "aftrap": "2027-02-20T16:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Everton",
-   "comp": "Premier League",
-   "aftrap": "2027-03-03T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Manchester United",
-   "comp": "Premier League",
-   "aftrap": "2027-03-20T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Crystal Palace",
-   "comp": "Premier League",
-   "aftrap": "2027-04-17T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Brentford",
-   "comp": "Premier League",
-   "aftrap": "2027-05-01T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Leden en seizoenkaarthouders; max. 4 tickets (seizoenkaarthouders +3). Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Liverpool",
-   "comp": "Premier League",
-   "aftrap": "2027-05-08T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alleen voor leden die de afgelopen 2 seizoenen 3+ Premier League-wedstrijden in het Etihad kochten; 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
-   "club": "mancity",
-   "tegen": "Aston Villa",
-   "comp": "Premier League",
-   "aftrap": "2027-05-23T16:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Alle leden (Premium, Matchday, Junior); 1 ticket per lid. Alleen hospitality in de verkoop; gewone kaarten nog niet.",
-   "bron": "https://www.mancity.com/tickets/mens",
-   "auto": true
-  },
-  {
    "club": "liverpool",
    "tegen": "Manchester United",
    "comp": "Premier League",
@@ -4110,7 +4025,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "noot": "Kaarten zijn alleen voor leden (All Red).",
    "bron": "https://www.liverpoolfc.com/tickets",
    "auto": true
   },
@@ -4143,6 +4058,18 @@
    "tegen": "Tottenham Hotspur",
    "comp": "Premier League",
    "aftrap": "2026-12-19T18:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).",
+   "bron": "https://www.liverpoolfc.com/tickets",
+   "auto": true
+  },
+  {
+   "club": "liverpool",
+   "tegen": "Coventry City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T16:00",
    "fases": [],
    "nu": false,
    "info": true,
@@ -4234,6 +4161,54 @@
    "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
    "bron": "https://www.juventus.com/en/tickets/",
    "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Udinese",
+   "comp": "Serie A",
+   "aftrap": "2026-12-06T17:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-08T15:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
+   "bron": "https://www.juventus.com/en/tickets/",
+   "auto": true,
+   "eerst_nu": "2026-11-21"
+  },
+  {
+   "club": "juventus",
+   "tegen": "Monza",
+   "comp": "Serie A",
+   "aftrap": "2026-12-14T19:45",
+   "fases": [
+    [
+     "lid",
+     "2026-10-02T15:00",
+     "Member (J1897 / Black&White)"
+    ],
+    [
+     "vrij",
+     "2026-10-08T15:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoopmomenten volgens de club (Italiaanse tijd is gelijk aan Nederlandse tijd).",
+   "bron": "https://www.juventus.com/en/tickets/",
+   "auto": true,
+   "eerst_nu": "2026-11-21"
   },
   {
    "club": "juventus",
@@ -4377,6 +4352,18 @@
    "tegen": "Inter",
    "comp": "Serie A",
    "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://www.juventus.com/en/tickets/",
+   "auto": true
+  },
+  {
+   "club": "juventus",
+   "tegen": "Frosinone",
+   "comp": "Serie A",
+   "aftrap": "2027-05-30",
    "fases": [],
    "nu": false,
    "info": true,
@@ -6506,10 +6493,41 @@
    "tegen": "Liverpool FC",
    "comp": "Champions League",
    "aftrap": "2027-01-19T20:00",
-   "fases": [],
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-17T12:00",
+     "Full-seizoenkaarthouders (extra tickets voor vrienden en familie)"
+    ],
+    [
+     "seizoen",
+     "2026-11-18T10:00",
+     "Plus-seizoenkaarthouders en Inter Club Plus-leden"
+    ],
+    [
+     "seizoen",
+     "2026-11-18T16:00",
+     "Base-seizoenkaarthouders en Inter Club Base-leden"
+    ],
+    [
+     "lid",
+     "2026-11-19T10:00",
+     "Kopers van eerdere thuiswedstrijden (promo)"
+    ],
+    [
+     "lid",
+     "2026-11-19T16:00",
+     "INTERISTA-leden"
+    ],
+    [
+     "vrij",
+     "2026-11-20T12:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "noot": "",
    "bron": "https://www.inter.it/en/tickets",
    "auto": true
   },
@@ -7075,29 +7093,6 @@
    "info": false,
    "noot": "Alleen leden die al vóór 1 juli lid waren, mogen kopen.",
    "bron": "https://shop.vfl-wolfsburg.de/vfl-wolfsburg-vs.-arminia-bielefeld/GD00000202",
-   "auto": true
-  },
-  {
-   "club": "wolfsburg",
-   "tegen": "Holstein Kiel",
-   "comp": "2. Bundesliga",
-   "aftrap": "2026-11-21T13:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-03T09:45",
-     "Seizoenkaarthouders en leden"
-    ],
-    [
-     "vrij",
-     "2026-11-10T09:45",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Alleen leden die al vóór 1 juli lid waren, mogen kopen.",
-   "bron": "https://shop.vfl-wolfsburg.de/vfl-wolfsburg-vs.-holstein-kiel/GD00000200",
    "auto": true
   },
   {
@@ -7862,67 +7857,6 @@
    "auto": true
   },
   {
-   "club": "fulham",
-   "tegen": "Arsenal",
-   "comp": "Premier League",
-   "aftrap": "2026-12-30T20:30",
-   "fases": [
-    [
-     "lid",
-     "2026-11-23T10:30",
-     "Leden"
-    ],
-    [
-     "seizoen",
-     "2026-11-25T10:30",
-     "Seizoenkaarthouders (extra kaarten)"
-    ],
-    [
-     "vrij",
-     "2026-11-27T10:30",
-     "Supporters met boekingsgeschiedenis"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.fulhamfc.com/news/2026/november/18/arsenal-h-tickets/",
-   "auto": true
-  },
-  {
-   "club": "fulham",
-   "tegen": "Brighton & Hove Albion",
-   "comp": "Premier League",
-   "aftrap": "2026-12-26T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T10:30",
-     "Leden (max. 2 tickets)"
-    ],
-    [
-     "seizoen",
-     "2026-11-19T10:30",
-     "Seizoenkaarthouders (extra kaarten)"
-    ],
-    [
-     "vrij",
-     "2026-11-23T10:30",
-     "Supporters met boekingsgeschiedenis (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-11-25T10:30",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.fulhamfc.com/news/2026/november/12/brighton-home-tickets/",
-   "auto": true
-  },
-  {
    "club": "aston-villa",
    "tegen": "Paris Saint-Germain",
    "comp": "Champions League",
@@ -7970,7 +7904,7 @@
   },
   {
    "club": "aston-villa",
-   "tegen": "Sunderland",
+   "tegen": "More Info Sunderland",
    "comp": "Premier League",
    "aftrap": "2026-11-21T16:00",
    "fases": [
@@ -8015,6 +7949,29 @@
    "auto": true
   },
   {
+   "club": "aston-villa",
+   "tegen": "Sunderland",
+   "comp": "Premier League",
+   "aftrap": "2026-11-21T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-26T10:30",
+     "Leden (volwassenen en junioren)"
+    ],
+    [
+     "vrij",
+     "2026-11-09T10:30",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
+   "bron": "https://www.avfc.co.uk/news/2026/october/22/ticketing-sunderland-ticket-details/",
+   "auto": true
+  },
+  {
    "club": "hull-city",
    "tegen": "Tottenham Hotspur",
    "comp": "Premier League",
@@ -8030,6 +7987,179 @@
    "info": false,
    "noot": "Kaarten zijn er alleen voor leden en voor supporters die dit of vorig seizoen een Hull-kaartje kochten.",
    "bron": "https://www.wearehullcity.co.uk/news/2026/november/02/ticket-details-totthenham-hotspur-h-26-27/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Jagiellonia Białystok",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "seizoen",
+     "2026-10-29T11:00",
+     "Seizoenkaarthouders: plaatsen reserveren"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29T15:05",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-12-13T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-10T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-13T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-17T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-01-05T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-24T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-27T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-12-01T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
    "auto": true
   },
   {
@@ -8505,18 +8635,6 @@
   },
   {
    "club": "rcd-espanyol",
-   "tegen": "Getafe CF",
-   "comp": "La Liga",
-   "aftrap": "2026-11-30T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "",
-   "bron": "https://www.rcdespanyol.com/en/nextmatches",
-   "auto": true
-  },
-  {
-   "club": "rcd-espanyol",
    "tegen": "Celta de Vigo",
    "comp": "La Liga",
    "aftrap": "2026-12-13",
@@ -8657,6 +8775,100 @@
    "info": true,
    "noot": "Aanvangstijd nog niet bevestigd.",
    "bron": "https://www.rcdespanyol.com/en/nextmatches",
+   "auto": true
+  },
+  {
+   "club": "real-madrid",
+   "tegen": "Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2026-11-21T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-13T11:00",
+     "Leden zonder seizoenkaart (20% korting)"
+    ],
+    [
+     "lid",
+     "2026-11-16T09:00",
+     "Madridistas Platinum/Premium"
+    ],
+    [
+     "vrij",
+     "2026-11-17T09:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino",
+   "auto": true
+  },
+  {
+   "club": "real-madrid",
+   "tegen": "PSV",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-06T11:00",
+     "Seizoenkaarthouders (30% korting)"
+    ],
+    [
+     "lid",
+     "2026-11-10T11:00",
+     "Getroffen UEFA-leden (30% korting)"
+    ],
+    [
+     "lid",
+     "2026-11-11T09:00",
+     "Leden zonder seizoenkaart (30% korting)"
+    ],
+    [
+     "lid",
+     "2026-11-12T13:00",
+     "Madridistas Platinum/Premium"
+    ],
+    [
+     "vrij",
+     "2026-11-13T09:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino",
+   "auto": true
+  },
+  {
+   "club": "real-madrid",
+   "tegen": "Alavés",
+   "comp": "La Liga",
+   "aftrap": "2026-11-28T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-20T11:00",
+     "Leden zonder seizoenkaart (20% korting)"
+    ],
+    [
+     "lid",
+     "2026-11-23T09:00",
+     "Madridistas Platinum/Premium"
+    ],
+    [
+     "vrij",
+     "2026-11-24T09:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino",
    "auto": true
   }
  ],
@@ -9176,8 +9388,20 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-20",
+ "bijgewerkt": "2026-11-21",
  "SCHATTING": {
+  "union": {
+   "n": 1,
+   "mediaan": 9,
+   "min": 9,
+   "max": 9
+  },
+  "mancity": {
+   "n": 2,
+   "mediaan": 73,
+   "min": 33,
+   "max": 73
+  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -9274,12 +9498,6 @@
    "min": 22,
    "max": 34
   },
-  "union": {
-   "n": 1,
-   "mediaan": 9,
-   "min": 9,
-   "max": 9
-  },
   "barcelona": {
    "n": 9,
    "mediaan": 116,
@@ -9304,17 +9522,11 @@
    "min": 59,
    "max": 85
   },
-  "mancity": {
-   "n": 2,
-   "mediaan": 73,
-   "min": 33,
-   "max": 73
-  },
   "juventus": {
-   "n": 1,
+   "n": 3,
    "mediaan": 16,
-   "min": 16,
-   "max": 16
+   "min": 15,
+   "max": 23
   },
   "leipzig": {
    "n": 6,

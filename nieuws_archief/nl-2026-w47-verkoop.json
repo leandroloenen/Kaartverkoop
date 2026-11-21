@@ -11,7 +11,7 @@
   "label": "Gold-leden en Season Ticket+-houders (voorrang)",
   "waarom": [
    "Stadsderby: beide clubs komen uit Londen.",
-   "Te combineren met Tottenham Hotspur - Bournemouth in Londen op zaterdag 26 december.",
+   "Te combineren met Fulham - Brighton & Hove Albion in Londen op zaterdag 26 december.",
    "Gespeeld in Selhurst Park (Londen)."
   ]
  },
@@ -44,6 +44,21 @@
    "Bekerwedstrijd: de winnaar gaat door, dus het is alles of niets.",
    "Ook zonder lidmaatschap te koop (vrije verkoop).",
    "Gespeeld in Philips Stadion (Eindhoven)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Celta de Vigo",
+  "comp": "La Liga",
+  "aftrap": "2026-11-21T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "moment": "2026-11-16T09:00",
+  "label": "Madridistas Platinum/Premium",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Santiago Bernabéu (Madrid)."
   ]
  },
  {
@@ -208,6 +223,21 @@
   ]
  },
  {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Celta de Vigo",
+  "comp": "La Liga",
+  "aftrap": "2026-11-21T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "moment": "2026-11-17T09:00",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
   "k": "wolfsburg",
   "naam": "VfL Wolfsburg",
   "tegen": "Arminia Bielefeld",
@@ -355,6 +385,22 @@
   ]
  },
  {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-17T12:00",
+  "label": "Full-seizoenkaarthouders (extra tickets voor vrienden en familie)",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
+  ]
+ },
+ {
   "k": "ipswich-town",
   "naam": "Ipswich Town",
   "tegen": "Brentford",
@@ -458,6 +504,22 @@
   ]
  },
  {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-18T10:00",
+  "label": "Plus-seizoenkaarthouders en Inter Club Plus-leden",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
+  ]
+ },
+ {
   "k": "forest",
   "naam": "Nottingham Forest",
   "tegen": "Everton",
@@ -518,6 +580,22 @@
   ]
  },
  {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-18T16:00",
+  "label": "Base-seizoenkaarthouders en Inter Club Base-leden",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
+  ]
+ },
+ {
   "k": "crystal-palace",
   "naam": "Crystal Palace",
   "tegen": "Arsenal",
@@ -529,7 +607,7 @@
   "label": "Overige leden en seizoenkaarthouders",
   "waarom": [
    "Stadsderby: beide clubs komen uit Londen.",
-   "Te combineren met Tottenham Hotspur - Bournemouth in Londen op zaterdag 26 december.",
+   "Te combineren met Fulham - Brighton & Hove Albion in Londen op zaterdag 26 december.",
    "Gespeeld in Selhurst Park (Londen)."
   ]
  },
@@ -546,6 +624,51 @@
   "waarom": [
    "Te combineren met Tottenham Hotspur - Brighton and Hove Albion in Londen op dinsdag 29 december.",
    "Gespeeld in Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "SV 07 Elversberg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-24T17:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-19T08:00",
+  "label": "Seizoenkaarthouders en clubleden",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "FC Augsburg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-02-06T15:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-19T08:00",
+  "label": "Seizoenkaarthouders en clubleden",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "1. FSV Mainz 05",
+  "comp": "Bundesliga",
+  "aftrap": "2027-02-20T15:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-19T08:00",
+  "label": "Seizoenkaarthouders en clubleden",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in BayArena (Leverkusen)."
   ]
  },
  {
@@ -576,6 +699,22 @@
    "Europese avond in Anfield.",
    "Ook zonder lidmaatschap te koop (vrije verkoop).",
    "Gespeeld in Anfield (Liverpool)."
+  ]
+ },
+ {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-19T10:00",
+  "label": "Kopers van eerdere thuiswedstrijden (promo)",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
   ]
  },
  {
@@ -666,6 +805,22 @@
   "label": "Ledenvoorverkoop",
   "waarom": [
    "Gespeeld in Millerntor-Stadion (Hamburg)."
+  ]
+ },
+ {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-19T16:00",
+  "label": "INTERISTA-leden",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
   ]
  },
  {
@@ -800,6 +955,37 @@
   "label": "Tweede verkoop (leden)",
   "waarom": [
    "Gespeeld in City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Alavés",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "moment": "2026-11-20T11:00",
+  "label": "Leden zonder seizoenkaart (20% korting)",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Liverpool FC",
+  "comp": "Champions League",
+  "aftrap": "2027-01-19T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "moment": "2026-11-20T12:00",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Europese avond in San Siro.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in San Siro (Milaan)."
   ]
  },
  {
