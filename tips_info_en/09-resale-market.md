@@ -4,7 +4,7 @@ Many fans assume a match is gone the moment general sale closes. That is not alw
 
 ## How does it work?
 
-A season ticket holder who cannot make a game puts the ticket back on sale through the club. You buy it at face value (sometimes plus a small service fee), and the ticket is reissued or transferred to your name. You avoid the inflated prices of commercial resellers, and you know the ticket is genuine.
+A season ticket holder who cannot make a game puts the ticket back on sale through the club. You buy it at face value (sometimes plus a small service fee), and the ticket is reissued or transferred to your name. You pay face value, and you know the ticket is genuine.
 
 This is very common in Germany, where many Bundesliga clubs have such a platform. It is also growing in the Netherlands, England and other countries. I have bought tickets several times myself via Ajax's resale platform.
 
@@ -23,7 +23,7 @@ Most tickets appear in the final two weeks before the match. That is when life g
 - Look on the club's website for terms such as *resale*, *ticket exchange*, *marketplace* or *Zweitmarkt*.
 - Create an account in advance so you can order quickly. Good tickets often go within minutes.
 - Check the page regularly, or set yourself a reminder.
-- Only buy through the club's official platform. Tickets from unknown sellers are often invalid or far too expensive.
+- Preferably buy through the club's official platform. There you know the ticket is valid.
 - Read the terms: some platforms require an account or membership, and not every club allows every match.
 
 On Football Ticket Scout you can see when general sale opens for each club. If a match is sold out, the resale market is your second chance.
