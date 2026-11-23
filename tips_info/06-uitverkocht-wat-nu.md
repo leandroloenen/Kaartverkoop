@@ -3,7 +3,7 @@ titel: Uitverkocht? Zo vergroot je je kans op een kaartje
 beschrijving: Wat je kunt doen als een wedstrijd uitverkocht is, of als je te laat bent voor de verkoop.
 volgorde: 6
 ---
-Een uitverkochte wedstrijd is niet altijd het einde. Er zijn manieren waarop je alsnog een kaartje kunt krijgen, zonder naar dure resellers te hoeven.
+Een uitverkochte wedstrijd is niet altijd het einde. Er zijn manieren waarop je alsnog een kaartje kunt krijgen, bijvoorbeeld via de club zelf voordat je naar een reseller kijkt.
 
 ## Kijk of er een volgende verkoopfase komt
 
