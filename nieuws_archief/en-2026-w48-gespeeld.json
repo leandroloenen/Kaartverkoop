@@ -1,0 +1,665 @@
+[
+ {
+  "k": "monza",
+  "naam": "AC Monza",
+  "tegen": "ACF Fiorentina",
+  "comp": "Serie A",
+  "aftrap": "2026-11-23T20:45",
+  "stadion": "Stadio Brianteo",
+  "stad": "Monza",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at Stadio Brianteo (Monza)."
+  ]
+ },
+ {
+  "k": "brentford",
+  "naam": "Brentford",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-11-23T21:00",
+  "stadion": "Gtech Community Stadium",
+  "stad": "Londen",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Gtech Community Stadium (Londen)."
+  ]
+ },
+ {
+  "k": "como",
+  "naam": "Como 1907",
+  "tegen": "AEK Athens FC",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Stadio Giuseppe Sinigaglia",
+  "stad": "Como",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at Stadio Giuseppe Sinigaglia.",
+   "Played at Stadio Giuseppe Sinigaglia (Como)."
+  ]
+ },
+ {
+  "k": "feyenoord",
+  "naam": "Feyenoord",
+  "tegen": "FC Porto",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Kuip",
+  "stad": "Rotterdam",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at Kuip.",
+   "Played at Kuip (Rotterdam)."
+  ]
+ },
+ {
+  "k": "mancity",
+  "naam": "Manchester City",
+  "tegen": "Napoli",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Etihad Stadium",
+  "stad": "Manchester",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at Etihad Stadium.",
+   "Played at Etihad Stadium (Manchester)."
+  ]
+ },
+ {
+  "k": "leipzig",
+  "naam": "RB Leipzig",
+  "tegen": "Racing Club de Lens",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Red Bull Arena",
+  "stad": "Leipzig",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at Red Bull Arena.",
+   "Played at Red Bull Arena (Leipzig)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "PSV",
+  "comp": "Champions League",
+  "aftrap": "2026-11-24T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "status": "Sale has started",
+  "waarom": [
+   "European night at Santiago Bernabéu.",
+   "Available without a membership (general sale).",
+   "Played at Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "VfB Stuttgart",
+  "comp": "Champions League",
+  "aftrap": "2026-11-25T20:00",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at San Siro.",
+   "Played at San Siro (Milaan)."
+  ]
+ },
+ {
+  "k": "ajax",
+  "naam": "Ajax",
+  "tegen": "FC Thun",
+  "comp": "Conference League",
+  "aftrap": "2026-11-26T18:45",
+  "stadion": "Johan Cruijff ArenA",
+  "stad": "Amsterdam",
+  "status": "Sale info to follow",
+  "waarom": [
+   "European night at Johan Cruijff ArenA.",
+   "Played at Johan Cruijff ArenA (Amsterdam)."
+  ]
+ },
+ {
+  "k": "brighton",
+  "naam": "Brighton & Hove Albion",
+  "tegen": "Universitatea Craiova",
+  "comp": "UEFA",
+  "aftrap": "2026-11-26T18:45",
+  "stadion": "Amex Stadium",
+  "stad": "Brighton",
+  "status": "Sale info to follow",
+  "waarom": [
+   "European night at Amex Stadium.",
+   "Played at Amex Stadium (Brighton)."
+  ]
+ },
+ {
+  "k": "celta",
+  "naam": "Celta de Vigo",
+  "tegen": "AFC Bournemouth",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T18:45",
+  "stadion": "Abanca-Balaídos",
+  "stad": "Vigo",
+  "status": "Sale info to follow",
+  "waarom": [
+   "European night at Abanca-Balaídos.",
+   "Played at Abanca-Balaídos (Vigo)."
+  ]
+ },
+ {
+  "k": "juventus",
+  "naam": "Juventus",
+  "tegen": "Omonia Nicosia",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T20:00",
+  "stadion": "Allianz Stadium",
+  "stad": "Turijn",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at Allianz Stadium.",
+   "Available without a membership (general sale).",
+   "Played at Allianz Stadium (Turijn)."
+  ]
+ },
+ {
+  "k": "freiburg",
+  "naam": "SC Freiburg",
+  "tegen": "FC Twente",
+  "comp": "Conference League",
+  "aftrap": "2026-11-26T20:00",
+  "stadion": "Europa-Park Stadion",
+  "stad": "Freiburg",
+  "status": "Sale has started",
+  "waarom": [
+   "European night at Europa-Park Stadion.",
+   "Played at Europa-Park Stadion (Freiburg)."
+  ]
+ },
+ {
+  "k": "nec",
+  "naam": "N.E.C.",
+  "tegen": "Stade Rennes",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T21:00",
+  "stadion": "Stadion De Goffert",
+  "stad": "Nijmegen",
+  "status": "Sale has started",
+  "waarom": [
+   "European night at Stadion De Goffert.",
+   "Played at Stadion De Goffert (Nijmegen)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Jagiellonia Białystok",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T21:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "status": "Sale has started",
+  "waarom": [
+   "European night at Stadium of Light.",
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "hoffenheim",
+  "naam": "TSG Hoffenheim",
+  "tegen": "SK Sturm Graz",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T21:00",
+  "stadion": "PreZero Arena",
+  "stad": "Sinsheim",
+  "status": "Tickets on sale",
+  "waarom": [
+   "European night at PreZero Arena.",
+   "Played at PreZero Arena (Sinsheim)."
+  ]
+ },
+ {
+  "k": "groningen",
+  "naam": "FC Groningen",
+  "tegen": "Willem II",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-27",
+  "stadion": "Euroborg",
+  "stad": "Groningen",
+  "status": "Sale has started",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Euroborg (Groningen)."
+  ]
+ },
+ {
+  "k": "werder-bremen",
+  "naam": "Werder Bremen",
+  "tegen": "Borussia Mönchengladbach",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-27T20:30",
+  "stadion": "Weserstadion",
+  "stad": "Bremen",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at Weserstadion (Bremen)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Bologna",
+  "comp": "Serie A",
+  "aftrap": "2026-11-27T20:45",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "status": "Sale has started",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Pierluigi Penzo (Venetië)."
+  ]
+ },
+ {
+  "k": "forest",
+  "naam": "Nottingham Forest",
+  "tegen": "Chelsea",
+  "comp": "Premier League",
+  "aftrap": "2026-11-27T21:00",
+  "stadion": "City Ground",
+  "stad": "Nottingham",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at City Ground (Nottingham)."
+  ]
+ },
+ {
+  "k": "everton",
+  "naam": "Everton",
+  "tegen": "Liverpool",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28",
+  "stadion": "Hill Dickinson Stadium",
+  "stad": "Liverpool",
+  "status": "Sale has started",
+  "waarom": [
+   "City derby: both clubs are from Liverpool.",
+   "Played at Hill Dickinson Stadium (Liverpool)."
+  ]
+ },
+ {
+  "k": "betis",
+  "naam": "Real Betis",
+  "tegen": "Rayo Vallecano",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T14:00",
+  "stadion": "Estadio Benito Villamarín",
+  "stad": "Sevilla",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Estadio Benito Villamarín (Sevilla)."
+  ]
+ },
+ {
+  "k": "koeln",
+  "naam": "1. FC Köln",
+  "tegen": "SV 07 Elversberg",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-28T15:30",
+  "stadion": "RheinEnergieStadion",
+  "stad": "Keulen",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at RheinEnergieStadion (Keulen)."
+  ]
+ },
+ {
+  "k": "mainz",
+  "naam": "1. FSV Mainz 05",
+  "tegen": "1. FC Union Berlin",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-28T15:30",
+  "stadion": "Mewa Arena",
+  "stad": "Mainz",
+  "status": "Sale has started",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Mewa Arena (Mainz)."
+  ]
+ },
+ {
+  "k": "hsv",
+  "naam": "Hamburger SV",
+  "tegen": "FC Bayern München",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-28T15:30",
+  "stadion": "Volksparkstadion",
+  "stad": "Hamburg",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Volksparkstadion (Hamburg)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Coventry City",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "excelsior",
+  "naam": "Excelsior",
+  "tegen": "Telstar",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-28T16:30",
+  "stadion": "Van Donge & De Roo Stadion",
+  "stad": "Rotterdam",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Can be combined with Feyenoord - Ajax in Rotterdam on Sunday 29 November.",
+   "Played at Van Donge & De Roo Stadion (Rotterdam)."
+  ]
+ },
+ {
+  "k": "torino",
+  "naam": "Torino FC",
+  "tegen": "Lazio",
+  "comp": "Serie A",
+  "aftrap": "2026-11-28T18:00",
+  "stadion": "Stadio Olimpico Grande Torino",
+  "stad": "Turijn",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Stadio Olimpico Grande Torino (Turijn)."
+  ]
+ },
+ {
+  "k": "elche",
+  "naam": "Elche CF",
+  "tegen": "CA Madrid",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T18:30",
+  "stadion": "Estadio Martínez Valero",
+  "stad": "Elche",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Estadio Martínez Valero (Elche)."
+  ]
+ },
+ {
+  "k": "ipswich-town",
+  "naam": "Ipswich Town",
+  "tegen": "Aston Villa",
+  "comp": "Premier League",
+  "aftrap": "2026-11-28T18:30",
+  "stadion": "Portman Road",
+  "stad": "Ipswich",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at Portman Road (Ipswich)."
+  ]
+ },
+ {
+  "k": "stuttgart",
+  "naam": "VfB Stuttgart",
+  "tegen": "Eintracht Frankfurt",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-28T18:30",
+  "stadion": "MHPArena",
+  "stad": "Stuttgart",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "inter",
+  "naam": "Inter",
+  "tegen": "Genoa",
+  "comp": "Serie A",
+  "aftrap": "2026-11-28T19:45",
+  "stadion": "San Siro",
+  "stad": "Milaan",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at San Siro (Milaan)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Alavés",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "status": "Sale starts Tuesday 24 November 2026 at 09:00",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
+  "k": "cambuur",
+  "naam": "SC Cambuur",
+  "tegen": "Sparta Rotterdam",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Cambuur Stadion",
+  "stad": "Leeuwarden",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Cambuur Stadion (Leeuwarden)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "Hull City",
+  "comp": "Premier League",
+  "aftrap": "2026-11-29",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "valencia",
+  "naam": "Valencia CF",
+  "tegen": "Ca Osasuna",
+  "comp": "La Liga",
+  "aftrap": "2026-11-29T14:00",
+  "stadion": "Mestalla",
+  "stad": "Valencia",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Mestalla (Valencia)."
+  ]
+ },
+ {
+  "k": "feyenoord",
+  "naam": "Feyenoord",
+  "tegen": "Ajax",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T14:30",
+  "stadion": "Kuip",
+  "stad": "Rotterdam",
+  "status": "Sale has started",
+  "waarom": [
+   "Can be combined with Excelsior - Telstar in Rotterdam on Saturday 28 November.",
+   "Played at Kuip (Rotterdam)."
+  ]
+ },
+ {
+  "k": "fortuna",
+  "naam": "Fortuna Sittard",
+  "tegen": "SC Heerenveen",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T14:30",
+  "stadion": "Fortuna Sittard Stadion",
+  "stad": "Sittard",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Fortuna Sittard Stadion (Sittard)."
+  ]
+ },
+ {
+  "k": "freiburg",
+  "naam": "SC Freiburg",
+  "tegen": "RB Leipzig",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-29T14:30",
+  "stadion": "Europa-Park Stadion",
+  "stad": "Freiburg",
+  "status": "Sale has started",
+  "waarom": [
+   "Played at Europa-Park Stadion (Freiburg)."
+  ]
+ },
+ {
+  "k": "brighton",
+  "naam": "Brighton & Hove Albion",
+  "tegen": "Newcastle United",
+  "comp": "Premier League",
+  "aftrap": "2026-11-29T15:05",
+  "stadion": "Amex Stadium",
+  "stad": "Brighton",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at Amex Stadium (Brighton)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Tottenham Hotspur",
+  "comp": "Premier League",
+  "aftrap": "2026-11-29T15:05",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "status": "Sale has started",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "deportivo",
+  "naam": "RC Deportivo",
+  "tegen": "FC Barcelona",
+  "comp": "La Liga",
+  "aftrap": "2026-11-29T16:15",
+  "stadion": "Estadio de Riazor",
+  "stad": "A Coruña",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Estadio de Riazor (A Coruña)."
+  ]
+ },
+ {
+  "k": "pec",
+  "naam": "PEC Zwolle",
+  "tegen": "AZ",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T16:45",
+  "stadion": "MAC³PARK",
+  "stad": "Zwolle",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at MAC³PARK (Zwolle)."
+  ]
+ },
+ {
+  "k": "hoffenheim",
+  "naam": "TSG Hoffenheim",
+  "tegen": "FC Augsburg",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-29T17:30",
+  "stadion": "PreZero Arena",
+  "stad": "Sinsheim",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at PreZero Arena (Sinsheim)."
+  ]
+ },
+ {
+  "k": "roma",
+  "naam": "AS Roma",
+  "tegen": "Monza",
+  "comp": "Serie A",
+  "aftrap": "2026-11-29T18:00",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Stadio Olimpico (Rome)."
+  ]
+ },
+ {
+  "k": "celta",
+  "naam": "Celta de Vigo",
+  "tegen": "Villarreal",
+  "comp": "La Liga",
+  "aftrap": "2026-11-29T18:30",
+  "stadion": "Abanca-Balaídos",
+  "stad": "Vigo",
+  "status": "Sale info to follow",
+  "waarom": [
+   "Played at Abanca-Balaídos (Vigo)."
+  ]
+ },
+ {
+  "k": "bvb",
+  "naam": "Borussia Dortmund",
+  "tegen": "Bayer Leverkusen",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-29T19:30",
+  "stadion": "Signal Iduna Park",
+  "stad": "Dortmund",
+  "status": "Sale has started",
+  "waarom": [
+   "Tickets are usually hard to get at this club: be early.",
+   "Played at Signal Iduna Park (Dortmund)."
+  ]
+ },
+ {
+  "k": "nec",
+  "naam": "N.E.C.",
+  "tegen": "FC Twente",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T20:00",
+  "stadion": "Stadion De Goffert",
+  "stad": "Nijmegen",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Stadion De Goffert (Nijmegen)."
+  ]
+ },
+ {
+  "k": "como",
+  "naam": "Como 1907",
+  "tegen": "Juventus FC",
+  "comp": "Serie A",
+  "aftrap": "2026-11-29T20:45",
+  "stadion": "Stadio Giuseppe Sinigaglia",
+  "stad": "Como",
+  "status": "Tickets on sale",
+  "waarom": [
+   "Played at Stadio Giuseppe Sinigaglia (Como)."
+  ]
+ }
+]

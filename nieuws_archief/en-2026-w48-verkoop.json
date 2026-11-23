@@ -1,0 +1,609 @@
+[
+ {
+  "k": "telstar",
+  "naam": "SC Telstar",
+  "tegen": "FC Groningen",
+  "comp": "Eredivisie",
+  "aftrap": "2026-12-04T20:00",
+  "stadion": "BUKO Stadion",
+  "stad": "Velsen-Zuid",
+  "moment": "2026-11-23",
+  "label": "Sales start (audience not stated)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at BUKO Stadion (Velsen-Zuid)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Alavés",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "moment": "2026-11-23T09:00",
+  "label": "Madridistas Platinum/Premium",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
+  "k": "stuttgart",
+  "naam": "VfB Stuttgart",
+  "tegen": "1. FSV Mainz 05",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-15T20:30",
+  "stadion": "MHPArena",
+  "stad": "Stuttgart",
+  "moment": "2026-11-23T09:00",
+  "label": "Members (Mitglieder) (max. 2 tickets)",
+  "waarom": [
+   "Played at MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "mainz",
+  "naam": "1. FSV Mainz 05",
+  "tegen": "Spiel der Herzen\n1. FC Köln",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-19T15:30",
+  "stadion": "Mewa Arena",
+  "stad": "Mainz",
+  "moment": "2026-11-23T10:00",
+  "label": "Bestandskunden / 11er-Karteninhaber",
+  "waarom": [
+   "Played at Mewa Arena (Mainz)."
+  ]
+ },
+ {
+  "k": "venezia",
+  "naam": "Venezia FC",
+  "tegen": "Sassuolo",
+  "comp": "Serie A",
+  "aftrap": "2026-12-07T18:30",
+  "stadion": "Stadio Pierluigi Penzo",
+  "stad": "Venetië",
+  "moment": "2026-11-23T10:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Pierluigi Penzo (Venetië)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Everton",
+  "comp": "Premier League",
+  "aftrap": "2026-12-02T21:15",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-23T10:30",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-12-05T16:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-23T10:30",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Villa Park (Birmingham)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30T20:30",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-23T10:30",
+  "label": "Members",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Brighton & Hove Albion",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-23T10:30",
+  "label": "Supporters with booking history (max. 4 tickets)",
+  "waarom": [
+   "Can be combined with Crystal Palace - Arsenal in Londen on Sunday 27 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "werder-bremen",
+  "naam": "Werder Bremen",
+  "tegen": "SV Elversberg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-17T15:30",
+  "stadion": "Weserstadion",
+  "stad": "Bremen",
+  "moment": "2026-11-23T10:30",
+  "label": "Members' ordering period opens",
+  "waarom": [
+   "Played at Weserstadion (Bremen)."
+  ]
+ },
+ {
+  "k": "ipswich-town",
+  "naam": "Ipswich Town",
+  "tegen": "Brentford",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Portman Road",
+  "stad": "Ipswich",
+  "moment": "2026-11-23T11:00",
+  "label": "Second sale (members)",
+  "waarom": [
+   "Played at Portman Road (Ipswich)."
+  ]
+ },
+ {
+  "k": "newcastle",
+  "naam": "Newcastle United",
+  "tegen": "Manchester City",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T21:00",
+  "stadion": "St James' Park",
+  "stad": "Newcastle upon Tyne",
+  "moment": "2026-11-23T13:00",
+  "label": "Mags Member ballot (entry opens)",
+  "waarom": [
+   "Played at St James' Park (Newcastle upon Tyne)."
+  ]
+ },
+ {
+  "k": "willem2",
+  "naam": "Willem II",
+  "tegen": "Excelsior",
+  "comp": "KNVB Beker",
+  "aftrap": "2026-12-01T20:00",
+  "stadion": "Koning Willem II Stadion",
+  "stad": "Tilburg",
+  "moment": "2026-11-23T13:00",
+  "label": "General sale",
+  "waarom": [
+   "Cup tie: the winner goes through, so it is all or nothing.",
+   "Available without a membership (general sale).",
+   "Played at Koning Willem II Stadion (Tilburg)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-27",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-24",
+  "label": "Guest tickets for members and season ticket holders",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Fulham - Brighton & Hove Albion in Londen on Saturday 26 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "crystal-palace",
+  "naam": "Crystal Palace",
+  "tegen": "AFC Bournemouth",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30",
+  "stadion": "Selhurst Park",
+  "stad": "Londen",
+  "moment": "2026-11-24",
+  "label": "Guest tickets for members and season ticket holders",
+  "waarom": [
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Played at Selhurst Park (Londen)."
+  ]
+ },
+ {
+  "k": "real-madrid",
+  "naam": "Real Madrid",
+  "tegen": "Alavés",
+  "comp": "La Liga",
+  "aftrap": "2026-11-28T21:00",
+  "stadion": "Santiago Bernabéu",
+  "stad": "Madrid",
+  "moment": "2026-11-24T09:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Santiago Bernabéu (Madrid)."
+  ]
+ },
+ {
+  "k": "wolfsburg",
+  "naam": "VfL Wolfsburg",
+  "tegen": "Arminia Bielefeld",
+  "comp": "2. Bundesliga",
+  "aftrap": "2026-12-19T13:00",
+  "stadion": "Volkswagen Arena",
+  "stad": "Wolfsburg",
+  "moment": "2026-11-24T09:45",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Volkswagen Arena (Wolfsburg)."
+  ]
+ },
+ {
+  "k": "hsv",
+  "naam": "Hamburger SV",
+  "tegen": "Bayer 04 Leverkusen",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-10T17:30",
+  "stadion": "Volksparkstadion",
+  "stad": "Hamburg",
+  "moment": "2026-11-24T10:00",
+  "label": "Members' presale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Volksparkstadion (Hamburg)."
+  ]
+ },
+ {
+  "k": "bournemouth",
+  "naam": "AFC Bournemouth",
+  "tegen": "Aston Villa",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T18:30",
+  "stadion": "Vitality Stadium",
+  "stad": "Bournemouth",
+  "moment": "2026-11-24T11:00",
+  "label": "Members with 28+ home points",
+  "waarom": [
+   "Played at Vitality Stadium (Bournemouth)."
+  ]
+ },
+ {
+  "k": "lazio",
+  "naam": "SS Lazio",
+  "tegen": "Atalanta",
+  "comp": "Serie A",
+  "aftrap": "2026-12-06T14:00",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "moment": "2026-11-24T11:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Olimpico (Rome)."
+  ]
+ },
+ {
+  "k": "lazio",
+  "naam": "SS Lazio",
+  "tegen": "Roma",
+  "comp": "Serie A",
+  "aftrap": "2026-12-13T11:30",
+  "stadion": "Stadio Olimpico",
+  "stad": "Rome",
+  "moment": "2026-11-24T11:00",
+  "label": "General sale",
+  "waarom": [
+   "City derby: both clubs are from Rome.",
+   "Available without a membership (general sale).",
+   "Played at Stadio Olimpico (Rome)."
+  ]
+ },
+ {
+  "k": "ipswich-town",
+  "naam": "Ipswich Town",
+  "tegen": "Chelsea",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30T21:15",
+  "stadion": "Portman Road",
+  "stad": "Ipswich",
+  "moment": "2026-11-24T13:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Played at Portman Road (Ipswich)."
+  ]
+ },
+ {
+  "k": "juventus",
+  "naam": "Juventus",
+  "tegen": "Torino",
+  "comp": "Serie A",
+  "aftrap": "2027-01-06T11:30",
+  "stadion": "Allianz Stadium",
+  "stad": "Turijn",
+  "moment": "2026-11-24T16:00",
+  "label": "Juventus Card",
+  "waarom": [
+   "City derby: both clubs are from Turijn.",
+   "Played at Allianz Stadium (Turijn)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Crystal Palace",
+  "comp": "Premier League",
+  "aftrap": "2026-12-20T15:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-24T16:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Hull City",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T16:00",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-24T16:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Liverpool",
+  "comp": "Premier League",
+  "aftrap": "2027-01-05T21:15",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-24T16:00",
+  "label": "Members' ballot: applications open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "acf-fiorentina",
+  "naam": "ACF Fiorentina",
+  "tegen": "Cagliari",
+  "comp": "Serie A",
+  "aftrap": "2026-12-07T20:45",
+  "stadion": "Stadio Artemio Franchi",
+  "stad": "Florence",
+  "moment": "2026-11-25T10:00",
+  "label": "General sale",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadio Artemio Franchi (Florence)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30T20:30",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-25T10:30",
+  "label": "Season ticket holders (extra tickets)",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Brighton & Hove Albion",
+  "comp": "Premier League",
+  "aftrap": "2026-12-26T16:00",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-25T10:30",
+  "label": "General sale (max. 4 tickets)",
+  "waarom": [
+   "Can be combined with Crystal Palace - Arsenal in Londen on Sunday 27 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "sparta",
+  "naam": "Sparta Rotterdam",
+  "tegen": "Excelsior",
+  "comp": "Eredivisie",
+  "aftrap": "2027-01-09T16:30",
+  "stadion": "Sparta Stadion Het Kasteel",
+  "stad": "Rotterdam",
+  "moment": "2026-11-25T11:00",
+  "label": "Sales start (audience not stated)",
+  "waarom": [
+   "City derby: both clubs are from Rotterdam.",
+   "Can be combined with Feyenoord - PSV in Rotterdam on Sunday 10 January.",
+   "Available without a membership (general sale).",
+   "Played at Sparta Stadion Het Kasteel (Rotterdam)."
+  ]
+ },
+ {
+  "k": "sparta",
+  "naam": "Sparta Rotterdam",
+  "tegen": "Excelsior",
+  "comp": "Eredivisie",
+  "aftrap": "2027-01-09T16:30",
+  "stadion": "Sparta Stadion Het Kasteel",
+  "stad": "Rotterdam",
+  "moment": "2026-11-25T11:00",
+  "label": "Season club card holders (SCC)",
+  "waarom": [
+   "City derby: both clubs are from Rotterdam.",
+   "Can be combined with Feyenoord - PSV in Rotterdam on Sunday 10 January.",
+   "Available without a membership (general sale).",
+   "Played at Sparta Stadion Het Kasteel (Rotterdam)."
+  ]
+ },
+ {
+  "k": "bournemouth",
+  "naam": "AFC Bournemouth",
+  "tegen": "Aston Villa",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T18:30",
+  "stadion": "Vitality Stadium",
+  "stad": "Bournemouth",
+  "moment": "2026-11-26T11:00",
+  "label": "Members with 22+ home points",
+  "waarom": [
+   "Played at Vitality Stadium (Bournemouth)."
+  ]
+ },
+ {
+  "k": "sparta",
+  "naam": "Sparta Rotterdam",
+  "tegen": "Excelsior",
+  "comp": "Eredivisie",
+  "aftrap": "2027-01-09T16:30",
+  "stadion": "Sparta Stadion Het Kasteel",
+  "stad": "Rotterdam",
+  "moment": "2026-11-26T11:00",
+  "label": "Club card holders (CC)",
+  "waarom": [
+   "City derby: both clubs are from Rotterdam.",
+   "Can be combined with Feyenoord - PSV in Rotterdam on Sunday 10 January.",
+   "Available without a membership (general sale).",
+   "Played at Sparta Stadion Het Kasteel (Rotterdam)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "SV 07 Elversberg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-01-24T17:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-27T08:00",
+  "label": "General sale (non-members)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "FC Augsburg",
+  "comp": "Bundesliga",
+  "aftrap": "2027-02-06T15:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-27T08:00",
+  "label": "General sale (non-members)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "leverkusen",
+  "naam": "Bayer Leverkusen",
+  "tegen": "1. FSV Mainz 05",
+  "comp": "Bundesliga",
+  "aftrap": "2027-02-20T15:30",
+  "stadion": "BayArena",
+  "stad": "Leverkusen",
+  "moment": "2026-11-27T08:00",
+  "label": "General sale (non-members)",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at BayArena (Leverkusen)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "Arsenal",
+  "comp": "Premier League",
+  "aftrap": "2026-12-30T20:30",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "moment": "2026-11-27T10:30",
+  "label": "Supporters with booking history",
+  "waarom": [
+   "City derby: both clubs are from Londen.",
+   "Can be combined with Tottenham Hotspur - Brighton and Hove Albion in Londen on Tuesday 29 December.",
+   "Available without a membership (general sale).",
+   "Played at Craven Cottage (Londen)."
+  ]
+ },
+ {
+  "k": "sunderland",
+  "naam": "Sunderland",
+  "tegen": "Liverpool",
+  "comp": "Premier League",
+  "aftrap": "2027-01-05T21:15",
+  "stadion": "Stadium of Light",
+  "stad": "Sunderland",
+  "moment": "2026-11-27T13:00",
+  "label": "Ballot: results and purchase window open",
+  "waarom": [
+   "Available without a membership (general sale).",
+   "Played at Stadium of Light (Sunderland)."
+  ]
+ },
+ {
+  "k": "leeds",
+  "naam": "Leeds United",
+  "tegen": "Fulham",
+  "comp": "Premier League",
+  "aftrap": "2026-12-19T16:00",
+  "stadion": "Elland Road",
+  "stad": "Leeds",
+  "moment": "2026-11-27T14:00",
+  "label": "Phase 1: My Leeds Priority members (first come, first served)",
+  "waarom": [
+   "Played at Elland Road (Leeds)."
+  ]
+ },
+ {
+  "k": "bournemouth",
+  "naam": "AFC Bournemouth",
+  "tegen": "Aston Villa",
+  "comp": "Premier League",
+  "aftrap": "2027-01-02T18:30",
+  "stadion": "Vitality Stadium",
+  "stad": "Bournemouth",
+  "moment": "2026-11-29T11:00",
+  "label": "Members with 16+ home points",
+  "waarom": [
+   "Played at Vitality Stadium (Bournemouth)."
+  ]
+ }
+]
