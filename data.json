@@ -1521,6 +1521,179 @@
    "auto": true
   },
   {
+   "club": "sunderland",
+   "tegen": "Jagiellonia Białystok",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "seizoen",
+     "2026-10-29T11:00",
+     "Seizoenkaarthouders: plaatsen reserveren"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Tottenham Hotspur",
+   "comp": "Premier League",
+   "aftrap": "2026-11-29T15:05",
+   "fases": [
+    [
+     "lid",
+     "2026-10-27T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-03T16:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-06T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Nottingham Forest",
+   "comp": "Premier League",
+   "aftrap": "2026-12-13T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-10T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-13T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-17T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Crystal Palace",
+   "comp": "Premier League",
+   "aftrap": "2026-12-20T15:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Hull City",
+   "comp": "Premier League",
+   "aftrap": "2027-01-02T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-17T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-20T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-11-24T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
+   "club": "sunderland",
+   "tegen": "Liverpool",
+   "comp": "Premier League",
+   "aftrap": "2027-01-05T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-24T16:00",
+     "Loting voor leden: aanvragen openen"
+    ],
+    [
+     "lid",
+     "2026-11-27T13:00",
+     "Loting: uitslag en aankoopvenster opent"
+    ],
+    [
+     "vrij",
+     "2026-12-01T16:00",
+     "Vrije verkoop"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
+   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "FC Twente",
    "comp": "Eredivisie",
@@ -2342,39 +2515,6 @@
    "info": true,
    "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
-   "auto": true
-  },
-  {
-   "club": "brentford",
-   "tegen": "Everton",
-   "comp": "Premier League",
-   "aftrap": "2026-11-23T21:00",
-   "fases": [
-    [
-     "lid",
-     "2026-10-08T15:00",
-     "All my bees members (+1 extra ticket)"
-    ],
-    [
-     "lid",
-     "2026-10-08T15:00",
-     "All my bees members (+2 extra tickets)"
-    ],
-    [
-     "seizoen",
-     "2026-11-20T15:00",
-     "Season ticket holders (+1 extra ticket)"
-    ],
-    [
-     "seizoen",
-     "2026-11-20T15:00",
-     "Season ticket holders (+2 extra tickets)"
-    ]
-   ],
-   "nu": true,
-   "info": false,
-   "noot": "Tijden in Nederlandse tijd (omgerekend uit Brits).",
-   "bron": "https://www.brentfordfc.com/en/ticket-information",
    "auto": true
   },
   {
@@ -6270,64 +6410,9 @@
   },
   {
    "club": "inter",
-   "tegen": "Liverpool FC",
-   "comp": "Champions League",
-   "aftrap": "2027-01-19T20:00",
-   "fases": [
-    [
-     "seizoen",
-     "2026-11-17T12:00",
-     "Full-seizoenkaarthouders (extra tickets voor vrienden en familie)"
-    ],
-    [
-     "seizoen",
-     "2026-11-18T10:00",
-     "Plus-seizoenkaarthouders en Inter Club Plus-leden"
-    ],
-    [
-     "seizoen",
-     "2026-11-18T16:00",
-     "Base-seizoenkaarthouders en Inter Club Base-leden"
-    ],
-    [
-     "lid",
-     "2026-11-19T10:00",
-     "Kopers van eerdere thuiswedstrijden (promo)"
-    ],
-    [
-     "lid",
-     "2026-11-19T16:00",
-     "INTERISTA-leden"
-    ],
-    [
-     "vrij",
-     "2026-11-20T12:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.inter.it/en/tickets",
-   "auto": true
-  },
-  {
-   "club": "inter",
    "tegen": "Genoa",
    "comp": "Serie A",
    "aftrap": "2026-11-28T19:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://www.inter.it/en/tickets",
-   "auto": true
-  },
-  {
-   "club": "inter",
-   "tegen": "Genoa",
-   "comp": "Coppa Italia",
-   "aftrap": "2026-12-01T20:00",
    "fases": [],
    "nu": true,
    "info": false,
@@ -6365,6 +6450,49 @@
    "comp": "Serie A",
    "aftrap": "2027-01-10T19:45",
    "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Liverpool FC",
+   "comp": "Champions League",
+   "aftrap": "2027-01-19T20:00",
+   "fases": [
+    [
+     "seizoen",
+     "2026-11-17T12:00",
+     "Full-seizoenkaarthouders (extra tickets voor vrienden en familie)"
+    ],
+    [
+     "seizoen",
+     "2026-11-18T10:00",
+     "Plus-seizoenkaarthouders en Inter Club Plus-leden"
+    ],
+    [
+     "seizoen",
+     "2026-11-18T16:00",
+     "Base-seizoenkaarthouders en Inter Club Base-leden"
+    ],
+    [
+     "lid",
+     "2026-11-19T10:00",
+     "Kopers van eerdere thuiswedstrijden (promo)"
+    ],
+    [
+     "lid",
+     "2026-11-19T16:00",
+     "INTERISTA-leden"
+    ],
+    [
+     "vrij",
+     "2026-11-20T12:00",
+     "Vrije verkoop"
+    ]
+   ],
    "nu": true,
    "info": false,
    "noot": "Verkoop is open (startmoment niet getoond).",
@@ -6472,6 +6600,18 @@
    "tegen": "Lazio",
    "comp": "Serie A",
    "aftrap": "2027-05-23",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.inter.it/en/tickets",
+   "auto": true
+  },
+  {
+   "club": "inter",
+   "tegen": "Genoa",
+   "comp": "Coppa Italia",
+   "aftrap": "2026-12-01T20:00",
    "fases": [],
    "nu": true,
    "info": false,
@@ -7640,179 +7780,6 @@
    "info": false,
    "noot": "Kaarten zijn er alleen voor leden en voor supporters die dit of vorig seizoen een Hull-kaartje kochten.",
    "bron": "https://www.wearehullcity.co.uk/news/2026/november/02/ticket-details-totthenham-hotspur-h-26-27/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Jagiellonia Białystok",
-   "comp": "Europa League",
-   "aftrap": "2026-11-26T21:00",
-   "fases": [
-    [
-     "lid",
-     "2026-10-27T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "seizoen",
-     "2026-10-29T11:00",
-     "Seizoenkaarthouders: plaatsen reserveren"
-    ],
-    [
-     "lid",
-     "2026-11-03T16:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-06T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Tottenham Hotspur",
-   "comp": "Premier League",
-   "aftrap": "2026-11-29T15:05",
-   "fases": [
-    [
-     "lid",
-     "2026-10-27T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-03T16:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-06T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Nottingham Forest",
-   "comp": "Premier League",
-   "aftrap": "2026-12-13T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-10T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-13T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-17T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Crystal Palace",
-   "comp": "Premier League",
-   "aftrap": "2026-12-20T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-20T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-24T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Hull City",
-   "comp": "Premier League",
-   "aftrap": "2027-01-02T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-17T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-20T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-11-24T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
-   "auto": true
-  },
-  {
-   "club": "sunderland",
-   "tegen": "Liverpool",
-   "comp": "Premier League",
-   "aftrap": "2027-01-05T21:15",
-   "fases": [
-    [
-     "lid",
-     "2026-11-24T16:00",
-     "Loting voor leden: aanvragen openen"
-    ],
-    [
-     "lid",
-     "2026-11-27T13:00",
-     "Loting: uitslag en aankoopvenster opent"
-    ],
-    [
-     "vrij",
-     "2026-12-01T16:00",
-     "Vrije verkoop"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er eerst alleen voor leden (loting).",
-   "bron": "https://www.safc.com/news/2026/november/02/ticketing-in-november-key-dates/",
    "auto": true
   },
   {
