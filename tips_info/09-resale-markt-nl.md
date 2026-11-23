@@ -4,7 +4,7 @@ Veel supporters denken dat een wedstrijd uitverkocht is zodra de vrije verkoop d
 
 ## Hoe werkt het?
 
-Een seizoenkaarthouder die een wedstrijd mist, zet zijn kaart via de club terug in de verkoop. Jij koopt hem tegen de normale prijs (soms plus een kleine servicevergoeding) en de kaart wordt op jouw naam gezet of opnieuw uitgegeven. Je betaalt dus geen opgeklopte prijs zoals bij een commerciële reseller, en je weet zeker dat de kaart echt is.
+Een seizoenkaarthouder die een wedstrijd mist, zet zijn kaart via de club terug in de verkoop. Jij koopt hem tegen de normale prijs (soms plus een kleine servicevergoeding) en de kaart wordt op jouw naam gezet of opnieuw uitgegeven. Je betaalt dus de normale prijs, en je weet zeker dat de kaart echt is.
 
 In Duitsland is dit heel gebruikelijk: veel Bundesliga-clubs hebben zo'n platform. Ook in Nederland, Engeland en andere landen komt het steeds vaker voor. Zelf heb ik meerdere keren kaarten gekocht via het resale-platform van Ajax.
 
@@ -23,7 +23,7 @@ De meeste kaarten verschijnen in de laatste twee weken voor de wedstrijd. Dan ko
 - Zoek op de site van de club naar termen als *resale*, *ticketruil*, *marktplaats* of *Zweitmarkt*.
 - Maak vooraf een account aan, zodat je snel kunt bestellen. Goede kaarten zijn vaak binnen minuten weg.
 - Houd de pagina in de gaten en ververs regelmatig, of stel een herinnering in.
-- Koop alleen via het officiële platform van de club. Kaarten van onbekende verkopers zijn vaak ongeldig of veel te duur.
+- Koop bij voorkeur via het officiële platform van de club. Daar weet je zeker dat de kaart geldig is.
 - Controleer de voorwaarden: sommige platforms vragen een account of lidmaatschap, en niet elke club laat alle wedstrijden toe.
 
 Op Football Ticket Scout zie je per club wanneer de reguliere verkoop opent. Is een wedstrijd uitverkocht? Dan is de resale-markt je tweede kans.
