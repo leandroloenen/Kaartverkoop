@@ -4,7 +4,7 @@ beschrijving: What you can do if a match is sold out, or if you are too late for
 volgorde: 6
 slug: sold-out-what-now
 ---
-A sold-out match is not always the end. There are ways you can still get a ticket, without having to turn to expensive resellers.
+A sold-out match is not always the end. There are ways you can still get a ticket, for example through the club itself before you look at a reseller.
 
 ## See whether another sale phase is coming
 
