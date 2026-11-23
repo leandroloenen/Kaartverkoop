@@ -1,20 +1,21 @@
 ---
-titel: Wat moet je weten over resellers en tussenpartijen?
-beschrijving: Waarom doorverkoopsites vaak duur zijn, welke risico's er zijn en welke officiële alternatieven je hebt.
+titel: Kaarten kopen via resellers en tussenpartijen
+beschrijving: Hoe doorverkoopsites werken, waar je op let en welke officiële alternatieven je hebt.
 volgorde: 5
 ---
-Wie zoekt naar kaarten voor een uitverkochte wedstrijd, komt vaak terecht bij sites die kaarten doorverkopen. Ze zijn makkelijk te vinden en lijken handig, maar er zijn een paar dingen om te weten.
+Wie zoekt naar kaarten voor een uitverkochte wedstrijd, komt vaak terecht bij sites die kaarten doorverkopen. Ze zijn makkelijk te vinden en hebben vaak kaarten voor wedstrijden die bij de club zijn uitverkocht. Dit zijn de dingen die je goed kunt weten voordat je bestelt.
 
-## Waarom zijn resellers duurder?
+## Wat kost een reseller-ticket?
 
-Resellers kopen kaarten in of bieden die van anderen aan, en rekenen daar hun eigen winst en kosten bovenop. Voor populaire wedstrijden kan de prijs een veelvoud zijn van de prijs bij de club. Bij sommige wedstrijden is het verschil klein, bij andere is het enorm.
+Resellers bieden kaarten aan die ze zelf hebben ingekocht of van anderen overnemen, en rekenen daar kosten bovenop. Voor populaire wedstrijden ligt de prijs daardoor boven de prijs bij de club. Bij sommige wedstrijden is het verschil klein, bij andere groot.
 
-## Wat kan er misgaan?
+## Waar let je op?
 
-- Het ticket kan op naam staan en niet geldig zijn voor jou.
-- De club kan kaarten die tegen de regels zijn doorverkocht annuleren, waardoor je bij de ingang wordt geweigerd.
-- Je kunt kaarten kopen die niet worden geleverd of die niet echt zijn.
-- Bij annulering of verplaatsing van de wedstrijd is terugbetaling niet altijd geregeld.
+- Controleer of het ticket op naam staat en of het geldig is voor jou.
+- Kijk of de club doorverkoop toestaat. Sommige clubs staan het alleen toe via hun eigen platform.
+- Kies een partij die kopers beschermt, bijvoorbeeld met een garantie bij niet-levering.
+- Check wat er gebeurt bij annulering of verplaatsing van de wedstrijd.
+- Vergelijk de totaalprijs, inclusief servicekosten.
 
 In sommige landen zijn er ook wettelijke regels over het doorverkopen van tickets boven de prijs. Lees daarom de voorwaarden van de club en de site.
 
@@ -25,6 +26,8 @@ In sommige landen zijn er ook wettelijke regels over het doorverkopen van ticket
 - **Een aanmelding of wachtlijst.** Sommige clubs sturen een bericht als er kaarten vrijkomen.
 - **De kassa op de wedstrijddag.** Soms zijn er vlak voor de aftrap nog kaarten beschikbaar. Reken daar niet op, maar het kan.
 
-## Wil je toch een reseller gebruiken?
+## Kiezen voor een reseller
 
-Controleer dan of het ticket past bij de regels van de club, vergelijk de totaalprijs en kies een partij die kopers beschermt. Betaal bij voorkeur met een methode waarbij je je geld kunt terugvragen als het misgaat.
+Is de club uitverkocht en lukt het niet via de officiële kanalen, dan kan een reseller een goede keuze zijn. Controleer of het ticket past bij de regels van de club, vergelijk de totaalprijs en kies een partij die kopers beschermt. Betaal bij voorkeur met een methode waarbij je je geld kunt terugvragen als het misgaat.
+
+Een persoonlijke ervaring: ik heb zelf via P1 Travel kaarten gekocht voor een wedstrijd van Tottenham Hotspur en een van West Ham United. Dat werkte voor mij goed.
