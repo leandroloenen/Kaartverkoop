@@ -1,12 +1,12 @@
-# Visiting a big club once? Consider a membership instead of a reseller
+# Visiting a big club once? How a membership can be a smart route
 
-Fans who want to see a big club just once often end up at a commercial reseller. It is convenient, but expensive: for top matches you quickly pay double the official price or more. There is an alternative many supporters overlook: a club membership.
+Fans who want to see a big club just once often look at a reseller first. That is convenient, especially if the club itself is sold out, but for top matches the price there is usually higher than the official price. There is another route many supporters overlook: a club membership.
 
 ## The idea
 
 Many clubs give members priority in ticket sales. For the most popular matches, that is often the only realistic way to get a ticket from the club. A basic membership is relatively cheap, and it gives you access to the regular sale at the official ticket price.
 
-An example: a Tottenham Hotspur membership costs around £45. With it you can try to buy tickets for games against clubs such as Manchester City or Manchester United. Buy the same ticket from a reseller and the price is at least twice as high. Even after paying for the membership you come out cheaper.
+An example: a Tottenham Hotspur membership costs around £45. With it you can try to buy tickets for games against clubs such as Manchester City or Manchester United. At a reseller the price for such matches is often at least twice as high, although it differs per match. Even after paying for the membership you may come out cheaper. If it does not work out through the club, a reseller remains a logical place to look next.
 
 ## An important caveat
 
@@ -20,7 +20,7 @@ Mind the terms, though: memberships are usually personal, and tickets are normal
 
 ## When is it worth it?
 
-- You want to attend a specific top match and reseller prices are far above face value.
+- You want to attend a specific top match and prices at a reseller are considerably above face value.
 - You go to the same club several times a season.
 - You are willing to keep an eye on the sale dates.
 
