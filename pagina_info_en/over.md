@@ -10,7 +10,7 @@ I wanted to make that easier. On this site you can find, per club and per match,
 
 ## Straight from the club
 
-There are plenty of resellers and other intermediaries offering match tickets. Those tickets are often a lot more expensive, and not everyone wants or can afford to pay that for a match. Many clubs simply sell tickets themselves, at face value. But many people do not know where or how. Hence this initiative: to make buying from the club itself easier.
+You can get match tickets in several ways: directly from the club, through the club's official resale platform, and through resellers and other intermediaries. Many clubs simply sell tickets themselves, at face value, but many people do not know where or how. Hence this initiative: to make buying from the club itself easier. If a match is sold out there, a reseller can be an option. Always compare the total price and the terms first. I have bought tickets through a reseller myself too: through P1 Travel for a Tottenham Hotspur match and a West Ham United match. That worked well for me.
 
 ## A personal project
 
