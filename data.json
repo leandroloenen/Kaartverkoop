@@ -502,6 +502,60 @@
    "land": "ES",
    "mijn": "vrij",
    "url": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino"
+  },
+  "benfica": {
+   "naam": "SL Benfica",
+   "land": "PT",
+   "mijn": "vrij",
+   "url": "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades"
+  },
+  "marseille": {
+   "naam": "Olympique Marseille",
+   "land": "FR",
+   "mijn": "vrij",
+   "url": "https://billetterie.om.fr/fr/calendrier-equipe-premiere"
+  },
+  "lille": {
+   "naam": "Lille OSC",
+   "land": "FR",
+   "mijn": "vrij",
+   "url": "https://billetterie.losc.fr/en/calendar"
+  },
+  "monaco": {
+   "naam": "AS Monaco",
+   "land": "FR",
+   "mijn": "vrij",
+   "url": "https://billetterie.asmonaco.com/en/matches"
+  },
+  "lyon": {
+   "naam": "Olympique Lyon",
+   "land": "FR",
+   "mijn": "vrij",
+   "url": "https://billetterie.ol.fr/"
+  },
+  "sporting": {
+   "naam": "Sporting CP",
+   "land": "PT",
+   "mijn": "vrij",
+   "url": "https://tickets.sporting.pt/pt"
+  },
+  "braga": {
+   "naam": "SC Braga",
+   "land": "PT",
+   "mijn": "vrij",
+   "url": "https://scbraga.pt/en/ticketing"
+  },
+  "anderlecht": {
+   "naam": "RSC Anderlecht",
+   "land": "BE",
+   "mijn": "vrij",
+   "url": "https://www.rsca.be/en/fixture/list/20"
+  },
+  "genk": {
+   "naam": "KRC Genk",
+   "land": "BE",
+   "mijn": "vrij",
+   "url": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender"
   }
  },
  "WEDSTRIJDEN": [
@@ -1732,6 +1786,45 @@
    "auto": true
   },
   {
+   "club": "villarreal",
+   "tegen": "Real Sociedad",
+   "comp": "La Liga",
+   "aftrap": "2026-12-05T18:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true,
+   "eerst_nu": "2026-11-17"
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Sabah",
+   "comp": "Champions League",
+   "aftrap": "2026-12-08T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true,
+   "eerst_nu": "2026-11-17"
+  },
+  {
+   "club": "villarreal",
+   "tegen": "Rayo Vallecano",
+   "comp": "La Liga",
+   "aftrap": "2026-12-12T16:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
+   "auto": true,
+   "eerst_nu": "2026-11-23"
+  },
+  {
    "club": "nec",
    "tegen": "FC Twente",
    "comp": "Eredivisie",
@@ -1837,7 +1930,7 @@
    "nu": false,
    "info": false,
    "noot": "",
-   "bron": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Ajax-VriendenLoterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-06"
   },
@@ -2613,7 +2706,7 @@
    ],
    "nu": false,
    "info": false,
-   "noot": "",
+   "noot": "Verkoop start binnenkort; datum nog niet bekend.",
    "bron": "https://www.bayer04.de/en-us/shop/tickets/home-matches",
    "auto": true
   },
@@ -3330,7 +3423,7 @@
   },
   {
    "club": "mainz",
-   "tegen": "Spiel der Herzen\n1. FC Köln",
+   "tegen": "1. FC Köln",
    "comp": "Bundesliga",
    "aftrap": "2026-12-19T15:30",
    "fases": [
@@ -3353,7 +3446,7 @@
   },
   {
    "club": "mainz",
-   "tegen": "TSG 1899 \nHoffenheim",
+   "tegen": "TSG 1899 Hoffenheim",
    "comp": "Bundesliga",
    "aftrap": "2027-01-12T20:30",
    "fases": [
@@ -3795,9 +3888,9 @@
    "comp": "Champions League",
    "aftrap": "2026-11-24T21:00",
    "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
+   "nu": false,
+   "info": true,
+   "noot": "",
    "bron": "https://www.mancity.com/tickets/mens",
    "auto": true
   },
@@ -4101,7 +4194,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omónia Nicosia",
+   "tegen": "Omonia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -4579,45 +4672,6 @@
    "noot": "Nog niet in de verkoop.",
    "bron": "https://rbleipzig.com/en/matches-tickets",
    "auto": true
-  },
-  {
-   "club": "villarreal",
-   "tegen": "Real Sociedad",
-   "comp": "La Liga",
-   "aftrap": "2026-12-05T18:30",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
-   "auto": true,
-   "eerst_nu": "2026-11-17"
-  },
-  {
-   "club": "villarreal",
-   "tegen": "Sabah",
-   "comp": "Champions League",
-   "aftrap": "2026-12-08T18:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
-   "auto": true,
-   "eerst_nu": "2026-11-17"
-  },
-  {
-   "club": "villarreal",
-   "tegen": "Rayo Vallecano",
-   "comp": "La Liga",
-   "aftrap": "2026-12-12T16:15",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://villarrealcf.es/es/venta-de-entradas/",
-   "auto": true,
-   "eerst_nu": "2026-11-23"
   },
   {
    "club": "chelsea",
@@ -5421,6 +5475,34 @@
   },
   {
    "club": "leeds",
+   "tegen": "Fulham",
+   "comp": "Premier League",
+   "aftrap": "2026-12-19T16:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-27T14:00",
+     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
+    ],
+    [
+     "lid",
+     "2026-11-30T11:00",
+     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
+    ],
+    [
+     "lid",
+     "2026-12-02T11:00",
+     "Fase 3: loting opent voor alle leden"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
+   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-fulham-home-fixture",
+   "auto": true
+  },
+  {
+   "club": "leeds",
    "tegen": "Ipswich Town",
    "comp": "Premier League",
    "aftrap": "2026-12-05T16:00",
@@ -5473,34 +5555,6 @@
    "info": false,
    "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
    "bron": "https://www.leedsunited.com/en/news/ticket-information-for-coventry-clash",
-   "auto": true
-  },
-  {
-   "club": "leeds",
-   "tegen": "Manchester United",
-   "comp": "Premier League",
-   "aftrap": "2027-10-18T15:00",
-   "fases": [
-    [
-     "lid",
-     "2026-09-28T14:00",
-     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
-    ],
-    [
-     "lid",
-     "2026-09-29T11:00",
-     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
-    ],
-    [
-     "lid",
-     "2026-10-01T11:00",
-     "Fase 3: loting opent voor alle leden"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
-   "bron": "https://www.leedsunited.com/en/news/ticket-information-manchester-united-h-sep-21",
    "auto": true
   },
   {
@@ -8441,6 +8495,957 @@
    "noot": "",
    "bron": "https://www.realmadrid.com/en-US/tickets?filter-tickets=vip;general&filter-football=primer-equipo-masculino",
    "auto": true
+  },
+  {
+   "club": "benfica",
+   "tegen": "Famalicão",
+   "comp": "Primeira Liga",
+   "aftrap": "2026-11-30T21:15",
+   "fases": [
+    [
+     "lid",
+     "2026-11-16T16:00",
+     "Leden"
+    ],
+    [
+     "clubkaart",
+     "2026-11-17T11:00",
+     "Geregistreerde supporters en Casa Benfica-leden"
+    ],
+    [
+     "vrij",
+     "2026-11-17T16:00",
+     "Algemene verkoop"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades",
+   "auto": true
+  },
+  {
+   "club": "benfica",
+   "tegen": "OFI Crete",
+   "comp": "Europa League",
+   "aftrap": "2026-12-10T21:00",
+   "fases": [
+    [
+     "lid",
+     "2026-11-13T16:00",
+     "Leden"
+    ],
+    [
+     "clubkaart",
+     "2026-11-14T16:00",
+     "Geregistreerde supporters"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Uitverkocht.",
+   "bron": "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Levski Sofia",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Nice",
+   "comp": "Ligue 1",
+   "aftrap": "2026-12-06T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Celta de Vigo",
+   "comp": "Europa League",
+   "aftrap": "2026-12-10T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Lille",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-15T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Anderlecht",
+   "comp": "Europa League",
+   "aftrap": "2027-01-28T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Troyes",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-31T17:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Angers",
+   "comp": "Ligue 1",
+   "aftrap": "2027-02-12",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Rennes",
+   "comp": "Ligue 1",
+   "aftrap": "2027-02-25",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Monaco",
+   "comp": "Ligue 1",
+   "aftrap": "2027-03-12",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Lyon",
+   "comp": "Ligue 1",
+   "aftrap": "2027-03-21T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Brest",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-09",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Auxerre",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-23",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Lens",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "marseille",
+   "tegen": "Lorient",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-29",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.om.fr/fr/calendrier-equipe-premiere",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Bayern München",
+   "comp": "Champions League",
+   "aftrap": "2026-11-25T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Auxerre",
+   "comp": "Ligue 1",
+   "aftrap": "2026-12-05T17:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Strasbourg",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-03T17:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Slovan Bratislava",
+   "comp": "Champions League",
+   "aftrap": "2027-01-19T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Paris FC",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-23T17:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Nice",
+   "comp": "Ligue 1",
+   "aftrap": "2027-02-13",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Lorient",
+   "comp": "Ligue 1",
+   "aftrap": "2027-02-20",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Rennes",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-03",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Toulouse",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-10",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Monaco",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Angers",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "lille",
+   "tegen": "Le Mans",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-29",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond). Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.losc.fr/en/calendar",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Angers",
+   "comp": "Ligue 1",
+   "aftrap": "2026-12-05T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Lincoln Red Imps",
+   "comp": "Conference League",
+   "aftrap": "2026-12-17T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Nice",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-02T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Brest",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Paris Saint-Germain",
+   "comp": "Ligue 1",
+   "aftrap": "2027-01-30T17:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Le Mans",
+   "comp": "Ligue 1",
+   "aftrap": "2027-02-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Lyon",
+   "comp": "Ligue 1",
+   "aftrap": "2027-03-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Le Havre AC",
+   "comp": "Ligue 1",
+   "aftrap": "2027-03-21",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Rennes",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-11",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Strasbourg",
+   "comp": "Ligue 1",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Lorient",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Paris FC",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-16",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "monaco",
+   "tegen": "Troyes",
+   "comp": "Ligue 1",
+   "aftrap": "2027-05-29",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://billetterie.asmonaco.com/en/matches",
+   "auto": true
+  },
+  {
+   "club": "lyon",
+   "tegen": "Lillestrøm",
+   "comp": "Europa League",
+   "aftrap": "2026-11-26T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.ol.fr/",
+   "auto": true
+  },
+  {
+   "club": "lyon",
+   "tegen": "Monaco",
+   "comp": "Ligue 1",
+   "aftrap": "2026-11-29T19:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.ol.fr/",
+   "auto": true
+  },
+  {
+   "club": "lyon",
+   "tegen": "Union SG",
+   "comp": "Europa League",
+   "aftrap": "2026-12-10T20:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.ol.fr/",
+   "auto": true
+  },
+  {
+   "club": "lyon",
+   "tegen": "Marseille",
+   "comp": "Ligue 1",
+   "aftrap": "2026-12-13T19:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://billetterie.ol.fr/",
+   "auto": true
+  },
+  {
+   "club": "sporting",
+   "tegen": "Manchester United",
+   "comp": "Champions League",
+   "aftrap": "2026-11-25T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alleen voor leden.",
+   "bron": "https://tickets.sporting.pt/pt",
+   "auto": true
+  },
+  {
+   "club": "sporting",
+   "tegen": "Marítimo",
+   "comp": "Primeira Liga",
+   "aftrap": "2026-12-04T21:15",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://tickets.sporting.pt/pt",
+   "auto": true
+  },
+  {
+   "club": "sporting",
+   "tegen": "FC Barcelona",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Alleen voor leden.",
+   "bron": "https://tickets.sporting.pt/pt",
+   "auto": true
+  },
+  {
+   "club": "braga",
+   "tegen": "Arouca",
+   "comp": "Primeira Liga",
+   "aftrap": "2026-12-05T21:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop.",
+   "bron": "https://scbraga.pt/en/ticketing",
+   "auto": true
+  },
+  {
+   "club": "braga",
+   "tegen": "Académico de Viseu",
+   "comp": "Primeira Liga",
+   "aftrap": "2026-12-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://scbraga.pt/en/ticketing",
+   "auto": true
+  },
+  {
+   "club": "braga",
+   "tegen": "FC Porto",
+   "comp": "Primeira Liga",
+   "aftrap": "2027-01-10",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://scbraga.pt/en/ticketing",
+   "auto": true
+  },
+  {
+   "club": "braga",
+   "tegen": "Moreirense",
+   "comp": "Primeira Liga",
+   "aftrap": "2027-01-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://scbraga.pt/en/ticketing",
+   "auto": true
+  },
+  {
+   "club": "braga",
+   "tegen": "Estrela da Amadora",
+   "comp": "Primeira Liga",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://scbraga.pt/en/ticketing",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Hoffenheim",
+   "comp": "Europa League",
+   "aftrap": "2026-12-10T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Charleroi",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2026-12-13T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Sint-Truiden",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2026-12-27T13:30",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Sunderland",
+   "comp": "Europa League",
+   "aftrap": "2027-01-21T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Eerst voorrang voor abonnees en leden.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Gent",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-01-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Mechelen",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-02-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Club Brugge",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-02-27",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Lommel",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-03-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Standard Luik",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-03-20",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Beveren",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-04-10",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Cercle Brugge",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-04-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Union Saint-Gilloise",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-05-08",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "anderlecht",
+   "tegen": "Antwerp",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-05-15",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.rsca.be/en/fixture/list/20",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "OH Leuven",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2026-12-11T20:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Lommel SK",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2026-12-27T16:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Zulte Waregem",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-01-23",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Antwerp",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-02-06",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Union SG",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-02-27",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Sint-Truiden",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-03-13",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Anderlecht",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-04-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Club Brugge",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-04-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Charleroi",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-04-24",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Cercle Brugge",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-05-08",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
+  },
+  {
+   "club": "genk",
+   "tegen": "Mechelen",
+   "comp": "Jupiler Pro League",
+   "aftrap": "2027-05-22",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop. Aanvangstijd nog niet bevestigd.",
+   "bron": "https://www.krcgenk.be/nl/kalender/wedstrijdkalender",
+   "auto": true
   }
  ],
  "KANS": {
@@ -8973,6 +9978,12 @@
    "min": 18,
    "max": 28
   },
+  "villarreal": {
+   "n": 3,
+   "mediaan": 19,
+   "min": 18,
+   "max": 21
+  },
   "nec": {
    "n": 1,
    "mediaan": 19,
@@ -9098,12 +10109,6 @@
    "mediaan": 72,
    "min": 18,
    "max": 97
-  },
-  "villarreal": {
-   "n": 3,
-   "mediaan": 19,
-   "min": 18,
-   "max": 21
   },
   "frankfurt": {
    "n": 2,

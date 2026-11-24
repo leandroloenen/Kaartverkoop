@@ -61,7 +61,7 @@
   "aftrap": "2026-11-24T21:00",
   "stadion": "Etihad Stadium",
   "stad": "Manchester",
-  "status": "Tickets on sale",
+  "status": "Sale info to follow",
   "waarom": [
    "European night at Etihad Stadium.",
    "Played at Etihad Stadium (Manchester)."
@@ -111,6 +111,28 @@
   ]
  },
  {
+  "k": "lille",
+  "naam": "Lille OSC",
+  "tegen": "Bayern München",
+  "comp": "Champions League",
+  "aftrap": "2026-11-25T21:00",
+  "stadion": "",
+  "stad": "",
+  "status": "Tickets on sale",
+  "waarom": []
+ },
+ {
+  "k": "sporting",
+  "naam": "Sporting CP",
+  "tegen": "Manchester United",
+  "comp": "Champions League",
+  "aftrap": "2026-11-25T21:00",
+  "stadion": "",
+  "stad": "",
+  "status": "Tickets on sale",
+  "waarom": []
+ },
+ {
   "k": "ajax",
   "naam": "Ajax",
   "tegen": "FC Thun",
@@ -153,6 +175,17 @@
   ]
  },
  {
+  "k": "marseille",
+  "naam": "Olympique Marseille",
+  "tegen": "Levski Sofia",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T18:45",
+  "stadion": "",
+  "stad": "",
+  "status": "Tickets on sale",
+  "waarom": []
+ },
+ {
   "k": "juventus",
   "naam": "Juventus",
   "tegen": "Omonia Nicosia",
@@ -181,6 +214,17 @@
    "Available without a membership (general sale).",
    "Played at Allianz Stadium (Turijn)."
   ]
+ },
+ {
+  "k": "lyon",
+  "naam": "Olympique Lyon",
+  "tegen": "Lillestrøm",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T20:00",
+  "stadion": "",
+  "stad": "",
+  "status": "Tickets on sale",
+  "waarom": []
  },
  {
   "k": "freiburg",
@@ -650,6 +694,17 @@
    "Tickets are usually hard to get at this club: be early.",
    "Played at Signal Iduna Park (Dortmund)."
   ]
+ },
+ {
+  "k": "lyon",
+  "naam": "Olympique Lyon",
+  "tegen": "Monaco",
+  "comp": "Ligue 1",
+  "aftrap": "2026-11-29T19:45",
+  "stadion": "",
+  "stad": "",
+  "status": "Tickets on sale",
+  "waarom": []
  },
  {
   "k": "nec",

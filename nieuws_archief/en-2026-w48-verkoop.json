@@ -58,6 +58,20 @@
   ]
  },
  {
+  "k": "mainz",
+  "naam": "1. FSV Mainz 05",
+  "tegen": "1. FC Köln",
+  "comp": "Bundesliga",
+  "aftrap": "2026-12-19T15:30",
+  "stadion": "Mewa Arena",
+  "stad": "Mainz",
+  "moment": "2026-11-23T10:00",
+  "label": "Bestandskunden / 11er-Karteninhaber",
+  "waarom": [
+   "Played at Mewa Arena (Mainz)."
+  ]
+ },
+ {
   "k": "venezia",
   "naam": "Venezia FC",
   "tegen": "Sassuolo",
