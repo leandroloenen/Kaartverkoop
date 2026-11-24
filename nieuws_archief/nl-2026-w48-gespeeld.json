@@ -47,7 +47,7 @@
   "aftrap": "2026-11-24T21:00",
   "stadion": "Kuip",
   "stad": "Rotterdam",
-  "status": "Kaartverkoop is open",
+  "status": "Verkoopinfo volgt",
   "waarom": [
    "Europese avond in Kuip.",
    "Gespeeld in Kuip (Rotterdam)."
@@ -156,6 +156,21 @@
   "k": "juventus",
   "naam": "Juventus",
   "tegen": "Omonia Nicosia",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T20:00",
+  "stadion": "Allianz Stadium",
+  "stad": "Turijn",
+  "status": "Kaartverkoop is open",
+  "waarom": [
+   "Europese avond in Allianz Stadium.",
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Allianz Stadium (Turijn)."
+  ]
+ },
+ {
+  "k": "juventus",
+  "naam": "Juventus",
+  "tegen": "Omónia Nicosia",
   "comp": "Europa League",
   "aftrap": "2026-11-26T20:00",
   "stadion": "Allianz Stadium",
@@ -366,7 +381,7 @@
   "aftrap": "2026-11-28T16:30",
   "stadion": "Van Donge & De Roo Stadion",
   "stad": "Rotterdam",
-  "status": "Kaartverkoop is open",
+  "status": "Verkoopinfo volgt",
   "waarom": [
    "Te combineren met Feyenoord - Ajax in Rotterdam op zondag 29 november.",
    "Gespeeld in Van Donge & De Roo Stadion (Rotterdam)."
@@ -445,7 +460,7 @@
   "aftrap": "2026-11-28T21:00",
   "stadion": "Santiago Bernabéu",
   "stad": "Madrid",
-  "status": "Verkoop start dinsdag 24 november 2026 om 09:00",
+  "status": "Verkoop is gestart",
   "waarom": [
    "Ook zonder lidmaatschap te koop (vrije verkoop).",
    "Gespeeld in Santiago Bernabéu (Madrid)."

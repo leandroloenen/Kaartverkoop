@@ -1342,150 +1342,6 @@
    "auto": true
   },
   {
-   "club": "feyenoord",
-   "tegen": "FC Porto",
-   "comp": "Champions League",
-   "aftrap": "2026-11-24T21:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
-   "auto": true,
-   "eerst_nu": "2026-11-19"
-  },
-  {
-   "club": "feyenoord",
-   "tegen": "Ajax",
-   "comp": "Eredivisie",
-   "aftrap": "2026-11-29T14:30",
-   "fases": [
-    [
-     "lid",
-     "2026-11-06T12:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
-    ],
-    [
-     "seizoen",
-     "2026-11-09T12:00",
-     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-Ajax-VriendenLoterij-Eredivisie",
-   "auto": true,
-   "eerst_nu": "2026-11-06"
-  },
-  {
-   "club": "feyenoord",
-   "tegen": "FC Twente",
-   "comp": "Eredivisie",
-   "aftrap": "2026-12-20T14:30",
-   "fases": [
-    [
-     "seizoen",
-     "2026-10-01T10:00",
-     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
-    ],
-    [
-     "lid",
-     "2026-10-02T10:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
-    ],
-    [
-     "seizoen",
-     "2026-10-02T13:00",
-     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
-    ],
-    [
-     "lid",
-     "2026-10-02T13:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-10-05T13:00",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
-   "auto": true,
-   "eerst_nu": "2026-11-13"
-  },
-  {
-   "club": "feyenoord",
-   "tegen": "PSV",
-   "comp": "Eredivisie",
-   "aftrap": "2027-01-10T14:30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
-   "bron": "",
-   "auto": true
-  },
-  {
-   "club": "feyenoord",
-   "tegen": "PEC Zwolle",
-   "comp": "Eredivisie",
-   "aftrap": "2027-01-23T18:45",
-   "fases": [
-    [
-     "seizoen",
-     "2026-10-01T10:00",
-     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
-    ],
-    [
-     "lid",
-     "2026-10-02T10:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
-    ],
-    [
-     "seizoen",
-     "2026-10-02T13:00",
-     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
-    ],
-    [
-     "lid",
-     "2026-10-02T13:00",
-     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
-    ],
-    [
-     "vrij",
-     "2026-10-05T13:00",
-     "Vrije verkoop (max. 4 tickets)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-PEC-Zwolle-VriendenLoterij-Eredivisie",
-   "auto": true
-  },
-  {
-   "club": "feyenoord",
-   "tegen": "RB Leipzig",
-   "comp": "Champions League",
-   "aftrap": "2027-01-27T21:00",
-   "fases": [
-    [
-     "vrij",
-     "2027-01-21",
-     "Start verkoop (doelgroep niet vermeld)"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "",
-   "bron": "",
-   "auto": true
-  },
-  {
    "club": "milan",
    "tegen": "Frosinone",
    "comp": "Serie A",
@@ -1694,6 +1550,188 @@
    "auto": true
   },
   {
+   "club": "betis",
+   "tegen": "Rayo Vallecano",
+   "comp": "La Liga",
+   "aftrap": "2026-11-28T14:00",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true,
+   "eerst_nu": "2026-11-10"
+  },
+  {
+   "club": "betis",
+   "tegen": "Como",
+   "comp": "Champions League",
+   "aftrap": "2026-12-09T18:45",
+   "fases": [],
+   "nu": true,
+   "info": false,
+   "noot": "Verkoop is open (startmoment niet getoond).",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true,
+   "eerst_nu": "2026-11-11"
+  },
+  {
+   "club": "betis",
+   "tegen": "Racing Santander",
+   "comp": "La Liga",
+   "aftrap": "2026-12-12T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Deportivo Alavés",
+   "comp": "La Liga",
+   "aftrap": "2027-01-03",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Deportivo La Coruña",
+   "comp": "La Liga",
+   "aftrap": "2027-01-17",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Arsenal",
+   "comp": "Champions League",
+   "aftrap": "2027-01-20T21:00",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Elche",
+   "comp": "La Liga",
+   "aftrap": "2027-01-31",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Sevilla",
+   "comp": "La Liga",
+   "aftrap": "2027-02-07",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Villarreal",
+   "comp": "La Liga",
+   "aftrap": "2027-02-28",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Levante",
+   "comp": "La Liga",
+   "aftrap": "2027-03-14",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Celta de Vigo",
+   "comp": "La Liga",
+   "aftrap": "2027-04-04",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Athletic Club",
+   "comp": "La Liga",
+   "aftrap": "2027-04-18",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Valencia",
+   "comp": "La Liga",
+   "aftrap": "2027-05-02",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Espanyol",
+   "comp": "La Liga",
+   "aftrap": "2027-05-09",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
+   "club": "betis",
+   "tegen": "Atlético Madrid",
+   "comp": "La Liga",
+   "aftrap": "2027-05-30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
+   "bron": "https://en.realbetisbalompie.es/tickets/",
+   "auto": true
+  },
+  {
    "club": "nec",
    "tegen": "FC Twente",
    "comp": "Eredivisie",
@@ -1758,6 +1796,151 @@
      "clubkaart",
      "2027-01-04T12:00",
      "(Seizoen)clubkaarthouders"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "FC Porto",
+   "comp": "Champions League",
+   "aftrap": "2026-11-24T21:00",
+   "fases": [],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FCPorto-UEFAChampionsLeague",
+   "auto": true,
+   "eerst_nu": "2026-11-19"
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "Ajax",
+   "comp": "Eredivisie",
+   "aftrap": "2026-11-29T14:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-06T12:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-11-09T12:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "",
+   "bron": "",
+   "auto": true,
+   "eerst_nu": "2026-11-06"
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "FC Twente",
+   "comp": "Eredivisie",
+   "aftrap": "2026-12-20T14:30",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-01T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-10-02T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-10-02T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-10-02T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-10-05T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-FC-Twente-VriendenLoterij-Eredivisie",
+   "auto": true,
+   "eerst_nu": "2026-11-13"
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "PSV",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-10T14:30",
+   "fases": [],
+   "nu": false,
+   "info": true,
+   "noot": "Verkoopmomenten nog niet bekendgemaakt.",
+   "bron": "",
+   "auto": true
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "PEC Zwolle",
+   "comp": "Eredivisie",
+   "aftrap": "2027-01-23T18:45",
+   "fases": [
+    [
+     "seizoen",
+     "2026-10-01T10:00",
+     "Seizoenkaart-/aandeelhouders (max. 1 ticket)"
+    ],
+    [
+     "lid",
+     "2026-10-02T10:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)"
+    ],
+    [
+     "seizoen",
+     "2026-10-02T13:00",
+     "Seizoenkaart-/aandeelhouders (max. 3 tickets)"
+    ],
+    [
+     "lid",
+     "2026-10-02T13:00",
+     "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)"
+    ],
+    [
+     "vrij",
+     "2026-10-05T13:00",
+     "Vrije verkoop (max. 4 tickets)"
+    ]
+   ],
+   "nu": true,
+   "info": false,
+   "noot": "",
+   "bron": "https://tickets.feyenoord.com/verkoop/Feyenoord-PEC-Zwolle-VriendenLoterij-Eredivisie",
+   "auto": true,
+   "eerst_nu": "2026-11-24"
+  },
+  {
+   "club": "feyenoord",
+   "tegen": "RB Leipzig",
+   "comp": "Champions League",
+   "aftrap": "2027-01-27T21:00",
+   "fases": [
+    [
+     "vrij",
+     "2027-01-21",
+     "Start verkoop (doelgroep niet vermeld)"
     ]
    ],
    "nu": false,
@@ -1979,9 +2162,9 @@
    "comp": "Eredivisie",
    "aftrap": "2026-11-28T16:30",
    "fases": [],
-   "nu": true,
+   "nu": false,
    "info": false,
-   "noot": "Nu in de verkoop; startmoment onbekend.",
+   "noot": "",
    "bron": "",
    "auto": true
   },
@@ -2151,7 +2334,7 @@
    "nu": true,
    "info": false,
    "noot": "Nu in de verkoop; startmoment onbekend.",
-   "bron": "",
+   "bron": "https://tickets.sctelstar.nl/verkoop/Telstar---FC-Groningen-Vriendenloterij-Eredivisie",
    "auto": true,
    "eerst_nu": "2026-11-20"
   },
@@ -3369,188 +3552,6 @@
    "auto": true
   },
   {
-   "club": "betis",
-   "tegen": "Rayo Vallecano",
-   "comp": "La Liga",
-   "aftrap": "2026-11-28T14:00",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true,
-   "eerst_nu": "2026-11-10"
-  },
-  {
-   "club": "betis",
-   "tegen": "Como",
-   "comp": "Champions League",
-   "aftrap": "2026-12-09T18:45",
-   "fases": [],
-   "nu": true,
-   "info": false,
-   "noot": "Verkoop is open (startmoment niet getoond).",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true,
-   "eerst_nu": "2026-11-11"
-  },
-  {
-   "club": "betis",
-   "tegen": "Racing Santander",
-   "comp": "La Liga",
-   "aftrap": "2026-12-12T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Deportivo Alavés",
-   "comp": "La Liga",
-   "aftrap": "2027-01-03",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Deportivo La Coruña",
-   "comp": "La Liga",
-   "aftrap": "2027-01-17",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Arsenal",
-   "comp": "Champions League",
-   "aftrap": "2027-01-20T21:00",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Elche",
-   "comp": "La Liga",
-   "aftrap": "2027-01-31",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Sevilla",
-   "comp": "La Liga",
-   "aftrap": "2027-02-07",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Villarreal",
-   "comp": "La Liga",
-   "aftrap": "2027-02-28",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Levante",
-   "comp": "La Liga",
-   "aftrap": "2027-03-14",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Celta de Vigo",
-   "comp": "La Liga",
-   "aftrap": "2027-04-04",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Athletic Club",
-   "comp": "La Liga",
-   "aftrap": "2027-04-18",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Valencia",
-   "comp": "La Liga",
-   "aftrap": "2027-05-02",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Espanyol",
-   "comp": "La Liga",
-   "aftrap": "2027-05-09",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
-   "club": "betis",
-   "tegen": "Atlético Madrid",
-   "comp": "La Liga",
-   "aftrap": "2027-05-30",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Nog niet in de verkoop; je kunt je aanmelden voor een bericht.",
-   "bron": "https://en.realbetisbalompie.es/tickets/",
-   "auto": true
-  },
-  {
    "club": "valencia",
    "tegen": "Ca Osasuna",
    "comp": "La Liga",
@@ -4100,7 +4101,7 @@
   },
   {
    "club": "juventus",
-   "tegen": "Omonia Nicosia",
+   "tegen": "Omónia Nicosia",
    "comp": "Europa League",
    "aftrap": "2026-11-26T20:00",
    "fases": [
@@ -5420,34 +5421,6 @@
   },
   {
    "club": "leeds",
-   "tegen": "Fulham",
-   "comp": "Premier League",
-   "aftrap": "2026-12-19T16:00",
-   "fases": [
-    [
-     "lid",
-     "2026-11-27T14:00",
-     "Fase 1: My Leeds Priority-leden (wie het eerst komt, het eerst)"
-    ],
-    [
-     "lid",
-     "2026-11-30T11:00",
-     "Fase 2: loting opent voor leden die vorig seizoen 11+ thuiswedstrijden kochten"
-    ],
-    [
-     "lid",
-     "2026-12-02T11:00",
-     "Fase 3: loting opent voor alle leden"
-    ]
-   ],
-   "nu": false,
-   "info": false,
-   "noot": "Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.",
-   "bron": "https://www.leedsunited.com/en/news/ticket-information-for-fulham-home-fixture",
-   "auto": true
-  },
-  {
-   "club": "leeds",
    "tegen": "Ipswich Town",
    "comp": "Premier League",
    "aftrap": "2026-12-05T16:00",
@@ -6657,18 +6630,6 @@
   },
   {
    "club": "monza",
-   "tegen": "ACF Fiorentina",
-   "comp": "Serie A",
-   "aftrap": "2026-11-23T20:45",
-   "fases": [],
-   "nu": false,
-   "info": true,
-   "noot": "Verkoopstatus niet getoond op de clubpagina.",
-   "bron": "https://www.acmonza.com/it/ticketing/",
-   "auto": true
-  },
-  {
-   "club": "monza",
    "tegen": "Como 1907",
    "comp": "Serie A",
    "aftrap": "2026-12-05T15:00",
@@ -7762,6 +7723,24 @@
    "info": false,
    "noot": "Eerst alleen voor leden; de club verwacht dat de kaarten voor leden snel uitverkocht zijn.",
    "bron": "https://www.avfc.co.uk/news/2026/november/06/ticketing-crystal-palace-home-ticket-details-26-27/",
+   "auto": true
+  },
+  {
+   "club": "hull-city",
+   "tegen": "Leeds United",
+   "comp": "Premier League",
+   "aftrap": "2026-12-29T20:30",
+   "fases": [
+    [
+     "lid",
+     "2026-11-25T10:30",
+     "Leden en supporters met aankoopgeschiedenis (max. 2 tickets)"
+    ]
+   ],
+   "nu": false,
+   "info": false,
+   "noot": "Kaarten zijn er alleen voor leden en voor supporters die dit of vorig seizoen een Hull-kaartje kochten.",
+   "bron": "https://www.wearehullcity.co.uk/news/2026/november/24/ticket-details-leeds-united-h-26-27/",
    "auto": true
   },
   {
@@ -8980,7 +8959,7 @@
    ]
   ]
  },
- "bijgewerkt": "2026-11-23",
+ "bijgewerkt": "2026-11-24",
  "SCHATTING": {
   "union": {
    "n": 1,
@@ -8988,17 +8967,23 @@
    "min": 9,
    "max": 9
   },
-  "feyenoord": {
-   "n": 3,
-   "mediaan": 23,
-   "min": 5,
-   "max": 37
+  "betis": {
+   "n": 2,
+   "mediaan": 28,
+   "min": 18,
+   "max": 28
   },
   "nec": {
    "n": 1,
    "mediaan": 19,
    "min": 19,
    "max": 19
+  },
+  "feyenoord": {
+   "n": 4,
+   "mediaan": 37,
+   "min": 5,
+   "max": 60
   },
   "utrecht": {
    "n": 2,
@@ -9083,12 +9068,6 @@
    "mediaan": 116,
    "min": 24,
    "max": 172
-  },
-  "betis": {
-   "n": 2,
-   "mediaan": 28,
-   "min": 18,
-   "max": 28
   },
   "valencia": {
    "n": 1,

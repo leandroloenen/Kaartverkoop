@@ -437,6 +437,20 @@
   ]
  },
  {
+  "k": "hull-city",
+  "naam": "Hull City",
+  "tegen": "Leeds United",
+  "comp": "Premier League",
+  "aftrap": "2026-12-29T20:30",
+  "stadion": "MKM Stadium",
+  "stad": "Hull",
+  "moment": "2026-11-25T10:30",
+  "label": "Leden en supporters met aankoopgeschiedenis (max. 2 tickets)",
+  "waarom": [
+   "Gespeeld in MKM Stadium (Hull)."
+  ]
+ },
+ {
   "k": "sparta",
   "naam": "Sparta Rotterdam",
   "tegen": "Excelsior",
