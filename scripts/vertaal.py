@@ -10,6 +10,12 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Red Pass-houders": "Red Pass holders",
+    "Geregistreerde supporters en Casa Benfica-leden": "Registered supporters and Casa Benfica members",
+    "Geregistreerde supporters": "Registered supporters",
+    "Algemene verkoop": "General sale",
+    "Alleen voor leden.": "Members only.",
+    "Eerst voorrang voor abonnees en leden.": "Priority for season ticket holders and members first.",
     "Getroffen UEFA-leden": "Affected UEFA members",
     "Leden zonder seizoenkaart": "Members without a season ticket",
     "Madridistas Platinum/Premium": "Madridistas Platinum/Premium",
@@ -220,6 +226,9 @@ def vertaal(tekst):
     kaal = tekst.strip()
     if kaal in ZINNEN:
         return ZINNEN[kaal]
+    suffix = " Aanvangstijd nog niet bevestigd."
+    if kaal.endswith(suffix) and len(kaal) > len(suffix):  # twee zinnen: eerst de status, dan de aftrap
+        return vertaal(kaal[:-len(suffix)]) + " " + ZINNEN[suffix.strip()]
     uit = kaal
     for patroon, vervanging in REGELS:
         uit = re.sub(patroon, vervanging, uit)
