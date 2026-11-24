@@ -1,19 +1,14 @@
-# Detailverkenning: volledige tekst van de pagina's. Per regel: naam | startadres | modus | aantal (modus: geen / link:PATROON / klik:PATROON)
-PSG programma | https://billetterie.psg.fr/en/schedule | link:/catalogue/ | 2
-Marseille programma | https://billetterie.om.fr/en | link:/catalogue/match | 2
-Marseille wedstrijd (OM-Lille) | https://billetterie.om.fr/en/catalogue/match-om-losc-lille-1 | geen | 1
-Lyon programma | https://billetterie.ol.fr/en | link:/catalogue/match | 2
-Lyon wedstrijd (OL-Monaco) | https://billetterie.ol.fr/en/catalogue/match-ol-as-monaco-fc-1 | geen | 1
-Lille programma | https://billetterie.losc.fr/en | link:/catalogue/match | 2
-Lille wedstrijd (LOSC-Auxerre) | https://billetterie.losc.fr/en/catalogue/match-losc-aj-auxerre | geen | 1
-Porto Sporting | https://bilhetes.fcporto.pt/bilhetes-venda-para-o-fc-portosporting | geen | 1
-Benfica programma | https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades | geen | 1
-Club Brugge bekerwedstrijd | https://www.clubbrugge.be/nl/news/koop-je-tickets-voor-de-bekerwedstrijd-tegen-ksc-lokeren | geen | 1
-Union SG artikel | https://rusg.brussels/en/news/ticketing-info-tickets-celta-away-lech-poznan-home | geen | 1
-Anderlecht tickets | https://www.rsca.be/en/ticket-information | geen | 1
-Lens programma | https://billetterie.rclens.fr/en/ | link:/catalogue/match | 2
-Monaco programma | https://billetterie.asmonaco.com/en/ | link:/catalogue/match | 2
-Braga tickets | https://scbraga.pt/en/ticketing | geen | 1
-Genk tickets | https://www.krcgenk.be/nl/ticketing/tickets | geen | 1
-Gent tickets | https://kaag.roboticket.com/ | geen | 1
-Sporting tickets | https://tickets.sporting.pt/pt | geen | 1
+# Detailverkenning ronde 2: volledige tekst van de pagina's. Per regel: naam | startadres | modus | aantal (modus: geen / link:PATROON / klik:PATROON)
+Marseille kalender | https://billetterie.om.fr/fr/calendrier-equipe-premiere | geen | 1
+Lille kalender | https://billetterie.losc.fr/en/calendar | geen | 1
+Monaco wedstrijden | https://billetterie.asmonaco.com/en/matches | geen | 1
+Lyon kalender (gok) | https://billetterie.ol.fr/en/calendar | geen | 1
+Lyon thuis (gok 2) | https://billetterie.ol.fr/ | geen | 1
+Porto hoofdpagina | https://bilhetes.fcporto.pt/ | link:/jogos/ | 2
+Braga meer laden | https://scbraga.pt/en/ticketing | klik:^Load more$ | 1
+Sporting wedstrijd | https://tickets.sporting.pt/pt | klik:Comprar bilhetes | 1
+Anderlecht kalender | https://www.rsca.be/en/fixture/list/20 | geen | 1
+Genk kalender | https://www.krcgenk.be/nl/kalender/wedstrijdkalender | geen | 1
+Union SG ticketing | https://rusg.brussels/en/ticketing | geen | 1
+Club Brugge tickets | https://tickets.clubbrugge.be/ | geen | 1
+Gent kalender | https://kaag.roboticket.com/en/events | geen | 1
