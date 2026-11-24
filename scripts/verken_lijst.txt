@@ -73,3 +73,19 @@ Deportivo Alaves | https://www.alaves.com/entradas
 Levante UD | https://www.levanteud.com/entradas
 Malaga CF | https://www.malagacf.com/entradas
 Racing Santander | https://realracingclub.es/entradas
+# --- Frankrijk, Portugal, Belgie (adressen met "gok" zijn nog niet gecontroleerd; de verkenner laat zien of ze werken)
+PSG | https://billetterie.psg.fr/en/schedule
+Marseille | https://billetterie.om.fr/en
+Lyon | https://billetterie.ol.fr/en
+Monaco (gok) | https://billetterie.asmonaco.com/
+Lille | https://billetterie.losc.fr/en
+Lens (gok) | https://billetterie.rclens.fr/
+Benfica | https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades
+FC Porto | https://bilhetes.fcporto.pt/bilhetes-venda-para-o-fc-portosporting
+Sporting CP (gok) | https://bilheteira.sporting.pt/
+Braga (gok) | https://www.scbraga.pt/bilhetes
+Club Brugge | https://tickets.clubbrugge.be/
+Anderlecht | https://www.rsca.be/en/ticket-information
+Union SG | https://rusg.brussels/en/tickets
+Genk (gok) | https://www.krcgenk.be/en/tickets
+Gent (gok) | https://www.kaagent.be/en/tickets
