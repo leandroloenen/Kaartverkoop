@@ -24,7 +24,7 @@ DAGEN = {"nl": ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zater
          "en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]}
 MAANDEN = {"nl": ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"],
            "en": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
-LIGAS = ["Eredivisie", "Premier League", "Bundesliga", "La Liga", "Serie A", "Eerste Divisie", "Championship", "2. Bundesliga", "La Liga 2", "Ligue 1"]
+LIGAS = ["Eredivisie", "Premier League", "Bundesliga", "La Liga", "Serie A", "Eerste Divisie", "Championship", "2. Bundesliga", "La Liga 2", "Ligue 1", "Primeira Liga", "Jupiler Pro League"]
 MAPPEN = {"nl": {"clubs": "clubs_info", "tips": "tips_info", "pagina": "pagina_info"},
           "en": {"clubs": "clubs_info_en", "tips": "tips_info_en", "pagina": "pagina_info_en"}}
 e = html.escape
