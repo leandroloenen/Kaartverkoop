@@ -80,6 +80,7 @@ TXT = {
         "ant_schatting": " Volgens onze waarnemingen opent {naam} de verkoop meestal ongeveer {mediaan} dagen voor de wedstrijd (op basis van {n} waarnemingen).",
         "club_over": "Over {naam}",
         "club_titel": "{naam} tickets: kaartverkoop en verkoopmomenten | {site}",
+        "club_beschr_volgende": "{naam} tickets: volgende verkoopmoment {datum}, {label}. Alle verkoopmomenten per thuiswedstrijd.",
         "club_beschr": "Wanneer gaan de {naam}-tickets in de verkoop? Per thuiswedstrijd de verkoopmomenten voor leden, seizoenkaarthouders en vrije verkoop. Dagelijks bijgewerkt.",
         "comp_h1": "{comp} tickets: wanneer gaat de kaartverkoop open?",
         "comp_intro": "Alle bekende verkoopmomenten voor {comp}-wedstrijden op één plek, gesorteerd op datum van de wedstrijd. Laatst bijgewerkt op {datum}.",
@@ -147,7 +148,8 @@ TXT = {
         "ant_geen": "No sale start is known for {naam} at the moment. We update this overview daily.",
         "ant_schatting": " According to our observations, {naam} usually opens sales about {mediaan} days before the match (based on {n} observations).",
         "club_over": "About {naam}",
-        "club_titel": "{naam} tickets: ticket sales and sale dates | {site}",
+        "club_titel": "{naam} tickets: on sale dates and ticket sales | {site}",
+        "club_beschr_volgende": "{naam} tickets: next on sale date {datum}, {label}. All sale dates per home match.",
         "club_beschr": "When do {naam} tickets go on sale? For each home match, the sale moments for members, season ticket holders and general sale. Updated daily.",
         "comp_h1": "{comp} tickets: when do ticket sales open?",
         "comp_intro": "All known sale moments for {comp} matches in one place, sorted by match date. Last updated on {datum}.",
@@ -950,7 +952,12 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
                                "location": {"@type": "Place", "name": meta_nl["stadion"],
                                             "address": {"@type": "PostalAddress", "addressLocality": meta_nl.get("stad", "")}}})
             jsonld = '<script type="application/ld+json">' + json.dumps(events, ensure_ascii=False) + "</script>"
-        schrijf(pad, pagina(tr("club_titel", naam=naam, site=sitenaam), tr("club_beschr", naam=naam), pad, inhoud, jsonld, nav_html("../../"), "clubs"))
+        beschrijving = tr("club_beschr", naam=naam)
+        if volgende and len(volgende[1]) > 2 and volgende[1][2]:
+            beschrijving = tr("club_beschr_volgende", naam=naam, datum=datum(volgende[1][1]), label=volgende[1][2])
+            if len(beschrijving) > 160:
+                beschrijving = beschrijving[:157].rsplit(" ", 1)[0] + "..."
+        schrijf(pad, pagina(tr("club_titel", naam=naam, site=sitenaam), beschrijving, pad, inhoud, jsonld, nav_html("../../"), "clubs"))
 
     # ---------- competitiepagina's
     per_comp = {}
