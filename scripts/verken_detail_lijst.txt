@@ -11,3 +11,9 @@ Benfica programma | https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalid
 Club Brugge bekerwedstrijd | https://www.clubbrugge.be/nl/news/koop-je-tickets-voor-de-bekerwedstrijd-tegen-ksc-lokeren | geen | 1
 Union SG artikel | https://rusg.brussels/en/news/ticketing-info-tickets-celta-away-lech-poznan-home | geen | 1
 Anderlecht tickets | https://www.rsca.be/en/ticket-information | geen | 1
+Lens programma | https://billetterie.rclens.fr/en/ | link:/catalogue/match | 2
+Monaco programma | https://billetterie.asmonaco.com/en/ | link:/catalogue/match | 2
+Braga tickets | https://scbraga.pt/en/ticketing | geen | 1
+Genk tickets | https://www.krcgenk.be/nl/ticketing/tickets | geen | 1
+Gent tickets | https://kaag.roboticket.com/ | geen | 1
+Sporting tickets | https://tickets.sporting.pt/pt | geen | 1
