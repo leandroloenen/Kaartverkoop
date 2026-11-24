@@ -31,6 +31,8 @@ e = html.escape
 CFG = {}
 TAAL = "nl"
 PAGINAS = []  # (taal, pad, pad in de andere taal of None): voor sitemap en hreflang
+PILOT_COMPS = {"Eredivisie", "Premier League"}  # proef: een eigen pagina per wedstrijd voor deze competities
+WED_SLUG = {}   # (club, datum) -> adres van de wedstrijdpagina; voor beide talen gelijk (gevuld in main)
 
 TXT = {
     "nl": {
@@ -81,6 +83,17 @@ TXT = {
         "club_over": "Over {naam}",
         "club_titel": "{naam} tickets: kaartverkoop en verkoopmomenten | {site}",
         "club_beschr_volgende": "{naam} tickets: volgende verkoopmoment {datum}, {label}. Alle verkoopmomenten per thuiswedstrijd.",
+        "wed_titel": "{club} – {tegen} tickets: kaartverkoop en verkoopmomenten | {site}",
+        "wed_h1": "{club} – {tegen} tickets: wanneer begint de kaartverkoop?",
+        "wed_intro": "{comp} · {datum}. Hieronder zie je per doelgroep wanneer de kaartverkoop voor deze wedstrijd begint. Laatst bijgewerkt op {bij}.",
+        "wed_volgende": "De eerstvolgende verkoopfase voor {club} – {tegen} is {label} op {datum}.",
+        "wed_gestart": "Alle bekende verkoopfasen voor {club} – {tegen} zijn gestart. Kijk op de ticketsite van de club of er nog kaarten zijn.",
+        "wed_beschr": "{club} – {tegen} tickets: volgende verkoopmoment {datum}, {label}. Alle verkoopfasen per doelgroep.",
+        "wed_beschr_gestart": "Wanneer ging de kaartverkoop voor {club} – {tegen} open? Alle verkoopfasen per doelgroep, dagelijks bijgewerkt.",
+        "wed_h2_koop": "Zo koop je tickets",
+        "wed_tips": 'Uitleg over verkoopfases en wat je doet als een wedstrijd is uitverkocht vind je bij de <a href="{href}">tips</a>.',
+        "wed_meer": "Meer wedstrijden van {club}",
+        "wed_alle": "Alle wedstrijden en verkoopmomenten van {club}",
         "club_beschr": "Wanneer gaan de {naam}-tickets in de verkoop? Per thuiswedstrijd de verkoopmomenten voor leden, seizoenkaarthouders en vrije verkoop. Dagelijks bijgewerkt.",
         "comp_h1": "{comp} tickets: wanneer gaat de kaartverkoop open?",
         "comp_intro": "Alle bekende verkoopmomenten voor {comp}-wedstrijden op één plek, gesorteerd op datum van de wedstrijd. Laatst bijgewerkt op {datum}.",
@@ -150,6 +163,17 @@ TXT = {
         "club_over": "About {naam}",
         "club_titel": "{naam} tickets: on sale dates and ticket sales | {site}",
         "club_beschr_volgende": "{naam} tickets: next on sale date {datum}, {label}. All sale dates per home match.",
+        "wed_titel": "{club} vs {tegen} tickets: on sale dates and ticket sales | {site}",
+        "wed_h1": "{club} vs {tegen} tickets: when do they go on sale?",
+        "wed_intro": "{comp} · {datum}. Below you can see, per audience, when ticket sales for this match start. Last updated on {bij}.",
+        "wed_volgende": "The next sale phase for {club} vs {tegen} is {label} on {datum}.",
+        "wed_gestart": "All known sale phases for {club} vs {tegen} have started. Check the club's ticket site to see whether tickets are still available.",
+        "wed_beschr": "{club} vs {tegen} tickets: next on sale date {datum}, {label}. All sale phases per audience.",
+        "wed_beschr_gestart": "When did ticket sales for {club} vs {tegen} open? All sale phases per audience, updated daily.",
+        "wed_h2_koop": "How to buy tickets",
+        "wed_tips": 'Explanations of sale phases and what to do if a match is sold out can be found in the <a href="{href}">tips</a>.',
+        "wed_meer": "More {club} matches",
+        "wed_alle": "All matches and sale dates for {club}",
         "club_beschr": "When do {naam} tickets go on sale? For each home match, the sale moments for members, season ticket holders and general sale. Updated daily.",
         "comp_h1": "{comp} tickets: when do ticket sales open?",
         "comp_intro": "All known sale moments for {comp} matches in one place, sorted by match date. Last updated on {datum}.",
@@ -324,7 +348,7 @@ def lees_verhaal(pad):
     return meta, tekst
 
 
-def kaartje(w, club_naam, club_url, vandaag):
+def kaartje(w, club_naam, club_url, vandaag, href=None):
     aftrap = datum(w["aftrap"])
     labels = ""
     if w.get("nu"):
@@ -337,7 +361,10 @@ def kaartje(w, club_naam, club_url, vandaag):
         fases += (f'<div class="fase{" voorbij" if voorbij else ""}"><span>{e(f[2] if len(f) > 2 else f[0])}</span>'
                   f'<span>{e(datum(f[1]))}{tr("gestart") if voorbij else ""}</span></div>')
     noot = f'<div class="mute" style="font-size:.9rem">{e(w["noot"])}</div>' if w.get("noot") else ""
-    return (f'<div class="kaart"><b>{e(club_naam)} – {e(w["tegen"])}</b>{labels}<div class="mute">{e(w["comp"])} · {e(aftrap)}</div>{fases}{noot}</div>')
+    titel = f'{e(club_naam)} – {e(w["tegen"])}'
+    if href:
+        titel = f'<a href="{e(href)}">{titel}</a>'
+    return (f'<div class="kaart"><b>{titel}</b>{labels}<div class="mute">{e(w["comp"])} · {e(aftrap)}</div>{fases}{noot}</div>')
 
 
 def voet(prefix):
@@ -935,7 +962,7 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
         if sc and sc["n"] >= 2:
             antwoord += tr("ant_schatting", naam=naam, mediaan=sc["mediaan"], n=sc["n"])
         inhoud = f"<h1>{e(tr('club_h1', naam=naam))}</h1><p>{e(tr('club_intro', naam=naam, datum=datum(bijgewerkt, False)))}</p>"
-        inhoud += f"<h2>{tr('club_h2_wedstrijden')}</h2>" + "".join(kaartje(w, naam, club.get("url", ""), vandaag) for w in wedstrijden)
+        inhoud += f"<h2>{tr('club_h2_wedstrijden')}</h2>" + "".join(kaartje(w, naam, club.get("url", ""), vandaag, href=(f"../../wedstrijd/{WED_SLUG[(k, w['aftrap'][:10])]}/" if (k, w["aftrap"][:10]) in WED_SLUG else None)) for w in wedstrijden)
         if club.get("url"):
             inhoud += "<p>" + tr("club_officieel", url=e(club["url"]), naam=e(naam)) + "</p>"
         inhoud += f"<h2>{tr('faq')}</h2><h3>{e(tr('faq_q', naam=naam))}</h3><p>{e(antwoord)}</p>"
@@ -958,6 +985,61 @@ def bouw_taal(taal, data, tips, index_bron, vandaag, bijgewerkt):
             if len(beschrijving) > 160:
                 beschrijving = beschrijving[:157].rsplit(" ", 1)[0] + "..."
         schrijf(pad, pagina(tr("club_titel", naam=naam, site=sitenaam), beschrijving, pad, inhoud, jsonld, nav_html("../../"), "clubs"))
+
+    # ---------- wedstrijdpagina's (proef: Eredivisie en Premier League, alleen wedstrijden met bekende verkoopfases)
+    wmap = UIT / "wedstrijd"
+    gebouwd = set()
+    for k, club in clubs.items():
+        naam = club["naam"]
+        meta_nl = verhaal_voor(k, naam, "nl")[0]
+        alle = sorted((w for w in toekomst[k] if (k, w["aftrap"][:10]) in WED_SLUG), key=lambda w: w["aftrap"])
+        for w in alle:
+            sl = WED_SLUG[(k, w["aftrap"][:10])]
+            pad = f"wedstrijd/{sl}/"
+            gebouwd.add(sl)
+            volgende_w = None
+            for f in sorted(w.get("fases", []), key=lambda x: x[1]):
+                if aware(f[1]) >= vandaag:
+                    volgende_w = f
+                    break
+            label = (volgende_w[2] if volgende_w and len(volgende_w) > 2 else (volgende_w[0] if volgende_w else ""))
+            if volgende_w:
+                antwoord = tr("wed_volgende", club=naam, tegen=w["tegen"], label=label, datum=datum(volgende_w[1]))
+                beschrijving = tr("wed_beschr", club=naam, tegen=w["tegen"], datum=datum(volgende_w[1]), label=label)
+                if len(beschrijving) > 160:
+                    beschrijving = beschrijving[:157].rsplit(" ", 1)[0] + "..."
+            else:
+                antwoord = tr("wed_gestart", club=naam, tegen=w["tegen"])
+                beschrijving = tr("wed_beschr_gestart", club=naam, tegen=w["tegen"])
+            inhoud = f"<h1>{e(tr('wed_h1', club=naam, tegen=w['tegen']))}</h1>"
+            inhoud += f"<p>{e(tr('wed_intro', comp=w['comp'], datum=datum(w['aftrap']), bij=datum(bijgewerkt, False)))}</p>"
+            inhoud += kaartje(w, naam, club.get("url", ""), vandaag)
+            inhoud += f"<p>{e(antwoord)}</p>"
+            inhoud += f"<h2>{tr('wed_h2_koop')}</h2>"
+            if club.get("url"):
+                inhoud += "<p>" + tr("club_officieel", url=e(club["url"]), naam=e(naam)) + "</p>"
+            if CFG.get("tips"):
+                inhoud += "<p>" + tr("wed_tips", href="../../tips/") + "</p>"
+            ander_w = [x for x in alle if x is not w][:4]
+            inhoud += f"<h2>{e(tr('wed_meer', club=naam))}</h2><nav class=\"clubs\">"
+            inhoud += "".join(f'<a href="../{WED_SLUG[(k, x["aftrap"][:10])]}/">{e(naam)} – {e(x["tegen"])}</a>' for x in ander_w)
+            inhoud += f'<a href="../../club/{slugs[k]}/">{e(tr("wed_alle", club=naam))}</a></nav>'
+            jsonld = ""
+            if meta_nl.get("stadion"):
+                ev = {"@context": "https://schema.org", "@type": "SportsEvent", "name": f"{naam} - {w['tegen']}", "startDate": aware(w["aftrap"]).isoformat(),
+                      "eventStatus": "https://schema.org/EventScheduled", "url": f"{basis_taal()}/{pad}",
+                      "location": {"@type": "Place", "name": meta_nl["stadion"], "address": {"@type": "PostalAddress", "addressLocality": meta_nl.get("stad", "")}}}
+                jsonld = '<script type="application/ld+json">' + json.dumps(ev, ensure_ascii=False) + "</script>"
+            schrijf(pad, pagina(tr("wed_titel", club=naam, tegen=w["tegen"], site=sitenaam), beschrijving, pad, inhoud, jsonld, nav_html("../../"), "clubs"))
+    # Pagina's van wedstrijden die niet meer in de lijst staan (gespeeld of verwijderd): stuur door naar de clubpagina
+    if wmap.exists():
+        for oud in sorted(p for p in wmap.iterdir() if p.is_dir() and p.name not in gebouwd):
+            doel = next((slugs[x] for x in sorted(slugs, key=lambda x: -len(slugs[x])) if oud.name.startswith(slugs[x] + "-")), None)
+            href = f"../../club/{doel}/" if doel else "../../club/"
+            (oud / "index.html").write_text(
+                f'<!DOCTYPE html><html lang="{taal}"><head><meta charset="utf-8"><meta name="robots" content="noindex">'
+                f'<meta http-equiv="refresh" content="0; url={href}"><link rel="canonical" href="{e(basis_taal())}/{href[6:]}"><title>{e(sitenaam)}</title></head>'
+                f'<body><p><a href="{href}">{e(sitenaam)}</a></p></body></html>', encoding="utf-8")
 
     # ---------- competitiepagina's
     per_comp = {}
@@ -1075,6 +1157,9 @@ def main():
     bijgewerkt = data.get("bijgewerkt", vandaag.date().isoformat())
     idx = ROOT / "index.html"
     index_bron = idx.read_text(encoding="utf-8") if idx.exists() else ""
+    for w in data["WEDSTRIJDEN"]:
+        if w["comp"] in PILOT_COMPS and w.get("fases") and aware(w["aftrap"]).date() >= vandaag.date() and w["club"] in data["CLUBS"]:
+            WED_SLUG[(w["club"], w["aftrap"][:10])] = f'{slug(data["CLUBS"][w["club"]]["naam"])}-{slug(w["tegen"])}-{w["aftrap"][:10]}'
     data_en = vertaal.vertaal_data(data)
     (ROOT / "data_en.json").write_text(json.dumps(data_en, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     tips = {"nl": laad_tips("nl"), "en": laad_tips("en")}
