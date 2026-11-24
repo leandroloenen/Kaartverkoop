@@ -37,6 +37,8 @@ def verrijk(basis, extra):
                     w["info"] = False
                 if nieuw and w.get("noot", "").startswith("Verkoopmomenten staan in een nieuwsbericht"):
                     w["noot"] = ""
+                if w["fases"] and w.get("noot", "") in ("Nog niet in de verkoop.", "Verkoop start binnenkort; datum nog niet bekend.", "Verkoop is open (startmoment niet getoond).", "Algemene verkoop is gestart (startmoment niet getoond)."):
+                    w["noot"] = ""
                 if e.get("bron") and not w.get("bron"):
                     w["bron"] = e["bron"]
                 break
