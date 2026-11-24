@@ -213,7 +213,7 @@ def parse_mainz(tekst, club="mainz", bron=""):
         cellen = [c.replace("\xa0", " ").strip() for c in rij.split("\t")]
         if len(cellen) < 6:
             continue
-        datum, tegen = cellen[0], cellen[1]
+        datum, tegen = cellen[0], " ".join(cellen[1].replace("Spiel der Herzen", "").split())
         md = MZ_DATUM.search(datum)
         if md and t.MAANDEN_DE_LANG.get(md.group(2).lower()):
             aftrap = t.jaar_voor_dag(int(md.group(1)), t.MAANDEN_DE_LANG[md.group(2).lower()], int(md.group(3)), int(md.group(4) or 0))
