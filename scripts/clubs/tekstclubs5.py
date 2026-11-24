@@ -307,6 +307,8 @@ def parse_leeds_artikel(tekst, club="leeds", bron=""):
             continue
         if d:
             fases.append(["lid", d, label])
+    if fases and (datetime.fromisoformat(aftrap[:10]) - datetime.fromisoformat(max(f[1] for f in fases)[:10])).days > 150:
+        return None  # oud artikel uit een vorig seizoen: de datum is naar volgend jaar doorgeschoven
     comp = "Premier League" if "Premier League" in tekst else ("EFL Cup" if "EFL Cup" in tekst else "Premier League")
     return wedstrijd(club, mooi(tegen.group(1)), comp, aftrap, fases=fases, nu=False, info=not fases,
                      noot="Kaarten zijn er alleen voor leden (My Leeds). Seizoenkaarthouders hebben hun eigen plek.", bron=bron)
