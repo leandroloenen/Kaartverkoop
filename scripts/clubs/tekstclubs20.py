@@ -37,7 +37,7 @@ NAMEN = {
     "BRIGHTON & HOVE ALBION": "Brighton", "LINCOLN RED IMPS FC": "Lincoln Red Imps", "HEART OF MIDLOTHIAN FC": "Hearts",
     "OFI CRETE FC": "OFI Crete", "TSG 1899 HOFFENHEIM": "Hoffenheim", "SUNDERLAND AFC": "Sunderland", "R ANTWERP FC": "Antwerp",
     "SPORTING CHARLEROI": "Charleroi", "STANDARD LIÈGE": "Standard Luik", "KV KORTRIJK": "Kortrijk", "KAA GENT": "Gent",
-    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG",
+    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
     "VIKTORIA PLZEŇ": "Viktoria Plzeň", "MANCHESTER UNITED FC": "Manchester United", "CS MARÍTIMO": "Marítimo", "CASA PIA AC": "Casa Pia",
     "AROUCA FC": "Arouca", "ACADÉMICO DE VISEU FC": "Académico de Viseu", "MOREIRENSE FC": "Moreirense", "GIL VICENTE FC": "Gil Vicente",
     "VITÓRIA S.C.": "Vitória SC", "FC FAMALICÃO": "Famalicão", "LIVERPOOL FC": "Liverpool", "OL – LILLESTRØM": "Lillestrøm",
@@ -391,11 +391,14 @@ def parse_genk(tekst, club="genk", bron=""):
 
 
 # ---------------------------------------------------------------- registratie
+ENGELS = {"porto"}  # sites die in de taal van de browser antwoorden: daar vragen we Engels (de teksten die we kennen)
+
+
 def _maak(sleutel, naam, land, adres, parser):
     test = os.environ.get(f"{sleutel.upper()}_TEKST_BESTAND", "")
 
     def haal_op():
-        tekst = t.haal_tekst(adres, test).replace("\xa0", " ").replace("\u202f", " ")  # harde spaties op de sites
+        tekst = t.haal_tekst(adres, test, "en-GB" if sleutel in ENGELS else "nl-NL").replace("\xa0", " ").replace("\u202f", " ")  # harde spaties op de sites
         return parser(tekst, sleutel, adres)
 
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=adres, LAND=land, BEHOUD=False, haal_op=haal_op)
