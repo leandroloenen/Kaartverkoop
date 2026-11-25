@@ -10,6 +10,9 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Alleen voor fans met een account van vóór de loting op 27/08.": "Only for fans with an account from before the 27/08 ballot.",
+    "Abonnees": "Season ticket holders",
+    "Club Members": "Club Members",
     "Red Pass-houders": "Red Pass holders",
     "Geregistreerde supporters en Casa Benfica-leden": "Registered supporters and Casa Benfica members",
     "Geregistreerde supporters": "Registered supporters",
