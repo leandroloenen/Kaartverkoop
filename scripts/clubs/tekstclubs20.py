@@ -37,7 +37,7 @@ NAMEN = {
     "BRIGHTON & HOVE ALBION": "Brighton", "LINCOLN RED IMPS FC": "Lincoln Red Imps", "HEART OF MIDLOTHIAN FC": "Hearts",
     "OFI CRETE FC": "OFI Crete", "TSG 1899 HOFFENHEIM": "Hoffenheim", "SUNDERLAND AFC": "Sunderland", "R ANTWERP FC": "Antwerp",
     "SPORTING CHARLEROI": "Charleroi", "STANDARD LIÈGE": "Standard Luik", "KV KORTRIJK": "Kortrijk", "KAA GENT": "Gent",
-    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
+    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
     "VIKTORIA PLZEŇ": "Viktoria Plzeň", "MANCHESTER UNITED FC": "Manchester United", "CS MARÍTIMO": "Marítimo", "CASA PIA AC": "Casa Pia",
     "AROUCA FC": "Arouca", "ACADÉMICO DE VISEU FC": "Académico de Viseu", "MOREIRENSE FC": "Moreirense", "GIL VICENTE FC": "Gil Vicente",
     "VITÓRIA S.C.": "Vitória SC", "FC FAMALICÃO": "Famalicão", "LIVERPOOL FC": "Liverpool", "OL – LILLESTRØM": "Lillestrøm",
@@ -103,6 +103,8 @@ def wedstrijd(club, tegen, comp_naam, aftrap, status=None, fases=(), bron="", tb
         info, noot = True, VOORRANG
     elif status == "uitverkocht":
         noot = "Uitverkocht."
+    elif status == "resale":
+        noot = "Alleen nog resale beschikbaar."
     if tbc:
         noot = (noot + " " if noot else "") + TIJD_ONBEKEND
     return {"club": club, "tegen": tegen, "comp": comp_naam, "aftrap": a,
@@ -390,6 +392,52 @@ def parse_genk(tekst, club="genk", bron=""):
     return uit
 
 
+# ---------------------------------------------------------------- Paris Saint-Germain
+# De ticketsite van PSG blokkeert de onzichtbare browser (Cloudflare). Lukt het lezen niet, dan gebruiken we een tekst die jij
+# zelf in scripts/handmatig/psg.txt zet (Ctrl+A, Ctrl+C op https://billetterie.psg.fr/en/schedule). Die tekst veroudert, dus ververs hem af en toe.
+PSG_KOP = re.compile(r"^[^\n]+ • [^\n]+\n([^\n]+)\n\1\nvs\n([^\n]+)\n\2\n", re.M)
+
+
+def parse_psg(tekst, club="psg", bron=""):
+    koppen = list(PSG_KOP.finditer(tekst))
+    uit = []
+    for i, m in enumerate(koppen):
+        if m.group(1).strip().upper() != "PARIS":
+            continue
+        einde = koppen[i + 1].start() if i + 1 < len(koppen) else len(tekst)
+        blok = tekst[m.start():einde]
+        cm = re.match(r"([^\n]+) • ", blok)
+        d = DATUM.search(blok)
+        maand = maand_any(d.group(2)) if d else None
+        if not maand:
+            continue
+        uur, minuut = int(d.group(4)), int(d.group(5))
+        tbc = "Date to be confirmed" in blok
+        aftrap = _aftrap(int(d.group(1)), maand, uur, minuut, tbc, jaar=int(d.group(3)))
+        if not aftrap or not _toekomst(aftrap):
+            continue
+        laag = blok.lower()
+        status = ("uitverkocht" if "sold-out" in laag or "sold out" in laag else "open" if "see offers" in laag
+                  else "resale" if "tickets resale" in laag else "aanmelden" if "alert me" in laag else None)
+        uit.append(wedstrijd(club, schoon(m.group(2)), comp(cm.group(1)), aftrap, status, bron=bron, tbc=tbc))
+    return uit
+
+
+def haal_psg(adres, test, sleutel="psg"):
+    from pathlib import Path
+
+    uit = []
+    try:
+        uit = parse_psg(t.haal_tekst(adres, test, "en-GB").replace("\xa0", " "), sleutel, adres)
+    except Exception as fout:  # noqa: BLE001
+        print(f"[psg] lezen op de site mislukt: {str(fout).splitlines()[0][:120]}")
+    pad = Path(__file__).resolve().parent.parent / "handmatig" / "psg.txt"
+    if not uit and not test and pad.exists():
+        print("[psg] site niet leesbaar: tekst uit scripts/handmatig/psg.txt gebruikt")
+        uit = parse_psg(pad.read_text(encoding="utf-8").replace("\xa0", " "), sleutel, adres + " (handmatig)")
+    return uit
+
+
 # ---------------------------------------------------------------- registratie
 ENGELS = {"porto"}  # sites die in de taal van de browser antwoorden: daar vragen we Engels (de teksten die we kennen)
 
@@ -401,12 +449,15 @@ def _maak(sleutel, naam, land, adres, parser):
         tekst = t.haal_tekst(adres, test, "en-GB" if sleutel in ENGELS else "nl-NL").replace("\xa0", " ").replace("\u202f", " ")  # harde spaties op de sites
         return parser(tekst, sleutel, adres)
 
+    if sleutel == "psg":
+        haal_op = lambda: haal_psg(adres, test, sleutel)  # noqa: E731
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=adres, LAND=land, BEHOUD=False, haal_op=haal_op)
 
 
 CLUBS = [
     # sleutel, naam, land, adres van de kalender, lezer (we gebruiken hier bewust vaste kalenderadressen en niet de startadressen uit verken_lijst.txt)
     ("benfica", "SL Benfica", "PT", "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades", parse_benfica),
+    ("psg", "Paris Saint-Germain", "FR", "https://billetterie.psg.fr/en/schedule", parse_psg),
     ("marseille", "Olympique Marseille", "FR", "https://billetterie.om.fr/fr/calendrier-equipe-premiere", parse_marseille),
     ("lille", "Lille OSC", "FR", "https://billetterie.losc.fr/en/calendar", parse_lille),
     ("monaco", "AS Monaco", "FR", "https://billetterie.asmonaco.com/en/matches", parse_monaco),
