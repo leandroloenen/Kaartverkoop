@@ -392,6 +392,47 @@ def parse_genk(tekst, club="genk", bron=""):
     return uit
 
 
+# ---------------------------------------------------------------- Arsenal (ticketpagina: per wedstrijd status van de loting)
+LONDEN = ZoneInfo("Europe/London")
+AR_KOP = re.compile(r"^[A-Z][a-z]{2} ([A-Z][a-z]{2}) (\d{1,2}) at (\d{2}):(\d{2})\n([^\n]+)\n([^\n]+)\n(H|A)\n", re.M)
+AR_LOTING = re.compile(r"Ballot Opens\s*[A-Z][a-z]{2} ([A-Z][a-z]{2}) (\d{1,2}) at (\d{2}):(\d{2})\s*\n\s*Ballot Closes\s*[A-Z][a-z]{2} ([A-Z][a-z]{2}) (\d{1,2}) at (\d{2}):(\d{2})")
+AR_NAMEN = {"MAN CITY": "Manchester City", "MAN UNITED": "Manchester United", "NEWCASTLE": "Newcastle United", "REAL MADRID CF": "Real Madrid"}
+
+
+def parse_arsenal(tekst, club="arsenal", bron=""):
+    """Alleen thuiswedstrijden (H). De competitie staat niet op de pagina: in het 'Arsenal Stadium' (UEFA-naam) spelen ze Europees, in het Emirates de Premier League."""
+    koppen = list(AR_KOP.finditer(tekst))
+    uit = []
+    for i, m in enumerate(koppen):
+        if m.group(7) != "H":
+            continue
+        einde = koppen[i + 1].start() if i + 1 < len(koppen) else len(tekst)
+        blok = tekst[m.end():einde]
+        maand = maand_en(m.group(1))
+        aftrap = _aftrap(int(m.group(2)), maand, int(m.group(3)), int(m.group(4)), False, LONDEN) if maand else None
+        if not aftrap or not _toekomst(aftrap):
+            continue
+        tegen = AR_NAMEN.get(m.group(6).strip().upper(), schoon(m.group(6)))
+        competitie = "Champions League" if "Arsenal Stadium" in m.group(5) else "Premier League"
+        fases = []
+        l = AR_LOTING.search(blok)
+        if l:
+            for g, label in ((l.groups()[0:4], "Loting voor leden: aanvragen openen"), (l.groups()[4:8], "Loting sluit")):
+                mo = maand_en(g[0])
+                moment = t.jaar_voor(int(g[1]), mo, int(g[2]), int(g[3]), aftrap, LONDEN) if mo else None
+                if moment:
+                    fases.append(["lid", t.tekst_fmt(moment), label])
+        w = wedstrijd(club, tegen, competitie, aftrap, None, fases, bron)
+        if fases:
+            w["noot"] = "Kaarten zijn alleen voor leden, via loting."
+        elif "Ballot Closed" in blok:
+            w["noot"] = "Loting gesloten; kaarten nu alleen nog via de Ticket Exchange (doorverkoop tussen supporters)."
+        else:
+            w["info"], w["noot"] = True, "Loting nog niet aangekondigd."
+        uit.append(w)
+    return uit
+
+
 # ---------------------------------------------------------------- Union SG (kalender; de pagina toont per keer één competitie, nu de Pro League)
 UN_DATUM = re.compile(r"^(?:[A-Za-z]+\.? )(\d{1,2})[./](\d{2})$")
 UN_TIJD = re.compile(r"^(\d{2}):(\d{2})(?: \| .*)?$")
@@ -562,6 +603,7 @@ CLUBS = [
     ("benfica", "SL Benfica", "PT", "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades", parse_benfica),
     ("psg", "Paris Saint-Germain", "FR", "https://billetterie.psg.fr/en/schedule", parse_psg),
     ("club-brugge", "Club Brugge", "BE", "https://www.askclub.be/hc/nl/articles/53695700949652-Voor-welke-wedstrijden-kan-ik-tickets-kopen", parse_clubbrugge),
+    ("arsenal", "Arsenal", "EN", "https://www.arsenal.com/tickets/men", parse_arsenal),
     ("union-sg", "Union SG", "BE", "https://rusg.brussels/nl/kalender?calendar-filter=869&ranking-filter=867", parse_union_sg),
     ("marseille", "Olympique Marseille", "FR", "https://billetterie.om.fr/fr/calendrier-equipe-premiere", parse_marseille),
     ("lille", "Lille OSC", "FR", "https://billetterie.losc.fr/en/calendar", parse_lille),
