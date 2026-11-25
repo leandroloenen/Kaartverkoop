@@ -37,7 +37,7 @@ NAMEN = {
     "BRIGHTON & HOVE ALBION": "Brighton", "LINCOLN RED IMPS FC": "Lincoln Red Imps", "HEART OF MIDLOTHIAN FC": "Hearts",
     "OFI CRETE FC": "OFI Crete", "TSG 1899 HOFFENHEIM": "Hoffenheim", "SUNDERLAND AFC": "Sunderland", "R ANTWERP FC": "Antwerp",
     "SPORTING CHARLEROI": "Charleroi", "STANDARD LIÈGE": "Standard Luik", "KV KORTRIJK": "Kortrijk", "KAA GENT": "Gent",
-    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "ZULTE-WAREGEM": "Zulte Waregem", "SC CHARLEROI": "Charleroi", "STANDARD DE LIÈGE": "Standard Luik", "RAAL LA LOUVIÈRE": "La Louvière", "FK BODØ/GLIMT": "Bodø/Glimt", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
+    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "BAYER 04 LEVERKUSEN": "Bayer Leverkusen", "REAL BETIS BALOMPIÉ": "Real Betis", "SK SLAVIA PRAHA": "Slavia Praha", "SV WERDER BREMEN": "Werder Bremen", "SC PADERBORN": "SC Paderborn", "ZULTE-WAREGEM": "Zulte Waregem", "SC CHARLEROI": "Charleroi", "STANDARD DE LIÈGE": "Standard Luik", "RAAL LA LOUVIÈRE": "La Louvière", "FK BODØ/GLIMT": "Bodø/Glimt", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
     "VIKTORIA PLZEŇ": "Viktoria Plzeň", "MANCHESTER UNITED FC": "Manchester United", "CS MARÍTIMO": "Marítimo", "CASA PIA AC": "Casa Pia",
     "AROUCA FC": "Arouca", "ACADÉMICO DE VISEU FC": "Académico de Viseu", "MOREIRENSE FC": "Moreirense", "GIL VICENTE FC": "Gil Vicente",
     "VITÓRIA S.C.": "Vitória SC", "FC FAMALICÃO": "Famalicão", "LIVERPOOL FC": "Liverpool", "OL – LILLESTRØM": "Lillestrøm",
@@ -392,6 +392,84 @@ def parse_genk(tekst, club="genk", bron=""):
     return uit
 
 
+# ---------------------------------------------------------------- Bayern München (aanvraagpagina van de officiële ticketshop)
+BY_RIJ = re.compile(r"^FC Bayern München - ([^\n]+)\n([^\n]+)\n[A-Za-z]+, ([A-Za-z]+) (\d{1,2}), (\d{4})\nStart:\s*(\d{1,2}):(\d{2}) ?([AP])M\n", re.M)
+BY_TOT = re.compile(r"requests are possible until ([A-Za-z]+) (\d{1,2})(?:st|nd|rd|th) (\d{4})(?: until (\d{1,2})(?::(\d{2}))? ?([ap])m)?", re.I)
+BY_COMPS = [("bundesliga", "Bundesliga"), ("dfb", "DFB-Pokal"), ("uefa", "Champions League")]
+
+
+def parse_bayern(tekst, club="bayern", bron=""):
+    """Bayern verkoopt via aanvragen (loting). De pagina toont per thuiswedstrijd of aanvragen nog kan, voorbij is (overboekt) of dat er een online shop is."""
+    koppen = list(BY_RIJ.finditer(tekst))
+    uit = []
+    for i, m in enumerate(koppen):
+        einde = koppen[i + 1].start() if i + 1 < len(koppen) else len(tekst)
+        blok = tekst[m.end():einde].split("Page ")[0]
+        maand = maand_en(m.group(3))
+        if not maand:
+            continue
+        aftrap = _aftrap(int(m.group(4)), maand, _uur24(m.group(6), m.group(8).lower()), int(m.group(7)), False, jaar=int(m.group(5)))
+        if not aftrap or not _toekomst(aftrap):
+            continue
+        laag = m.group(2).lower()
+        competitie = next((n for k, n in BY_COMPS if k in laag), m.group(2).strip())
+        w = wedstrijd(club, schoon(m.group(1)), competitie, aftrap, None, bron=bron)
+        tot = BY_TOT.search(blok)
+        if tot and maand_en(tot.group(1)):
+            uur = _uur24(tot.group(4), tot.group(6).lower()) if tot.group(4) else 23
+            sluit = _aftrap(int(tot.group(2)), maand_en(tot.group(1)), uur, int(tot.group(5) or 0), False, jaar=int(tot.group(3)))
+            w["nu"], w["noot"] = True, "Tickets aanvragen kan nu (loting; geen vaste verkoopdatum)."
+            if sluit and _toekomst(sluit):
+                w["fases"] = [["vrij", t.tekst_fmt(sluit), "Aanvraagperiode sluit"]]
+        elif "overbooked" in blok.lower() or "requests were possible" in blok.lower():
+            w["noot"] = "Aanvraagperiode voorbij (overboekt); kaarten nu alleen nog via de Ticketmarket (doorverkoop tussen supporters)."
+        elif "onlineshop" in blok.lower():
+            w["nu"], w["noot"] = True, "Kaarten zijn te koop in de online shop van Bayern."
+        else:
+            w["info"], w["noot"] = True, "Aanvraagperiode nog niet bekend."
+        if not any(x["tegen"] == w["tegen"] and x["aftrap"] == w["aftrap"] for x in uit):
+            uit.append(w)
+    return uit
+
+
+def haal_bayern(adres, test, sleutel="bayern"):
+    """De lijst heeft meerdere pagina's (vier per keer); we klikken op 'volgende pagina' tot er geen meer is. Lukt dat niet, dan houden we de eerste pagina."""
+    if test:
+        return parse_bayern(t.haal_tekst(adres, test).replace("\xa0", " "), sleutel, adres)
+    from playwright.sync_api import sync_playwright
+
+    teksten = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        try:
+            page = browser.new_page(locale="en-GB")
+            page.goto(adres, wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:  # noqa: BLE001
+                pass
+            for _ in range(8):
+                teksten.append(page.inner_text("body"))
+                knop = page.get_by_text("go to next page", exact=False)
+                if not knop.count() or not knop.first.is_visible():
+                    break
+                try:
+                    knop.first.click(timeout=8000)
+                    page.wait_for_load_state("networkidle", timeout=15000)
+                except Exception:  # noqa: BLE001
+                    break
+                if len(teksten) > 1 and teksten[-1] == teksten[-2]:
+                    break
+        finally:
+            browser.close()
+    uit = []
+    for tekst in teksten:
+        for w in parse_bayern(tekst.replace("\xa0", " "), sleutel, adres):
+            if not any(x["tegen"] == w["tegen"] and x["aftrap"] == w["aftrap"] for x in uit):
+                uit.append(w)
+    return uit
+
+
 # ---------------------------------------------------------------- Arsenal (ticketpagina: per wedstrijd status van de loting)
 LONDEN = ZoneInfo("Europe/London")
 AR_KOP = re.compile(r"^[A-Z][a-z]{2} ([A-Z][a-z]{2}) (\d{1,2}) at (\d{2}):(\d{2})\n([^\n]+)\n([^\n]+)\n(H|A)\n", re.M)
@@ -591,6 +669,8 @@ def _maak(sleutel, naam, land, adres, parser):
         tekst = t.haal_tekst(adres, test, "en-GB" if sleutel in ENGELS else "nl-NL").replace("\xa0", " ").replace("\u202f", " ")  # harde spaties op de sites
         return parser(tekst, sleutel, adres)
 
+    if sleutel == "bayern":
+        haal_op = lambda: haal_bayern(adres, test, sleutel)  # noqa: E731
     if sleutel == "union-sg":
         haal_op = lambda: haal_union_sg(adres, test, sleutel)  # noqa: E731
     if sleutel == "psg":
@@ -603,6 +683,7 @@ CLUBS = [
     ("benfica", "SL Benfica", "PT", "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades", parse_benfica),
     ("psg", "Paris Saint-Germain", "FR", "https://billetterie.psg.fr/en/schedule", parse_psg),
     ("club-brugge", "Club Brugge", "BE", "https://www.askclub.be/hc/nl/articles/53695700949652-Voor-welke-wedstrijden-kan-ik-tickets-kopen", parse_clubbrugge),
+    ("bayern", "FC Bayern München", "DE", "https://tickets.fcbayern.com/internetverkaufanfragen/EventList.aspx", parse_bayern),
     ("arsenal", "Arsenal", "EN", "https://www.arsenal.com/tickets/men", parse_arsenal),
     ("union-sg", "Union SG", "BE", "https://rusg.brussels/nl/kalender?calendar-filter=869&ranking-filter=867", parse_union_sg),
     ("marseille", "Olympique Marseille", "FR", "https://billetterie.om.fr/fr/calendrier-equipe-premiere", parse_marseille),
