@@ -37,7 +37,7 @@ NAMEN = {
     "BRIGHTON & HOVE ALBION": "Brighton", "LINCOLN RED IMPS FC": "Lincoln Red Imps", "HEART OF MIDLOTHIAN FC": "Hearts",
     "OFI CRETE FC": "OFI Crete", "TSG 1899 HOFFENHEIM": "Hoffenheim", "SUNDERLAND AFC": "Sunderland", "R ANTWERP FC": "Antwerp",
     "SPORTING CHARLEROI": "Charleroi", "STANDARD LIÈGE": "Standard Luik", "KV KORTRIJK": "Kortrijk", "KAA GENT": "Gent",
-    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
+    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "ZULTE-WAREGEM": "Zulte Waregem", "SC CHARLEROI": "Charleroi", "STANDARD DE LIÈGE": "Standard Luik", "RAAL LA LOUVIÈRE": "La Louvière", "FK BODØ/GLIMT": "Bodø/Glimt", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
     "VIKTORIA PLZEŇ": "Viktoria Plzeň", "MANCHESTER UNITED FC": "Manchester United", "CS MARÍTIMO": "Marítimo", "CASA PIA AC": "Casa Pia",
     "AROUCA FC": "Arouca", "ACADÉMICO DE VISEU FC": "Académico de Viseu", "MOREIRENSE FC": "Moreirense", "GIL VICENTE FC": "Gil Vicente",
     "VITÓRIA S.C.": "Vitória SC", "FC FAMALICÃO": "Famalicão", "LIVERPOOL FC": "Liverpool", "OL – LILLESTRØM": "Lillestrøm",
@@ -392,6 +392,107 @@ def parse_genk(tekst, club="genk", bron=""):
     return uit
 
 
+# ---------------------------------------------------------------- Union SG (kalender; de pagina toont per keer één competitie, nu de Pro League)
+UN_DATUM = re.compile(r"^(?:[A-Za-z]+\.? )(\d{1,2})[./](\d{2})$")
+UN_TIJD = re.compile(r"^(\d{2}):(\d{2})(?: \| .*)?$")
+
+
+def parse_union_sg(tekst, club="union-sg", bron="", competitie="Jupiler Pro League"):
+    """De regels van een wedstrijd staan in wisselende volgorde: soms eerst de datum (eerste wedstrijd), soms eerst de teams.
+    De clubnaam die als eerste staat is de thuisploeg. 'Get tickets' hoort bij de wedstrijd die er net voor staat."""
+    regels = [r.strip() for r in tekst.splitlines() if r.strip()]
+    start = next((i for i, r in enumerate(regels) if r == "Belgian Cup"), 0)
+    eind = next((i for i, r in enumerate(regels) if r == "Ranking"), len(regels))
+    regels = regels[start + 1:eind]
+    teams, datum, uit, laatste = [], None, [], None
+    i = 0
+    while i < len(regels):
+        r = regels[i]
+        d = UN_DATUM.match(r)
+        if d:
+            tijd = next((UN_TIJD.match(x) for x in regels[i + 1:i + 3] if UN_TIJD.match(x)), None)
+            datum = (int(d.group(1)), int(d.group(2)), int(tijd.group(1)) if tijd else 0, int(tijd.group(2)) if tijd else 0)
+        elif r == "Union Saint-Gilloise":
+            teams.append("UNION")
+        elif r == "alt" and i + 1 < len(regels):
+            teams.append(regels[i + 1])
+            i += 1
+        elif r == "Get tickets" and laatste is not None:
+            laatste["nu"], laatste["info"], laatste["noot"] = True, False, OPEN
+        if len(teams) == 2 and datum:
+            if teams[0] == "UNION":
+                dag, maand, uur, minuut = datum
+                tbc = uur in (0, 1, 2)  # 01:00 en 02:00 zijn plaatsvervangers voor 'tijd nog niet bekend'
+                aftrap = _aftrap(dag, maand, uur, minuut, tbc)
+                if aftrap and _toekomst(aftrap):
+                    laatste = wedstrijd(club, schoon(teams[1]), competitie, aftrap, "nog_niet", bron=bron, tbc=tbc)
+                    uit.append(laatste)
+                else:
+                    laatste = None
+            else:
+                laatste = None
+            teams, datum = [], None
+        i += 1
+    return uit
+
+
+UNION_PAGINAS = [("https://rusg.brussels/nl/kalender?calendar-filter=869&ranking-filter=867", "Jupiler Pro League"),
+                 ("https://rusg.brussels/nl/kalender?calendar-filter=868&ranking-filter=867", "Europa League"),
+                 ("https://rusg.brussels/nl/kalender?calendar-filter=870&ranking-filter=867", "Croky Cup")]
+
+
+def haal_union_sg(adres, test, sleutel="union-sg"):
+    uit = []
+    for pagina, competitie in UNION_PAGINAS:
+        try:
+            tekst = t.haal_tekst(pagina, test).replace("\xa0", " ")
+            uit += parse_union_sg(tekst, sleutel, pagina, competitie)
+        except Exception as fout:  # noqa: BLE001
+            print(f"[union-sg] {competitie}: overgeslagen ({str(fout).splitlines()[0][:100]})")
+        if test:
+            break  # bij een test gebruiken we één bestand
+    return uit
+
+
+# ---------------------------------------------------------------- Club Brugge (hulppagina over de ticketverkoop; alleen het A-team)
+NL_MAANDEN = {"januari": 1, "februari": 2, "maart": 3, "april": 4, "mei": 5, "juni": 6, "juli": 7, "augustus": 8, "september": 9,
+              "oktober": 10, "november": 11, "december": 12}
+CB_KOP = re.compile(r"^(?:(\d{2})/(\d{2})/(\d{4})\s*[–-]\s*(\d{1,2})u(\d{2})|TBD\s*[–-]\s*TBD)\s*[–-]\s*([^–\n]+?)\s*[–-]\s*Club Brugge\s*[–-]\s*([^\n]+)$", re.M)
+CB_FASE = re.compile(r"^(Abonnees|Club Members|Vrije verkoop):\s*(?:vanaf\s+)?(?:[a-z]+\s+)?(\d{1,2}) ([a-z]+) om (\d{1,2})u(\d{2})?", re.M)
+CB_GROEP = {"Abonnees": ("seizoen", "Abonnees"), "Club Members": ("lid", "Club Members"), "Vrije verkoop": ("vrij", "Vrije verkoop")}
+
+
+def parse_clubbrugge(tekst, club="club-brugge", bron=""):
+    eind = tekst.find("Club NXT")
+    if eind > 0:
+        tekst = tekst[:eind]  # onder die kop staan de jeugdteams
+    koppen = list(CB_KOP.finditer(tekst))
+    uit = []
+    for i, m in enumerate(koppen):
+        einde = koppen[i + 1].start() if i + 1 < len(koppen) else len(tekst)
+        blok = tekst[m.end():einde]
+        if not m.group(1):
+            continue  # datum nog niet bekend: zonder datum kunnen we de wedstrijd niet plaatsen
+        aftrap = _aftrap(int(m.group(1)), int(m.group(2)), int(m.group(4)), int(m.group(5)), False, jaar=int(m.group(3)))
+        if not aftrap or not _toekomst(aftrap):
+            continue
+        fases = []
+        for f in CB_FASE.finditer(blok):
+            maand = NL_MAANDEN.get(f.group(3))
+            moment = t.jaar_voor(int(f.group(2)), maand, int(f.group(4)), int(f.group(5) or 0), aftrap, t.NL) if maand else None
+            if moment:
+                fases.append([CB_GROEP[f.group(1)][0], t.tekst_fmt(moment), CB_GROEP[f.group(1)][1]])
+        laag = blok.lower()
+        status = "nog_niet" if "nog niet in verkoop" in laag else "open" if ("in verkoop" in laag or "beschikbaar" in laag) else None
+        w = wedstrijd(club, schoon(m.group(7)), comp(m.group(6)), aftrap, None if fases else status, fases, bron)
+        if "account van vóór de loting" in laag:
+            w["nu"], w["noot"] = True, "Alleen voor fans met een account van vóór de loting op 27/08."
+        elif fases and any(f[0] == "vrij" and datetime.fromisoformat(f[1]).replace(tzinfo=t.NL) <= datetime.now(t.NL) for f in fases):
+            w["nu"] = True
+        uit.append(w)
+    return uit
+
+
 # ---------------------------------------------------------------- Paris Saint-Germain
 # De ticketsite van PSG blokkeert de onzichtbare browser (Cloudflare). Lukt het lezen niet, dan gebruiken we een tekst die jij
 # zelf in scripts/handmatig/psg.txt zet (Ctrl+A, Ctrl+C op https://billetterie.psg.fr/en/schedule). Die tekst veroudert, dus ververs hem af en toe.
@@ -443,12 +544,14 @@ ENGELS = {"porto"}  # sites die in de taal van de browser antwoorden: daar vrage
 
 
 def _maak(sleutel, naam, land, adres, parser):
-    test = os.environ.get(f"{sleutel.upper()}_TEKST_BESTAND", "")
+    test = os.environ.get(f"{sleutel.upper().replace('-', '_')}_TEKST_BESTAND", "")
 
     def haal_op():
         tekst = t.haal_tekst(adres, test, "en-GB" if sleutel in ENGELS else "nl-NL").replace("\xa0", " ").replace("\u202f", " ")  # harde spaties op de sites
         return parser(tekst, sleutel, adres)
 
+    if sleutel == "union-sg":
+        haal_op = lambda: haal_union_sg(adres, test, sleutel)  # noqa: E731
     if sleutel == "psg":
         haal_op = lambda: haal_psg(adres, test, sleutel)  # noqa: E731
     return SimpleNamespace(CLUB=sleutel, NAAM=naam, PAGINA=adres, LAND=land, BEHOUD=False, haal_op=haal_op)
@@ -458,6 +561,8 @@ CLUBS = [
     # sleutel, naam, land, adres van de kalender, lezer (we gebruiken hier bewust vaste kalenderadressen en niet de startadressen uit verken_lijst.txt)
     ("benfica", "SL Benfica", "PT", "https://www.slbenfica.pt/en-us/loja/bilhetes/futebol-modalidades", parse_benfica),
     ("psg", "Paris Saint-Germain", "FR", "https://billetterie.psg.fr/en/schedule", parse_psg),
+    ("club-brugge", "Club Brugge", "BE", "https://www.askclub.be/hc/nl/articles/53695700949652-Voor-welke-wedstrijden-kan-ik-tickets-kopen", parse_clubbrugge),
+    ("union-sg", "Union SG", "BE", "https://rusg.brussels/nl/kalender?calendar-filter=869&ranking-filter=867", parse_union_sg),
     ("marseille", "Olympique Marseille", "FR", "https://billetterie.om.fr/fr/calendrier-equipe-premiere", parse_marseille),
     ("lille", "Lille OSC", "FR", "https://billetterie.losc.fr/en/calendar", parse_lille),
     ("monaco", "AS Monaco", "FR", "https://billetterie.asmonaco.com/en/matches", parse_monaco),
