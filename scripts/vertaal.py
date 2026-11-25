@@ -10,6 +10,10 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Loting sluit": "Ballot closes",
+    "Kaarten zijn alleen voor leden, via loting.": "Tickets are for members only, via ballot.",
+    "Loting gesloten; kaarten nu alleen nog via de Ticket Exchange (doorverkoop tussen supporters).": "Ballot closed; tickets are now only available via the Ticket Exchange (resale between supporters).",
+    "Loting nog niet aangekondigd.": "Ballot not announced yet.",
     "Alleen voor fans met een account van vóór de loting op 27/08.": "Only for fans with an account from before the 27/08 ballot.",
     "Abonnees": "Season ticket holders",
     "Club Members": "Club Members",
