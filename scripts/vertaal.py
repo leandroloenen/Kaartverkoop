@@ -10,6 +10,13 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Aanvraagperiode sluit": "Request period closes",
+    "Tickets aanvragen kan nu (loting; geen vaste verkoopdatum).": "Ticket requests are open now (ballot; no fixed sale date).",
+    "Aanvraagperiode voorbij (overboekt); kaarten nu alleen nog via de Ticketmarket (doorverkoop tussen supporters).": "Request period is over (oversubscribed); tickets are now only available via the Ticketmarket (resale between supporters).",
+    "Kaarten zijn te koop in de online shop van Bayern.": "Tickets are on sale in Bayern's online shop.",
+    "Aanvraagperiode nog niet bekend.": "Request period not known yet.",
+    "Geen vaste verkoopdatum (aanvragen of loting via de club). Op de officiële Zweitmarkt kunnen nu alleen leden boeken.": "No fixed sale date (requests or ballot via the club). On the official resale market only members can book right now.",
+    "Geen vaste verkoopdatum (aanvragen of loting via de club). Doorverkochte kaarten zijn nu te koop op de officiële Zweitmarkt (inloggen nodig).": "No fixed sale date (requests or ballot via the club). Resold tickets are on sale now on the official resale market (login required).",
     "Loting sluit": "Ballot closes",
     "Kaarten zijn alleen voor leden, via loting.": "Tickets are for members only, via ballot.",
     "Loting gesloten; kaarten nu alleen nog via de Ticket Exchange (doorverkoop tussen supporters).": "Ballot closed; tickets are now only available via the Ticket Exchange (resale between supporters).",
