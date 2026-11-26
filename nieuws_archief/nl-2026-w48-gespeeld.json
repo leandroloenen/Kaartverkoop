@@ -186,6 +186,17 @@
   "waarom": []
  },
  {
+  "k": "union-sg",
+  "naam": "Union SG",
+  "tegen": "Union",
+  "comp": "Europa League",
+  "aftrap": "2026-11-26T18:45",
+  "stadion": "",
+  "stad": "",
+  "status": "Verkoopinfo volgt",
+  "waarom": []
+ },
+ {
   "k": "juventus",
   "naam": "Juventus",
   "tegen": "Omonia Nicosia",
@@ -425,7 +436,7 @@
   "aftrap": "2026-11-28T16:30",
   "stadion": "Van Donge & De Roo Stadion",
   "stad": "Rotterdam",
-  "status": "Kaartverkoop is open",
+  "status": "Verkoopinfo volgt",
   "waarom": [
    "Te combineren met Feyenoord - Ajax in Rotterdam op zondag 29 november.",
    "Gespeeld in Van Donge & De Roo Stadion (Rotterdam)."
@@ -495,6 +506,17 @@
   "waarom": [
    "Gespeeld in San Siro (Milaan)."
   ]
+ },
+ {
+  "k": "psg",
+  "naam": "Paris Saint-Germain",
+  "tegen": "Lorient",
+  "comp": "Ligue 1",
+  "aftrap": "2026-11-28T20:45",
+  "stadion": "",
+  "stad": "",
+  "status": "Kaartverkoop is open",
+  "waarom": []
  },
  {
   "k": "real-madrid",
@@ -682,6 +704,17 @@
   ]
  },
  {
+  "k": "union-sg",
+  "naam": "Union SG",
+  "tegen": "Union",
+  "comp": "Jupiler Pro League",
+  "aftrap": "2026-11-29T19:15",
+  "stadion": "",
+  "stad": "",
+  "status": "Verkoopinfo volgt",
+  "waarom": []
+ },
+ {
   "k": "bvb",
   "naam": "Borussia Dortmund",
   "tegen": "Bayer Leverkusen",
@@ -731,5 +764,16 @@
   "waarom": [
    "Gespeeld in Stadio Giuseppe Sinigaglia (Como)."
   ]
+ },
+ {
+  "k": "porto",
+  "naam": "FC Porto",
+  "tegen": "Sporting CP",
+  "comp": "Primeira Liga",
+  "aftrap": "2026-11-29T21:30",
+  "stadion": "",
+  "stad": "",
+  "status": "Kaartverkoop is open",
+  "waarom": []
  }
 ]

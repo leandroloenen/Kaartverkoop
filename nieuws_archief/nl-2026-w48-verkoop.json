@@ -498,6 +498,21 @@
   ]
  },
  {
+  "k": "aston-villa",
+  "naam": "Aston Villa",
+  "tegen": "Paris Saint-Germain",
+  "comp": "Premier League",
+  "aftrap": "2026-12-08T15:00",
+  "stadion": "Villa Park",
+  "stad": "Birmingham",
+  "moment": "2026-11-26T10:30",
+  "label": "Vrije verkoop",
+  "waarom": [
+   "Ook zonder lidmaatschap te koop (vrije verkoop).",
+   "Gespeeld in Villa Park (Birmingham)."
+  ]
+ },
+ {
   "k": "bournemouth",
   "naam": "AFC Bournemouth",
   "tegen": "Aston Villa",
