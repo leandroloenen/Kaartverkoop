@@ -21,6 +21,8 @@ jobs:
           pip install playwright
           playwright install --with-deps chromium
       - name: Gegevens ophalen
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python scripts/update.py
       - name: Pagina's voor zoekmachines bouwen
         continue-on-error: true   # lukt dit niet, dan wordt de update zelf toch opgeslagen
