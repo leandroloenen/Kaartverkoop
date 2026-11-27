@@ -5,3 +5,4 @@ Union SG beker | https://rusg.brussels/nl/kalender?calendar-filter=870&ranking-f
 Bayern aanvragen | https://tickets.fcbayern.com/internetverkaufanfragen/EventList.aspx | geen | 1
 Arsenal tickets | https://www.arsenal.com/tickets/men | geen | 1
 Club Brugge askclub | https://www.askclub.be/hc/nl/articles/53695700949652-Voor-welke-wedstrijden-kan-ik-tickets-kopen | geen | 1
+Lyon billetterie | https://billetterie.ol.fr/ | geen | 1
