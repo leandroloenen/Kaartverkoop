@@ -10,6 +10,14 @@ ONBEKEND = set()
 
 # Hele zinnen (na het weghalen van witruimte aan de randen)
 ZINNEN = {
+    "Algemene verkoop is gestart (startmoment niet getoond).": "General sale has started (start time not shown).",
+    "Leden Het Legioen / Junior Kameraadjes (max. 1 ticket)": "Members of Het Legioen / Junior Kameraadjes (max. 1 ticket)",
+    "Leden Het Legioen / Junior Kameraadjes (max. 4 tickets)": "Members of Het Legioen / Junior Kameraadjes (max. 4 tickets)",
+    "Leden vragen kaarten aan in een venster dat sluit op 29-10 om 13:00 uur (NL-tijd); je krijgt achteraf bericht of je kaarten hebt.": "Members apply for tickets in a window that closes on 29-10 at 13:00 (Dutch time); you will be told afterwards whether you got tickets.",
+    "Staat in de shop, maar de verkoop is nog niet open.": "Listed in the shop, but sales are not open yet.",
+    "Staat in de shop, maar de verkoop is nog niet open. Datum en tijd zijn nog niet definitief.": "Listed in the shop, but sales are not open yet. Date and time are not final.",
+    "Verkoopmomenten nog niet bekendgemaakt (NTB).": "Sale moments not announced yet (TBA).",
+    "Verkoopstatus niet getoond; kaarten zijn alleen voor leden (All Red).": "Sale status not shown; tickets are for members only (All Red).",
     "Aanvraagperiode sluit": "Request period closes",
     "Tickets aanvragen kan nu (loting; geen vaste verkoopdatum).": "Ticket requests are open now (ballot; no fixed sale date).",
     "Aanvraagperiode voorbij (overboekt); kaarten nu alleen nog via de Ticketmarket (doorverkoop tussen supporters).": "Request period is over (oversubscribed); tickets are now only available via the Ticketmarket (resale between supporters).",
