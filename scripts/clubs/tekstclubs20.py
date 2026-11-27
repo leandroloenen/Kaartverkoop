@@ -37,7 +37,7 @@ NAMEN = {
     "BRIGHTON & HOVE ALBION": "Brighton", "LINCOLN RED IMPS FC": "Lincoln Red Imps", "HEART OF MIDLOTHIAN FC": "Hearts",
     "OFI CRETE FC": "OFI Crete", "TSG 1899 HOFFENHEIM": "Hoffenheim", "SUNDERLAND AFC": "Sunderland", "R ANTWERP FC": "Antwerp",
     "SPORTING CHARLEROI": "Charleroi", "STANDARD LIÈGE": "Standard Luik", "KV KORTRIJK": "Kortrijk", "KAA GENT": "Gent",
-    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "BAYER 04 LEVERKUSEN": "Bayer Leverkusen", "REAL BETIS BALOMPIÉ": "Real Betis", "SK SLAVIA PRAHA": "Slavia Praha", "SV WERDER BREMEN": "Werder Bremen", "SC PADERBORN": "SC Paderborn", "ZULTE-WAREGEM": "Zulte Waregem", "SC CHARLEROI": "Charleroi", "STANDARD DE LIÈGE": "Standard Luik", "RAAL LA LOUVIÈRE": "La Louvière", "FK BODØ/GLIMT": "Bodø/Glimt", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
+    "KV MECHELEN": "Mechelen", "STVV": "Sint-Truiden", "KVC WESTERLO": "Westerlo", "SK BEVEREN": "Beveren", "UNION SG": "Union SG", "ESTRELA AMADORA": "Estrela da Amadora", "LE HAVRE AC": "Le Havre", "BAYER 04 LEVERKUSEN": "Bayer Leverkusen", "REAL BETIS BALOMPIÉ": "Real Betis", "SK SLAVIA PRAHA": "Slavia Praha", "SV WERDER BREMEN": "Werder Bremen", "SC PADERBORN": "SC Paderborn", "ZULTE-WAREGEM": "Zulte Waregem", "SC CHARLEROI": "Charleroi", "STANDARD DE LIÈGE": "Standard Luik", "RAAL LA LOUVIÈRE": "La Louvière", "FK BODØ/GLIMT": "Bodø/Glimt", "COMO 1907": "Como", "STADE RENNAIS": "Rennes", "AS ROMA": "AS Roma", "UNION SAINT-GILLOISE": "Union SG", "LOMMEL": "Lommel SK", "LOMMEL SK": "Lommel SK",
     "VIKTORIA PLZEŇ": "Viktoria Plzeň", "MANCHESTER UNITED FC": "Manchester United", "CS MARÍTIMO": "Marítimo", "CASA PIA AC": "Casa Pia",
     "AROUCA FC": "Arouca", "ACADÉMICO DE VISEU FC": "Académico de Viseu", "MOREIRENSE FC": "Moreirense", "GIL VICENTE FC": "Gil Vicente",
     "VITÓRIA S.C.": "Vitória SC", "FC FAMALICÃO": "Famalicão", "LIVERPOOL FC": "Liverpool", "OL – LILLESTRØM": "Lillestrøm",
@@ -697,4 +697,5 @@ CLUBS = [
     ("genk", "KRC Genk", "BE", "https://www.krcgenk.be/nl/kalender/wedstrijdkalender", parse_genk),
 ]
 
-ALLE = [_maak(*c) for c in CLUBS]
+UITGEZET = {"union-sg"}  # tijdelijk uit: de tekst die de update van de Union-site leest, wijkt af van de tekst uit een gewone browser (verkeerde tegenstanders)
+ALLE = [_maak(*c) for c in CLUBS if c[0] not in UITGEZET]
