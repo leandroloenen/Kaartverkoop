@@ -22,6 +22,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import clubs  # noqa: E402
+import fixtures  # noqa: E402
+from clubs import tekst as _tekst  # noqa: E402
 
 DATA = Path(__file__).resolve().parent.parent / "data.json"
 
@@ -88,10 +90,36 @@ def bereken_schatting(wedstrijden):
     return uit
 
 
+def voeg_fixtures_toe(data, wedstrijden):
+    """Vul de agenda aan met thuiswedstrijden uit football-data.org waar nog geen verkoopinfo van is."""
+    rijen, gezien = fixtures.haal_fixtures(data["CLUBS"], _tekst.NL)
+    if not rijen:
+        # geen token of niets gekregen: houd de vorige lijst vast, anders verdwijnt alles bij een storing
+        return wedstrijden + [w for w in json.loads(json.dumps(data["WEDSTRIJDEN"])) if w.get("fx")]
+    bezet = {dag(w) for w in wedstrijden}
+    nieuw = []
+    for w in rijen:
+        w["tegen"] = gelijke_naam(w["tegen"])
+        if dag(w) in bezet:
+            continue
+        # zelfde wedstrijd met verkoopinfo op een andere dag (bv. door tijdzone)? dan niet dubbel tonen
+        buur = [x for x in wedstrijden if x["club"] == w["club"] and zonder_accenten(x["tegen"]) == zonder_accenten(w["tegen"])
+                and abs((datetime.date.fromisoformat(x["aftrap"][:10]) - datetime.date.fromisoformat(w["aftrap"][:10])).days) <= 1]
+        if buur:
+            continue
+        nieuw.append(w)
+        bezet.add(dag(w))
+    print(f"[football-data] {len(nieuw)} wedstrijden toegevoegd zonder verkoopinfo")
+    ontbreekt = sorted(data["CLUBS"][k]["naam"] for k in data["CLUBS"] if k not in gezien)
+    if ontbreekt:
+        print("[football-data] clubs van onze site die niet in de API gevonden zijn: " + ", ".join(ontbreekt))
+    return wedstrijden + nieuw
+
+
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     origineel = json.dumps(data, sort_keys=True)
-    wedstrijden = data["WEDSTRIJDEN"]
+    wedstrijden = [w for w in data["WEDSTRIJDEN"] if not w.get("fx")]  # wedstrijdlijst-rijen worden elke run opnieuw gemaakt
 
     for module in clubs.ALLE:
         club = module.CLUB
@@ -164,6 +192,11 @@ def main():
                 print(f"[{club}] GEWIJZIGD: {k[1]} op {k[2]}")
         wedstrijden = rest + toe
 
+    try:
+        wedstrijden = voeg_fixtures_toe(data, wedstrijden)
+    except Exception as fout:  # noqa: BLE001
+        print(f"[football-data] WAARSCHUWING: wedstrijdlijst mislukt ({str(fout).splitlines()[0][:150]}); oude lijst blijft staan")
+        wedstrijden += [w for w in json.loads(origineel)["WEDSTRIJDEN"] if w.get("fx")]
     data["WEDSTRIJDEN"] = wedstrijden
     data["SCHATTING"] = bereken_schatting(wedstrijden)
     if json.dumps(data, sort_keys=True) != origineel:
