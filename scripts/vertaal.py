@@ -29,6 +29,7 @@ ZINNEN = {
     "Geregistreerde supporters": "Registered supporters",
     "Algemene verkoop": "General sale",
     "Alleen voor leden.": "Members only.",
+    "Verkoopinfo volgt: de club heeft de kaartverkoop voor deze wedstrijd nog niet bekendgemaakt.": "Ticket info to follow: the club has not yet announced ticket sales for this match.",
     "Eerst voorrang voor abonnees en leden.": "Priority for season ticket holders and members first.",
     "Getroffen UEFA-leden": "Affected UEFA members",
     "Leden zonder seizoenkaart": "Members without a season ticket",
