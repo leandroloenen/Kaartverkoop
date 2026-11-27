@@ -1,0 +1,21 @@
+# Football Ticket Scout
+
+> Football Ticket Scout laat zien wanneer de kaartverkoop begint voor thuiswedstrijden van voetbalclubs, per doelgroep (seizoenkaarthouders, leden, vrije verkoop). Gratis, in het Nederlands en Engels. / Football Ticket Scout shows when ticket sales start for football clubs' home matches, per audience (season ticket holders, members, general sale). Free, in Dutch and English.
+
+Gegevens komen van de officiële clubsites en worden dagelijks automatisch gecontroleerd; elke pagina toont de controledatum en een bronlink. We verkopen zelf geen tickets: koop altijd bij de officiële ticketsite van de club.
+Data comes from official club sites and is checked automatically every day; each page shows the check date and a source link. We do not sell tickets ourselves: always buy from the club's official ticket site.
+
+Laatste gegevenswijziging / last data change: 2026-11-27
+
+## Pagina's / Pages
+- [Alle clubs (NL)](https://footballticketscout.com/club/) · [All clubs (EN)](https://footballticketscout.com/en/club/)
+- [Nieuws (NL)](https://footballticketscout.com/nieuws/) · [News (EN)](https://footballticketscout.com/en/nieuws/)
+- [Tips (NL)](https://footballticketscout.com/tips/) · [Tips (EN)](https://footballticketscout.com/en/tips/)
+- [Over deze site](https://footballticketscout.com/over/) · [About](https://footballticketscout.com/en/over/)
+- Clubpagina: https://footballticketscout.com/club/<club>/ (EN: https://footballticketscout.com/en/club/<club>/)
+
+## Competities / Competitions
+2. Bundesliga, Bundesliga, Champions League, Conference League, Coppa Italia, DFB-Pokal, EVENTO, Eredivisie, Europa League, Europees, Jupiler Pro League, KNVB Beker, La Liga, League Cup, Ligue 1, Premier League, Primeira Liga, Serie A, UEFA
+
+## Clubs (88)
+1. FC Köln, 1. FC Union Berlin, 1. FSV Mainz 05, AC Milan, AC Monza, ACF Fiorentina, ADO Den Haag, AFC Bournemouth, AS Monaco, AS Roma, AZ, Ajax, Aston Villa, Atalanta, Bayer Leverkusen, Borussia Dortmund, Borussia Mönchengladbach, Brentford, Brighton & Hove Albion, CA Osasuna, Cagliari Calcio, Celta de Vigo, Chelsea, Como 1907, Coventry City, Crystal Palace, Eintracht Frankfurt, Elche CF, Everton, Excelsior, FC Barcelona, FC Groningen, FC Porto, FC St. Pauli, FC Twente, FC Utrecht, Feyenoord, Fortuna Sittard, Fulham, Go Ahead Eagles, Hamburger SV, Hull City, Inter, Ipswich Town, Juventus, KRC Genk, Leeds United, Lille OSC, Liverpool, Manchester City, N.E.C., Newcastle United, Nottingham Forest, Olympique Lyon, Olympique Marseille, PEC Zwolle, PSV, Paris Saint-Germain, Parma Calcio 1913, RB Leipzig, RC Deportivo, RCD Espanyol, RSC Anderlecht, Real Betis, Real Madrid, SC Braga, SC Cambuur, SC Freiburg, SC Heerenveen, SC Telstar, SL Benfica, SS Lazio, Schalke 04, Sevilla FC, Sparta Rotterdam, Sporting CP, Sunderland, TSG Hoffenheim, Torino FC, Tottenham Hotspur, US Sassuolo, Valencia CF, Venezia FC, VfB Stuttgart, VfL Wolfsburg, Villarreal CF, Werder Bremen, Willem II

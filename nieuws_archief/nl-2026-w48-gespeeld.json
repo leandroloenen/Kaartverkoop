@@ -416,6 +416,19 @@
   ]
  },
  {
+  "k": "hsv",
+  "naam": "Hamburger SV",
+  "tegen": "Bayern",
+  "comp": "Bundesliga",
+  "aftrap": "2026-11-28T15:30",
+  "stadion": "Volksparkstadion",
+  "stad": "Hamburg",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Volksparkstadion (Hamburg)."
+  ]
+ },
+ {
   "k": "leeds",
   "naam": "Leeds United",
   "tegen": "Coventry City",
@@ -436,7 +449,7 @@
   "aftrap": "2026-11-28T16:30",
   "stadion": "Van Donge & De Roo Stadion",
   "stad": "Rotterdam",
-  "status": "Verkoopinfo volgt",
+  "status": "Kaartverkoop is open",
   "waarom": [
    "Te combineren met Feyenoord - Ajax in Rotterdam op zondag 29 november.",
    "Gespeeld in Van Donge & De Roo Stadion (Rotterdam)."
@@ -492,6 +505,19 @@
   "status": "Verkoopinfo volgt",
   "waarom": [
    "Gespeeld in MHPArena (Stuttgart)."
+  ]
+ },
+ {
+  "k": "psv",
+  "naam": "PSV",
+  "tegen": "Go Ahead Eagles",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-28T18:45",
+  "stadion": "Philips Stadion",
+  "stad": "Eindhoven",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Philips Stadion (Eindhoven)."
   ]
  },
  {
@@ -559,6 +585,19 @@
   ]
  },
  {
+  "k": "ado",
+  "naam": "ADO Den Haag",
+  "tegen": "FC Utrecht",
+  "comp": "Eredivisie",
+  "aftrap": "2026-11-29T12:15",
+  "stadion": "Bingoal Stadion",
+  "stad": "Den Haag",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Bingoal Stadion (Den Haag)."
+  ]
+ },
+ {
   "k": "valencia",
   "naam": "Valencia CF",
   "tegen": "Ca Osasuna",
@@ -612,6 +651,19 @@
   ]
  },
  {
+  "k": "us-sassuolo",
+  "naam": "US Sassuolo",
+  "tegen": "Napoli",
+  "comp": "Serie A",
+  "aftrap": "2026-11-29T15:00",
+  "stadion": "Mapei Stadium",
+  "stad": "Reggio Emilia",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Mapei Stadium (Reggio Emilia)."
+  ]
+ },
+ {
   "k": "brighton",
   "naam": "Brighton & Hove Albion",
   "tegen": "Newcastle United",
@@ -622,6 +674,19 @@
   "status": "Verkoopinfo volgt",
   "waarom": [
    "Gespeeld in Amex Stadium (Brighton)."
+  ]
+ },
+ {
+  "k": "fulham",
+  "naam": "Fulham",
+  "tegen": "AFC Bournemouth",
+  "comp": "Premier League",
+  "aftrap": "2026-11-29T15:05",
+  "stadion": "Craven Cottage",
+  "stad": "Londen",
+  "status": "Verkoopinfo volgt",
+  "waarom": [
+   "Gespeeld in Craven Cottage (Londen)."
   ]
  },
  {
